@@ -1,0 +1,139 @@
+import { NavItem } from './types';
+
+export const NAV_ITEMS: NavItem[] = [
+  { label: 'Accueil', href: '#', id: 'home' },
+  { label: 'Agence', href: '#agency', id: 'agency' },
+  { label: 'Équipe', href: '#team', id: 'team' },
+  { 
+    label: 'Expertises', 
+    href: '#expertises', 
+    id: 'expertises',
+    hasDropdown: true,
+    dropdownItems: [
+      { 
+        label: 'Création De Site Web', 
+        id: 'website-creation',
+        href: '#',
+        hasDropdown: true,
+        dropdownItems: [
+            { label: 'Sites E-Commerce', id: 'ecommerce', href: '#' },
+            { label: 'Noms de Domaine', id: 'domain-name', href: '#' },
+            { label: 'Hébergement Web', id: 'hosting', href: '#' },
+            { label: 'Maintenance Web', id: 'maintenance', href: '#' }
+        ]
+      },
+      { label: 'Référencement naturel', id: 'seo', href: '#' },
+      { label: 'Sea & Smo', id: 'ads', href: '#' },
+      { label: 'création d’application', id: 'application-creation', href: '#' },
+      { label: 'Identité Visuelle', id: 'visual-identity', href: '#' },
+      { label: 'Service Technique', id: 'maintenance', href: '#' },
+    ]
+  },
+  { 
+    label: 'Solutions', 
+    href: '#solutions', 
+    id: 'solutions',
+    hasDropdown: true,
+    dropdownItems: [
+      { label: 'Pack SiteWeb', id: 'pack-siteweb', href: '#' },
+      { label: 'Pack SEO', id: 'pack-seo', href: '#' }
+    ]
+  },
+  { 
+    label: 'Réalisations', 
+    href: '#portfolio', 
+    id: 'portfolio',
+    hasDropdown: true,
+    dropdownItems: [
+      { label: 'Majorelle Centre Affaires', id: 'proj-majorelle', href: 'https://majorelle-centreaffaires.com/' },
+      { label: 'MM Réseaux Com', id: 'proj-mm', href: 'https://mm-reseauxcom.com/' },
+      { label: 'Compagnons en Bâtiment', id: 'proj-batiment', href: 'https://group-descompagnonsenbatiment.com/' },
+      { label: 'Location Centre d’appel', id: 'proj-location', href: 'https://location-centredappel.com/' },
+      { label: 'Group Plancy Call', id: 'proj-plancy', href: 'https://group-plancycall.com/' },
+    ]
+  },
+  { label: 'Contact', href: '#contact-page', id: 'contact-page' },
+];
+
+export const AGENCY_INFO = {
+  subtitle: "Agence Marketing Digital Premium : La Clé Pour Développer Vos Revenus",
+  titlePart1: "Experts en",
+  titleHighlight1: "Digitalisation",
+  titlePart2: "et Marketing",
+  titleHighlight2: "Innovant",
+  titlePart3: "",
+  description: "Donnez Vie à Vos Ambitions Avec Une Agence Marketing Digital Visionnaire. Des Solutions Stratégiques Appuyées par des Résultats Concrets Pour Vous Accompagner dans le Monde Digital. Rejoignez Nos Clients Satisfaits et Faites Passer Votre Entreprise au Niveau Supérieur.",
+  cta: "Lancer le projet",
+  ctaTagline: "Dominez votre marché.",
+  logoLight: "https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-21.png",
+  logoDark: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-74.png"
+};
+
+export const PARTNERS = [
+  { 
+    name: 'WordPress', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/WordPress_logo_2.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/3e81d0ab-45b3-4b81-8ff5-becb4601d509.png'
+  },
+  { 
+    name: 'Shopify', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/shfy-p-.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/Shopify_logo_2018.svg'
+  },
+  { 
+    name: 'PrestaShop', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/prestashop-logo.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/fd743cf8-2ebb-4373-8149-b756dc763d79.png'
+  },
+  { 
+    name: 'Meta', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/meta-p-.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-09-at-16.45.32-6.jpeg'
+  },
+  { 
+    name: 'Google', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/g-p-.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-09-at-16.45.32-5-Modifie.png'
+  },
+  { 
+    name: 'Google Cloud', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/gc-p-.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-09-at-16.45.32-4.jpeg'
+  },
+  { 
+    name: 'Elementor', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/Elementor-logo.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-09-at-16.45.32-3-Modifie.png'
+  },
+  { 
+    name: 'AWS', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2025/03/aws.svg',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/AWS.png'
+  },
+  { 
+    name: 'GDC Premium', 
+    url: 'https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png',
+    urlLight: 'https://groupdigitalconcept.com/wp-content/uploads/2025/12/c3eff455-d32a-4385-baa7-2d88301f4537.png'
+  }
+];
+
+export const FORM_SERVICES = [
+  "Stratégie & Consulting",
+  "Branding & Identité",
+  "Site Web Sur Mesure",
+  "E-Commerce",
+  "App Mobile / Web App",
+  "UI/UX Design",
+  "SEO & Référencement",
+  "Publicité (Ads)",
+  "Social Media",
+  "Création de Contenu"
+];
+
+export const FORM_BUDGETS = [
+  "< 20k MAD",
+  "20k - 50k MAD",
+  "50k - 100k MAD",
+  "+ 100k MAD",
+  "À définir"
+];

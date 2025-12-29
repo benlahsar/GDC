@@ -1,0 +1,329 @@
+import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
+import { Flag, Star, Globe, Zap, Trophy, Rocket, Layers } from 'lucide-react';
+
+const MILESTONES = [
+  {
+    year: "2020",
+    title: "La Fondation",
+    tag: "Fondation",
+    desc: "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc.",
+    icon: Flag,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  },
+  {
+    year: "2021",
+    title: "Lancement Innovant",
+    tag: "Innovation",
+    desc: "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales.",
+    icon: Star,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  },
+  {
+    year: "2022",
+    title: "Expansion Maroc",
+    tag: "Expansion",
+    desc: "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech.",
+    icon: Globe,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  },
+  {
+    year: "2023",
+    title: "Succès & Croissance",
+    tag: "Croissance",
+    desc: "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix.",
+    icon: Zap,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  },
+  {
+    year: "2024",
+    title: "IA & Futur",
+    tag: "Innovation",
+    desc: "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées.",
+    icon: Trophy,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  },
+  {
+    year: "2025",
+    title: "Digitalisation Elite",
+    tag: "Élite",
+    desc: "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables.",
+    icon: Rocket,
+    gradient: "from-red-700 to-red-800",
+    border: "border-red-700",
+    shadow: "shadow-red-700/20"
+  }
+];
+
+// Added isMobile prop to satisfy TypeScript requirements in AgencyPage.tsx
+export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({ isMobile: isMobileProp }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [arcPath, setArcPath] = useState("");
+  const [positions, setPositions] = useState<{x: number, y: number}[]>([]);
+  const [containerHeight, setContainerHeight] = useState(600);
+  const [pathLength, setPathLength] = useState(0);
+  const pathRef = useRef<SVGPathElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  // Merged internal and prop-based mobile detection
+  const [isMobileInternal, setIsMobileInternal] = useState(false);
+  const isMobile = isMobileProp ?? isMobileInternal;
+
+  // --- Calculate Parabolic Arc ---
+  const calculateGeometry = () => {
+    if (!containerRef.current) return;
+    
+    const width = containerRef.current.clientWidth;
+    const startY = 300; 
+    const peakY = 80;   
+    
+    // Parabola Equation: y = a(x - h)^2 + k
+    const h = width / 2;
+    const k = peakY;
+    const a = (startY - k) / Math.pow(h, 2);
+    
+    let pathD = `M 0 ${startY}`;
+    const steps = 100;
+    for (let i = 1; i <= steps; i++) {
+        const x = (width * i) / steps;
+        const y = a * Math.pow(x - h, 2) + k;
+        pathD += ` L ${x} ${y}`;
+    }
+    setArcPath(pathD);
+
+    const padding = width * 0.1;
+    const usableWidth = width - (padding * 2);
+    const spacing = usableWidth / (MILESTONES.length - 1);
+    
+    const newPositions = MILESTONES.map((_, i) => {
+        const x = padding + (spacing * i);
+        const y = a * Math.pow(x - h, 2) + k;
+        return { x, y };
+    });
+    
+    setPositions(newPositions);
+    setContainerHeight(startY + 350); 
+  };
+
+  useLayoutEffect(() => {
+    calculateGeometry();
+    const handleResize = () => calculateGeometry();
+    window.addEventListener('resize', handleResize);
+    setTimeout(calculateGeometry, 500);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Measure path length for draw animation
+  useEffect(() => {
+    if (pathRef.current) {
+        setPathLength(pathRef.current.getTotalLength());
+    }
+  }, [arcPath]);
+
+  // Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+        }
+    }, { threshold: 0.2 });
+
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  // Handle local mobile detection as fallback
+  useEffect(() => {
+    const checkMobile = () => setIsMobileInternal(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  return (
+    <section className="relative w-full py-24 bg-transparent transition-colors duration-500">
+        
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
+            
+            {/* Header */}
+            <div className={`text-center mb-16 md:mb-24 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm">
+                    <Layers size={14} className="text-brand-red animate-pulse" />
+                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gray-800 dark:text-gray-200">
+                        Notre Évolution
+                    </span>
+                </div>
+                <h2 className="text-4xl md:text-6xl font-black text-black dark:text-white tracking-tighter">
+                    La Roadmap <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">Du Succès</span>
+                </h2>
+            </div>
+
+            {/* --- DESKTOP ARC ROADMAP --- */}
+            <div ref={containerRef} className="hidden md:block relative w-full select-none" style={{ height: containerHeight }}>
+                
+                {/* 1. The SVG Arc Line */}
+                <svg className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-visible">
+                    <defs>
+                        <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stopColor="#b91c1c" stopOpacity="0.1" />
+                            <stop offset="50%" stopColor="#b91c1c" stopOpacity="0.8" />
+                            <stop offset="100%" stopColor="#b91c1c" stopOpacity="0.1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    {/* The Arc Path with Draw Animation */}
+                    <path 
+                        ref={pathRef}
+                        d={arcPath} 
+                        fill="none" 
+                        stroke="url(#arcGradient)" 
+                        strokeWidth="4" 
+                        strokeDasharray={pathLength}
+                        strokeDashoffset={isVisible ? 0 : pathLength}
+                        style={{ 
+                            filter: 'drop-shadow(0px 0px 15px rgba(185,28,28,0.4))',
+                            transition: 'stroke-dashoffset 2s ease-out'
+                        }}
+                    />
+                </svg>
+
+                {/* 2. Milestones */}
+                {positions.map((pos, index) => {
+                    const item = MILESTONES[index];
+                    // Stagger calculation
+                    const delay = index * 200; 
+                    
+                    return (
+                        <div 
+                            key={index}
+                            className={`
+                                absolute group
+                                transition-all duration-700 ease-out
+                                ${isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-0 translate-y-10'}
+                            `}
+                            style={{ 
+                                left: pos.x, 
+                                top: pos.y,
+                                transform: isVisible ? 'translate(-50%, -50%)' : 'translate(-50%, 50px)',
+                                transitionDelay: `${delay + 500}ms`
+                            }}
+                        >
+                            {/* DIAMOND NODE ON THE LINE */}
+                            <div className="relative z-20 flex items-center justify-center">
+                                {/* The Diamond */}
+                                <div className={`w-6 h-6 rotate-45 bg-gradient-to-br ${item.gradient} border-2 border-white dark:border-black shadow-lg z-20 transition-transform duration-300 group-hover:scale-150`}></div>
+                                {/* Glow Effect */}
+                                <div className={`absolute inset-0 rotate-45 bg-inherit opacity-50 animate-ping rounded-sm`}></div>
+                            </div>
+
+                            {/* VERTICAL LINE CONNECTOR (Animates Height) */}
+                            <div className={`
+                                absolute left-1/2 -translate-x-1/2 w-[2px] bg-gradient-to-b ${item.gradient} opacity-40
+                                transition-all duration-700 h-16 top-3 group-hover:opacity-100 group-hover:h-24
+                            `}
+                            style={{ transitionDelay: `${delay + 700}ms` }} // Connector grows after point appears
+                            ></div>
+
+                            {/* THE CARD */}
+                            <div 
+                                className={`
+                                    absolute left-1/2 -translate-x-1/2 w-64
+                                    top-20
+                                    transition-all duration-500 ease-out
+                                    group-hover:-translate-y-4 group-hover:top-24
+                                `}
+                            >
+                                <div className={`
+                                    relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111]
+                                    border border-black/5 dark:border-white/10
+                                    shadow-xl ${item.shadow}
+                                    group-hover:shadow-2xl group-hover:shadow-red-900/40
+                                    transition-all duration-300
+                                `}>
+                                    {/* Left Colored Strip with Rotated Year */}
+                                    <div className={`w-12 bg-gradient-to-b ${item.gradient} flex items-center justify-center py-4 relative overflow-hidden group-hover:w-14 transition-all duration-300`}>
+                                        <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <span className="text-white font-black tracking-widest -rotate-90 whitespace-nowrap text-sm opacity-90">
+                                            {item.year}
+                                        </span>
+                                    </div>
+
+                                    {/* Content Body */}
+                                    <div className="flex-1 p-4">
+                                        <div className="flex items-center gap-2 mb-2">
+                                            <div className="p-1.5 rounded-lg bg-gray-100 dark:bg-white/5 text-black dark:text-white">
+                                                <item.icon size={14} />
+                                            </div>
+                                            <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">{item.tag}</span>
+                                        </div>
+                                        <h3 className="text-base font-bold text-black dark:text-white leading-tight mb-1">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-2">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* --- MOBILE VERTICAL TIMELINE --- */}
+            <div className="md:hidden relative px-2">
+                {/* Vertical Line */}
+                <div className="absolute left-6 top-0 bottom-0 w-[2px] bg-gradient-to-b from-red-700 to-red-800 opacity-30"></div>
+
+                <div className="space-y-8">
+                    {MILESTONES.map((item, index) => (
+                        <div key={index} className="relative pl-16">
+                            
+                            {/* Dot on Line */}
+                            <div className={`
+                                absolute left-[23px] top-6 -translate-x-1/2 w-4 h-4 rotate-45 
+                                bg-gradient-to-br ${item.gradient} 
+                                border-2 border-white dark:border-black shadow-md z-10
+                            `}></div>
+
+                            {/* Card */}
+                            <div className={`
+                                relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111]
+                                border border-black/5 dark:border-white/10
+                                shadow-lg
+                            `}>
+                                <div className={`w-10 bg-gradient-to-b ${item.gradient} flex items-center justify-center py-4`}>
+                                    <span className="text-white font-bold text-xs -rotate-90 whitespace-nowrap">
+                                        {item.year}
+                                    </span>
+                                </div>
+                                <div className="p-4 flex-1">
+                                    <h3 className="text-lg font-bold text-black dark:text-white mb-1 flex items-center justify-between">
+                                        {item.title}
+                                        <item.icon size={16} className="text-gray-400" />
+                                    </h3>
+                                    <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+        </div>
+    </section>
+  );
+};
