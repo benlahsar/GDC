@@ -178,6 +178,33 @@
   }
 }
 
+@keyframes type-reveal {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-typing {
+  0%, 100% {
+    border-color: currentColor;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    border-color: currentColor;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
 @keyframes gdc-flow {
   0% {
     letter-spacing: -0.05em;
@@ -196,6 +223,11 @@
 /* Custom Utility Classes */
 .animate-gdc-flow {
   animation: gdc-flow 8s ease-in-out infinite;
+}
+
+.text-outline-strong {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px currentColor;
 }
 
 .text-stroke-footer {

@@ -75,7 +75,7 @@ export const HeroBento: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full min-h-screen pt-32 md:pt-48 lg:pt-52 pb-10 flex flex-col justify-center overflow-hidden bg-transparent transition-colors duration-500">
+    <section className="relative w-full min-h-screen pt-32 md:pt-48 lg:pt-52 pb-10 flex flex-col justify-center overflow-hidden bg-white dark:bg-black transition-colors duration-500">
       {/* --- Background with Floating Blur (Reduced for Mobile) --- */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div
