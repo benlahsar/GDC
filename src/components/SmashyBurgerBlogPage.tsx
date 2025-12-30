@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useEffect, useState, useRef } from 'react';
 import Matter from 'matter-js';
 import { 
