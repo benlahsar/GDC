@@ -83,6 +83,7 @@ export const SolutionsSection: React.FC = () => {
 
   return (
     <section 
+      id="solutions"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setOpacity(0)}

@@ -1,4 +1,6 @@
 
+"use client"
+
 import React, { useEffect, useState, useRef } from 'react';
 import { 
   Palette, Sparkles, Target, ArrowRight, Zap, MapPin, Award, Eye, Rocket, CheckCircle2,

@@ -1,3 +1,4 @@
+"use client"
 
 import React, { useRef, useState, useEffect } from 'react';
 import { Zap, ShieldCheck, Server, Database, Headset, HeartHandshake, Target, Eye, ChevronRight, Check } from 'lucide-react';

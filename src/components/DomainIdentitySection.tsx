@@ -1,4 +1,6 @@
 
+"use client"
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Target, ShieldCheck, Settings, TrendingUp, CheckCircle2, ChevronRight, Globe } from 'lucide-react';
 

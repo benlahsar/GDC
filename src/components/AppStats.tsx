@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react';
 import { CheckCircle2, Truck, Zap, TrendingUp, ShieldCheck } from 'lucide-react';
 import { AnimatedCounter } from './AnimatedCounter';

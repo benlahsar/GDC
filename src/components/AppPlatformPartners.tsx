@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PARTNERS } from '../constants';
+import { PARTNERS } from '@/lib/constants';
 
 export const AppPlatformPartners: React.FC = () => {
   return (

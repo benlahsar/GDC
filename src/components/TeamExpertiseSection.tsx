@@ -34,6 +34,7 @@ export const TeamExpertiseSection: React.FC = () => {
 
   return (
     <section 
+        id="team"
         ref={sectionRef} 
         className="relative py-24 w-full bg-transparent overflow-hidden"
     >

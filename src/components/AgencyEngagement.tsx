@@ -1,4 +1,6 @@
 
+"use client"
+
 import React, { useRef, useState, useEffect } from 'react';
 import { Sparkles, ArrowRight, Target, Heart, Zap, Award } from 'lucide-react';
 

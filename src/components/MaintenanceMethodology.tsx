@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Target, Search, Map, Activity } from 'lucide-react';
 

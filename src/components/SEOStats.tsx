@@ -1,4 +1,6 @@
 
+"use client"
+
 import React from 'react';
 import { CheckCircle, Clock, TrendingUp, BarChart3, ShieldCheck, Sparkles } from 'lucide-react';
 import { AnimatedCounter } from './AnimatedCounter';

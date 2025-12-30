@@ -1,4 +1,5 @@
 
+"use client"
 import React from 'react';
 import { Award, Target, Zap, Search, MessageSquare, ShieldCheck, Sparkles } from 'lucide-react';
 

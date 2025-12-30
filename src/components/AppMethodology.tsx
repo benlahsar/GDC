@@ -1,3 +1,5 @@
+  "use client"
+
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, ArrowUpRight, Search, PenTool, ShieldCheck, Rocket } from 'lucide-react';
 

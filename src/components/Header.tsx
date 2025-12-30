@@ -150,8 +150,26 @@ export const Header: React.FC = () => {
       return;
     }
 
-    // Navigate using Next.js router
-    router.push(item.href);
+    // Handle hash navigation for same-page sections
+    if (item.href?.startsWith('/#')) {
+      const hash = item.href.substring(1); // Remove the leading /
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else if (window.location.pathname !== '/') {
+        // If not on home page, navigate to home with hash
+        router.push(item.href);
+      }
+    } else if (item.href?.startsWith('#')) {
+      const element = document.getElementById(item.href.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // Navigate using Next.js router for different pages
+      router.push(item.href);
+    }
+
     setMobileMenuOpen(false);
     setHoveredItem(null);
   }, [router]);
@@ -180,11 +198,12 @@ export const Header: React.FC = () => {
   const translatedNav: NavItem[] = useMemo(
     () => [
       { label: t.nav.home || 'Accueil', id: 'home', href: '/' },
-      { label: t.nav.agency || 'Agence', id: 'agency', href: '/#agency' },
-      { label: t.nav.team || 'Équipe', id: 'team', href: '/#team' },
-      { label: t.nav.expertise || 'Expertises', id: 'expertises', href: '/#expertises', hasDropdown: true, isNotPage: true },
-      { label: t.nav.solutions || 'Solutions', id: 'solutions', href: '/#solutions', hasDropdown: true, isNotPage: true },
+      { label: t.nav.agency || 'Agence', id: 'agency', href: '/agency' },
+      { label: t.nav.team || 'Équipe', id: 'team', href: '/team' },
+      { label: t.nav.expertise || 'Expertises', id: 'expertises', href: '#', hasDropdown: true, isNotPage: true },
+      { label: t.nav.solutions || 'Solutions', id: 'solutions', href: '#', hasDropdown: true, isNotPage: true },
       { label: t.nav.portfolio || 'Portfolio', id: 'portfolio', href: '/portfolio', hasDropdown: true },
+      { label: t.nav.blog || 'Blog', id: 'blog', href: '/blog' },
       { label: t.nav.contact || 'Contact', id: 'contact-page', href: '/contact' },
     ],
     [t]

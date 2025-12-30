@@ -1,4 +1,6 @@
 
+"use client"
+
 import React from 'react';
 import { 
   ArrowRight, CheckCircle2, Sparkles, Target, 

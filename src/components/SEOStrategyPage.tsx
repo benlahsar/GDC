@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useRef, useState } from 'react';
 import { 
   Search, TrendingUp, BarChart3, Globe, 

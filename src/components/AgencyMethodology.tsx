@@ -1,4 +1,6 @@
 
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { 
   Target, Search, Map, Activity, 

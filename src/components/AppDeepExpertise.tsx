@@ -1,3 +1,4 @@
+"use client"
 
 import React from 'react';
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap, Target, Activity } from 'lucide-react';

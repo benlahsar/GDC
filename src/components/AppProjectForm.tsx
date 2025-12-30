@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react';
 import { User, Mail, Building2, ChevronDown, Check, ArrowRight, ArrowLeft, Send, MessageSquare, ShieldCheck, DollarSign, Loader2, CheckCircle2, Phone, Sparkles } from 'lucide-react';
 

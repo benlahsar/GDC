@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useState, useRef } from 'react';
 import { Sparkles, ArrowRight, Zap, Target, Rocket, Search, Globe, Layout, Shield, Camera, MessageSquare, Briefcase, Award, Palette, CheckCircle2, ChevronRight, Check, BarChart3, Cpu, Lightbulb, MoveDown } from 'lucide-react';
 import { AnimatedCounter } from './AnimatedCounter';

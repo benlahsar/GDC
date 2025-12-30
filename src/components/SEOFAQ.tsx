@@ -1,3 +1,4 @@
+"use client"
 
 import React, { useState } from 'react';
 import { Plus, Minus, HelpCircle, ArrowUpRight } from 'lucide-react';

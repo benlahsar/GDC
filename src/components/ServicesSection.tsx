@@ -64,7 +64,7 @@ export const ServicesSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full bg-transparent transition-colors duration-500 overflow-hidden">
+    <section id="agency" className="relative w-full bg-transparent transition-colors duration-500 overflow-hidden">
       
       {/* === PREMIUM VIEWFINDER MARQUEE DIVIDER === */}
       <div className="relative z-20 py-8 md:py-14 bg-white/90 dark:bg-[#080808]/90 backdrop-blur-xl border-y border-black/5 dark:border-white/5 group pause-on-hover">

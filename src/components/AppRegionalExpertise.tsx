@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { MapPin, Palmtree, Building2, Landmark, Globe, Sun, ArrowUpRight, Sparkles } from 'lucide-react';
 

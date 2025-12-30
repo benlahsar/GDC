@@ -2,8 +2,8 @@ import { NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Accueil', href: '#', id: 'home' },
-  { label: 'Agence', href: '#agency', id: 'agency' },
-  { label: 'Équipe', href: '#team', id: 'team' },
+  { label: 'Agence', href: '/agency', id: 'agency' },
+  { label: 'Équipe', href: '/team', id: 'team' },
   { 
     label: 'Expertises', 
     href: '#expertises', 
@@ -13,20 +13,20 @@ export const NAV_ITEMS: NavItem[] = [
       { 
         label: 'Création De Site Web', 
         id: 'website-creation',
-        href: '#',
+        href: '/website-creation',
         hasDropdown: true,
         dropdownItems: [
-            { label: 'Sites E-Commerce', id: 'ecommerce', href: '#' },
-            { label: 'Noms de Domaine', id: 'domain-name', href: '#' },
-            { label: 'Hébergement Web', id: 'hosting', href: '#' },
-            { label: 'Maintenance Web', id: 'maintenance', href: '#' }
+            { label: 'Sites E-Commerce', id: 'ecommerce', href: '/ecommerce' },
+            { label: 'Noms de Domaine', id: 'domain-name', href: '/domain-name' },
+            { label: 'Hébergement Web', id: 'hosting', href: '/hosting' },
+            { label: 'Maintenance Web', id: 'maintenance', href: '/maintenance' }
         ]
       },
-      { label: 'Référencement naturel', id: 'seo', href: '#' },
-      { label: 'Sea & Smo', id: 'ads', href: '#' },
-      { label: 'création d’application', id: 'application-creation', href: '#' },
-      { label: 'Identité Visuelle', id: 'visual-identity', href: '#' },
-      { label: 'Service Technique', id: 'maintenance', href: '#' },
+      { label: 'Référencement naturel', id: 'seo', href: '/seo' },
+      { label: 'Sea & Smo', id: 'ads', href: '/contact' },
+      { label: 'création d\'application', id: 'application-creation', href: '/app-creation' },
+      { label: 'Identité Visuelle', id: 'visual-identity', href: '/visual-identity' },
+      { label: 'Service Technique', id: 'maintenance', href: '/maintenance' },
     ]
   },
   { 
@@ -35,8 +35,8 @@ export const NAV_ITEMS: NavItem[] = [
     id: 'solutions',
     hasDropdown: true,
     dropdownItems: [
-      { label: 'Pack SiteWeb', id: 'pack-siteweb', href: '#' },
-      { label: 'Pack SEO', id: 'pack-seo', href: '#' }
+      { label: 'Pack SiteWeb', id: 'pack-siteweb', href: '/pack-siteweb' },
+      { label: 'Pack SEO', id: 'pack-seo', href: '/pack-seo' }
     ]
   },
   { 
@@ -48,11 +48,13 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Majorelle Centre Affaires', id: 'proj-majorelle', href: 'https://majorelle-centreaffaires.com/' },
       { label: 'MM Réseaux Com', id: 'proj-mm', href: 'https://mm-reseauxcom.com/' },
       { label: 'Compagnons en Bâtiment', id: 'proj-batiment', href: 'https://group-descompagnonsenbatiment.com/' },
-      { label: 'Location Centre d’appel', id: 'proj-location', href: 'https://location-centredappel.com/' },
+      { label: 'Location Centre d\'appel', id: 'proj-location', href: 'https://location-centredappel.com/' },
       { label: 'Group Plancy Call', id: 'proj-plancy', href: 'https://group-plancycall.com/' },
     ]
   },
-  { label: 'Contact', href: '#contact-page', id: 'contact-page' },
+  { label: 'Blog', href: '/blog', id: 'blog' },
+  { label: 'À Propos', href: '/about', id: 'about' },
+  { label: 'Contact', href: '/contact', id: 'contact-page' },
 ];
 
 export const AGENCY_INFO = {
