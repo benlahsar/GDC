@@ -1,4 +1,4 @@
-
+"use client"
 import React, { useEffect, useState } from 'react';
 import { 
   Sparkles, Camera, Map, Globe, ArrowRight, Quote, 

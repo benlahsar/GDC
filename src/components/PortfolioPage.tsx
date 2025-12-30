@@ -20,7 +20,7 @@ const PROJECTS = [
     services: ["Web", "SEO"],
     impact: "+150% Leads",
     logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144006.802.png",
-    url: "https://majorelle-centreaffaires.com/",
+    url: "/blog/majorelle-centre-affaires",
     slug: "majorelle-blog",
     accent: "from-blue-600/20 to-indigo-900/20",
     size: "lg:col-span-4 lg:row-span-1",
@@ -36,7 +36,7 @@ const PROJECTS = [
     services: ["Identité", "Social"],
     impact: "Icône Luxe",
     logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Generated-Image-December-22-2025-10_22AM.jpeg",
-    url: "#",
+    url: "/blog/smashy-burger",
     slug: "smashy-burger-blog",
     accent: "from-amber-500/20 to-yellow-900/20",
     size: "lg:col-span-4 lg:row-span-1",
@@ -52,7 +52,7 @@ const PROJECTS = [
     services: ["Contenu", "Vidéo"],
     impact: "Viral",
     logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-97.png",
-    url: "#",
+    url: "/come-with-us",
     slug: "come-with-us",
     accent: "from-brand-red/20 to-red-900/20",
     size: "lg:col-span-4 lg:row-span-1",
@@ -149,7 +149,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
     if (project.slug && onNavigate) {
       onNavigate(project.slug);
     } else if (project.url !== "#") {
-      window.open(project.url, '_blank', 'noopener,noreferrer');
+      window.open(project.url, '_self', 'noopener,noreferrer');
     }
   };
 

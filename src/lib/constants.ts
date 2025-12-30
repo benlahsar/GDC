@@ -23,10 +23,9 @@ export const NAV_ITEMS: NavItem[] = [
         ]
       },
       { label: 'Référencement naturel', id: 'seo', href: '/seo' },
-      { label: 'Sea & Smo', id: 'ads', href: '/contact' },
+      { label: 'Sea & Smo', id: 'ads', href: '/sea-smo' },
       { label: 'création d\'application', id: 'application-creation', href: '/app-creation' },
       { label: 'Identité Visuelle', id: 'visual-identity', href: '/visual-identity' },
-      { label: 'Service Technique', id: 'maintenance', href: '/maintenance' },
     ]
   },
   { 
