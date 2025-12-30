@@ -9,7 +9,6 @@
 }
 
 @layer utilities {
-
   /* Custom scrollbar */
   .scrollbar-brand {
     scrollbar-width: thin;
@@ -44,22 +43,22 @@
   --color-brand-dark: #050505;
   --color-brand-white: #FFFFFF;
 
-  /* Font Family */
-  --font-family-sans: 'Outfit', sans-serif;
+  /* Font Family - Outfit with serif fallback */
+  --font-family-sans: var(--font-outfit), serif;
 
   /* Custom Animations */
   --animate-scroll: scroll 80s linear infinite;
   --animate-blob: blob 10s infinite;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  --animate-enter-left: enterLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-enter-right: enterRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-enter-bottom: enterBottom 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-enter-zoom: enterZoom 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-enter-left: enterLeft 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-enter-right: enterRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-enter-bottom: enterBottom 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-enter-zoom: enterZoom 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-fade-in-up: fadeInUp 0.4s ease-out forwards;
   --animate-marquee-up: marqueeUp 60s linear infinite;
   --animate-marquee-down: marqueeDown 60s linear infinite;
-  --animate-float-custom: float 6s ease-in-out infinite;
-  --animate-pulse-slow: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-shine: shine 1.5s ease-in-out infinite;
   --ease-custom-bezier: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -68,12 +67,9 @@
 
 /* Keyframes */
 @keyframes float {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-10px);
   }
@@ -83,7 +79,6 @@
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
@@ -93,7 +88,6 @@
   0% {
     transform: translateY(0);
   }
-
   100% {
     transform: translateY(-50%);
   }
@@ -103,7 +97,6 @@
   0% {
     transform: translateY(-50%);
   }
-
   100% {
     transform: translateY(0);
   }
@@ -113,26 +106,28 @@
   0% {
     transform: translate(0px, 0px) scale(1);
   }
-
   33% {
     transform: translate(30px, -50px) scale(1.1);
   }
-
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
-
   100% {
     transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }
 
 @keyframes enterLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-40px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -142,9 +137,8 @@
 @keyframes enterRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(40px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -154,9 +148,8 @@
 @keyframes enterBottom {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(30px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -166,9 +159,8 @@
 @keyframes enterZoom {
   0% {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
-
   100% {
     opacity: 1;
     transform: scale(1);
@@ -180,7 +172,6 @@
     opacity: 0;
     transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -192,12 +183,10 @@
     letter-spacing: -0.05em;
     font-weight: 800;
   }
-
   50% {
     letter-spacing: 0.05em;
     font-weight: 900;
   }
-
   100% {
     letter-spacing: -0.05em;
     font-weight: 800;
@@ -205,7 +194,6 @@
 }
 
 /* Custom Utility Classes */
-
 .animate-gdc-flow {
   animation: gdc-flow 8s ease-in-out infinite;
 }
@@ -237,55 +225,6 @@
   transform-origin: bottom left;
 }
 
-/* Brand Colors */
-.bg-brand-red {
-  background-color: var(--color-brand-red);
-}
-
-.bg-brand-black {
-  background-color: var(--color-brand-black);
-}
-
-.bg-brand-dark {
-  background-color: var(--color-brand-dark);
-}
-
-.bg-brand-white {
-  background-color: var(--color-brand-white);
-}
-
-.text-brand-red {
-  color: var(--color-brand-red);
-}
-
-.text-brand-black {
-  color: var(--color-brand-black);
-}
-
-.text-brand-dark {
-  color: var(--color-brand-dark);
-}
-
-.text-brand-white {
-  color: var(--color-brand-white);
-}
-
-.border-brand-red {
-  border-color: var(--color-brand-red);
-}
-
-.border-brand-black {
-  border-color: var(--color-brand-black);
-}
-
-.border-brand-dark {
-  border-color: var(--color-brand-dark);
-}
-
-.border-brand-white {
-  border-color: var(--color-brand-white);
-}
-
 /* Background Patterns */
 .bg-grid-pattern {
   background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
@@ -295,47 +234,6 @@
 
 .bg-gradient-radial {
   background-image: radial-gradient(var(--tw-gradient-stops));
-}
-
-/* Animation Utilities */
-.animate-scroll {
-  animation: scroll 80s linear infinite;
-}
-
-.animate-blob {
-  animation: blob 10s infinite;
-}
-
-.animate-pulse-slow {
-  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-.animate-enter-left {
-  animation: enterLeft 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-enter-right {
-  animation: enterRight 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-enter-bottom {
-  animation: enterBottom 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-enter-zoom {
-  animation: enterZoom 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-.animate-marquee-up {
-  animation: marqueeUp 60s linear infinite;
-}
-
-.animate-marquee-down {
-  animation: marqueeDown 60s linear infinite;
 }
 
 /* Animation Delays */
