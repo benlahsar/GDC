@@ -203,7 +203,6 @@ export const Header: React.FC = () => {
       { label: t.nav.expertise || 'Expertises', id: 'expertises', href: '#', hasDropdown: true, isNotPage: true },
       { label: t.nav.solutions || 'Solutions', id: 'solutions', href: '#', hasDropdown: true, isNotPage: true },
       { label: t.nav.portfolio || 'Portfolio', id: 'portfolio', href: '/portfolio', hasDropdown: true },
-      { label: t.nav.blog || 'Blog', id: 'blog', href: '/blog' },
       { label: t.nav.contact || 'Contact', id: 'contact-page', href: '/contact' },
     ],
     [t]
