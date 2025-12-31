@@ -267,7 +267,7 @@ export const HeroBento: React.FC = () => {
               >
                 <button
                   onClick={() => router.push("/contact-page")}
-                  className="btn-liquid px-10 py-5 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-3 shadow-2xl hover:scale-105 transition-all"
+                  className="btn-liquid px-10 py-5 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-3 shadow-2xl hover:scale-105 transition-all bg-black dark:bg-white text-white dark:text-black"
                 >
                   <span className="relative z-10">{t.hero.cta}</span>
                   <ArrowRight
