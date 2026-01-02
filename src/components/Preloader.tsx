@@ -1,154 +1,200 @@
-
-import React, { useEffect, useState, useRef } from 'react';
-import { Zap } from 'lucide-react';
+"use client";
+import React, { useEffect, useState } from "react";
 
 interface PreloaderProps {
   onComplete: () => void;
 }
 
 export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
-  const [count, setCount] = useState(0);
   const [isExiting, setIsExiting] = useState(false);
-  const [shutterOpen, setShutterOpen] = useState(false);
-  const [loadingText, setLoadingText] = useState("INITIALISATION");
-  
-  // Ref for animation frame to ensure we can cancel it if needed
-  const requestRef = useRef<number>(0);
-  const startTimeRef = useRef<number | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [progress, setProgress] = useState(0);
 
-  // Configuration
-  const DURATION = 2200; // 2.2 seconds total load time for premium feel
+  // Initialize theme directly from localStorage to prevent flash of wrong theme on refresh
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("theme");
+      return stored === "light" ? "light" : "dark";
+    }
+    return "dark";
+  });
 
   useEffect(() => {
-    const animate = (time: number) => {
-      if (!startTimeRef.current) startTimeRef.current = time;
-      const timeFraction = (time - startTimeRef.current) / DURATION;
-      
-      // Easing function: EaseOutQuart (starts fast, slows down smoothly)
-      // 1 - (1 - x)^4
-      const progress = Math.min(1 - Math.pow(1 - timeFraction, 4), 1);
-      
-      const currentCount = Math.floor(progress * 100);
-      setCount(currentCount);
+    // Initial reveal
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 100);
 
-      // Update French text based on progress
-      if (currentCount < 30) setLoadingText("INITIALISATION DU SYSTÈME");
-      else if (currentCount < 60) setLoadingText("CHARGEMENT DES RESSOURCES");
-      else if (currentCount < 90) setLoadingText("OPTIMISATION DE L'INTERFACE");
-      else setLoadingText("ACCÈS AUTORISÉ");
+    // Smooth asymptotic progress
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) return 100;
+        const remaining = 100 - prev;
+        return prev + remaining * 0.04;
+      });
+    }, 30);
 
-      if (timeFraction < 1) {
-        requestRef.current = requestAnimationFrame(animate);
-      } else {
-        // Animation Complete
-        setCount(100);
-        triggerExit();
-      }
+    // Exit sequence
+    const exitTimer = setTimeout(() => {
+      setProgress(100);
+      setTimeout(() => {
+        setIsExiting(true);
+        setTimeout(onComplete, 1200);
+      }, 400);
+    }, 2800);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(exitTimer);
+      clearInterval(interval);
     };
-
-    requestRef.current = requestAnimationFrame(animate);
-
-    return () => cancelAnimationFrame(requestRef.current);
-  }, []);
-
-  const triggerExit = () => {
-    // Small delay at 100% to let the user see "100"
-    setTimeout(() => {
-        setIsExiting(true); // Trigger Zoom/Fade of content
-        
-        setTimeout(() => {
-            setShutterOpen(true); // Open the curtains
-            
-            // Unmount component after curtains are fully open
-            setTimeout(onComplete, 800); 
-        }, 400); 
-    }, 200);
-  };
+  }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center overflow-hidden pointer-events-none cursor-wait">
-        
-        {/* --- TOP SHUTTER --- */}
-        <div 
-            className={`
-                absolute top-0 left-0 w-full h-1/2 bg-[#020202] z-20 
-                transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)]
-                will-change-transform
-                ${shutterOpen ? '-translate-y-full' : 'translate-y-0'}
-            `}
-        >
-             {/* Bottom border line of top shutter */}
-             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10"></div>
+    <div
+      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-all duration-1000 ease-[cubic-bezier(0.85,0,0.15,1)] ${
+        theme === "dark" ? "bg-[#000000]" : "bg-[#F4F4F5]"
+      } ${
+        isExiting
+          ? "opacity-0 scale-[1.08] pointer-events-none"
+          : "opacity-100 scale-100"
+      } `}
+      aria-hidden="true"
+    >
+      {/* Dynamic Brand Ambient Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] rounded-full blur-[160px] animate-pulse-red ${
+            theme === "dark" ? "bg-brand-red/[0.04]" : "bg-brand-red/[0.03]"
+          }`}
+        ></div>
+        <div
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rounded-full blur-[140px] animate-pulse-cyan ${
+            theme === "dark" ? "bg-cyan-500/[0.03]" : "bg-cyan-500/[0.02]"
+          }`}
+          style={{ animationDelay: "-3s" }}
+        ></div>
+        <div
+          className={`absolute inset-0 bg-noise opacity-[0.03] mix-blend-overlay ${
+            theme === "light" ? "invert brightness-150" : ""
+          }`}
+        ></div>
+      </div>
+
+      {/* Hero Logo with Chromatic Aura */}
+      <div
+        className={`relative z-10 transition-all duration-[1500ms] ease-out ${
+          isLoaded ? "opacity-100 scale-100" : "opacity-0 scale-[0.8]"
+        }`}
+      >
+        <div className="relative flex flex-col items-center">
+          {/* Animated Aura cycling Red, Cyan, White */}
+          <div
+            className={`absolute inset-0 rounded-full blur-3xl animate-brand-aura ${
+              theme === "dark" ? "opacity-40" : "opacity-25"
+            }`}
+          ></div>
+
+          {/* Massive Logo Container */}
+          <div className="relative w-48 h-48 md:w-72 md:h-72 flex items-center justify-center">
+            {/* Subtle rotating ring */}
+            <div
+              className={`absolute inset-[-15%] rounded-full border border-t-brand-red/30 border-b-cyan-400/30 animate-spin-slow ${
+                theme === "dark" ? "border-white/[0.05]" : "border-black/[0.05]"
+              }`}
+            ></div>
+
+            <img
+              src="https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
+              alt="GDC Logo"
+              className={`w-full h-auto object-contain transition-all duration-700 animate-chromatic-drift ${
+                theme === "dark"
+                  ? "drop-shadow-[0_0_50px_rgba(255,255,255,0.1)]"
+                  : "drop-shadow-[0_20px_45px_rgba(0,0,0,0.1)]"
+              }`}
+            />
+          </div>
         </div>
+      </div>
 
-        {/* --- BOTTOM SHUTTER --- */}
-        <div 
-            className={`
-                absolute bottom-0 left-0 w-full h-1/2 bg-[#020202] z-20
-                transition-transform duration-[800ms] ease-[cubic-bezier(0.76,0,0.24,1)]
-                will-change-transform
-                ${shutterOpen ? 'translate-y-full' : 'translate-y-0'}
-            `}
+      {/* Minimalist Architectural Loader (No numbers/text) */}
+      <div
+        className={`absolute bottom-24 w-64 md:w-80 h-[2px] transition-all duration-1000 delay-500 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        } ${theme === "dark" ? "bg-white/[0.04]" : "bg-black/[0.04]"}`}
+      >
+        <div
+          className="h-full relative transition-all duration-300 ease-out overflow-hidden"
+          style={{ width: `${progress}%` }}
         >
-             {/* Top border line of bottom shutter */}
-             <div className="absolute top-0 left-0 w-full h-[1px] bg-white/10"></div>
+          {/* Solid Multi-Color Segment Line (Red, Cyan, White) */}
+          <div className="absolute inset-0 flex">
+            <div className="h-full w-1/3 bg-brand-red"></div>
+            <div className="h-full w-1/3 bg-cyan-400"></div>
+            <div className="h-full w-1/3 bg-white"></div>
+          </div>
+
+          {/* Moving high-light streak */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
         </div>
+      </div>
 
-        {/* --- CONTENT LAYER (Z-30 to sit on top of shutters) --- */}
-        <div 
-            className={`
-                relative z-30 flex flex-col items-center justify-center w-full h-full
-                transition-all duration-500 ease-in
-                ${isExiting ? 'opacity-0 scale-110 blur-sm' : 'opacity-100 scale-100 blur-0'}
-            `}
-        >
-            {/* Top Left Branding */}
-            <div className="absolute top-8 left-8 md:top-12 md:left-12 flex items-center gap-3">
-                <div className="w-2 h-2 bg-brand-red rounded-full animate-pulse"></div>
-                <span className="text-[10px] font-black text-white uppercase tracking-[0.3em]">Agence GDC</span>
-            </div>
+      {/* Minimal Signature Branding */}
+      <div
+        className={`absolute bottom-10 transition-all duration-1000 delay-1000 ${
+          isLoaded ? "opacity-20" : "opacity-0"
+        } ${theme === "dark" ? "text-white" : "text-black"}`}
+      >
+        <span className="text-[10px] font-black uppercase tracking-[1.5em] ml-[1.5em]">
+          GDC
+        </span>
+      </div>
 
-            {/* Top Right Location */}
-            <div className="absolute top-8 right-8 md:top-12 md:right-12">
-                <span className="text-[10px] font-bold text-white/40 uppercase tracking-[0.3em]">Marrakech, MA</span>
-            </div>
-
-            {/* MAIN COUNTER */}
-            <div className="relative">
-                <h1 className="text-[20vw] md:text-[25vh] font-black text-white leading-none tracking-tighter tabular-nums select-none mix-blend-difference">
-                    {count}
-                </h1>
-                <span className="absolute top-4 -right-6 md:top-10 md:-right-12 text-xl md:text-4xl font-black text-brand-red">%</span>
-            </div>
-
-            {/* LOADING TEXT & BAR */}
-            <div className="absolute bottom-12 md:bottom-20 w-full px-8 md:px-20 flex flex-col gap-4">
-                <div className="flex justify-between items-end">
-                    <span className="text-[10px] md:text-xs font-black text-white uppercase tracking-[0.2em] animate-pulse">
-                        {loadingText}
-                    </span>
-                    <span className="text-[10px] font-mono text-brand-red">
-                        v4.0.1
-                    </span>
-                </div>
-                
-                {/* Progress Bar Container */}
-                <div className="w-full h-[2px] bg-white/10 rounded-full overflow-hidden">
-                    <div 
-                        className="h-full bg-brand-red shadow-[0_0_20px_rgba(220,38,38,0.8)] transition-all duration-75 ease-linear"
-                        style={{ width: `${count}%` }}
-                    ></div>
-                </div>
-            </div>
-
-            {/* Background Ambient Glow (Red) - Inside the content layer so it fades out */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] bg-brand-red/[0.04] rounded-full blur-[120px] pointer-events-none"></div>
-            
-            {/* Grain Texture */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.04] mix-blend-overlay pointer-events-none"></div>
-
-        </div>
-
+      <style>{`
+        .bg-noise {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .animate-spin-slow {
+          animation: spin 15s linear infinite;
+        }
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes pulseRed {
+          0%, 100% { opacity: 0.1; transform: translate(-50%, -50%) scale(1); }
+          50% { opacity: 0.3; transform: translate(-50%, -50%) scale(1.1); }
+        }
+        @keyframes pulseCyan {
+          0%, 100% { opacity: 0.1; transform: translate(-50%, -50%) scale(1.1); }
+          50% { opacity: 0.25; transform: translate(-50%, -50%) scale(0.9); }
+        }
+        @keyframes brandAura {
+          0% { background: #FF0000; filter: blur(40px); transform: scale(1); }
+          33% { background: #00FFFF; filter: blur(60px); transform: scale(1.2); }
+          66% { background: #FFFFFF; filter: blur(40px); transform: scale(1); }
+          100% { background: #FF0000; filter: blur(40px); transform: scale(1); }
+        }
+        .animate-brand-aura {
+          animation: brandAura 10s infinite ease-in-out;
+        }
+        @keyframes chromaticDrift {
+          0%, 100% { transform: translate(0, 0); }
+          25% { transform: translate(3px, -3px); }
+          50% { transform: translate(-3px, 3px); }
+          75% { transform: translate(-3px, -3px); }
+        }
+        .animate-chromatic-drift {
+          animation: chromaticDrift 6s infinite linear;
+        }
+        @keyframes shimmer {
+          from { transform: translateX(-100%); }
+          to { transform: translateX(100%); }
+        }
+        .animate-shimmer {
+          animation: shimmer 2s infinite linear;
+        }
+      `}</style>
     </div>
   );
 };

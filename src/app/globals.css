@@ -2,7 +2,8 @@
 
 /* Tailwind v4 Dark Mode Configuration */
 @layer base {
-  * {
+  html, body {
+    font-family: var(--font-outfit), serif;
     scrollbar-width: thin;
     scrollbar-color: var(--color-brand-red) transparent;
   }

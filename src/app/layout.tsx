@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import { Outfit } from "next/font/google";
 import { BackToTop } from "@/components/BackToTop";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import { PreloaderManager } from "@/components/PreloaderManager";
 
 export const metadata: Metadata = {
   title: "GDC",
@@ -26,7 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${outfit.className} antialiased`}>
+      <body className={`${outfit.className} ${outfit.variable} antialiased`}>
+        <PreloaderManager />
         <LanguageProvider>
           <Header />
           {children}
