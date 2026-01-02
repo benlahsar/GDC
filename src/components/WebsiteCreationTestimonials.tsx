@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState, useEffect } from 'react';
 import { Star, Quote, Sparkles, CheckCircle2, Building2, Globe, TrendingUp } from 'lucide-react';
 

@@ -1,4 +1,4 @@
-
+"use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   Sparkles, ShieldCheck, Zap, Check, ChevronDown, 

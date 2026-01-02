@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState, useEffect } from 'react';
 import { Search, PenTool, Check, Sparkles, Zap, ArrowRight, ArrowDown } from 'lucide-react';
 

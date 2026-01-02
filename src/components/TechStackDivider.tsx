@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PARTNERS } from '../constants';
+import { PARTNERS } from '../lib/constants';
 
 export const TechStackDivider: React.FC = () => {
   // Quadruple the array for wider screens and smoother infinite scroll

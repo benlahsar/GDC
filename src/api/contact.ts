@@ -1,5 +1,5 @@
 import express from 'express';
-import mysql from 'mysql2/promise';
+import mysql, { Pool, ResultSetHeader } from 'mysql2/promise';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
@@ -19,17 +19,18 @@ const dbConfig = {
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
 };
+
 const dbName = process.env.DB_NAME || 'gdc_agency';
 
-// Global pool variable
-let pool = null;
+// Global pool variable (EXPLICITLY TYPED)
+let pool: Pool | null = null;
 
 // Initialize Database (Create DB if missing, then Table)
-const initDb = async () => {
+const initDb = async (): Promise<void> => {
   try {
     // 1. Connect to MySQL server (without selecting DB)
     const connection = await mysql.createConnection(dbConfig);
-    
+
     // 2. Create Database if it doesn't exist
     await connection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\``);
     await connection.end();
@@ -40,7 +41,7 @@ const initDb = async () => {
       database: dbName,
       waitForConnections: true,
       connectionLimit: 10,
-      queueLimit: 0
+      queueLimit: 0,
     });
 
     // 4. Create Table if it doesn't exist
@@ -58,48 +59,48 @@ const initDb = async () => {
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
     `;
-    
+
     const poolConnection = await pool.getConnection();
     await poolConnection.query(createTableQuery);
     poolConnection.release();
 
     console.log(`✅ Database '${dbName}' and table 'contact' are ready.`);
-    console.log(`ℹ️ Server configured for DATABASE ONLY (Emails handled via Formspree frontend).`);
   } catch (err) {
-    console.error("❌ Error initializing database:", err);
+    console.error('❌ Error initializing database:', err);
   }
 };
 
 // Run initialization
 initDb();
 
-// API Endpoint to handle form submission (Database Only)
+// API Endpoint to handle form submission
 app.post('/api/contact', async (req, res) => {
   if (!pool) {
-    return res.status(500).json({ success: false, message: 'Database not initialized yet.' });
+    return res
+      .status(500)
+      .json({ success: false, message: 'Database not initialized yet.' });
   }
 
-  const { 
-    name, 
-    email, 
-    fullPhone, 
-    project, 
-    services, 
-    otherService, 
-    budget, 
-    startDate, 
-    description 
+  const {
+    name,
+    email,
+    fullPhone,
+    project,
+    services,
+    otherService,
+    budget,
+    startDate,
+    description,
   } = req.body;
 
-  // Combine selected services and "other" input into one string for DB storage
-  let serviceList = services ? [...services] : [];
+  // Combine selected services
+  const serviceList: string[] = services ? [...services] : [];
   if (otherService) {
     serviceList.push(`Autre: ${otherService}`);
   }
   const servicesString = serviceList.join(', ');
 
   try {
-    // Insert into MySQL
     const query = `
       INSERT INTO contact 
       (name, email, phone, company, services, budget, timeline, description) 
@@ -107,27 +108,34 @@ app.post('/api/contact', async (req, res) => {
     `;
 
     const values = [
-      name, 
-      email, 
-      fullPhone, 
-      project || '', 
-      servicesString, 
-      budget, 
-      startDate, 
-      description || ''
+      name,
+      email,
+      fullPhone,
+      project || '',
+      servicesString,
+      budget,
+      startDate,
+      description || '',
     ];
 
-    const [result] = await pool.execute(query, values);
-    console.log(`📝 New contact saved to DB with ID: ${result.insertId}`);
+    // 🔥 THIS IS THE IMPORTANT FIX 🔥
+    const [result] = await pool.execute<ResultSetHeader>(query, values);
 
-    res.status(201).json({ success: true, message: 'Contact saved to database', id: result.insertId });
+    console.log(`📝 New contact saved with ID: ${result.insertId}`);
 
+    return res.status(201).json({
+      success: true,
+      message: 'Contact saved to database',
+      id: result.insertId,
+    });
   } catch (error) {
     console.error('❌ Server error:', error);
-    res.status(500).json({ success: false, message: 'Internal Database Error' });
+    return res
+      .status(500)
+      .json({ success: false, message: 'Internal Database Error' });
   }
 });
 
 app.listen(port, () => {
-  console.log(`Backend server running at http://localhost:${port}`);
+  console.log(`🚀 Backend server running at http://localhost:${port}`);
 });
