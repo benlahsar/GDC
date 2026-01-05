@@ -66,7 +66,7 @@ export const AGENCY_INFO = {
   description: "Donnez Vie à Vos Ambitions Avec Une Agence Marketing Digital Visionnaire. Des Solutions Stratégiques Appuyées par des Résultats Concrets Pour Vous Accompagner dans le Monde Digital. Rejoignez Nos Clients Satisfaits et Faites Passer Votre Entreprise au Niveau Supérieur.",
   cta: "Lancer le projet",
   ctaTagline: "Dominez votre marché.",
-  logoLight: "https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-21.png",
+  logoLight: "https://group-digitalconcept.com/wp-content/uploads/2026/01/Design-sans-titre-2026-01-05T145147.922.png",
   logoDark: "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-74.png",
   location: "Marrakech, Maroc",
   phone: "+212 5 24 00 00 00",

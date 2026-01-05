@@ -35,7 +35,7 @@ const CITY_EXPERTISE = [
     desc: "Leader en référencement naturel e-commerce à Casablanca, nous optimisons des marketplaces WooCommerce. Nos solutions incluent : optimisation des fiches produits, architecture SEO pour les multi-entrepôts, et intégration avec les ERP marocains. Les sites bénéficient d'une infrastructure technique optimisée pour le SEO au Maroc with un temps de réponse < 0,5s.",
     features: ["Marketplace WooCommerce", "Intégration ERP (SAP)"],
     icon: ShoppingBag,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/360_F_267201056_wcEH6uQ6xu5oNHtY9Hq3YOhDwe1zk1XX.jpg",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/360_F_267201056_wcEH6uQ6xu5oNHtY9Hq3YOhDwe1zk1XX.jpg",
     color: "text-blue-500",
     bg: "bg-blue-500/5"
   },
@@ -45,7 +45,7 @@ const CITY_EXPERTISE = [
     title: "Référencement Naturel Rabat : Stratégies Institutionnelles",
     desc: "Notre approche du référencement naturel institutionnel à Rabat combine sécurité SEO et accessibilité. Nous optimisons les portails gouvernementaux with : balisage sémantique avancé, architecture de contenu adaptée aux recherches citoyennes, et optimisation des pics de trafic. Particularité : réduction de 70% de la charge serveur grâce à notre cache intelligent.",
     icon: Landmark,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/10.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/10.webp",
     color: "text-emerald-500",
     bg: "bg-emerald-500/5"
   },
@@ -55,7 +55,7 @@ const CITY_EXPERTISE = [
     title: "Référencement Naturel Tanger : Stratégies Multilingues pour l'Export",
     desc: "Pour le référencement naturel export à Tanger, nous déployons des stratégies multilingues (FR/AR/EN/ES) with : l'optimisation des calculateurs de droits de douane, le balisage SEO pour les devises internationales, et le référencement géolocalisé vers l'Europe et l'Afrique. Technologie hybride : optimisation WordPress front-office et solutions techniques custom.",
     icon: Container,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
     color: "text-indigo-500",
     bg: "bg-indigo-500/5"
   },
@@ -65,7 +65,7 @@ const CITY_EXPERTISE = [
     title: "Référencement Naturel Agadir : Stratégies Touristiques Performantes",
     desc: "Notre référencement naturel touristique à Agadir mise sur l'optimisation visuelle : vidéos et images optimisées pour le SEO local, cartes interactives with balisage riche, intégration des API météo/marées en SEO. Particularité : stratégie de contenu générant +45% de trafic organique.",
     icon: Sun,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/1.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/1.webp",
     color: "text-amber-500",
     bg: "bg-amber-500/5"
   }
