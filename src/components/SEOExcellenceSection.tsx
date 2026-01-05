@@ -27,7 +27,7 @@ const BENTO_ITEMS = [
     color: "text-brand-red",
     bg: "bg-brand-red/10",
     badge: "Conversion",
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-83.png"
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-83.png"
   },
   {
     title: "SEO Premium pour Institutions",
@@ -37,7 +37,7 @@ const BENTO_ITEMS = [
     color: "text-yellow-500",
     bg: "bg-yellow-500/10",
     badge: "Autorité",
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-84.png"
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-84.png"
   },
   {
     title: "SEO pour Applications Métiers",
