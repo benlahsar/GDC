@@ -243,15 +243,15 @@ export const Header: React.FC = () => {
               src={AGENCY_INFO.logoLight}
               alt={`${AGENCY_INFO.subtitle} Logo`}
               className="h-10 md:h-14 w-auto object-contain block dark:hidden"
-              width={60}
-              height={56}
+              width={120}
+              height={120}
             />
             <Image
               src={AGENCY_INFO.logoDark}
               alt={`${AGENCY_INFO.subtitle} Logo Dark`}
               className="h-10 md:h-14 w-auto object-contain hidden dark:block"
-              width={60}
-              height={56}
+              width={120}
+              height={120}
             />
           </button>
         </div>
