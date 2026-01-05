@@ -67,7 +67,10 @@ export const AGENCY_INFO = {
   cta: "Lancer le projet",
   ctaTagline: "Dominez votre marché.",
   logoLight: "https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-21.png",
-  logoDark: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-74.png"
+  logoDark: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-74.png",
+  location: "Marrakech, Maroc",
+  phone: "+212 5 24 00 00 00",
+  name: "Group Digital Concept"
 };
 
 export const PARTNERS = [

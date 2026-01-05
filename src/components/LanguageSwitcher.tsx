@@ -4,7 +4,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Globe, ChevronDown, Check } from 'lucide-react';
 import { useTranslation } from '../context/LanguageContext';
-import { Language } from '../translations';
+import { Language } from '../lib/translations';
 
 const LANGUAGES = [
   { code: 'ar', name: 'Arabic', flag: '🇸🇦' },
