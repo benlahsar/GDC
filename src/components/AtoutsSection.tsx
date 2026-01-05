@@ -215,7 +215,7 @@ export const AtoutsSection: React.FC = () => {
           >
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.1] dark:opacity-[0.15]">
               <img
-                src="https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
+                src="https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
                 alt="Logo"
                 className="w-[70%] max-w-[400px] h-auto object-contain"
               />
