@@ -105,7 +105,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
             ></div>
 
             <img
-              src="https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
+              src="https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
               alt="GDC Logo"
               className={`w-full h-auto object-contain transition-all duration-700 animate-chromatic-drift ${
                 theme === "dark"
