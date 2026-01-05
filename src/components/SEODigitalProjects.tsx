@@ -7,25 +7,25 @@ const PROJECTS_DATA = [
   {
     id: 1,
     title: "Majorelle Centre D'affaire",
-    logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144006.802.png",
+    logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144006.802.png",
     accent: "from-blue-500/20 to-indigo-500/20"
   },
   {
     id: 2,
     title: "Group Entreprise Des Compagnons En Bâtiments",
-    logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144222.368.png",
+    logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144222.368.png",
     accent: "from-orange-500/20 to-red-500/20"
   },
   {
     id: 3,
     title: "Group Plancy Call",
-    logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144356.680.png",
+    logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144356.680.png",
     accent: "from-brand-red/10 to-pink-600/10"
   },
   {
     id: 4,
     title: "M.M. Réseaux Com",
-    logo: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144735.987.png",
+    logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144735.987.png",
     accent: "from-emerald-500/10 to-teal-500/10"
   }
 ];

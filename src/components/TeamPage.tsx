@@ -30,7 +30,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Drome Ludovic",
     role: "CEO & Founder",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766590955322-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766590955322-scaled.webp",
     category: "executive",
     level: 0,
   },
@@ -38,7 +38,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Mouhsine Makram",
     role: "Responsable Développement",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766582125139-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766582125139-scaled.webp",
     category: "dev",
     level: 1,
   },
@@ -46,7 +46,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Orsino ELGHOUM",
     role: "Responsable Design",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766587028427-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766587028427-scaled.webp",
     category: "design",
     level: 1,
   },
@@ -54,7 +54,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Nizar Benlahsar",
     role: "Développeur Full-Stack",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766581123204-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766581123204-scaled.webp",
     category: "dev",
     level: 2,
   },
@@ -62,7 +62,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Marouane Ait Elouhab",
     role: "Développeur Full-Stack",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766580829355-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766580829355-scaled.webp",
     category: "dev",
     level: 2,
   },
@@ -70,7 +70,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Abd Allah Jben",
     role: "Développeur Front-End",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766585274717-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766585274717-scaled.webp",
     category: "dev",
     level: 2,
   },
@@ -78,7 +78,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Rahim El Habiri",
     role: "UI/UX Designer",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766585583307-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766585583307-scaled.webp",
     category: "design",
     level: 2,
   },
@@ -86,7 +86,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: "Ismail EL Qadiri",
     role: "Brand Identity Designer",
     image:
-      "https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766586638539-scaled.webp",
+      "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766586638539-scaled.webp",
     category: "design",
     level: 2,
   },

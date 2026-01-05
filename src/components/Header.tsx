@@ -240,14 +240,14 @@ export const Header: React.FC = () => {
             aria-label="Accueil"
           >
             <Image
-              src={AGENCY_INFO.logoLight}
+              src="https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
               alt={`${AGENCY_INFO.subtitle} Logo`}
               className="h-10 md:h-14 w-auto object-contain block dark:hidden"
               width={60}
               height={56}
             />
             <Image
-              src={AGENCY_INFO.logoDark}
+              src="https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
               alt={`${AGENCY_INFO.subtitle} Logo Dark`}
               className="h-10 md:h-14 w-auto object-contain hidden dark:block"
               width={60}

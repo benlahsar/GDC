@@ -33,21 +33,21 @@ const CITY_CARDS = [
   {
     city: "Rabat",
     desc: "À Rabat, nous déployons des stratégies SEO premium, en cohérence avec notre expertise en référencement naturel Maroc et référencement naturel Marrakech.",
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/10.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/10.webp",
     icon: Landmark,
     gradient: "from-emerald-600 to-teal-600"
   },
   {
     city: "Tanger",
     desc: "Notre agence à Tanger développe des solutions multilingues, combinant expertise en référencement naturel Maroc et approche internationale.",
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
     icon: Container,
     gradient: "from-violet-600 to-purple-600"
   },
   {
     city: "Agadir",
     desc: "À Agadir, nous optimisons des sites touristiques avec la même qualité que notre référencement naturel Marrakech, adaptés au marché marocain.",
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/1.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/1.webp",
     icon: Sun,
     gradient: "from-yellow-500 to-orange-500"
   }

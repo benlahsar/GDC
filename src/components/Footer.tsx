@@ -59,7 +59,7 @@ const COMPANY_NAME = "Group Digital Concept";
 const COMPANY_EMAIL = "groupdigitalconcept@gmail.com";
 const COMPANY_PHONE = "+212 666 37 03 06";
 const COMPANY_LOCATION = "Plateau Bureau Al Amira III, Guéliz";
-const LOGO_URL = "https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png";
+const LOGO_URL = "https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png";
 
 export const Footer: React.FC = () => {
   const router = useRouter();
