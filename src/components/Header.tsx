@@ -242,14 +242,14 @@ export const Header: React.FC = () => {
             <Image
               src={AGENCY_INFO.logoLight}
               alt={`${AGENCY_INFO.subtitle} Logo`}
-              className="h-30 md:h-32 w-30 object-contain block dark:hidden"
+              className="h-28 md:h-30 w-28 object-contain block dark:hidden"
               width={120}
               height={120}
             />
             <Image
               src={AGENCY_INFO.logoDark}
               alt={`${AGENCY_INFO.subtitle} Logo Dark`}
-              className="h-30 md:h-32 w-30 object-contain hidden dark:block"
+              className="h-28 md:h-30 w-28 object-contain hidden dark:block"
               width={120}
               height={120}
             />
