@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "agency": "Bureau",
+    "team": "Team",
+    "expertise": "Expertise",
+    "solutions": "Oplossingen",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "project": "Project"
+  },
+  "hero": {
+    "subtitle": "Premium Digital Marketing Bureau",
+    "line1": "Experts in",
+    "line2": "Digitalisering",
+    "line3": "en Marketing",
+    "line4": "Innovatief",
+    "description": "Breng uw ambities tot leven.",
+    "cta": "Start Project",
+    "portfolio": "Portfolio"
+  },
+  "ai": {
+    "title": "AI-Strateeg",
+    "placeholder": "Bijv: Riad in Marrakesh...",
+    "button": "Analyseren",
+    "status": "Gemini 3",
+    "newAnalysis": "Nieuw",
+    "prompt": "U bent een strateeg. 3 tips voor:",
+    "hint": "Strategie nodig?",
+    "error": "Verbinding mislukt. Neem contact op voor een handmatige analyse!"
+  },
+  "stats": {
+    "performance": "Prestaties",
+    "growth": "Groei",
+    "satisfaction": "Tevredenheid",
+    "projects": "Projecten",
+    "support": "Support"
+  },
+  "innovation": {
+    "tag": "Toekomstige innovatie",
+    "headline": "Het digitale marketingbureau dat jouw aanwezigheid naar <success>succes</success> brengt.",
+    "description": "Strategische partner voor digitale transformatie in Marrakech. Ontwerp en implementatie van innovatieve oplossingen om zichtbaarheid, reputatie en algehele prestaties te optimaliseren.",
+    "discoverCta": "Ontdek GDC"
+  }
+}

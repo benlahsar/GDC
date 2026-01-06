@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { LanguageProvider } from "@/context/LanguageContext";
 import { Outfit } from "next/font/google";
 import { BackToTop } from "@/components/BackToTop";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { PreloaderManager } from "@/components/PreloaderManager";
+
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 
 export const metadata: Metadata = {
   title: "GDC",
@@ -20,22 +22,28 @@ const outfit = Outfit({
   fallback: ["serif"],
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="fr">
+    <html
+      lang={locale}
+      dir={locale === 'ar' ? 'rtl' : 'ltr'}
+    >
       <body className={`${outfit.className} ${outfit.variable} antialiased`}>
         <PreloaderManager />
-        <LanguageProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
           <Footer />
           <BackToTop />
           <WhatsAppWidget />
-        </LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "agency": "Agence",
+    "team": "Équipe",
+    "expertise": "Expertises",
+    "solutions": "Solutions",
+    "portfolio": "Réalisations",
+    "contact": "Contact",
+    "project": "Projet"
+  },
+  "hero": {
+    "subtitle": "Agence Marketing Digital Premium : La Clé Pour Développer Vos Revenus",
+    "line1": "Experts en",
+    "line2": "Digitalisation",
+    "line3": "et Marketing",
+    "line4": "Innovant",
+    "description": "Donnez Vie à Vos Ambitions Avec Une Agence Marketing Digital Visionnaire. Des Solutions Stratégiques Appuyées par des Résultats Concrets.",
+    "cta": "Lancer le projet",
+    "portfolio": "Nos Réalisations"
+  },
+  "ai": {
+    "title": "Stratège IA",
+    "placeholder": "Ex: Riad à Marrakech, E-commerce...",
+    "button": "Analyser",
+    "status": "Propulsé par Gemini 3",
+    "newAnalysis": "Nouvelle Analyse",
+    "prompt": "Tu es un stratège senior chez GDC. Donne 3 conseils brefs pour:",
+    "hint": "Besoin d'une stratégie ? Indiquez votre secteur d'activité.",
+    "error": "Connexion Hub échouée. Contactez-nous pour une analyse manuelle !"
+  },
+  "stats": {
+    "performance": "Performance",
+    "growth": "Croissance",
+    "satisfaction": "Satisfaction",
+    "projects": "Projets",
+    "support": "Support"
+  },
+  "innovation": {
+    "tag": "Innovation Future",
+    "headline": "L'agence de marketing digital qui propulse votre présence vers le <success>succès</success>.",
+    "description": "Partenaire stratégique dédié à la transformation digitale à Marrakech. Conception et mise en œuvre de solutions innovantes pour optimiser visibilité, notoriété et performance globale.",
+    "discoverCta": "Découvrir GDC"
+  }
+}

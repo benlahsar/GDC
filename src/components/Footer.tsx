@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
 import Image from 'next/image';
 import { 
   Instagram, Facebook, Linkedin, 
@@ -9,7 +9,7 @@ import {
   ArrowUpRight, Heart, Sparkles, X,
   ChevronRight, Clock, ShieldCheck, Zap
 } from 'lucide-react';
-import { useTranslation } from '../context/LanguageContext';
+import { useLocale } from 'next-intl';
 
 interface NavLink {
   label: string;
@@ -63,11 +63,11 @@ const LOGO_URL = "https://group-digitalconcept.com/wp-content/uploads/2024/04/De
 
 export const Footer: React.FC = () => {
   const router = useRouter();
+  const locale = useLocale();
   const [isMapOpen, setIsMapOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [time, setTime] = useState(new Date());
   const [isClient, setIsClient] = useState(false);
-  const { language } = useTranslation();
 
   // Initialize client-side
   useEffect(() => {
@@ -86,7 +86,7 @@ export const Footer: React.FC = () => {
     };
   }, []);
 
-  const marrakechTime = time.toLocaleTimeString('fr-FR', {
+  const marrakechTime = time.toLocaleTimeString(locale, {
     timeZone: 'Africa/Casablanca',
     hour: '2-digit',
     minute: '2-digit',

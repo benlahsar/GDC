@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/i18n/navigation';
 import { flushSync } from 'react-dom';
 import Image from 'next/image';
 import {
@@ -28,7 +28,7 @@ import {
   Plus,
   Minus,
 } from 'lucide-react';
-import { useTranslation } from '../context/LanguageContext';
+import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { AGENCY_INFO, NAV_ITEMS } from '@/lib/constants';
 import { NavItem } from '@/lib/types';
@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
   const [isClient, setIsClient] = useState(false);
-  const { t } = useTranslation();
+  const tNav = useTranslations('nav');
   const headerRef = useRef<HTMLDivElement>(null);
 
   // Initialize client-side
@@ -197,15 +197,15 @@ export const Header: React.FC = () => {
   // Fix: Remove hasMega, use hasDropdown for mega menu as well
   const translatedNav: NavItem[] = useMemo(
     () => [
-      { label: t.nav.home || 'Accueil', id: 'home', href: '/' },
-      { label: t.nav.agency || 'Agence', id: 'agency', href: '/agency' },
-      { label: t.nav.team || 'Équipe', id: 'team', href: '/team' },
-      { label: t.nav.expertise || 'Expertises', id: 'expertises', href: '#', hasDropdown: true, isNotPage: true },
-      { label: t.nav.solutions || 'Solutions', id: 'solutions', href: '#', hasDropdown: true, isNotPage: true },
-      { label: t.nav.portfolio || 'Portfolio', id: 'portfolio', href: '/portfolio', hasDropdown: true },
-      { label: t.nav.contact || 'Contact', id: 'contact-page', href: '/contact' },
+      { label: tNav('home'), id: 'home', href: '/' },
+      { label: tNav('agency'), id: 'agency', href: '/agency' },
+      { label: tNav('team'), id: 'team', href: '/team' },
+      { label: tNav('expertise'), id: 'expertises', href: '#', hasDropdown: true, isNotPage: true },
+      { label: tNav('solutions'), id: 'solutions', href: '#', hasDropdown: true, isNotPage: true },
+      { label: tNav('portfolio'), id: 'portfolio', href: '/portfolio', hasDropdown: true },
+      { label: tNav('contact'), id: 'contact-page', href: '/contact' },
     ],
-    [t]
+    [tNav]
   );
 
   const expertisesItem = useMemo(() => NAV_ITEMS.find((n) => n.id === 'expertises'), []);

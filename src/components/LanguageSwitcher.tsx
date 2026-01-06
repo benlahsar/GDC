@@ -16,7 +16,9 @@ const LANGUAGES = [
 ];
 
 export const LanguageSwitcher: React.FC = () => {
-  const { language, setLanguage } = useTranslation();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 

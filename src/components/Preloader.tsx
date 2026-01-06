@@ -10,14 +10,12 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [progress, setProgress] = useState(0);
 
-  // Initialize theme directly from localStorage to prevent flash of wrong theme on refresh
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("theme");
-      return stored === "light" ? "light" : "dark";
-    }
-    return "dark";
-  });
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    setTheme(stored === "light" ? "light" : "dark");
+  }, []);
 
   useEffect(() => {
     // Initial reveal

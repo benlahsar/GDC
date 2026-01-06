@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Início",
+    "agency": "Agência",
+    "team": "Equipe",
+    "expertise": "Experiência",
+    "solutions": "Soluções",
+    "portfolio": "Portfólio",
+    "contact": "Contato",
+    "project": "Projeto"
+  },
+  "hero": {
+    "subtitle": "Agência de Marketing Digital Premium",
+    "line1": "Especialistas em",
+    "line2": "Digitalização",
+    "line3": "e Marketing",
+    "line4": "Inovador",
+    "description": "Dê vida às suas ambições.",
+    "cta": "Iniciar Projeto",
+    "portfolio": "Portfólio"
+  },
+  "ai": {
+    "title": "Estrategista IA",
+    "placeholder": "Ex: Riad em Marraquexe...",
+    "button": "Analisar",
+    "status": "Gemini 3",
+    "newAnalysis": "Novo",
+    "prompt": "Você é um estrategista. 3 dicas para:",
+    "hint": "Precisa de estratégia?",
+    "error": "Falha na conexão. Fale conosco para uma análise manual!"
+  },
+  "stats": {
+    "performance": "Desempenho",
+    "growth": "Crescimento",
+    "satisfaction": "Satisfação",
+    "projects": "Projetos",
+    "support": "Suporte"
+  },
+  "innovation": {
+    "tag": "Inovação do Futuro",
+    "headline": "A agência de marketing digital que leva sua presença ao <success>sucesso</success>.",
+    "description": "Parceiro estratégico dedicado à transformação digital em Marrakech. Design e implementação de soluções inovadoras para otimizar visibilidade, reputação e desempenho geral.",
+    "discoverCta": "Descobrir GDC"
+  }
+}

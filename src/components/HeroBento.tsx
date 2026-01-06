@@ -20,15 +20,19 @@ import {
 import { BentoCard } from "./BentoCard";
 import { AnimatedCounter } from "./AnimatedCounter";
 import { GoogleGenAI } from "@google/genai";
-import { useTranslation } from "../context/LanguageContext";
-import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from 'next-intl';
+import { useRouter } from '@/i18n/navigation';
 
 export const HeroBento: React.FC = () => {
-  const { t, language } = useTranslation();
+  const locale = useLocale();
+  const tHero = useTranslations('hero');
+  const tAi = useTranslations('ai');
+  const tStats = useTranslations('stats');
+  const tInnovation = useTranslations('innovation');
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
   const CONTENT_DELAY_BASE = 300;
-  const isRTL = language === "ar";
+  const isRTL = locale === "ar";
 
   // AI Strategist State
   const [businessType, setBusinessType] = useState("");
@@ -48,17 +52,23 @@ export const HeroBento: React.FC = () => {
     setAiResponse(null);
 
     try {
+      const aiLanguageName: Record<string, string> = {
+        fr: 'French',
+        en: 'English',
+        ar: 'Arabic',
+        es: 'Spanish',
+        de: 'German',
+        it: 'Italian',
+        pt: 'Portuguese',
+        ru: 'Russian',
+        nl: 'Dutch'
+      };
+
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
-        contents: `${t.ai.prompt} "${businessType}". 
-        Language: ${
-          language === "fr"
-            ? "French"
-            : language === "ar"
-            ? "Arabic"
-            : "English"
-        }.
+        contents: `${tAi('prompt')} "${businessType}". 
+        Language: ${aiLanguageName[locale] || 'English'}.
         Professional and brief (max 60 words).`,
         config: {
           temperature: 0.7,
@@ -68,7 +78,7 @@ export const HeroBento: React.FC = () => {
       setAiResponse(response.text || "Error. Try again.");
     } catch (error) {
       console.error("AI Error:", error);
-      setAiResponse("Hub connection failed. Contact us for manual analysis!");
+      setAiResponse(tAi('error'));
     } finally {
       setIsLoading(false);
     }
@@ -122,7 +132,7 @@ export const HeroBento: React.FC = () => {
               >
                 <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/[0.1] dark:bg-white/[0.05] border border-white/20 backdrop-blur-md shadow-[0_0_30px_-5px_rgba(255,0,0,0.2)]">
                   <span className="text-gray-800 dark:text-gray-200 font-bold tracking-[0.25em] text-[10px] sm:text-xs uppercase">
-                    {t.hero.subtitle}
+                    {tHero('subtitle')}
                   </span>
                 </div>
               </div>
@@ -138,7 +148,7 @@ export const HeroBento: React.FC = () => {
                     }`}
                     aria-hidden="true"
                   >
-                    {t.hero.line1}
+                    {tHero('line1')}
                   </span>
                   {!isMobile && (
                     <span
@@ -151,7 +161,7 @@ export const HeroBento: React.FC = () => {
                           "type-reveal 0.4s steps(10) forwards 0.2s, cursor-typing 0.4s steps(1) 0.2s",
                       }}
                     >
-                      {t.hero.line1}
+                      {tHero('line1')}
                     </span>
                   )}
                 </div>
@@ -166,7 +176,7 @@ export const HeroBento: React.FC = () => {
                     }`}
                     aria-hidden="true"
                   >
-                    {t.hero.line2}
+                    {tHero('line2')}
                   </span>
                   {!isMobile && (
                     <span
@@ -180,7 +190,7 @@ export const HeroBento: React.FC = () => {
                       }}
                     >
                       <span className="relative text-brand-red">
-                        {t.hero.line2}
+                        {tHero('line2')}
                       </span>
                     </span>
                   )}
@@ -196,7 +206,7 @@ export const HeroBento: React.FC = () => {
                     }`}
                     aria-hidden="true"
                   >
-                    {t.hero.line3}
+                    {tHero('line3')}
                   </span>
                   {!isMobile && (
                     <span
@@ -209,7 +219,7 @@ export const HeroBento: React.FC = () => {
                           "type-reveal 0.5s steps(12) forwards 1.2s, cursor-typing 0.5s steps(1) 1.2s",
                       }}
                     >
-                      {t.hero.line3}
+                      {tHero('line3')}
                     </span>
                   )}
                 </div>
@@ -224,7 +234,7 @@ export const HeroBento: React.FC = () => {
                     }`}
                     aria-hidden="true"
                   >
-                    {t.hero.line4}
+                    {tHero('line4')}
                   </span>
                   {!isMobile && (
                     <span
@@ -237,7 +247,7 @@ export const HeroBento: React.FC = () => {
                           "type-reveal 0.4s steps(8) forwards 1.7s, cursor-typing 0.4s steps(1) 1.7s, cursor-blink 1s step-end infinite 2.1s",
                       }}
                     >
-                      <span className="text-brand-red">{t.hero.line4}</span>
+                      <span className="text-brand-red">{tHero('line4')}</span>
                     </span>
                   )}
                 </div>
@@ -256,7 +266,7 @@ export const HeroBento: React.FC = () => {
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 1500}ms` }}
               >
-                {t.hero.description}
+                {tHero('description')}
               </p>
 
               <div
@@ -269,7 +279,7 @@ export const HeroBento: React.FC = () => {
                   onClick={() => router.push("/contact-page")}
                   className="btn-liquid px-10 py-5 rounded-2xl font-black text-xs md:text-sm uppercase tracking-[0.2em] flex items-center justify-center gap-3 shadow-2xl hover:scale-105 transition-all bg-black dark:bg-white text-white dark:text-black"
                 >
-                  <span className="relative z-10">{t.hero.cta}</span>
+                  <span className="relative z-10">{tHero('cta')}</span>
                   <ArrowRight
                     className={`relative z-10 w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 ${
                       isRTL ? "rotate-180" : ""
@@ -281,7 +291,7 @@ export const HeroBento: React.FC = () => {
                   onClick={() => router.push("/portfolio")}
                   className="group px-10 py-5 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-gray-900 dark:text-white font-bold rounded-2xl hover:bg-black/10 dark:hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-3 text-xs md:text-sm uppercase tracking-[0.2em] backdrop-blur-md shadow-xl"
                 >
-                  <span>{t.hero.portfolio}</span>
+                  <span>{tHero('portfolio')}</span>
                   <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 text-brand-red" />
                 </button>
               </div>
@@ -309,7 +319,7 @@ export const HeroBento: React.FC = () => {
                   }`}
                 >
                   <BarChart3 className="text-brand-red" size={16} />{" "}
-                  {t.stats.performance}
+                  {tStats('performance')}
                 </h3>
                 <div className="flex items-center gap-2 px-3 py-1 bg-emerald-500/10 rounded-full border border-emerald-500/20">
                   <span className="relative flex h-2 w-2">
@@ -347,7 +357,7 @@ export const HeroBento: React.FC = () => {
                       className="block text-3xl font-black text-black dark:text-white tracking-tighter"
                     />
                     <p className="text-[9px] font-black uppercase tracking-widest text-gray-500 mt-1">
-                      {t.stats.growth}
+                      {tStats('growth')}
                     </p>
                   </div>
                 </div>
@@ -368,7 +378,7 @@ export const HeroBento: React.FC = () => {
                       className="block text-3xl font-black text-black dark:text-white tracking-tighter"
                     />
                     <p className="text-[9px] font-black uppercase tracking-widest text-gray-500 mt-1">
-                      {t.stats.satisfaction}
+                      {tStats('satisfaction')}
                     </p>
                   </div>
                 </div>
@@ -389,7 +399,7 @@ export const HeroBento: React.FC = () => {
                       className="block text-3xl font-black text-black dark:text-white tracking-tighter"
                     />
                     <p className="text-[9px] font-black uppercase tracking-widest text-gray-500 mt-1">
-                      {t.stats.projects}
+                      {tStats('projects')}
                     </p>
                   </div>
                 </div>
@@ -407,7 +417,7 @@ export const HeroBento: React.FC = () => {
                       24/7
                     </span>
                     <p className="text-[9px] font-black uppercase tracking-widest text-gray-500 mt-1">
-                      {t.stats.support}
+                      {tStats('support')}
                     </p>
                   </div>
                 </div>
@@ -441,7 +451,7 @@ export const HeroBento: React.FC = () => {
                     }`}
                     size={16}
                   />{" "}
-                  {t.ai.title}
+                  {tAi('title')}
                 </h3>
                 <Sparkles
                   size={14}
@@ -459,7 +469,7 @@ export const HeroBento: React.FC = () => {
                   style={{ animationDelay: `${CONTENT_DELAY_BASE + 500}ms` }}
                 >
                   <p className="text-xs font-bold text-black dark:text-white mb-2 leading-relaxed">
-                    {t.ai.hint}
+                    {tAi('hint')}
                   </p>
                   <div className="relative group/input">
                     <input
@@ -469,7 +479,7 @@ export const HeroBento: React.FC = () => {
                       onKeyDown={(e) =>
                         e.key === "Enter" && generateAIStrategy()
                       }
-                      placeholder={t.ai.placeholder}
+                      placeholder={tAi('placeholder')}
                       className={`w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl py-4 px-5 text-sm focus:outline-none focus:border-brand-red transition-all ${
                         isRTL ? "text-right" : ""
                       }`}
@@ -489,7 +499,7 @@ export const HeroBento: React.FC = () => {
                     </button>
                   </div>
                   <p className="text-[9px] text-gray-500 uppercase font-black tracking-widest mt-auto">
-                    {t.ai.status}
+                    {tAi('status')}
                   </p>
                 </div>
               ) : (
@@ -517,7 +527,7 @@ export const HeroBento: React.FC = () => {
                     }}
                     className="w-full py-3 rounded-xl border border-brand-red/30 text-brand-red text-[10px] font-black uppercase tracking-widest hover:bg-brand-red hover:text-white transition-all"
                   >
-                    {t.ai.newAnalysis}
+                    {tAi('newAnalysis')}
                   </button>
                 </div>
               )}
@@ -594,35 +604,21 @@ export const HeroBento: React.FC = () => {
                 >
                   <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 text-[10px] font-black uppercase tracking-widest">
                     <Zap size={12} fill="currentColor" />{" "}
-                    {language === "fr"
-                      ? "Innovation Future"
-                      : language === "ar"
-                      ? "ابتكار مستقبلي"
-                      : "Future Innovation"}
+                    {tInnovation('tag')}
                   </div>
 
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-black dark:text-white tracking-tight leading-none">
-                    {language === "fr"
-                      ? "L'agence de marketing digital qui propulse votre présence vers le"
-                      : language === "ar"
-                      ? "وكالة التسويق الرقمي التي تدفع حضورك نحو"
-                      : "The digital marketing agency that propels your presence towards"}{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-white">
-                      {language === "fr"
-                        ? "succès"
-                        : language === "ar"
-                        ? "النجاح"
-                        : "success"}
-                    </span>
-                    .
+                    {tInnovation.rich('headline', {
+                      success: (chunks) => (
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-white">
+                          {chunks}
+                        </span>
+                      )
+                    })}
                   </h3>
 
                   <p className="text-gray-700 dark:text-gray-400 text-base md:text-lg font-medium leading-relaxed max-w-4xl">
-                    {language === "fr"
-                      ? "Partenaire stratégique dédié à la transformation digitale à Marrakech. Conception et mise en œuvre de solutions innovantes pour optimiser visibilité, notoriété et performance globale."
-                      : language === "ar"
-                      ? "شريك استراتيجي مخصص للتحول الرقمي في مراكش. تصميم وتنفيذ حلول مبتكرة لتحسين الرؤية والسمعة والأداء العام."
-                      : "Strategic partner dedicated to digital transformation in Marrakech. Design and implementation of innovative solutions to optimize visibility, reputation and overall performance."}
+                    {tInnovation('description')}
                   </p>
                 </div>
               </div>
@@ -640,11 +636,7 @@ export const HeroBento: React.FC = () => {
                   }`}
                 >
                   <span className="relative z-10 flex items-center gap-4 text-xs md:text-sm">
-                    {language === "fr"
-                      ? "Découvrir GDC"
-                      : language === "ar"
-                      ? "اكتشف GDC"
-                      : "Discover GDC"}{" "}
+                    {tInnovation('discoverCta')}{" "}
                     <ArrowRight
                       size={20}
                       className={`transition-transform ${
