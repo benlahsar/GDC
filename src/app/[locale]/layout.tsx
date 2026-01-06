@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Outfit } from "next/font/google";
 import { BackToTop } from "@/components/BackToTop";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { PreloaderManager } from "@/components/PreloaderManager";
-
 import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: "GDC",
@@ -22,12 +23,26 @@ const outfit = Outfit({
   fallback: ["serif"],
 });
 
-export default async function RootLayout({
+// Generate static params for all locales
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
-  const locale = await getLocale();
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  // Providing all messages to the client side
   const messages = await getMessages();
 
   return (
@@ -37,7 +52,7 @@ export default async function RootLayout({
     >
       <body className={`${outfit.className} ${outfit.variable} antialiased`}>
         <PreloaderManager />
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
           <Footer />
