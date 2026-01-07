@@ -67,11 +67,10 @@ export const TeamExpertiseSection: React.FC = () => {
                     rounded-[40px] p-10 md:p-14
                     flex flex-col justify-between min-h-[420px]
                     transition-all duration-700 ease-out
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-8"
-                    }
+                    ${isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+              }
                     bg-white dark:bg-[#0A0A0A]
                     border border-black/5 dark:border-white/10
                     shadow-xl hover:shadow-2xl
@@ -91,21 +90,15 @@ export const TeamExpertiseSection: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/5 dark:bg-white/10 border border-black/5 dark:border-white/5 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-600 dark:text-gray-300">
-                  Notre ADN
+                  {tTeam("notreAdn")}
                 </span>
               </div>
             </div>
 
             {/* Title */}
-            <h2 className="relative z-10 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tighter text-black dark:text-white mt-auto">
-              Équipe de <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-black dark:from-gray-400 dark:to-white">
-                Professionnels
-              </span>{" "}
-              <br />
-              Digitaux <br />
-              Dévoués
-            </h2>
+            <h2 className="relative z-10 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tighter text-black dark:text-white mt-auto"
+              dangerouslySetInnerHTML={{ __html: tTeam.raw("title").replace("<highlight>", '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-black dark:from-gray-400 dark:to-white">').replace("</highlight>", '</span>') }}
+            />
           </div>
 
           {/* =========================================================
@@ -118,11 +111,10 @@ export const TeamExpertiseSection: React.FC = () => {
                     rounded-[40px] p-10 md:p-12
                     flex flex-col justify-between min-h-[420px]
                     transition-all duration-700 ease-out delay-100
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-8"
-                    }
+                    ${isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+              }
                     bg-gradient-to-br from-[#2a0505] via-[#1a0000] to-black
                     border border-red-900/30
                     shadow-2xl shadow-red-900/20
@@ -130,7 +122,7 @@ export const TeamExpertiseSection: React.FC = () => {
           >
             <div className="flex justify-between items-start relative z-10">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-red-200/70 border-b border-red-500/30 pb-2">
-                Expertise
+                {tTeam("expertise.tag")}
               </span>
               <ArrowUpRight className="text-brand-red w-8 h-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </div>
@@ -147,8 +139,7 @@ export const TeamExpertiseSection: React.FC = () => {
                 <div className="h-full bg-brand-red w-[92%] shadow-[0_0_20px_rgba(255,0,0,0.5)]"></div>
               </div>
               <p className="text-gray-400 text-base font-medium leading-relaxed max-w-xs">
-                Maîtrise technique et stratégique avancée pour des résultats
-                supérieurs.
+                {tTeam("expertise.desc")}
               </p>
             </div>
 
@@ -167,11 +158,10 @@ export const TeamExpertiseSection: React.FC = () => {
                     rounded-[40px] p-10 md:p-14
                     flex flex-col justify-center gap-8 min-h-[380px]
                     transition-all duration-700 ease-out delay-200
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-8"
-                    }
+                    ${isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+              }
                     bg-black dark:bg-white
                     text-white dark:text-black
                     shadow-2xl
@@ -179,14 +169,12 @@ export const TeamExpertiseSection: React.FC = () => {
           >
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-6">
-                <span className="text-brand-red">Group Digital Concept</span>{" "}
-                transforme vos ambitions en réalité digitale.
+                {tTeam.rich("vision.title", {
+                  highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
+                })}
               </h3>
               <p className="text-gray-400 dark:text-gray-600 text-xl leading-relaxed mb-8 max-w-2xl">
-                Nous accompagnons nos clients dans leur transformation numérique
-                avec des solutions sur mesure et innovantes. Notre approche
-                combine créativité, technologie et stratégie pour des résultats
-                concrets.
+                {tTeam("vision.desc")}
               </p>
 
               <button
@@ -200,7 +188,7 @@ export const TeamExpertiseSection: React.FC = () => {
                   />
                 </div>
                 <span className="font-black uppercase tracking-widest text-sm">
-                  Contactez-nous
+                  {tTeam("vision.cta")}
                 </span>
               </button>
             </div>
@@ -220,18 +208,17 @@ export const TeamExpertiseSection: React.FC = () => {
                     rounded-[40px] p-10 md:p-12
                     flex flex-col justify-between min-h-[380px]
                     transition-all duration-700 ease-out delay-300
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-8"
-                    }
+                    ${isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+              }
                     bg-[#F5F5F7] dark:bg-[#121212]
                     border border-black/5 dark:border-white/5
                 `}
           >
             <div className="flex justify-between items-start relative z-10">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 border-b border-gray-500/20 pb-2">
-                Réussite
+                {tTeam("success.tag")}
               </span>
               <div className="w-3 h-3 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)] animate-pulse"></div>
             </div>
@@ -246,8 +233,7 @@ export const TeamExpertiseSection: React.FC = () => {
                 <div className="h-full bg-gradient-to-r from-emerald-500 to-emerald-300 w-[89%] shadow-[0_0_15px_rgba(16,185,129,0.4)]"></div>
               </div>
               <p className="text-gray-500 dark:text-gray-400 text-base font-medium leading-relaxed">
-                Projets livrés avec un impact mesurable et une satisfaction
-                client maximale.
+                {tTeam("success.desc")}
               </p>
             </div>
           </div>
@@ -256,7 +242,9 @@ export const TeamExpertiseSection: React.FC = () => {
         <div className="mt-16">
           <span className="text-xs font-bold uppercase">{tTeam("tag")}</span>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
-            {tTeam("title")}
+            {tTeam.rich("title", {
+              highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
+            })}
           </h2>
 
           <div className="space-y-8">
@@ -272,8 +260,11 @@ export const TeamExpertiseSection: React.FC = () => {
             <div>
               <h3
                 className="text-3xl md:text-4xl font-bold leading-tight mb-4"
-                dangerouslySetInnerHTML={{ __html: tTeam("vision.title") }}
-              />
+              >
+                {tTeam.rich("vision.title", {
+                  highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
+                })}
+              </h3>
               <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
                 {tTeam("vision.desc")}
               </p>

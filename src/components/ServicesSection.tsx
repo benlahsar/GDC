@@ -12,62 +12,56 @@ import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-// Specific keywords requested for the marquee
-const SCROLL_ITEMS = [
-  { text: "Custom Development", style: "solid" },
-  { text: "App Designs", style: "outline" },
-  { text: "Website Creation", style: "solid" },
-  { text: "High-Impact Ads", style: "outline" },
-  { text: "Digital Strategy", style: "solid" },
-  { text: "UI/UX Design", style: "outline" },
-  { text: "E-Commerce", style: "solid" },
-  { text: "Brand Identity", style: "outline" },
-];
-
-const SERVICES_DATA = [
-  {
-    id: "01",
-    category: "Social Media",
-    headline: "Boostez l'engagement de votre marque sur les réseaux sociaux",
-    description:
-      "Notre agence de marketing digital dynamise l'engagement sur les réseaux sociaux, créant des connexions authentiques avec votre audience. Notre approche ? Des contenus captivants et un ciblage précis pour stimuler l'interaction et la fidélisation.",
-    icon: Share2,
-    highlight: "Engagement & Fidélisation",
-  },
-  {
-    id: "02",
-    category: "Stratégie",
-    headline: "Stratégie digitale éprouvée pour des résultats concrets",
-    description:
-      "Notre agence met en place des stratégies digitales sur mesure, conçues pour maximiser votre retour sur investissement. Grâce à notre expertise, chaque campagne est optimisée pour atteindre vos objectifs de croissance.",
-    icon: Layers,
-    highlight: "Croissance & Résultats",
-  },
-  {
-    id: "03",
-    category: "Publicité",
-    headline: "Publicités payantes ciblées pour un ROI maximal",
-    description:
-      "Notre expertise en publicité payante permet de transformer chaque annonce en moteur de revenu. Nous optimisons les campagnes publicitaires pour garantir un ciblage précis, atteignant exactement vos prospects.",
-    icon: Target,
-    highlight: "Ciblage & Profits",
-  },
-  {
-    id: "04",
-    category: "Web Design",
-    headline: "Création et optimisation de sites web performants",
-    description:
-      "Notre équipe crée des sites web performants, adaptés à vos besoins et à l’expérience utilisateur. Nous optimisons votre site pour améliorer sa visibilité, sa vitesse, et son taux de conversion globale.",
-    icon: Monitor,
-    highlight: "Performance & Ventes",
-  },
-];
-
 export const ServicesSection: React.FC = () => {
   const tServices = useTranslations("services");
-  // const { navigate } = useNavigation();
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
+
+  const SCROLL_ITEMS = [
+    { text: tServices("marquee.customDev"), style: "solid" },
+    { text: tServices("marquee.appDesigns"), style: "outline" },
+    { text: tServices("marquee.websiteCreation"), style: "solid" },
+    { text: tServices("marquee.ads"), style: "outline" },
+    { text: tServices("marquee.strategy"), style: "solid" },
+    { text: tServices("marquee.uiux"), style: "outline" },
+    { text: tServices("marquee.ecommerce"), style: "solid" },
+    { text: tServices("marquee.branding"), style: "outline" },
+  ];
+
+  const SERVICES_DATA = [
+    {
+      id: "01",
+      category: tServices("cards.social.category"),
+      headline: tServices("cards.social.headline"),
+      description: tServices("cards.social.description"),
+      icon: Share2,
+      highlight: tServices("cards.social.highlight"),
+    },
+    {
+      id: "02",
+      category: tServices("cards.strategy.category"),
+      headline: tServices("cards.strategy.headline"),
+      description: tServices("cards.strategy.description"),
+      icon: Layers,
+      highlight: tServices("cards.strategy.highlight"),
+    },
+    {
+      id: "03",
+      category: tServices("cards.ads.category"),
+      headline: tServices("cards.ads.headline"),
+      description: tServices("cards.ads.description"),
+      icon: Target,
+      highlight: tServices("cards.ads.highlight"),
+    },
+    {
+      id: "04",
+      category: tServices("cards.web.category"),
+      headline: tServices("cards.web.headline"),
+      description: tServices("cards.web.description"),
+      icon: Monitor,
+      highlight: tServices("cards.web.highlight"),
+    },
+  ];
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -117,11 +111,10 @@ export const ServicesSection: React.FC = () => {
                     className={`
                                 text-2xl md:text-5xl font-black uppercase tracking-tight
                                 transition-all duration-300
-                                ${
-                                  item.style === "outline"
-                                    ? "text-outline-strong text-black dark:text-white hover:text-black dark:hover:text-white"
-                                    : "text-black dark:text-white"
-                                }
+                                ${item.style === "outline"
+                        ? "text-outline-strong text-black dark:text-white hover:text-black dark:hover:text-white"
+                        : "text-black dark:text-white"
+                      }
                               `}
                   >
                     {item.text}
@@ -150,23 +143,13 @@ export const ServicesSection: React.FC = () => {
         {/* Title */}
         <div className="text-center mb-16 md:mb-24 relative">
           <span className="inline-block py-1 px-3 rounded-full bg-brand-red/5 border border-brand-red/10 text-brand-red text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-            Notre Expertise
+            {tServices("title")}
           </span>
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tight mb-6">
-            Découvrez comment nous accompagnons
-            <span className="block mt-2">
-              votre{" "}
-              <span className="relative inline-block">
-                <span className="relative z-10 text-brand-red">
-                  réussite digitale
-                </span>
-                <span className="absolute bottom-2 left-0 w-full h-[6px] md:h-[10px] bg-brand-red/10 -skew-x-12"></span>
-              </span>
-            </span>
-          </h2>
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tight mb-6"
+            dangerouslySetInnerHTML={{ __html: tServices.raw("headline").replace("<highlight>", '<span class="block mt-2">votre <span class="relative inline-block"><span class="relative z-10 text-brand-red">').replace("</highlight>", '</span><span class="absolute bottom-2 left-0 w-full h-[6px] md:h-[10px] bg-brand-red/10 -skew-x-12"></span></span></span>') }}
+          />
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
-            Des solutions innovantes et sur-mesure pour propulser votre
-            croissance.
+            {tServices("description")}
           </p>
         </div>
 
@@ -178,15 +161,14 @@ export const ServicesSection: React.FC = () => {
               className={`
                         group relative flex flex-col justify-between
                         rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8
-                        bg-[#F5F5F7] dark:bg-[#0A0A0A] 
+                        bg-[#F5F5F7] dark:bg-[#0A0A0A]
                         border border-black/5 dark:border-white/5
                         overflow-hidden
                         transition-all duration-500 h-full
-                        ${
-                          !isMobile
-                            ? "hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)]"
-                            : "active:bg-gray-100 dark:active:bg-[#111]"
-                        }
+                        ${!isMobile
+                  ? "hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)]"
+                  : "active:bg-gray-100 dark:active:bg-[#111]"
+                }
                     `}
             >
               {/* Background Accents (Hidden on mobile) */}
@@ -202,23 +184,21 @@ export const ServicesSection: React.FC = () => {
                 {/* Icon Box */}
                 <div
                   className={`
-                            relative w-14 h-14 md:w-16 md:h-16 rounded-2xl 
-                            bg-white dark:bg-[#151515] 
+                            relative w-14 h-14 md:w-16 md:h-16 rounded-2xl
+                            bg-white dark:bg-[#151515]
                             border border-black/5 dark:border-white/10
                             flex items-center justify-center
                             shadow-sm transition-all duration-500
-                            ${
-                              !isMobile
-                                ? "group-hover:shadow-lg group-hover:scale-110 group-hover:border-brand-red/20"
-                                : ""
-                            }
+                            ${!isMobile
+                      ? "group-hover:shadow-lg group-hover:scale-110 group-hover:border-brand-red/20"
+                      : ""
+                    }
                         `}
                 >
                   <service.icon
                     size={24}
-                    className={`text-gray-700 dark:text-gray-300 transition-colors duration-300 ${
-                      !isMobile ? "group-hover:text-brand-red" : ""
-                    }`}
+                    className={`text-gray-700 dark:text-gray-300 transition-colors duration-300 ${!isMobile ? "group-hover:text-brand-red" : ""
+                      }`}
                   />
                 </div>
 
@@ -240,9 +220,8 @@ export const ServicesSection: React.FC = () => {
 
                 {/* Headline */}
                 <h3
-                  className={`text-xl md:text-2xl font-bold text-black dark:text-white leading-tight transition-transform duration-300 ${
-                    !isMobile ? "group-hover:translate-x-1" : ""
-                  }`}
+                  className={`text-xl md:text-2xl font-bold text-black dark:text-white leading-tight transition-transform duration-300 ${!isMobile ? "group-hover:translate-x-1" : ""
+                    }`}
                 >
                   {service.headline}
                 </h3>
@@ -272,23 +251,21 @@ export const ServicesSection: React.FC = () => {
                 {/* Arrow Button */}
                 <div
                   className={`
-                            w-10 h-10 rounded-full 
-                            flex items-center justify-center 
+                            w-10 h-10 rounded-full
+                            flex items-center justify-center
                             transition-all duration-300
-                            ${
-                              !isMobile
-                                ? "bg-transparent group-hover:bg-brand-red group-hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]"
-                                : "bg-black/5 dark:bg-white/5"
-                            }
+                            ${!isMobile
+                      ? "bg-transparent group-hover:bg-brand-red group-hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]"
+                      : "bg-black/5 dark:bg-white/5"
+                    }
                          `}
                 >
                   <ArrowUpRight
                     size={18}
-                    className={`text-black dark:text-white transition-all duration-300 ${
-                      !isMobile
-                        ? "group-hover:text-white group-hover:rotate-45"
-                        : ""
-                    }`}
+                    className={`text-black dark:text-white transition-all duration-300 ${!isMobile
+                      ? "group-hover:text-white group-hover:rotate-45"
+                      : ""
+                      }`}
                   />
                 </div>
               </div>

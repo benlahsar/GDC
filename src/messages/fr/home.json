@@ -15,9 +15,9 @@
     "line2": "Digitalisation",
     "line3": "et Marketing",
     "line4": "Innovant",
-    "description": "Donnez Vie à Vos Ambitions Avec Une Agence Marketing Digital Visionnaire. Des Solutions Stratégiques Appuyées par des Résultats Concrets.",
-    "cta": "Lancer le projet",
-    "portfolio": "Nos Réalisations"
+    "description": "Donnez vie à vos ambitions avec une agence marketing digital visionnaire. Des solutions stratégiques appuyées par des résultats concrets.",
+    "cta": "Lancer le Projet",
+    "portfolio": "Notre Portfolio"
   },
   "ai": {
     "title": "Stratège IA",
@@ -25,7 +25,7 @@
     "button": "Analyser",
     "status": "Propulsé par Gemini 3",
     "newAnalysis": "Nouvelle Analyse",
-    "prompt": "Tu es un stratège senior chez GDC. Donne 3 conseils brefs pour:",
+    "prompt": "Tu es un stratège senior. Donne 3 conseils pour :",
     "hint": "Besoin d'une stratégie ? Indiquez votre secteur d'activité.",
     "error": "Connexion Hub échouée. Contactez-nous pour une analyse manuelle !"
   },
@@ -34,13 +34,93 @@
     "growth": "Croissance",
     "satisfaction": "Satisfaction",
     "projects": "Projets",
-    "support": "Support"
+    "support": "Support",
+    "liveHub": "Live Hub"
   },
   "innovation": {
     "tag": "Innovation Future",
     "headline": "L'agence de marketing digital qui propulse votre présence vers le <success>succès</success>.",
     "description": "Partenaire stratégique dédié à la transformation digitale à Marrakech. Conception et mise en œuvre de solutions innovantes pour optimiser visibilité, notoriété et performance globale.",
     "discoverCta": "Découvrir GDC"
+  },
+  "header": {
+    "servicesHub": "Services Hub",
+    "ourServices": "Nos Métiers",
+    "architectures": "Architectures",
+    "solution": "Solution",
+    "hoverToExplore": "Survoler pour explorer le génome du succès",
+    "elitePartner": "ELITE PARTNER",
+    "isoDigital": "ISO-9001 Digital",
+    "hqMarrakech": "HQ Marrakech",
+    "directLine": "Ligne Directe",
+    "startProject": "DÉMARRER UN PROJET",
+    "ariaHome": "Accueil",
+    "languageSwitcher": {
+      "switchLanguage": "Changer de langue"
+    },
+    "ariaMobileMenu": "Menu mobile",
+    "ariaCloseMenu": "Fermer le menu",
+    "ariaCollapse": "Réduire",
+    "ariaExpand": "Développer",
+    "expertiseMeta": {
+      "websiteCreation": {
+        "desc": "E-commerce & Vitrines",
+        "stats": "+200 Sites"
+      },
+      "seo": {
+        "desc": "Domination Google",
+        "stats": "Top 1 Rank"
+      },
+      "ads": {
+        "desc": "ROI Publicitaire",
+        "stats": "x4 Conversions"
+      },
+      "applicationCreation": {
+        "desc": "iOS & Android Native",
+        "stats": "Apps Fluides"
+      },
+      "visualIdentity": {
+        "desc": "Logos & Branding",
+        "stats": "Identité Forte"
+      },
+      "maintenance": {
+        "desc": "Support & Sécurité",
+        "stats": "99.9% Uptime"
+      }
+    },
+    "navItems": {
+      "websiteCreation": "Création De Site Web",
+      "ecommerce": "Sites E-Commerce",
+      "domainName": "Noms de Domaine",
+      "hosting": "Hébergement Web",
+      "maintenance": "Maintenance Web",
+      "seo": "Référencement Naturel",
+      "ads": "SEA & SMO",
+      "appCreation": "Création d'Apps",
+      "visualIdentity": "Identité Visuelle",
+      "packWebsite": "Pack Web",
+      "packSeo": "Pack SEO",
+      "blog": "Blog",
+      "about": "À Propos"
+    }
+  },
+  "team": {
+    "tag": "Notre ADN",
+    "title": "Équipe de <highlight>Professionnels</highlight> Digitaux Dévoués",
+    "notreAdn": "Notre ADN",
+    "expertise": {
+      "tag": "Expertise",
+      "desc": "Maîtrise technique et stratégique avancée pour des résultats supérieurs."
+    },
+    "vision": {
+      "title": "<highlight>Group Digital Concept</highlight> transforme vos ambitions en réalité digitale.",
+      "desc": "Nous accompagnons nos clients dans leur transformation numérique avec des solutions sur mesure et innovantes. Notre approche combine créativité, technologie et stratégie pour des résultats concrets.",
+      "cta": "Contactez-nous"
+    },
+    "success": {
+      "tag": "Réussite",
+      "desc": "Projets livrés avec un impact mesurable et une satisfaction client maximale."
+    }
   },
   "services": {
     "title": "Notre Expertise",
@@ -49,7 +129,7 @@
     "marquee": {
       "customDev": "Développement Sur Mesure",
       "appDesigns": "Design d'Apps",
-      "websiteCreation": "Création de Site Web",
+      "websiteCreation": "Création de Sites Web",
       "ads": "Publicités Impactantes",
       "strategy": "Stratégie Digitale",
       "uiux": "Design UI/UX",
@@ -72,13 +152,13 @@
       "ads": {
         "category": "Publicité",
         "headline": "Publicités payantes ciblées pour un ROI maximal",
-        "description": "Notre expertise en publicité payante permet de transformer chaque annonce en moteur de revenu. Nous optimisons les campagnes publicitaires pour garantir un ciblage précis, atteignant exactement vos prospects.",
+        "description": "Notre expertise en publicité payante transforme chaque annonce en moteur de revenu. Nous optimisons les campagnes publicitaires pour garantir un ciblage précis, atteignant exactement vos prospects.",
         "highlight": "Ciblage & Profits"
       },
       "web": {
         "category": "Web Design",
         "headline": "Création et optimisation de sites web performants",
-        "description": "Notre équipe crée des sites web performants, adaptés à vos besoins et à l’expérience utilisateur. Nous optimisons votre site pour améliorer sa visibilité, sa vitesse, et son taux de conversion globale.",
+        "description": "Notre équipe crée des sites web performants, adaptés à vos besoins et à l'expérience utilisateur. Nous optimisons votre site pour améliorer sa visibilité, sa vitesse, et son taux de conversion globale.",
         "highlight": "Performance & Ventes"
       }
     }
@@ -87,13 +167,41 @@
     "tag": "Notre Parcours",
     "title": "Explorez <highlight>l'Évolution</highlight>",
     "steps": {
-      "2020": { "title": "La Fondation", "subtitle": "Fondation", "desc": "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc." },
-      "2021": { "title": "Lancement Innovant", "subtitle": "Innovation", "desc": "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales." },
-      "2022": { "title": "Expansion Maroc", "subtitle": "Expansion", "desc": "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech." },
-      "2023": { "title": "Succès & Croissance", "subtitle": "Croissance", "desc": "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix." },
-      "2024": { "title": "IA & Futur", "subtitle": "Innovation", "desc": "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées." },
-      "2025": { "title": "Digitalisation Elite", "subtitle": "Élite", "desc": "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables." },
-      "2026": { "title": "Nouveaux Horizons", "subtitle": "Bientôt", "desc": "L'aventure continue. Nous préparons de nouvelles innovations pour révolutionner le paysage du marketing digital." }
+      "2020": {
+        "title": "La Fondation",
+        "subtitle": "Fondation",
+        "desc": "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc."
+      },
+      "2021": {
+        "title": "Lancement Innovant",
+        "subtitle": "Innovation",
+        "desc": "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales."
+      },
+      "2022": {
+        "title": "Expansion Maroc",
+        "subtitle": "Expansion",
+        "desc": "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech."
+      },
+      "2023": {
+        "title": "Succès & Croissance",
+        "subtitle": "Croissance",
+        "desc": "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix."
+      },
+      "2024": {
+        "title": "IA & Futur",
+        "subtitle": "Innovation",
+        "desc": "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées."
+      },
+      "2025": {
+        "title": "Digitalisation Elite",
+        "subtitle": "Élite",
+        "desc": "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables."
+      },
+      "2026": {
+        "title": "Nouveaux Horizons",
+        "subtitle": "Bientôt",
+        "desc": "L'aventure continue. Nous préparons de nouvelles innovations pour révolutionner le paysage du marketing digital."
+      }
     }
   },
   "solutionsSection": {
@@ -102,12 +210,167 @@
     "subtitle": "Des solutions digitales conçues pour la performance absolue.",
     "cta": "Démarrer",
     "items": {
-      "marketing": { "title": "Marketing Digital", "desc": "Nous élaborons des stratégies de marketing digital sur mesure, conçues pour renforcer votre visibilité en ligne, attirer un trafic qualifié et maximiser vos conversions via SEO, SEM et Social Ads." },
-      "website": { "title": "Création de Sites Web", "desc": "Conception de sites web modernes, responsifs et performants. Que ce soit pour un site vitrine ou un e-commerce, chaque projet est pensé pour offrir une expérience utilisateur optimale." },
-      "software": { "title": "Logiciels Personnalisés", "desc": "Développement de logiciels sur mesure qui répondent parfaitement aux besoins uniques de votre entreprise. Optimisez vos processus et accélérez votre transformation digitale." },
-      "content": { "title": "Contenu Visuel", "desc": "Création de contenus visuels captivants qui renforcent votre image de marque et augmentent votre engagement en ligne sur les réseaux sociaux et supports digitaux." },
-      "consulting": { "title": "Conseil Stratégique", "desc": "Accompagnement personnalisé en stratégie digitale pour maximiser votre impact en ligne grâce à une approche analytique et une expertise approfondie du marché." },
-      "ads": { "title": "Publicité en Ligne", "desc": "Campagnes de publicité stratégiques pour augmenter votre visibilité et maximiser vos conversions via le SEM, le retargeting et des publicités ciblées haute performance." }
+      "marketing": {
+        "title": "Marketing Digital",
+        "desc": "Nous élaborons des stratégies de marketing digital sur mesure, conçues pour renforcer votre visibilité en ligne, attirer un trafic qualifié et maximiser vos conversions via SEO, SEM et Social Ads."
+      },
+      "website": {
+        "title": "Création de Sites Web",
+        "desc": "Conception de sites web modernes, responsifs et performants. Que ce soit pour un site vitrine ou un e-commerce, chaque projet est pensé pour offrir une expérience utilisateur optimale."
+      },
+      "software": {
+        "title": "Logiciels Personnalisés",
+        "desc": "Développement de logiciels sur mesure qui répondent parfaitement aux besoins uniques de votre entreprise. Optimisez vos processus et accélérez votre transformation digitale."
+      },
+      "content": {
+        "title": "Contenu Visuel",
+        "desc": "Création de contenus visuels captivants qui renforcent votre image de marque et augmentent votre engagement en ligne sur les réseaux sociaux et supports digitaux."
+      },
+      "consulting": {
+        "title": "Conseil Stratégique",
+        "desc": "Accompagnement personnalisé en stratégie digitale pour maximiser votre impact en ligne grâce à une approche analytique et une expertise approfondie du marché."
+      },
+      "ads": {
+        "title": "Publicité en Ligne",
+        "desc": "Campagnes de publicité stratégiques pour augmenter votre visibilité et maximiser vos conversions via le SEM, le retargeting et des publicités ciblées haute performance."
+      }
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Questions <highlight>Fréquentes.</highlight>",
+    "subtitle": "Tout ce que vous devez savoir sur notre processus, nos services et comment nous pouvons propulser votre entreprise.",
+    "anotherQuestion": "Une autre question ?",
+    "expertsHere": "Nos experts sont là pour vous.",
+    "contactUs": "Contactez-nous",
+    "questions": {
+      "q1": {
+        "question": "Quels services proposez-vous chez Group Digital Concept ?",
+        "answer": "Nous offrons une gamme complète de services en communication, marketing digital, création de sites web, développement d'applications, et bien plus encore pour répondre aux besoins spécifiques de chaque client."
+      },
+      "q2": {
+        "question": "Comment se déroule la création de mon site web ?",
+        "answer": "Nous suivons un processus structuré : découverte de vos besoins, conception UX/UI, développement technique, intégration de contenu, tests rigoureux et mise en ligne, suivi d'une formation à la gestion."
+      },
+      "q3": {
+        "question": "Quels sont les délais pour la création d'un site web ?",
+        "answer": "Les délais varient selon la complexité. Un site vitrine prend généralement 2 à 4 semaines, tandis qu'un e-commerce ou une application sur mesure peut nécessiter 6 à 10 semaines."
+      },
+      "q4": {
+        "question": "Qu'est-ce que le SEO et pourquoi est-il important ?",
+        "answer": "Le SEO (Search Engine Optimization) améliore votre visibilité sur Google. C'est crucial pour attirer du trafic organique qualifié, augmenter votre notoriété et générer des leads sans publicité payante."
+      },
+      "q5": {
+        "question": "Puis-je gérer mon site web une fois qu'il est créé ?",
+        "answer": "Absolument. Nous développons nos sites (WordPress, Shopify, ou sur mesure) avec des interfaces d'administration intuitives et nous vous formons pour que vous soyez totalement autonome."
+      },
+      "q6": {
+        "question": "Qu'est-ce que l'UX design et pourquoi est-ce important ?",
+        "answer": "L'UX Design (Expérience Utilisateur) facilite la navigation de vos visiteurs. Une bonne UX augmente le temps passé sur le site, réduit le taux de rebond et booste considérablement vos conversions."
+      },
+      "q7": {
+        "question": "Proposez-vous des services de marketing digital ?",
+        "answer": "Oui, nous sommes experts en stratégie digitale : publicité en ligne (Google Ads, Facebook Ads), gestion des réseaux sociaux, content marketing et email marketing pour maximiser votre ROI."
+      },
+      "q8": {
+        "question": "Puis-je avoir un site web responsive pour mobile ?",
+        "answer": "C'est un standard chez nous. Tous nos sites sont développés en 'Mobile First', garantissant un affichage et une navigation parfaits sur smartphones, tablettes et ordinateurs."
+      },
+      "q9": {
+        "question": "Offrez-vous un support après la création du site ?",
+        "answer": "Oui, nous proposons plusieurs forfaits de maintenance pour assurer la sécurité, les mises à jour et les évolutions de votre site web sur le long terme."
+      },
+      "q10": {
+        "question": "Comment puis-je obtenir un devis pour mes besoins ?",
+        "answer": "Contactez-nous simplement via notre formulaire en ligne, par email ou téléphone. Nous analyserons votre projet et vous fournirons un devis détaillé et personnalisé sous 24h."
+      }
+    }
+  },
+  "contactPage": {
+    "tag": "Nous Contacter",
+    "title": "Parlons Projet.",
+    "subtitle": "Une vision ? Un défi ? Notre équipe transforme vos idées en expériences digitales d'exception.",
+    "steps": {
+      "identity": "Identité",
+      "needs": "Besoins",
+      "message": "Message"
+    },
+    "form": {
+      "fullName": "Nom Complet",
+      "proEmail": "Email Professionnel",
+      "company": "Entreprise",
+      "phone": "Téléphone",
+      "placeholders": {
+        "name": "Jean Dupont",
+        "email": "jean@entreprise.com",
+        "company": "Studio Digital",
+        "phone": "+212 6..."
+      },
+      "selectNeeds": "Sélectionnez vos besoins",
+      "specifyNeed": "Précisez votre besoin...",
+      "tellUsProject": "Parlez-nous de votre projet",
+      "projectPlaceholder": "Contexte, objectifs, délais, budget estimé...",
+      "back": "Retour",
+      "sending": "Envoi...",
+      "send": "Envoyer",
+      "next": "Suivant"
+    },
+    "success": {
+      "title": "Bien reçu !",
+      "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
+      "newRequest": "Nouvelle demande"
+    },
+    "services": {
+      "showcase": "Site Vitrine",
+      "ecommerce": "E-Commerce",
+      "webApp": "App Web",
+      "seoAds": "SEO / Publicité",
+      "branding": "Branding",
+      "other": "Autre"
+    },
+    "info": {
+      "directLine": "Ligne Directe",
+      "proEmail": "Email Professionnel",
+      "followUs": "Suivez-nous"
+    },
+    "locations": {
+      "tag": "Global Presence Hub",
+      "title": "Nos Implantations.",
+      "casablanca": {
+        "city": "Casablanca",
+        "label": "Siège Social",
+        "address": "10, Rue Zayd Ibnou Rifaii Maarif, 20160 Casablanca"
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "label": "Adresse Secondaire",
+        "address": "Résidence Plateau Bureau Al Amira III, 4ème étage, Bureau N°35, Av. Yacoub El Mansour, Guéliz, Marrakech",
+        "badge": "Expert Local"
+      },
+      "neuilly": {
+        "city": "Neuilly-sur-Seine",
+        "label": "Siège en France",
+        "address": "20 bis, Rue Louis Philippe, 92200 Neuilly-sur-Seine, France"
+      },
+      "operational": "Opérationnel"
+    },
+    "countries": {
+      "morocco": "Maroc",
+      "france": "France",
+      "usa": "USA",
+      "uk": "Royaume-Uni",
+      "belgium": "Belgique",
+      "switzerland": "Suisse",
+      "spain": "Espagne",
+      "uae": "Émirats Arabes Unis",
+      "saudiArabia": "Arabie Saoudite",
+      "canada": "Canada"
+    },
+    "timeline": {
+      "asap": "Dès que possible",
+      "1month": "Dans 1 mois",
+      "1to3months": "1-3 mois",
+      "undefined": "Indéfini"
     }
   },
   "testimonials": {
@@ -141,8 +404,10 @@
         "subtitle": "Commençons par les présentations.",
         "name": "Nom Complet *",
         "namePlaceholder": "Votre Nom",
-        "email": "Email Pro *",
+        "email": "Email Professionnel *",
+        "emailPlaceholder": "nom@entreprise.com",
         "phone": "Téléphone *",
+        "phonePlaceholder": "6 00 00 00",
         "company": "Entreprise",
         "companyPlaceholder": "Nom de votre société",
         "next": "Continuer"
@@ -153,11 +418,16 @@
         "services": "Services Recherchés *",
         "budget": "Budget Estimé *",
         "deadline": "Délai Souhaité *",
-        "submit": "Envoyer la demande",
+        "description": "Détails du projet",
+        "descriptionPlaceholder": "Racontez-nous en plus... (Objectifs, concurrents, inspiration)",
+        "back": "Retour",
+        "sending": "Envoi...",
+        "submit": "Confirmer le projet",
+        "otherPlaceholder": "Décrivez votre besoin...",
         "success": {
-            "title": "Demande Envoyée",
-            "message": "Merci. Votre projet est entre de bonnes mains. Nous vous recontacterons très rapidement.",
-            "new": "Nouveau Projet"
+          "title": "Demande Envoyée",
+          "message": "Merci. Votre projet est entre de bonnes mains. Nous vous recontacterons très rapidement.",
+          "new": "Nouveau Projet"
         }
       },
       "errors": {
@@ -172,48 +442,46 @@
       },
       "options": {
         "services": {
-            "strategy": "Stratégie & Consulting",
-            "branding": "Branding & Identité",
-            "website": "Site Web Sur Mesure",
-            "ecommerce": "E-Commerce",
-            "mobile": "App Mobile / Web App",
-            "uiux": "UI/UX Design",
-            "seo": "SEO & Référencement",
-            "ads": "Publicité (Ads)",
-            "social": "Social Media",
-            "content": "Création de Contenu"
+          "strategy": "Stratégie & Consulting",
+          "branding": "Branding & Identité",
+          "website": "Site Web Sur Mesure",
+          "ecommerce": "E-Commerce",
+          "mobile": "App Mobile / Web App",
+          "uiux": "UI/UX Design",
+          "seo": "SEO & Référencement",
+          "ads": "Publicité (Ads)",
+          "social": "Social Media",
+          "content": "Création de Contenu",
+          "other": "Autre"
         },
         "budgets": {
-            "lt20k": "< 20k MAD",
-            "20k50k": "20k - 50k MAD",
-            "50k100k": "50k - 100k MAD",
-            "gt100k": "+ 100k MAD",
-            "tbd": "À définir"
+          "lt20k": "< 20k MAD",
+          "20k50k": "20k - 50k MAD",
+          "50k100k": "50k - 100k MAD",
+          "gt100k": "+ 100k MAD",
+          "tbd": "À définir"
         },
         "timelines": {
-            "asap": "Dès que possible",
-            "1month": "Dans 1 mois",
-            "1-3months": "1-3 mois",
-            "undefined": "Indéfini"
+          "asap": "Dès que possible",
+          "1month": "Dans 1 mois",
+          "onetreemonths": "1-3 mois",
+          "undefined": "Indéfini"
+        },
+        "countries": {
+          "morocco": "Maroc",
+          "france": "France",
+          "usa": "USA",
+          "uk": "Royaume-Uni",
+          "belgium": "Belgique",
+          "switzerland": "Suisse",
+          "spain": "Espagne"
         }
       }
-    }
-  },
-  "team": {
-    "tag": "Notre ADN",
-    "title": "Équipe de <highlight>Professionnels</highlight> Digitaux Dévoués",
-    "expertise": {
-      "tag": "Expertise",
-      "desc": "Maîtrise technique et stratégique avancée pour des résultats supérieurs."
-    },
-    "vision": {
-      "title": "<highlight>Group Digital Concept</highlight> transforme vos ambitions en réalité digitale.",
-      "desc": "Nous accompagnons nos clients dans leur transformation numérique avec des solutions sur mesure et innovantes. Notre approche combine créativité, technologie et stratégie pour des résultats concrets.",
-      "cta": "Contactez-nous"
     },
     "success": {
-      "tag": "Réussite",
-      "desc": "Projets livrés avec un impact mesurable et une satisfaction client maximale."
+      "title": "Bien reçu !",
+      "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
+      "newRequest": "Nouvelle demande"
     }
   },
   "finalCta": {
@@ -226,5 +494,16 @@
     },
     "button": "Démarrer",
     "hover": "C'est parti"
+  },
+  "languages": {
+    "ar": "Arabe",
+    "nl": "Néerlandais",
+    "en": "Anglais",
+    "fr": "Français",
+    "de": "Allemand",
+    "it": "Italien",
+    "pt": "Portugais",
+    "ru": "Russe",
+    "es": "Espagnol"
   }
 }

@@ -17,64 +17,57 @@ export const TimelineSection: React.FC = () => {
   const TIMELINE_DATA = [
     {
       year: "2020",
-      title: "La Fondation",
-      subtitle: "Fondation",
-      description:
-        "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc.",
+      title: tTimeline("steps.2020.title"),
+      subtitle: tTimeline("steps.2020.subtitle"),
+      description: tTimeline("steps.2020.desc"),
       icon: Flag,
       align: "left",
     },
     {
       year: "2021",
-      title: "Lancement Innovant",
-      subtitle: "Innovation",
-      description:
-        "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales.",
+      title: tTimeline("steps.2021.title"),
+      subtitle: tTimeline("steps.2021.subtitle"),
+      description: tTimeline("steps.2021.desc"),
       icon: Zap,
       align: "right",
     },
     {
       year: "2022",
-      title: "Expansion Maroc",
-      subtitle: "Expansion",
-      description:
-        "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech.",
+      title: tTimeline("steps.2022.title"),
+      subtitle: tTimeline("steps.2022.subtitle"),
+      description: tTimeline("steps.2022.desc"),
       icon: MapPin,
       align: "left",
     },
     {
       year: "2023",
-      title: "Succès & Croissance",
-      subtitle: "Croissance",
-      description:
-        "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix.",
+      title: tTimeline("steps.2023.title"),
+      subtitle: tTimeline("steps.2023.subtitle"),
+      description: tTimeline("steps.2023.desc"),
       icon: TrendingUp,
       align: "right",
     },
     {
       year: "2024",
-      title: "IA & Futur",
-      subtitle: "Innovation",
-      description:
-        "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées.",
+      title: tTimeline("steps.2024.title"),
+      subtitle: tTimeline("steps.2024.subtitle"),
+      description: tTimeline("steps.2024.desc"),
       icon: Cpu,
       align: "left",
     },
     {
       year: "2025",
-      title: "Digitalisation Elite",
-      subtitle: "Élite",
-      description:
-        "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables.",
+      title: tTimeline("steps.2025.title"),
+      subtitle: tTimeline("steps.2025.subtitle"),
+      description: tTimeline("steps.2025.desc"),
       icon: Globe,
       align: "right",
     },
     {
       year: "2026",
-      title: "Nouveaux Horizons",
-      subtitle: "Bientôt",
-      description:
-        "L'aventure continue. Nous préparons de nouvelles innovations pour révolutionner le paysage du marketing digital.",
+      title: tTimeline("steps.2026.title"),
+      subtitle: tTimeline("steps.2026.subtitle"),
+      description: tTimeline("steps.2026.desc"),
       icon: Hourglass,
       align: "center",
       isFuture: true,
@@ -227,14 +220,11 @@ export const TimelineSection: React.FC = () => {
         <div className="text-center mb-16 md:mb-24 relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-red/5 blur-[100px] rounded-full"></div>
           <span className="inline-block py-1 px-3 rounded-full bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-[0.2em] mb-4 backdrop-blur-md">
-            Notre Parcours
+            {tTimeline("tag")}
           </span>
-          <h2 className="text-3xl md:text-7xl font-black text-black dark:text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase">
-            Explorez{" "}
-            <span className="transition-colors duration-700 text-gray-400 dark:text-gray-600">
-              l'Évolution
-            </span>
-          </h2>
+          <h2 className="text-3xl md:text-7xl font-black text-black dark:text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase"
+            dangerouslySetInnerHTML={{ __html: tTimeline.raw("title").replace("<highlight>", '<span class="transition-colors duration-700 text-gray-400 dark:text-gray-600">').replace("</highlight>", '</span>') }}
+          />
         </div>
 
         <div className="relative max-w-5xl mx-auto pb-12 md:pb-32">
@@ -255,9 +245,8 @@ export const TimelineSection: React.FC = () => {
                   ref={(el) => {
                     itemsRef.current[index] = el;
                   }}
-                  className={`relative flex flex-col md:flex-row items-center ${
-                    item.align === "right" ? "md:flex-row-reverse" : ""
-                  } ${item.align === "center" ? "justify-center" : ""}`}
+                  className={`relative flex flex-col md:flex-row items-center ${item.align === "right" ? "md:flex-row-reverse" : ""
+                    } ${item.align === "center" ? "justify-center" : ""}`}
                 >
                   {/* Vertical line connector for mobile */}
                   {isMobile && index < TIMELINE_DATA.length - 1 && (
@@ -268,11 +257,10 @@ export const TimelineSection: React.FC = () => {
                   {isMobile && (
                     <div className="absolute left-0 top-0 w-20 h-20 flex items-center justify-center z-10">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                          isFuture
+                        className={`w-10 h-10 rounded-full flex items-center justify-center ${isFuture
                             ? "bg-emerald-500 text-white"
                             : "bg-brand-red text-white"
-                        }`}
+                          }`}
                       >
                         <item.icon size={18} />
                       </div>
@@ -280,9 +268,8 @@ export const TimelineSection: React.FC = () => {
                   )}
 
                   <div
-                    className={`hidden md:block w-[16%] ${
-                      item.align === "center" ? "hidden" : ""
-                    }`}
+                    className={`hidden md:block w-[16%] ${item.align === "center" ? "hidden" : ""
+                      }`}
                   ></div>
 
                   <div
@@ -291,51 +278,45 @@ export const TimelineSection: React.FC = () => {
                     <div
                       className={`
                       group relative p-6 md:p-8 rounded-[24px] border transition-all duration-700 backdrop-blur-xl
-                      ${
-                        isActive
+                      ${isActive
                           ? `bg-white dark:bg-[#080808]/80 ${activeColor} opacity-100 scale-100`
                           : "shadow-none border-transparent opacity-40 grayscale scale-95"
-                      }
-                      ${
-                        item.align === "center"
+                        }
+                      ${item.align === "center"
                           ? "text-center flex flex-col items-center md:mt-12"
                           : ""
-                      }
+                        }
                     `}
                     >
                       <div
-                        className={`flex items-center w-full ${
-                          item.align === "center"
+                        className={`flex items-center w-full ${item.align === "center"
                             ? "justify-center gap-4 mb-4"
                             : "justify-between mb-4"
-                        }`}
+                          }`}
                       >
                         <span
-                          className={`text-2xl md:text-4xl font-black font-mono tracking-tighter ${
-                            isActive
+                          className={`text-2xl md:text-4xl font-black font-mono tracking-tighter ${isActive
                               ? isFuture
                                 ? "text-emerald-500"
                                 : "text-black dark:text-white"
                               : "text-gray-300"
-                          }`}
+                            }`}
                         >
                           {item.year}
                         </span>
                         {!isMobile && (
                           <div
-                            className={`p-2 rounded-full ${
-                              isActive ? "bg-black/5 dark:bg-white/5" : ""
-                            }`}
+                            className={`p-2 rounded-full ${isActive ? "bg-black/5 dark:bg-white/5" : ""
+                              }`}
                           >
                             <item.icon
                               size={16}
-                              className={`${
-                                isActive
+                              className={`${isActive
                                   ? isFuture
                                     ? "text-emerald-500"
                                     : "text-brand-red"
                                   : "text-gray-300"
-                              }`}
+                                }`}
                             />
                           </div>
                         )}
@@ -345,13 +326,12 @@ export const TimelineSection: React.FC = () => {
                         {item.title}
                       </h3>
                       <p
-                        className={`text-[9px] font-bold uppercase tracking-widest mb-3 ${
-                          isActive
+                        className={`text-[9px] font-bold uppercase tracking-widest mb-3 ${isActive
                             ? isFuture
                               ? "text-emerald-600"
                               : "text-gray-500"
                             : "text-gray-300"
-                        }`}
+                          }`}
                       >
                         {item.subtitle}
                       </p>

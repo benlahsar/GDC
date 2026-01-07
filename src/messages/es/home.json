@@ -10,36 +10,500 @@
     "project": "Proyecto"
   },
   "hero": {
-    "subtitle": "Agencia de Marketing Digital Premium",
+    "subtitle": "Agencia Premium de Marketing Digital: La clave para hacer crecer tus ingresos",
     "line1": "Expertos en",
     "line2": "Digitalización",
     "line3": "y Marketing",
     "line4": "Innovador",
-    "description": "Haga realidad sus ambiciones con una agencia visionaria.",
+    "description": "Da vida a tus ambiciones con una agencia de marketing digital visionaria. Soluciones estratégicas respaldadas por resultados concretos.",
     "cta": "Iniciar Proyecto",
-    "portfolio": "Portafolio"
+    "portfolio": "Nuestro Portafolio"
   },
   "ai": {
-    "title": "Estratega IA",
-    "placeholder": "Ej: Riad en Marrakech...",
+    "title": "Estratega de IA",
+    "placeholder": "Ej: Riad en Marrakech, E-commerce...",
     "button": "Analizar",
-    "status": "Gemini 3",
-    "newAnalysis": "Nuevo",
-    "prompt": "Eres un estratega. 3 consejos para:",
-    "hint": "¿Necesitas una estrategia?",
-    "error": "Fallo de conexión. ¡Contáctanos para un análisis manual!"
+    "status": "Impulsado por Gemini 3",
+    "newAnalysis": "Nuevo Análisis",
+    "prompt": "Eres un estratega senior. Da 3 consejos para:",
+    "hint": "¿Necesitas una estrategia? Cuéntanos tu sector.",
+    "error": "Falló la conexión del hub. ¡Contáctanos para un análisis manual!"
   },
   "stats": {
     "performance": "Rendimiento",
     "growth": "Crecimiento",
     "satisfaction": "Satisfacción",
     "projects": "Proyectos",
-    "support": "Soporte"
+    "support": "Soporte",
+    "liveHub": "Live Hub"
   },
   "innovation": {
     "tag": "Innovación Futura",
     "headline": "La agencia de marketing digital que impulsa tu presencia hacia el <success>éxito</success>.",
     "description": "Socio estratégico dedicado a la transformación digital en Marrakech. Diseño e implementación de soluciones innovadoras para optimizar visibilidad, reputación y rendimiento global.",
     "discoverCta": "Descubrir GDC"
+  },
+  "header": {
+    "servicesHub": "Centro de Servicios",
+    "ourServices": "Nuestros Servicios",
+    "architectures": "Arquitecturas",
+    "solution": "Solución",
+    "hoverToExplore": "Pasa el cursor para explorar el genoma del éxito",
+    "elitePartner": "SOCIO ÉLITE",
+    "isoDigital": "ISO-9001 Digital",
+    "hqMarrakech": "Sede Marrakech",
+    "directLine": "Línea Directa",
+    "startProject": "INICIAR UN PROYECTO",
+    "ariaHome": "Inicio",
+    "languageSwitcher": {
+      "switchLanguage": "Cambiar idioma"
+    },
+    "ariaMobileMenu": "Menú móvil",
+    "ariaCloseMenu": "Cerrar menú",
+    "ariaCollapse": "Colapsar",
+    "ariaExpand": "Expandir",
+    "expertiseMeta": {
+      "websiteCreation": {
+        "desc": "E-commerce & Corporativo",
+        "stats": "+200 Sitios"
+      },
+      "seo": {
+        "desc": "Dominio en Google",
+        "stats": "Top 1 Ranking"
+      },
+      "ads": {
+        "desc": "ROI Publicitario",
+        "stats": "x4 Conversiones"
+      },
+      "applicationCreation": {
+        "desc": "iOS & Android Nativo",
+        "stats": "Apps Fluidas"
+      },
+      "visualIdentity": {
+        "desc": "Logos & Branding",
+        "stats": "Identidad Fuerte"
+      },
+      "maintenance": {
+        "desc": "Soporte & Seguridad",
+        "stats": "99.9% Uptime"
+      }
+    },
+    "navItems": {
+      "websiteCreation": "Creación de Sitios Web",
+      "ecommerce": "Sitios E-Commerce",
+      "domainName": "Nombres de Dominio",
+      "hosting": "Hosting Web",
+      "maintenance": "Mantenimiento Web",
+      "seo": "SEO Orgánico",
+      "ads": "SEA & SMO",
+      "appCreation": "Creación de Apps",
+      "visualIdentity": "Identidad Visual",
+      "packWebsite": "Pack Web",
+      "packSeo": "Pack SEO",
+      "blog": "Blog",
+      "about": "Sobre Nosotros"
+    }
+  },
+  "team": {
+    "tag": "Nuestro ADN",
+    "title": "Equipo de <highlight>Profesionales</highlight> Digitales Dedicados",
+    "notreAdn": "Nuestro ADN",
+    "expertise": {
+      "tag": "Experiencia",
+      "desc": "Dominio técnico y estratégico avanzado para resultados superiores."
+    },
+    "vision": {
+      "title": "<highlight>Group Digital Concept</highlight> transforma tus ambiciones en realidad digital.",
+      "desc": "Acompañamos a nuestros clientes en su transformación digital con soluciones personalizadas e innovadoras. Nuestro enfoque combina creatividad, tecnología y estrategia para resultados concretos.",
+      "cta": "Contáctanos"
+    },
+    "success": {
+      "tag": "Éxito",
+      "desc": "Proyectos entregados con impacto medible y máxima satisfacción del cliente."
+    }
+  },
+  "services": {
+    "title": "Nuestra Experiencia",
+    "headline": "Descubre cómo apoyamos tu <highlight>éxito digital</highlight>",
+    "description": "Soluciones innovadoras y a medida para impulsar tu crecimiento.",
+    "marquee": {
+      "customDev": "Desarrollo Personalizado",
+      "appDesigns": "Diseño de Apps",
+      "websiteCreation": "Creación de Sitios Web",
+      "ads": "Publicidades Impactantes",
+      "strategy": "Estrategia Digital",
+      "uiux": "Diseño UI/UX",
+      "ecommerce": "E-Commerce",
+      "branding": "Identidad de Marca"
+    },
+    "cards": {
+      "social": {
+        "category": "Social Media",
+        "headline": "Impulsa el compromiso de tu marca en redes sociales",
+        "description": "Nuestra agencia de marketing digital dinamiza el compromiso en redes sociales, creando conexiones auténticas con tu audiencia. ¿Nuestro enfoque? Contenido cautivador y segmentación precisa para estimular la interacción y la fidelización.",
+        "highlight": "Compromiso y Fidelización"
+      },
+      "strategy": {
+        "category": "Estrategia",
+        "headline": "Estrategia digital probada para resultados concretos",
+        "description": "Nuestra agencia implementa estrategias digitales a medida, diseñadas para maximizar tu retorno de inversión. Gracias a nuestra experiencia, cada campaña se optimiza para alcanzar tus objetivos de crecimiento.",
+        "highlight": "Crecimiento y Resultados"
+      },
+      "ads": {
+        "category": "Publicidad",
+        "headline": "Publicidades pagadas segmentadas para ROI máximo",
+        "description": "Nuestra experiencia en publicidad paga transforma cada anuncio en un motor de ingresos. Optimizamos las campañas publicitarias para garantizar una segmentación precisa, alcanzando exactamente tus prospectos.",
+        "highlight": "Segmentación y Beneficios"
+      },
+      "web": {
+        "category": "Diseño Web",
+        "headline": "Creación y optimización de sitios web de alto rendimiento",
+        "description": "Nuestro equipo crea sitios web de alto rendimiento, adaptados a tus necesidades y experiencia de usuario. Optimizamos tu sitio para mejorar su visibilidad, velocidad y tasa de conversión general.",
+        "highlight": "Rendimiento y Ventas"
+      }
+    }
+  },
+  "timeline": {
+    "tag": "Nuestro Trayecto",
+    "title": "Explora la <highlight>Evolución</highlight>",
+    "steps": {
+      "2020": {
+        "title": "La Fundación",
+        "subtitle": "Fundación",
+        "desc": "Group Digital Concept nació con una ambición clara: convertirse en una agencia de marketing digital de referencia en Marrakech y en todo Marruecos."
+      },
+      "2021": {
+        "title": "Lanzamiento Innovador",
+        "subtitle": "Innovación",
+        "desc": "Ampliamos nuestra gama de servicios (SEO, PPC, Social Ads) para responder a las necesidades crecientes de las empresas locales."
+      },
+      "2022": {
+        "title": "Expansión Marruecos",
+        "subtitle": "Expansión",
+        "desc": "Nuestra agencia se afirmó como un actor clave en Marruecos, ampliando su presencia más allá de Marrakech."
+      },
+      "2023": {
+        "title": "Éxito y Crecimiento",
+        "subtitle": "Crecimiento",
+        "desc": "Más de 100 empresas acompañadas con resultados impresionantes, reforzando nuestra posición como socio de elección."
+      },
+      "2024": {
+        "title": "IA y Futuro",
+        "subtitle": "Innovación",
+        "desc": "Integración de la inteligencia artificial en nuestros servicios para rendimiento SEO y contenido multiplicado."
+      },
+      "2025": {
+        "title": "Digitalización Élite",
+        "subtitle": "Élite",
+        "desc": "GDC es reconocida como una agencia de élite, transformando las ambiciones de sus clientes en éxitos duraderos."
+      },
+      "2026": {
+        "title": "Nuevos Horizontes",
+        "subtitle": "Próximamente",
+        "desc": "La aventura continúa. Preparamos nuevas innovaciones para revolucionar el panorama del marketing digital."
+      }
+    }
+  },
+  "solutionsSection": {
+    "tag": "Nuestras Soluciones",
+    "title": "Experiencia <highlight>360°</highlight>",
+    "subtitle": "Soluciones digitales diseñadas para el rendimiento absoluto.",
+    "cta": "Iniciar",
+    "items": {
+      "marketing": {
+        "title": "Marketing Digital",
+        "desc": "Desarrollamos estrategias de marketing digital a medida, diseñadas para fortalecer tu visibilidad en línea, atraer tráfico calificado y maximizar tus conversiones vía SEO, SEM y Social Ads."
+      },
+      "website": {
+        "title": "Creación de Sitios Web",
+        "desc": "Diseño de sitios web modernos, responsivos y de alto rendimiento. Ya sea para un sitio vitrina o e-commerce, cada proyecto está pensado para ofrecer una experiencia de usuario óptima."
+      },
+      "software": {
+        "title": "Software Personalizado",
+        "desc": "Desarrollo de software a medida que responde perfectamente a las necesidades únicas de tu empresa. Optimiza tus procesos y acelera tu transformación digital."
+      },
+      "content": {
+        "title": "Contenido Visual",
+        "desc": "Creación de contenido visual cautivador que fortalece tu imagen de marca y aumenta tu compromiso en línea en redes sociales y soportes digitales."
+      },
+      "consulting": {
+        "title": "Consultoría Estratégica",
+        "desc": "Acompañamiento personalizado en estrategia digital para maximizar tu impacto en línea gracias a un enfoque analítico y experiencia profunda del mercado."
+      },
+      "ads": {
+        "title": "Publicidad en Línea",
+        "desc": "Campañas publicitarias estratégicas para aumentar tu visibilidad y maximizar tus conversiones vía SEM, retargeting y publicidades segmentadas de alto rendimiento."
+      }
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Preguntas <highlight>Frecuentes.</highlight>",
+    "subtitle": "Todo lo que necesitas saber sobre nuestro proceso, servicios y cómo podemos impulsar tu empresa.",
+    "anotherQuestion": "¿Otra pregunta?",
+    "expertsHere": "Nuestros expertos están aquí para ti.",
+    "contactUs": "Contáctanos",
+    "questions": {
+      "q1": {
+        "question": "¿Qué servicios ofrecen en Group Digital Concept?",
+        "answer": "Ofrecemos una gama completa de servicios en comunicación, marketing digital, creación de sitios web, desarrollo de aplicaciones, y mucho más para responder a las necesidades específicas de cada cliente."
+      },
+      "q2": {
+        "question": "¿Cómo funciona el proceso de creación de sitios web?",
+        "answer": "Seguimos un proceso estructurado: descubrimiento de tus necesidades, diseño UX/UI, desarrollo técnico, integración de contenido, pruebas rigurosas y lanzamiento, seguido de capacitación de gestión."
+      },
+      "q3": {
+        "question": "¿Cuáles son los plazos para la creación de un sitio web?",
+        "answer": "Los plazos varían según la complejidad. Un sitio vitrina generalmente toma de 2 a 4 semanas, mientras que un e-commerce o aplicación personalizada puede requerir de 6 a 10 semanas."
+      },
+      "q4": {
+        "question": "¿Qué es el SEO y por qué es importante?",
+        "answer": "El SEO (Search Engine Optimization) mejora tu visibilidad en Google. Es crucial para atraer tráfico orgánico calificado, aumentar tu reputación y generar leads sin publicidad paga."
+      },
+      "q5": {
+        "question": "¿Puedo gestionar mi sitio web una vez que está creado?",
+        "answer": "Absolutamente. Desarrollamos nuestros sitios (WordPress, Shopify, o personalizados) con interfaces de administración intuitivas y te capacitamos para que seas totalmente autónomo."
+      },
+      "q6": {
+        "question": "¿Qué es el diseño UX y por qué es importante?",
+        "answer": "El Diseño UX (Experiencia de Usuario) facilita la navegación de tus visitantes. Una buena UX aumenta el tiempo pasado en el sitio, reduce la tasa de rebote y aumenta significativamente tus conversiones."
+      },
+      "q7": {
+        "question": "¿Ofrecen servicios de marketing digital?",
+        "answer": "Sí, somos expertos en estrategia digital: publicidad en línea (Google Ads, Facebook Ads), gestión de redes sociales, marketing de contenido y email marketing para maximizar tu ROI."
+      },
+      "q8": {
+        "question": "¿Puedo tener un sitio web responsivo para móvil?",
+        "answer": "Es un estándar para nosotros. Todos nuestros sitios se desarrollan 'Mobile First', garantizando una visualización y navegación perfectas en smartphones, tablets y computadoras."
+      },
+      "q9": {
+        "question": "¿Ofrecen soporte después de la creación del sitio?",
+        "answer": "Sí, ofrecemos varios paquetes de mantenimiento para asegurar la seguridad, actualizaciones y evolución de tu sitio web a largo plazo."
+      },
+      "q10": {
+        "question": "¿Cómo puedo obtener un presupuesto para mis necesidades?",
+        "answer": "Simplemente contáctanos a través de nuestro formulario en línea, por email o teléfono. Analizaremos tu proyecto y te proporcionaremos un presupuesto detallado y personalizado en 24 horas."
+      }
+    }
+  },
+  "contactPage": {
+    "tag": "Contáctanos",
+    "title": "Hablemos de Proyecto.",
+    "subtitle": "¿Una visión? ¿Un desafío? Nuestro equipo transforma tus ideas en experiencias digitales excepcionales.",
+    "steps": {
+      "identity": "Identidad",
+      "needs": "Necesidades",
+      "message": "Mensaje"
+    },
+    "form": {
+      "fullName": "Nombre Completo",
+      "proEmail": "Email Profesional",
+      "company": "Empresa",
+      "phone": "Teléfono",
+      "placeholders": {
+        "name": "Juan Pérez",
+        "email": "juan@empresa.com",
+        "company": "Estudio Digital",
+        "phone": "+212 6..."
+      },
+      "selectNeeds": "Selecciona tus necesidades",
+      "specifyNeed": "Especifica tu necesidad...",
+      "tellUsProject": "Cuéntanos sobre tu proyecto",
+      "projectPlaceholder": "Contexto, objetivos, plazos, presupuesto estimado...",
+      "back": "Atrás",
+      "sending": "Enviando...",
+      "send": "Enviar",
+      "next": "Siguiente"
+    },
+    "success": {
+      "title": "¡Mensaje Recibido!",
+      "message": "Gracias {name}. Estamos analizando tu solicitud y volveremos contigo en 24 horas.",
+      "newRequest": "Nueva solicitud"
+    },
+    "services": {
+      "showcase": "Sitio Vitrina",
+      "ecommerce": "E-Commerce",
+      "webApp": "App Web",
+      "seoAds": "SEO / Anuncios",
+      "branding": "Branding",
+      "other": "Otro"
+    },
+    "info": {
+      "directLine": "Línea Directa",
+      "proEmail": "Email Profesional",
+      "followUs": "Síguenos"
+    },
+    "locations": {
+      "tag": "Hub de Presencia Global",
+      "title": "Nuestras Ubicaciones.",
+      "casablanca": {
+        "city": "Casablanca",
+        "label": "Sede Central",
+        "address": "10, Rue Zayd Ibnou Rifaii Maarif, 20160 Casablanca"
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "label": "Oficina Secundaria",
+        "address": "Residence Plateau Bureau Al Amira III, 4º piso, Oficina N°35, Av. Yacoub El Mansour, Gueliz, Marrakech",
+        "badge": "Experto Local"
+      },
+      "neuilly": {
+        "city": "Neuilly-sur-Seine",
+        "label": "Sede en Francia",
+        "address": "20 bis, Rue Louis Philippe, 92200 Neuilly-sur-Seine, Francia"
+      },
+      "operational": "Operacional"
+    },
+    "countries": {
+      "morocco": "Marruecos",
+      "france": "Francia",
+      "usa": "EE.UU.",
+      "uk": "Reino Unido",
+      "belgium": "Bélgica",
+      "switzerland": "Suiza",
+      "spain": "España",
+      "uae": "EAU",
+      "saudiArabia": "Arabia Saudita",
+      "canada": "Canadá"
+    },
+    "timeline": {
+      "asap": "Tan pronto como sea posible",
+      "1month": "En 1 mes",
+      "1to3months": "1-3 meses",
+      "undefined": "Indefinido"
+    }
+  },
+  "testimonials": {
+    "tag": "Confían en nosotros",
+    "title": "Éxitos Inspiradores <highlight>con Nuestra Agencia Web</highlight>",
+    "subtitle": "Descubre cómo transformamos los desafíos de nuestros clientes en oportunidades de crecimiento exponencial.",
+    "cta": "Únete a la Élite",
+    "modal": {
+      "title": "Tu Experiencia <highlight>GDC</highlight>",
+      "subtitle": "Comparte tu éxito con la comunidad.",
+      "rating": "Calificación General",
+      "name": "Nombre Completo",
+      "role": "Cargo / Empresa",
+      "message": "Tu mensaje... describe el impacto de nuestra colaboración",
+      "submit": "PUBLICAR MI RESEÑA",
+      "successTitle": "¡Gracias por tu confianza!",
+      "successDesc": "Tu testimonio ha sido enviado a nuestro equipo para validación."
+    }
+  },
+  "contact": {
+    "tag": "Contacto",
+    "title": "Hablemos de tu <highlight>éxito futuro</highlight>",
+    "subtitle": "¿Listo para transformar tu visión en realidad digital? Completa este formulario para iniciar una colaboración excepcional.",
+    "info": {
+      "email": "Email",
+      "phone": "Teléfono"
+    },
+    "form": {
+      "step1": {
+        "title": "Tus Datos",
+        "subtitle": "Empecemos con las presentaciones.",
+        "name": "Nombre Completo *",
+        "namePlaceholder": "Tu Nombre",
+        "email": "Email Profesional *",
+        "emailPlaceholder": "nombre@empresa.com",
+        "phone": "Teléfono *",
+        "phonePlaceholder": "6 00 00 00",
+        "company": "Empresa",
+        "companyPlaceholder": "Nombre de tu empresa",
+        "next": "Continuar"
+      },
+      "step2": {
+        "title": "Tu Proyecto",
+        "subtitle": "Cuéntanos más sobre tus ambiciones.",
+        "services": "Servicios Buscados *",
+        "budget": "Presupuesto Estimado *",
+        "deadline": "Plazo Deseado *",
+        "description": "Detalles del proyecto",
+        "descriptionPlaceholder": "Cuéntanos más... (Objetivos, competidores, inspiración)",
+        "back": "Volver",
+        "sending": "Enviando...",
+        "submit": "Confirmar proyecto",
+        "otherPlaceholder": "Describa su necesidad...",
+        "success": {
+          "title": "Solicitud Enviada",
+          "message": "Gracias. Tu proyecto está en buenas manos. Te contactaremos muy pronto.",
+          "new": "Nuevo Proyecto"
+        }
+      },
+      "errors": {
+        "name": "El nombre es requerido",
+        "email": "El email es requerido",
+        "emailInvalid": "Formato de email inválido",
+        "phone": "El número es requerido",
+        "phoneInvalid": "Número inválido",
+        "services": "Por favor selecciona al menos un servicio",
+        "budget": "Por favor define un presupuesto",
+        "deadline": "Por favor elige un plazo"
+      },
+      "options": {
+        "services": {
+          "strategy": "Estrategia y Consultoría",
+          "branding": "Branding e Identidad",
+          "website": "Sitio Web Personalizado",
+          "ecommerce": "E-Commerce",
+          "mobile": "App Móvil / App Web",
+          "uiux": "Diseño UI/UX",
+          "seo": "SEO y Posicionamiento",
+          "ads": "Publicidad (Anuncios)",
+          "social": "Social Media",
+          "content": "Creación de Contenido",
+          "other": "Otro"
+        },
+        "budgets": {
+          "lt20k": "< 20k MAD",
+          "20k50k": "20k - 50k MAD",
+          "50k100k": "50k - 100k MAD",
+          "gt100k": "+ 100k MAD",
+          "tbd": "Por definir"
+        },
+        "timelines": {
+          "asap": "Tan pronto como sea posible",
+          "1month": "En 1 mes",
+          "onetreemonths": "1-3 meses",
+          "undefined": "Indefinido"
+        },
+        "countries": {
+          "morocco": "Marruecos",
+          "france": "Francia",
+          "usa": "EE.UU.",
+          "uk": "Reino Unido",
+          "belgium": "Bélgica",
+          "switzerland": "Suiza",
+          "spain": "España"
+        }
+      }
+    },
+    "success": {
+      "title": "¡Mensaje Recibido!",
+      "message": "Gracias {name}. Estamos analizando tu solicitud y volveremos contigo en 24 horas.",
+      "newRequest": "Nueva solicitud"
+    }
+  },
+  "finalCta": {
+    "tag": "El Futuro es Ahora",
+    "title": {
+      "part1": "Tu",
+      "part2": "Visión.",
+      "part3": "Nuestra",
+      "part4": "Misión."
+    },
+    "button": "Iniciar",
+    "hover": "Vamos"
+  },
+  "languages": {
+    "ar": "Árabe",
+    "nl": "Neerlandés",
+    "en": "Inglés",
+    "fr": "Francés",
+    "de": "Alemán",
+    "it": "Italiano",
+    "pt": "Portugués",
+    "ru": "Ruso",
+    "es": "Español"
   }
 }

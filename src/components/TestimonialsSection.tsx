@@ -225,28 +225,26 @@ export const TestimonialsSection: React.FC = () => {
                     <CheckCircle2 size={40} />
                   </div>
                   <h3 className="text-3xl font-black text-black dark:text-white mb-2">
-                    Merci pour votre confiance !
+                    {tTestimonials("modal.successTitle")}
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Votre témoignage a été envoyé à notre équipe pour
-                    validation.
+                    {tTestimonials("modal.successDesc")}
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleReviewSubmit} className="space-y-8">
                   <div className="text-center mb-8">
-                    <h3 className="text-3xl md:text-4xl font-black text-black dark:text-white uppercase tracking-tighter">
-                      Votre Expérience{" "}
-                      <span className="text-brand-red italic">GDC</span>
-                    </h3>
+                    <h3 className="text-3xl md:text-4xl font-black text-black dark:text-white uppercase tracking-tighter"
+                      dangerouslySetInnerHTML={{ __html: tTestimonials.raw("modal.title").replace("<highlight>", '<span class="text-brand-red italic">').replace("</highlight>", '</span>') }}
+                    />
                     <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">
-                      Partagez votre succès avec la communauté.
+                      {tTestimonials("modal.subtitle")}
                     </p>
                   </div>
 
                   <div className="flex flex-col items-center gap-4 mb-10">
                     <span className="text-[10px] font-black uppercase tracking-widest text-gray-400">
-                      Note Globale
+                      {tTestimonials("modal.rating")}
                     </span>
                     <div className="flex gap-2">
                       {[1, 2, 3, 4, 5].map((i) => (
@@ -258,11 +256,10 @@ export const TestimonialsSection: React.FC = () => {
                         >
                           <Star
                             size={32}
-                            className={`transition-colors ${
-                              i <= rating
+                            className={`transition-colors ${i <= rating
                                 ? "fill-brand-red text-brand-red drop-shadow-[0_0_10px_rgba(255,0,0,0.4)]"
                                 : "text-gray-200 dark:text-gray-800"
-                            }`}
+                              }`}
                           />
                         </button>
                       ))}
@@ -277,7 +274,7 @@ export const TestimonialsSection: React.FC = () => {
                       />
                       <input
                         type="text"
-                        placeholder="Nom Complet"
+                        placeholder={tTestimonials("modal.name")}
                         required
                         className="w-full bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-brand-red transition-all"
                       />
@@ -289,7 +286,7 @@ export const TestimonialsSection: React.FC = () => {
                       />
                       <input
                         type="text"
-                        placeholder="Poste / Entreprise"
+                        placeholder={tTestimonials("modal.role")}
                         required
                         className="w-full bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-brand-red transition-all"
                       />
@@ -302,7 +299,7 @@ export const TestimonialsSection: React.FC = () => {
                       size={18}
                     />
                     <textarea
-                      placeholder="Votre message... décrivez l'impact de notre collaboration"
+                      placeholder={tTestimonials("modal.message")}
                       required
                       rows={4}
                       className="w-full bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-4 pl-12 pr-4 outline-none focus:border-brand-red transition-all resize-none"
@@ -318,7 +315,7 @@ export const TestimonialsSection: React.FC = () => {
                       <Loader2 className="animate-spin" />
                     ) : (
                       <>
-                        PUBLIER MON AVIS{" "}
+                        {tTestimonials("modal.submit")}{" "}
                         <Send
                           size={16}
                           className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
@@ -342,16 +339,14 @@ export const TestimonialsSection: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 border border-black/5 dark:border-white/10 shadow-sm backdrop-blur-md">
             <CheckCircle2 size={14} className="text-brand-red" />
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gray-800 dark:text-gray-200">
-              Ils nous font confiance
+              {tTestimonials("tag")}
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tighter mb-6">
-            Des Succès <span className="text-brand-red">Inspirants</span> <br />{" "}
-            avec Notre Agence Web
-          </h2>
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tighter mb-6"
+            dangerouslySetInnerHTML={{ __html: tTestimonials.raw("title").replace("<highlight>", '<span class="text-brand-red">').replace("</highlight>", '</span> <br /> ') }}
+          />
           <p className="max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-400 font-medium leading-relaxed">
-            Découvrez comment nous transformons les défis de nos clients en
-            opportunités de croissance exponentielle.
+            {tTestimonials("subtitle")}
           </p>
         </div>
 
@@ -386,7 +381,7 @@ export const TestimonialsSection: React.FC = () => {
               onClick={() => setReviewModalOpen(true)}
               className="pointer-events-auto inline-flex items-center gap-3 px-8 py-4 bg-black dark:bg-white text-white dark:text-black rounded-full font-black uppercase tracking-widest text-[10px] hover:scale-110 transition-all shadow-2xl"
             >
-              <Globe size={16} /> Rejoignez l'élite
+              <Globe size={16} /> {tTestimonials("cta")}
             </button>
           </div>
         </div>

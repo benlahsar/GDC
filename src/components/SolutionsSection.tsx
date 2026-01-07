@@ -12,71 +12,67 @@ import {
 } from "lucide-react";
 import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
-const SOLUTIONS_DATA = [
-  {
-    id: "01",
-    title: "Marketing Digital",
-    icon: BarChart3,
-    color: "text-orange-500",
-    gradient: "from-orange-500/20 to-red-500/20",
-    content:
-      "Nous élaborons des stratégies de marketing digital sur mesure, conçues pour renforcer votre visibilité en ligne, attirer un trafic qualifié et maximiser vos conversions via SEO, SEM et Social Ads.",
-  },
-  {
-    id: "02",
-    title: "Création de Sites Web",
-    icon: Layout,
-    color: "text-blue-500",
-    gradient: "from-blue-500/20 to-indigo-500/20",
-    content:
-      "Conception de sites web modernes, responsifs et performants. Que ce soit pour un site vitrine ou un e-commerce, chaque projet est pensé pour offrir une expérience utilisateur optimale.",
-  },
-  {
-    id: "03",
-    title: "Logiciels Personnalisés",
-    icon: Box,
-    color: "text-emerald-500",
-    gradient: "from-emerald-500/20 to-teal-500/20",
-    content:
-      "Développement de logiciels sur mesure qui répondent parfaitement aux besoins uniques de votre entreprise. Optimisez vos processus et accélérez votre transformation digitale.",
-  },
-  {
-    id: "04",
-    title: "Contenu Visuel",
-    icon: Palette,
-    color: "text-pink-500",
-    gradient: "from-pink-500/20 to-rose-500/20",
-    content:
-      "Création de contenus visuels captivants qui renforcent votre image de marque et augmentent votre engagement en ligne sur les réseaux sociaux et supports digitaux.",
-  },
-  {
-    id: "05",
-    title: "Conseil Stratégique",
-    icon: Zap,
-    color: "text-amber-500",
-    gradient: "from-amber-500/20 to-orange-500/20",
-    content:
-      "Accompagnement personnalisé en stratégie digitale pour maximiser votre impact en ligne grâce à une approche analytique et une expertise approfondie du marché.",
-  },
-  {
-    id: "06",
-    title: "Publicité en Ligne",
-    icon: MousePointerClick,
-    color: "text-violet-500",
-    gradient: "from-violet-500/20 to-purple-500/20",
-    content:
-      "Campagnes de publicité stratégiques pour augmenter votre visibilité et maximiser vos conversions via le SEM, le retargeting et des publicités ciblées haute performance.",
-  },
-];
 
 export const SolutionsSection: React.FC = () => {
+  const tSolutions = useTranslations("solutionsSection");
   const sectionRef = useRef<HTMLElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [opacity, setOpacity] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-  // const { navigate } = useNavigation();
   const router = useRouter();
+
+  const SOLUTIONS_DATA = [
+    {
+      id: "01",
+      title: tSolutions("items.marketing.title"),
+      icon: BarChart3,
+      color: "text-orange-500",
+      gradient: "from-orange-500/20 to-red-500/20",
+      content: tSolutions("items.marketing.desc"),
+    },
+    {
+      id: "02",
+      title: tSolutions("items.website.title"),
+      icon: Layout,
+      color: "text-blue-500",
+      gradient: "from-blue-500/20 to-indigo-500/20",
+      content: tSolutions("items.website.desc"),
+    },
+    {
+      id: "03",
+      title: tSolutions("items.software.title"),
+      icon: Box,
+      color: "text-emerald-500",
+      gradient: "from-emerald-500/20 to-teal-500/20",
+      content: tSolutions("items.software.desc"),
+    },
+    {
+      id: "04",
+      title: tSolutions("items.content.title"),
+      icon: Palette,
+      color: "text-pink-500",
+      gradient: "from-pink-500/20 to-rose-500/20",
+      content: tSolutions("items.content.desc"),
+    },
+    {
+      id: "05",
+      title: tSolutions("items.consulting.title"),
+      icon: Zap,
+      color: "text-amber-500",
+      gradient: "from-amber-500/20 to-orange-500/20",
+      content: tSolutions("items.consulting.desc"),
+    },
+    {
+      id: "06",
+      title: tSolutions("items.ads.title"),
+      icon: MousePointerClick,
+      color: "text-violet-500",
+      gradient: "from-violet-500/20 to-purple-500/20",
+      content: tSolutions("items.ads.desc"),
+    },
+  ];
 
   useEffect(() => {
     const checkMobile = () => {
@@ -123,24 +119,23 @@ export const SolutionsSection: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-4 md:mb-6 border border-black/5 dark:border-white/5 backdrop-blur-md">
             <Layers size={14} className="text-brand-red" />
             <span className="text-[10px] font-bold uppercase tracking-widest text-gray-800 dark:text-gray-200">
-              Nos Solutions
+              {tSolutions("tag")}
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-8xl font-black tracking-tighter text-black dark:text-white mb-4 md:mb-6 uppercase leading-tight">
-            Expertise <br />
-            <span className="italic text-brand-red">360°</span>
-          </h2>
+          <h2
+            className="text-3xl md:text-8xl font-black tracking-tighter text-black dark:text-white mb-4 md:mb-6 uppercase leading-tight"
+            dangerouslySetInnerHTML={{ __html: tSolutions.raw("title").replace("<highlight>", '<br /><span class="italic text-brand-red">').replace("</highlight>", '</span>') }}
+          />
           <p className="max-w-xl mx-auto text-base md:text-xl text-gray-500 dark:text-gray-400 font-medium leading-relaxed">
-            Des solutions digitales conçues pour la performance absolue.
+            {tSolutions("subtitle")}
           </p>
         </div>
 
         {/* --- DYNAMIC LAYOUT: Sticky for PC, Simple List for Mobile --- */}
         <div
-          className={`relative flex flex-col ${
-            isMobile ? "gap-6" : "gap-16 pb-32"
-          }`}
+          className={`relative flex flex-col ${isMobile ? "gap-6" : "gap-16 pb-32"
+            }`}
         >
           {SOLUTIONS_DATA.map((item, index) => (
             <div
@@ -153,9 +148,8 @@ export const SolutionsSection: React.FC = () => {
               }
             >
               <div
-                className={`group relative w-full ${
-                  !isMobile ? "max-w-5xl mx-auto" : ""
-                } rounded-[24px] md:rounded-[60px] p-[1px] transition-transform duration-500`}
+                className={`group relative w-full ${!isMobile ? "max-w-5xl mx-auto" : ""
+                  } rounded-[24px] md:rounded-[60px] p-[1px] transition-transform duration-500`}
               >
                 {/* Gradient glow - PC Only */}
                 {!isMobile && (
@@ -166,21 +160,19 @@ export const SolutionsSection: React.FC = () => {
 
                 <div
                   className={`
-                    relative h-full w-full 
-                    rounded-[24px] md:rounded-[58px] 
-                    bg-white/10 dark:bg-black/20 
-                    ${
-                      isMobile
-                        ? "backdrop-blur-xl saturate-100"
-                        : "backdrop-blur-[40px] saturate-150"
-                    } 
-                    border border-white/40 dark:border-white/10 
-                    shadow-xl p-6 md:p-14 
+                    relative h-full w-full
+                    rounded-[24px] md:rounded-[58px]
+                    bg-white/10 dark:bg-black/20
+                    ${isMobile
+                      ? "backdrop-blur-xl saturate-100"
+                      : "backdrop-blur-[40px] saturate-150"
+                    }
+                    border border-white/40 dark:border-white/10
+                    shadow-xl p-6 md:p-14
                     overflow-hidden
-                    ${
-                      !isMobile
-                        ? "transition-all duration-500 hover:shadow-2xl"
-                        : ""
+                    ${!isMobile
+                      ? "transition-all duration-500 hover:shadow-2xl"
+                      : ""
                     }
                    `}
                 >
@@ -199,25 +191,23 @@ export const SolutionsSection: React.FC = () => {
 
                       <div
                         className={`
-                                relative w-14 h-14 md:w-24 md:h-24 rounded-full 
-                                bg-white/30 dark:bg-white/5 
-                                border border-white/50 dark:border-white/10 
-                                backdrop-blur-md flex items-center justify-center 
-                                shadow-lg transition-transform duration-500 
-                                ${
-                                  !isMobile
-                                    ? "group-hover:rotate-12 group-hover:scale-110"
-                                    : ""
-                                }
+                                relative w-14 h-14 md:w-24 md:h-24 rounded-full
+                                bg-white/30 dark:bg-white/5
+                                border border-white/50 dark:border-white/10
+                                backdrop-blur-md flex items-center justify-center
+                                shadow-lg transition-transform duration-500
+                                ${!isMobile
+                            ? "group-hover:rotate-12 group-hover:scale-110"
+                            : ""
+                          }
                             `}
                       >
                         <item.icon
                           size={isMobile ? 24 : 40}
-                          className={`text-black dark:text-white transition-colors duration-300 ${
-                            !isMobile
-                              ? item.color.replace("text-", "group-hover:text-")
-                              : ""
-                          }`}
+                          className={`text-black dark:text-white transition-colors duration-300 ${!isMobile
+                            ? item.color.replace("text-", "group-hover:text-")
+                            : ""
+                            }`}
                         />
                       </div>
 
@@ -242,32 +232,29 @@ export const SolutionsSection: React.FC = () => {
                         >
                           <div
                             className={`
-                                    w-8 h-8 md:w-10 md:h-10 rounded-full 
-                                    bg-black/5 dark:bg-white/10 
-                                    flex items-center justify-center 
-                                    transition-colors duration-300 
-                                    ${
-                                      !isMobile
-                                        ? "group-hover/btn:bg-brand-red"
-                                        : ""
-                                    }
+                                    w-8 h-8 md:w-10 md:h-10 rounded-full
+                                    bg-black/5 dark:bg-white/10
+                                    flex items-center justify-center
+                                    transition-colors duration-300
+                                    ${!isMobile
+                                ? "group-hover/btn:bg-brand-red"
+                                : ""
+                              }
                                   `}
                           >
                             <MoveRight
                               size={16}
-                              className={`text-black dark:text-white transition-colors ${
-                                !isMobile ? "group-hover/btn:text-white" : ""
-                              }`}
+                              className={`text-black dark:text-white transition-colors ${!isMobile ? "group-hover/btn:text-white" : ""
+                                }`}
                             />
                           </div>
                           <span
-                            className={`text-[10px] md:text-sm font-bold uppercase tracking-widest text-black/60 dark:text-white/60 ${
-                              !isMobile
-                                ? "group-hover/btn:text-brand-red transition-colors"
-                                : ""
-                            }`}
+                            className={`text-[10px] md:text-sm font-bold uppercase tracking-widest text-black/60 dark:text-white/60 ${!isMobile
+                              ? "group-hover/btn:text-brand-red transition-colors"
+                              : ""
+                              }`}
                           >
-                            Démarrer
+                            {tSolutions("cta")}
                           </span>
                         </button>
                       </div>
@@ -279,6 +266,6 @@ export const SolutionsSection: React.FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
