@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "home": "Home",
+    "agency": "Agency",
+    "team": "Team",
+    "expertise": "Expertise",
+    "solutions": "Solutions",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "project": "Project"
+  },
+  "hero": {
+    "subtitle": "Premium Digital Marketing Agency: The Key to Growing Your Revenue",
+    "line1": "Experts in",
+    "line2": "Digitalization",
+    "line3": "and Marketing",
+    "line4": "Innovative",
+    "description": "Bring Your Ambitions to Life with a Visionary Digital Marketing Agency. Strategic Solutions Backed by Concrete Results.",
+    "cta": "Start Project",
+    "portfolio": "Our Portfolio"
+  },
+  "ai": {
+    "title": "AI Strategist",
+    "placeholder": "Ex: Riad in Marrakech, E-commerce...",
+    "button": "Analyze",
+    "status": "Powered by Gemini 3",
+    "newAnalysis": "New Analysis",
+    "prompt": "You are a senior strategist. Give 3 tips for:",
+    "hint": "Need a strategy? Tell us your sector.",
+    "error": "Hub connection failed. Contact us for manual analysis!"
+  },
+  "stats": {
+    "performance": "Performance",
+    "growth": "Growth",
+    "satisfaction": "Satisfaction",
+    "projects": "Projects",
+    "support": "Support"
+  },
+  "innovation": {
+    "tag": "Future Innovation",
+    "headline": "The digital marketing agency that propels your presence towards <success>success</success>.",
+    "description": "Strategic partner dedicated to digital transformation in Marrakech. Design and implementation of innovative solutions to optimize visibility, reputation and overall performance.",
+    "discoverCta": "Discover GDC"
+  },
+  "services": {
+    "title": "Our Expertise",
+    "headline": "Discover how we support your <highlight>digital success</highlight>",
+    "description": "Innovative and bespoke solutions to propel your growth.",
+    "marquee": {
+      "customDev": "Custom Development",
+      "appDesigns": "App Designs",
+      "websiteCreation": "Website Creation",
+      "ads": "High-Impact Ads",
+      "strategy": "Digital Strategy",
+      "uiux": "UI/UX Design",
+      "ecommerce": "E-Commerce",
+      "branding": "Brand Identity"
+    },
+    "cards": {
+      "social": {
+        "category": "Social Media",
+        "headline": "Boost your brand engagement on social media",
+        "description": "Our digital marketing agency boosts social media engagement, creating authentic connections with your audience. Our approach? Captivating content and precise targeting to drive interaction and loyalty.",
+        "highlight": "Engagement & Loyalty"
+      },
+      "strategy": {
+        "category": "Strategy",
+        "headline": "Proven digital strategy for concrete results",
+        "description": "Our agency implements bespoke digital strategies designed to maximize your return on investment. With our expertise, every campaign is optimized to achieve your growth goals.",
+        "highlight": "Growth & Results"
+      },
+      "ads": {
+        "category": "Advertising",
+        "headline": "Targeted paid ads for maximum ROI",
+        "description": "Our expertise in paid advertising transforms every ad into a revenue engine. We optimize ad campaigns to ensure precise targeting, reaching exactly your prospects.",
+        "highlight": "Targeting & Profits"
+      },
+      "web": {
+        "category": "Web Design",
+        "headline": "Creation and optimization of high-performance websites",
+        "description": "Our team creates high-performance websites, tailored to your needs and user experience. We optimize your site to improve its visibility, speed, and overall conversion rate.",
+        "highlight": "Performance & Sales"
+      }
+    }
+  },
+  "timeline": {
+    "tag": "Our Journey",
+    "title": "Explore the <highlight>Evolution</highlight>",
+    "steps": {
+      "2020": { "title": "The Foundation", "subtitle": "Foundation", "desc": "Group Digital Concept was born with a clear ambition: to become a reference digital marketing agency in Marrakech and throughout Morocco." },
+      "2021": { "title": "Innovative Launch", "subtitle": "Innovation", "desc": "We expanded our range of services (SEO, PPC, Social Ads) to meet the growing needs of local businesses." },
+      "2022": { "title": "Morocco Expansion", "subtitle": "Expansion", "desc": "Our agency has established itself as a key player in Morocco, expanding its presence beyond Marrakech." },
+      "2023": { "title": "Success & Growth", "subtitle": "Growth", "desc": "More than 100 companies accompanied with impressive results, reinforcing our position as a partner of choice." },
+      "2024": { "title": "AI & Future", "subtitle": "Innovation", "desc": "Integration of artificial intelligence into our services for multiplied SEO and content performance." },
+      "2025": { "title": "Elite Digitalization", "subtitle": "Elite", "desc": "GDC is recognized as an elite agency, transforming its clients' ambitions into lasting successes." },
+      "2026": { "title": "New Horizons", "subtitle": "Soon", "desc": "The adventure continues. We are preparing new innovations to revolutionize the digital marketing landscape." }
+    }
+  },
+  "solutionsSection": {
+    "tag": "Our Solutions",
+    "title": "Expertise <highlight>360°</highlight>",
+    "subtitle": "Digital solutions designed for absolute performance.",
+    "cta": "Start",
+    "items": {
+      "marketing": { "title": "Digital Marketing", "desc": "We develop bespoke digital marketing strategies designed to strengthen your online visibility, attract qualified traffic, and maximize your conversions via SEO, SEM and Social Ads." },
+      "website": { "title": "Website Creation", "desc": "Design of modern, responsive and high-performance websites. Whether for a showcase site or e-commerce, every project is thought out to offer an optimal user experience." },
+      "software": { "title": "Custom Software", "desc": "Development of bespoke software that perfectly meets the unique needs of your business. Optimize your processes and accelerate your digital transformation." },
+      "content": { "title": "Visual Content", "desc": "Creation of captivating visual content that strengthens your brand image and increases your online engagement on social media and digital supports." },
+      "consulting": { "title": "Strategic Consulting", "desc": "Personalized support in digital strategy to maximize your online impact thanks to an analytical approach and in-depth market expertise." },
+      "ads": { "title": "Online Advertising", "desc": "Strategic advertising campaigns to increase your visibility and maximize your conversions via SEM, retargeting and high-performance targeted ads." }
+    }
+  },
+  "testimonials": {
+    "tag": "They trust us",
+    "title": "Inspiring Successes <highlight>with Our Web Agency</highlight>",
+    "subtitle": "Discover how we transform our clients' challenges into exponential growth opportunities.",
+    "cta": "Join the Elite",
+    "modal": {
+      "title": "Your Experience <highlight>GDC</highlight>",
+      "subtitle": "Share your success with the community.",
+      "rating": "Global Rating",
+      "name": "Full Name",
+      "role": "Role / Company",
+      "message": "Your message... describe the impact of our collaboration",
+      "submit": "PUBLISH MY REVIEW",
+      "successTitle": "Thank you for your trust!",
+      "successDesc": "Your testimonial has been sent to our team for validation."
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Let's talk about your <highlight>future success</highlight>",
+    "subtitle": "Ready to transform your vision into digital reality? Fill out this form to start an exceptional collaboration.",
+    "info": {
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "form": {
+      "step1": {
+        "title": "Your Details",
+        "subtitle": "Let's start with introductions.",
+        "name": "Full Name *",
+        "namePlaceholder": "Your Name",
+        "email": "Work Email *",
+        "phone": "Phone *",
+        "company": "Company",
+        "companyPlaceholder": "Your company name",
+        "next": "Continue"
+      },
+      "step2": {
+        "title": "Your Project",
+        "subtitle": "Tell us more about your ambitions.",
+        "services": "Services Sought *",
+        "budget": "Estimated Budget *",
+        "deadline": "Desired Deadline *",
+        "submit": "Send Request",
+        "success": {
+            "title": "Request Sent",
+            "message": "Thank you. Your project is in good hands. We will contact you very quickly.",
+            "new": "New Project"
+        }
+      },
+      "errors": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "emailInvalid": "Invalid email format",
+        "phone": "Number is required",
+        "phoneInvalid": "Invalid number",
+        "services": "Please select at least one service",
+        "budget": "Please define a budget",
+        "deadline": "Please choose a deadline"
+      },
+      "options": {
+        "services": {
+            "strategy": "Strategy & Consulting",
+            "branding": "Branding & Identity",
+            "website": "Custom Website",
+            "ecommerce": "E-Commerce",
+            "mobile": "Mobile App / Web App",
+            "uiux": "UI/UX Design",
+            "seo": "SEO & Referencing",
+            "ads": "Advertising (Ads)",
+            "social": "Social Media",
+            "content": "Content Creation"
+        },
+        "budgets": {
+            "lt20k": "< 20k MAD",
+            "20k50k": "20k - 50k MAD",
+            "50k100k": "50k - 100k MAD",
+            "gt100k": "+ 100k MAD",
+            "tbd": "To be defined"
+        },
+        "timelines": {
+            "asap": "As soon as possible",
+            "1month": "In 1 month",
+            "1-3months": "1-3 months",
+            "undefined": "Undefined"
+        }
+      }
+    }
+  },
+  "team": {
+    "tag": "Our DNA",
+    "title": "Team of <highlight>Dedicated</highlight> Digital Professionals",
+    "expertise": {
+      "tag": "Expertise",
+      "desc": "Advanced technical and strategic mastery for superior results."
+    },
+    "vision": {
+      "title": "<highlight>Group Digital Concept</highlight> transforms your ambitions into digital reality.",
+      "desc": "We accompany our clients in their digital transformation with bespoke and innovative solutions. Our approach combines creativity, technology, and strategy for concrete results.",
+      "cta": "Contact Us"
+    },
+    "success": {
+      "tag": "Success",
+      "desc": "Projects delivered with measurable impact and maximum client satisfaction."
+    }
+  },
+  "finalCta": {
+    "tag": "The Future is Now",
+    "title": {
+      "part1": "Your",
+      "part2": "Vision.",
+      "part3": "Our",
+      "part4": "Mission."
+    },
+    "button": "Start",
+    "hover": "Go"
+  }
+}

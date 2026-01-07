@@ -17,6 +17,7 @@ import {
   Globe,
 } from "lucide-react";
 import { FORM_SERVICES, FORM_BUDGETS } from "../lib/constants";
+import { useTranslations } from "next-intl";
 
 // --- Types ---
 interface Particle {
@@ -142,6 +143,8 @@ const FireworkParticles = ({
 };
 
 export const ContactSection: React.FC = () => {
+  const tContact = useTranslations("contact");
+
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);

@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 const TESTIMONIALS = [
   {
@@ -177,7 +178,7 @@ const ReviewCard: React.FC<{ review: (typeof TESTIMONIALS)[0] }> = ({
 );
 
 export const TestimonialsSection: React.FC = () => {
-  // const { setReviewModalOpen, isReviewModalOpen } = useNavigation();
+  const tTestimonials = useTranslations("testimonials");
   const router = useRouter();
   const [isReviewModalOpen, setReviewModalOpen] = useState(false);
   const [rating, setRating] = useState(5);

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 // Specific keywords requested for the marquee
 const SCROLL_ITEMS = [
@@ -63,6 +64,7 @@ const SERVICES_DATA = [
 ];
 
 export const ServicesSection: React.FC = () => {
+  const tServices = useTranslations("services");
   // const { navigate } = useNavigation();
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);

@@ -9,75 +9,78 @@ import {
   Globe,
   Hourglass,
 } from "lucide-react";
-
-const TIMELINE_DATA = [
-  {
-    year: "2020",
-    title: "La Fondation",
-    subtitle: "Fondation",
-    description:
-      "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc.",
-    icon: Flag,
-    align: "left",
-  },
-  {
-    year: "2021",
-    title: "Lancement Innovant",
-    subtitle: "Innovation",
-    description:
-      "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales.",
-    icon: Zap,
-    align: "right",
-  },
-  {
-    year: "2022",
-    title: "Expansion Maroc",
-    subtitle: "Expansion",
-    description:
-      "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech.",
-    icon: MapPin,
-    align: "left",
-  },
-  {
-    year: "2023",
-    title: "Succès & Croissance",
-    subtitle: "Croissance",
-    description:
-      "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix.",
-    icon: TrendingUp,
-    align: "right",
-  },
-  {
-    year: "2024",
-    title: "IA & Futur",
-    subtitle: "Innovation",
-    description:
-      "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées.",
-    icon: Cpu,
-    align: "left",
-  },
-  {
-    year: "2025",
-    title: "Digitalisation Elite",
-    subtitle: "Élite",
-    description:
-      "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables.",
-    icon: Globe,
-    align: "right",
-  },
-  {
-    year: "2026",
-    title: "Nouveaux Horizons",
-    subtitle: "Bientôt",
-    description:
-      "L'aventure continue. Nous préparons de nouvelles innovations pour révolutionner le paysage du marketing digital.",
-    icon: Hourglass,
-    align: "center",
-    isFuture: true,
-  },
-];
+import { useTranslations } from "next-intl";
 
 export const TimelineSection: React.FC = () => {
+  const tTimeline = useTranslations("timeline");
+
+  const TIMELINE_DATA = [
+    {
+      year: "2020",
+      title: "La Fondation",
+      subtitle: "Fondation",
+      description:
+        "Group Digital Concept a vu le jour avec une ambition claire : devenir une agence marketing digital de référence à Marrakech et dans tout le Maroc.",
+      icon: Flag,
+      align: "left",
+    },
+    {
+      year: "2021",
+      title: "Lancement Innovant",
+      subtitle: "Innovation",
+      description:
+        "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales.",
+      icon: Zap,
+      align: "right",
+    },
+    {
+      year: "2022",
+      title: "Expansion Maroc",
+      subtitle: "Expansion",
+      description:
+        "Notre agence s'est affirmée comme un acteur incontournable au Maroc, élargissant sa présence au-delà de Marrakech.",
+      icon: MapPin,
+      align: "left",
+    },
+    {
+      year: "2023",
+      title: "Succès & Croissance",
+      subtitle: "Croissance",
+      description:
+        "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix.",
+      icon: TrendingUp,
+      align: "right",
+    },
+    {
+      year: "2024",
+      title: "IA & Futur",
+      subtitle: "Innovation",
+      description:
+        "Intégration de l'intelligence artificielle dans nos services pour des performances SEO et contenu démultipliées.",
+      icon: Cpu,
+      align: "left",
+    },
+    {
+      year: "2025",
+      title: "Digitalisation Elite",
+      subtitle: "Élite",
+      description:
+        "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables.",
+      icon: Globe,
+      align: "right",
+    },
+    {
+      year: "2026",
+      title: "Nouveaux Horizons",
+      subtitle: "Bientôt",
+      description:
+        "L'aventure continue. Nous préparons de nouvelles innovations pour révolutionner le paysage du marketing digital.",
+      icon: Hourglass,
+      align: "center",
+      isFuture: true,
+    },
+  ];
+
   const containerRef = useRef<HTMLDivElement>(null);
   const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
   const [svgPath, setSvgPath] = useState("");
@@ -151,6 +154,16 @@ export const TimelineSection: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMobile]);
+
+  const TIMELINE_STEPS = [
+    { year: "2020", key: "2020" },
+    { year: "2021", key: "2021" },
+    { year: "2022", key: "2022" },
+    { year: "2023", key: "2023" },
+    { year: "2024", key: "2024" },
+    { year: "2025", key: "2025" },
+    { year: "2026", key: "2026" },
+  ];
 
   return (
     <section

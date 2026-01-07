@@ -12,8 +12,10 @@ import {
 import { AnimatedCounter } from "./AnimatedCounter";
 import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export const TeamExpertiseSection: React.FC = () => {
+  const tTeam = useTranslations("team");
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
   //   const { navigate } = useNavigation();
@@ -246,6 +248,46 @@ export const TeamExpertiseSection: React.FC = () => {
               <p className="text-gray-500 dark:text-gray-400 text-base font-medium leading-relaxed">
                 Projets livrés avec un impact mesurable et une satisfaction
                 client maximale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <span className="text-xs font-bold uppercase">{tTeam("tag")}</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
+            {tTeam("title")}
+          </h2>
+
+          <div className="space-y-8">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">
+                {tTeam("expertise.tag")}
+              </h4>
+              <p className="text-gray-600 dark:text-gray-400">
+                {tTeam("expertise.desc")}
+              </p>
+            </div>
+
+            <div>
+              <h3
+                className="text-3xl md:text-4xl font-bold leading-tight mb-4"
+                dangerouslySetInnerHTML={{ __html: tTeam("vision.title") }}
+              />
+              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
+                {tTeam("vision.desc")}
+              </p>
+              <button className="px-6 py-3 rounded-full bg-brand-red text-white font-semibold hover:bg-brand-red/90 transition-all">
+                {tTeam("vision.cta")}
+              </button>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold mb-4">
+                {tTeam("success.tag")}
+              </h4>
+              <p className="text-gray-600 dark:text-gray-400">
+                {tTeam("success.desc")}
               </p>
             </div>
           </div>

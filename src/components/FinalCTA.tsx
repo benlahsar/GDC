@@ -3,8 +3,10 @@ import React, { useRef, useEffect, useState } from "react";
 import { ArrowRight, Zap, Sparkles } from "lucide-react";
 import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export const FinalCTA: React.FC = () => {
+  const tFinal = useTranslations("finalCta");
   const containerRef = useRef<HTMLElement>(null);
   const eyeRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -67,7 +69,7 @@ export const FinalCTA: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-black/10 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md shadow-lg">
             <Sparkles size={14} className="text-brand-red animate-pulse" />
             <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em] text-gray-800 dark:text-white/80">
-              Le Futur est Maintenant
+              {tFinal("tag")}
             </span>
           </div>
         </div>
@@ -76,16 +78,16 @@ export const FinalCTA: React.FC = () => {
         <div className="relative mb-16 md:mb-24 mix-blend-difference w-full">
           <h2 className="flex flex-col items-center leading-[0.85] font-black tracking-tighter text-transparent uppercase select-none">
             <span className="block outline-text text-[15vw] lg:text-[10rem] xl:text-[11rem] transition-all duration-700 group-hover:text-black dark:group-hover:text-white">
-              Votre
+              {tFinal("title.part1")}
             </span>
             <span className="block text-black dark:text-white text-[15vw] lg:text-[10rem] xl:text-[11rem]">
-              Vision.
+              {tFinal("title.part2")}
             </span>
             <span className="block outline-text text-[15vw] lg:text-[10rem] xl:text-[11rem] transition-all duration-700">
-              Notre
+              {tFinal("title.part3")}
             </span>
             <span className="block text-brand-red text-[15vw] lg:text-[10rem] xl:text-[11rem]">
-              Mission.
+              {tFinal("title.part4")}
             </span>
           </h2>
         </div>
@@ -104,7 +106,7 @@ export const FinalCTA: React.FC = () => {
           <div className="relative w-28 h-28 md:w-40 md:h-40 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center transition-all duration-500 ease-out hover:scale-110 shadow-2xl">
             <div className="relative z-10 flex flex-col items-center gap-1 overflow-hidden">
               <span className="text-xs md:text-sm font-black uppercase tracking-widest group-hover:-translate-y-12 transition-transform duration-300">
-                Start
+                {tFinal("button")}
               </span>
               <ArrowRight className="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-y-12 transition-transform duration-300 delay-75" />
 
