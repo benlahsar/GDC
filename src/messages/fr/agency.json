@@ -1,0 +1,404 @@
+{
+  "AgencyPage": {
+    "sections": {
+      "identity": "Identité",
+      "vision": "Vision",
+      "mission": "Mission"
+    },
+    "hero": {
+      "badge": "AGENCE DIGITALE MARRAKECH • EST. 2020",
+      "title": {
+        "prefix": "L'Art de",
+        "highlight": "Dominer",
+        "suffix": "le Digital."
+      },
+      "description": "Group Digital Concept forge l'identité des leaders de demain. Nous fusionnons stratégie disruptive et technologie d'élite pour transformer vos ambitions en résultats monumentaux.",
+      "cta": {
+        "start": "Initier la Révolution",
+        "projects": "+200 Projets d'Élite Livrés"
+      }
+    },
+    "cards": {
+      "vision": {
+        "title": "Vision",
+        "highlight": "Globale",
+        "description": "Exportez votre savoir-faire au-delà des frontières.",
+        "compliance": "100% Conformité Cloud"
+      },
+      "performance": {
+        "live_analytics": "Analyses en Direct",
+        "seo_score": "Score SEO Moyen"
+      },
+      "tech_stack": {
+        "badge": "Stack Technologique",
+        "title": {
+          "prefix": "Ingénierie",
+          "suffix": "Premium."
+        },
+        "description": "React • Node • Cloud Native • Secure Core",
+        "items": {
+          "app": "App",
+          "web": "Web",
+          "data": "Data",
+          "safe": "Sécurisé"
+        }
+      },
+      "contact": {
+        "title": "Briefing d'Élite",
+        "subtitle": "Initiez votre succès"
+      }
+    },
+    "modules": {
+      "identity": {
+        "protocol_code": "Code de Protocole",
+        "title": {
+          "line1": "Group",
+          "line2": "Digital",
+          "highlight": "Concept."
+        },
+        "tags": {
+          "verified": "Identité Vérifiée",
+          "partner": "Partenaire Premium"
+        },
+        "quote": "\"Nous architecturons le futur digital avec une précision mathématique et une intuition artistique.\"",
+        "location": "Marrakech • Maroc"
+      },
+      "vision": {
+        "innovation_core": "Cœur d'Innovation",
+        "system_intelligence": "Intelligence Système",
+        "title": "Forger le Hub Digital de Demain au Maroc.",
+        "stats": {
+          "ai": "Intelligence Artificielle",
+          "global_impact": "Impact Marché Mondial"
+        },
+        "cta": "Déployer la Vision"
+      },
+      "mission": {
+        "title": "Contrôle de",
+        "highlight": "Mission",
+        "quote": "\"Transformer chaque bit de données en un levier de croissance exponentielle pour nos partenaires.\"",
+        "values": {
+          "agility": "Agilité Totale",
+          "security": "Sécurité Centrale",
+          "audit": "Audit 360°",
+          "roi": "Impact ROI"
+        },
+        "status": {
+          "label": "État Opérationnel",
+          "value": "SYSTÈME OPTIMAL"
+        }
+      }
+    },
+    "code_windows": {
+      "system_override": "Dérogation Système Détectée",
+      "reboot": "REDÉMARRER SYSTÈME",
+      "recalibrating": "RECALIBRAGE..."
+    }
+  },
+  "AgencyMilestones": {
+    "badge": "Notre Évolution",
+    "title": {
+      "prefix": "La Feuille de Route",
+      "highlight": "du Succès"
+    },
+    "items": [
+      {
+        "year": "2020",
+        "title": "La Fondation",
+        "tag": "Fondation",
+        "desc": "Group Digital Concept est né avec une ambition claire : devenir une agence de marketing digital de référence à Marrakech et partout au Maroc."
+      },
+      {
+        "year": "2021",
+        "title": "Lancement Innovant",
+        "tag": "Innovation",
+        "desc": "Nous avons élargi notre gamme de services (SEO, PPC, Social Ads) pour répondre aux besoins croissants des entreprises locales."
+      },
+      {
+        "year": "2022",
+        "title": "Expansion Maroc",
+        "tag": "Expansion",
+        "desc": "Notre agence s'est consolidée comme un acteur incontournable au Maroc, étendant sa présence au-delà de Marrakech."
+      },
+      {
+        "year": "2023",
+        "title": "Succès et Croissance",
+        "tag": "Croissance",
+        "desc": "Plus de 100 entreprises accompagnées avec des résultats impressionnants, renforçant notre position de partenaire de choix."
+      },
+      {
+        "year": "2024",
+        "title": "IA et Futur",
+        "tag": "Innovation",
+        "desc": "Intégration de l'intelligence artificielle dans nos services pour une performance SEO et de contenu décuplée."
+      },
+      {
+        "year": "2025",
+        "title": "Digitalisation Élite",
+        "tag": "Élite",
+        "desc": "GDC est reconnue comme une agence d'élite, transformant les ambitions de ses clients en succès durables."
+      }
+    ]
+  },
+  "AgencyEngagement": {
+    "badge": "Notre Standard",
+    "title": {
+      "line1": "Un Engagement",
+      "line2": "Inébranlable envers",
+      "highlight": "l'Excellence."
+    },
+    "description": "Chez <strong>Group Digital Concept</strong>, l'excellence n'est pas une option, c'est notre signature. Nous déployons des stratégies digitales de haute précision pour garantir votre suprématie sur le marché.",
+    "stats": {
+      "engagement": "Engagement",
+      "support": "Support"
+    },
+    "cards": {
+      "client_heart": {
+        "title": "Mettre <i class=\"font-serif text-brand-red\">Nos Clients</i> au <i class=\"font-serif\">Cœur</i> de Chaque Projet."
+      },
+      "vision_mission": {
+        "description": "Nous croyons que le succès naît d'une écoute active. Nous construisons des relations durables, transformant chaque défi en opportunité.",
+        "label": "Votre vision, notre mission",
+        "cta": "Commencer"
+      }
+    }
+  },
+  "AgencyMethodology": {
+    "badge": "PROCESSUS D'EXCELLENCE",
+    "title": {
+      "prefix": "Notre",
+      "highlight": "Protocole."
+    },
+    "description": "Une ingénierie stratégique en quatre modules interdépendants pour une transformation digitale sans compromis.",
+    "steps": {
+      "01": {
+        "subtitle": "AUDIT D'ADN",
+        "title": "Consultation & Immersion",
+        "description": "Nous commençons par une phase d'écoute active pour capter l'essence de votre marque. Cette immersion nous permet de comprendre vos objectifs commerciaux et vos défis pour construire une relation de partenariat solide.",
+        "details": ["Analyse Visionnaire", "Benchmark Sectoriel", "Audit d'Identité"]
+      },
+      "02": {
+        "subtitle": "DÉCODAGE DE DONNÉES",
+        "title": "Intelligence & Analyse",
+        "description": "Nos experts réalisent un diagnostic complet de votre écosystème. Nous analysons vos données et le positionnement concurrentiel pour identifier les leviers de croissance les plus efficaces.",
+        "details": ["Data Mining", "Cartographie Concurrentielle", "Optimisation Technique"]
+      },
+      "03": {
+        "subtitle": "PLAN D'ACTION ÉLITE",
+        "title": "Stratégie & Roadmap",
+        "description": "Sur la base de nos analyses, nous concevons une stratégie sur mesure. Nous définissons une feuille de route claire et établissons des KPIs précis pour mesurer chaque succès.",
+        "details": ["Planification Agile", "Ciblage Chirurgical", "Feuille de Route"]
+      },
+      "04": {
+        "subtitle": "DÉPLOIEMENT DE PERFORMANCE",
+        "title": "Exécution & Impact",
+        "description": "Nous implémentons les solutions définies avec rigueur. Nos équipes suivent de près l'exécution et réalisent des ajustements en temps réel pour maximiser votre retour sur investissement.",
+        "details": ["Monitoring 24/7", "Optimisation ROI", "Rapports d'Impact"]
+      }
+    },
+    "cta": {
+      "title": "Prêt pour le Lancement ?",
+      "subtitle": "Commençons votre transformation digitale avec notre expertise certifiée.",
+      "button": "DÉPLOYER MON PROJET",
+      "active_process": "Processus Actif",
+      "module": "Module"
+    }
+  },
+  "AgencyServices": {
+    "active_card": {
+      "main_service": "Service Principal",
+      "about": "À propos"
+    },
+    "items": {
+      "01": {
+        "name": "Web Design",
+        "fullName": "Création de sites web",
+        "role": "Vitrine & E-Commerce",
+        "description": "Nous concevons des sites web modernes et performants. Que ce soit pour un site vitrine ou une boutique en ligne, nous offrons des solutions sur mesure.",
+        "abilities": [
+          { "name": "Sites Modernes", "desc": "Design adapté aux besoins spécifiques.", "type": "Design" },
+          { "name": "E-Commerce", "desc": "Boutiques performantes pour vendre plus.", "type": "Vente" },
+          { "name": "Maintenance", "desc": "Gestion complète de l'hébergement et domaine.", "type": "Tech" }
+        ]
+      },
+      "02": {
+        "name": "SEO Master",
+        "fullName": "SEO – Référencement naturel",
+        "role": "Visibilité Google",
+        "description": "Optimisez votre visibilité sur Google. Nous améliorons le contenu et la structure pour garantir un positionnement durable en première page.",
+        "abilities": [
+          { "name": "Audit Technique", "desc": "Optimisation structurelle du site.", "type": "Audit" },
+          { "name": "Netlinking", "desc": "Stratégie de backlinks puissants.", "type": "Off-Page" },
+          { "name": "Contenu ROI", "desc": "Rédaction optimisée pour convertir.", "type": "On-Page" }
+        ]
+      },
+      "03": {
+        "name": "SEA Ads",
+        "fullName": "SEA – Publicité en ligne",
+        "role": "Acquisition de Trafic",
+        "description": "Maximisez votre retour sur investissement avec nos campagnes ciblées Google Ads et Social Ads.",
+        "abilities": [
+          { "name": "Ciblage Précis", "desc": "Atteignez votre audience idéale.", "type": "Cible" },
+          { "name": "Trafic Qualifié", "desc": "Prospects chauds prêts à acheter.", "type": "Leads" },
+          { "name": "ROI Maximisé", "desc": "Optimisation continue des coûts.", "type": "Perf" }
+        ]
+      },
+      "04": {
+        "name": "Social Media",
+        "fullName": "SMO – Gestion réseaux sociaux",
+        "role": "Engagement & Notoriété",
+        "description": "Développez votre notoriété. Nous créons du contenu engageant et gérons vos réseaux pour renforcer votre image de marque.",
+        "abilities": [
+          { "name": "Contenu Viral", "desc": "Visuels et textes captivants.", "type": "Créatif" },
+          { "name": "Communauté", "desc": "Animation et modération active.", "type": "Social" },
+          { "name": "Branding", "desc": "Interaction et fidélité client.", "type": "Marque" }
+        ]
+      },
+      "05": {
+        "name": "Branding",
+        "fullName": "Identité visuelle et branding",
+        "role": "Design Graphique",
+        "description": "Affirmez votre identité. Nous réalisons la création de logos, chartes graphiques et supports publicitaires impactants.",
+        "abilities": [
+          { "name": "Logo Unique", "desc": "Identité visuelle mémorable.", "type": "Identité" },
+          { "name": "Print & Web", "desc": "Déclinaison sur tous supports.", "type": "Média" },
+          { "name": "Storytelling", "desc": "Racontez votre histoire.", "type": "Histoire" }
+        ]
+      },
+      "06": {
+        "name": "Software",
+        "fullName": "Développement Logiciel et Apps",
+        "role": "Solutions Sur Mesure",
+        "description": "Logiciels sur mesure et applications performantes pour répondre aux besoins spécifiques de votre activité.",
+        "abilities": [
+          { "name": "Apps Mobiles", "desc": "iOS et Android natif ou hybride.", "type": "Mobile" },
+          { "name": "ERP / CRM", "desc": "Outils de gestion d'entreprise.", "type": "Business" },
+          { "name": "SaaS", "desc": "Architecture cloud scalable.", "type": "Cloud" }
+        ]
+      }
+    }
+  },
+  "FAQSection": {
+    "badge": "FAQ",
+    "title": {
+      "line1": "Questions",
+      "highlight": "Fréquentes."
+    },
+    "description": "Tout ce que vous devez savoir sur notre processus, nos services et comment nous pouvons propulser votre entreprise.",
+    "cta_box": {
+      "title": "Une autre question ?",
+      "subtitle": "Nos experts sont là pour vous.",
+      "button": "Contactez-nous"
+    },
+    "items": [
+      {
+        "question": "Quels services proposez-vous chez Group Digital Concept ?",
+        "answer": "Nous offrons une gamme complète de services en communication, marketing digital, création de sites web, développement d'applications et bien plus pour répondre aux besoins spécifiques de chaque client."
+      },
+      {
+        "question": "Comment se déroule la création de mon site web ?",
+        "answer": "Nous suivons un processus structuré : découverte de vos besoins, design UX/UI, développement technique, intégration de contenu, tests rigoureux et mise en ligne, suivi d'une formation à la gestion."
+      },
+      {
+        "question": "Quels sont les délais pour la création d'un site web ?",
+        "answer": "Les délais varient selon la complexité. Un site vitrine prend généralement 2 à 4 semaines, tandis qu'un e-commerce ou une application sur mesure peut nécessiter 6 à 10 semaines."
+      },
+      {
+        "question": "Qu'est-ce que le SEO et pourquoi est-ce important ?",
+        "answer": "Le SEO (Search Engine Optimization) améliore votre visibilité sur Google. C'est crucial pour attirer du trafic organique qualifié, augmenter votre notoriété et générer des leads sans publicité payante."
+      },
+      {
+        "question": "Puis-je gérer mon site web une fois créé ?",
+        "answer": "Absolument. Nous développons nos sites (WordPress, Shopify ou sur mesure) avec des interfaces d'administration intuitives et vous formons pour que vous soyez totalement autonome."
+      },
+      {
+        "question": "Qu'est-ce que l'UX design et pourquoi est-ce important ?",
+        "answer": "L'UX Design (Expérience Utilisateur) facilite la navigation de vos visiteurs. Une bonne UX augmente le temps passé sur le site, réduit le taux de rebond et augmente considérablement vos conversions."
+      },
+      {
+        "question": "Proposez-vous des services de marketing digital ?",
+        "answer": "Oui, nous sommes experts en stratégie digitale : publicité en ligne (Google Ads, Facebook Ads), gestion des réseaux sociaux, marketing de contenu et email marketing pour maximiser votre ROI."
+      },
+      {
+        "question": "Puis-je avoir un site web responsive pour mobiles ?",
+        "answer": "C'est un standard pour nous. Tous nos sites sont développés avec une approche 'Mobile First', garantissant un affichage et une navigation parfaits sur smartphones, tablettes et ordinateurs."
+      },
+      {
+        "question": "Proposez-vous du support après la création du site ?",
+        "answer": "Oui, nous proposons plusieurs forfaits de maintenance pour garantir la sécurité, les mises à jour et les évolutions de votre site web sur le long terme."
+      },
+      {
+        "question": "Comment puis-je obtenir un devis pour mes besoins ?",
+        "answer": "Contactez-nous simplement via notre formulaire en ligne, par email ou téléphone. Nous analyserons votre projet et vous fournirons un devis détaillé et personnalisé sous 24h."
+      }
+    ]
+  },
+  "AgencyProjectForm": {
+    "title": {
+      "line1": "Agence Web et",
+      "highlight": "Communication Digitale Innovante"
+    },
+    "description": {
+      "p1": "Nous ne sommes pas seulement une agence de marketing digital. Nous accompagnons les entreprises avec des solutions sur mesure pour propulser leur présence en ligne et maximiser leur impact.",
+      "p2": "Basés au Maroc, nous allions expertise locale et tendances internationales pour offrir des stratégies performantes adaptées à chaque projet."
+    },
+    "social_proof": {
+        "text": "Rejoignez nos +50 clients satisfaits"
+    },
+    "steps": {
+      "info": "Informations",
+      "service": "Service",
+      "details": "Détails"
+    },
+    "success": {
+      "title": "Demande Envoyée !",
+      "message": "Nous vous recontacterons sous 24h.",
+      "button": "Nouvelle demande"
+    },
+    "placeholders": {
+        "name": "Nom complet",
+        "email": "Email professionnel",
+        "company": "Nom de l'entreprise",
+        "phone": "Téléphone",
+        "details": "Racontez-nous vos objectifs..."
+    },
+    "labels": {
+        "employees": "Nombre d'employés",
+        "budget": "Budget Estimé",
+        "service_needed": "Service souhaité",
+        "project_details": "Description du projet"
+    },
+    "services_options": {
+      "web": "Site Web",
+      "seo": "SEO / SEA",
+      "social": "Social Media",
+      "branding": "Branding",
+      "app": "App Mobile",
+      "dev": "Sur Mesure"
+    },
+    "buttons": {
+      "back": "Retour",
+      "next": "Suivant",
+      "confirm": "Confirmer"
+    },
+    "alerts": {
+      "error": "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer."
+    }
+  },
+  "AgencyFinalCTA": {
+    "badge": "INITIER LE CHANGEMENT",
+    "title": {
+      "line1": "Votre Vision.",
+      "line2": "L'Excellence."
+    },
+    "meta": {
+        "protocol": "PROTOCOLE",
+        "standard": "STANDARD"
+    },
+    "description": "Ne laissez pas votre projet être un simple brouillon digital. Collaborons pour sculpter votre <highlight>Suprématie Digitale.</highlight>",
+    "cta_button": {
+      "small_label": "Commencer Maintenant",
+      "main_label": "DÉPLOYER MON PROJET"
+    }
+  }
+}

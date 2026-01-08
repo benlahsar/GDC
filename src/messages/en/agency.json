@@ -1,0 +1,404 @@
+{
+  "AgencyPage": {
+    "sections": {
+      "identity": "Identity",
+      "vision": "Vision",
+      "mission": "Mission"
+    },
+    "hero": {
+      "badge": "DIGITAL AGENCY MARRAKECH • EST. 2020",
+      "title": {
+        "prefix": "The Art of",
+        "highlight": "Mastering",
+        "suffix": "Digital."
+      },
+      "description": "Group Digital Concept forges the identity of tomorrow's leaders. We fuse disruptive strategy and elite technology to transform your ambitions into monumental results.",
+      "cta": {
+        "start": "Start the Revolution",
+        "projects": "+200 Elite Projects Delivered"
+      }
+    },
+    "cards": {
+      "vision": {
+        "title": "Vision",
+        "highlight": "Global",
+        "description": "Export your know-how beyond borders.",
+        "compliance": "100% Cloud Compliance"
+      },
+      "performance": {
+        "live_analytics": "Live Analytics",
+        "seo_score": "Avg. SEO Score"
+      },
+      "tech_stack": {
+        "badge": "Tech Stack",
+        "title": {
+          "prefix": "Premium",
+          "suffix": "Engineering."
+        },
+        "description": "React • Node • Cloud Native • Secure Core",
+        "items": {
+          "app": "App",
+          "web": "Web",
+          "data": "Data",
+          "safe": "Secure"
+        }
+      },
+      "contact": {
+        "title": "Elite Briefing",
+        "subtitle": "Start your success"
+      }
+    },
+    "modules": {
+      "identity": {
+        "protocol_code": "Protocol Code",
+        "title": {
+          "line1": "Group",
+          "line2": "Digital",
+          "highlight": "Concept."
+        },
+        "tags": {
+          "verified": "Verified Identity",
+          "partner": "Premium Partner"
+        },
+        "quote": "\"We architect the digital future with mathematical precision and artistic intuition.\"",
+        "location": "Marrakech • Morocco"
+      },
+      "vision": {
+        "innovation_core": "Innovation Core",
+        "system_intelligence": "System Intelligence",
+        "title": "Forging Tomorrow's Digital Hub in Morocco.",
+        "stats": {
+          "ai": "Artificial Intelligence",
+          "global_impact": "Global Market Impact"
+        },
+        "cta": "Deploy Vision"
+      },
+      "mission": {
+        "title": "Mission",
+        "highlight": "Control",
+        "quote": "\"Transforming every bit of data into an exponential growth lever for our partners.\"",
+        "values": {
+          "agility": "Total Agility",
+          "security": "Core Security",
+          "audit": "360° Audit",
+          "roi": "ROI Impact"
+        },
+        "status": {
+          "label": "Operational Status",
+          "value": "SYSTEM OPTIMAL"
+        }
+      }
+    },
+    "code_windows": {
+      "system_override": "System Override Detected",
+      "reboot": "REBOOT SYSTEM",
+      "recalibrating": "RECALIBRATING..."
+    }
+  },
+  "AgencyMilestones": {
+    "badge": "Our Evolution",
+    "title": {
+      "prefix": "The Roadmap",
+      "highlight": "to Success"
+    },
+    "items": [
+      {
+        "year": "2020",
+        "title": "The Foundation",
+        "tag": "Foundation",
+        "desc": "Group Digital Concept was born with a clear ambition: to become a benchmark digital marketing agency in Marrakech and throughout Morocco."
+      },
+      {
+        "year": "2021",
+        "title": "Innovative Launch",
+        "tag": "Innovation",
+        "desc": "We expanded our range of services (SEO, PPC, Social Ads) to meet the growing needs of local businesses."
+      },
+      {
+        "year": "2022",
+        "title": "Morocco Expansion",
+        "tag": "Expansion",
+        "desc": "Our agency consolidated itself as a key player in Morocco, expanding its presence beyond Marrakech."
+      },
+      {
+        "year": "2023",
+        "title": "Success & Growth",
+        "tag": "Growth",
+        "desc": "Over 100 companies accompanied with impressive results, reinforcing our position as a partner of choice."
+      },
+      {
+        "year": "2024",
+        "title": "AI & Future",
+        "tag": "Innovation",
+        "desc": "Integration of artificial intelligence into our services for multiplied SEO and content performance."
+      },
+      {
+        "year": "2025",
+        "title": "Elite Digitalization",
+        "tag": "Elite",
+        "desc": "GDC is recognized as an elite agency, transforming its clients' ambitions into lasting successes."
+      }
+    ]
+  },
+  "AgencyEngagement": {
+    "badge": "Our Standard",
+    "title": {
+      "line1": "An Unwavering",
+      "line2": "Commitment to",
+      "highlight": "Excellence."
+    },
+    "description": "At <strong>Group Digital Concept</strong>, excellence is not an option, it is our signature. We deploy high-precision digital strategies to guarantee your market supremacy.",
+    "stats": {
+      "engagement": "Engagement",
+      "support": "Support"
+    },
+    "cards": {
+      "client_heart": {
+        "title": "Putting <i class=\"font-serif text-brand-red\">Our Clients</i> at the <i class=\"font-serif\">Heart</i> of Every Project."
+      },
+      "vision_mission": {
+        "description": "We believe success comes from active listening. We build lasting relationships, transforming every challenge into opportunity.",
+        "label": "Your vision, our mission",
+        "cta": "Get Started"
+      }
+    }
+  },
+  "AgencyMethodology": {
+    "badge": "PROCESS OF EXCELLENCE",
+    "title": {
+      "prefix": "Our",
+      "highlight": "Protocol."
+    },
+    "description": "Strategic engineering in four interdependent modules for uncompromising digital transformation.",
+    "steps": {
+      "01": {
+        "subtitle": "DNA AUDIT",
+        "title": "Consultation & Immersion",
+        "description": "We start with an active listening phase to capture the essence of your brand. This immersion allows us to understand your business goals and challenges to build a solid partnership.",
+        "details": ["Visionary Analysis", "Sector Benchmark", "Identity Audit"]
+      },
+      "02": {
+        "subtitle": "DATA DECODING",
+        "title": "Intelligence & Analysis",
+        "description": "Our experts perform a complete diagnosis of your ecosystem. We analyze your data and competitive positioning to identify the most effective growth levers.",
+        "details": ["Data Mining", "Competitive Mapping", "Technical Optimization"]
+      },
+      "03": {
+        "subtitle": "ELITE ACTION PLAN",
+        "title": "Strategy & Roadmap",
+        "description": "Based on our analyses, we design a tailored strategy. We define a clear roadmap and establish precise KPIs to measure every success.",
+        "details": ["Agile Planning", "Surgical Targeting", "Roadmap"]
+      },
+      "04": {
+        "subtitle": "PERFORMANCE DEPLOYMENT",
+        "title": "Execution & Impact",
+        "description": "We implement the defined solutions with rigor. Our teams closely monitor execution and make real-time adjustments to maximize your return on investment.",
+        "details": ["24/7 Monitoring", "ROI Optimization", "Impact Reports"]
+      }
+    },
+    "cta": {
+      "title": "Ready for Launch?",
+      "subtitle": "Let's start your digital transformation with our certified expertise.",
+      "button": "DEPLOY MY PROJECT",
+      "active_process": "Active Process",
+      "module": "Module"
+    }
+  },
+  "AgencyServices": {
+    "active_card": {
+      "main_service": "Main Service",
+      "about": "About"
+    },
+    "items": {
+      "01": {
+        "name": "Web Design",
+        "fullName": "Website Creation",
+        "role": "Showcase & E-Commerce",
+        "description": "We design modern and efficient websites. Whether for a showcase site or an online store, we offer tailored solutions.",
+        "abilities": [
+          { "name": "Modern Sites", "desc": "Design adapted to specific needs.", "type": "Design" },
+          { "name": "E-Commerce", "desc": "Efficient stores to sell more.", "type": "Sales" },
+          { "name": "Maintenance", "desc": "Complete hosting and domain management.", "type": "Tech" }
+        ]
+      },
+      "02": {
+        "name": "SEO Master",
+        "fullName": "SEO – Natural Referencing",
+        "role": "Google Visibility",
+        "description": "Optimize your visibility on Google. We improve content and structure to guarantee lasting positioning on the first page.",
+        "abilities": [
+          { "name": "Technical Audit", "desc": "Site structural optimization.", "type": "Audit" },
+          { "name": "Netlinking", "desc": "Powerful backlink strategy.", "type": "Off-Page" },
+          { "name": "ROI Content", "desc": "Copywriting optimized to convert.", "type": "On-Page" }
+        ]
+      },
+      "03": {
+        "name": "SEA Ads",
+        "fullName": "SEA – Online Advertising",
+        "role": "Traffic Acquisition",
+        "description": "Maximize your return on investment with our targeted Google Ads and Social Ads campaigns.",
+        "abilities": [
+          { "name": "Precise Targeting", "desc": "Reach your ideal audience.", "type": "Target" },
+          { "name": "Qualified Traffic", "desc": "Hot leads ready to buy.", "type": "Leads" },
+          { "name": "Maximized ROI", "desc": "Continuous cost optimization.", "type": "Perf" }
+        ]
+      },
+      "04": {
+        "name": "Social Media",
+        "fullName": "SMO – Social Media Management",
+        "role": "Engagement & Awareness",
+        "description": "Develop your awareness. We create engaging content and manage your networks to strengthen your brand image.",
+        "abilities": [
+          { "name": "Viral Content", "desc": "Captivating visuals and text.", "type": "Creative" },
+          { "name": "Community", "desc": "Active animation and moderation.", "type": "Social" },
+          { "name": "Branding", "desc": "Customer interaction and loyalty.", "type": "Brand" }
+        ]
+      },
+      "05": {
+        "name": "Branding",
+        "fullName": "Visual Identity & Branding",
+        "role": "Graphic Design",
+        "description": "Assert your identity. We create logos, brand guidelines, and impactful advertising materials.",
+        "abilities": [
+          { "name": "Unique Logo", "desc": "Memorable visual identity.", "type": "Identity" },
+          { "name": "Print & Web", "desc": "Adaptation on all media.", "type": "Media" },
+          { "name": "Storytelling", "desc": "Tell your story.", "type": "Story" }
+        ]
+      },
+      "06": {
+        "name": "Software",
+        "fullName": "Software & App Development",
+        "role": "Tailored Solutions",
+        "description": "Tailor-made software and efficient applications to meet the specific needs of your activity.",
+        "abilities": [
+          { "name": "Mobile Apps", "desc": "iOS and Android native or hybrid.", "type": "Mobile" },
+          { "name": "ERP / CRM", "desc": "Business management tools.", "type": "Business" },
+          { "name": "SaaS", "desc": "Scalable cloud architecture.", "type": "Cloud" }
+        ]
+      }
+    }
+  },
+  "FAQSection": {
+    "badge": "FAQ",
+    "title": {
+      "line1": "Frequently Asked",
+      "highlight": "Questions."
+    },
+    "description": "Everything you need to know about our process, our services, and how we can propel your business.",
+    "cta_box": {
+      "title": "Another question?",
+      "subtitle": "Our experts are here for you.",
+      "button": "Contact Us"
+    },
+    "items": [
+      {
+        "question": "What services do you offer at Group Digital Concept?",
+        "answer": "We offer a complete range of services in communication, digital marketing, website creation, application development, and much more to meet the specific needs of each client."
+      },
+      {
+        "question": "How does the creation of my website take place?",
+        "answer": "We follow a structured process: discovery of your needs, UX/UI design, technical development, content integration, rigorous testing, and launch, followed by management training."
+      },
+      {
+        "question": "What are the deadlines for creating a website?",
+        "answer": "Deadlines vary depending on complexity. A showcase site generally takes 2 to 4 weeks, while an e-commerce or custom application may require 6 to 10 weeks."
+      },
+      {
+        "question": "What is SEO and why is it important?",
+        "answer": "SEO (Search Engine Optimization) improves your visibility on Google. It is crucial for attracting qualified organic traffic, increasing your awareness, and generating leads without paid advertising."
+      },
+      {
+        "question": "Can I manage my website once created?",
+        "answer": "Absolutely. We develop our sites (WordPress, Shopify, or custom) with intuitive administration interfaces and train you so that you are fully autonomous."
+      },
+      {
+        "question": "What is UX design and why is it important?",
+        "answer": "UX Design (User Experience) facilitates navigation for your visitors. Good UX increases time spent on the site, reduces bounce rate, and significantly increases your conversions."
+      },
+      {
+        "question": "Do you offer digital marketing services?",
+        "answer": "Yes, we are experts in digital strategy: online advertising (Google Ads, Facebook Ads), social media management, content marketing, and email marketing to maximize your ROI."
+      },
+      {
+        "question": "Can I have a responsive website for mobiles?",
+        "answer": "It is a standard for us. All our sites are developed with a 'Mobile First' approach, ensuring perfect display and navigation on smartphones, tablets, and computers."
+      },
+      {
+        "question": "Do you offer support after the site creation?",
+        "answer": "Yes, we offer several maintenance packages to guarantee the security, updates, and evolution of your website over the long term."
+      },
+      {
+        "question": "How can I get a quote for my needs?",
+        "answer": "Simply contact us via our online form, by email, or phone. We will analyze your project and provide you with a detailed and personalized quote within 24 hours."
+      }
+    ]
+  },
+  "AgencyProjectForm": {
+    "title": {
+      "line1": "Web Agency and",
+      "highlight": "Innovative Digital Communication"
+    },
+    "description": {
+      "p1": "We are not just a digital marketing agency. We accompany companies with tailored solutions to propel their online presence and maximize their impact.",
+      "p2": "Based in Morocco, we combine local expertise and international trends to offer efficient strategies adapted to every project."
+    },
+    "social_proof": {
+        "text": "Join our +50 satisfied clients"
+    },
+    "steps": {
+      "info": "Information",
+      "service": "Service",
+      "details": "Details"
+    },
+    "success": {
+      "title": "Request Sent!",
+      "message": "We will get back to you within 24h.",
+      "button": "New Request"
+    },
+    "placeholders": {
+        "name": "Full Name",
+        "email": "Professional Email",
+        "company": "Company Name",
+        "phone": "Phone",
+        "details": "Tell us about your goals..."
+    },
+    "labels": {
+        "employees": "Number of Employees",
+        "budget": "Estimated Budget",
+        "service_needed": "Service Needed",
+        "project_details": "Project Description"
+    },
+    "services_options": {
+      "web": "Website",
+      "seo": "SEO / SEA",
+      "social": "Social Media",
+      "branding": "Branding",
+      "app": "Mobile App",
+      "dev": "Custom"
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "confirm": "Confirm"
+    },
+    "alerts": {
+      "error": "An error occurred while sending the form. Please try again."
+    }
+  },
+  "AgencyFinalCTA": {
+    "badge": "INITIATE CHANGE",
+    "title": {
+      "line1": "Your Vision.",
+      "line2": "Excellence."
+    },
+    "meta": {
+        "protocol": "PROTOCOL",
+        "standard": "STANDARD"
+    },
+    "description": "Don't let your project be a simple digital draft. Let's collaborate to sculpt your <highlight>Digital Supremacy.</highlight>",
+    "cta_button": {
+      "small_label": "Start Now",
+      "main_label": "DEPLOY MY PROJECT"
+    }
+  }
+}
