@@ -16,6 +16,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
+import { useTranslations } from "next-intl";
 
 interface TeamMember {
   name: string;
@@ -25,10 +26,10 @@ interface TeamMember {
   level: number;
 }
 
-const TEAM_MEMBERS: TeamMember[] = [
+const getTeamMembers = (t: any): TeamMember[] => [
   {
     name: "Drome Ludovic",
-    role: "CEO & Founder",
+    role: t("roles.ceo"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766590955322-scaled.webp",
     category: "executive",
@@ -36,7 +37,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Mouhsine Makram",
-    role: "Responsable Développement",
+    role: t("roles.devLead"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766582125139-scaled.webp",
     category: "dev",
@@ -44,7 +45,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Orsino ELGHOUM",
-    role: "Responsable Design",
+    role: t("roles.designLead"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766587028427-scaled.webp",
     category: "design",
@@ -52,7 +53,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Nizar Benlahsar",
-    role: "Développeur Full-Stack",
+    role: t("roles.fullstack"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766581123204-scaled.webp",
     category: "dev",
@@ -60,7 +61,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Marouane Ait Elouhab",
-    role: "Développeur Full-Stack",
+    role: t("roles.fullstack"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766580829355-scaled.webp",
     category: "dev",
@@ -68,7 +69,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Abd Allah Jben",
-    role: "Développeur Front-End",
+    role: t("roles.frontend"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766585274717-scaled.webp",
     category: "dev",
@@ -76,7 +77,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Rahim El Habiri",
-    role: "UI/UX Designer",
+    role: t("roles.uiux"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766585583307-scaled.webp",
     category: "design",
@@ -84,7 +85,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Ismail EL Qadiri",
-    role: "Brand Identity Designer",
+    role: t("roles.brand"),
     image:
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766586638539-scaled.webp",
     category: "design",
@@ -97,6 +98,7 @@ const MemberCard: React.FC<{
   delay?: number;
   isMobile: boolean;
 }> = ({ member, delay = 0, isMobile }) => {
+  const t = useTranslations("TeamPage");
   const cardRef = useRef<HTMLDivElement>(null);
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -122,14 +124,14 @@ const MemberCard: React.FC<{
     member.category === "executive"
       ? Crown
       : member.category === "dev"
-      ? Code2
-      : Palette;
+        ? Code2
+        : Palette;
   const accentColor =
     member.category === "executive"
       ? "brand-red"
       : member.category === "dev"
-      ? "blue-500"
-      : "purple-500";
+        ? "blue-500"
+        : "purple-500";
   const isResponsable = member.level === 1;
 
   return (
@@ -138,9 +140,8 @@ const MemberCard: React.FC<{
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
-      className={`group relative flex flex-col items-center animate-fade-in-up opacity-0 ${
-        isMobile ? "" : "perspective-1000"
-      }`}
+      className={`group relative flex flex-col items-center animate-fade-in-up opacity-0 ${isMobile ? "" : "perspective-1000"
+        }`}
       style={{
         animationDelay: `${delay}ms`,
         animationFillMode: "forwards",
@@ -205,7 +206,7 @@ const MemberCard: React.FC<{
           {isResponsable && (
             <div className="absolute top-6 right-6 md:top-8 md:right-8 z-30">
               <div className="px-3 py-1 rounded-full bg-brand-red text-white text-[8px] md:text-[9px] font-black uppercase tracking-widest shadow-xl border border-white/20 animate-pulse">
-                Responsable
+                {t("labels.responsable")}
               </div>
             </div>
           )}
@@ -218,12 +219,12 @@ const MemberCard: React.FC<{
               >
                 {isResponsable ? (
                   <span className="text-brand-red border border-brand-red/30 px-2 py-0.5 rounded-md bg-brand-red/5">
-                    RESPONSABLE
+                    {t("labels.responsable").toUpperCase()}
                   </span>
                 ) : (
-                  member.category
+                  t(`labels.${member.category}`)
                 )}
-                <span className="opacity-40">• LVL {member.level}</span>
+                <span className="opacity-40">• {t("labels.level")} {member.level}</span>
               </p>
               <h3 className="text-lg md:text-2xl font-black text-white uppercase tracking-tighter leading-none mt-1">
                 {member.name}
@@ -248,7 +249,10 @@ const MemberCard: React.FC<{
 };
 
 export const TeamPage: React.FC = () => {
+  const t = useTranslations("TeamPage");
   const [isMobile, setIsMobile] = useState(false);
+
+  const TEAM_MEMBERS = getTeamMembers(t);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -290,27 +294,22 @@ export const TeamPage: React.FC = () => {
             <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-2xl mb-8 md:mb-10 shadow-xl animate-fade-in-up">
               <Zap size={16} className="text-brand-red animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-[0.6em] text-gray-800 dark:text-gray-200">
-                GDC HIERARCHICAL CORE
+                {t("hero.badge")}
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-6xl md:text-[9rem] lg:text-[13rem] font-black text-black dark:text-white tracking-tighter leading-[0.9] md:leading-[0.8] uppercase mb-8 md:mb-12 animate-fade-in-up">
-              L'Architecture <br />
+              {t("hero.title.line1")} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-red-800 italic drop-shadow-2xl">
-                Humaine.
+                {t("hero.title.highlight")}
               </span>
             </h1>
 
             <p
               className="text-lg md:text-3xl text-gray-500 dark:text-gray-400 font-light max-w-4xl mx-auto leading-relaxed animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
-            >
-              Une synergie d'expertises orchestrée pour la{" "}
-              <strong className="text-black dark:text-white font-black">
-                Suprématie Digitale
-              </strong>
-              .
-            </p>
+              dangerouslySetInnerHTML={{ __html: t.raw("hero.description").replace("<highlight>", '<strong class="text-black dark:text-white font-black">').replace("</highlight>", "</strong>") }}
+            />
           </div>
         </section>
 
@@ -428,20 +427,19 @@ export const TeamPage: React.FC = () => {
         {/* --- MISSION STATEMENT STRIP --- */}
         <section className="mt-24 md:mt-64 relative py-12 md:py-20 border-y border-black/5 dark:border-white/5 overflow-hidden group">
           <div
-            className={`flex items-center whitespace-nowrap w-max ${
-              isMobile
+            className={`flex items-center whitespace-nowrap w-max ${isMobile
                 ? "animate-[scroll_40s_linear_infinite]"
                 : "animate-scroll"
-            }`}
+              }`}
           >
             {[...Array(6)].map((_, i) => (
               <span
                 key={i}
                 className="text-2xl md:text-7xl font-black uppercase tracking-tighter mx-10 md:mx-20 opacity-20 transition-opacity md:group-hover:opacity-100"
               >
-                The Future is <span className="text-brand-red">Human</span> •
-                Code with <span className="text-brand-red">Passion</span> •
-                Design for <span className="text-brand-red">Impact</span>
+                {t("strip.future").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.future").split(" ").pop()}</span> •
+                {t("strip.code").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.code").split(" ").pop()}</span> •
+                {t("strip.design").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.design").split(" ").pop()}</span>
               </span>
             ))}
           </div>
@@ -457,18 +455,17 @@ export const TeamPage: React.FC = () => {
               <div className="flex items-center gap-4 mb-6 md:mb-10 justify-center lg:justify-start">
                 <div className="w-10 h-1 md:w-12 md:h-1.5 bg-brand-red rounded-full"></div>
                 <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.5em] text-gray-400">
-                  TALENT HUB
+                  {t("recruitment.badge")}
                 </span>
               </div>
               <h2 className="text-4xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter mb-8 md:mb-10 leading-[0.9] italic">
-                Sculptez le <br />{" "}
+                {t("recruitment.title.line1")} <br />{" "}
                 <span className="text-brand-red not-italic underline decoration-white/10 underline-offset-[12px] md:underline-offset-[20px]">
-                  Web.
+                  {t("recruitment.title.highlight")}
                 </span>
               </h2>
               <p className="text-lg md:text-3xl font-light opacity-80 leading-relaxed">
-                Nous cherchons les architectes digitaux capables de redéfinir
-                les standards de l'industrie. Votre place est ici.
+                {t("recruitment.description")}
               </p>
 
               <div className="mt-10 md:mt-16 grid grid-cols-2 gap-6 md:gap-8 max-w-md mx-auto lg:mx-0">
@@ -477,7 +474,7 @@ export const TeamPage: React.FC = () => {
                     04
                   </span>
                   <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                    Postes Ouverts
+                    {t("recruitment.stats.openPositions")}
                   </span>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -485,7 +482,7 @@ export const TeamPage: React.FC = () => {
                     24h
                   </span>
                   <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                    Délai Review
+                    {t("recruitment.stats.reviewDelay")}
                   </span>
                 </div>
               </div>
@@ -495,7 +492,7 @@ export const TeamPage: React.FC = () => {
               href="#contact"
               className="group/btn relative px-10 py-8 md:px-24 md:py-14 bg-white dark:bg-black text-black dark:text-white rounded-[30px] md:rounded-[60px] font-black uppercase text-[10px] md:text-[14px] tracking-[0.4em] transition-all hover:scale-110 active:scale-95 shadow-2xl overflow-hidden text-center flex flex-col items-center gap-4 md:gap-6"
             >
-              <span className="relative z-10">POSTULER</span>
+              <span className="relative z-10">{t("recruitment.cta")}</span>
               <ArrowRight
                 size={32}
                 className="relative z-10 transition-transform duration-500 group-hover/btn:translate-x-6 md:w-[40px] md:h-[40px]"

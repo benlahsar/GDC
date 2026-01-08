@@ -1,0 +1,690 @@
+{
+  "WebsiteCreationPage": {
+    "hero": {
+      "premium": "Premium",
+      "expert": "Expert",
+      "digital": "Digital",
+      "title": {
+        "line1": "Website Creation Marrakech:",
+        "highlight": "your digital showcase",
+        "line2": "professional right now"
+      },
+      "description": "Are you looking for a professional <highlight>website creation Marrakech</highlight>? At <highlight>Group Digital Concept</highlight>, we design tailor-made sites combining design, speed and SEO to transform your presence into a growth lever.",
+      "cta": "Contact Us!"
+    },
+    "cards": {
+      "knowhow": {
+        "title": "Unique Know-how",
+        "desc": "Showcase sites, e-commerce or platforms: each project respects Google's technical standards."
+      },
+      "support": {
+        "title": "Full Support",
+        "desc": "From conception to go-live, we guarantee a fast, secure and responsive site, delivered turnkey."
+      }
+    },
+    "icons": {
+      "design": "Modern Design",
+      "seo": "Optimized SEO",
+      "performance": "Guaranteed Performance",
+      "support": "Responsive Support",
+      "security": "Enhanced Security"
+    },
+    "contact": {
+      "title": "Contact our experts in",
+      "highlight": "website creation",
+      "form": {
+        "quickContact": "Quick Contact",
+        "name": "Full name",
+        "phone": "Phone",
+        "submit": "Send"
+      },
+      "hours": {
+        "title": "Working hours",
+        "days": "Monday to Friday",
+        "time1": "9:30 AM - 1:30 PM",
+        "time2": "2:30 PM - 6:30 PM"
+      }
+    },
+    "solutions": {
+      "badge": "Digital Excellence",
+      "backgroundText": "SOLUTIONS",
+      "title": {
+        "line1": "We Create",
+        "line2": "Digital",
+        "highlight": "Solutions."
+      },
+      "description": "Our expert agency in <highlight>website creation Marrakech</highlight> designs tailor-made platforms. Whether for a showcase, e-commerce or institutional site, we guarantee high-end results.",
+      "discover": "Discover",
+      "items": {
+        "vitrine": {
+          "title": "Professional Showcase Sites",
+          "desc": "An elegant and high-performance digital showcase. Custom design and local SEO to capture your audience at first glance."
+        },
+        "ecommerce": {
+          "title": "E-Commerce Stores",
+          "desc": "Intuitive and secure online stores. Simplified payments, stock management and optimized sales funnels for conversion."
+        },
+        "institutional": {
+          "title": "Premium Institutional Sites",
+          "desc": "Robust platforms for large structures. Member areas, reinforced security and advanced document management."
+        },
+        "apps": {
+          "title": "Business Applications",
+          "desc": "Custom tools for your productivity: CRM, dashboards and intelligent automation."
+        }
+      }
+    }
+  },
+  "ExpertiseSection": {
+    "badge": "Know-How",
+    "title": "Expertise in",
+    "highlight": "Website Creation Marrakech",
+    "description": "Our specialized agency in <highlight>website creation Marrakech</highlight> transforms your digital vision into reality through tailor-made solutions that combine exceptional design, technical performance and advanced SEO strategy.",
+    "features": {
+      "design": {
+        "title": "Unique and Responsive Design",
+        "desc": "We create modern and intuitive designs that strengthen your brand identity. Each <highlight>website creation Marrakech</highlight> project is optimized for all devices with an exceptional user experience."
+      },
+      "performance": {
+        "title": "Optimal Performance and Speed",
+        "desc": "Our technical solutions guarantee leading loading times. We optimize every aspect of your website creation Marrakech for maximum performance and a smooth user experience."
+      },
+      "seo": {
+        "title": "Custom SEO for Marrakech",
+        "desc": "Our natural referencing strategy is specifically adapted to the Marrakech market. We identify strategic keywords and optimize your website creation Marrakech to maximize your local visibility."
+      }
+    },
+    "impact": {
+      "title": "Our Impact in Numbers",
+      "stat1": "Website creation Marrakech projects delivered",
+      "stat2": "Client satisfaction",
+      "stat3": "Rank improvement",
+      "stat4": "Average loading time",
+      "realtime": "Data updated in real time"
+    }
+  },
+  "AtoutsSection": {
+    "badge": "Strengths",
+    "titlePrefix": "The Strengths of",
+    "bubbles": {
+      "expertise": "Unmatched Expertise",
+      "delivery": "Fast Delivery",
+      "custom": "100% Custom",
+      "support": "24/7 Support",
+      "seo": "High-Performance SEO",
+      "security": "Max Security",
+      "design": "Modern Design",
+      "mobile": "Mobile First",
+      "roi": "Guaranteed ROI",
+      "catch": "Catch the bubbles"
+    }
+  },
+  "ProcessRoadmap": {
+    "mobile": {
+      "title": "Process of {br}{span}",
+      "titleHighlight": "Creation",
+      "description": "3 key steps for a high-performance website in Marrakech."
+    },
+    "desktop": {
+      "title": "{span} Process",
+      "titleHighlight": "Website Creation Marrakech",
+      "description": "Our proven methodology guarantees concrete results for your {br} <highlight>website creation Marrakech</highlight> project"
+    },
+    "steps": {
+      "step1": {
+        "title": "Analysis & Strategy",
+        "desc": "In-depth study of your sector in Marrakech, competitive analysis and definition of a digital strategy aligned with your objectives."
+      },
+      "step2": {
+        "title": "Design & UX",
+        "desc": "Creation of modern and intuitive interfaces that reflect your visual identity. Optimized design for all devices."
+      },
+      "step3": {
+        "title": "Development & Optimization",
+        "desc": "Efficient technical development, semantic HTML structure and advanced SEO integration for maximum performance."
+      }
+    },
+    "cta": {
+      "title": "Ready to launch your {br}{span} project ?",
+      "titleHighlight": "website creation Marrakech",
+      "description": "Our expert website creation agency in Marrakech supports you from conception to go-live, with an integrated SEO strategy to maximize your visibility.",
+      "button": "Start my project"
+    }
+  },
+  "PhilosophySection": {
+    "badge": "Vision & Expertise",
+    "mainTitle": {
+      "text": "Do You Dream of a {span} That {br} Exceeds Your Expectations?",
+      "highlight": "Website"
+    },
+    "mainDesc": "Tailor-made <highlight>website creation in Marrakech</highlight>. We don't just create sites, we build your competitive advantage.",
+    "vision": {
+      "title": "Our Vision",
+      "desc": "Your site is your digital identity. We combine sophisticated design and cutting-edge technology to conquer your market."
+    },
+    "pillars": {
+      "approach": {
+        "title": "Our Approach",
+        "items": [
+          "Active listening to needs",
+          "100% tailor-made solutions",
+          "Transparent process"
+        ]
+      },
+      "commitments": {
+        "title": "Our Commitments",
+        "items": [
+          "Strict compliance with deadlines",
+          "Regular communication",
+          "Total adaptability"
+        ]
+      },
+      "advantage": {
+        "title": "Your Advantage",
+        "items": [
+          "Growth lever",
+          "Sustainable competitive advantage",
+          "Digital showcase of excellence"
+        ]
+      }
+    }
+  },
+  "RegionalExpertiseSection": {
+    "badge": "National Presence",
+    "title": "Web Expertise {br} {span}",
+    "titleHighlight": "Everywhere in Morocco",
+    "description": "From Marrakech to Tangier, we deploy digital strategies adapted to the specificities of each local market.",
+    "card": {
+      "title": "Website Creation"
+    },
+    "regions": {
+      "morocco": {
+        "city": "Morocco & Marrakech",
+        "subtitle": "Headquarters & Global Expertise",
+        "desc": "Our specialized agency in website creation Morocco and Marrakech designs tailor-made digital solutions. We develop high-end sites, optimized for natural referencing in Morocco."
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "subtitle": "Hospitality & Luxury",
+        "desc": "In Marrakech, our expertise focuses on unique designs for hotels, riads and local businesses. Leaders in website creation Marrakech with ultra-performance sites."
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "subtitle": "Business & E-Commerce",
+        "desc": "Our web agency in Casablanca offers powerful e-commerce solutions (Shopify, WooCommerce) with optimized conversion funnels. Cutting-edge technologies (React, GSAP)."
+      },
+      "rabat": {
+        "city": "Rabat",
+        "subtitle": "Institutional & Premium",
+        "desc": "In Rabat, we create premium institutional sites, in line with our know-how in website creation Morocco. Rigor, security and elegance for organizations."
+      },
+      "tanger": {
+        "city": "Tangier",
+        "subtitle": "International & Multilingual",
+        "desc": "Our agency in Tangier develops multilingual platforms, combining expertise in website creation Morocco and an international approach for free zones and exports."
+      },
+      "agadir": {
+        "city": "Agadir",
+        "subtitle": "Tourism & Leisure",
+        "desc": "In Agadir, we design tourist sites with the same quality as our website creation Marrakech, adapted to the Moroccan market and international tourist flows."
+      }
+    }
+  },
+  "WebsiteCreationFAQ": {
+    "badge": "FAQ & Help",
+    "title": "Frequent {br} {span}",
+    "titleHighlight": "Questions.",
+    "description": "Find clear answers on website creation, SEO and our digital support in Marrakech.",
+    "support": {
+      "title": "Another question?",
+      "subtitle": "Our experts answer you.",
+      "button": "Contact us"
+    },
+    "faqs": [
+      {
+        "q": "Why use a website creation agency in Marrakech?",
+        "a": "A specialized agency in <strong class='text-brand-red'>website creation Marrakech</strong> understands the specific needs of local businesses. It offers solutions adapted to the Marrakech market, whether for tourism, real estate or trade."
+      },
+      {
+        "q": "What is the price of website creation in Marrakech?",
+        "a": "The price varies according to the complexity of the project (showcase, e-commerce, custom). We offer personalized quotes adapted to your budget and growth objectives."
+      },
+      {
+        "q": "What type of website should I choose for a business in Marrakech?",
+        "a": "It depends on your activity. A Riad will need a showcase site with booking, while a craftsman can benefit from an online store. We advise you on the best strategy."
+      },
+      {
+        "q": "How long does website creation in Marrakech take?",
+        "a": "On average, a showcase site takes 2 to 4 weeks, while a complex e-commerce site can require 6 to 8 weeks. We commit to clear deadlines from the start."
+      },
+      {
+        "q": "How to optimize the SEO of a website in Marrakech?",
+        "a": "We integrate SEO from conception: technical structure, local keywords ('Marrakech', 'Morocco'), loading speed and content optimized for Google."
+      },
+      {
+        "q": "Can I modify my site after website creation in Marrakech?",
+        "a": "Absolutely. We provide training to manage your content, or we can handle maintenance and developments via our support packages."
+      },
+      {
+        "q": "What host should I choose for website creation in Marrakech?",
+        "a": "We recommend high-performance and secure hosts, with servers close to your target audience to guarantee maximum speed."
+      },
+      {
+        "q": "Can a website boost a business in Marrakech?",
+        "a": "Yes, by increasing your local and international visibility. It's an essential tool for capturing tourist and local clientele in Marrakech."
+      },
+      {
+        "q": "Do I need a multilingual site for website creation in Marrakech?",
+        "a": "To target a tourist clientele (French, English, Spanish), a multilingual site is highly recommended and we perfectly master these integrations."
+      },
+      {
+        "q": "How to choose a good agency for website creation in Marrakech?",
+        "a": "Check their portfolio, client reviews and technical expertise. Choose an agency that understands your market and offers long-term support."
+      }
+    ]
+  },
+  "WebsiteCreationStats": {
+    "badge": "Performance",
+    "title": "Numbers that Speak : {br} {span}",
+    "titleHighlight": "Our Marrakech Web Design Agency",
+    "stats": {
+      "sites": {
+        "label": "Websites Delivered",
+        "sub": "Total Satisfaction"
+      },
+      "delivery": {
+        "label": "Average Delivery Days",
+        "sub": "Deadline adherence"
+      },
+      "speed": {
+        "label": "Loading Time",
+        "sub": "Lightning Speed"
+      },
+      "seo": {
+        "label": "SEO Traffic in 6 Months",
+        "sub": "Sustainable Growth"
+      },
+      "security": {
+        "label": "Security",
+        "sub": "Maximum Protection"
+      }
+    }
+  },
+  "WebsiteCreationTestimonials": {
+    "badge": "Client Satisfaction",
+    "title": "Certified {br} {span}",
+    "titleHighlight": "Excellence.",
+    "description": "Join the industry leaders who have chosen to propel their vision with an <highlight>elite digital strategy</highlight>.",
+    "cta": "Launch my Project",
+    "testimonials": {
+      "amine": {
+        "name": "Amine Tahiri",
+        "role": "Interior Architect",
+        "company": "Atlas Design Studio",
+        "text": "The portfolio they designed for my studio is a work of art. Minimalist, fast and perfectly referenced for architectural keywords in Marrakech.",
+        "tag": "Portfolio & SEO"
+      },
+      "kenza": {
+        "name": "Kenza Bennani",
+        "role": "Manager",
+        "company": "Riad Al-Jasmine",
+        "text": "A direct booking site that allowed us to reduce our OTA commissions. The team captured the soul of our Riad. Some minor adjustments at first, but the result is there.",
+        "tag": "Hospitality"
+      },
+      "omar": {
+        "name": "Omar Kabbaj",
+        "role": "Export Director",
+        "company": "Agro-Atlas",
+        "text": "Our B2B showcase for export is impeccable. Multilingual, fluid and secure. Our European partners are impressed by the quality of our digital presence.",
+        "tag": "B2B & Export"
+      },
+      "noura": {
+        "name": "Noura Alami",
+        "role": "Founder",
+        "company": "BioMaroc Cosmetics",
+        "text": "The Shopify store they developed is a war machine. Clean design, optimized sales funnel. Our sales took off from the first week.",
+        "tag": "E-Commerce"
+      },
+      "tarik": {
+        "name": "Tarik Jelloun",
+        "role": "Associate Lawyer",
+        "company": "Jelloun Law Firm",
+        "text": "Seriousness and rigor. Our firm's institutional site inspires confidence and professionalism. The technical support is responsive, which is crucial for us.",
+        "tag": "Corporate"
+      },
+      "salma": {
+        "name": "Salma Berrada",
+        "role": "Marketing Director",
+        "company": "Horizon Immo Group",
+        "text": "A total overhaul of our real estate portal. The interactive map and virtual tours work perfectly on mobile. A real added value for our clients.",
+        "tag": "Real Estate"
+      },
+      "youssef": {
+        "name": "Youssef Chraibi",
+        "role": "CEO",
+        "company": "LogisTrans Morocco",
+        "text": "Operational efficiency. The showcase site clearly presents our logistics services. The dynamic quote form brings us qualified leads daily.",
+        "tag": "Logistics"
+      },
+      "hajar": {
+        "name": "Hajar Sefrioui",
+        "role": "Fashion Designer",
+        "company": "Caftan Haute Couture",
+        "text": "Sublime. They translated the elegance of my creations into code. The site is fast, visual and the user experience is worthy of a luxury house.",
+        "tag": "Luxury & Mode"
+      },
+      "rachid": {
+        "name": "Rachid El Fassi",
+        "role": "Restaurateur",
+        "company": "The Medina Table",
+        "text": "Since the launch of the site with the booking module, we are full every night. The local SEO in Marrakech was perfectly executed.",
+        "tag": "Catering"
+      }
+    }
+  },
+  "WebsiteCreationForm": {
+    "badge": "Start a project",
+    "title": "Your Vision, {br} {span}",
+    "titleHighlight": "Our Expertise.",
+    "description": "Transform your digital presence with a team dedicated to excellence. Fill out this form to get a custom strategy.",
+    "trust": {
+      "secure": {
+        "top": "Data",
+        "bottom": "Secure"
+      },
+      "response": {
+        "top": "Response",
+        "bottom": "In 24h"
+      }
+    },
+    "steps": {
+      "step1": "Identity",
+      "step2": "Services",
+      "step3": "Details"
+    },
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Work Email",
+        "placeholder": "contact@company.com"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Company name"
+      },
+      "size": {
+        "label": "Company Size",
+        "option": "{count} employees"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "6 00 00 00 00"
+      },
+      "services": {
+        "title": "What do you need?",
+        "other": "Other",
+        "otherPlaceholder": "Specify your need...",
+        "items": {
+          "creation": "Website Creation",
+          "refonte": "Website Redesign",
+          "ecommerce": "E-Commerce",
+          "seo": "SEO & Ranking",
+          "ads": "Advertising (Ads)",
+          "branding": "Branding"
+        }
+      },
+      "budget": {
+        "label": "Estimated Budget",
+        "options": [
+          "< 20k MAD",
+          "20k - 50k MAD",
+          "50k - 100k MAD",
+          "+ 100k MAD"
+        ]
+      },
+      "details": {
+        "label": "Project Details",
+        "placeholder": "Describe your goals, deadlines and inspirations..."
+      },
+      "actions": {
+        "back": "Back",
+        "next": "Next",
+        "confirm": "Confirm project"
+      }
+    },
+    "success": {
+      "title": "Project Confirmed!",
+      "message": "Thank you {name}, your request has been sent to our experts.",
+      "subMessage": "A confirmation email has been sent to you.",
+      "button": "New Request"
+    }
+  },
+  "TechStackDivider": {
+    "title": "Our Trusted Partners"
+  },
+  "PerformanceSection": {
+    "badge": "Technical Excellence",
+    "title": "Technical Performance & SEO : {br} {span}",
+    "titleHighlight": "Digital Excellence",
+    "optimisations": {
+      "title": "Key Optimizations",
+      "items": [
+        {
+          "title": "Ultra-fast speed",
+          "desc": "Loading in less than 1s (tested on local networks)"
+        },
+        {
+          "title": "Intuitive navigation",
+          "desc": "Optimized user path for a smooth experience"
+        },
+        {
+          "title": "Full compatibility",
+          "desc": "Perfect display on mobile, tablet & desktop"
+        },
+        {
+          "title": "Enhanced security",
+          "desc": "Data protection and attack prevention"
+        },
+        {
+          "title": "Proactive maintenance",
+          "desc": "Regular updates for optimal performance"
+        }
+      ]
+    },
+    "seo": {
+      "title": "Advanced SEO Strategy",
+      "items": [
+        "Search engine optimization integrated from development",
+        "Positioning on your strategic local keywords",
+        "Attracting qualified and convertible traffic",
+        "Continuous technical performance optimization",
+        "Detailed analytical tracking of results"
+      ]
+    },
+    "quote": "Your website doesn't just exist – it {bold} thanks to our expertise in {span}."
+  },
+  "EngagementSection": {
+    "badge": "Premium Partnership",
+    "title": "Your Success, {br} {span}",
+    "titleHighlight": "Our Commitment.",
+    "description": "Our support goes beyond simple delivery of your <highlight>website creation Marrakech</highlight> project. We become the architect of your digital growth.",
+    "support": {
+      "title": "Continuous Support",
+      "badge": "Total Availability",
+      "items": [
+        "Priority technical assistance (response within 2h)",
+        "Regular updates included for 12 months",
+        "Strategic advice adapted to your activity",
+        "Complete training on using your site",
+        "Detailed monthly performance reports",
+        "24/7 security monitoring"
+      ],
+      "cta": "Get a quote"
+    },
+    "why": {
+      "title": "Why Choose Us?",
+      "items": [
+        "Partner committed to your success",
+        "Scalable solutions as you grow",
+        "Local & international market expertise",
+        "Measurable and sustainable results"
+      ]
+    },
+    "difference": {
+      "title": "Our Difference",
+      "desc": "By choosing our expertise, you choose a digital partner that understands your local challenges and global ambitions."
+    },
+    "catchy": {
+      "title": "A Creation {br} {span}",
+      "titleHighlight": "That Dazzles",
+      "desc": "We develop interfaces that convert visitors into loyal customers."
+    },
+    "features": [
+      {
+        "title": "Unique Design",
+        "desc": "Faithful embodiment of your brand with a distinctive visual identity."
+      },
+      {
+        "title": "Optimized UX",
+        "desc": "Intuitive customer journey designed to maximize conversions."
+      },
+      {
+        "title": "100% Mobile",
+        "desc": "Perfect display on all devices, from smartphone to large screen."
+      },
+      {
+        "title": "Performance",
+        "desc": "Ultra-fast loading times for optimal indexing."
+      }
+    ]
+  },
+  "ProjectsSection": {
+    "badge": "Premium Portfolio",
+    "title": "Our Digital {span}",
+    "titleHighlight": "Achievments.",
+    "cta": "Visit site",
+    "projects": {
+      "mmreseaux": {
+        "category": "Telecom & Infrastructure",
+        "desc": "Advanced network infrastructure solutions and fiber optic installation."
+      },
+      "plancycall": {
+        "category": "Customer Relations",
+        "desc": "Next-gen call center focused on relational quality."
+      },
+      "compagnons": {
+        "category": "Construction",
+        "desc": "General building company. A robust digital presence."
+      },
+      "majorelle": {
+        "category": "Business Center",
+        "desc": "The reference business center in Marrakech."
+      }
+    }
+  },
+  "CityExpertiseSection": {
+    "badge": "Territory & Innovation",
+    "title": "Tailor-Made {br} {span}",
+    "titleHighlight": "Web Expertise",
+    "description": "From Marrakech to Tangier, we deploy digital strategies adapted to the specificities of each local economic hub.",
+    "cities": {
+      "maroc": {
+        "city": "Web Agency Morocco",
+        "title": "Web Agency - Website Creation Morocco",
+        "subtitle": "National Excellence",
+        "desc": "Our agency masters all website creation solutions, from turnkey CMS to custom developments. In Marrakech and throughout Morocco, we combine the power of WordPress/Elementor for fast projects with pure coding (HTML5, CSS3, JavaScript and PHP) for complex needs. Each project natively integrates: optimized SEO for Google Morocco, loading times under 1.5 seconds thanks to our local Casablanca hosting, and reinforced security (SSL certificates and anti-DDoS protection).",
+        "features": [
+          "Google Morocco SEO",
+          "Local Hosting",
+          "SSL & Anti-DDoS Security",
+          "CMI / Stripe Payments"
+        ]
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "title": "Website Creation Marrakech: Premium Solutions",
+        "subtitle": "Luxury & Tourism",
+        "desc": "In Marrakech, our expertise focuses on unique hybrid solutions. For riads and hotels: we design WordPress sites with Elementor Pro integrating booking systems (SynXis or custom API developments), 360° virtual tours optimized for mobile, and automatic synchronization with Booking/Expedia. Marrakchi particularity: our developers systematically integrate interactive maps of the souks.",
+        "features": [
+          "SynXis/API Booking",
+          "360° Virtual Tours"
+        ]
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "title": "Casablanca: E-Commerce & Business Hub",
+        "subtitle": "Business & Marketplaces",
+        "desc": "Leader in website creation in Casablanca, we build high-performance WooCommerce marketplaces. Our solutions include: multi-warehouse management, integration with Moroccan ERPs (SAP, Odoo), and optimized payment tunnels (CMI/PayZone). Locally hosted infrastructure for latency <20ms.",
+        "features": [
+          "WooCommerce Marketplace",
+          "ERP Integration (SAP)"
+        ]
+      },
+      "rabat": {
+        "city": "Rabat",
+        "title": "Rabat: Institutional & Government Sites",
+        "subtitle": "Corporate & Security",
+        "desc": "Our approach in Rabat combines security and modularity. We develop W3C certified portals with biometric authentication and automatic archiving. Bilingual admin interface and intelligent caching system to handle government traffic peaks.",
+        "features": [
+          "W3C Certified / Biometrics",
+          "Dialectal Arabic Interface"
+        ]
+      },
+      "tanger": {
+        "city": "Tangier",
+        "title": "Tangier: Export & Logistics Platforms",
+        "subtitle": "International Trade",
+        "desc": "For Tanger Med and free zones, we design multilingual platforms (FR/AR/EN/ES) with real-time customs duty calculators and automatic currency modules. Hybrid WordPress/Node.js solutions for maximum flexibility.",
+        "features": [
+          "Multilingual 4 Languages",
+          "Customs Calculators"
+        ]
+      },
+      "agadir": {
+        "city": "Agadir",
+        "title": "Agadir: Tourist & Sports Experiences",
+        "subtitle": "Tourism & Surf",
+        "desc": "In Agadir, we focus on visual immersion: 4K templates, video backgrounds, and interactive maps of surf/golf spots. Integration of weather/tide APIs and 'Lonely Planet' style content strategy to maximize organic traffic.",
+        "features": [
+          "4K Video / Spots Maps",
+          "Weather & Tide API"
+        ]
+      }
+    }
+  },
+  "ExcellenceDivider": {
+    "title": "Our",
+    "highlight": "Commitments",
+    "description": "Technical and creative expertise at the service of your digital growth. We make no compromises on quality.",
+    "cta": "Validated Specification",
+    "items": {
+      "01": {
+        "title": "Digital Excellence in Marrakech",
+        "desc": "Specialist in website creation Marrakech, our agency designs high-end digital platforms according to international standards. We develop high-performance sites respecting WCAG and GDPR standards, adapted to hotels, shops, local businesses and professionals in Morocco. Each website creation Marrakech project aims for visual, technical and SEO excellence for a sustainable online presence."
+      },
+      "02": {
+        "title": "Custom Design",
+        "desc": "We create tailor-made websites in Marrakech, combining modern aesthetics, fluidity of use and optimal conversion. Each website creation Marrakech is thought to reflect your visual identity while captivating your visitors. Our responsive designs adapt perfectly to your sector of activity (hospitality, catering, real estate, e-commerce, tourism, etc.) and guarantee a high-end user experience."
+      },
+      "03": {
+        "title": "High Performance Technology",
+        "desc": "Our website creation Marrakech solutions integrate the latest technologies to ensure maximum performance: ultra-fast loading (< 1s), local or international secure hosting, and full compatibility with all mobile devices. Each site is built to offer fluid, stable and optimized navigation for natural referencing."
+      },
+      "04": {
+        "title": "SEO Referencing (Marrakech)",
+        "desc": "From conception, we integrate the best SEO practices in Marrakech to position your website creation Marrakech in the first Google results. Thanks to an optimized structure, rich content and strategic tags, your site quickly gains local visibility. Our strategies are adapted to local queries such as \"website Marrakech\" or \"digital agency Marrakech\"."
+      },
+      "05": {
+        "title": "Personalized Support",
+        "desc": "We support each client at every stage of their website creation Marrakech with human and reactive follow-up. Our multilingual support (FR/AR/EN) guarantees fluid and transparent project management. Whether you are a craftsman, hotelier or entrepreneur, we remain available to assist you after the launch and ensure the continued success of your digital presence."
+      },
+      "06": {
+        "title": "Enhanced Security",
+        "desc": "Each website creation Marrakech project benefits from advanced protection: premium SSL certificate, daily backups and professional firewall. Our solutions guarantee the confidentiality of your data and the stability of your site in all circumstances. Secure, reliable and compliant with cybersecurity standards, your site remains operational 24h/24 to protect your activity."
+      }
+    }
+  }
+}

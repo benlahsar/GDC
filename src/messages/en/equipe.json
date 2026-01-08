@@ -1,0 +1,46 @@
+{
+  "TeamPage": {
+    "hero": {
+      "badge": "GDC HIERARCHICAL CORE",
+      "title": {
+        "line1": "Human",
+        "highlight": "Architecture."
+      },
+      "description": "A synergy of expertise orchestrated for <highlight>Digital Supremacy</highlight>."
+    },
+    "labels": {
+      "responsable": "Lead",
+      "level": "LVL",
+      "executive": "EXECUTIVE",
+      "dev": "DEVELOPMENT",
+      "design": "DESIGN"
+    },
+    "roles": {
+      "ceo": "CEO & Founder",
+      "devLead": "Development Lead",
+      "designLead": "Design Lead",
+      "fullstack": "Full-Stack Developer",
+      "frontend": "Front-End Developer",
+      "uiux": "UI/UX Designer",
+      "brand": "Brand Identity Designer"
+    },
+    "strip": {
+      "future": "The Future is Human",
+      "code": "Code with Passion",
+      "design": "Design for Impact"
+    },
+    "recruitment": {
+      "badge": "TALENT HUB",
+      "title": {
+        "line1": "Sculpt the",
+        "highlight": "Web."
+      },
+      "description": "We are looking for digital architects capable of redefining industry standards. Your place is here.",
+      "stats": {
+        "openPositions": "Open Positions",
+        "reviewDelay": "Review Time"
+      },
+      "cta": "APPLY"
+    }
+  }
+}

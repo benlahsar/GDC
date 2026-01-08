@@ -1,0 +1,46 @@
+{
+  "TeamPage": {
+    "hero": {
+      "badge": "NÚCLEO JERÁRQUICO GDC",
+      "title": {
+        "line1": "La Arquitectura",
+        "highlight": "Humana."
+      },
+      "description": "Una sinergia de conocimientos orquestada para la <highlight>Supremacía Digital</highlight>."
+    },
+    "labels": {
+      "responsable": "Responsable",
+      "level": "LVL",
+      "executive": "EJECUTIVO",
+      "dev": "DESARROLLO",
+      "design": "DISEÑO"
+    },
+    "roles": {
+      "ceo": "CEO & Fundador",
+      "devLead": "Responsable de Desarrollo",
+      "designLead": "Responsable de Diseño",
+      "fullstack": "Desarrollador Full-Stack",
+      "frontend": "Desarrollador Front-End",
+      "uiux": "Diseñador UI/UX",
+      "brand": "Diseñador de Identidad de Marca"
+    },
+    "strip": {
+      "future": "El Futuro es Humano",
+      "code": "Código con Pasión",
+      "design": "Diseño para el Impacto"
+    },
+    "recruitment": {
+      "badge": "HUB DE TALENTO",
+      "title": {
+        "line1": "Esculpe la",
+        "highlight": "Web."
+      },
+      "description": "Buscamos arquitectos digitales capaces de redefinir los estándares de la industria. Tu lugar está aquí.",
+      "stats": {
+        "openPositions": "Puestos Abiertos",
+        "reviewDelay": "Plazo de Revisión"
+      },
+      "cta": "POSTULARSE"
+    }
+  }
+}

@@ -2,20 +2,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
 import { Sparkles, MousePointer2, CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const ATOUTS = [
-  { text: "Expertise Inégalée", highlight: true },
-  { text: "Livraison Rapide", highlight: false },
-  { text: "100% Sur-Mesure", highlight: false },
-  { text: "Support 24/7", highlight: false },
-  { text: "SEO Performant", highlight: false },
-  { text: "Sécurité Max", highlight: false },
-  { text: "Design Moderne", highlight: false },
-  { text: "Mobile First", highlight: false },
-  { text: "ROI Garanti", highlight: false },
+const getAtouts = (t: any) => [
+  { text: t("bubbles.expertise"), highlight: true },
+  { text: t("bubbles.delivery"), highlight: false },
+  { text: t("bubbles.custom"), highlight: false },
+  { text: t("bubbles.support"), highlight: false },
+  { text: t("bubbles.seo"), highlight: false },
+  { text: t("bubbles.security"), highlight: false },
+  { text: t("bubbles.design"), highlight: false },
+  { text: t("bubbles.mobile"), highlight: false },
+  { text: t("bubbles.roi"), highlight: false },
 ];
 
 export const AtoutsSection: React.FC = () => {
+  const t = useTranslations("AtoutsSection");
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<Matter.Engine | null>(null);
@@ -75,6 +77,8 @@ export const AtoutsSection: React.FC = () => {
     const ballBodies: Matter.Body[] = [];
     const ballRadius = 70;
     const wallThickness = 100;
+
+    const ATOUTS = getAtouts(t);
 
     ATOUTS.forEach((atout, index) => {
       const x = Math.random() * (width - 100) + 50;
@@ -153,9 +157,8 @@ export const AtoutsSection: React.FC = () => {
         const el = document.getElementById(`atout-ball-${index}`);
         if (el) {
           const { x, y } = body.position;
-          el.style.transform = `translate3d(${x - ballRadius}px, ${
-            y - ballRadius
-          }px, 0)`;
+          el.style.transform = `translate3d(${x - ballRadius}px, ${y - ballRadius
+            }px, 0)`;
         }
       });
       animationFrameId = requestAnimationFrame(domUpdateLoop);
@@ -198,11 +201,11 @@ export const AtoutsSection: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm">
             <Sparkles size={14} className="text-brand-red" />
             <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gray-800 dark:text-gray-200">
-              Points Forts
+              {t("badge")}
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tight">
-            Les Atouts de{" "}
+            {t("titlePrefix")}{" "}
             <span className="text-brand-red">Group Digital Concept</span>
           </h2>
           <div className="w-24 h-1.5 bg-brand-red mx-auto rounded-full"></div>
@@ -229,17 +232,15 @@ export const AtoutsSection: React.FC = () => {
               <div
                 key={index}
                 id={`atout-ball-${index}`}
-                className={`absolute top-0 left-0 rounded-full flex items-center justify-center p-2 text-center shadow-lg transition-colors duration-300 will-change-transform z-40 pointer-events-none ${
-                  item.highlight
-                    ? "bg-brand-red text-white border-2 border-brand-red shadow-[0_10px_20px_rgba(220,38,38,0.3)]"
-                    : "bg-white dark:bg-[#1a1a1a] text-black dark:text-white border border-gray-100 dark:border-white/10"
-                }`}
+                className={`absolute top-0 left-0 rounded-full flex items-center justify-center p-2 text-center shadow-lg transition-colors duration-300 will-change-transform z-40 pointer-events-none ${item.highlight
+                  ? "bg-brand-red text-white border-2 border-brand-red shadow-[0_10px_20px_rgba(220,38,38,0.3)]"
+                  : "bg-white dark:bg-[#1a1a1a] text-black dark:text-white border border-gray-100 dark:border-white/10"
+                  }`}
                 style={{ width: item.radius * 2, height: item.radius * 2 }}
               >
                 <span
-                  className={`font-bold leading-tight px-1 select-none pointer-events-none ${
-                    item.highlight ? "text-base" : "text-sm"
-                  }`}
+                  className={`font-bold leading-tight px-1 select-none pointer-events-none ${item.highlight ? "text-base" : "text-sm"
+                    }`}
                 >
                   {item.text}
                 </span>
@@ -248,21 +249,20 @@ export const AtoutsSection: React.FC = () => {
             <div className="absolute bottom-6 left-0 w-full text-center pointer-events-none z-10 flex items-center justify-center gap-2 text-gray-400 dark:text-gray-500 opacity-50">
               <MousePointer2 size={16} className="animate-bounce" />
               <p className="text-[10px] font-bold uppercase tracking-[0.2em]">
-                Attrapez les bulles
+                {t("bubbles.catch")}
               </p>
             </div>
           </div>
         ) : (
           <div className="w-full relative">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-10">
-              {ATOUTS.map((atout, index) => (
+              {getAtouts(t).map((atout, index) => (
                 <div
                   key={index}
-                  className={`p-6 rounded-2xl border flex items-center justify-between gap-4 shadow-sm transition-all duration-300 ${
-                    atout.highlight
-                      ? "bg-brand-red text-white border-brand-red shadow-lg shadow-red-500/20"
-                      : "bg-white dark:bg-[#111] text-black dark:text-white border-black/5 dark:border-white/10"
-                  }`}
+                  className={`p-6 rounded-2xl border flex items-center justify-between gap-4 shadow-sm transition-all duration-300 ${atout.highlight
+                    ? "bg-brand-red text-white border-brand-red shadow-lg shadow-red-500/20"
+                    : "bg-white dark:bg-[#111] text-black dark:text-white border-black/5 dark:border-white/10"
+                    }`}
                 >
                   <span className="font-bold text-sm uppercase tracking-wide">
                     {atout.text}
