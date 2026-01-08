@@ -21,6 +21,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...(await import(`../messages/${locale}/ecommerce.json`)).default,
       ...(await import(`../messages/${locale}/domain-name.json`)).default,
       ...(await import(`../messages/${locale}/maintenance.json`)).default,
+      seo: (await import(`../messages/${locale}/seo.json`)).default,
+      'sea-smo': (await import(`../messages/${locale}/sea-smo.json`)).default,
       footer: (await import(`../messages/${locale}/footer.json`)).default,
       // ...(await import(`../../messages/${locale}/about.json`)).default,
       // ...(await import(`../../messages/${locale}/services.json`)).default,

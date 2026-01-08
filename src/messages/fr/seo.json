@@ -1,0 +1,627 @@
+{
+  "hero": {
+    "badge": "Domination des Moteurs de Recherche",
+    "title": "Stratégie <elite>SEO Elite</elite> pour votre Business.",
+    "description": "Plus qu'un simple audit. Nous bâtissons une visibilité durable pour positionner <black>votre marque au sommet de Google</black>.",
+    "cta": "Lancer l'audit complet",
+    "successRate": "Success Rate: 98%"
+  },
+  "scanner": {
+    "title": "SEO SCANNER",
+    "subtitle": "LIVE DIAGNOSTIC HUB",
+    "status": {
+      "analyzing": "ANALYZING",
+      "ready": "READY"
+    },
+    "step1": {
+      "title": "Scannez vos {critiques}.",
+      "critiques": "points critiques.",
+      "description": "Notre moteur de diagnostic identifie vos opportunités SEO en temps réel pour dominer le marché.",
+      "placeholder": "https://votre-site.ma",
+      "cta": "DÉMARRER L'AUDIT"
+    },
+    "step2": {
+      "title": "Audit en cours...",
+      "description": "Crawl Technique • Analyse Sémantique • UX Score"
+    },
+    "step3": {
+      "engine": "GDC Score Engine",
+      "visibility": "Status Visibilité",
+      "excellent": "EXCELLENT",
+      "fragile": "FRAGILE",
+      "critical": "CRITIQUE",
+      "globalHealth": "SANTÉ DIGITALE GLOBALE",
+      "cta": "DÉPLOYER LES CORRECTIFS",
+      "newScan": "Lancer un nouveau scan"
+    },
+    "step4": {
+      "back": "RETOUR AUX RÉSULTATS",
+      "title": "Optimisez {votreSite}.",
+      "votreSite": "votre site.",
+      "description": "Nos experts interviennent sous 24h pour corriger les erreurs critiques identifiées sur {url}.",
+      "name": "Votre Nom",
+      "email": "Votre Email Pro",
+      "message": "Parlez-nous de vos objectifs business...",
+      "cta": "DÉPLOYER L'OPTIMISATION",
+      "alert": "Demande de diagnostic complet transmise pour {url}"
+    },
+    "os": "Interactive GDC OS 4.0",
+    "ai": {
+      "prompt": "Tu es l'ingénieur SEO en chef chez Group Digital Concept. Analyse l'URL \"{url}\" avec une rigueur technique absolue. Ta mission est de fournir un audit 100% réaliste basé sur tes connaissances actualisées du web et des standards Google (HCU, Core Web Vitals, E-E-A-T). Cherche des erreurs techniques spécifiques réelles que tu identifies pour ce domaine ou ce type de site. Structure ta réponse UNIQUEMENT en JSON avec : 1. \"score\": Un score global honnête entre 0 et 100. 2. \"priorities\": Une liste de 3 objets (Technique, Contenu, Autorité) avec un \"value\" (score sur 100) et un \"advice\" (conseil stratégique précis). 3. \"summary\": Un résumé cinglant et professionnel de l'état actuel de visibilité. 4. \"criticalFix\": L'action technique prioritaire absolue. Format JSON strict : {{ \"score\": number, \"priorities\": [ {{ \"label\": \"Technique\", \"value\": number, \"advice\": \"string\" }}, {{ \"label\": \"Contenu\", \"value\": number, \"advice\": \"string\" }}, {{ \"label\": \"Autorité\", \"value\": number, \"advice\": \"string\" }} ], \"summary\": \"string\", \"criticalFix\": \"string\" }}",
+      "priorityLabels": {
+        "technical": "Technique",
+        "content": "Contenu",
+        "authority": "Autorité"
+      },
+      "fallback": {
+        "technical": "Réduire le temps de réponse serveur (TTFB) et optimiser le LCP en éliminant les ressources CSS/JS inutilisées.",
+        "content": "Améliorer l'E-E-A-T en ajoutant des profils d'auteurs experts et en créant du contenu à forte valeur ajoutée.",
+        "authority": "Acquérir des backlinks thématiques locaux pour renforcer la topical authority du domaine.",
+        "summary": "Le site souffre d'un manque de visibilité critique sur ses mots-clés principaux à cause d'une architecture technique obsolète.",
+        "criticalFix": "Implémenter le Lazy Loading et la compression Brotli pour réduire le poids des pages de 60%."
+      }
+    }
+  },
+  "features": {
+    "audit360": {
+      "title": "Audit 360°",
+      "description": "Analyse technique complète, sémantique et concurrentielle pour identifier vos leviers de croissance immédiats."
+    },
+    "contentStrategist": {
+      "title": "Content Strategist",
+      "description": "Rédaction optimisée et storytelling de marque pour captiver votre audience et séduire les algorithmes."
+    },
+    "netlinkingElite": {
+      "title": "Netlinking Elite",
+      "description": "Acquisition de backlinks premium pour renforcer l'autorité de votre domaine et sécuriser votre top 1."
+    }
+  },
+  "stats_strip": {
+    "keywords": "Mots-clés en Top 3",
+    "traffic": "Trafic Organique Moyen",
+    "retention": "Taux de Rétention Client"
+  },
+  "quick_services": {
+    "local": {
+      "title": "SEO Local (Marrakech)",
+      "description": "Ciblez les clients de votre région avec précision."
+    },
+    "ecommerce": {
+      "title": "E-Commerce SEO",
+      "description": "Optimisation massive de vos fiches produits."
+    },
+    "international": {
+      "title": "SEO International",
+      "description": "Conquérir de nouveaux marchés à l'export."
+    },
+    "recovery": {
+      "title": "Récupération Trafic",
+      "description": "Sortir des pénalités Google (Panda/Penguin)."
+    }
+  },
+  "contact": {
+    "badge": "Boostez votre Visibilité",
+    "title": "Prêt pour le {top1}",
+    "top1": "Top 1 ?",
+    "description": "Remplissez le formulaire ci-dessous pour recevoir votre audit SEO gratuit et une stratégie personnalisée.",
+    "success": {
+      "title": "Audit Demandé !",
+      "message": "Merci {name}. Notre équipe analyse votre site {website} et revient vers vous sous 24h.",
+      "cta": "Nouvelle demande"
+    },
+    "form": {
+      "nameLabel": "Nom Complet",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "Email Professionnel",
+      "emailPlaceholder": "email@societe.com",
+      "websiteLabel": "URL du Site Web",
+      "websitePlaceholder": "https://votre-site.com",
+      "objectivesLabel": "Objectifs SEO",
+      "objectivesPlaceholder": "Ex: Améliorer mon classement sur 'Hôtel Marrakech', augmenter mon trafic organique...",
+      "rgpd": "Vos données sont protégées par le RGPD.",
+      "cta": "Recevoir mon Audit"
+    },
+    "side": {
+      "growth": "Croissance Trafic Moyenne",
+      "dataTitle": "Analyse Data",
+      "dataDesc": "Décisions stratégiques basées sur des résultats réels.",
+      "expertiseTitle": "Expertise   Marrakech &   International.",
+      "support": "Support Local"
+    },
+    "trust": {
+      "ranking": "GOOGLE RANKING",
+      "whitehat": "WHITE HAT SEO",
+      "elite": "PERFORMANCE ELITE"
+    }
+  },
+  "excellence": {
+    "badge": "Solutions d'Excellence",
+    "title": "Nous Créons des <solutions>Solutions Digitales</solutions> <excellence>d'Excellence</excellence>",
+    "description": "Notre agence de stratégie SEO à Marrakech propose des services complets, spécialement conçus pour répondre aux besoins des entreprises locales et internationales.",
+    "items": {
+      "label": "VOIR DÉTAILS",
+      "vitrine": {
+        "title": "Référencement Naturel pour Sites Vitrines",
+        "description": "Notre service de référencement naturel Marrakech donne à votre site vitrine la visibilité qu'il mérite. Spécialisés dans l'optimisation SEO pour les professionnels et artisans locaux, nous appliquons des stratégies sur mesure pour mettre en valeur votre activité tout en ciblant parfaitement votre audience marrakchie. Chaque projet inclut une optimisation technique et éditoriale complète pour un positionnement durable.",
+        "badge": "Visibilité"
+      },
+      "ecommerce": {
+        "title": "Référencement E-Commerce Performant",
+        "description": "Avec notre expertise en référencement naturel Marrakech, nous boostons vos boutiques en ligne pour dominer les résultats de recherche locaux. Nous optimisons vos fiches produits, la structure technique et le maillage interne pour améliorer votre taux de conversion. Une approche 100% adaptée au marché de Marrakech et à ses spécificités commerciales.",
+        "badge": "Conversion"
+      },
+      "institution": {
+        "title": "SEO Premium pour Institutions",
+        "description": "Notre service de référencement naturel Marrakech pour institutions combine stratégie de contenu premium et optimisation technique avancée. Nous travaillons sur l'image de marque, les recherches sectorielles et le multilinguisme pour positionner votre organisation comme référence dans son domaine à Marrakech.",
+        "badge": "Autorité"
+      },
+      "app": {
+        "title": "SEO pour Applications Métiers",
+        "description": "Le référencement naturel Marrakech que nous proposons inclut l'optimisation des plateformes métiers avec une approche sur-mesure. Nous améliorons l'indexation de vos outils professionnels (CRM, tableaux de bord) tout en tenant compte des particularités locales du marché marrakchi pour un trafic qualifié et constant.",
+        "badge": "Performance"
+      }
+    },
+    "banner": {
+      "title": "Prêt à Dominer votre Secteur ?",
+      "description": "Nos stratégies SEO génèrent en moyenne <bold>+180% de trafic organique</bold> après 6 mois d'accompagnement.",
+      "ranking": "Ranking",
+      "success": "Success",
+      "cta": "Démarrer"
+    }
+  },
+  "features_grid": {
+    "badge": "Savoir-Faire Digital",
+    "title": "L'Excellence du <seo>SEO à Marrakech</seo>",
+    "items": {
+      "natural": {
+        "title": "Référencement Naturel à Marrakech",
+        "description": "Spécialiste en référencement naturel Marrakech, notre agence propose des stratégies SEO premium, conçues selon les dernières normes internationales. Nos solutions sont optimisées pour les entreprises locales, les boutiques en ligne et les professionnels de Marrakech et sa région."
+      },
+      "custom": {
+        "title": "Stratégie SEO Sur Mesure",
+        "description": "Nous élaborons des plans de référencement naturel Marrakech uniques, combinant techniques modernes et optimisation ciblée. Chaque stratégie est adaptée à votre secteur."
+      },
+      "guarantee": {
+        "title": "Performance SEO Garantie",
+        "description": "Solutions techniques optimisées pour Marrakech :",
+        "points": [
+          "Temps de chargement ultra-rapide",
+          "Sécurité renforcée (HTTPS)",
+          "SEO mobile-first parfait"
+        ]
+      },
+      "local": {
+        "title": "Référencement Naturel Marrakech (SEO Local)",
+        "description": "Intégration du référencement naturel Marrakech dès l’audit initial pour un positionnement optimal sur Google. Stratégies adaptées aux recherches locales (ex : \"référencement naturel Marrakech\", \"agence SEO Marrakech\")."
+      },
+      "support": {
+        "title": "Support Personnalisé",
+        "description": "Accompagnement dédié pour les entreprises à Marrakech, avec gestion de projet fluide et multilingue (FR/AR/EN). Idéal pour les artisans et hôtels."
+      },
+      "security": {
+        "title": "Sécurité & Fiabilité",
+        "description": "Protection avancée pour votre stratégie SEO :",
+        "points": [
+          "Audits réguliers",
+          "Protection contre les pénalités",
+          "Sauvegardes sécurisées"
+        ]
+      }
+    },
+    "banner": {
+      "title": "Dominez Votre   Secteur Dès <aujourdhui>Aujourd'hui.</aujourdhui>",
+      "description": "Nos experts en référencement naturel à Marrakech transforment vos ambitions en positions dominantes sur Google.",
+      "cta": "LANCER L'AUDIT"
+    }
+  },
+  "why_choose": {
+    "title": "Pourquoi Choisir Notre Agence pour la Création de Site Internet à Marrakech ?",
+    "description": "En tant que spécialistes du <bold>référencement naturel Marrakech</bold>, nous optimisons votre visibilité en ligne grâce à des stratégies SEO sur mesure. Notre expertise en <bold>référencement web</bold> combine techniques avancées et connaissance approfondie du marché marrakchi pour des résultats concrets. Que vous dirigiez un e-commerce, un hôtel, une PME ou une entreprise à Marrakech, nous développons des solutions adaptées à vos objectifs business.",
+    "approach": "Notre approche repose sur 3 piliers essentiels :",
+    "pillars": {
+      "audit": {
+        "title": "Audit SEO Complet",
+        "description": "Analyse approfondie de votre site et benchmark concurrentiel spécifique à Marrakech pour identifier toutes les opportunités d'optimisation."
+      },
+      "technical": {
+        "title": "Optimisation Technique Pointue",
+        "description": "Amélioration des performances (vitesse, mobile-first, sécurité) selon les dernières exigences des algorithmes Google."
+      },
+      "content": {
+        "title": "Stratégie de Contenu Localisée",
+        "description": "Création de contenus optimisés ciblant précisément les intentions de recherche des internautes à Marrakech."
+      }
+    },
+    "stats": {
+      "delivered": "projets livrés à   Marrakech",
+      "optimized": "sites optimisés   dans le monde"
+    },
+    "cta": "Contactez-Nous !",
+    "methodology": {
+      "title": "Notre Méthodologie de Référencement Naturel à Marrakech",
+      "steps": [
+        {
+          "title": "Audit SEO Complet",
+          "description": "Nous analysons en profondeur votre secteur d'activité, votre positionnement concurrentiel à Marrakech et le comportement de votre audience cible. Ce diagnostic stratégique nous permet d'établir un plan d'action SEO parfaitement aligné avec vos objectifs commerciaux."
+        },
+        {
+          "title": "Optimisation Technique Avancée",
+          "description": "Notre équipe d'experts intervient sur tous les aspects techniques : amélioration des temps de chargement, optimisation mobile, architecture du site et balisage sémantique. Chaque modification est pensée pour renforcer votre positionnement naturel."
+        },
+        {
+          "title": "Stratégie de Contenu Performante",
+          "description": "Nous développons des contenus optimisés ciblant précisément les intentions de recherche de votre audience à Marrakech. Notre approche combine pertinence sémantique, optimisation on-page et maillage interne stratégique."
+        }
+      ],
+      "result": "Le résultat ? Une <bold>visibilité accrue</bold> sur les moteurs de recherche, un <bold>trafic qualifié</bold> en constante progression et des <bold>conversions optimisées</bold> pour transformer vos visiteurs en clients fidèles.",
+      "engagements_title": "Nos engagements :",
+      "engagements": [
+        "Techniques 100% conformes aux guidelines Google",
+        "Transparence totale avec rapports mensuels détaillés",
+        "Résultats mesurables et durables",
+        "Accompagnement personnalisé à chaque étape"
+      ]
+    },
+    "expertise": {
+      "title": "Notre Expertise en Référencement Naturel à Marrakech",
+      "description": "Notre approche SEO va bien au-delà des techniques basiques. En tant qu'agence spécialisée en <bold>référencement naturel Marrakech</bold>, nous intégrons l'optimisation dès la conception de votre stratégie digitale.",
+      "techTitle": "Optimisation Technique Avancée",
+      "techDesc": "Nous mettons en place une architecture technique parfaitement adaptée aux algorithmes des moteurs de recherche. Chaque élément est pensée pour votre secteur d'activité spécifique à Marrakech et les comportements de vos clients potentiels.",
+      "strategyTitle": "Stratégie SEO Complète",
+      "strategyDesc": "Nous déployons une méthodologie exhaustive comprenant :",
+      "strategyItems": [
+        "Analyse sémantique approfondie des mots-clés stratégiques",
+        "Optimisation on-page technique et éditoriale",
+        "Maillage interne intelligent boostant l'autorité",
+        "Respect strict des standards Google (Core Web Vitals, E-A-T)"
+      ],
+      "resultPrefix": "Le résultat ? Un <bold>référencement naturel Marrakech</bold> performant qui vous permet de :",
+      "results": [
+        "Atteindre les premières positions sur Google",
+        "Générer un trafic qualifié et convertissant",
+        "Bâtir une image de marque digitale forte et crédible"
+      ]
+    }
+  },
+  "bento_details": {
+    "title": "Vous Rêvez d'un   <referencement>Référencement Naturel</referencement>   Qui Dépasse Vos Attentes ?",
+    "description": "Chez <bold>Group Digital Concept</bold>, nous ne créons pas simplement des <site>sites web</site> – nous concevons des <experiences>expériences digitales uniques</experiences>. Votre site est bien plus qu'une vitrine en ligne : c'est votre identité numérique, votre outil de conversion performant et votre avantage concurrentiel pour conquérir de nouveaux marchés.",
+    "footer": "Avec notre expertise en <bold>création de site web à Marrakech</bold>, nous transformons vos ambitions en une réalité digitale, alliant design sophistiqué, technologies performantes et stratégie SEO intégrée.",
+    "philosophy": {
+      "badge": "Philosophie",
+      "title": "Collaboration & Excellence :  <philosophie>Notre Philosophie</philosophie>",
+      "approachTitle": "Notre Approche",
+      "approach": [
+        "Analyse approfondie de vos objectifs business",
+        "Stratégie SEO adaptée à votre secteur d'activité",
+        "Transparence totale à chaque étape"
+      ],
+      "engagementsTitle": "Nos Engagements",
+      "engagements": [
+        "Résultats visibles sous 3 mois",
+        "Communication claire et rapports mensuels",
+        "Techniques 100% conformes aux guidelines Google"
+      ],
+      "advantageTitle": "Votre Avantage",
+      "advantages": [
+        "Votre meilleur canal d'acquisition client",
+        "Un avantage concurrentiel durable",
+        "La clé de votre visibilité digitale"
+      ]
+    },
+    "success": {
+      "title": "Votre Succès,  Notre Engagement",
+      "description": "Notre accompagnement va bien au-delà du simple positionnement. Nous bâtissons des <bold>stratégies gagnantes</bold>.",
+      "trackingTitle": "Suivi Continu",
+      "tracking": [
+        "Optimisations mensuelles incluses",
+        "Analyses techniques régulières",
+        "Conseil stratégique adapté à votre marché"
+      ],
+      "whyTitle": "Pourquoi Nous Choisir ?",
+      "why": [
+        "Un partenaire SEO engagé dans votre croissance",
+        "Des résultats durables et mesurables",
+        "Une connaissance pointue du marché marrakchi"
+      ],
+      "footer": "Chez <bold>Group Digital Concept</bold>, votre visibilité est bien plus qu’un classement : c’est votre crédibilité numérique, votre canal de conversion performant et votre atout pour dominer votre marché."
+    },
+    "performance": {
+      "title": "Performance SEO & Résultats :  <excellence>L'Excellence Digitale</excellence>",
+      "keysTitle": "Optimisations Clés",
+      "keys": [
+        { "t": "Vitesse ultrarapide", "s": "Core Web Vitals optimisés" },
+        { "t": "Contenu stratégique", "s": "Ciblage sémantique précis" },
+        { "t": "Compatibilité totale", "s": "Mobile-first indexing" }
+      ],
+      "strategyTitle": "Stratégie Avancée",
+      "strategy": [
+        "Audit technique complet dès le départ",
+        "Positionnement sur vos mots-clés stratégiques",
+        "Attraction de trafic qualifié et convertible"
+      ],
+      "resultLabel": "Résultat :",
+      "resultValue": "Domination Marché"
+    },
+    "natural": {
+      "title": "Référencement Naturel à Marrakech  <performe>Qui Performe</performe>",
+      "items": [
+        { "t": "Analyse concurrentielle", "s": "Benchmarking précis" },
+        { "t": "Netlinking qualitatif", "s": "Autorité de domaine" },
+        { "t": "Reporting transparent", "s": "Suivi des KPI" },
+        { "t": "Approche locale", "s": "Ciblage Marrakech" }
+      ],
+      "quote": "\"Un référencement qui convertit immédiatement et performe durablement. Bâtissez une image de marque digitale forte et crédible.\"",
+      "badge": "GDC Elite Expertise"
+    }
+  },
+  "regional": {
+    "cities": {
+      "maroc": {
+        "city": "Maroc & Marrakech",
+        "description": "Notre agence spécialisée en référencement naturel Maroc et référencement naturel Marrakech propose des stratégies SEO sur mesure. Nous optimisons des sites web haut de gamme pour améliorer leur visibilité au Maroc."
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "description": "À Marrakech, notre expertise en référencement naturel Maroc se concentre sur des stratégies uniques pour les entreprises locales. Nous sommes leaders en référencement naturel Marrakech avec des résultats durables et mesurables."
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "description": "Notre agence SEO à Casablanca offre des solutions e-commerce performantes (Shopify, WooCommerce) avec des tunnels de conversion optimisés. Nous utilisons les dernières techniques SEO (Schema, Core Web Vitals) for des sites à fort taux de transformation."
+      },
+      "rabat": {
+        "city": "Rabat",
+        "description": "À Rabat, nous déployons des stratégies SEO premium, en cohérence avec notre expertise en référencement naturel Maroc et référencement naturel Marrakech."
+      },
+      "tanger": {
+        "city": "Tanger",
+        "description": "Notre agence à Tanger développe des solutions multilingues, combinant expertise en référencement naturel Maroc et approche internationale."
+      },
+      "agadir": {
+        "city": "Agadir",
+        "description": "À Agadir, nous optimisons des sites touristiques avec la même qualité que notre référencement naturel Marrakech, adaptés au marché marocain."
+      }
+    },
+    "header": {
+      "title": "Référencement Naturel Marrakech :  <visibilite>Une Visibilité Optimale et Durable</visibilite>"
+    },
+    "solution": {
+      "title": "Une Solution Complète pour Votre SEO à Marrakech",
+      "description": "Notre approche en <bold>référencement naturel Marrakech</bold> allie expertise technique et stratégie sur mesure :",
+      "steps": [
+        {
+          "title": "Audit Complet",
+          "items": [
+            "Analyse approfondie de votre positionnement actuel",
+            "Benchmark concurrentiel spécifique à Marrakech"
+          ]
+        },
+        {
+          "title": "Optimisation Technique",
+          "items": [
+            "Amélioration des Core Web Vitals",
+            "Compatibilité mobile-first obligatoire"
+          ]
+        },
+        {
+          "title": "Sécurité Renforcée",
+          "items": [
+            "Protection contre les pénalités Google",
+            "Surveillance continue des performances"
+          ]
+        },
+        {
+          "title": "Stratégie SEO",
+          "items": [
+            "Plan d'action personnalisé pour votre secteur",
+            "Positionnement sur vos mots-clés stratégiques"
+          ]
+        }
+      ],
+      "commit": "Nous nous engageons à :",
+      "result": "Obtenir des résultats sous 3 mois",
+      "cta": "Contactez-Nous !"
+    },
+    "footer": {
+      "engagement": "Nous nous engageons à :",
+      "results": "Obtain des résultats sous 3 mois",
+      "cta": "Contactez-Nous !"
+    }
+  },
+  "digital_projects": {
+    "badge": "Portfolio Client",
+    "title": "Nos projets <digitaux>digitaux :</digitaux>",
+    "projects": {
+      "majorelle": "Majorelle Centre D'affaire",
+      "compagnons": "Group Entreprise Des Compagnons En Bâtiments",
+      "plancycall": "Group Plancy Call",
+      "mmreseaux": "M.M. Réseaux Com"
+    }
+  },
+  "methodology": {
+    "title": "Notre   Méthodologie de   {travail}",
+    "travail": "Travail",
+    "description": "Un processus structuré en 4 étapes clés pour garantir l'excellence de votre transformation digitale à Marrakech.",
+    "steps": [
+      {
+        "title": "Audit & Conception",
+        "description": "Nous commençons par une <bold>analyse approfondie</bold> de vos besoins, de votre secteur d’activité et de votre concurrence. Cette étape est cruciale pour une <bold>création Site Web Marrakech</bold> réussie. Nous définissons vos objectifs, identifions votre public cible et concevons une structure de site optimisée pour l’expérience utilisateur et le référencement."
+      },
+      {
+        "title": "Design & Développement",
+        "description": "Nous concevons des interfaces visuelles uniques et captivantes qui incarnent l'ADN de votre marque. Nos <bold>développeurs experts</bold> transforment ensuite ces designs en une plateforme web fluide, responsive et optimisée pour la conversion, utilisant les dernières technologies du marché."
+      },
+      {
+        "title": "Optimisation & Sécurité",
+        "description": "Chaque ligne de code est pensée pour la performance. Nous intégrons les <bold>meilleures pratiques SEO</bold> dès la conception technique, optimisons les <bold>Core Web Vitals</bold> pour une vitesse éclair, et blindons votre infrastructure avec des protocoles de sécurité avancés."
+      },
+      {
+        "title": "Livraison & Formation",
+        "description": "Après une phase de <bold>tests rigoureux</bold> sur tous les supports, nous procédons au lancement officiel de votre site. Nous vous accompagnons avec une <bold>formation complète</bold> sur votre interface d'administration pour vous garantir une autonomie totale."
+      }
+    ],
+    "protocol": "Protocole Excellence GDC"
+  },
+  "expertise_cities": {
+    "title": "Notre Expertise en <seo>Référencement Naturel au Maroc</seo>",
+    "badge": "GDC Regional Expertise",
+    "items": {
+      "maroc": {
+        "title": "Agence SEO - Référencement Naturel Maroc",
+        "description": "Notre agence maîtrise toutes les techniques de référencement naturel, des optimisations basiques aux stratégies avancées. À Marrakech comme dans tout le Maroc, nous combinons la puissance des outils SEO (Ahrefs, SEMrush) with des développements techniques sur mesure. Chaque projet intègre : un audit complet pour Google Maroc, des optimisations techniques pour des temps de chargement inférieurs à 1,5 secondes, et une sécurité renforcée contre les pénalités. Pour les e-commerces, nous optimisons les tunnels de conversion pour les moteurs de recherche avec un ciblage local (CMI, PayZone) and international."
+      },
+      "marrakech": {
+        "title": "Référencement Naturel Marrakech : Solutions Premium pour l'Hôtellerie & l'Artisanat",
+        "description": "À Marrakech, notre expertise en référencement naturel se traduit par des stratégies hybrides uniques. Pour les riads et hôtels : nous optimisons les systèmes de réservation (SynXis or API), les vidéos 360° pour le SEO local, et la synchronisation avec Booking/Expedia. Les artisans bénéficient d'optimisations WooCommerce ciblant les recherches locales. Particularité marrakchie : nos stratégies incluent systématiquement l'optimisation pour les cartes interactives des souks et la géolocalisation en temps réel."
+      },
+      "casablanca": {
+        "title": "Référencement Naturel Casablanca : Pôle d'Excellence E-Commerce",
+        "description": "Leader en référencement naturel e-commerce à Casablanca, nous optimisons des marketplaces WooCommerce. Nos solutions incluent : optimisation des fiches produits, architecture SEO pour les multi-entrepôts, et intégration avec les ERP marocains. Les sites bénéficient d'une infrastructure technique optimisée pour le SEO au Maroc with un temps de réponse < 0,5s."
+      },
+      "rabat": {
+        "title": "Référencement Naturel Rabat : Stratégies Institutionnelles",
+        "description": "Notre approche du référencement naturel institutionnel à Rabat combine sécurité SEO et accessibilité. Nous optimisons les portails gouvernementaux with : balisage sémantique avancé, architecture de contenu adaptée aux recherches citoyennes, et optimisation des pics de trafic. Particularité : réduction de 70% de la charge serveur grâce à notre cache intelligent."
+      },
+      "tanger": {
+        "title": "Référencement Naturel Tanger : Stratégies Multilingues pour l'Export",
+        "description": "Pour le référencement naturel export à Tanger, nous déployons des stratégies multilingues (FR/AR/EN/ES) with : l'optimisation des calculateurs de droits de douane, le balisage SEO pour les devises internationales, et le référencement géolocalisé vers l'Europe et l'Afrique. Technologie hybride : optimisation WordPress front-office et solutions techniques custom."
+      },
+      "agadir": {
+        "title": "Référencement Naturel Agadir : Stratégies Touristiques Performantes",
+        "description": "Notre référencement naturel touristique à Agadir mise sur l'optimisation visuelle : vidéos et images optimisées pour le SEO local, cartes interactives with balisage riche, intégration des API météo/marées en SEO. Particularité : stratégie de contenu générant +45% de trafic organique."
+      }
+    },
+    "labels": {
+      "protocol": "PROTOCOLE",
+      "protocolVal": "Elite SEO v3.0",
+      "objective": "OBJECTIF",
+      "objectiveVal": "Conversion Max"
+    }
+  },
+  "testimonials": {
+    "badge": "Avis Clients",
+    "title": "Les Témoignages de <clients>Nos Clients</clients>",
+    "subtitle": "Des Succès Inspirants",
+    "tags": {
+      "strategy": "Stratégie",
+      "ecommerce": "E-Commerce",
+      "ads": "Publicité",
+      "social": "Social Media",
+      "it": "IT Support"
+    },
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professionnels et réactifs, ils ont su comprendre nos besoins et mettre en place une stratégie digitale efficace. Notre présence en ligne est bien plus performante."
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "RESPONSABLE MARKETING",
+        "text": "Une agence sérieuse et compétente. Leur équipe a conçu un site e-commerce fluide et sécurisé pour notre boutique en ligne. Très satisfaite du travail !"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "DIRECTEUR COMMERCIAL",
+        "text": "Nous avons fait appel à eux pour gérer nos campagnes publicitaires en ligne. Leur approche ciblée a largement amélioré notre retour sur investissement."
+      },
+      {
+        "name": "Salma Bennani",
+        "role": "DESIGNER GRAPHIQUE",
+        "text": "Grâce à Group Digital Concept, nos réseaux sociaux sont plus dynamiques et professionnels. Ils savent créer du contenu engageant et adapté à notre audience."
+      },
+      {
+        "name": "Anas Rachidi",
+        "role": "RESPONSABLE IT",
+        "text": "Un service technique au top ! Ils ont optimisé nos systèmes informatiques et mis en place des solutions de sauvegarde fiables. Un vrai soulagement pour notre entreprise."
+      }
+    ]
+  },
+  "stats": {
+    "badge": "Nos Performances",
+    "title": "Les Chiffres qui <talk>Parlent</talk>",
+    "items": {
+      "sites": { "val": "200", "prefix": "+", "suffix": "", "label": "Sites Optimisés" },
+      "visible": { "val": "3", "prefix": "", "suffix": " Mois", "label": "Pour des résultats visibles" },
+      "position": { "val": "3", "prefix": "TOP ", "suffix": "", "label": "Positionnement moyen" },
+      "traffic": { "val": "60", "prefix": "+", "suffix": "%", "label": "Trafic Organique" },
+      "google": { "val": "100", "prefix": "", "suffix": "%", "label": "Conformité Google" }
+    }
+  },
+  "faq": {
+    "title": "Explorez les   questions   <faqs>fréquemment posées</faqs>",
+    "cta": "Besoin d'une analyse spécifique ?",
+    "items": [
+      { "question": "Qu'est-ce que le référencement naturel à Marrakech ?", "answer": "Le référencement naturel à Marrakech désigne l'optimisation technique et éditoriale d'un site web pour améliorer son positionnement dans les résultats Google, en ciblant spécifiquement les recherches locales sur Marrakech et sa région." },
+      { "question": "Combien de temps pour voir les résultats SEO à Marrakech ?", "answer": "Les premiers résultats du référencement naturel à Marrakech apparaissent généralement entre 3 et 6 mois. Cela dépend de la concurrence de vos mots-clés et de l'état technique de votre site au départ." },
+      { "question": "Quels sont les tarifs d'une agence SEO à Marrakech ?", "answer": "Les tarifs varient selon la complexité et les objectifs. Nous proposons des forfaits mensuels adaptés aux PME, hôtels et e-commerces locaux à Marrakech." },
+      { "question": "Comment optimiser un site pour le marché de Marrakech ?", "answer": "L'optimisation pour Marrakech implique un contenu bilingue (ou multilingue), une géolocalisation précise sur Google Maps et l'utilisation de mots-clés spécifiques à la ville." },
+      { "question": "Pourquoi choisir une agence locale à Marrakech ?", "answer": "Une agence à Marrakech connaît les spécificités du marché local, les comportements des consommateurs et les opportunités saisonnières liées au tourisme." },
+      { "question": "Quelles différences entre le SEO et Google Ads ?", "answer": "Le SEO est un investissement durable et organique (gratuit au clic), tandis que Google Ads offre une visibilité immédiate mais payante à chaque clic." }
+    ]
+  },
+  "form_section": {
+    "title": "Agence Web &   <digital>Communication Digitale</digital>   Innovante.",
+    "desc1": "Nous ne sommes pas juste une agence de marketing digital. Nous accompagnons les entreprises avec des solutions sur mesure pour booster leur présence en ligne et maximiser leur impact.",
+    "desc2": "Basés au Maroc, nous combinons expertise locale et tendances internationales pour offrir des stratégies performantes adaptées à chaque projet.",
+    "experts": "+15 Experts Dédiés",
+    "success": {
+      "title": "Demande Reçue !",
+      "description": "Nos experts reviennent vers vous sous 24h."
+    },
+    "services_list": [
+      "Création de Site Web",
+      "Site vitrine",
+      "Site e-commerce",
+      "Site sur mesure",
+      "Refonte de site",
+      "SEO (Référencement Naturel)",
+      "Audit SEO",
+      "Optimisation on-page",
+      "Netlinking & backlinks",
+      "Stratégie de contenu",
+      "SEA (Référencement Payant – Google Ads)",
+      "Publicité Google Ads",
+      "Campagnes PPC",
+      "Gestion et optimisation des annonces",
+      "SMO (Social Media Optimization)",
+      "Gestion des réseaux sociaux",
+      "Création de contenu social",
+      "Publicité sur Facebook, Instagram, LinkedIn",
+      "Identité Visuelle & Branding",
+      "Logo & charte graphique",
+      "Design UX/UI",
+      "Création de supports marketing",
+      "Développement de Logiciels & Applications",
+      "Logiciel de gestion commerciale",
+      "Développement d’applications web et mobiles",
+      "Solutions sur mesure",
+      "Solutions Spécialisées",
+      "Hotelio (Solution de gestion hôtelière)",
+      "Point de Vente (Systèmes de caisse et gestion des ventes)"
+    ],
+    "budget_options": [
+      "< 40 000 MAD",
+      "40 000 - 80 000 MAD",
+      "80 000 - 150 000 MAD",
+      "+ 150 000 MAD",
+      "À définir"
+    ],
+    "fields": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "services_label": "Services souhaités *",
+      "budget_label": "Budget estimé *",
+      "subject": "Sujet",
+      "details": "Donner nous plus de détails sur votre projet",
+      "footer": "Analyse gratuite et réponse sous 24h garantie."
+    },
+    "buttons": {
+      "prev": "Précédent",
+      "next": "Suivant",
+      "send": "Envoyer"
+    }
+  }
+}
