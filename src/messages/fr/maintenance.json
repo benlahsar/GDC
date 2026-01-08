@@ -1,0 +1,390 @@
+{
+  "MaintenancePage": {
+    "hero": {
+      "badge": "Sécurité, Performance et Mises à Jour",
+      "title": "Maintenance Site Web – {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600 relative'>Sécurisez et Optimisez</span> {br} Votre Site avec GDC",
+      "description": "Chez <strong class='text-black dark:text-white underline decoration-brand-red'>Group Digital Concept</strong>, nous sommes spécialisés dans la maintenance site web, une solution essentielle pour assurer la performance, la sécurité et la longévité de votre présence en ligne.",
+      "cta": "Sécuriser mon site"
+    },
+    "diagnostic": {
+      "header": {
+        "title": "DIAGNOSTIC HUB",
+        "subtitle": "SANTÉ DIGITALE EN DIRECT"
+      },
+      "step1": {
+        "title": "Quel type de site {br} <span class='text-brand-red'>gérez-vous ?</span>",
+        "options": {
+          "vitrine": {
+            "label": "Site Vitrine",
+            "desc": "Présentation & Portfolio"
+          },
+          "ecommerce": {
+            "label": "E-Commerce",
+            "desc": "Boutique & Ventes"
+          },
+          "app": {
+            "label": "Application Web",
+            "desc": "SaaS & Plateformes"
+          }
+        }
+      },
+      "step2": {
+        "title": "Votre besoin {br} <span class='text-brand-red'>prioritaire ?</span>",
+        "options": {
+          "sec": "Sécurité",
+          "perf": "Vitesse",
+          "update": "Mises à jour",
+          "audit": "Audit SEO"
+        }
+      },
+      "step3": {
+        "loading": {
+          "title": "GDC AI Analysis...",
+          "subtitle": "Computing Technical Protocol"
+        },
+        "success": {
+          "badge": "Diagnostic Terminé",
+          "title": "Rapport {br} <span class='text-brand-red'>Technique.</span>",
+          "cta": "OBTENIR UN DEVIS",
+          "restart": "Relancer l'audit"
+        }
+      },
+      "footer": "SYSTEM CORE V.4"
+    },
+    "pillars": {
+      "seo": "Référencement",
+      "perf": "Performance",
+      "sec": "Sécurité",
+      "update": "Mises à Jour",
+      "support": "Support 24/7"
+    },
+    "stats": {
+      "uptime": {
+        "label": "Disponibilité",
+        "sub": "Garantie"
+      },
+      "improvement": {
+        "label": "Amélioration",
+        "sub": "Performances"
+      },
+      "support": {
+        "label": "Support",
+        "sub": "Disponible"
+      }
+    },
+    "performance": {
+      "title": "Services de Maintenance Web à Marrakech pour une {br} <span class='text-brand-red'>Performance Optimale</span>",
+      "subtitle": "Assurez la stabilité et la sécurité de votre site web grâce à une maintenance professionnelle.",
+      "updates": {
+        "label": "Mises à jour",
+        "sub": "majeures effectuées"
+      },
+      "cta": "Contactez-Nous !",
+      "items": [
+        {
+          "num": "01",
+          "title": "Maintenance Technique",
+          "desc": "Protégez votre site et assurez son bon fonctionnement. Nous surveillons et corrigeons les vulnérabilités."
+        },
+        {
+          "num": "02",
+          "title": "Optimisation Performances",
+          "desc": "Améliorez la vitesse et l'expérience utilisateur pour accélérer le chargement."
+        },
+        {
+          "num": "03",
+          "title": "Support Technique",
+          "desc": "Un accompagnement réactif pour une tranquillité d'esprit avec une équipe spécialisée."
+        },
+        {
+          "num": "04",
+          "title": "Sauvegardes",
+          "desc": "Gardez votre site à jour et sécurisé contre les pertes de données avec des backups réguliers."
+        }
+      ]
+    },
+    "atouts": {
+      "title": "Les Atouts de <span class='text-brand-red'>Group Digital Concept</span> en {br} Maintenance Web à Marrakech",
+      "items": [
+        {
+          "title": "Réactivité Immédiate",
+          "desc": "Support prioritaire with un temps de réponse garanti de moins de 2h pour les urgences techniques.",
+          "stat": "2h",
+          "label": "Réponse"
+        },
+        {
+          "title": "Sécurité Sans Faille",
+          "desc": "Protection WAF, scans anti-malware quotidiens et certificats SSL de haute sécurité.",
+          "stat": "100%",
+          "label": "Safe"
+        },
+        {
+          "title": "Vitesse Optimisée",
+          "desc": "Surveillance constante des Core Web Vitals pour maintenir un score PageSpeed exceptionnel.",
+          "stat": "0.8s",
+          "label": "Vitesse"
+        },
+        {
+          "title": "Hébergement Cloud",
+          "desc": "Infrastructure scalable et géo-redondante assurant une continuité de service totale.",
+          "stat": "99.9%",
+          "label": "Uptime"
+        },
+        {
+          "title": "Audit et Reporting",
+          "desc": "Rapport mensuel détaillé sur l'état technique, les performances et le trafic de votre site.",
+          "stat": "Mensuel",
+          "label": "Audit"
+        },
+        {
+          "title": "Mises à jour Proactives",
+          "desc": "Application automatique des correctifs de sécurité et des nouvelles versions CMS (WordPress).",
+          "stat": "24/7",
+          "label": "Update"
+        }
+      ]
+    },
+    "professional": {
+      "title": "Vous Voulez une Maintenance {br} <span class='text-brand-red'>Web Professionnelle</span>",
+      "intro": "Chez <strong class='text-black dark:text-white'>Group Digital Concept</strong>, nous savons que la maintenance web est essentielle pour garantir la sécurité et la performance.",
+      "solutions": [
+        {
+          "title": "Analyse & Optimisation",
+          "intro": "Nous effectuons un audit complet de votre site pour une maintenance web efficace à Marrakech :",
+          "points": [
+            "Analyse de votre site : Détection des failles, erreurs et améliorations nécessaires.",
+            "Optimisation des performances : Amélioration de la vitesse de chargement et de la fluidité.",
+            "Mises à jour techniques : Plugins, thèmes et logiciels toujours à jour pour éviter les failles.",
+            "Corrections de bugs : Identification et résolution des problèmes techniques en temps record."
+          ]
+        },
+        {
+          "title": "Sécurisation & Protection",
+          "intro": "Nous plaçons la sécurité au cœur de nos services de maintenance web Marrakech :",
+          "points": [
+            "Protection avancée contre les cyberattaques : Sécurisation contre les virus, malware et DDoS.",
+            "Certificats SSL inclus : Chiffrement des données pour une navigation sécurisée.",
+            "Sauvegardes automatiques : Récupération rapide des données en cas de problème.",
+            "Surveillance 24/7 : Intervention immédiate en cas d'attaque ou de panne."
+          ]
+        },
+        {
+          "title": "Gestion & Hébergement",
+          "intro": "Avec notre service de maintenance web à Marrakech, bénéficiez d'une solution fiable et évolutive :",
+          "points": [
+            "Stockage sécurisé : Espace cloud optimisé selon vos besoins.",
+            "Haute disponibilité : Serveurs performants pour un accès ininterrompu.",
+            "Réduction des temps de chargement : Amélioration du référencement et de l'expérience utilisateur.",
+            "Hébergement performant : Solutions adaptées aux sites vitrines, e-commerce et plateformes."
+          ]
+        },
+        {
+          "title": "Performance & Scalabilité",
+          "intro": "Votre site doit être rapide et évolutif, c'est why notre maintenance web Marrakech inclut :",
+          "points": [
+            "Optimisation de la vitesse : Réduction du temps de chargement pour une meilleure expérience.",
+            "Infrastructure évolutive : Adaptation de votre site aux nouvelles technologies.",
+            "Protection avancée : Systèmes de sécurité renforcés contre les cyberattaques.",
+            "Compatibilité multi-plateformes : Support des CMS les plus utilisés (WordPress, Shopify, etc.)."
+          ]
+        }
+      ]
+    },
+    "mockup": {
+      "title": "Maintenance Web à Marrakech : {br} <span class='text-brand-red'>Assurez la Performance et la Sécurité</span>",
+      "subtitle": "Pourquoi Choisir Notre Service ?",
+      "list": [
+        {
+          "title": "Surveillance et Sécurité",
+          "desc": "Protection contre les cyberattaques et les failles de sécurité."
+        },
+        {
+          "title": "Mises à Jour Régulières",
+          "desc": "Installation des dernières versions des CMS, plugins et thèmes."
+        },
+        {
+          "title": "Optimisation Performances",
+          "desc": "Accélération du temps de chargement et UX améliorée."
+        }
+      ]
+    }
+  },
+  "MaintenanceMethodology": {
+    "title": "Notre {br} Méthodologie de {br} Travail",
+    "steps": [
+      {
+        "title": "Consultation Initiale",
+        "description": "Nous commençons chaque collaboration par une consultation approfondie. Nous discutons de vos besoins, de vos objectifs et de vos défis."
+      },
+      {
+        "title": "Audit et Analyse",
+        "description": "Nos experts analysent techniquement votre site actuel pour identifier les failles de sécurité et les lenteurs."
+      },
+      {
+        "title": "Élaboration du Plan d'Action",
+        "description": "Nous définissons un calendrier de maintenance et de mises à jour préventives."
+      },
+      {
+        "title": "Exécution et Suivi",
+        "description": "Mise en œuvre des correctifs, surveillance 24/7 et rapports mensuels de performance."
+      }
+    ]
+  },
+  "MaintenanceTestimonials": {
+    "title": "Les Témoignages de Nos Clients : {br} <span class='text-gray-500 dark:text-gray-400 opacity-60'>Des Succès Inspirants avec Notre Agence Web</span>",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professionnels et réactifs, ils ont su comprendre nos besoins et mettre en place une stratégie digitale efficace. Notre présence en ligne est bien plus performante."
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "RESPONSABLE MARKETING",
+        "text": "Une agence sérieuse et compétente. Leur équipe a conçu un site e-commerce fluide et sécurisé pour notre boutique en ligne. Très satisfaite du travail !"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "DIRECTEUR COMMERCIAL",
+        "text": "Nous avons fait appel à eux pour gérer nos campagnes publicitaires en ligne. Leur approche ciblée a largement amélioré notre retour sur investissement."
+      },
+      {
+        "name": "Salma Bennani",
+        "role": "DESIGNER GRAPHIQUE",
+        "text": "Grâce à Group Digital Concept, nos réseaux sociaux sont plus dynamiques et professionnels. Ils savent créer du contenu engageant."
+      },
+      {
+        "name": "Anas Rachidi",
+        "role": "RESPONSABLE IT",
+        "text": "Un service technique au top ! Ils ont optimisé nos systèmes informatiques et mis en place des solutions de sauvegarde fiables."
+      }
+    ]
+  },
+  "MaintenanceFAQ": {
+    "title": "Explorez les questions {br} fréquemment posées",
+    "badge": "Expertise Support GDC",
+    "items": [
+      {
+        "question": "Qu'est-ce que la maintenance web et pourquoi est-elle importante ?",
+        "answer": "La maintenance web garantit la sécurité, la performance et la mise à jour continue d'un site internet. Elle permet d'éviter les bugs, les failles de sécurité et les lenteurs."
+      },
+      {
+        "question": "Pourquoi choisir un service de maintenance web à Marrakech ?",
+        "answer": "Notre agence locale comprend les défis spécifiques du marché marocain et offre un support de proximité réactif."
+      },
+      {
+        "question": "Quels sont les types de maintenance web disponibles ?",
+        "answer": "Nous proposons la maintenance préventive, corrective et évolutive."
+      },
+      {
+        "question": "À quelle fréquence faut-il effectuer la maintenance web ?",
+        "answer": "Une maintenance de base doit être effectuée mensuellement, mais une surveillance de sécurité doit être active 24h/24."
+      },
+      {
+        "question": "Quels sont les risques d'un site sans maintenance ?",
+        "answer": "Piratage, perte de données, ralentissement du site, et baisse drastique dans les résultats Google."
+      },
+      {
+        "question": "La maintenance web inclut-elle la sauvegarde des données ?",
+        "answer": "Oui, nous effectuons des sauvegardes quotidiennes externalisées."
+      },
+      {
+        "question": "Combien coûte un service de maintenance web à Marrakech ?",
+        "answer": "Nos forfaits sont adaptés à la taille et à la complexité de votre site. Contactez-nous pour un devis."
+      },
+      {
+        "question": "Puis-je gérer moi-même la maintenance de mon site web ?",
+        "answer": "C'est possible techniquement mais risqué sans expertise approfondie."
+      },
+      {
+        "question": "Comment savoir si mon site a besoin de maintenance ?",
+        "answer": "Si votre site est lent, s'il contient des liens cassés ou si vous recevez des alertes de sécurité."
+      },
+      {
+        "question": "Quels types de sites nécessitent une maintenance web ?",
+        "answer": "Absolument tous : sites vitrines, e-commerce, blogs et plateformes applicatives."
+      }
+    ]
+  },
+  "MaintenanceFormSection": {
+    "title": "Agence Web & {br} Communication Digitale {br} Innovante",
+    "intro": {
+      "p1": "Nous ne sommes pas juste une agence de marketing digital. Nous accompagnons les entreprises avec des solutions sur mesure pour booster leur présence en ligne et maximiser leur impact.",
+      "p2": "Basés au Maroc, nous combinons expertise locale et tendances internationales pour offrir des stratégies performantes adaptées à chaque projet."
+    },
+    "experts_count": "+200 Projets Livrés",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Informations"
+      },
+      {
+        "id": 2,
+        "label": "Service"
+      },
+      {
+        "id": 3,
+        "label": "Détails"
+      }
+    ],
+    "fields": {
+      "name": "Nom",
+      "email": "Email",
+      "company": "Entreprise",
+      "employees": "Nombre d'employés",
+      "phone": "Téléphone",
+      "detailsLabel": "Description du projet",
+      "detailsPlaceholder": "Racontez-nous vos objectifs, délais..."
+    },
+    "services": [
+      {
+        "id": "web",
+        "label": "Maintenance Web"
+      },
+      {
+        "id": "seo",
+        "label": "SEO Audit"
+      },
+      {
+        "id": "security",
+        "label": "Sécurité"
+      },
+      {
+        "id": "hosting",
+        "label": "Hébergement"
+      },
+      {
+        "id": "app",
+        "label": "Optimisation App"
+      },
+      {
+        "id": "dev",
+        "label": "Sur Mesure"
+      }
+    ],
+    "success": {
+      "title": "Demande Envoyée !",
+      "desc": "Nous vous recontactons sous 24 heures.",
+      "cta": "Nouveau Projet"
+    },
+    "actions": {
+      "back": "Retour",
+      "next": "Suivant",
+      "confirm": "Confirmer"
+    }
+  },
+  "MaintenanceFinalCTA": {
+    "badge": "GDC Prestige Elite",
+    "title": "Votre site mérite {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-red-700'>l'Elite Digitale.</span>",
+    "desc": "Ne laissez pas la technique freiner vos ambitions. Confiez votre écosystème à nos experts pour une performance et une sécurité de classe mondiale.",
+    "cta": "DISCUTER D'UN PROJET",
+    "features": {
+      "sec_title": "Sécurité",
+      "sec_desc": "100% Infaillible",
+      "perf_title": "Performance",
+      "perf_desc": "Optimisation PageSpeed",
+      "sup_title": "Support",
+      "sup_desc": "Conseiller Dédié"
+    }
+  }
+}

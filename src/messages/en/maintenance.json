@@ -1,0 +1,390 @@
+{
+  "MaintenancePage": {
+    "hero": {
+      "badge": "Security, Performance & Updates",
+      "title": "Website Maintenance – {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600 relative'>Secure and Optimize</span> {br} Your Site with GDC",
+      "description": "At <strong class='text-black dark:text-white underline decoration-brand-red'>Group Digital Concept</strong>, we specialize in web maintenance, an essential solution to ensure the performance, security, and longevity of your online presence.",
+      "cta": "Secure my site"
+    },
+    "diagnostic": {
+      "header": {
+        "title": "DIAGNOSTIC HUB",
+        "subtitle": "LIVE DIGITAL HEALTH"
+      },
+      "step1": {
+        "title": "What type of site {br} <span class='text-brand-red'>do you manage?</span>",
+        "options": {
+          "vitrine": {
+            "label": "Showcase Site",
+            "desc": "Presentation & Portfolio"
+          },
+          "ecommerce": {
+            "label": "E-Commerce",
+            "desc": "Shop & Sales"
+          },
+          "app": {
+            "label": "Web Application",
+            "desc": "SaaS & Platforms"
+          }
+        }
+      },
+      "step2": {
+        "title": "Your priority {br} <span class='text-brand-red'>need?</span>",
+        "options": {
+          "sec": "Security",
+          "perf": "Speed",
+          "update": "Updates",
+          "audit": "SEO Audit"
+        }
+      },
+      "step3": {
+        "loading": {
+          "title": "GDC AI Analysis...",
+          "subtitle": "Computing Technical Protocol"
+        },
+        "success": {
+          "badge": "Diagnostic Complete",
+          "title": "Technical {br} <span class='text-brand-red'>Report.</span>",
+          "cta": "GET A QUOTE",
+          "restart": "Restart audit"
+        }
+      },
+      "footer": "SYSTEM CORE V.4"
+    },
+    "pillars": {
+      "seo": "SEO",
+      "perf": "Performance",
+      "sec": "Security",
+      "update": "Updates",
+      "support": "24/7 Support"
+    },
+    "stats": {
+      "uptime": {
+        "label": "Uptime",
+        "sub": "Guaranteed"
+      },
+      "improvement": {
+        "label": "Improvement",
+        "sub": "Performance"
+      },
+      "support": {
+        "label": "Support",
+        "sub": "Available"
+      }
+    },
+    "performance": {
+      "title": "Web Maintenance Services in Marrakech for {br} <span class='text-brand-red'>Optimal Performance</span>",
+      "subtitle": "Ensure the stability and security of your website with professional maintenance.",
+      "updates": {
+        "label": "Updates",
+        "sub": "major performed"
+      },
+      "cta": "Contact Us!",
+      "items": [
+        {
+          "num": "01",
+          "title": "Technical Maintenance",
+          "desc": "Protect your site and ensure its smooth operation. We monitor and fix vulnerabilities."
+        },
+        {
+          "num": "02",
+          "title": "Performance Optimization",
+          "desc": "Improve speed and user experience to speed up loading."
+        },
+        {
+          "num": "03",
+          "title": "Technical Support",
+          "desc": "Responsive support for peace of mind with a specialized team."
+        },
+        {
+          "num": "04",
+          "title": "Backups",
+          "desc": "Keep your site up to date and secure against data loss with regular backups."
+        }
+      ]
+    },
+    "atouts": {
+      "title": "The Assets of <span class='text-brand-red'>Group Digital Concept</span> in {br} Web Maintenance in Marrakech",
+      "items": [
+        {
+          "title": "Immediate Reactivity",
+          "desc": "Priority support with a guaranteed response time of less than 2h for technical emergencies.",
+          "stat": "2h",
+          "label": "Response"
+        },
+        {
+          "title": "Flawless Security",
+          "desc": "WAF protection, daily anti-malware scans and high-security SSL certificates.",
+          "stat": "100%",
+          "label": "Safe"
+        },
+        {
+          "title": "Optimized Speed",
+          "desc": "Constant monitoring of Core Web Vitals to maintain an exceptional PageSpeed score.",
+          "stat": "0.8s",
+          "label": "Speed"
+        },
+        {
+          "title": "Cloud Hosting",
+          "desc": "Scalable and geo-redundant infrastructure ensuring total service continuity.",
+          "stat": "99.9%",
+          "label": "Uptime"
+        },
+        {
+          "title": "Audit and Reporting",
+          "desc": "Detailed monthly report on the technical status, performance and traffic of your site.",
+          "stat": "Monthly",
+          "label": "Audit"
+        },
+        {
+          "title": "Proactive Updates",
+          "desc": "Automatic application of security patches and new CMS versions (WordPress).",
+          "stat": "24/7",
+          "label": "Update"
+        }
+      ]
+    },
+    "professional": {
+      "title": "You Want a {br} <span class='text-brand-red'>Professional Web</span> Maintenance",
+      "intro": "At <strong class='text-black dark:text-white'>Group Digital Concept</strong>, we know that web maintenance is essential to ensure security and performance.",
+      "solutions": [
+        {
+          "title": "Analysis & Optimization",
+          "intro": "We perform a complete audit of your site for effective web maintenance in Marrakech:",
+          "points": [
+            "Analysis of your site: Detection of flaws, errors and necessary improvements.",
+            "Performance optimization: Improvement of loading speed and fluidity.",
+            "Technical updates: Plugins, themes and software always up to date to avoid flaws.",
+            "Bug fixes: Identification and resolution of technical problems in record time."
+          ]
+        },
+        {
+          "title": "Securing & Protection",
+          "intro": "We place security at the heart of our Marrakech web maintenance services:",
+          "points": [
+            "Advanced protection against cyberattacks: Securing against viruses, malware and DDoS.",
+            "SSL certificates included: Data encryption for secure navigation.",
+            "Automatic backups: Rapid data recovery in case of problems.",
+            "24/7 Monitoring: Immediate intervention in case of attack or failure."
+          ]
+        },
+        {
+          "title": "Management & Hosting",
+          "intro": "With our web maintenance service in Marrakech, benefit from a reliable and scalable solution:",
+          "points": [
+            "Secure storage: Cloud space optimized according to your needs.",
+            "High availability: High-performance servers for uninterrupted access.",
+            "Reduction of loading times: Improvement of SEO and user experience.",
+            "Performance hosting: Solutions adapted to showcase sites, e-commerce and platforms."
+          ]
+        },
+        {
+          "title": "Performance & Scalability",
+          "intro": "Your site must be fast and scalable, that's why our Marrakech web maintenance includes:",
+          "points": [
+            "Speed optimization: Reduction of loading time for a better experience.",
+            "Scalable infrastructure: Adaptation of your site to new technologies.",
+            "Advanced protection: Reinforced security systems against cyberattacks.",
+            "Multi-platform compatibility: Support for the most used CMS (WordPress, Shopify, etc.)."
+          ]
+        }
+      ]
+    },
+    "mockup": {
+      "title": "Web Maintenance in Marrakech: {br} <span class='text-brand-red'>Ensure Performance and Security</span>",
+      "subtitle": "Why Choose Our Service?",
+      "list": [
+        {
+          "title": "Monitoring and Security",
+          "desc": "Protection against cyberattacks and security flaws."
+        },
+        {
+          "title": "Regular Updates",
+          "desc": "Installation of the latest versions of CMS, plugins and themes."
+        },
+        {
+          "title": "Performance Optimization",
+          "desc": "Acceleration of loading time and improved UX."
+        }
+      ]
+    }
+  },
+  "MaintenanceMethodology": {
+    "title": "Our {br} Working {br} Methodology",
+    "steps": [
+      {
+        "title": "Initial Consultation",
+        "description": "We start each collaboration with an in-depth consultation. We discuss your needs, goals, and challenges."
+      },
+      {
+        "title": "Audit and Analysis",
+        "description": "Our experts technically analyze your current site to identify security flaws and slowness."
+      },
+      {
+        "title": "Action Plan Development",
+        "description": "We define a schedule for maintenance and preventive updates."
+      },
+      {
+        "title": "Execution and Follow-up",
+        "description": "Implementation of fixes, 24/7 monitoring and monthly performance reports."
+      }
+    ]
+  },
+  "MaintenanceTestimonials": {
+    "title": "Our Client Testimonials: {br} <span class='text-gray-500 dark:text-gray-400 opacity-60'>Inspiring Success Stories with Our Web Agency</span>",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professional and reactive, they understood our needs and implemented an effective digital strategy. Our online presence is much more efficient."
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "MARKETING MANAGER",
+        "text": "A serious and competent agency. Their team designed a fluid and secure e-commerce site for our online store. Very satisfied with the work!"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "COMMERCIAL DIRECTOR",
+        "text": "We called on them to manage our online advertising campaigns. Their targeted approach has largely improved our return on investment."
+      },
+      {
+        "name": "Salma Bennani",
+        "role": "GRAPHIC DESIGNER",
+        "text": "Thanks to Group Digital Concept, our social networks are more dynamic and professional. They know how to create engaging content."
+      },
+      {
+        "name": "Anas Rachidi",
+        "role": "IT MANAGER",
+        "text": "Top technical service! They optimized our IT systems and implemented reliable backup solutions."
+      }
+    ]
+  },
+  "MaintenanceFAQ": {
+    "title": "Explore the {br} frequently asked questions",
+    "badge": "GDC Expert Support",
+    "items": [
+      {
+        "question": "What is web maintenance and why is it important?",
+        "answer": "Web maintenance ensures the security, performance and continuous update of a website. It helps avoid bugs, security flaws and slowness."
+      },
+      {
+        "question": "Why choose a web maintenance service in Marrakech?",
+        "answer": "Our local agency understands the specific challenges of the Moroccan market and offers reactive local support."
+      },
+      {
+        "question": "What types of web maintenance are available?",
+        "answer": "We offer preventive, corrective and evolutionary maintenance."
+      },
+      {
+        "question": "How often should web maintenance be performed?",
+        "answer": "Basic maintenance should be performed monthly, but security monitoring must be active 24/7."
+      },
+      {
+        "question": "What are the risks of a site without maintenance?",
+        "answer": "Hacking, data loss, site slowdown, and drastic drop in Google results."
+      },
+      {
+        "question": "Does web maintenance include data backup?",
+        "answer": "Yes, we perform daily outsourced backups."
+      },
+      {
+        "question": "How much does a web maintenance service cost in Marrakech?",
+        "answer": "Our packages are adapted to the size and complexity of your site. Contact us for a quote."
+      },
+      {
+        "question": "Can I manage my website maintenance myself?",
+        "answer": "It is technically possible but risky without in-depth expertise."
+      },
+      {
+        "question": "How do I know if my site needs maintenance?",
+        "answer": "If your site is slow, contains broken links or if you receive security alerts."
+      },
+      {
+        "question": "What types of sites require web maintenance?",
+        "answer": "Absolutely all: showcase sites, e-commerce, blogs and application platforms."
+      }
+    ]
+  },
+  "MaintenanceFormSection": {
+    "title": "Web Agency & {br} Innovative Digital {br} Communication",
+    "intro": {
+      "p1": "We are not just a digital marketing agency. We support companies with tailor-made solutions to boost their online presence and maximize their impact.",
+      "p2": "Based in Morocco, we combine local expertise and international trends to offer high-performance strategies adapted to each project."
+    },
+    "experts_count": "+200 Delivered Projects",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Information"
+      },
+      {
+        "id": 2,
+        "label": "Service"
+      },
+      {
+        "id": 3,
+        "label": "Details"
+      }
+    ],
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "employees": "Number of employees",
+      "phone": "Phone",
+      "detailsLabel": "Project Description",
+      "detailsPlaceholder": "Tell us about your goals, deadlines..."
+    },
+    "services": [
+      {
+        "id": "web",
+        "label": "Web Maintenance"
+      },
+      {
+        "id": "seo",
+        "label": "SEO Audit"
+      },
+      {
+        "id": "security",
+        "label": "Security"
+      },
+      {
+        "id": "hosting",
+        "label": "Hosting"
+      },
+      {
+        "id": "app",
+        "label": "App Optimization"
+      },
+      {
+        "id": "dev",
+        "label": "Custom Made"
+      }
+    ],
+    "success": {
+      "title": "Request Sent!",
+      "desc": "We will contact you within 24 hours.",
+      "cta": "New Project"
+    },
+    "actions": {
+      "back": "Back",
+      "next": "Next",
+      "confirm": "Confirm"
+    }
+  },
+  "MaintenanceFinalCTA": {
+    "badge": "GDC Prestige Elite",
+    "title": "Your site deserves {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-red-700'>the Digital Elite.</span>",
+    "desc": "Don't let technology hold back your ambitions. Entrust your ecosystem to our experts for world-class performance and security.",
+    "cta": "DISCUSS A PROJECT",
+    "features": {
+      "sec_title": "Security",
+      "sec_desc": "100% Foolproof",
+      "perf_title": "Performance",
+      "perf_desc": "PageSpeed Optimization",
+      "sup_title": "Support",
+      "sup_desc": "Dedicated Advisor"
+    }
+  }
+}

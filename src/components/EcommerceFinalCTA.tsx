@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Lightbulb, ArrowRight, Sparkles, Zap } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const EcommerceFinalCTA: React.FC = () => {
+  const t = useTranslations("EcommerceFinalCTA");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -19,18 +21,14 @@ export const EcommerceFinalCTA: React.FC = () => {
       <div className="relative w-full max-w-[1200px] h-[700px] md:h-[800px] flex justify-center items-end">
         {/* --- THE FUNNEL (BEAM) --- */}
         <div
-          className={`absolute top-0 w-full md:w-[80%] h-[85%] z-10 pointer-events-none ${
-            isMobile ? "opacity-40" : ""
-          }`}
+          className={`absolute top-0 w-full md:w-[80%] h-[85%] z-10 pointer-events-none ${isMobile ? "opacity-40" : ""}`}
           style={{
             clipPath: "polygon(0% 0%, 100% 0%, 55% 95%, 45% 95%)",
           }}
         >
           {/* Animated Gradient Flow - Only active on Desktop */}
           <div
-            className={`absolute inset-0 bg-gradient-to-b from-[#ec4899] via-[#a855f7] to-[#6366f1] opacity-90 ${
-              !isMobile ? "animate-pulse-slow" : ""
-            }`}
+            className={`absolute inset-0 bg-gradient-to-b from-[#ec4899] via-[#a855f7] to-[#6366f1] opacity-90 ${!isMobile ? "animate-pulse-slow" : ""}`}
           ></div>
           {!isMobile && (
             <div
@@ -58,11 +56,7 @@ export const EcommerceFinalCTA: React.FC = () => {
         {/* --- CENTRAL CONTENT --- */}
         <div className="absolute top-[10%] md:top-[15%] z-20 flex flex-col items-center text-center px-4 w-full">
           {/* Lightbulb Icon */}
-          <div
-            className={`mb-6 relative group cursor-pointer ${
-              !isMobile ? "animate-float" : ""
-            }`}
-          >
+          <div className={`mb-6 relative group cursor-pointer ${!isMobile ? "animate-float" : ""}`}>
             <div className="absolute inset-0 bg-yellow-400 blur-[50px] opacity-40 rounded-full"></div>
             <div className="relative w-20 h-20 bg-white/10 backdrop-blur-md rounded-full border border-white/30 flex items-center justify-center shadow-[0_0_30px_rgba(253,224,71,0.6)]">
               <Lightbulb
@@ -79,29 +73,23 @@ export const EcommerceFinalCTA: React.FC = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 drop-shadow-xl tracking-tighter leading-[0.9]">
-            Parlons de <br />
-            votre projet.
-          </h2>
+          <h2
+            className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 drop-shadow-xl tracking-tighter leading-[0.9]"
+            dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>") }}
+          />
 
           {/* CTA Button */}
           <a
             href="#contact"
             className="group relative px-8 py-4 md:px-10 md:py-5 bg-[#1e1b4b] hover:bg-[#312e81] text-white rounded-full font-black uppercase tracking-widest text-xs md:text-sm shadow-[0_0_40px_rgba(79,70,229,0.6)] hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 overflow-hidden"
           >
-            <span className="relative z-10">Discutons d'un projet</span>
+            <span className="relative z-10">{t("cta")}</span>
             <div
-              className={`w-6 h-6 rounded-full bg-white/20 flex items-center justify-center relative z-10 ${
-                !isMobile
-                  ? "group-hover:bg-white group-hover:text-[#1e1b4b] transition-colors"
-                  : ""
-              }`}
+              className={`w-6 h-6 rounded-full bg-white/20 flex items-center justify-center relative z-10 ${!isMobile ? "group-hover:bg-white group-hover:text-[#1e1b4b] transition-colors" : ""}`}
             >
               <ArrowRight
                 size={14}
-                className={
-                  !isMobile ? "group-hover:-rotate-45 transition-transform" : ""
-                }
+                className={!isMobile ? "group-hover:-rotate-45 transition-transform" : ""}
               />
             </div>
           </a>

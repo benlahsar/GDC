@@ -1,0 +1,435 @@
+{
+  "DomainNamePage": {
+    "badge": "Sistema de Registro en Vivo",
+    "title": "Verificación {br} Real de {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Nombres de Dominio.</span>",
+    "search": {
+      "placeholder": "Busque su dominio...",
+      "button": "VERIFICAR",
+      "available": "Disponible de inmediato",
+      "registered": "Ya registrado",
+      "reserve": "RESERVAR"
+    },
+    "info": {
+      "sync": "Base de datos ICANN y ANRT Sincronizada",
+      "desc": "Obtenga un estado real sobre la disponibilidad de su identidad web en menos de 2 segundos.",
+      "cta": "Asesoramiento de Expertos"
+    },
+    "visual": {
+      "title": "Primero en llegar, {br} <span class='text-brand-red italic'>Primero en ser atendido.</span>",
+      "version": "GDC Live Hub v.4"
+    },
+    "cards": {
+      "process": {
+        "title": "Proceso Completo",
+        "desc": "Nuestro proceso incluye un <strong class='text-black dark:text-white'>análisis profundo de su sector</strong>, investigación estratégica de disponibilidad para evitar conflictos y asesoramiento personalizado."
+      },
+      "benefits": {
+        "title": "Seguridad y Experiencia",
+        "desc": "Al elegir nuestro servicio, se beneficia de una asociación con un equipo reconocido por su <strong class='text-black dark:text-white'>capacidad de respuesta</strong> y experiencia."
+      }
+    },
+    "stats": {
+      "acquisition": "Tiempo de Adquisición",
+      "satisfaction": "Satisfacción del Cliente",
+      "support": "Soporte Técnico"
+    },
+    "icons": {
+      "team": "Equipo",
+      "local": "Local",
+      "security": "Seguridad",
+      "followup": "Seguimiento",
+      "award": "360°"
+    },
+    "modal": {
+      "badge": "Seguridad Prioritaria",
+      "title": "RESERVAR {br} <span class='text-brand-red italic'>{domain}</span>",
+      "success": {
+        "title": "Solicitud Enviada",
+        "desc": "Hemos recibido su solicitud de reserva para <strong class='text-black dark:text-white underline decoration-emerald-500 decoration-2'>{domain}</strong>.",
+        "footer": "Un experto de GDC se pondrá en contacto con usted en breve."
+      },
+      "fields": {
+        "nameLabel": "Nombre Completo",
+        "namePlaceholder": "Su nombre",
+        "emailLabel": "Email",
+        "emailPlaceholder": "su@email.com",
+        "phoneLabel": "Teléfono",
+        "phonePlaceholder": "+212...",
+        "button": "CONFIRMAR RESERVA",
+        "footer": "Al validar este formulario, inicia un procedimiento de adquisición {br} asistido por el polo técnico de GDC."
+      }
+    }
+  },
+  "DomainWhyChooseSection": {
+    "badge": "Nuestra Experiencia",
+    "title": "¿Por qué elegirnos {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>a nosotros?</span>",
+    "intro": {
+      "title": "Elección Estratégica",
+      "desc": "En <strong class='text-black dark:text-white'>Group Digital Concept</strong>, no nos limitamos a vender nombres de dominio. Le acompañamos en la elección estratégica de una identidad digital fuerte y duradera. Un nombre de dominio es mucho más que una simple dirección web: es un elemento clave de su visibilidad, credibilidad y posicionamiento en línea. Por eso ponemos a su disposición nuestra experiencia para garantizar una compra de nombres de dominio en Marrakech segura, optimizada y adaptada a sus objetivos profesionales."
+    },
+    "vision": {
+      "title": "Visión",
+      "desc": "Convertirnos en el socio de referencia para la compra de nombres de dominio en Marrakech. Creemos que cada proyecto merece un nombre estratégico para un éxito duradero."
+    },
+    "features": [
+      {
+        "title": "Amplia selección de extensiones",
+        "desc": "Le ofrecemos una gama completa de extensiones, desde .ma hasta .com pasando por .net y muchas otras, para permitirle elegir la opción más relevante para su actividad y su objetivo durante su compra de nombres de dominio en Marrakech."
+      },
+      {
+        "title": "Seguridad y protección",
+        "desc": "Aseguramos un registro seguro de su nombre de dominio con soluciones de protección contra robo, ciberocupación y divulgación de su información personal gracias a la opción WHOIS privada."
+      },
+      {
+        "title": "Alojamiento y servicios",
+        "desc": "Además, ofrecemos soluciones de alojamiento web de alto rendimiento, certificados SSL para asegurar su sitio, así como herramientas avanzadas de gestión de DNS para optimizar la fiabilidad."
+      },
+      {
+        "title": "Transferencia y renovación simplificadas",
+        "desc": "Facilitamos la transferencia y renovación de sus nombres de dominio garantizando una gestión fluida y sin interrupción del servicio. Le acompañamos en cada paso para asegurar la longevidad de su identidad digital."
+      },
+      {
+        "title": "Soporte técnico y acompañamiento",
+        "desc": "Nuestro equipo está disponible para asesorarle, ayudarle en la configuración de su dominio y proporcionarle un acompañamiento personalizado. Una estrategia pensada para maximizar su impacto en línea."
+      }
+    ],
+    "mission": {
+      "title": "Misión",
+      "desc": "Simplificar y asegurar la compra de nombres de dominio en Marrakech. Ayudamos a nuestros clientes a elegir, proteger y explotar su nombre de dominio para fortalecer su credibilidad. Desde la reserva hasta la gestión, garantizamos un servicio fluido.",
+      "tags": [
+        "Simplificar",
+        "Asegurar",
+        "Optimizar"
+      ]
+    },
+    "engagement": {
+      "title": "Nuestro Compromiso",
+      "desc": "Adoptamos un enfoque transparente y centrado en el rendimiento. Cada compra de nombres de dominio está optimizada para ser una verdadera palanca de crecimiento, garantizando fiabilidad, seguridad y visibilidad óptima.",
+      "cta": "Empezar Ahora"
+    }
+  },
+  "DomainAtouts": {
+    "badge": "Nuestros Puntos Fuertes",
+    "title": "Las Ventajas de <span class='text-brand-red'>Group Digital Concept</span> {br} en la compra de nombres de dominio en Marrakech",
+    "items": [
+      "Equipo Experimentado",
+      "Proyectos Llave en Mano",
+      "Aplicaciones Escalables",
+      "Precios Competitivos",
+      "Tecnologías Modernas",
+      "Cumplimiento y RGPD",
+      "Satisfacción del Cliente",
+      "Seguimiento Personalizado"
+    ],
+    "footer": {
+      "text": "Un enfoque global que garantiza la seguridad, el rendimiento y la durabilidad de su identidad digital.",
+      "tags": [
+        "Experiencia",
+        "Calidad",
+        "Resultado"
+      ]
+    }
+  },
+  "DomainDetailedStrategies": {
+    "badge": "Enfoque Global",
+    "title": "¿Quiere Un <span class='text-brand-red'>Nombre de Dominio</span> Estratégico?",
+    "strategies": [
+      {
+        "id": "strategy",
+        "title": "Análisis y Estrategia",
+        "subtitle": "Inteligencia de Mercado",
+        "desc": "Analizamos su mercado, su competencia y su imagen de marca para ayudarle a elegir el nombre de dominio más relevante para su actividad.",
+        "points": [
+          {
+            "label": "Estudio de mercado",
+            "text": "Selección de las mejores extensiones (.ma, .com, .net...)."
+          },
+          {
+            "label": "Auditoría de disponibilidad",
+            "text": "Verificación y reserva rápida para evitar la pérdida."
+          },
+          {
+            "label": "Estrategia de marca",
+            "text": "Un nombre de dominio impactante y memorable."
+          },
+          {
+            "label": "Protección de la marca",
+            "text": "Seguridad contra la ciberocupación."
+          },
+          {
+            "label": "Planificación SEO",
+            "text": "Optimización para un buen posicionamiento natural."
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Seguridad y Protección",
+        "subtitle": "Blindaje Digital",
+        "desc": "Garantizamos la protección de su nombre de dominio con soluciones avanzadas contra riesgos digitales.",
+        "points": [
+          {
+            "label": "Privacidad WHOIS",
+            "text": "Protección de sus datos personales."
+          },
+          {
+            "label": "Certificado SSL",
+            "text": "Seguridad de transacciones y conexiones."
+          },
+          {
+            "label": "Renovación automática",
+            "text": "Evite la pérdida accidental de su dominio."
+          },
+          {
+            "label": "Anti-ciberocupación",
+            "text": "Reserva estratégica para evitar el robo."
+          },
+          {
+            "label": "Monitoreo y Alertas",
+            "text": "Vigilancia para evitar cualquier usurpación."
+          }
+        ]
+      },
+      {
+        "id": "management",
+        "title": "Gestión y Alojamiento",
+        "subtitle": "Infraestructura Robusta",
+        "desc": "Gestión simplificada y opciones avanzadas para una presencia en línea fluida y eficaz.",
+        "points": [
+          {
+            "label": "Panel intuitivo",
+            "text": "Gestión completa de sus nombres de dominio."
+          },
+          {
+            "label": "Redirecciones inteligentes",
+            "text": "Configuración hacia sus páginas principales."
+          },
+          {
+            "label": "DNS avanzado",
+            "text": "Optimización del rendimiento y la velocidad."
+          },
+          {
+            "label": "Integración email pro",
+            "text": "Creación de direcciones personalizadas."
+          },
+          {
+            "label": "Alojamiento potente",
+            "text": "Soluciones adaptadas a su actividad."
+          }
+        ]
+      },
+      {
+        "id": "performance",
+        "title": "Rendimiento y Escalabilidad",
+        "subtitle": "Velocidad y Crecimiento",
+        "desc": "Optimice la velocidad y confiabilidad de su sitio gracias a infraestructuras de alta gama.",
+        "points": [
+          {
+            "label": "Alojamiento Cloud",
+            "text": "Servidores de alto rendimiento seguros."
+          },
+          {
+            "label": "Optimización de carga",
+            "text": "Acceso rápido a su sitio."
+          },
+          {
+            "label": "Copias de seguridad regulares",
+            "text": "Protección contra la pérdida de datos."
+          },
+          {
+            "label": "Multiplataforma",
+            "text": "Compatibilidad móvil, tableta, escritorio."
+          },
+          {
+            "label": "Protección DDoS",
+            "text": "Seguridad reforzada contra ciberataques."
+          }
+        ]
+      }
+    ],
+    "cta": "Iniciar Análisis"
+  },
+  "DomainIdentitySection": {
+    "header": {
+      "title": "Compra de Nombre de Dominio: {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-500'>Su Identidad Digital</span> {br} ¡Comienza Aquí!",
+      "subtitle": "¿Por qué elegirnos?"
+    },
+    "items": [
+      {
+        "id": "strategy",
+        "title": "Consejos Estratégicos",
+        "text": "Estudio de mercado, análisis de la competencia y elección del mejor nombre para su actividad."
+      },
+      {
+        "id": "security",
+        "title": "Seguridad Avanzada",
+        "text": "Protección contra ciberocupación, privacidad WHOIS y certificados SSL incluidos."
+      },
+      {
+        "id": "management",
+        "title": "Gestión Simplificada",
+        "text": "Panel intuitivo, renovación automática y redirecciones profesionales."
+      },
+      {
+        "id": "seo",
+        "title": "Rendimiento SEO",
+        "text": "Nombres de dominio optimizados para un mejor posicionamiento en Google."
+      }
+    ],
+    "mobile": {
+      "badge": "GDC Móvil"
+    }
+  },
+  "DomainProcessTestimonials": {
+    "header": {
+      "title": "Nuestra Metodología {br} de Trabajo",
+      "subtitle": "Un proceso estructurado y transparente para garantizar el éxito de su proyecto, desde la idea hasta la realización."
+    },
+    "process": [
+      {
+        "id": 1,
+        "title": "Consulta Inicial",
+        "content": "Comenzamos con una fase de escucha activa para comprender sus necesidades, su mercado objetivo y sus objetivos específicos con respecto a su nombre de dominio y su identidad digital."
+      },
+      {
+        "id": 2,
+        "title": "Auditoría y Análisis",
+        "content": "Análisis profundo de disponibilidad, competencia y oportunidades SEO para seleccionar las extensiones (.ma, .com) más efectivas para su marca."
+      },
+      {
+        "id": 3,
+        "title": "Desarrollo del Plan de Acción",
+        "content": "Definición de una estrategia clara: reserva, protección de marca, configuración de DNS e implementación de las redirecciones necesarias."
+      },
+      {
+        "id": 4,
+        "title": "Ejecución y Seguimiento",
+        "content": "Implementación técnica inmediata, seguridad SSL y monitoreo continuo para garantizar la longevidad de su activo digital."
+      }
+    ],
+    "testimonials": {
+      "title": "Testimonios de Nuestros Clientes:",
+      "subtitle": "Éxitos Inspiradores con Nuestra Agencia Web",
+      "items": [
+        {
+          "name": "Mehdi Berrada",
+          "role": "CEO, MM RÉSEAUX COM",
+          "text": "Una agencia de comunicación digital en Marruecos que domina perfectamente su campo. Su equipo nos acompañó en SEO y publicidad en línea con resultados impresionantes."
+        },
+        {
+          "name": "Karim Belkadi",
+          "role": "CEO, GROUP DES COMPAGNONS EN BÂTIMENT",
+          "text": "Confiamos el rediseño de nuestro sitio web a Group Digital Concept y estamos encantados con el resultado. Diseño moderno, sitio rápido y bien optimizado para SEO."
+        },
+        {
+          "name": "Samir Ait Benhaddou",
+          "role": "CEO, LOCATION CENTRE D'APPEL",
+          "text": "Su experiencia en SEO y SEA impulsó nuestra visibilidad en Google. Ahora recibimos más solicitudes calificadas. ¡Un verdadero socio de crecimiento!"
+        },
+        {
+          "name": "Oussama Jabrane",
+          "role": "CEO, GROUP PLANCYCALL",
+          "text": "Profesionales y receptivos, entendieron nuestras necesidades e implementaron una estrategia digital efectiva. Nuestra presencia en línea es mucho más eficiente."
+        },
+        {
+          "name": "Nadia El Fakir",
+          "role": "GERENTE DE MARKETING",
+          "text": "Una agencia seria y competente. Su equipo diseñó un sitio de comercio electrónico fluido y seguro para nuestra tienda en línea. ¡Muy satisfecha con el trabajo!"
+        }
+      ]
+    }
+  },
+  "DomainFAQSection": {
+    "header": {
+      "title": "Explore las preguntas {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>frecuentes</span>",
+      "desc": "¿Preguntas sobre la compra o gestión de su nombre de dominio? Nuestros expertos han reunido aquí las respuestas esenciales para guiarle.",
+      "supportTitle": "¿Necesita ayuda?",
+      "supportDesc": "Contacte a nuestro soporte."
+    },
+    "items": [
+      {
+        "question": "¿Por qué comprar un nombre de dominio en Marrakech?",
+        "answer": "Un nombre de dominio es esencial para establecer su presencia en línea y fortalecer su credibilidad. Le permite tener una dirección web profesional y mejorar su visibilidad en Internet con su clientela local e internacional."
+      },
+      {
+        "question": "¿Cómo elegir el nombre de dominio adecuado para mi negocio?",
+        "answer": "Opte por un nombre corto, memorable y fácil de deletrear. Debe reflejar su actividad e idealmente contener palabras clave relevantes para su SEO local en Marrakech. Le aconsejamos evitar múltiples guiones."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre un dominio .ma y un .com?",
+        "answer": "El .ma se dirige específicamente al mercado marroquí y mejora significativamente su posicionamiento local en Marruecos. El .com es una extensión internacional, ideal si se dirige a una audiencia global o si desea proteger su marca internacionalmente."
+      },
+      {
+        "question": "¿Cuánto cuesta un nombre de dominio en Marrakech?",
+        "answer": "Los precios varían según la extensión (.ma, .com, .net, etc.) y la rareza del nombre. En Group Digital Concept, ofrecemos tarifas competitivas que incluyen gestión de DNS, protección de sus datos y soporte técnico receptivo."
+      },
+      {
+        "question": "¿Cómo asegurar mi nombre de dominio contra la ciberocupación?",
+        "answer": "Recomendamos registrar las principales variaciones de su nombre de dominio (diferentes extensiones, errores ortográficos comunes) y activar el bloqueo de transferencia. Nuestro servicio incluye monitoreo proactivo."
+      },
+      {
+        "question": "¿Qué pasa si mi nombre de dominio ya está ocupado?",
+        "answer": "Si el dominio ya está registrado, podemos ayudarle a encontrar alternativas relevantes o iniciar un procedimiento de recompra si está a la venta. También ofrecemos un servicio de monitoreo (backorder) para ser alertado si vuelve a estar disponible."
+      },
+      {
+        "question": "¿Cómo transferir un nombre de dominio a otro proveedor?",
+        "answer": "La transferencia requiere el código EPP (Auth Code) que le ayudamos a obtener, y el desbloqueo del dominio en el registrador anterior. Nuestro equipo técnico gestiona todo el proceso para garantizar una transición sin interrupción del servicio."
+      },
+      {
+        "question": "¿Debo renovar mi nombre de dominio cada año?",
+        "answer": "Sí, un nombre de dominio se alquila por un período definido (generalmente de 1 a 10 años). Ofrecemos renovación automática para evitar cualquier pérdida accidental de su dirección web y su tráfico."
+      },
+      {
+        "question": "¿Puedo comprar un nombre de dominio sin crear un sitio web de inmediato?",
+        "answer": "Absolutamente. Puede reservar su nombre de dominio para proteger su marca y usarlo más tarde. Mientras tanto, podemos configurar una página de espera profesional o redirigir el tráfico a sus redes sociales."
+      },
+      {
+        "question": "¿Ofrecen servicios complementarios con la compra de dominio?",
+        "answer": "Sí, ofrecemos una suite completa: alojamiento web de alto rendimiento, creación de direcciones de correo electrónico profesionales, certificados SSL para seguridad y gestión avanzada de DNS para optimizar la velocidad de su sitio."
+      }
+    ]
+  },
+  "DomainContactForm": {
+    "header": {
+      "title": "Agencia Web y {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Comunicación Digital Innovadora</span>",
+      "p1": "No somos solo una agencia de marketing digital. Acompañamos a las empresas con soluciones a medida para impulsar su presencia en línea y maximizar su impacto.",
+      "p2": "Con sede en Marruecos, combinamos experiencia local y tendencias internacionales para ofrecer estrategias de alto rendimiento adaptadas a cada proyecto."
+    },
+    "steps": {
+      "info": "Información",
+      "service": "Servicio",
+      "details": "Detalles"
+    },
+    "form": {
+      "namePlaceholder": "Nombre Completo",
+      "emailPlaceholder": "Email",
+      "companyPlaceholder": "Empresa",
+      "employeesLabel": "Número de empleados *",
+      "phonePlaceholder": "Teléfono",
+      "serviceLabel": "Servicio deseado",
+      "projectDescLabel": "Descripción del proyecto",
+      "projectDescPlaceholder": "Cuéntenos sobre sus objetivos...",
+      "budgetLabel": "Presupuesto Estimado",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "confirm": "Confirmar"
+    },
+    "success": {
+      "title": "¡Mensaje Enviado!",
+      "desc": "Su proyecto está en buenas manos.{br}Le contactaremos en 24h.",
+      "button": "Nuevo Proyecto"
+    },
+    "services": {
+      "web": "Sitio Web",
+      "seo": "SEO / SEA",
+      "social": "Redes Sociales",
+      "branding": "Branding",
+      "app": "App Móvil",
+      "dev": "A Medida"
+    }
+  },
+  "DomainFinalCTA": {
+    "title": "Hablemos de {br} su proyecto.",
+    "button": "Discutir un proyecto"
+  }
+}

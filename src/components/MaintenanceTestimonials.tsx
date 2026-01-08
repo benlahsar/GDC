@@ -10,30 +10,33 @@ const REVIEWS = [
   { name: "Anas Rachidi", role: "RESPONSABLE IT", text: "Un service technique au top ! Ils ont optimisé nos systèmes informatiques et mis en place des solutions de sauvegarde fiables.", stars: 5 }
 ];
 
+import { useTranslations } from 'next-intl';
+
 export const MaintenanceTestimonials: React.FC = () => {
+  const t = useTranslations("MaintenanceTestimonials");
   return (
     <section className="relative w-full bg-[#F4F4F5] dark:bg-[#000000] py-24 md:py-32 overflow-hidden transition-colors duration-500 border-t border-black/5 dark:border-white/5">
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.02] pointer-events-none"></div>
       <div className="container mx-auto px-4 md:px-8 max-w-[1600px] relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-black dark:text-white tracking-tight leading-tight max-w-5xl mx-auto">
-              Les Témoignages de Nos Clients : <br/>
-              <span className="text-gray-500 dark:text-gray-400 opacity-60">Des Succès Inspirants avec Notre Agence Web</span>
-          </h2>
+          <h2
+            className="text-3xl md:text-5xl lg:text-6xl font-black text-black dark:text-white tracking-tight leading-tight max-w-5xl mx-auto"
+            dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>") }}
+          />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {REVIEWS.map((review, idx) => (
+          {(t.raw("items") as any[]).map((review, idx) => (
             <div key={idx} className="group bg-white dark:bg-[#0A0A0A] p-8 rounded-[32px] border border-black/5 dark:border-white/10 flex flex-col justify-between hover:-translate-y-2 transition-all duration-500 shadow-xl dark:shadow-none min-h-[380px]">
               <div>
-                 <div className="flex flex-col mb-6">
-                    <h4 className="text-lg font-black text-black dark:text-white leading-tight mb-1">{review.name}</h4>
-                    <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest">{review.role}</p>
-                 </div>
-                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed font-medium mb-8">{review.text}</p>
+                <div className="flex flex-col mb-6">
+                  <h4 className="text-lg font-black text-black dark:text-white leading-tight mb-1">{review.name}</h4>
+                  <p className="text-[10px] font-bold text-brand-red uppercase tracking-widest">{review.role}</p>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed font-medium mb-8">{review.text}</p>
               </div>
               <div className="flex gap-1 pt-6 border-t border-black/5 dark:border-white/5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={14} className={`${i < review.stars ? 'fill-yellow-500 text-yellow-500' : 'text-gray-300 dark:text-gray-800'}`} />
+                  <Star key={i} size={14} className={`${i < 5 ? 'fill-yellow-500 text-yellow-500' : 'text-gray-300 dark:text-gray-800'}`} />
                 ))}
               </div>
             </div>

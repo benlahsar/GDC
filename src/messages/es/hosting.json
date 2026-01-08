@@ -1,0 +1,195 @@
+{
+  "HostingPage": {
+    "badge": "Infraestructura de Alto Rendimiento",
+    "title": "Alojamiento Web {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>en Marrakech</span> {br} y en Marruecos",
+    "description": "En <highlight>Group Digital Concept</highlight>, nos especializamos en el alojamiento web en Marrakech, una solución clave para una presencia en línea de alto rendimiento y segura.",
+    "cta": "Elegir mi plan",
+    "configurator": {
+      "title": "Configurador",
+      "badge": "Calculadora Directa",
+      "siteType": "Tipo de Sitio",
+      "types": {
+        "vitrine": "Vitrina",
+        "ecommerce": "Tienda",
+        "corporate": "Corp."
+      },
+      "estimatedTraffic": "Tráfico Estimado",
+      "month": "/mes",
+      "ssdStorage": "Almacenamiento SSD",
+      "recommendation": "Recomendación GDC",
+      "optimizedInfra": "Infraestructura Optimizada",
+      "getProposal": "OBTENER UNA PROPUESTA"
+    },
+    "plans": {
+      "dedicated": "Dedicado Cloud",
+      "vps": "VPS Performance",
+      "shared": "Compartido Estándar"
+    },
+    "features": [
+      {
+        "title": "Velocidad Óptima",
+        "description": "Servidores NVMe de alto rendimiento. Tiempos de carga reducidos para un mejor SEO."
+      },
+      {
+        "title": "Seguridad Reforzada",
+        "description": "Certificación SSL incluida, protección anti-DDoS y copias de seguridad automáticas diarias."
+      },
+      {
+        "title": "Escalabilidad",
+        "description": "Soluciones en la nube que escalan con su tráfico. Pase de compartido a dedicado sin interrupciones."
+      },
+      {
+        "title": "Soporte Local",
+        "description": "Un equipo técnico con sede en Marrakech, disponible y receptivo para apoyarle 24/7."
+      }
+    ],
+    "stats": {
+      "uptime": "Disponibilidad Garantizada",
+      "satisfaction": "Satisfacción del Cliente",
+      "support": "Soporte Técnico"
+    },
+    "footerText": "Al elegir nuestro servicio de <highlight>alojamiento web en Marrakech</highlight>, se beneficia de una asociación con un equipo reconocido por su experiencia técnica, conocimiento local y compromiso inquebrantable."
+  },
+  "HostingWhyChoose": {
+    "badge": "Infraestructura y Seguridad",
+    "title": "Por Qué Elegirnos para el {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Alojamiento Web en Marrakech</span>",
+    "reasons": {
+      "performance": {
+        "title": "Rendimiento y Velocidad",
+        "desc": "Nuestras infraestructuras de alojamiento web en Marrakech están optimizadas para asegurar el máximo rendimiento. Disfrute de servidores ultrarrápidos con tiempos de respuesta reducidos para optimizar la experiencia del usuario y mejorar su SEO en Google."
+      },
+      "security": {
+        "title": "Seguridad y Protección de Datos",
+        "desc": "Implementamos protocolos de seguridad avanzados, incluyendo certificados SSL, firewalls y protecciones anti-DDoS, garantizando así una seguridad óptima para su sitio y sus datos."
+      },
+      "hosting": {
+        "title": "Alojamiento y Servicios Complementarios",
+        "desc": "Además de su alojamiento web en Marrakech, ofrecemos soluciones adaptadas a sus necesidades: alojamiento compartido, dedicado, VPS, así como servicios de registro de dominios, certificados de seguridad y optimización del rendimiento."
+      },
+      "backup": {
+        "title": "Respaldo y Fiabilidad",
+        "desc": "Sus datos son valiosos. Por eso aseguramos copias de seguridad automáticas y regulares para evitar cualquier pérdida accidental. Usted se beneficia de una infraestructura fiable que garantiza la accesibilidad permanente de su sitio."
+      },
+      "support": {
+        "title": "Soporte Técnico y Orientación",
+        "desc": "Nuestro equipo le acompaña en cada etapa de su alojamiento web en Marrakech. Le asesoramos en la elección de su oferta y aseguramos un seguimiento técnico receptivo para garantizar asistencia cuando sea necesario."
+      },
+      "engagement": {
+        "title": "Nuestro Compromiso",
+        "desc": "Nuestro compromiso se basa en tres principios fundamentales: rendimiento, seguridad y orientación. Nos comprometemos a ofrecerle un alojamiento web en Marrakech fiable, rápido y adaptado a los requisitos de los motores de búsqueda. Nuestra prioridad es garantizar un servicio seguro con infraestructuras de alto rendimiento para asegurar la estabilidad y evolución de su sitio web."
+      }
+    },
+    "vision": {
+      "title": "Visión",
+      "p1": "En <highlight>Group Digital Concept</highlight>, nuestra ambición es convertirnos en el referente de alojamiento web en Marrakech.",
+      "p2": "Ofrecemos soluciones adaptadas a las necesidades de las empresas, permitiéndoles tener un sitio web fiable y de alto rendimiento."
+    },
+    "mission": {
+      "title": "Misión",
+      "p1": "Nuestra misión es simplificar y asegurar el alojamiento web en Marrakech proporcionando una experiencia completa y un apoyo personalizado."
+    }
+  },
+  "HostingAtouts": {
+    "badge": "Nuestras Fortalezas",
+    "title": "Los Activos de <span class='text-brand-red'>Group Digital Concept</span> {br} en Alojamiento Web",
+    "items": {
+      "tracking": "Seguimiento Personalizado",
+      "price": "Precios Competitivos",
+      "compliance": "Cumplimiento y RGPD",
+      "scalable": "Aplicaciones Escalables",
+      "turnkey": "Proyectos Llave en Mano",
+      "team": "Equipo Experimentado",
+      "satisfaction": "Satisfacción del Cliente",
+      "tech": "Tecnologías Modernas"
+    }
+  },
+  "HostingSolutionsGrid": {
+    "badge": "Soluciones de Rendimiento",
+    "title": "¿Quiere un Alojamiento Web de <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Alto Rendimiento para su Empresa?</span>",
+    "cta": "Solicitar un presupuesto de alojamiento",
+    "solutions": {
+      "strategy": {
+        "title": "Análisis y Estrategia",
+        "desc": "Analizamos sus necesidades e infraestructura para ofrecerle un alojamiento web en Marrakech de alto rendimiento y escalable.",
+        "points": [
+          "Auditoría del sitio web: Evaluación de su plataforma para un alojamiento a medida.",
+          "Optimización del rendimiento: Tiempos de carga más rápidos.",
+          "Alojamiento seguro: Servidores de alto rendimiento para garantizar la estabilidad.",
+          "Asesoramiento personalizado: Le ayudamos a elegir la mejor solución."
+        ]
+      },
+      "security": {
+        "title": "Seguridad y Protección",
+        "desc": "Situamos la seguridad en el corazón de nuestras soluciones de alojamiento web en Marrakech para proteger sus datos y los de sus clientes.",
+        "points": [
+          "Protección avanzada: Seguridad reforzada contra ciberamenazas y DDoS.",
+          "Certificados SSL incluidos: Aseguramiento de sus intercambios y cifrado de datos.",
+          "Copias de seguridad automáticas: Protección y recuperación rápida de sus archivos.",
+          "Monitoreo 24/7: Intervención rápida en caso de falla o intrusión."
+        ]
+      },
+      "management": {
+        "title": "Gestión y Alojamiento",
+        "desc": "Una solución completa para asegurar una presencia en línea de alto rendimiento y escalable.",
+        "points": [
+          "Almacenamiento optimizado: Espacio en disco adaptado a sus necesidades específicas.",
+          "Alta disponibilidad: Servidores fiables con el máximo tiempo de actividad.",
+          "Alojamiento de alto rendimiento: Adaptado a sitios vitrina, comercio electrónico y plataformas.",
+          "Integración de correo pro: Dirección de correo profesional incluida."
+        ]
+      },
+      "performance": {
+        "title": "Rendimiento y Escalabilidad",
+        "desc": "El alojamiento web es esencial para asegurar la capacidad de respuesta y rapidez de su sitio.",
+        "points": [
+          "Velocidad y optimización: Carga rápida para una mejor experiencia de usuario.",
+          "Infraestructura escalable: Capacidad de adaptación según las necesidades de su sitio.",
+          "Protección avanzada: Sistemas de seguridad reforzados contra ataques.",
+          "Compatibilidad multiplataforma: Soporte para los CMS más populares."
+        ]
+      }
+    }
+  },
+  "HostingContactForm": {
+    "badge": "Presupuesto Rápido",
+    "title": "¿Listo para pasar al {br} <span class='text-brand-red'>Siguiente Nivel?</span>",
+    "stats": {
+      "responseTime": "Tiempo de respuesta",
+      "uptime": "Disponibilidad SLA"
+    },
+    "success": {
+      "title": "¡Configuración Recibida!",
+      "cta": "Nuevo Presupuesto"
+    },
+    "form": {
+      "placeholders": {
+        "name": "Su nombre",
+        "email": "correo@empresa.es",
+        "details": "Detalles de su proyecto..."
+      },
+      "plans": {
+        "shared": {
+          "label": "Compartido",
+          "desc": "Ideal para empezar"
+        },
+        "vps": {
+          "label": "VPS Cloud",
+          "desc": "Rendimiento y Control"
+        },
+        "dedicated": {
+          "label": "Dedicado",
+          "desc": "Máxima potencia"
+        },
+        "pro": {
+          "label": "Pack Pro",
+          "desc": "Seguridad total"
+        }
+      },
+      "actions": {
+        "back": "Atrás",
+        "next": "Siguiente",
+        "confirm": "Confirmar"
+      }
+    }
+  }
+}

@@ -16,7 +16,10 @@ const FAQS = [
   { question: "Quels types de sites nécessitent une maintenance web ?", answer: "Absolument tous : sites vitrines, e-commerce, blogs et plateformes applicatives." }
 ];
 
+import { useTranslations } from 'next-intl';
+
 export const MaintenanceFAQ: React.FC = () => {
+  const t = useTranslations("MaintenanceFAQ");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -25,28 +28,29 @@ export const MaintenanceFAQ: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-32">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-black dark:text-white tracking-tight leading-tight">
-                    Explorez les questions <br/> fréquemment posées
-                </h2>
-                <div className="mt-8 flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full border-2 border-brand-red flex items-center justify-center">
-                        <div className="w-1 h-1 bg-brand-red rounded-full animate-pulse"></div>
-                    </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">Expertise Support GDC</span>
+              <h2
+                className="text-3xl md:text-4xl lg:text-5xl font-black text-black dark:text-white tracking-tight leading-tight"
+                dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>") }}
+              />
+              <div className="mt-8 flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full border-2 border-brand-red flex items-center justify-center">
+                  <div className="w-1 h-1 bg-brand-red rounded-full animate-pulse"></div>
                 </div>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">{t("badge")}</span>
+              </div>
             </div>
           </div>
           <div className="lg:col-span-7 flex flex-col divide-y divide-black/10 dark:divide-white/10 border-t border-black/10 dark:border-white/10">
-            {FAQS.map((faq, index) => {
+            {(t.raw("items") as any[]).map((faq, index) => {
               const isOpen = openIndex === index;
               return (
                 <div key={index} className="py-6 group cursor-pointer" onClick={() => setOpenIndex(isOpen ? null : index)}>
                   <div className="flex items-start justify-between gap-6">
                     <h3 className={`text-lg md:text-xl font-bold leading-snug transition-colors duration-300 ${isOpen ? 'text-black dark:text-white' : 'text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white'}`}>
-                        {faq.question}
+                      {faq.question}
                     </h3>
                     <div className={`transition-transform duration-500 ${isOpen ? 'rotate-0' : '-rotate-45'}`}>
-                        <ArrowUpRight className={`${isOpen ? 'text-brand-red' : 'text-gray-400 dark:text-gray-600'} w-6 h-6`} />
+                      <ArrowUpRight className={`${isOpen ? 'text-brand-red' : 'text-gray-400 dark:text-gray-600'} w-6 h-6`} />
                     </div>
                   </div>
                   <div className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0 mt-0'}`}>

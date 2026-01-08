@@ -1,0 +1,195 @@
+{
+  "HostingPage": {
+    "badge": "Infrastructure Haute Performance",
+    "title": "Hébergement Web {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>à Marrakech</span> {br} & au Maroc",
+    "description": "Chez <highlight>Group Digital Concept</highlight>, nous sommes spécialisés dans l'hébergement web à Marrakech, une solution clé pour une présence en ligne performante et sécurisée.",
+    "cta": "Choisir mon plan",
+    "configurator": {
+      "title": "Configurateur",
+      "badge": "Calculateur Direct",
+      "siteType": "Type de Site",
+      "types": {
+        "vitrine": "Vitrine",
+        "ecommerce": "Shop",
+        "corporate": "Corp."
+      },
+      "estimatedTraffic": "Trafic Estimé",
+      "month": "/mois",
+      "ssdStorage": "Stockage SSD",
+      "recommendation": "Recommandation GDC",
+      "optimizedInfra": "Infrastructure Optimisée",
+      "getProposal": "OBTENIR UNE PROPOSITION"
+    },
+    "plans": {
+      "dedicated": "Dédié Cloud",
+      "vps": "VPS Performance",
+      "shared": "Mutualisé Standard"
+    },
+    "features": [
+      {
+        "title": "Vitesse Optimale",
+        "description": "Serveurs NVMe haute performance. Temps de chargement réduits pour un meilleur SEO."
+      },
+      {
+        "title": "Sécurité Renforcée",
+        "description": "Certification SSL incluse, protection anti-DDoS et sauvegardes automatiques quotidiennes."
+      },
+      {
+        "title": "Scalabilité",
+        "description": "Des solutions cloud qui évoluent avec votre trafic. Passez du mutualisé au dédié sans coupure."
+      },
+      {
+        "title": "Support Local",
+        "description": "Une équipe technique basée à Marrakech, disponible et réactive pour vous accompagner 24/7."
+      }
+    ],
+    "stats": {
+      "uptime": "Disponibilité Garantie",
+      "satisfaction": "Satisfaction Client",
+      "support": "Support Technique"
+    },
+    "footerText": "En choisissant notre service d' <highlight>hébergement web à Marrakech</highlight>, vous bénéficiez d'un partenariat avec une équipe reconnue pour son expertise technique, sa connaissance des spécificités locales et son engagement sans faille."
+  },
+  "HostingWhyChoose": {
+    "badge": "Infrastructure & Sécurité",
+    "title": "Pourquoi Nous Choisir pour {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>l'Hébergement Web à Marrakech</span>",
+    "reasons": {
+      "performance": {
+        "title": "Performance et rapidité",
+        "desc": "Nos infrastructures de hébergement web à Marrakech sont optimisées pour assurer une performance maximale. Profitez de serveurs ultra-rapides avec un temps de réponse réduit afin d'optimiser l'expérience utilisateur et améliorer votre référencement sur Google."
+      },
+      "security": {
+        "title": "Sécurité et protection des données",
+        "desc": "Nous mettons en place des protocoles de sécurité avancés, incluant des certificats SSL, des pare-feu et des protections anti-DDoS, garantissant ainsi une sécurité optimale pour votre site et vos données."
+      },
+      "hosting": {
+        "title": "Hébergement et services complémentaires",
+        "desc": "En complément de votre hébergement web à Marrakech, nous offrons des solutions adaptées aux besoins des entreprises : hébergement mutualisé, dédié, VPS, ainsi que des services comme l'enregistrement de domaine, les certificats de sécurité et l'optimisation des performances."
+      },
+      "backup": {
+        "title": "Sauvegarde et fiabilité",
+        "desc": "Vos données sont précieuses. C'est pourquoi nous assurons des sauvegardes automatiques et régulières pour éviter toute perte accidentelle. Vous bénéficiez ainsi d'une infrastructure fiable garantissant l'accessibilité permanente de votre site."
+      },
+      "support": {
+        "title": "Assistance technique et accompagnement",
+        "desc": "Notre équipe vous accompagne à chaque étape de votre hébergement web à Marrakech. Nous vous conseillons sur le choix de votre offre et nous assurons un suivi technique réactif pour vous garantir une assistance en cas de besoin."
+      },
+      "engagement": {
+        "title": "Notre Engagement",
+        "desc": "Notre engagement repose sur trois principes fondamentaux : performance, sécurité et accompagnement. Nous nous engageons à vous offrir un hébergement web à Marrakech fiable, rapide et adapté aux exigences des moteurs de recherche. Notre priorité est de garantir un service sécurisé avec des infrastructures performantes pour assurer la stabilité et l'évolution de votre site web."
+      }
+    },
+    "vision": {
+      "title": "Vision",
+      "p1": "Chez <highlight>Group Digital Concept</highlight>, nous avons pour ambition de devenir le référent en hébergement web à Marrakech.",
+      "p2": "Nous proposons des solutions adaptées aux besoins des entreprises, leur permettant d'avoir un site internet fiable et performant."
+    },
+    "mission": {
+      "title": "Mission",
+      "p1": "Notre mission est de simplifier et sécuriser l'hébergement web à Marrakech en fournissant une expertise complète et un accompagnement personnalisé."
+    }
+  },
+  "HostingAtouts": {
+    "badge": "Nos Points Forts",
+    "title": "Les Atouts de <span class='text-brand-red'>Group Digital Concept</span> {br} en Hébergement Web",
+    "items": {
+      "tracking": "Suivi Personnalisé",
+      "price": "Prix Compétitifs",
+      "compliance": "Conformité et RGPD",
+      "scalable": "Applications Évolutives",
+      "turnkey": "Projets Clés en Main",
+      "team": "Équipe Expérimentée",
+      "satisfaction": "Satisfaction Client",
+      "tech": "Technologies Modernes"
+    }
+  },
+  "HostingSolutionsGrid": {
+    "badge": "Solutions Performantes",
+    "title": "Vous Voulez un Hébergement Web {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Performant pour Votre Entreprise ?</span>",
+    "cta": "Demander un devis hébergement",
+    "solutions": {
+      "strategy": {
+        "title": "Analyse & Stratégie",
+        "desc": "Nous analysons vos besoins et votre infrastructure pour vous proposer un hébergement web à Marrakech performant et évolutif.",
+        "points": [
+          "Audit de votre site web : Évaluation de votre plateforme pour un hébergement sur mesure.",
+          "Optimisation des performances : Accélération des temps de chargement.",
+          "Hébergement sécurisé : Serveurs haute performance pour garantir la stabilité.",
+          "Conseils personnalisés : Nous vous helpons à choisir la meilleure solution."
+        ]
+      },
+      "security": {
+        "title": "Sécurisation & Protection",
+        "desc": "Nous plaçons la sécurité au cœur de nos solutions d'hébergement web à Marrakech pour protéger vos données et celles de vos clients.",
+        "points": [
+          "Protection avancée : Sécurité renforcée contre les cybermenaces et DDoS.",
+          "Certificats SSL inclus : Sécurisation de vos échanges et cryptage des données.",
+          "Sauvegardes automatiques : Protection et récupération rapide de vos fichiers.",
+          "Surveillance 24/7 : Intervention rapide en cas de panne ou intrusion."
+        ]
+      },
+      "management": {
+        "title": "Gestion & Hébergement",
+        "desc": "Une solution complète pour assurer une présence en ligne performante et évolutive.",
+        "points": [
+          "Stockage optimisé : Espace disque adapté à vos besoins spécifiques.",
+          "Haute disponibilité : Serveurs fiables avec un temps de disponibilité maximal.",
+          "Hébergement performant : Adapté aux sites vitrines, e-commerce et plateformes.",
+          "Intégration e-mail pro : Adresse e-mail professionnelle incluse."
+        ]
+      },
+      "performance": {
+        "title": "Performance & Scalabilité",
+        "desc": "L'hébergement web est essentiel pour assurer la réactivité et la rapidité de votre site.",
+        "points": [
+          "Vitesse et optimisation : Chargement rapide pour une meilleure expérience utilisateur.",
+          "Infrastructure évolutive : Capacité d'adaptation selon les besoins de votre site.",
+          "Protection avancée : Systèmes de sécurité renforcés contre les attaques.",
+          "Compatibilité multi-plateformes : Support des CMS les plus populaires."
+        ]
+      }
+    }
+  },
+  "HostingContactForm": {
+    "badge": "Devis Rapide",
+    "title": "Prêt à passer à la {br} <span class='text-brand-red'>Vitesse Supérieure ?</span>",
+    "stats": {
+      "responseTime": "Temps de réponse",
+      "uptime": "SLA Disponibilité"
+    },
+    "success": {
+      "title": "Configuration Reçue !",
+      "cta": "Nouveau Devis"
+    },
+    "form": {
+      "placeholders": {
+        "name": "Votre nom",
+        "email": "email@societe.ma",
+        "details": "Détails de votre projet..."
+      },
+      "plans": {
+        "shared": {
+          "label": "Mutualisé",
+          "desc": "Idéal pour débuter"
+        },
+        "vps": {
+          "label": "VPS Cloud",
+          "desc": "Performance & Contrôle"
+        },
+        "dedicated": {
+          "label": "Dédié",
+          "desc": "Puissance maximale"
+        },
+        "pro": {
+          "label": "Pack Pro",
+          "desc": "Sécurité totale"
+        }
+      },
+      "actions": {
+        "back": "Retour",
+        "next": "Suivant",
+        "confirm": "Confirmer"
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ import {
   Loader2,
   Sparkles,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const COUNTRY_CODES = [
   { code: "+212", country: "MA", label: "Maroc" },
@@ -28,26 +29,23 @@ const COUNTRY_CODES = [
   { code: "+44", country: "UK", label: "UK" },
 ];
 
-const EMPLOYEES = ["1-10", "11-50", "51-200", "+200"];
-
-const SERVICES = [
-  { id: "web", label: "Site E-Commerce", icon: Layout },
-  { id: "seo", label: "SEO / SEA", icon: Search },
-  { id: "social", label: "Social Media", icon: Share2 },
-  { id: "branding", label: "Branding", icon: Palette },
-  { id: "app", label: "App Mobile", icon: Globe },
-  { id: "dev", label: "Sur Mesure", icon: Zap },
-];
-
-const BUDGETS = ["< 20k MAD", "20-50k MAD", "50-100k MAD", "+100k MAD"];
-
 export const EcommerceContactForm: React.FC = () => {
+  const t = useTranslations("EcommerceContactForm");
   const [step, setStep] = useState(1);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState(COUNTRY_CODES[0]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const SERVICES = [
+    { id: "web", label: (t.raw("services") as any[]).find(s => s.id === "web").label, icon: Layout },
+    { id: "seo", label: (t.raw("services") as any[]).find(s => s.id === "seo").label, icon: Search },
+    { id: "social", label: (t.raw("services") as any[]).find(s => s.id === "social").label, icon: Share2 },
+    { id: "branding", label: (t.raw("services") as any[]).find(s => s.id === "branding").label, icon: Palette },
+    { id: "app", label: (t.raw("services") as any[]).find(s => s.id === "app").label, icon: Globe },
+    { id: "dev", label: (t.raw("services") as any[]).find(s => s.id === "dev").label, icon: Zap },
+  ];
 
   const [formData, setFormData] = useState({
     name: "",
@@ -115,9 +113,7 @@ export const EcommerceContactForm: React.FC = () => {
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className={`absolute top-0 right-0 w-[800px] h-[800px] bg-brand-red/[0.03] rounded-full blur-[150px] -translate-y-1/2 translate-x-1/3 ${
-            isMobile ? "opacity-20" : ""
-          }`}
+          className={`absolute top-0 right-0 w-[800px] h-[800px] bg-brand-red/[0.03] rounded-full blur-[150px] -translate-y-1/2 translate-x-1/3 ${isMobile ? "opacity-20" : ""}`}
         ></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/[0.02] rounded-full blur-[120px] translate-y-1/2 -translate-x-1/4"></div>
       </div>
@@ -129,24 +125,18 @@ export const EcommerceContactForm: React.FC = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-4 shadow-sm">
               <Sparkles size={14} className="text-brand-red animate-pulse" />
               <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-gray-800 dark:text-gray-200">
-                Démarrer un projet
+                {t("badge")}
               </span>
             </div>
 
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] text-black dark:text-white">
-              Agence Web & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">
-                Communication Digitale Innovante
-              </span>
-            </h2>
+            <h2
+              className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] text-black dark:text-white"
+              dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>") }}
+            />
           </div>
 
           {/* RIGHT: FORM CARD */}
-          <div
-            className={`relative ${
-              !isMobile ? "animate-enter-right delay-200" : ""
-            }`}
-          >
+          <div className={`relative ${!isMobile ? "animate-enter-right delay-200" : ""}`}>
             {!isMobile && (
               <div className="absolute -inset-1 bg-gradient-to-br from-brand-red/10 to-blue-600/10 rounded-[35px] blur-xl opacity-50"></div>
             )}
@@ -155,11 +145,7 @@ export const EcommerceContactForm: React.FC = () => {
               {/* Top Stepper */}
               <div className="flex items-center justify-between mb-12 relative px-4">
                 <div className="absolute top-4 left-0 w-full h-[1px] bg-black/5 dark:bg-white/10 -z-0"></div>
-                {[
-                  { id: 1, label: "Informations" },
-                  { id: 2, label: "Service" },
-                  { id: 3, label: "Détails" },
-                ].map((s) => {
+                {(t.raw("steps") as any[]).map((s) => {
                   const isActive = step === s.id;
                   const isCompleted = step > s.id;
                   return (
@@ -168,16 +154,7 @@ export const EcommerceContactForm: React.FC = () => {
                       className="relative z-10 flex flex-col items-center gap-3 bg-transparent px-2"
                     >
                       <div
-                        className={`
-                           w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 border-2
-                           ${
-                             isActive
-                               ? "bg-brand-red border-brand-red text-white scale-110 shadow-lg"
-                               : isCompleted
-                               ? "bg-black dark:bg-white border-black dark:border-white text-white dark:text-black"
-                               : "bg-white dark:bg-[#111] border-gray-200 dark:border-white/20 text-gray-400 dark:text-gray-600"
-                           }
-                        `}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 border-2 ${isActive ? "bg-brand-red border-brand-red text-white scale-110 shadow-lg" : isCompleted ? "bg-black dark:bg-white border-black dark:border-white text-white dark:text-black" : "bg-white dark:bg-[#111] border-gray-200 dark:border-white/20 text-gray-400 dark:text-gray-600"}`}
                       >
                         {isCompleted ? (
                           <Check size={14} strokeWidth={3} />
@@ -186,11 +163,7 @@ export const EcommerceContactForm: React.FC = () => {
                         )}
                       </div>
                       <span
-                        className={`text-[10px] font-bold uppercase tracking-widest ${
-                          isActive
-                            ? "text-black dark:text-white"
-                            : "text-gray-400 dark:text-gray-600"
-                        }`}
+                        className={`text-[10px] font-bold uppercase tracking-widest ${isActive ? "text-black dark:text-white" : "text-gray-400 dark:text-gray-600"}`}
                       >
                         {s.label}
                       </span>
@@ -206,7 +179,7 @@ export const EcommerceContactForm: React.FC = () => {
                     <Send size={48} />
                   </div>
                   <h3 className="text-3xl font-black text-black dark:text-white mb-4">
-                    Message Envoyé !
+                    {t("success.title")}
                   </h3>
                   <button
                     onClick={() => {
@@ -215,7 +188,7 @@ export const EcommerceContactForm: React.FC = () => {
                     }}
                     className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black rounded-xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-transform shadow-lg"
                   >
-                    Nouveau Projet
+                    {t("success.cta")}
                   </button>
                 </div>
               ) : (
@@ -223,16 +196,12 @@ export const EcommerceContactForm: React.FC = () => {
                   <div className="flex-1 relative overflow-hidden">
                     {/* STEP 1 */}
                     <div
-                      className={`transition-all duration-500 ease-in-out flex flex-col gap-5 ${
-                        step === 1
-                          ? "opacity-100 translate-x-0 z-10"
-                          : "opacity-0 -translate-x-full absolute inset-0 pointer-events-none"
-                      }`}
+                      className={`transition-all duration-500 ease-in-out flex flex-col gap-5 ${step === 1 ? "opacity-100 translate-x-0 z-10" : "opacity-0 -translate-x-full absolute inset-0 pointer-events-none"}`}
                     >
                       <div className="space-y-5">
                         <input
                           type="text"
-                          placeholder="Nom Complet"
+                          placeholder={t("fields.name")}
                           value={formData.name}
                           onChange={(e) =>
                             setFormData({ ...formData, name: e.target.value })
@@ -242,7 +211,7 @@ export const EcommerceContactForm: React.FC = () => {
                         />
                         <input
                           type="email"
-                          placeholder="Email"
+                          placeholder={t("fields.email")}
                           value={formData.email}
                           onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
@@ -255,16 +224,10 @@ export const EcommerceContactForm: React.FC = () => {
 
                     {/* STEP 2 */}
                     <div
-                      className={`absolute inset-0 transition-all duration-500 ease-in-out flex flex-col ${
-                        step === 2
-                          ? "opacity-100 translate-x-0 z-10"
-                          : step < 2
-                          ? "opacity-0 translate-x-full pointer-events-none"
-                          : "opacity-0 -translate-x-full pointer-events-none"
-                      }`}
+                      className={`absolute inset-0 transition-all duration-500 ease-in-out flex flex-col ${step === 2 ? "opacity-100 translate-x-0 z-10" : step < 2 ? "opacity-0 translate-x-full pointer-events-none" : "opacity-0 -translate-x-full pointer-events-none"}`}
                     >
                       <label className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-6 block">
-                        Service souhaité
+                        {t("fields.serviceLabel")}
                       </label>
                       <div className="grid grid-cols-2 gap-4">
                         {SERVICES.map((srv) => {
@@ -273,23 +236,14 @@ export const EcommerceContactForm: React.FC = () => {
                             <div
                               key={srv.id}
                               onClick={() => toggleService(srv.id)}
-                              className={`
-                                   p-4 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-3 text-center h-32 group
-                                   ${
-                                     isSelected
-                                       ? "bg-brand-red border-brand-red text-white shadow-lg"
-                                       : "bg-black/5 dark:bg-white/5 border-black/10 dark:border-white/10 hover:border-brand-red/50"
-                                   }
-                                 `}
+                              className={`p-4 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-3 text-center h-32 group ${isSelected ? "bg-brand-red border-brand-red text-white shadow-lg" : "bg-black/5 dark:bg-white/5 border-black/10 dark:border-white/10 hover:border-brand-red/50"}`}
                             >
                               <srv.icon
                                 size={24}
                                 className={isSelected ? "text-white" : ""}
                               />
                               <span
-                                className={`text-xs font-bold uppercase tracking-wider ${
-                                  isSelected ? "text-white" : ""
-                                }`}
+                                className={`text-xs font-bold uppercase tracking-wider ${isSelected ? "text-white" : ""}`}
                               >
                                 {srv.label}
                               </span>
@@ -301,11 +255,7 @@ export const EcommerceContactForm: React.FC = () => {
 
                     {/* STEP 3 */}
                     <div
-                      className={`absolute inset-0 transition-all duration-500 ease-in-out flex flex-col gap-6 ${
-                        step === 3
-                          ? "opacity-100 translate-x-0 z-10"
-                          : "opacity-0 translate-x-full pointer-events-none"
-                      }`}
+                      className={`absolute inset-0 transition-all duration-500 ease-in-out flex flex-col gap-6 ${step === 3 ? "opacity-100 translate-x-0 z-10" : "opacity-0 translate-x-full pointer-events-none"}`}
                     >
                       <textarea
                         value={formData.details}
@@ -314,7 +264,7 @@ export const EcommerceContactForm: React.FC = () => {
                         }
                         rows={4}
                         className="w-full bg-gray-50 dark:bg-[#111] border border-black/5 dark:border-white/10 rounded-xl px-5 py-4 text-black dark:text-white focus:border-brand-red focus:outline-none transition-all resize-none h-40 shadow-inner"
-                        placeholder="Parlez-nous de votre boutique..."
+                        placeholder={t("fields.detailsPlaceholder")}
                       ></textarea>
                     </div>
                   </div>
@@ -324,13 +274,9 @@ export const EcommerceContactForm: React.FC = () => {
                     <button
                       type="button"
                       onClick={handleBack}
-                      className={`text-gray-500 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest ${
-                        step === 1
-                          ? "opacity-0 pointer-events-none"
-                          : "opacity-100"
-                      }`}
+                      className={`text-gray-500 hover:text-black dark:hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-widest ${step === 1 ? "opacity-0 pointer-events-none" : "opacity-100"}`}
                     >
-                      <ArrowLeft size={16} /> Retour
+                      <ArrowLeft size={16} /> {t("actions.back")}
                     </button>
 
                     <button
@@ -343,7 +289,7 @@ export const EcommerceContactForm: React.FC = () => {
                         <Loader2 size={16} className="animate-spin" />
                       ) : (
                         <>
-                          {step === 3 ? "Confirmer" : "Suivant"}
+                          {step === 3 ? t("actions.confirm") : t("actions.next")}
                           {step !== 3 && <ArrowRight size={16} />}
                         </>
                       )}
