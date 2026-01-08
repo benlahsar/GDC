@@ -1,0 +1,150 @@
+{
+  "ApplicationCreationPage": {
+    "badge": "Experiencia en Apps Marrakech",
+    "title": "Bienvenido a Group Digital Concept, la agencia especializada {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600 relative inline-block'>en la creación de aplicaciones en Marrakech.</span>",
+    "description": {
+      "p1": "¿Busca un <strong class='text-black dark:text-white'>experto en creación de aplicaciones en Marrakech</strong> para concretar su proyecto digital? Group Digital Concept lo acompaña en el desarrollo de aplicaciones móviles y web a medida.",
+      "p2": "Combinamos <strong class='text-black dark:text-white'>tecnología avanzada y experiencia de usuario</strong> para crear aplicaciones intuitivas, modernas y eficientes. En menos de 30 días, le ayudamos a dar vida a su aplicación."
+    },
+    "cta": {
+      "start": "Lanzar el proyecto",
+      "contact": "¡Contáctenos!"
+    },
+    "experts": "Equipo de Expertos Dedicado",
+    "imageCard": {
+      "code": "Arquitectura Limpia",
+      "mobile": "Multiplataforma (iOS/Android)"
+    },
+    "process": {
+      "title": "Nuestro Enfoque",
+      "items": [
+        "Estudio funcional y técnico detallado",
+        "Diseño UX/UI a medida",
+        "Desarrollo optimizado móvil y web",
+        "Pruebas rigurosas y despliegue seguro"
+      ]
+    },
+    "benefits": {
+      "title": "Sus Beneficios Clientes:",
+      "items": [
+        "Acompañamiento completo y personalizado",
+        "Seguimiento ágil y equipo reactivo 7/7",
+        "Soluciones evolutivas y 100% adaptadas",
+        "Compatibilidad multisoporte (Web/App)",
+        "Aplicación lista para rendir"
+      ]
+    },
+    "stats": {
+      "label": "Tiempo Récord",
+      "sub": "días"
+    },
+    "icons": {
+      "text": "Group Digital Concept transforma sus ideas en soluciones digitales concretas.",
+      "items": [
+        {
+          "label": "Diseño Moderno"
+        },
+        {
+          "label": "SEO Optimizado"
+        },
+        {
+          "label": "Rendimiento Garantizado"
+        },
+        {
+          "label": "Soporte Reactivo"
+        },
+        {
+          "label": "Seguridad Reforzada"
+        }
+      ]
+    }
+  },
+  "AppContactBanner": {
+    "priority": "Canal Prioritario",
+    "title": "Contacte a {br} <span class='text-brand-red underline decoration-red-900/50 underline-offset-8'>Nuestros Expertos</span> {br} en Apps.",
+    "phone": {
+      "label": "Línea Directa"
+    },
+    "email": {
+      "label": "Canal Oficial"
+    },
+    "hq": "Marrakech HQ • v2.5",
+    "form": {
+      "title": "Formulario de Proyecto",
+      "subtitle": "Una respuesta en 12 ciclos horarios",
+      "name": "Su Nombre Completo",
+      "phone": "Teléfono Móvil",
+      "submit": "INICIALIZAR EL PROTOCOLO",
+      "secure": "Asegurado por Cifrado GDC Elite"
+    },
+    "uptime": {
+      "title": "UPTIME {br} <span class='text-gray-400'>OPERACIONAL</span>",
+      "days": "Lunes a Viernes"
+    }
+  },
+  "AppExpertSection": {
+    "headlines": {
+      "us": "Somos",
+      "expert": "Su Experto"
+    },
+    "mainTitle": {
+      "line1": "Creación",
+      "line2": "De Aplicación",
+      "line3": "En Marrakech"
+    },
+    "floatingCard": {
+      "text": "Nuestra agencia experta en <strong class='text-black dark:text-white font-black'>creación de aplicaciones en Marrakech</strong> desarrolla soluciones móviles a medida. Diseñamos aplicaciones nativas e híbridas (iOS/Android) combinando diseño UX localizado, tecnologías de alto rendimiento (Flutter, React Native) y optimización ASO integrada.",
+      "badge": "VISIÓN EXCELENCIA GDC"
+    },
+    "cards": [
+      {
+        "title": "Optimización Móvil Marrakech",
+        "subtitle": "ASO y Rendimiento",
+        "desc": "Como experto en creación de aplicaciones en Marrakech, transformamos sus ideas en soluciones móviles de alto rendimiento. Auditoría técnica rigurosa y optimización SEO específica para las tiendas para maximizar su visibilidad en el mercado local. Integramos diseños UX localizados y funciones de pago adaptadas (CMI, Paypal Marruecos)."
+      },
+      {
+        "title": "E-Commerce del Mañana",
+        "subtitle": "Túneles de Venta",
+        "desc": "Nuestras aplicaciones de comercio electrónico están diseñadas para convertir. Desarrollamos plataformas fluidas con túneles de conversión optimizados, incluidas funciones como el pago en un clic y la integración de métodos de pago locales que garantizan una experiencia de usuario sin fricciones."
+      },
+      {
+        "title": "Soluciones de Negocio Marrakech",
+        "subtitle": "Eficiencia Interna",
+        "desc": "Especializados en la creación de aplicaciones en Marrakech para profesionales, diseñamos herramientas de negocio a medida: gestión de stock, CRM local y seguimiento de clientes. Nuestras aplicaciones cumplen con las especificidades técnicas y legales (RGPD Marruecos) de su empresa local."
+      },
+      {
+        "title": "Integración Tecnológica",
+        "subtitle": "Flutter y React Native",
+        "desc": "Tecnologías híbridas para un rendimiento nativo. Arquitectura escalable y tiempos de carga ultrarrápidos para dominar las tiendas de aplicaciones y garantizar la máxima retención de los usuarios de Marrakech."
+      }
+    ]
+  },
+  "AppFeaturesGrid": {
+    "items": [
+      {
+        "title": "Experiencia en Creación de Apps Marrakech",
+        "desc": "Como especialista en creación de aplicaciones en Marrakech, ofrecemos soluciones digitales premium, diseñadas según las normas internacionales. Nuestras aplicaciones cumplen con los últimos requisitos de Google."
+      },
+      {
+        "title": "Estrategia de Desarrollo a Medida",
+        "desc": "Diseñamos aplicaciones de alto rendimiento en Marrakech, combinando tecnologías avanzadas y un enfoque específico para convertir a sus usuarios en clientes leales. Nuestra metodología se adapta a sus necesidades."
+      },
+      {
+        "title": "Rendimiento Técnico Garantizado",
+        "desc": "Nuestras soluciones técnicas incluyen tiempos de carga ultrarrápidos, seguridad reforzada contra ciberamenazas y compatibilidad móvil perfecta. Cada aplicación está optimizada para la fluidez."
+      },
+      {
+        "title": "Posicionamiento y Visibilidad Local",
+        "desc": "Integramos una estrategia de posicionamiento natural (SEO) compleja para posicionar su aplicación en la cima de los resultados de Google. Atraemos tráfico cualificado y relevante para su negocio."
+      },
+      {
+        "title": "Soporte al Cliente Multilingüe",
+        "desc": "Acompañamiento dedicado para empresas en Marrakech, con soporte fluido en francés, árabe e inglés. Ideal para los sectores de turismo, hostelería y comercio local."
+      },
+      {
+        "title": "Seguridad y Mantenimiento Continuo",
+        "desc": "Protección avanzada para su aplicación en Marrakech: auditorías técnicas periódicas, protección contra ataques y vigilancia algorítmica para anticipar las actualizaciones de las tiendas."
+      }
+    ]
+  }
+}
