@@ -153,7 +153,7 @@ export const ApplicationCreationPage: React.FC = () => {
           >
             <div className="absolute inset-0 z-0">
               <img
-                src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/app.jpg"
+                src="https://group-digitalconcept.com/wp-content/uploads/2025/12/app.jpg"
                 alt="Application Development Illustration"
                 className={`w-full h-full object-cover opacity-90 ${!isMobile
                   ? "group-hover:scale-110 transition-transform duration-[2s] ease-out"

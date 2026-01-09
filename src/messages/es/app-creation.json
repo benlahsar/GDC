@@ -146,5 +146,331 @@
         "desc": "Protección avanzada para su aplicación en Marrakech: auditorías técnicas periódicas, protección contra ataques y vigilancia algorítmica para anticipar las actualizaciones de las tiendas."
       }
     ]
+  },
+  "AppDeepExpertise": {
+    "title": "¿Por Qué Elegir Nuestra Agencia para la Creación de Aplicaciones?",
+    "intro": "Como especialista en <strong class='text-black dark:text-white'>creación de aplicaciones</strong>, transformamos sus ideas en herramientas poderosas a través de estrategias de desarrollo a medida.",
+    "items": [
+      {
+        "title": "Auditoría Técnica Completa",
+        "desc": "Realizamos un diagnóstico profundo de su proyecto, identificando cada oportunidad de optimización. Nuestra metodología incluye el análisis del rendimiento técnico y la evaluación de su contenido existente."
+      },
+      {
+        "title": "Optimización del Rendimiento",
+        "desc": "Nuestras soluciones garantizan resultados tangibles: tiempos de carga ultrarrápidos, arquitectura técnica optimizada y seguridad reforzada contra las ciberamenazas."
+      },
+      {
+        "title": "Estrategia de Desarrollo",
+        "desc": "Nuestra metodología exclusiva incluye: diseño UX/UI centrado en la experiencia del usuario, integración de tecnologías híbridas o nativas (React Native, Flutter, Swift) y seguimiento mensual transparente."
+      }
+    ],
+    "cta": "¡Contáctenos!",
+    "process": {
+      "title": "Nuestro Proceso {br} <span class='text-brand-red'>de Creación</span>",
+      "steps": [
+        {
+          "title": "1. Auditoría Estratégica",
+          "desc": "Análisis profundo de sus necesidades, la competencia y las oportunidades técnicas para una especificación perfectamente alineada."
+        },
+        {
+          "title": "2. Optimización Técnica",
+          "desc": "Arquitectura backend de alto rendimiento, seguridad conforme y integración de APIs locales."
+        },
+        {
+          "title": "3. Estrategia de Contenido",
+          "desc": "Despliegue de un enfoque a medida post-lanzamiento con actualizaciones regulares y deep linking estratégico para dominar su mercado."
+        }
+      ]
+    },
+    "expertise": {
+      "title": "Experiencia {br} <span class='text-brand-red'>Técnica</span>",
+      "guaranteesTitle": "Garantías y Calidad:",
+      "guarantees": [
+        "Auditoría completa de necesidades funcionales",
+        "Diseño UI/UX adaptado a los usos",
+        "Integración analítica en tiempo real",
+        "Cumplimiento riguroso de los estándares de las tiendas"
+      ],
+      "objectivesTitle": "Objetivos de Rendimiento:",
+      "objectives": [
+        "Rendimiento técnico óptimo",
+        "Experiencia de usuario fluida",
+        "Retorno de la inversión (ROI)",
+        "Mantenimiento y Seguimiento Mensual"
+      ]
+    }
+  },
+  "AppSolutionSection": {
+    "vision": "Nuestra Visión GDC",
+    "title": "Una Solución Digital {br} a Medida Marrakech.",
+    "intro": "Group Digital Concept, su socio experto en <strong class='text-black dark:text-white'>creación de aplicaciones Marrakech</strong>, le ofrece soluciones innovadoras. Diseñamos plataformas móviles y web de alto rendimiento para impulsar su negocio.",
+    "solutions": [
+      {
+        "title": "Creación de Aplicaciones Marrakech",
+        "desc": "Desarrollamos aplicaciones móviles nativas e híbridas (iOS/Android) que ofrecen una experiencia de usuario fluida e intuitiva.",
+        "subPoints": [
+          "Diseño UX/UI Localizado",
+          "Rendimiento Técnico Optimizado",
+          "Pago Móvil Integrado"
+        ]
+      },
+      {
+        "title": "Aplicaciones Web Profesionales",
+        "desc": "Diseño de Progressive Web Apps (PWA) y plataformas SaaS escalables para satisfacer las necesidades de su empresa.",
+        "subPoints": [
+          "Velocidad y SEO Superior",
+          "Seguridad de Datos",
+          "Escalabilidad sin Límites"
+        ]
+      }
+    ],
+    "engagements": {
+      "title": "Nuestros Compromisos de Calidad",
+      "items": [
+        {
+          "text": "Soluciones orientadas a la conversión y al ROI para su negocio."
+        },
+        {
+          "text": "Rendimiento técnico superior a los estándares de las tiendas."
+        },
+        {
+          "text": "Soporte receptivo y acompañamiento continuo 7 días a la semana."
+        }
+      ]
+    },
+    "freeAudit": "Auditoría de Proyecto Gratuita:",
+    "cta": "Lanzar el Proyecto"
+  },
+  "AppRegionalExpertise": {
+    "items": [
+      {
+        "title": "Experiencia Web Marruecos",
+        "desc": "Estrategias digitales adaptadas al mercado nacional con una visión global.",
+        "city": "MARRUECOS"
+      },
+      {
+        "title": "Lujo y Turismo Marrakech",
+        "desc": "Soluciones digitales premium para hoteles de lujo y riads.",
+        "city": "MARRAKECH"
+      },
+      {
+        "title": "Negocios y E-Commerce Casablanca",
+        "desc": "Plataformas transaccionales robustas para el centro económico del país.",
+        "city": "CASABLANCA"
+      },
+      {
+        "title": "Institucional Rabat",
+        "desc": "Rigor y seguridad para portales institucionales y gubernamentales.",
+        "city": "RABAT"
+      },
+      {
+        "title": "Internacional Tánger",
+        "desc": "Soluciones multilingües para empresas orientadas a la exportación.",
+        "city": "TÁNGER"
+      },
+      {
+        "title": "Turismo y Ocio Agadir",
+        "desc": "Experiencias inmersivas para potenciar el atractivo turístico local.",
+        "city": "AGADIR"
+      }
+    ]
+  },
+  "AppProjectPortfolio": {
+    "badge": "Proyectos",
+    "title": "Nuestro {br} Portfolio Élite",
+    "items": [
+      {
+        "title": "Majorelle Business Center",
+        "logo": "/images/portfolio/majorelle.webp",
+        "accent": "from-brand-red to-red-600"
+      },
+      {
+        "title": "Plancy Call Center",
+        "logo": "/images/portfolio/plancy.webp",
+        "accent": "from-blue-600 to-indigo-600"
+      },
+      {
+        "title": "Entreprise des Compagnons",
+        "logo": "/images/portfolio/compagnons.webp",
+        "accent": "from-emerald-600 to-teal-600"
+      },
+      {
+        "title": "M.M. Réseaux Com",
+        "logo": "/images/portfolio/mmreseaux.webp",
+        "accent": "from-violet-600 to-purple-600"
+      }
+    ]
+  },
+  "AppMethodology": {
+    "badge": "METODOLOGÍA GDC",
+    "title": "Un Proceso {br} <span class='text-brand-red'>De Excelencia</span>",
+    "subtitle": "Hemos desarrollado una metodología rigurosa de 4 pasos para garantizar el éxito de su proyecto digital.",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Auditoría Estratégica",
+        "description": "Análisis profundo de sus necesidades, la competencia y las oportunidades técnicas para una especificación perfectamente alineada."
+      },
+      {
+        "id": "02",
+        "title": "Diseño & UX/UI",
+        "description": "Diseño de interfaces únicas e intuitivas centradas en la experiencia del usuario para maximizar el compromiso."
+      },
+      {
+        "id": "03",
+        "title": "Desarrollo Ágil",
+        "description": "Codificación de alto rendimiento con las últimas tecnologías (Next.js, Flutter) para una solución rápida y segura."
+      },
+      {
+        "id": "04",
+        "title": "Lanzamiento & Monitoreo",
+        "description": "Despliegue en tiendas y servidores, con mantenimiento proactivo para asegurar la longevidad de su aplicación."
+      }
+    ]
+  },
+  "AppDetailedRegionalExpertise": {
+    "badge": "Análisis Territorial",
+    "headerTitle": "Experiencia {br} Regional Detallada",
+    "cta": "Ver detalles",
+    "items": [
+      {
+        "title": "Hub Marrakech & Sur",
+        "desc": "Foco en hostelería de lujo, inmobiliaria de alta gama y servicios turísticos. Creamos experiencias digitales inmersivas que reflejan la elegancia de la ciudad roja.",
+        "image": "https://images.unsplash.com/photo-1597212618440-8062a28d65bd?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Eje Casablanca - Rabat",
+        "desc": "Experiencia en soluciones de comercio electrónico, aplicaciones de negocios y portales institucionales. Apoyamos la transformación digital del corazón económico y administrativo de Marruecos.",
+        "image": "https://images.unsplash.com/photo-1578145289078-43844f770417?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Región Norte & Exportación",
+        "desc": "Desarrollo de plataformas multilingües y soluciones logísticas para Tánger-Med y zonas francas. Una arquitectura web robusta orientada al mercado internacional.",
+        "image": "https://images.unsplash.com/photo-1627389955609-72f697486f05?auto=format&fit=crop&q=80"
+      }
+    ]
+  },
+  "AppTestimonials": {
+    "badge": "Satisfacción del Cliente",
+    "title": "Lo que dicen {br} nuestros {span}",
+    "titleHighlight": "socios",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, Group PlancyCall",
+        "text": "Profesionales y reactivos, supieron entender nuestras necesidades e implementar una estrategia digital eficaz. Nuestra presencia en línea es mucho más eficiente.",
+        "tag": "Experiencia"
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "Directora de Marketing",
+        "text": "Una agencia seria y competente. Su equipo diseñó un sitio de comercio electrónico fluido y seguro para nuestra tienda en línea. ¡Muy satisfecha con el trabajo!",
+        "tag": "E-Commerce"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "Director Comercial",
+        "text": "Recurrimos a ellos para gestionar nuestras campañas publicitarias en línea. Su enfoque específico ha mejorado significativamente nuestro retorno de la inversión.",
+        "tag": "Marketing"
+      }
+    ]
+  },
+  "AppStats": {
+    "header": {
+      "title": "El Impacto de Group Digital Concept",
+      "subtitle": "Cifras que testifican nuestro compromiso con la excelencia."
+    },
+    "items": [
+      {
+        "value": 200,
+        "prefix": "+",
+        "label": "Aplicaciones Creadas"
+      },
+      {
+        "value": 30,
+        "suffix": " Días",
+        "label": "Plazo de Entrega"
+      },
+      {
+        "value": 98,
+        "suffix": " %",
+        "label": "Clientes Satisfechos"
+      },
+      {
+        "value": 15,
+        "prefix": "+",
+        "label": "Expertos Dedicados"
+      },
+      {
+        "value": 100,
+        "prefix": "",
+        "suffix": " %",
+        "label": "Propiedad del Código"
+      }
+    ]
+  },
+  "AppFAQ": {
+    "badge": "Preguntas Frecuentes",
+    "title": "Preguntas {br} Frecuentes",
+    "items": [
+      {
+        "question": "¿Cuál es el plazo de creación de una aplicación?",
+        "answer": "El plazo varía según la complejidad, desde 4 semanas para un MVP hasta 12 semanas para una solución completa."
+      },
+      {
+        "question": "¿Ofrecen mantenimiento después de la entrega?",
+        "answer": "Sí, ofrecemos contratos de mantenimiento para garantizar la seguridad y el rendimiento de su aplicación."
+      },
+      {
+        "question": "¿Estará mi aplicación optimizada para SEO?",
+        "answer": "Absolutamente, todas nuestras soluciones web se construyen con una estructura optimizada para el posicionamiento natural."
+      }
+    ]
+  },
+  "AppProjectForm": {
+    "brading": {
+      "title": "¿Listo para la {br} <span class='text-brand-red'>Expansión</span> ?",
+      "p1": "Confíe su proyecto de creación de aplicaciones a la agencia líder en Marrakech.",
+      "p2": "Nuestros expertos se pondrán en contacto con usted en 24 horas con un estudio personalizado y gratuito.",
+      "experts": "Nuestro Equipo de Élite"
+    },
+    "stepper": [
+      { "id": 1, "label": "Info Contacto" },
+      { "id": 2, "label": "Sus Necesidades" },
+      { "id": 3, "label": "Detalles" }
+    ],
+    "fields": {
+      "name": "Su Nombre Completo",
+      "email": "Correo Profesional",
+      "company": "Nombre de la Empresa",
+      "phone": "Teléfono Móvil",
+      "subject": "Asunto de la Solicitud",
+      "message": "Describa su proyecto..."
+    },
+    "labels": {
+      "employees": "Tamaño del Equipo",
+      "consent": "Acepto que mis datos sean procesados para la gestión de mi solicitud."
+    },
+    "employees_ranges": ["1-10", "11-50", "51-200", "200+"],
+    "services_list": [
+      "Creación de Aplicaciones Móviles",
+      "Desarrollo Web a Medida",
+      "Rediseño de Plataforma SaaS",
+      "Auditoría Técnica y Consultoría"
+    ],
+    "budgets_ranges": [
+      "< 40.000 MAD",
+      "40k - 80k MAD",
+      "80k - 150k MAD",
+      "+ 150.000 MAD"
+    ],
+    "buttons": {
+      "back": "Atrás",
+      "next": "Siguiente",
+      "send": "Enviar el Proyecto"
+    },
+    "country_codes": [
+      { "code": "+212", "flag": "🇲🇦" }
+    ]
   }
 }

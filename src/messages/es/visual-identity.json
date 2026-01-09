@@ -1,0 +1,192 @@
+{
+  "VisualIdentityPage": {
+    "hero": {
+      "badge": "Group Digital Concept",
+      "subtitle": "Su Socio en Branding Digital",
+      "title": "Identidad {br} <span class='text-brand-red'>Visual</span> en {br} Marrakech",
+      "description": "En <strong class='text-black dark:text-white'>Group Digital Concept</strong>, agencia experta en <strong class='text-black dark:text-white'>creación de identidad visual en Marrakech</strong>, transformamos su visión en una narrativa digital cautivadora.",
+      "precision": "Precisión",
+      "innovation": "Innovación",
+      "features": [
+        "Experiencia Localizada en Marrakech",
+        "Contenido 100% Único y Optimizado",
+        "Estrategia Basada en Datos",
+        "Colaboración Transparente",
+        "Compromiso con Resultados"
+      ]
+    },
+    "stats": [
+      {
+        "value": 248,
+        "suffix": "+",
+        "label": "Proyectos de branding {br} digital entregados"
+      },
+      {
+        "value": 92,
+        "suffix": "%",
+        "label": "Satisfacción {br} del Cliente"
+      },
+      {
+        "label": "Tiempo medio {br} de respuesta",
+        "valueText": "2H"
+      }
+    ],
+    "methodology": {
+      "title": "Nuestra {br} Metodología {br} de <span class='text-brand-red'>Trabajo</span>",
+      "steps": [
+        {
+          "id": "01",
+          "title": "Consulta Inicial",
+          "desc": "Iniciamos cada colaboración con una consulta profunda. Discutimos sus necesidades, objetivos y desafíos para comprender plenamente su proyecto. Este paso es crucial para establecer una base sólida para el futuro."
+        },
+        {
+          "id": "02",
+          "title": "Auditoría y Análisis",
+          "desc": "Análisis técnico y creativo de su posicionamiento actual. Identificamos fortalezas y debilidades para construir una estrategia de identidad visual que supere a sus competidores."
+        },
+        {
+          "id": "03",
+          "title": "Desarrollo del Plan de Acción",
+          "desc": "Definición precisa de la hoja de ruta creativa. Elección de colores, tipografías y soportes estratégicos para asegurar la máxima coherencia en todos sus puntos de contacto."
+        },
+        {
+          "id": "04",
+          "title": "Ejecución y Seguimiento",
+          "desc": "Producción de entregables y despliegue de su nueva identidad. Permanecemos a su lado para ajustar y optimizar el impacto visual de su marca a largo plazo."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Testimonios de Nuestros Clientes:",
+      "subtitle": "con Nuestra Agencia Web",
+      "items": [
+        {
+          "name": "Nadia El Fakir",
+          "role": "Gerente de Marketing",
+          "text": "Una agencia seria y competente. Su equipo diseñó un sitio de comercio electrónico fluido y seguro para nuestra tienda en línea. ¡Muy satisfecha con el trabajo!"
+        },
+        {
+          "name": "Amine Tazi",
+          "role": "Director Comercial",
+          "text": "Acudimos a ellos para gestionar nuestras campañas publicitarias en línea. Su enfoque específico mejoró significativamente nuestro retorno de inversión."
+        },
+        {
+          "name": "Salma Bennani",
+          "role": "Diseñadora Gráfica",
+          "text": "Gracias a Group Digital Concept, nuestras redes sociales son más dinámicas y profesionales. Saben cómo crear contenido atractivo adaptado a nuestra audiencia."
+        },
+        {
+          "name": "Anas Rachidi",
+          "role": "Gerente de TI",
+          "text": "¡Servicio técnico de primera! Optimizaron nuestros sistemas informáticos y configuraron soluciones de respaldo confiables. Un verdadero alivio para nuestra empresa."
+        },
+        {
+          "name": "Fatima Zahra El Idrissi",
+          "role": "Directora de Comunicación",
+          "text": "Acudimos a ellos para nuestra identidad visual. Su creatividad y profesionalismo ayudaron a dar una imagen fuerte y coherente a nuestra marca."
+        }
+      ]
+    },
+    "faq": {
+      "badge": "Soporte y Ayuda",
+      "title": "Explore las {br} preguntas <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Frecuentes.</span>",
+      "description": "¿Tiene preguntas sobre la creación de contenido digital? Nuestro equipo de expertos está aquí para iluminarle.",
+      "items": [
+        {
+          "question": "1. ¿Qué tipos de contenido digital ofrecen?",
+          "answer": "Creamos artículos de blog, publicaciones en redes sociales, videos promocionales, infografías, boletines informativos y fichas de productos, todos optimizados para SEO y adaptados a su audiencia."
+        },
+        {
+          "question": "2. ¿Cuánto tiempo se tarda en producir contenido de calidad?",
+          "answer": "El tiempo depende de la complejidad del proyecto. En promedio, un paquete de contenido para redes sociales tarda de 5 a 7 días, mientras que una estrategia editorial completa puede requerir 2 semanas."
+        },
+        {
+          "question": "3. ¿Integran el SEO en su contenido?",
+          "answer": "Absolutamente. Cada texto producido por GDC está optimizado semánticamente para cumplir con los requisitos de los motores de búsqueda, manteniendo al mismo tiempo un tono natural y atractivo para el usuario."
+        },
+        {
+          "question": "4. ¿Ofrecen estrategias de contenido a medida?",
+          "answer": "Sí, nunca utilizamos plantillas genéricas. Cada estrategia se construye después de un análisis profundo de su mercado, público objetivo y metas de conversión."
+        },
+        {
+          "question": "5. ¿Pueden gestionar nuestro contenido en las redes sociales?",
+          "answer": "Sí, nuestro departamento de Redes Sociales puede encargarse de la planificación, creación visual, redacción e interacción con su comunidad en Facebook, Instagram, LinkedIn y TikTok."
+        },
+        {
+          "question": "6. ¿Cuáles son sus tarifas para la creación de contenido digital?",
+          "answer": "Nuestras tarifas son flexibles y se adaptan al tamaño de su proyecto. Ofrecemos paquetes mensuales para un apoyo regular o tarifas a la carta para necesidades puntuales.",
+          "isHighlighted": true
+        },
+        {
+          "question": "7. ¿Cómo miden la eficacia del contenido?",
+          "answer": "Utilizamos herramientas de análisis avanzadas para rastrear el alcance, el compromiso, la tasa de clics y, sobre todo, las conversiones generadas por cada pieza de contenido producida."
+        },
+        {
+          "question": "8. ¿Trabajan con empresas locales en Marrakech?",
+          "answer": "Marrakech es nuestra base operativa. Conocemos perfectamente el panorama económico local y las expectativas de los clientes de la región, lo que nos permite ser ultra relevantes."
+        },
+        {
+          "question": "9. ¿Qué sectores de actividad cubren?",
+          "answer": "Contamos con una experiencia transversal: Hotelería y Riads, Inmobiliaria de lujo, Comercio electrónico, Servicios B2B y Médico. Cada sector se beneficia de un tono y estilo adaptados."
+        },
+        {
+          "question": "10. ¿Garantizan la originalidad del contenido?",
+          "answer": "Esa es nuestra promesa número uno. Todo nuestro contenido es creado desde cero por nuestros expertos, garantizando la ausencia de plagio y el respeto total de su propiedad intelectual."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Agencia Web y {br} Comunicación Digital {br} Innovadora",
+      "p1": "No somos solo una agencia de marketing digital. Acompañamos a las empresas con soluciones a medida para potenciar su presencia en línea y maximizar su impacto.",
+      "p2": "Con sede en Marruecos, combinamos experiencia local y tendencias internacionales para ofrecer estrategias de alto rendimiento adaptadas a cada proyecto.",
+      "satisfied_clients": "Clientes Satisfechos",
+      "form": {
+        "stepper": [
+          { "id": 1, "label": "Información" },
+          { "id": 2, "label": "Servicio deseado" },
+          { "id": 3, "label": "Detalles" }
+        ],
+        "success": {
+          "title": "¡Solicitud Recibida!",
+          "text": "Gracias por su confianza. {br} Nuestros expertos se pondrán en contacto con usted en 24 horas.",
+          "button": "Nueva Solicitud"
+        },
+        "fields": {
+          "name": "Nombre",
+          "email": "Correo electrónico",
+          "company": "Empresa",
+          "employees": "Número de empleados",
+          "phone": "Teléfono",
+          "needs": "Seleccione sus necesidades:",
+          "project": "Cuéntenos sobre su proyecto:",
+          "placeholder_details": "Objetivos, plazos, presupuesto estimado...",
+          "placeholder_budget": "Presupuesto aproximado"
+        },
+        "services": [
+          { "id": "identite", "label": "Identidad Visual" },
+          { "id": "logo", "label": "Logotipo y Marca" },
+          { "id": "web", "label": "Sitio Web" },
+          { "id": "social", "label": "Redes Sociales" },
+          { "id": "ads", "label": "Publicidad" },
+          { "id": "other", "label": "Otro" }
+        ],
+        "budgets": ["< 5k MAD", "5-15k MAD", "15-50k MAD", "+50k MAD"],
+        "buttons": {
+          "back": "Anterior",
+          "next": "Siguiente",
+          "confirm": "Confirmar"
+        }
+      }
+    },
+    "final_cta": {
+      "title": "Hablemos de {br} su proyecto.",
+      "button": "Hablemos de un proyecto"
+    },
+    "countries": {
+        "MA": "Marruecos",
+        "FR": "Francia",
+        "US": "EE. UU.",
+        "UK": "Reino Unido"
+    }
+  }
+}

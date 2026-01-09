@@ -146,5 +146,331 @@
         "desc": "Advanced protection for your application in Marrakech: regular technical audits, protection against attacks, and algorithmic monitoring to anticipate store updates."
       }
     ]
+  },
+  "AppDeepExpertise": {
+    "title": "Why Choose Our Agency for Application Creation?",
+    "intro": "As a specialist in <strong class='text-black dark:text-white'>application creation</strong>, we transform your ideas into powerful tools through tailor-made development strategies.",
+    "items": [
+      {
+        "title": "Complete Technical Audit",
+        "desc": "We carry out an in-depth diagnosis of your project, identifying every optimization opportunity. Our methodology includes analyzing technical performance and evaluating your existing content."
+      },
+      {
+        "title": "Performance Optimization",
+        "desc": "Our solutions guarantee tangible results: ultra-fast loading times, optimized technical architecture, and reinforced security against cyber threats."
+      },
+      {
+        "title": "Development Strategy",
+        "desc": "Our exclusive methodology includes: UX/UI design centered on user experience, integration of hybrid or native technologies (React Native, Flutter, Swift), and transparent monthly monitoring."
+      }
+    ],
+    "cta": "Contact Us!",
+    "process": {
+      "title": "Our Creation {br} <span class='text-brand-red'>Process</span>",
+      "steps": [
+        {
+          "title": "1. Strategic Audit",
+          "desc": "In-depth analysis of your needs, competition, and technical opportunities for a perfectly aligned specification."
+        },
+        {
+          "title": "2. Technical Optimization",
+          "desc": "High-performance backend architecture, compliant security, and integration of local APIs."
+        },
+        {
+          "title": "3. Content Strategy",
+          "desc": "Deployment of a tailor-made post-launch approach with regular updates and strategic deep linking to dominate your market."
+        }
+      ]
+    },
+    "expertise": {
+      "title": "Technical {br} <span class='text-brand-red'>Expertise</span>",
+      "guaranteesTitle": "Guarantees & Quality:",
+      "guarantees": [
+        "Complete audit of functional needs",
+        "UI/UX design adapted to uses",
+        "Real-time analytical integration",
+        "Strict compliance with store standards"
+      ],
+      "objectivesTitle": "Performance Objectives:",
+      "objectives": [
+        "Optimal technical performance",
+        "Fluid user experience",
+        "Return on investment (ROI)",
+    "Monthly Maintenance & Monitoring"
+      ]
+    }
+  },
+  "AppSolutionSection": {
+    "vision": "Our GDC Vision",
+    "title": "A Custom Digital {br} Solution Marrakech.",
+    "intro": "Group Digital Concept, your expert partner in <strong class='text-black dark:text-white'>application creation Marrakech</strong>, offers you innovative solutions. We design high-performance mobile and web platforms to propel your business.",
+    "solutions": [
+      {
+        "title": "Application Creation Marrakech",
+        "desc": "We develop native and hybrid mobile applications (iOS/Android) offering a fluid and intuitive user experience.",
+        "subPoints": [
+          "Localized UX/UI Design",
+          "Optimized Technical Performance",
+          "Integrated Mobile Payment"
+        ]
+      },
+      {
+        "title": "Professional Web Applications",
+        "desc": "Design of Progressive Web Apps (PWA) and scalable SaaS platforms to meet your company's needs.",
+        "subPoints": [
+          "Superior Speed and SEO",
+          "Data Security",
+          "Limitless Scalability"
+        ]
+      }
+    ],
+    "engagements": {
+      "title": "Our Quality Commitments",
+      "items": [
+        {
+          "text": "Conversion-oriented solutions and ROI for your business."
+        },
+        {
+          "text": "Technical performance superior to store standards."
+        },
+        {
+          "text": "Responsive support and continuous 7/7 assistance."
+        }
+      ]
+    },
+    "freeAudit": "Free Project Audit:",
+    "cta": "Launch the Project"
+  },
+  "AppRegionalExpertise": {
+    "items": [
+      {
+        "title": "Web Expertise Morocco",
+        "desc": "Digital strategies adapted to the national market with a global vision.",
+        "city": "MOROCCO"
+      },
+      {
+        "title": "Luxury & Tourism Marrakech",
+        "desc": "Premium digital solutions for luxury hotels and riads.",
+        "city": "MARRAKECH"
+      },
+      {
+        "title": "Business & E-Commerce Casablanca",
+        "desc": "Robust transactional platforms for the country's economic hub.",
+        "city": "CASABLANCA"
+      },
+      {
+        "title": "Institutional Rabat",
+        "desc": "Rigor and security for institutional and government portals.",
+        "city": "RABAT"
+      },
+      {
+        "title": "International Tangier",
+        "desc": "Multilingual solutions for export-oriented companies.",
+        "city": "TANGIER"
+      },
+      {
+        "title": "Tourism & Leisure Agadir",
+        "desc": "Immersive experiences to boost local tourist attractiveness.",
+        "city": "AGADIR"
+      }
+    ]
+  },
+  "AppProjectPortfolio": {
+    "badge": "Our Work",
+    "title": "Our {br} Elite Portfolio",
+    "items": [
+      {
+        "title": "Majorelle Business Center",
+        "logo": "/images/portfolio/majorelle.webp",
+        "accent": "from-brand-red to-red-600"
+      },
+      {
+        "title": "Plancy Call Center",
+        "logo": "/images/portfolio/plancy.webp",
+        "accent": "from-blue-600 to-indigo-600"
+      },
+      {
+        "title": "Entreprise des Compagnons",
+        "logo": "/images/portfolio/compagnons.webp",
+        "accent": "from-emerald-600 to-teal-600"
+      },
+      {
+        "title": "M.M. Réseaux Com",
+        "logo": "/images/portfolio/mmreseaux.webp",
+        "accent": "from-violet-600 to-purple-600"
+      }
+    ]
+  },
+  "AppMethodology": {
+    "badge": "GDC METHODOLOGY",
+    "title": "A Process {br} <span class='text-brand-red'>Of Excellence</span>",
+    "subtitle": "We have developed a rigorous 4-step methodology to guarantee the success of your digital project.",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Strategic Audit",
+        "description": "In-depth analysis of your needs, competition, and technical opportunities for a perfectly aligned specification."
+      },
+      {
+        "id": "02",
+        "title": "Design & UX/UI",
+        "description": "Designing unique and intuitive interfaces centered on the user experience to maximize engagement."
+      },
+      {
+        "id": "03",
+        "title": "Agile Development",
+        "description": "High-performance coding with the latest technologies (Next.js, Flutter) for a fast and secure solution."
+      },
+      {
+        "id": "04",
+        "title": "Launch & Monitoring",
+        "description": "Deployment on stores and servers, with proactive maintenance to ensure the longevity of your application."
+      }
+    ]
+  },
+  "AppDetailedRegionalExpertise": {
+    "badge": "Territorial Analysis",
+    "headerTitle": "Detailed {br} Regional Expertise",
+    "cta": "See details",
+    "items": [
+      {
+        "title": "Marrakech & South Hub",
+        "desc": "Focus on luxury hospitality, high-end real estate, and tourism services. We create immersive digital experiences that reflect the elegance of the red city.",
+        "image": "https://images.unsplash.com/photo-1597212618440-8062a28d65bd?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Casablanca - Rabat Axis",
+        "desc": "Expertise in e-commerce solutions, business applications, and institutional portals. We support the digital transformation of Morocco's economic and administrative heart.",
+        "image": "https://images.unsplash.com/photo-1578145289078-43844f770417?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "North & Export Region",
+        "desc": "Development of multilingual platforms and logistics solutions for Tangier-Med and free zones. A robust web architecture turned towards the international market.",
+        "image": "https://images.unsplash.com/photo-1627389955609-72f697486f05?auto=format&fit=crop&q=80"
+      }
+    ]
+  },
+  "AppTestimonials": {
+    "badge": "Client Satisfaction",
+    "title": "What our {br} partners {span}",
+    "titleHighlight": "say",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, Group PlancyCall",
+        "text": "Professional and reactive, they understood our needs and implemented an effective digital strategy. Our online presence is much more efficient.",
+        "tag": "Expertise"
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "Marketing Manager",
+        "text": "A serious and competent agency. Their team designed a fluid and secure e-commerce site for our online shop. Very satisfied with the work!",
+        "tag": "E-Commerce"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "Commercial Director",
+        "text": "We called on them to manage our online advertising campaigns. Their targeted approach has significantly improved our return on investment.",
+        "tag": "Marketing"
+      }
+    ]
+  },
+  "AppStats": {
+    "header": {
+      "title": "The Impact of Group Digital Concept",
+      "subtitle": "Numbers that testify to our commitment to excellence."
+    },
+    "items": [
+      {
+        "value": 200,
+        "prefix": "+",
+        "label": "Applications Created"
+      },
+      {
+        "value": 30,
+        "suffix": " Days",
+        "label": "Delivery Time"
+      },
+      {
+        "value": 98,
+        "suffix": " %",
+        "label": "Satisfied Clients"
+      },
+      {
+        "value": 15,
+        "prefix": "+",
+        "label": "Dedicated Experts"
+      },
+      {
+        "value": 100,
+        "prefix": "",
+        "suffix": " %",
+        "label": "Code Ownership"
+      }
+    ]
+  },
+  "AppFAQ": {
+    "badge": "FAQ",
+    "title": "Frequently {br} Asked Questions",
+    "items": [
+      {
+        "question": "What is the lead time for creating an application?",
+        "answer": "The lead time varies by complexity, ranging from 4 weeks for an MVP to 12 weeks for a complete solution."
+      },
+      {
+        "question": "Do you offer maintenance after delivery?",
+        "answer": "Yes, we offer maintenance contracts to guarantee the security and performance of your application."
+      },
+      {
+        "question": "Will my application be optimized for SEO?",
+        "answer": "Absolutely, all our web solutions are built with an optimized structure for natural referencing."
+      }
+    ]
+  },
+  "AppProjectForm": {
+    "brading": {
+      "title": "Ready for {br} <span class='text-brand-red'>Expansion</span> ?",
+      "p1": "Entrust your application creation project to the leading agency in Marrakech.",
+      "p2": "Our experts will get back to you within 24 hours with a personalized and free study.",
+      "experts": "Our Elite Team"
+    },
+    "stepper": [
+      { "id": 1, "label": "Contact Info" },
+      { "id": 2, "label": "Your Needs" },
+      { "id": 3, "label": "Details" }
+    ],
+    "fields": {
+      "name": "Your Full Name",
+      "email": "Professional Email",
+      "company": "Company Name",
+      "phone": "Mobile Phone",
+      "subject": "Request Subject",
+      "message": "Describe your project..."
+    },
+    "labels": {
+      "employees": "Team Size",
+      "consent": "I agree that my data will be processed for the management of my request."
+    },
+    "employees_ranges": ["1-10", "11-50", "51-200", "200+"],
+    "services_list": [
+      "Mobile Application Creation",
+      "Tailor-Made Web Development",
+      "SaaS Platform Redesign",
+      "Technical Audit & Consulting"
+    ],
+    "budgets_ranges": [
+      "< 40,000 MAD",
+      "40k - 80k MAD",
+      "80k - 150k MAD",
+      "+ 150,000 MAD"
+    ],
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "send": "Send the Project"
+    },
+    "country_codes": [
+      { "code": "+212", "flag": "🇲🇦" }
+    ]
   }
 }

@@ -154,7 +154,7 @@
     },
     "cards": {
       "client_heart": {
-        "title": "Mettre <i class=\"font-serif text-brand-red\">Nos Clients</i> au <i class=\"font-serif\">Cœur</i> de Chaque Projet."
+        "title": "Mettre <i><red>Nos Clients</red></i> au <i>Cœur</i> de Chaque Projet."
       },
       "vision_mission": {
         "description": "Nous croyons que le succès naît d'une écoute active. Nous construisons des relations durables, transformant chaque défi en opportunité.",
