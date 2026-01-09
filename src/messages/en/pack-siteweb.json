@@ -1,0 +1,125 @@
+{
+  "pack-siteweb": {
+    "hero": {
+      "badge": "GDC ELITE SOLUTIONS",
+      "vision": "PROPEL YOUR VISION",
+      "title_part1": "OUR PACKS",
+      "title_part2": "WEBSITE",
+      "subtitle": "Excellence at the service of your growth",
+      "scroll": "Scroll to explore"
+    },
+    "values": {
+      "v1": {
+        "title": "Custom Made",
+        "desc": "Tailor-made solutions according to your specific needs for maximum performance."
+      },
+      "v2": {
+        "title": "Innovative",
+        "desc": "Native integration of the latest technologies to stay ahead."
+      },
+      "v3": {
+        "title": "Effective",
+        "desc": "Tangible and measurable results from the first day of going online."
+      },
+      "protocol": "Protocol v.9"
+    },
+    "pricing": {
+      "badge": "EXCLUSIVE OFFERS • GDC ELITE",
+      "title": "Our agency accompanies you during your <highlight>first steps</highlight> in the digital world",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "485",
+          "currency": "€",
+          "tax": "VAT excl.",
+          "features": [
+            "2 Showcase Page + Contact Page",
+            "Simple Design",
+            "Basic content included",
+            "Speed optimization",
+            "Basic security",
+            "Domain/hosting support"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "975",
+          "currency": "€",
+          "tax": "VAT excl.",
+          "features": [
+            "5 Showcase Page + Contact Page",
+            "Responsive Design",
+            "UX user experience",
+            "Custom content included",
+            "Speed optimization",
+            "Advanced security",
+            "Domain/hosting support"
+          ]
+        },
+        "ultime": {
+          "name": "Ultimate",
+          "price": "Custom",
+          "currency": "",
+          "tax": "",
+          "features": [
+            "+5 Pages",
+            "Contact Page",
+            "Responsive Design",
+            "UX user experience",
+            "Custom content included",
+            "Speed optimization",
+            "Advanced security",
+            "Domain/hosting support"
+          ]
+        }
+      },
+      "starting_at": "Starting from",
+      "cta": "Contact Us!"
+    },
+    "showcase": {
+      "custom_site": {
+        "title": "Custom Website",
+        "features": [
+          "Custom design up to 5 pages",
+          "10 FREE Images",
+          "Social media integration",
+          "Google Maps inclusion",
+          "Interactive contact forms",
+          "Mobile-responsive design",
+          "Team of three experienced developers"
+        ]
+      },
+      "hub": {
+        "title": "Complete <highlight>Website Creation</highlight> Solution"
+      },
+      "benefits": {
+        "title": "ADVANTAGES",
+        "items": [
+          "Artistic director dedicated to each project",
+          "Exclusive ownership rights",
+          "Total satisfaction commitment",
+          "100% unique design guarantee",
+          "Support available",
+          "Exemplary after-sales service"
+        ]
+      },
+      "logo": {
+        "title": "LOGO DESIGN",
+        "features": [
+          "3 unique logo proposals",
+          "2 revision sessions included",
+          "Team of three specialized designers",
+          "Logo and brand icon creation",
+          "Logo animation",
+          "Logo usage guides",
+          "Deliverable files (AI, PDF, SVG, EPS, PNG)"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to <highlight>conquer</highlight> the web?",
+      "subtitle": "Marrakech Digital Excellence • v.9",
+      "button": "START NOW"
+    }
+  }
+}

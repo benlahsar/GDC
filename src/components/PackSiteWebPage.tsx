@@ -31,68 +31,46 @@ import {
   Users,
   ChevronRight,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { AnimatedCounter } from "./AnimatedCounter";
 
-const PRICING_PACKS = [
-  {
-    name: "Starter",
-    price: "485",
-    currency: "€",
-    tax: "HT",
-    features: [
-      "2 Page Vitrine + Page de Contact",
-      "Design Simple",
-      "Contenu de base inclus",
-      "Optimisation de la vitesse",
-      "Sécurité de base",
-      "Accompagnement domaine/hébergement",
-    ],
-    highlight: false,
-    color: "from-blue-500/10 to-indigo-500/10",
-    accent: "blue",
-  },
-  {
-    name: "Pro",
-    price: "975",
-    currency: "€",
-    tax: "HT",
-    features: [
-      "5 Page Vitrine + Page de Contact",
-      "Design Responsive",
-      "Expérience utilisateur UX",
-      "Contenu sur mesure inclus",
-      "Optimisation de la vitesse",
-      "Sécurité avancée",
-      "Accompagnement domaine/hébergement",
-    ],
-    highlight: true,
-    color: "from-brand-red/20 to-red-900/20",
-    accent: "red",
-  },
-  {
-    name: "Ultime",
-    price: "Sur mesure",
-    currency: "",
-    tax: "",
-    features: [
-      "+5 Pages",
-      "Page de Contact",
-      "Design Responsive",
-      "Expérience utilisateur UX",
-      "Contenu sur mesure inclus",
-      "Optimisation de la vitesse",
-      "Sécurité avancée",
-      "Accompagnement domaine/hébergement",
-    ],
-    highlight: false,
-    color: "from-purple-500/10 to-pink-600/10",
-    accent: "purple",
-  },
-];
-
 export const PackSiteWebPage: React.FC = () => {
+  const t = useTranslations("pack-siteweb");
   const valuesSectionRef = useRef<HTMLElement>(null);
   const [isMobile, setIsMobile] = useState(false);
+
+  const PRICING_PACKS = [
+    {
+      name: t("pricing.packs.starter.name"),
+      price: t("pricing.packs.starter.price"),
+      currency: t("pricing.packs.starter.currency"),
+      tax: t("pricing.packs.starter.tax"),
+      features: t.raw("pricing.packs.starter.features"),
+      highlight: false,
+      color: "from-blue-500/10 to-indigo-500/10",
+      accent: "blue",
+    },
+    {
+      name: t("pricing.packs.pro.name"),
+      price: t("pricing.packs.pro.price"),
+      currency: t("pricing.packs.pro.currency"),
+      tax: t("pricing.packs.pro.tax"),
+      features: t.raw("pricing.packs.pro.features"),
+      highlight: true,
+      color: "from-brand-red/20 to-red-900/20",
+      accent: "red",
+    },
+    {
+      name: t("pricing.packs.ultime.name"),
+      price: t("pricing.packs.ultime.price"),
+      currency: t("pricing.packs.ultime.currency"),
+      tax: t("pricing.packs.ultime.tax"),
+      features: t.raw("pricing.packs.ultime.features"),
+      highlight: false,
+      color: "from-purple-500/10 to-pink-600/10",
+      accent: "purple",
+    },
+  ];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -136,7 +114,7 @@ export const PackSiteWebPage: React.FC = () => {
           >
             <Sparkles size={14} className="text-brand-red animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-[0.5em] text-black dark:text-white">
-              GDC ELITE SOLUTIONS
+              {t("hero.badge")}
             </span>
           </div>
 
@@ -146,7 +124,7 @@ export const PackSiteWebPage: React.FC = () => {
             }`}
             style={!isMobile ? { animationDelay: "100ms" } : {}}
           >
-            PROPULSEZ VOTRE VISION
+            {t("hero.vision")}
           </p>
 
           <h1
@@ -155,9 +133,9 @@ export const PackSiteWebPage: React.FC = () => {
             }`}
             style={!isMobile ? { animationDelay: "200ms" } : {}}
           >
-            NOS PACKS <br />
+            {t("hero.title_part1")} <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-red-800 drop-shadow-xl">
-              SITE WEB
+              {t("hero.title_part2")}
             </span>
           </h1>
 
@@ -170,7 +148,7 @@ export const PackSiteWebPage: React.FC = () => {
             <div className="flex items-center gap-4">
               <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-brand-red"></div>
               <span className="text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest text-sm">
-                L'Excellence au service de votre croissance
+                {t("hero.subtitle")}
               </span>
               <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-brand-red"></div>
             </div>
@@ -180,7 +158,7 @@ export const PackSiteWebPage: React.FC = () => {
                 <div className="w-1 h-2 bg-black dark:bg-white rounded-full animate-bounce"></div>
               </div>
               <span className="text-[8px] font-black uppercase tracking-[0.5em] text-black dark:text-white">
-                Scroll to explore
+                {t("hero.scroll")}
               </span>
             </div>
           </div>
@@ -197,22 +175,22 @@ export const PackSiteWebPage: React.FC = () => {
           {[
             {
               id: "01",
-              title: "Sur Mesure",
-              desc: "Des solutions ciselées selon vos besoins spécifiques pour une performance maximale.",
+              title: t("values.v1.title"),
+              desc: t("values.v1.desc"),
               icon: Hexagon,
               color: "from-orange-500/20 to-red-500/20",
             },
             {
               id: "02",
-              title: "Innovantes",
-              desc: "Intégration native des dernières technologies pour garder une longueur d'avance.",
+              title: t("values.v2.title"),
+              desc: t("values.v2.desc"),
               icon: Zap,
               color: "from-purple-500/20 to-indigo-500/20",
             },
             {
               id: "03",
-              title: "Efficaces",
-              desc: "Résultats tangibles et mesurables dès le premier jour de mise en ligne.",
+              title: t("values.v3.title"),
+              desc: t("values.v3.desc"),
               icon: Rocket,
               color: "from-red-500/20 to-brand-red/20",
             },
@@ -298,7 +276,7 @@ export const PackSiteWebPage: React.FC = () => {
                   }`}
                 >
                   <span className="text-[10px] font-black uppercase tracking-widest text-brand-red">
-                    Protocol v.9
+                    {t("values.protocol")}
                   </span>
                   <div className="flex gap-1">
                     {[1, 2, 3].map((dot) => (
@@ -329,13 +307,15 @@ export const PackSiteWebPage: React.FC = () => {
           <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-brand-red/30 bg-brand-red/5 text-brand-red mb-12">
             <Crown size={16} className={!isMobile ? "animate-pulse" : ""} />
             <span className="text-[10px] font-black uppercase tracking-[0.5em]">
-              OFFRES EXCLUSIVES • GDC ELITE
+              {t("pricing.badge")}
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-black dark:text-white tracking-tighter leading-[1.0] mb-12 uppercase italic">
-            Notre agence vous accompagne lors de vos{" "}
-            <span className="text-brand-red not-italic">premiers pas</span> dans
-            le monde numérique
+            {t.rich("pricing.title", {
+              highlight: (chunks) => (
+                <span className="text-brand-red not-italic">{chunks}</span>
+              ),
+            })}
           </h2>
           <div className="h-1.5 w-32 bg-brand-red mx-auto rounded-full shadow-[0_0_20px_red]"></div>
         </div>
@@ -369,7 +349,7 @@ export const PackSiteWebPage: React.FC = () => {
               )}
               <div className="mb-10 relative z-10">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-black dark:text-white">
-                  À partir de
+                  {t("pricing.starting_at")}
                 </div>
                 <h3
                   className={`text-3xl font-black mt-6 uppercase tracking-tight ${
@@ -398,7 +378,7 @@ export const PackSiteWebPage: React.FC = () => {
               </div>
               <div className="h-px w-full bg-black/5 dark:bg-white/10 mb-12 relative z-10"></div>
               <ul className="space-y-6 mb-16 flex-grow relative z-10">
-                {pack.features.map((feat, fIdx) => (
+                {pack.features.map((feat: string, fIdx: number) => (
                   <li key={fIdx} className="flex items-start gap-4 group/item">
                     <div
                       className={`mt-1.5 w-2 h-2 rounded-full transition-all duration-500 ${
@@ -434,7 +414,7 @@ export const PackSiteWebPage: React.FC = () => {
                     : ""
                 }`}
               >
-                <span className="relative z-10">Contactez-Nous !</span>
+                <span className="relative z-10">{t("pricing.cta")}</span>
               </button>
             </div>
           ))}
@@ -493,34 +473,28 @@ export const PackSiteWebPage: React.FC = () => {
                   <Monitor size={32} />
                 </div>
                 <h3 className="text-3xl md:text-4xl font-black text-black dark:text-white mb-10 tracking-tighter leading-none uppercase">
-                  Site Web <br /> Personnalisé
+                  {t.rich("showcase.custom_site.title")}
                 </h3>
                 <ul className="space-y-6">
-                  {[
-                    "Conception sur mesure jusqu'à 5 pages",
-                    "10 Images GRATUITES",
-                    "Intégration réseaux sociaux",
-                    "Inclusion de Google Maps",
-                    "Formulaires de contact interactifs",
-                    "Design responsive adapté aux mobiles",
-                    "Équipe de trois développeurs expérimentés",
-                  ].map((txt, i) => (
-                    <li key={i} className="flex items-start gap-4 group/item">
-                      <CheckCircle2
-                        size={16}
-                        className="text-brand-red mt-1 shrink-0"
-                      />
-                      <span
-                        className={`text-sm md:text-base font-bold text-gray-600 dark:text-gray-400 transition-colors ${
-                          !isMobile
-                            ? "group-hover/item:text-black dark:group-hover/item:text-white"
-                            : ""
-                        }`}
-                      >
-                        {txt}
-                      </span>
-                    </li>
-                  ))}
+                  {(t.raw("showcase.custom_site.features") as string[]).map(
+                    (txt, i) => (
+                      <li key={i} className="flex items-start gap-4 group/item">
+                        <CheckCircle2
+                          size={16}
+                          className="text-brand-red mt-1 shrink-0"
+                        />
+                        <span
+                          className={`text-sm md:text-base font-bold text-gray-600 dark:text-gray-400 transition-colors ${
+                            !isMobile
+                              ? "group-hover/item:text-black dark:group-hover/item:text-white"
+                              : ""
+                          }`}
+                        >
+                          {txt}
+                        </span>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
@@ -528,10 +502,13 @@ export const PackSiteWebPage: React.FC = () => {
             <div className="flex flex-col items-center justify-between gap-12 py-10 lg:py-0 h-full">
               <div className="text-center group/hub-header">
                 <h2 className="text-3xl md:text-4xl font-black text-black dark:text-white uppercase tracking-tighter leading-tight mb-4">
-                  Solution Complète de <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-400 dark:from-brand-red dark:to-red-300 font-black">
-                    Création Site Web
-                  </span>
+                  {t.rich("showcase.hub.title", {
+                    highlight: (chunks) => (
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-400 dark:from-brand-red dark:to-red-300 font-black">
+                        {chunks}
+                      </span>
+                    ),
+                  })}
                 </h2>
               </div>
 
@@ -577,30 +554,25 @@ export const PackSiteWebPage: React.FC = () => {
                     `}
               >
                 <h3 className="text-2xl font-black text-black dark:text-white mb-10 tracking-tight uppercase border-b border-black/5 dark:border-white/5 pb-4">
-                  AVANTAGES
+                  {t("showcase.benefits.title")}
                 </h3>
                 <ul className="space-y-5">
-                  {[
-                    "Directeur artistique dédié à chaque projet",
-                    "Droits de propriété exclusifs",
-                    "Engagement de satisfaction totale",
-                    "Garantie de conception 100% unique",
-                    "Support disponible",
-                    "Service après-vente exemplaire",
-                  ].map((txt, i) => (
-                    <li key={i} className="flex items-center gap-4">
-                      <div className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_8px_red]"></div>
-                      <span
-                        className={`text-xs md:text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors ${
-                          !isMobile
-                            ? "group-hover:text-black dark:group-hover:text-white"
-                            : ""
-                        }`}
-                      >
-                        {txt}
-                      </span>
-                    </li>
-                  ))}
+                  {(t.raw("showcase.benefits.items") as string[]).map(
+                    (txt, i) => (
+                      <li key={i} className="flex items-center gap-4">
+                        <div className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_8px_red]"></div>
+                        <span
+                          className={`text-xs md:text-sm font-bold text-gray-600 dark:text-gray-400 transition-colors ${
+                            !isMobile
+                              ? "group-hover:text-black dark:group-hover:text-white"
+                              : ""
+                          }`}
+                        >
+                          {txt}
+                        </span>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
@@ -624,34 +596,28 @@ export const PackSiteWebPage: React.FC = () => {
                   <Palette size={32} />
                 </div>
                 <h3 className="text-3xl md:text-4xl font-black text-black dark:text-white mb-10 tracking-tighter leading-none uppercase">
-                  LOGO <br /> DESIGN
+                  {t.rich("showcase.logo.title")}
                 </h3>
                 <ul className="space-y-6">
-                  {[
-                    "3 propositions de logo uniques",
-                    "2 séances de révisions incluses",
-                    "Équipe de trois designers spécialisés",
-                    "Création de logo et icône de marque",
-                    "Animation du logo",
-                    "Guides d'utilisation du logo",
-                    "Fichiers livrables (AI, PDF, SVG, EPS, PNG)",
-                  ].map((txt, i) => (
-                    <li key={i} className="flex items-start gap-4 group/item">
-                      <CheckCircle2
-                        size={16}
-                        className="text-brand-red mt-1 shrink-0"
-                      />
-                      <span
-                        className={`text-sm md:text-base font-bold text-gray-600 dark:text-gray-400 transition-colors ${
-                          !isMobile
-                            ? "group-hover/item:text-black dark:group-hover/item:text-white"
-                            : ""
-                        }`}
-                      >
-                        {txt}
-                      </span>
-                    </li>
-                  ))}
+                  {(t.raw("showcase.logo.features") as string[]).map(
+                    (txt, i) => (
+                      <li key={i} className="flex items-start gap-4 group/item">
+                        <CheckCircle2
+                          size={16}
+                          className="text-brand-red mt-1 shrink-0"
+                        />
+                        <span
+                          className={`text-sm md:text-base font-bold text-gray-600 dark:text-gray-400 transition-colors ${
+                            !isMobile
+                              ? "group-hover/item:text-black dark:group-hover/item:text-white"
+                              : ""
+                          }`}
+                        >
+                          {txt}
+                        </span>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
@@ -672,14 +638,16 @@ export const PackSiteWebPage: React.FC = () => {
 
             <div className="relative z-10 flex-1">
               <h2 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase leading-[0.8] mb-8">
-                Prêt à <br />
-                <span className="text-brand-red italic drop-shadow-[0_0_50px_rgba(255,0,0,0.4)]">
-                  conquérir
-                </span>{" "}
-                <br /> le web ?
+                {t.rich("cta.title", {
+                  highlight: (chunks) => (
+                    <span className="text-brand-red italic drop-shadow-[0_0_50px_rgba(255,0,0,0.4)]">
+                      {chunks}
+                    </span>
+                  ),
+                })}
               </h2>
               <p className="text-gray-400 dark:text-gray-500 font-black uppercase tracking-[0.6em] text-[10px] md:text-xs">
-                Excellence Digitale Marrakech • v.9
+                {t("cta.subtitle")}
               </p>
             </div>
 
@@ -688,7 +656,7 @@ export const PackSiteWebPage: React.FC = () => {
                 href="#contact"
                 className="group/btn inline-flex items-center gap-10 px-14 py-10 bg-white dark:bg-black text-black dark:text-white rounded-full font-black uppercase tracking-[0.4em] text-[13px] hover:scale-110 transition-all shadow-2xl"
               >
-                DÉMARRER{" "}
+                {t("cta.button")}{" "}
                 <ArrowRight className="group-hover/btn:translate-x-4 transition-transform duration-700 w-8 h-8" />
               </a>
             </div>

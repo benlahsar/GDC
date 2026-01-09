@@ -23,12 +23,15 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...(await import(`../messages/${locale}/maintenance.json`)).default,
       ...(await import(`../messages/${locale}/app-creation.json`)).default,
       ...(await import(`../messages/${locale}/visual-identity.json`)).default,
+      ...(await import(`../messages/${locale}/pack-siteweb.json`)).default,
+      ...(await import(`../messages/${locale}/pack-seo.json`)).default,
+      portfolio: (await import(`../messages/${locale}/portfolio.json`)).default,
       seo: (await import(`../messages/${locale}/seo.json`)).default,
       'sea-smo': (await import(`../messages/${locale}/sea-smo.json`)).default,
       footer: (await import(`../messages/${locale}/footer.json`)).default,
       // ...(await import(`../../messages/${locale}/about.json`)).default,
       // ...(await import(`../../messages/${locale}/services.json`)).default,
-      // ...(await import(`../../messages/${locale}/contact.json`)).default,
+      contact: (await import(`../messages/${locale}/contact.json`)).default,
       // ...(await import(`../../messages/${locale}/components.json`)).default,
     }
   };

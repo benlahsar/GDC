@@ -1,0 +1,112 @@
+{
+  "pack-seo": {
+    "hero": {
+      "title": "Discover Our <highlight>SEO Pack</highlight>"
+    },
+    "bento": {
+      "performance": "Performance Analysis",
+      "ecommerce": "E-commerce Sites",
+      "showcase": "Showcase Sites",
+      "creation": "Website Creation",
+      "mobile": "Mobile Applications",
+      "photo": "Professional Photography",
+      "video": "Videography",
+      "visual": "Visual Content Creation",
+      "ads": "Online Advertising",
+      "erp": "ERP Solutions",
+      "audits": "Digital Audits",
+      "marketing": "Digital Marketing",
+      "branding": "Branding Management",
+      "software": "Software Development",
+      "tracking": "Project Tracking",
+      "seo": "SEO"
+    },
+    "values": {
+      "v1": {
+        "title": "Custom Made",
+        "desc": "We offer solutions adapted to your specific needs, to guarantee optimal results."
+      },
+      "v2": {
+        "title": "Innovative",
+        "desc": "Our services integrate the latest technologies and strategies to stay at the forefront of innovation."
+      },
+      "v3": {
+        "title": "Effective",
+        "desc": "We ensure concrete and efficient solutions that generate tangible results for your business."
+      },
+      "protocol": "GDC Excellence"
+    },
+    "marquee": "Group Digital Concept",
+    "pricing": {
+      "title": "Our predefined <highlight>SEO</highlight> organic search packs",
+      "subtitle": "Choose our communication agency and improve your <highlight>website</highlight> ranking",
+      "starting_at": "starting at only",
+      "tax": "VAT excl.",
+      "period": "/per month",
+      "cta": "Contact Us!",
+      "packs": {
+        "starter": "PACK STARTER",
+        "bronze": "PACK BRONZE",
+        "silver": "PACK SILVER",
+        "gold": "PACK GOLD",
+        "platinium": "PACK PLATINIUM",
+        "titanium": "PACK TITANIUM"
+      },
+      "features": {
+        "audit": "SEO Audit: technical, competitive and positioning",
+        "submission": "Submission to main search engines Google, Bing, Yahoo",
+        "targeting": "Keyword targeting and meta tags optimization for {count} page",
+        "targeting_plural": "Keyword targeting and meta tags optimization for {count} pages",
+        "sitemap": "Sitemap creation for Google",
+        "ranking": "Improvement of positioning on your keywords",
+        "delivery": "Service delivery within {hours}H",
+        "commitment": "No commitment",
+        "frequency": "Service performed once / month",
+        "blocking": "Control of blocking factors",
+        "backlinks": "Creation of {count} quality backlinks",
+        "article": "Writing an SEO-optimized article of 300 words"
+      },
+      "custom": {
+        "badge": "ULTIMATE PACK",
+        "title": "Custom Made",
+        "feature1": "Custom Made",
+        "feature2": "More than 10 Pages",
+        "request": "Request",
+        "quote": "A Quote"
+      }
+    },
+    "solutions": {
+      "title": "Complete <highlight>SEO Optimization</highlight> Solution",
+      "header_primary": "Complete solution of",
+      "seo_opt": {
+        "title": "SEO Optimization",
+        "features": [
+          "Keyword analysis and optimization",
+          "On-page optimization",
+          "Advanced SEO techniques",
+          "Enriched and targeted web content",
+          "Local SEO",
+          "Backlinking strategies",
+          "Detailed SEO analysis reports"
+        ]
+      },
+      "advantages": {
+        "title": "ADVANTAGES",
+        "features": [
+          "Artistic director dedicated to each project",
+          "Exclusive ownership rights",
+          "Total satisfaction commitment",
+          "100% unique design guarantee",
+          "Support available 24/7",
+          "Exemplary after-sales service"
+        ]
+      },
+      "analytics": "GDC ANALYTICS"
+    },
+    "final_cta": {
+      "title": "Ready to <highlight>dominate</highlight> the results?",
+      "subtitle": "Marrakech SEO Excellence • v.9",
+      "button": "START NOW"
+    }
+  }
+}

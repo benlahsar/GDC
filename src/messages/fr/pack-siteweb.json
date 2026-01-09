@@ -1,0 +1,125 @@
+{
+  "pack-siteweb": {
+    "hero": {
+      "badge": "GDC ELITE SOLUTIONS",
+      "vision": "PROPULSEZ VOTRE VISION",
+      "title_part1": "NOS PACKS",
+      "title_part2": "SITE WEB",
+      "subtitle": "L'Excellence au service de votre croissance",
+      "scroll": "Scroll to explore"
+    },
+    "values": {
+      "v1": {
+        "title": "Sur Mesure",
+        "desc": "Des solutions ciselées selon vos besoins spécifiques pour une performance maximale."
+      },
+      "v2": {
+        "title": "Innovantes",
+        "desc": "Intégration native des dernières technologies pour garder une longueur d'avance."
+      },
+      "v3": {
+        "title": "Efficaces",
+        "desc": "Résultats tangibles et mesurables dès le premier jour de mise en ligne."
+      },
+      "protocol": "Protocol v.9"
+    },
+    "pricing": {
+      "badge": "OFFRES EXCLUSIVES • GDC ELITE",
+      "title": "Notre agence vous accompagne lors de vos <highlight>premiers pas</highlight> dans le monde numérique",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "485",
+          "currency": "€",
+          "tax": "HT",
+          "features": [
+            "2 Page Vitrine + Page de Contact",
+            "Design Simple",
+            "Contenu de base inclus",
+            "Optimisation de la vitesse",
+            "Sécurité de base",
+            "Accompagnement domaine/hébergement"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "975",
+          "currency": "€",
+          "tax": "HT",
+          "features": [
+            "5 Page Vitrine + Page de Contact",
+            "Design Responsive",
+            "Expérience utilisateur UX",
+            "Contenu sur mesure inclus",
+            "Optimisation de la vitesse",
+            "Sécurité avancée",
+            "Accompagnement domaine/hébergement"
+          ]
+        },
+        "ultime": {
+          "name": "Ultime",
+          "price": "Sur mesure",
+          "currency": "",
+          "tax": "",
+          "features": [
+            "+5 Pages",
+            "Page de Contact",
+            "Design Responsive",
+            "Expérience utilisateur UX",
+            "Contenu sur mesure inclus",
+            "Optimisation de la vitesse",
+            "Sécurité avancée",
+            "Accompagnement domaine/hébergement"
+          ]
+        }
+      },
+      "starting_at": "À partir de",
+      "cta": "Contactez-Nous !"
+    },
+    "showcase": {
+      "custom_site": {
+        "title": "Site Web Personnalisé",
+        "features": [
+          "Conception sur mesure jusqu'à 5 pages",
+          "10 Images GRATUITES",
+          "Intégration réseaux sociaux",
+          "Inclusion de Google Maps",
+          "Formulaires de contact interactifs",
+          "Design responsive adapté aux mobiles",
+          "Équipe de trois développeurs expérimentés"
+        ]
+      },
+      "hub": {
+        "title": "Solution Complète de <highlight>Création Site Web</highlight>"
+      },
+      "benefits": {
+        "title": "AVANTAGES",
+        "items": [
+          "Directeur artistique dédié à chaque projet",
+          "Droits de propriété exclusifs",
+          "Engagement de satisfaction totale",
+          "Garantie de conception 100% unique",
+          "Support disponible",
+          "Service après-vente exemplaire"
+        ]
+      },
+      "logo": {
+        "title": "LOGO DESIGN",
+        "features": [
+          "3 propositions de logo uniques",
+          "2 séances de révisions incluses",
+          "Équipe de trois designers spécialisés",
+          "Création de logo et icône de marque",
+          "Animation du logo",
+          "Guides d'utilisation du logo",
+          "Fichiers livrables (AI, PDF, SVG, EPS, PNG)"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Prêt à <highlight>conquérir</highlight> le web ?",
+      "subtitle": "Excellence Digitale Marrakech • v.9",
+      "button": "DÉMARRER"
+    }
+  }
+}

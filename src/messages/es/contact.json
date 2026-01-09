@@ -1,0 +1,68 @@
+{
+  "header": {
+    "badge": "Contáctenos",
+    "titlePrefix": "Hablemos de",
+    "titleSuffix": "Proyecto.",
+    "description": "¿Una visión? ¿Un desafío? Nuestro equipo transforma sus ideas en experiencias digitales excepcionales."
+  },
+  "form": {
+    "steps": {
+      "identity": "Identidad",
+      "needs": "Necesidades",
+      "message": "Mensaje"
+    },
+    "success": {
+      "title": "¡Recibido!",
+      "message": "Gracias {name}. Estamos analizando su solicitud y le responderemos en un plazo de 24 horas.",
+      "button": "Nueva solicitud"
+    },
+    "labels": {
+      "name": "Nombre Completo",
+      "email": "Correo Profesional",
+      "company": "Empresa",
+      "phone": "Teléfono",
+      "needs": "Seleccione sus necesidades",
+      "message": "Cuéntenos sobre su proyecto"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Estudio Digital",
+      "phone": "+212 6...",
+      "otherService": "Especifique su necesidad...",
+      "message": "Contexto, objetivos, plazos, presupuesto estimado..."
+    },
+    "services": {
+      "vitrine": "Sitio Escaparate",
+      "ecommerce": "E-Commerce",
+      "appweb": "App Web",
+      "seo": "SEO / Ads",
+      "branding": "Branding",
+      "other": "Otro"
+    },
+    "buttons": {
+      "back": "Volver",
+      "sending": "Enviando...",
+      "send": "Enviar",
+      "next": "Siguiente"
+    }
+  },
+  "info": {
+    "directLine": "Línea Directa",
+    "emailPro": "Correo Profesional",
+    "followUs": "Síguenos",
+    "copied": "¡Copiado!"
+  },
+  "locations": {
+    "badge": "Global Presence Hub",
+    "titlePrefix": "Nuestras",
+    "titleSuffix": "Ubicaciones.",
+    "localExpert": "Experto Local",
+    "operational": "Operativo",
+    "labels": {
+      "headquarters": "Sede Social",
+      "secondary": "Dirección Secundaria",
+      "france": "Sede en Francia"
+    }
+  }
+}

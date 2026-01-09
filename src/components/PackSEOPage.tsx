@@ -25,100 +25,101 @@ import {
   MoveDown,
 } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
+import { useTranslations } from "next-intl";
 
 const BENTO_SERVICES = [
   {
-    label: "Analyse de Performance",
+    key: "performance",
     span: "md:col-span-2 md:row-span-1",
     icon: Zap,
     color: "text-brand-red",
   },
   {
-    label: "Sites E-commerce",
+    key: "ecommerce",
     span: "md:col-span-1 md:row-span-2",
     icon: Globe,
     color: "text-blue-500",
   },
   {
-    label: "Sites Vitrine",
+    key: "showcase",
     span: "md:col-span-1 md:row-span-1",
     icon: Layout,
     color: "text-purple-500",
   },
   {
-    label: "Création de Sites Web",
+    key: "creation",
     span: "md:col-span-2 md:row-span-2",
     icon: Search,
     color: "text-brand-red",
   },
   {
-    label: "Applications Mobiles",
+    key: "mobile",
     span: "md:col-span-1 md:row-span-1",
     icon: Shield,
     color: "text-emerald-500",
   },
   {
-    label: "Photographie Professionnelle",
+    key: "photo",
     span: "md:col-span-2 md:row-span-1",
     icon: Camera,
     color: "text-brand-red",
   },
   {
-    label: "Vidéographie",
+    key: "video",
     span: "md:col-span-1 md:row-span-1",
     icon: Target,
     color: "text-orange-500",
   },
   {
-    label: "Création de Contenu Visuel",
+    key: "visual",
     span: "md:col-span-1 md:row-span-1",
     icon: Palette,
     color: "text-pink-500",
   },
   {
-    label: "Publicité en ligne",
+    key: "ads",
     span: "md:col-span-1 md:row-span-1",
     icon: Zap,
     color: "text-yellow-500",
   },
   {
-    label: "Solutions ERP",
+    key: "erp",
     span: "md:col-span-1 md:row-span-1",
     icon: Briefcase,
     color: "text-blue-600",
   },
   {
-    label: "Audits Digitaux",
+    key: "audits",
     span: "md:col-span-2 md:row-span-1",
     icon: Search,
     color: "text-brand-red",
   },
   {
-    label: "Marketing Digital",
+    key: "marketing",
     span: "md:col-span-1 md:row-span-1",
     icon: Rocket,
     color: "text-brand-red",
   },
   {
-    label: "Gestion de l'image de marque",
+    key: "branding",
     span: "md:col-span-1 md:row-span-1",
     icon: Award,
     color: "text-purple-600",
   },
   {
-    label: "Développement de Logiciels",
+    key: "software",
     span: "md:col-span-2 md:row-span-1",
     icon: Globe,
     color: "text-brand-red",
   },
   {
-    label: "Suivi de Projets",
+    key: "tracking",
     span: "md:col-span-1 md:row-span-1",
     icon: Search,
     color: "text-gray-500",
   },
   {
-    label: "SEO",
+    key: "seo",
     span: "md:col-span-1 md:row-span-1",
     icon: Target,
     color: "text-brand-red",
@@ -128,138 +129,65 @@ const BENTO_SERVICES = [
 const VALUE_PILLARS = [
   {
     id: "01",
-    title: "Sur Mesure",
-    desc: "Nous offrons des solutions adaptées à vos besoins spécifiques, pour garantir des résultats optimaux.",
+    key: "v1",
   },
   {
     id: "02",
-    title: "Innovantes",
-    desc: "Nos services intègrent les dernières technologies et stratégies pour rester à la pointe de l'innovation.",
+    key: "v2",
   },
   {
     id: "03",
-    title: "Efficaces",
-    desc: "Nous assurons des solutions concrètes et performantes qui génèrent des résultats tangibles pour votre entreprise.",
+    key: "v3",
   },
-];
-
-const SEO_OPTIMIZATION_FEATURES = [
-  "Analyse et optimisation de mots-clés",
-  "Optimisation on-page",
-  "Techniques SEO avancées",
-  "Contenu web enrichi et ciblé",
-  "SEO local",
-  "Stratégies de backlinking",
-  "Rapports détaillés d'analyse SEO",
-];
-
-const ADVANTAGES_FEATURES = [
-  "Directeur artistique dédié à chaque projet",
-  "Droits de propriété exclusifs",
-  "Engagement de satisfaction totale",
-  "Garantie de conception 100% unique",
-  "Support disponible 24/7",
-  "Service après-vente exemplaire",
 ];
 
 const SEO_PACKS = [
   {
-    name: "PACK STARTER",
+    key: "starter",
     price: "58",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Ciblage des mots clés et optimisation des métas tags pour 1 page",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Livraison du service dans les 24H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 1,
+    hours: 24,
     highlight: true,
   },
   {
-    name: "PACK BRONZE",
+    key: "bronze",
     price: "87",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Ciblage des mots clés et optimisation des métas tags pour 2 pages",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Livraison du service dans les 24H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 2,
+    hours: 24,
   },
   {
-    name: "PACK SILVER",
+    key: "silver",
     price: "137",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Contrôle des facteurs bloquants",
-      "Ciblage des mots clés et optimisation des métas tags pour 3 pages",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Création de 180 backlinks de qualité",
-      "Livraison du service dans les 48H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 3,
+    hours: 48,
+    backlinks: 180,
   },
   {
-    name: "PACK GOLD",
+    key: "gold",
     price: "196",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Contrôle des facteurs bloquants",
-      "Ciblage des mots clés et optimisation des métas tags pour 5 pages",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Création de 250 backlinks de qualité",
-      "Livraison du service dans les 48H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 5,
+    hours: 48,
+    backlinks: 250,
   },
   {
-    name: "PACK PLATINIUM",
+    key: "platinium",
     price: "235",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Contrôle des facteurs bloquants",
-      "Ciblage des mots clés et optimisation des métas tags pour 5 pages",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Création de 330 backlinks de qualité",
-      "Livraison du service dans les 72H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 5,
+    hours: 72,
+    backlinks: 330,
   },
   {
-    name: "PACK TITANIUM",
+    key: "titanium",
     price: "480",
-    features: [
-      "Audit SEO : technique, concurrentiel et positionnement",
-      "Soumission dans les moteurs de recherche principaux Google, Bing, Yahoo",
-      "Contrôle des facteurs bloquants",
-      "Ciblage des mots clés et optimisation des métas tags pour 10 pages",
-      "Création du sitemap pour Google",
-      "Amélioration du positionnement sur vos mots clés",
-      "Création de 530 backlinks de qualité",
-      "Rédaction d'un article optimisé SEO de 300 mots",
-      "Livraison du service dans les 96H",
-      "Pas d'engagement",
-      "Prestation effectuée 1 seule fois / mois",
-    ],
+    pages: 10,
+    hours: 96,
+    backlinks: 530,
+    hasArticle: true,
   },
 ];
 
 export const PackSEOPage: React.FC = () => {
+  const t = useTranslations("pack-seo");
   const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -310,8 +238,11 @@ export const PackSEOPage: React.FC = () => {
               }`}
             >
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-black dark:text-white tracking-tighter leading-none uppercase">
-                Découvrez Nos{" "}
-                <span className="text-brand-red italic">Pack SEO</span>
+                {t.rich("hero.title", {
+                  highlight: (chunks) => (
+                    <span className="text-brand-red italic">{chunks}</span>
+                  ),
+                })}
               </h1>
             </div>
 
@@ -355,7 +286,7 @@ export const PackSEOPage: React.FC = () => {
                       />
                     </div>
                     <span className="text-xs md:text-sm font-black text-black dark:text-white uppercase leading-tight tracking-tight">
-                      {item.label}
+                      {t(`bento.${item.key}`)}
                     </span>
                   </div>
                   {/* Interactive Dot */}
@@ -421,7 +352,7 @@ export const PackSEOPage: React.FC = () => {
                         isMobile ? "" : "group-hover:text-brand-red"
                       }`}
                     >
-                      {pillar.title}
+                      {t(`values.${pillar.key}.title`)}
                     </h3>
                     <div
                       className={`w-12 h-1 bg-black/20 dark:bg-white/20 rounded-full transition-all duration-500 ${
@@ -437,7 +368,7 @@ export const PackSEOPage: React.FC = () => {
                           : "text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white/90"
                       }`}
                     >
-                      {pillar.desc}
+                      {t(`values.${pillar.key}.desc`)}
                     </p>
                   </div>
 
@@ -449,7 +380,7 @@ export const PackSEOPage: React.FC = () => {
                     }`}
                   >
                     <span className="text-[9px] font-black uppercase tracking-[0.3em] text-black dark:text-white">
-                      GDC Excellence
+                      {t("values.protocol")}
                     </span>
                     <div className="flex gap-1">
                       {[1, 2].map((d) => (
@@ -479,7 +410,7 @@ export const PackSEOPage: React.FC = () => {
               key={i}
               className="text-5xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter mx-10 md:mx-20 flex items-center"
             >
-              Group Digital Concept{" "}
+              {t("marquee")}{" "}
               <span className="text-brand-red ml-4 md:ml-10">_</span>
             </span>
           ))}
@@ -496,15 +427,20 @@ export const PackSEOPage: React.FC = () => {
             }`}
           >
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-black dark:text-white tracking-tighter leading-none uppercase mb-6">
-              Nos packs prédéfinis de <br className="hidden md:block" />
-              référencement naturel <span className="text-brand-red">SEO</span>
+              {t.rich("pricing.title", {
+                highlight: (chunks) => (
+                  <span className="text-brand-red">{chunks}</span>
+                ),
+              })}
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-lg md:text-xl font-bold uppercase tracking-[0.2em] mb-4">
-              Optez pour notre agence de communication et améliorer le
-              classement de votre
-              <span className="text-brand-red block md:inline md:ml-3">
-                site web
-              </span>
+              {t.rich("pricing.subtitle", {
+                highlight: (chunks) => (
+                  <span className="text-brand-red block md:inline md:ml-3">
+                    {chunks}
+                  </span>
+                ),
+              })}
             </p>
           </div>
 
@@ -562,11 +498,11 @@ export const PackSEOPage: React.FC = () => {
                           : "bg-black/5 dark:bg-white/5 border-black/10 dark:border-white/10"
                       }`}
                     >
-                      {pack.name}
+                      {t(`pricing.packs.${pack.key}`)}
                     </div>
                     <div className="flex flex-col">
                       <span className="text-sm font-bold opacity-70">
-                        à seulement
+                        {t("pricing.starting_at")}
                       </span>
                       <div className="flex items-baseline gap-2">
                         <span className="text-4xl font-black">€</span>
@@ -574,8 +510,8 @@ export const PackSEOPage: React.FC = () => {
                           {pack.price}
                         </span>
                         <div className="flex flex-col text-[10px] font-black uppercase leading-tight opacity-80">
-                          <span>HT</span>
-                          <span>/par mois</span>
+                          <span>{t("pricing.tax")}</span>
+                          <span>{t("pricing.period")}</span>
                         </div>
                       </div>
                     </div>
@@ -585,40 +521,63 @@ export const PackSEOPage: React.FC = () => {
                     className={`h-px w-full mb-10 ${
                       pack.highlight
                         ? "bg-white/20 dark:bg-black/10"
-                        : "bg-black/5 dark:bg-white/10"
+                        : "bg-black/5 dark:border-white/10"
                     }`}
                   ></div>
 
                   <ul className="space-y-4 mb-12 flex-grow">
-                    {pack.features.map((feat, fIdx) => (
-                      <li
-                        key={fIdx}
-                        className="flex items-start gap-3 group/item"
-                      >
-                        <div
-                          className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 transition-all ${
-                            pack.highlight
-                              ? "bg-brand-red shadow-[0_0_10px_red]"
-                              : `bg-brand-red ${
-                                  isMobile ? "" : "group-hover/item:scale-125"
-                                }`
-                          }`}
-                        ></div>
-                        <span
-                          className={`text-xs md:text-sm font-bold leading-relaxed ${
-                            pack.highlight
-                              ? "text-white/90 dark:text-black/90"
-                              : `text-gray-600 dark:text-gray-300 ${
-                                  isMobile
-                                    ? ""
-                                    : "group-hover/item:text-black dark:group-hover/item:text-white"
-                                }`
-                          }`}
+                    {[
+                      t("pricing.features.audit"),
+                      t("pricing.features.submission"),
+                      pack.key === "silver" ||
+                      pack.key === "gold" ||
+                      pack.key === "platinium" ||
+                      pack.key === "titanium"
+                        ? t("pricing.features.blocking")
+                        : null,
+                      t("pricing.features.targeting", { count: pack.pages }),
+                      t("pricing.features.sitemap"),
+                      t("pricing.features.ranking"),
+                      pack.backlinks
+                        ? t("pricing.features.backlinks", {
+                            count: pack.backlinks,
+                          })
+                        : null,
+                      pack.hasArticle ? t("pricing.features.article") : null,
+                      t("pricing.features.delivery", { hours: pack.hours }),
+                      t("pricing.features.commitment"),
+                      t("pricing.features.frequency"),
+                    ]
+                      .filter(Boolean)
+                      .map((feat, fIdx) => (
+                        <li
+                          key={fIdx}
+                          className="flex items-start gap-3 group/item"
                         >
-                          {feat}
-                        </span>
-                      </li>
-                    ))}
+                          <div
+                            className={`mt-1.5 w-1.5 h-1.5 rounded-full shrink-0 transition-all ${
+                              pack.highlight
+                                ? "bg-brand-red shadow-[0_0_10px_red]"
+                                : `bg-brand-red ${
+                                    isMobile ? "" : "group-hover/item:scale-125"
+                                  }`
+                            }`}
+                          ></div>
+                          <span
+                            className={`text-xs md:text-sm font-bold leading-relaxed ${
+                              pack.highlight
+                                ? "text-white/90 dark:text-black/90"
+                                : `text-gray-600 dark:text-gray-300 ${
+                                    isMobile
+                                      ? ""
+                                      : "group-hover/item:text-black dark:group-hover/item:text-white"
+                                  }`
+                            }`}
+                          >
+                            {feat}
+                          </span>
+                        </li>
+                      ))}
                   </ul>
 
                   <button
@@ -628,7 +587,7 @@ export const PackSEOPage: React.FC = () => {
                         : "bg-black dark:bg-white text-white dark:text-black hover:bg-brand-red hover:text-white"
                     }`}
                   >
-                    Contactez-Nous !
+                    {t("pricing.cta")}
                   </button>
                 </div>
               </div>
@@ -644,22 +603,22 @@ export const PackSEOPage: React.FC = () => {
                 <div className="absolute top-0 right-0 w-80 h-80 bg-brand-red/[0.03] rounded-full blur-[100px] -z-0"></div>
                 <div className="relative z-10">
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-[10px] font-black uppercase tracking-widest mb-6">
-                    PACK ULTIME
+                    {t("pricing.custom.badge")}
                   </div>
                   <h3 className="text-5xl md:text-7xl font-black text-black dark:text-white uppercase tracking-tighter leading-none mb-4">
-                    Sur Mesure
+                    {t("pricing.custom.title")}
                   </h3>
                   <div className="flex items-center gap-6 mt-8">
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-brand-red"></div>
                       <span className="text-sm font-bold uppercase text-gray-500">
-                        Sur Mesure
+                        {t("pricing.custom.feature1")}
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-brand-red"></div>
                       <span className="text-sm font-bold uppercase text-gray-500">
-                        Plus de 10 Pages
+                        {t("pricing.custom.feature2")}
                       </span>
                     </div>
                   </div>
@@ -677,10 +636,10 @@ export const PackSEOPage: React.FC = () => {
                   ></div>
                   <div className="relative bg-white dark:bg-black p-10 rounded-full flex flex-col items-center justify-center text-center">
                     <span className="text-[10px] font-black uppercase tracking-widest mb-2 text-gray-400">
-                      Demander
+                      {t("pricing.custom.request")}
                     </span>
                     <span className="text-sm font-black uppercase tracking-widest text-black dark:text-white">
-                      Un Devis
+                      {t("pricing.custom.quote")}
                     </span>
                     <ChevronRight
                       size={24}
@@ -706,11 +665,15 @@ export const PackSEOPage: React.FC = () => {
           >
             <h2 className="text-4xl md:text-6xl lg:text-[5.5rem] font-black text-black dark:text-white tracking-tighter leading-[0.8] uppercase flex flex-col items-center">
               <span className="text-gray-400 dark:text-gray-600">
-                Solution complète d'
+                {t("solutions.header_primary")}
               </span>
-              <span className="text-brand-red drop-shadow-[0_0_40px_rgba(255,0,0,0.3)]">
-                Optimisation SEO
-              </span>
+              {t.rich("solutions.title", {
+                highlight: (chunks) => (
+                  <span className="text-brand-red drop-shadow-[0_0_40px_rgba(255,0,0,0.3)]">
+                    {chunks}
+                  </span>
+                ),
+              })}
             </h2>
           </div>
 
@@ -732,26 +695,32 @@ export const PackSEOPage: React.FC = () => {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
               <h3 className="text-3xl md:text-4xl font-black uppercase mb-12 tracking-tight leading-none flex items-center gap-3">
-                Optimisation seo{" "}
+                {t("solutions.seo_opt.title")}{" "}
                 <Sparkles size={24} className="text-brand-red animate-pulse" />
               </h3>
               <ul className="space-y-6">
-                {SEO_OPTIMIZATION_FEATURES.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-5 group/item">
-                    <div className="mt-1 w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0 shadow-lg shadow-red-900/50">
-                      <Check size={12} className="text-white" strokeWidth={4} />
-                    </div>
-                    <span
-                      className={`text-base md:text-lg font-bold ${
-                        isMobile
-                          ? "text-gray-700 dark:text-gray-300"
-                          : "text-gray-600 dark:text-gray-300 group-hover/item:text-black dark:group-hover/item:text-white"
-                      } transition-colors`}
-                    >
-                      {item}
-                    </span>
-                  </li>
-                ))}
+                {(t.raw("solutions.seo_opt.features") as string[]).map(
+                  (item, idx) => (
+                    <li key={idx} className="flex items-start gap-5 group/item">
+                      <div className="mt-1 w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0 shadow-lg shadow-red-900/50">
+                        <Check
+                          size={12}
+                          className="text-white"
+                          strokeWidth={4}
+                        />
+                      </div>
+                      <span
+                        className={`text-base md:text-lg font-bold ${
+                          isMobile
+                            ? "text-gray-700 dark:text-gray-300"
+                            : "text-gray-600 dark:text-gray-300 group-hover/item:text-black dark:group-hover/item:text-white"
+                        } transition-colors`}
+                      >
+                        {item}
+                      </span>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
@@ -791,7 +760,7 @@ export const PackSEOPage: React.FC = () => {
                   >
                     <BarChart3 size={32} className="text-blue-500 mb-2" />
                     <span className="text-[10px] font-black text-white uppercase tracking-widest">
-                      GDC ANALYTICS
+                      {t("solutions.analytics")}
                     </span>
                   </div>
                   <div
@@ -822,26 +791,32 @@ export const PackSEOPage: React.FC = () => {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
               <h3 className="text-3xl md:text-4xl font-black uppercase mb-12 tracking-tight leading-none flex items-center gap-3">
-                Optimisation seo{" "}
+                {t("solutions.advantages.title")}{" "}
                 <Sparkles size={24} className="text-brand-red animate-pulse" />
               </h3>
               <ul className="space-y-6">
-                {ADVANTAGES_FEATURES.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-5 group/item">
-                    <div className="mt-1 w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0 shadow-lg shadow-red-900/50">
-                      <Check size={12} className="text-white" strokeWidth={4} />
-                    </div>
-                    <span
-                      className={`text-base md:text-lg font-bold ${
-                        isMobile
-                          ? "text-gray-700 dark:text-gray-300"
-                          : "text-gray-600 dark:text-gray-300 group-hover/item:text-black dark:group-hover/item:text-white"
-                      } transition-colors`}
-                    >
-                      {item}
-                    </span>
-                  </li>
-                ))}
+                {(t.raw("solutions.advantages.features") as string[]).map(
+                  (item: string, idx: number) => (
+                    <li key={idx} className="flex items-start gap-5 group/item">
+                      <div className="mt-1 w-5 h-5 rounded-full bg-brand-red flex items-center justify-center shrink-0 shadow-lg shadow-red-900/50">
+                        <Check
+                          size={12}
+                          className="text-white"
+                          strokeWidth={4}
+                        />
+                      </div>
+                      <span
+                        className={`text-base md:text-lg font-bold ${
+                          isMobile
+                            ? "text-gray-700 dark:text-gray-300"
+                            : "text-gray-600 dark:text-gray-300 group-hover/item:text-black dark:group-hover/item:text-white"
+                        } transition-colors`}
+                      >
+                        {item}
+                      </span>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>
@@ -865,14 +840,16 @@ export const PackSEOPage: React.FC = () => {
 
             <div className="relative z-10 flex-1">
               <h2 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase leading-[0.8] mb-8">
-                Prêt à <br />
-                <span className="text-brand-red italic drop-shadow-[0_0_50px_rgba(255,0,0,0.4)]">
-                  dominer
-                </span>{" "}
-                <br /> les résultats ?
+                {t.rich("final_cta.title", {
+                  highlight: (chunks) => (
+                    <span className="text-brand-red italic drop-shadow-[0_0_50px_rgba(255,0,0,0.4)]">
+                      {chunks}
+                    </span>
+                  ),
+                })}
               </h2>
               <p className="text-gray-400 dark:text-gray-500 font-black uppercase tracking-[0.8em] text-[10px] sm:text-xs">
-                Excellence SEO Marrakech • v.9
+                {t("final_cta.subtitle")}
               </p>
             </div>
 
@@ -883,7 +860,7 @@ export const PackSEOPage: React.FC = () => {
                   isMobile ? "" : "hover:scale-110"
                 }`}
               >
-                DÉMARRER{" "}
+                {t("final_cta.button")}{" "}
                 <ArrowRight
                   size={20}
                   className={`transition-transform duration-700 w-8 h-8 ${

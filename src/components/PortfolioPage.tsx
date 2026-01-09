@@ -36,110 +36,105 @@ import {
   Camera,
 } from "lucide-react";
 import { AnimatedCounter } from "./AnimatedCounter";
+import { useTranslations } from "next-intl";
 
 const PROJECTS = [
   {
     id: "01",
+    key: "majorelle",
     title: "Majorelle Centre",
-    tagline: "L'excellence business à Marrakech",
-    category: "Immobilier",
-    services: ["Web", "SEO"],
+    services: ["web", "seo"],
     impact: "+150% Leads",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144006.802.png",
     url: "/blog/majorelle-centre-affaires",
     slug: "majorelle-blog",
     accent: "from-blue-600/20 to-indigo-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "Web",
+    filter: "web",
     year: "2024",
     tech: "React Engine",
   },
   {
     id: "02",
+    key: "smashy",
     title: "Smashy Burger",
-    tagline: "Branding prestige culinaire",
-    category: "Restauration",
-    services: ["Identité", "Social"],
+    services: ["identity", "social"],
     impact: "Icône Luxe",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/12/Generated-Image-December-22-2025-10_22AM.jpeg",
     url: "/blog/smashy-burger",
     slug: "smashy-burger-blog",
     accent: "from-amber-500/20 to-yellow-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "Image de Marque",
+    filter: "branding",
     year: "2025",
     tech: "3D Design",
   },
   {
     id: "03",
+    key: "comewithus",
     title: "Come With Us",
-    tagline: "Expédition 8K Maroc",
-    category: "Voyage",
-    services: ["Contenu", "Vidéo"],
+    services: ["content", "video"],
     impact: "Viral",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-97.png",
     url: "/come-with-us",
     slug: "come-with-us",
     accent: "from-brand-red/20 to-red-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "Contenu",
+    filter: "content",
     year: "2025",
     tech: "RAW 8K",
   },
   {
     id: "04",
+    key: "batiment",
     title: "Bâtiment Comp.",
-    tagline: "Digitaliser l'art de bâtir",
-    category: "Construction",
-    services: ["Web", "SEO"],
+    services: ["web", "seo"],
     impact: "Top 3 Google",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144222.368.png",
     url: "https://group-descompagnonsenbatiment.com/",
     accent: "from-slate-600/20 to-slate-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "Web",
+    filter: "web",
     year: "2023",
     tech: "Full-Stack",
   },
   {
     id: "05",
+    key: "plancy",
     title: "Plancy Call",
-    tagline: "Communication humaine",
-    category: "Tech",
-    services: ["SEO", "Leads"],
+    services: ["seo", "leads"],
     impact: "+200% ROI",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144356.680.png",
     url: "https://group-plancycall.com/",
     accent: "from-red-500/20 to-rose-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "SEO",
+    filter: "seo",
     year: "2024",
     tech: "Automation",
   },
   {
     id: "06",
+    key: "mmreseaux",
     title: "M.M. Réseaux",
-    tagline: "Connectivité infrastructure",
-    category: "Telecom",
-    services: ["Web", "Branding"],
+    services: ["web", "branding"],
     impact: "Leader",
     logo: "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144735.987.png",
     url: "https://mm-reseauxcom.com/",
     accent: "from-emerald-600/20 to-teal-900/20",
     size: "lg:col-span-4 lg:row-span-1",
-    filter: "Web",
+    filter: "web",
     year: "2024",
     tech: "Enterprise",
   },
 ];
 
 const FORM_SERVICES = [
-  { id: "web", label: "Web Design", icon: Monitor },
-  { id: "seo", label: "SEO / SEA", icon: Search },
-  { id: "brand", label: "Identity", icon: Palette },
-  { id: "content", label: "Contenu", icon: Camera },
-  { id: "app", label: "Mobile App", icon: Smartphone },
-  { id: "other", label: "Autre", icon: Zap },
+  { id: "web", labelKey: "web", icon: Monitor },
+  { id: "seo", labelKey: "seo", icon: Search },
+  { id: "brand", labelKey: "brand", icon: Palette },
+  { id: "content", labelKey: "content", icon: Camera },
+  { id: "app", labelKey: "app", icon: Smartphone },
+  { id: "other", labelKey: "other", icon: Zap },
 ];
 
 interface PortfolioPageProps {
@@ -147,8 +142,9 @@ interface PortfolioPageProps {
 }
 
 export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
+  const t = useTranslations("portfolio");
   const [isVisible, setIsVisible] = useState(false);
-  const [activeFilter, setActiveFilter] = useState("Tous");
+  const [activeFilter, setActiveFilter] = useState("all");
   const [formStep, setFormStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -211,7 +207,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
   };
 
   const filteredProjects = PROJECTS.filter(
-    (p) => activeFilter === "Tous" || p.filter === activeFilter
+    (p) => activeFilter === "all" || p.filter === activeFilter
   );
 
   return (
@@ -235,23 +231,27 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white dark:bg-white/5 backdrop-blur-2xl border border-black/5 dark:border-white/10 mb-12 shadow-xl">
               <Zap className="text-brand-red animate-pulse" size={14} />
               <span className="text-[10px] font-black uppercase tracking-[0.6em] text-gray-800 dark:text-gray-200">
-                GDC SHOWCASE • ELITE
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className="text-[13vw] lg:text-[12rem] font-black text-black dark:text-white tracking-tighter leading-[0.8] uppercase mb-16 relative">
-              ARCHIVE <br />
+              {t("header.title")} <br />
               <span className="text-brand-red italic text-[11vw] lg:text-[10rem]">
-                D'IMPACT.
+                {t("header.impact")}
               </span>
             </h1>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-6xl mx-auto">
               <div className="h-px flex-1 bg-black/10 dark:bg-white/10 hidden md:block"></div>
               <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-400 font-medium max-w-2xl uppercase tracking-tighter">
-                Ingénierie Digitale{" "}
-                <span className="text-black dark:text-white font-black">&</span>{" "}
-                Esthétique Pure.
+                {t.rich("header.subtitle", {
+                  black: (chunks) => (
+                    <span className="text-black dark:text-white font-black">
+                      {chunks}
+                    </span>
+                  ),
+                })}
               </p>
               <div className="h-px flex-1 bg-black/10 dark:bg-white/10 hidden md:block"></div>
             </div>
@@ -265,12 +265,11 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
           >
             <div className="max-w-full overflow-x-auto hide-scrollbar p-1.5 md:p-2 rounded-[2.5rem] bg-white/70 dark:bg-black/40 backdrop-blur-3xl border border-black/5 dark:border-white/10 shadow-2xl flex items-center">
               <div className="flex items-center gap-1 px-1">
-                {["Tous", "Web", "Image de Marque", "SEO", "Contenu"].map(
-                  (f) => (
-                    <button
-                      key={f}
-                      onClick={() => setActiveFilter(f)}
-                      className={`
+                {["all", "web", "branding", "seo", "content"].map((f) => (
+                  <button
+                    key={f}
+                    onClick={() => setActiveFilter(f)}
+                    className={`
                                     whitespace-nowrap px-6 md:px-10 py-3 md:py-4 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-500
                                     ${
                                       activeFilter === f
@@ -278,11 +277,10 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                                         : "text-gray-500 hover:text-black dark:hover:text-white bg-transparent"
                                     }
                                 `}
-                    >
-                      {f}
-                    </button>
-                  )
-                )}
+                  >
+                    {t(`filters.${f}`)}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
@@ -314,7 +312,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   <Cpu size={24} />
                 </div>
                 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">
-                  Live Analytics
+                  {t("stats.analytics")}
                 </span>
               </div>
               <div className="space-y-6">
@@ -324,7 +322,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   className="text-7xl font-black text-white tracking-tighter leading-none"
                 />
                 <p className="text-sm text-gray-400 font-bold uppercase tracking-widest">
-                  Solutions High-Perf
+                  {t("stats.solutions")}
                 </p>
               </div>
             </div>
@@ -332,13 +330,13 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-brand-red">0.8s</span>
                 <span className="text-[8px] font-black uppercase text-gray-500">
-                  Avg. Load
+                  {t("stats.avg_load")}
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-white">98%</span>
                 <span className="text-[8px] font-black uppercase text-gray-500">
-                  ROI Score
+                  {t("stats.roi_score")}
                 </span>
               </div>
             </div>
@@ -355,10 +353,10 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
               <div className="flex items-center justify-between mb-12">
                 <div className="flex flex-col">
                   <h3 className="text-3xl font-black text-black dark:text-white uppercase tracking-tighter leading-none mb-2">
-                    Initialiser le Brief
+                    {t("form.title")}
                   </h3>
                   <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-                    Step {formStep} of 3
+                    {t("form.step", { step: formStep })}
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -381,10 +379,10 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                     <Check size={32} strokeWidth={3} />
                   </div>
                   <p className="text-2xl font-black text-black dark:text-white uppercase tracking-tighter">
-                    Protocole Activé.
+                    {t("form.success.title")}
                   </p>
                   <p className="text-sm text-gray-500 mt-2">
-                    Nous analysons vos données. Réponse sous 12h.
+                    {t("form.success.subtitle")}
                   </p>
                 </div>
               ) : (
@@ -397,12 +395,12 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-2 group">
                           <label className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 group-focus-within:text-brand-red transition-colors">
-                            Identité
+                            {t("form.labels.identity")}
                           </label>
                           <input
                             type="text"
                             required
-                            placeholder="John Doe / Brand"
+                            placeholder={t("form.placeholders.name")}
                             className="w-full bg-transparent border-b border-black/10 dark:border-white/10 py-4 text-xl font-black outline-none focus:border-brand-red transition-all text-black dark:text-white"
                             value={formData.name}
                             onChange={(e) =>
@@ -412,12 +410,12 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                         </div>
                         <div className="space-y-2 group">
                           <label className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 group-focus-within:text-brand-red transition-colors">
-                            Contact Pro
+                            {t("form.labels.contact")}
                           </label>
                           <input
                             type="email"
                             required
-                            placeholder="email@direct.com"
+                            placeholder={t("form.placeholders.email")}
                             className="w-full bg-transparent border-b border-black/10 dark:border-white/10 py-4 text-xl font-black outline-none focus:border-brand-red transition-all text-black dark:text-white"
                             value={formData.email}
                             onChange={(e) =>
@@ -438,16 +436,16 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                         <button
                           key={s.id}
                           type="button"
-                          onClick={() => handleServiceToggle(s.label)}
+                          onClick={() => handleServiceToggle(s.labelKey)}
                           className={`p-6 rounded-[2rem] border transition-all duration-300 flex flex-col items-center gap-3 text-center ${
-                            formData.services.includes(s.label)
+                            formData.services.includes(s.labelKey)
                               ? "bg-brand-red border-brand-red text-white shadow-xl"
                               : "bg-black/5 dark:bg-white/5 border-transparent text-gray-500 hover:text-black dark:hover:text-white"
                           }`}
                         >
                           <s.icon size={20} strokeWidth={1.5} />
                           <span className="text-[9px] font-black uppercase tracking-widest">
-                            {s.label}
+                            {t(`form_services.${s.labelKey}`)}
                           </span>
                         </button>
                       ))}
@@ -458,10 +456,10 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                     <div className="space-y-8 animate-enter-right flex-1">
                       <div className="space-y-2 group">
                         <label className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 group-focus-within:text-brand-red transition-colors">
-                          Vision du Projet
+                          {t("form.labels.vision")}
                         </label>
                         <textarea
-                          placeholder="Objectifs, inspirations..."
+                          placeholder={t("form.placeholders.vision")}
                           className="w-full h-32 bg-transparent border-b border-black/10 dark:border-white/10 py-4 text-xl font-black outline-none focus:border-brand-red transition-all text-black dark:text-white resize-none"
                           value={formData.vision}
                           onChange={(e) =>
@@ -479,7 +477,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                         onClick={handleBack}
                         className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-400 hover:text-black dark:hover:text-white"
                       >
-                        <ChevronLeft size={16} /> Retour
+                        <ChevronLeft size={16} /> {t("form.buttons.back")}
                       </button>
                     ) : (
                       <div />
@@ -494,7 +492,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                         }
                         className="px-10 py-4 rounded-full bg-black dark:bg-white text-white dark:text-black font-black uppercase text-[10px] tracking-widest hover:scale-105 transition-all disabled:opacity-30"
                       >
-                        Suivant
+                        {t("form.buttons.next")}
                       </button>
                     ) : (
                       <button
@@ -506,7 +504,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                           <Loader2 size={16} className="animate-spin" />
                         ) : (
                           <>
-                            Déployer <ArrowRight size={16} />
+                            {t("form.buttons.deploy")} <ArrowRight size={16} />
                           </>
                         )}
                       </button>
@@ -535,18 +533,20 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-white/20 dark:border-black/10 bg-white/5 dark:bg-black/5 backdrop-blur-md mb-10 md:mb-16">
               <Sparkles size={14} className="text-brand-red" />
               <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.4em]">
-                START THE REVOLUTION
+                {t("cta.badge")}
               </span>
             </div>
 
             <h2 className="text-[12vw] md:text-[14rem] font-black tracking-tighter leading-[0.85] uppercase italic mb-12 md:mb-20 flex flex-col items-center">
-              <span className="opacity-20 select-none">VOTRE VISION.</span>
-              <span className="text-brand-red not-italic mt-2">DÉPLOYÉE.</span>
+              <span className="opacity-20 select-none">{t("cta.vision")}</span>
+              <span className="text-brand-red not-italic mt-2">
+                {t("cta.deployed")}
+              </span>
             </h2>
 
             <div className="flex flex-col items-center gap-8 w-full max-w-sm">
               <p className="text-sm md:text-xl font-bold uppercase tracking-widest text-white/40 dark:text-black/40 px-4">
-                Expertise chirurgicale • Impact monumental
+                {t("cta.subtitle")}
               </p>
 
               <a
@@ -554,7 +554,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                 className="group/cta relative w-full sm:w-auto inline-flex items-center justify-center gap-8 md:gap-12 px-8 py-7 md:px-14 md:py-10 bg-brand-red text-white rounded-full font-black uppercase tracking-[0.4em] text-xs md:text-base hover:scale-110 active:scale-95 transition-all shadow-[0_20px_60px_-10px_rgba(255,0,0,0.5)] overflow-hidden"
               >
                 <div className="absolute inset-0 bg-white/20 translate-x-full group-hover/cta:translate-x-0 transition-transform duration-700 skew-x-12"></div>
-                <span className="relative z-10">Lancer le Projet</span>
+                <span className="relative z-10">{t("cta.button")}</span>
                 <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white text-brand-red flex items-center justify-center shadow-xl">
                   <ArrowRight
                     size={20}
@@ -566,15 +566,15 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
 
             <div className="mt-16 md:mt-24 flex items-center justify-center gap-6 md:gap-8 opacity-20 grayscale transition-all duration-700 hover:opacity-100 hover:grayscale-0">
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-widest">
-                Digital Mastery
+                {t("cta.mastery")}
               </span>
               <div className="w-1.5 h-1.5 rounded-full bg-brand-red"></div>
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-widest">
-                Global Impact
+                {t("cta.impact")}
               </span>
               <div className="w-1.5 h-1.5 rounded-full bg-brand-red"></div>
               <span className="text-[8px] md:text-[10px] font-black uppercase tracking-widest">
-                ROI Focused
+                {t("cta.roi")}
               </span>
             </div>
           </div>
@@ -600,6 +600,7 @@ const ProjectBentoCard: React.FC<{
   isMobile: boolean;
   onClick: () => void;
 }> = ({ project, index, isMobile, onClick }) => {
+  const t = useTranslations("portfolio");
   const cardRef = useRef<HTMLDivElement>(null);
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
@@ -650,7 +651,7 @@ const ProjectBentoCard: React.FC<{
       <div className="relative z-10 p-6 md:p-8 flex justify-between items-start">
         <div className="flex flex-col gap-1">
           <span className="text-[8px] font-black uppercase tracking-[0.4em] text-brand-red flex items-center gap-2">
-            {project.year} • {project.filter}
+            {project.year} • {t(`filters.${project.filter}`)}
           </span>
           <span className="text-lg font-mono font-black opacity-5 group-hover/card:text-brand-red group-hover/card:opacity-100 transition-all">
             {project.id}
@@ -679,7 +680,7 @@ const ProjectBentoCard: React.FC<{
               key={i}
               className="px-3 py-1 bg-black/5 dark:bg-white/5 text-[8px] font-black uppercase tracking-widest"
             >
-              {s}
+              {t(`projects.services.${s}`)}
             </span>
           ))}
         </div>

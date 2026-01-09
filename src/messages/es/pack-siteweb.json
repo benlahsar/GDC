@@ -1,0 +1,125 @@
+{
+  "pack-siteweb": {
+    "hero": {
+      "badge": "SOLUCIONES GDC ELITE",
+      "vision": "IMPULSE SU VISIÓN",
+      "title_part1": "NUESTROS PAQUETES",
+      "title_part2": "SITIO WEB",
+      "subtitle": "La excelencia al servicio de su crecimiento",
+      "scroll": "Desplácese para explorar"
+    },
+    "values": {
+      "v1": {
+        "title": "A Medida",
+        "desc": "Soluciones adaptadas a sus necesidades específicas para un rendimiento máximo."
+      },
+      "v2": {
+        "title": "Innovadoras",
+        "desc": "Integración nativa de las últimas tecnologías para mantenerse a la vanguardia."
+      },
+      "v3": {
+        "title": "Eficaces",
+        "desc": "Resultados tangibles y medibles desde el primer día de puesta en línea."
+      },
+      "protocol": "Protocolo v.9"
+    },
+    "pricing": {
+      "badge": "OFERTAS EXCLUSIVAS • GDC ELITE",
+      "title": "Nuestra agencia le acompaña en sus <highlight>primeros pasos</highlight> en el mundo digital",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "485",
+          "currency": "€",
+          "tax": "IVA no incl.",
+          "features": [
+            "2 Página Vitrina + Página de Contacto",
+            "Diseño Simple",
+            "Contenido básico incluido",
+            "Optimización de velocidad",
+            "Seguridad básica",
+            "Soporte de dominio/alojamiento"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "975",
+          "currency": "€",
+          "tax": "IVA no incl.",
+          "features": [
+            "5 Página Vitrina + Página de Contacto",
+            "Diseño Responsive",
+            "Experiencia de usuario UX",
+            "Contenido a medida incluido",
+            "Optimización de velocidad",
+            "Seguridad avanzada",
+            "Soporte de dominio/alojamiento"
+          ]
+        },
+        "ultime": {
+          "name": "Ultime",
+          "price": "A medida",
+          "currency": "",
+          "tax": "",
+          "features": [
+            "+5 Páginas",
+            "Página de Contacto",
+            "Diseño Responsive",
+            "Experiencia de usuario UX",
+            "Contenido a medida incluido",
+            "Optimización de velocidad",
+            "Seguridad avanzada",
+            "Soporte de dominio/alojamiento"
+          ]
+        }
+      },
+      "starting_at": "A partir de",
+      "cta": "¡Contáctenos!"
+    },
+    "showcase": {
+      "custom_site": {
+        "title": "Sitio Web Personalizado",
+        "features": [
+          "Diseño a medida hasta 5 páginas",
+          "10 Imágenes GRATIS",
+          "Integración de redes sociales",
+          "Inclusión de Google Maps",
+          "Formularios de contacto interactivos",
+          "Diseño adaptado a móviles",
+          "Equipo de tres desarrolladores experimentados"
+        ]
+      },
+      "hub": {
+        "title": "Solución Completa de <highlight>Creación de Sitios Web</highlight>"
+      },
+      "benefits": {
+        "title": "VENTAJAS",
+        "items": [
+          "Director artístico dedicado a cada proyecto",
+          "Derechos de propiedad exclusivos",
+          "Compromiso de satisfacción total",
+          "Garantía de diseño 100% único",
+          "Soporte disponible",
+          "Servicio posventa ejemplar"
+        ]
+      },
+      "logo": {
+        "title": "DISEÑO DE LOGOTIPO",
+        "features": [
+          "3 propuestas de logotipo únicas",
+          "2 sesiones de revisión incluidas",
+          "Equipo de tres diseñadores especializados",
+          "Creación de logotipo e icono de marca",
+          "Animación de logotipo",
+          "Guías de uso del logotipo",
+          "Archivos entregables (AI, PDF, SVG, EPS, PNG)"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para <highlight>conquistar</highlight> la web?",
+      "subtitle": "Excelencia Digital Marrakech • v.9",
+      "button": "COMENZAR"
+    }
+  }
+}

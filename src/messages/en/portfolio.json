@@ -1,0 +1,110 @@
+{
+  "header": {
+    "badge": "GDC SHOWCASE • ELITE",
+    "title": "ARCHIVE",
+    "impact": "OF IMPACT.",
+    "subtitle": "Digital Engineering <black>&</black> Pure Aesthetics."
+  },
+  "filters": {
+    "all": "All",
+    "web": "Web",
+    "branding": "Branding",
+    "seo": "SEO",
+    "content": "Content"
+  },
+  "stats": {
+    "analytics": "Live Analytics",
+    "solutions": "High-Perf Solutions",
+    "avg_load": "Avg. Load",
+    "roi_score": "ROI Score"
+  },
+  "form": {
+    "title": "Start the Brief",
+    "step": "Step {step} of 3",
+    "success": {
+      "title": "Protocol Activated.",
+      "subtitle": "We are analyzing your data. Response within 12h."
+    },
+    "labels": {
+      "identity": "Identity",
+      "contact": "Pro Contact",
+      "vision": "Project Vision"
+    },
+    "placeholders": {
+      "name": "John Doe / Brand",
+      "email": "email@direct.com",
+      "vision": "Objectives, inspirations..."
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "deploy": "Deploy"
+    }
+  },
+  "cta": {
+    "badge": "START THE REVOLUTION",
+    "vision": "YOUR VISION.",
+    "deployed": "DEPLOYED.",
+    "subtitle": "Surgical expertise • Monumental impact",
+    "button": "Launch Project",
+    "mastery": "Digital Mastery",
+    "impact": "Global Impact",
+    "roi": "ROI Focused"
+  },
+  "projects": {
+    "majorelle": {
+      "tagline": "Business excellence in Marrakech",
+      "category": "Real Estate",
+      "impact": "+150% Leads",
+      "tech": "React Engine"
+    },
+    "smashy": {
+      "tagline": "Culinary prestige branding",
+      "category": "Catering",
+      "impact": "Luxury Icon",
+      "tech": "3D Design"
+    },
+    "comewithus": {
+      "tagline": "8K Morocco Expedition",
+      "category": "Travel",
+      "impact": "Viral",
+      "tech": "RAW 8K"
+    },
+    "batiment": {
+      "tagline": "Digitizing the art of building",
+      "category": "Construction",
+      "impact": "Top 3 Google",
+      "tech": "Full-Stack"
+    },
+    "plancy": {
+      "tagline": "Human communication",
+      "category": "Tech",
+      "impact": "+200% ROI",
+      "tech": "Automation"
+    },
+    "mmreseaux": {
+      "tagline": "Infrastructure connectivity",
+      "category": "Telecom",
+      "impact": "Leader",
+      "tech": "Enterprise"
+    },
+    "services": {
+      "web": "Web",
+      "seo": "SEO",
+      "identity": "Identity",
+      "social": "Social",
+      "content": "Content",
+      "video": "Video",
+      "leads": "Leads",
+      "branding": "Branding"
+    }
+  },
+  "form_services": {
+    "web": "Web Design",
+    "seo": "SEO / SEA",
+    "brand": "Identity",
+    "content": "Content",
+    "app": "Mobile App",
+    "other": "Other"
+  }
+}

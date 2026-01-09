@@ -1,0 +1,68 @@
+{
+  "header": {
+    "badge": "Nous Contacter",
+    "titlePrefix": "Parlons",
+    "titleSuffix": "Projet.",
+    "description": "Une vision ? Un défi ? Notre équipe transforme vos idées en expériences digitales d'exception."
+  },
+  "form": {
+    "steps": {
+      "identity": "Identité",
+      "needs": "Besoins",
+      "message": "Message"
+    },
+    "success": {
+      "title": "Bien reçu !",
+      "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
+      "button": "Nouvelle demande"
+    },
+    "labels": {
+      "name": "Nom Complet",
+      "email": "Email Pro",
+      "company": "Entreprise",
+      "phone": "Téléphone",
+      "needs": "Sélectionnez vos besoins",
+      "message": "Parlez-nous de votre projet"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@company.com",
+      "company": "Studio Digital",
+      "phone": "+212 6...",
+      "otherService": "Précisez votre besoin...",
+      "message": "Contexte, objectifs, délais, budget estimé..."
+    },
+    "services": {
+      "vitrine": "Site Vitrine",
+      "ecommerce": "E-Commerce",
+      "appweb": "App Web",
+      "seo": "SEO / Ads",
+      "branding": "Branding",
+      "other": "Autre"
+    },
+    "buttons": {
+      "back": "Retour",
+      "sending": "Envoi...",
+      "send": "Envoyer",
+      "next": "Suivant"
+    }
+  },
+  "info": {
+    "directLine": "Ligne Directe",
+    "emailPro": "Email Pro",
+    "followUs": "Suivez-nous",
+    "copied": "Copié !"
+  },
+  "locations": {
+    "badge": "Global Presence Hub",
+    "titlePrefix": "Nos",
+    "titleSuffix": "Implantations.",
+    "localExpert": "Expert Local",
+    "operational": "Opérationnel",
+    "labels": {
+      "headquarters": "Siège Social",
+      "secondary": "Adresse Secondaire",
+      "france": "Siège en France"
+    }
+  }
+}

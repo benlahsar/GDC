@@ -1,0 +1,112 @@
+{
+  "pack-seo": {
+    "hero": {
+      "title": "Descubra Nuestros <highlight>Packs SEO</highlight>"
+    },
+    "bento": {
+      "performance": "Análisis de Rendimiento",
+      "ecommerce": "Sitios E-commerce",
+      "showcase": "Sitios Vitrina",
+      "creation": "Creación de Sitios Web",
+      "mobile": "Aplicaciones Móviles",
+      "photo": "Fotografía Profesional",
+      "video": "Videografía",
+      "visual": "Creación de Contenido Visual",
+      "ads": "Publicidad en línea",
+      "erp": "Soluciones ERP",
+      "audits": "Auditorías Digitales",
+      "marketing": "Marketing Digital",
+      "branding": "Gestión de Imagen de Marca",
+      "software": "Desarrollo de Software",
+      "tracking": "Seguimiento de Proyectos",
+      "seo": "SEO"
+    },
+    "values": {
+      "v1": {
+        "title": "A Medida",
+        "desc": "Ofrecemos soluciones adaptadas a sus necesidades específicas para garantizar resultados óptimos."
+      },
+      "v2": {
+        "title": "Innovadoras",
+        "desc": "Nuestros servicios integran las últimas tecnologías y estrategias para mantenerse a la vanguardia de la innovación."
+      },
+      "v3": {
+        "title": "Eficaces",
+        "desc": "Aseguramos soluciones concretas y eficaces que generan resultados tangibles para su empresa."
+      },
+      "protocol": "GDC Excelencia"
+    },
+    "marquee": "Group Digital Concept",
+    "pricing": {
+      "title": "Nuestros packs predefinidos de posicionamiento natural <highlight>SEO</highlight>",
+      "subtitle": "Opte por nuestra agencia de comunicación y mejore el posicionamiento de su <highlight>sitio web</highlight>",
+      "starting_at": "a tan solo",
+      "tax": "IVA no incl.",
+      "period": "/al mes",
+      "cta": "¡Contáctenos!",
+      "packs": {
+        "starter": "PACK STARTER",
+        "bronze": "PACK BRONZE",
+        "silver": "PACK SILVER",
+        "gold": "PACK GOLD",
+        "platinium": "PACK PLATINIUM",
+        "titanium": "PACK TITANIUM"
+      },
+      "features": {
+        "audit": "Auditoría SEO: técnica, competitiva y posicionamiento",
+        "submission": "Envío a los principales motores de búsqueda Google, Bing, Yahoo",
+        "targeting": "Segmentación de palabras clave y optimización de metaetiquetas para {count} página",
+        "targeting_plural": "Segmentación de palabras clave y optimización de metaetiquetas para {count} páginas",
+        "sitemap": "Creación de sitemap para Google",
+        "ranking": "Mejora del posicionamiento en sus palabras clave",
+        "delivery": "Entrega del servicio en {hours}H",
+        "commitment": "Sin compromiso",
+        "frequency": "Servicio realizado 1 sola vez / mes",
+        "blocking": "Control de factores bloqueantes",
+        "backlinks": "Creación de {count} backlinks de calidad",
+        "article": "Redacción de un artículo optimizado para SEO de 300 palabras"
+      },
+      "custom": {
+        "badge": "PACK ULTIMATE",
+        "title": "A Medida",
+        "feature1": "A Medida",
+        "feature2": "Más de 10 Páginas",
+        "request": "Solicitar",
+        "quote": "Un Presupuesto"
+      }
+    },
+    "solutions": {
+      "title": "Solución completa de <highlight>Optimización SEO</highlight>",
+      "header_primary": "Solución completa de",
+      "seo_opt": {
+        "title": "Optimización SEO",
+        "features": [
+          "Análisis y optimización de palabras clave",
+          "Optimización on-page",
+          "Técnicas SEO avanzadas",
+          "Contenido web enriquecido y segmentado",
+          "SEO local",
+          "Estrategias de backlinking",
+          "Informes detallados de análisis SEO"
+        ]
+      },
+      "advantages": {
+        "title": "VENTAJAS",
+        "features": [
+          "Director artístico dedicado a cada proyecto",
+          "Derechos de propiedad exclusivos",
+          "Compromiso de satisfacción total",
+          "Garantía de diseño 100% único",
+          "Soporte disponible 24/7",
+          "Servicio posventa ejemplar"
+        ]
+      },
+      "analytics": "GDC ANALYTICS"
+    },
+    "final_cta": {
+      "title": "¿Listo para <highlight>dominar</highlight> los resultados?",
+      "subtitle": "Excelencia SEO Marrakech • v.9",
+      "button": "COMENZAR"
+    }
+  }
+}
