@@ -1,24 +1,60 @@
 {
+  "tag": "Contacto",
+  "title": "Hablemos de tu <highlight>éxito futuro</highlight>",
+  "subtitle": "¿Listo para transformar tu visión en realidad digital? Completa este formulario para iniciar una colaboración excepcional.",
+  "success": {
+    "title": "¡Mensaje Recibido!",
+    "message": "Gracias {name}. Estamos analizando tu solicitud y volveremos contigo en 24 horas.",
+    "newRequest": "Nueva solicitud"
+  },
   "header": {
     "badge": "Contáctenos",
-    "titlePrefix": "Hablemos de",
+    "titlePrefix": "Hablemos",
     "titleSuffix": "Proyecto.",
-    "description": "¿Una visión? ¿Un desafío? Nuestro equipo transforma sus ideas en experiencias digitales excepcionales."
+    "description": "¿Una visión? ¿Un desafío? Nuestro equipo transforma tus ideas en experiencias digitales excepcionales."
+  },
+  "info": {
+    "email": "Email",
+    "emailPro": "Email Profesional",
+    "phone": "Teléfono",
+    "directLine": "Línea Directa",
+    "followUs": "Síguenos",
+    "copied": "¡Copiado!"
   },
   "form": {
+    "step1": {
+      "title": "Tus Datos",
+      "subtitle": "Empecemos con las presentaciones.",
+      "name": "Nombre Completo *",
+      "namePlaceholder": "Tu Nombre",
+      "email": "Email Profesional *",
+      "emailPlaceholder": "nombre@empresa.com",
+      "phone": "Teléfono *",
+      "phonePlaceholder": "6 00 00 00",
+      "company": "Empresa",
+      "companyPlaceholder": "Nombre de tu empresa",
+      "next": "Continuar"
+    },
+    "step2": {
+      "title": "Tu Proyecto",
+      "subtitle": "Cuéntanos más sobre tus ambiciones.",
+      "services": "Servicios Buscados *",
+      "budget": "Presupuesto Estimado *",
+      "deadline": "Plazo Deseado *",
+      "description": "Detalles del proyecto",
+      "descriptionPlaceholder": "Cuéntanos más... (Objetivos, competidores, inspiración)",
+      "back": "Volver",
+      "submit": "Confirmar proyecto",
+      "sending": "Enviando..."
+    },
     "steps": {
       "identity": "Identidad",
       "needs": "Necesidades",
       "message": "Mensaje"
     },
-    "success": {
-      "title": "¡Recibido!",
-      "message": "Gracias {name}. Estamos analizando su solicitud y le responderemos en un plazo de 24 horas.",
-      "button": "Nueva solicitud"
-    },
     "labels": {
       "name": "Nombre Completo",
-      "email": "Correo Profesional",
+      "email": "Email Pro",
       "company": "Empresa",
       "phone": "Teléfono",
       "needs": "Seleccione sus necesidades",
@@ -33,7 +69,7 @@
       "message": "Contexto, objetivos, plazos, presupuesto estimado..."
     },
     "services": {
-      "vitrine": "Sitio Escaparate",
+      "vitrine": "Sitio Vitrina",
       "ecommerce": "E-Commerce",
       "appweb": "App Web",
       "seo": "SEO / Ads",
@@ -45,22 +81,70 @@
       "sending": "Enviando...",
       "send": "Enviar",
       "next": "Siguiente"
-    }
-  },
-  "info": {
-    "directLine": "Línea Directa",
-    "emailPro": "Correo Profesional",
-    "followUs": "Síguenos",
-    "copied": "¡Copiado!"
+    },
+    "success": {
+      "title": "¡Recibido!",
+      "message": "Gracias {name}. Estamos analizando tu solicitud y volveremos contigo en 24 horas.",
+      "button": "Nueva Solicitud",
+      "newRequest": "Nueva Solicitud"
+    },
+    "options": {
+      "services": {
+        "strategy": "Estrategia y Consultoría",
+        "branding": "Branding e Identidad",
+        "website": "Sitio Web Personalizado",
+        "ecommerce": "E-Commerce",
+        "mobile": "App Móvil / App Web",
+        "uiux": "Diseño UI/UX",
+        "seo": "SEO y Posicionamiento",
+        "ads": "Publicidad (Anuncios)",
+        "social": "Social Media",
+        "content": "Creación de Contenido",
+        "other": "Otro"
+      },
+      "budgets": {
+        "lt20k": "< 20k MAD",
+        "20k50k": "20k - 50k MAD",
+        "50k100k": "50k - 100k MAD",
+        "gt100k": "+ 100k MAD",
+        "tbd": "Por definir"
+      },
+      "timelines": {
+        "asap": "Tan pronto como sea posible",
+        "1month": "En 1 mes",
+        "onetreemonths": "1-3 meses",
+        "undefined": "Indefinido"
+      },
+      "countries": {
+        "morocco": "Marruecos",
+        "france": "Francia",
+        "usa": "EE.UU.",
+        "uk": "Reino Unido",
+        "belgium": "Bélgica",
+        "switzerland": "Suiza",
+        "spain": "España"
+      }
+    },
+    "errors": {
+      "name": "El nombre es requerido",
+      "email": "El email es requerido",
+      "emailInvalid": "Formato de email inválido",
+      "phone": "El número es requerido",
+      "phoneInvalid": "Número inválido",
+      "services": "Por favor selecciona al menos un servicio",
+      "budget": "Por favor define un presupuesto",
+      "deadline": "Por favor elige un plazo"
+    },
+    "errorMessage": "Ocurrió un error al enviar. Por favor intente de nuevo."
   },
   "locations": {
     "badge": "Global Presence Hub",
     "titlePrefix": "Nuestras",
     "titleSuffix": "Ubicaciones.",
     "localExpert": "Experto Local",
-    "operational": "Operativo",
+    "operational": "Opérationnel",
     "labels": {
-      "headquarters": "Sede Social",
+      "headquarters": "Sede Central",
       "secondary": "Dirección Secundaria",
       "france": "Sede en Francia"
     }

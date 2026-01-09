@@ -1,20 +1,56 @@
 {
+  "tag": "Contact",
+  "title": "Talk About Your <highlight>Future Success</highlight>",
+  "subtitle": "Ready to transform your vision into digital reality? Complete this form to start an exceptional collaboration.",
+  "success": {
+    "title": "Message Received!",
+    "message": "Thank you {name}. We are analyzing your request and will get back to you within 24 hours.",
+    "newRequest": "New request"
+  },
   "header": {
     "badge": "Contact Us",
     "titlePrefix": "Let's Talk",
     "titleSuffix": "Project.",
     "description": "A vision? A challenge? Our team transforms your ideas into exceptional digital experiences."
   },
+  "info": {
+    "email": "Email",
+    "emailPro": "Work Email",
+    "phone": "Phone",
+    "directLine": "Direct Line",
+    "followUs": "Follow Us",
+    "copied": "Copied!"
+  },
   "form": {
+    "step1": {
+      "title": "Your Details",
+      "subtitle": "Let's start with introductions.",
+      "name": "Full Name *",
+      "namePlaceholder": "Your Name",
+      "email": "Work Email *",
+      "emailPlaceholder": "name@company.com",
+      "phone": "Phone *",
+      "phonePlaceholder": "6 00 00 00",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "next": "Continue"
+    },
+    "step2": {
+      "title": "Your Project",
+      "subtitle": "Tell us more about your ambitions.",
+      "services": "Services Sought *",
+      "budget": "Estimated Budget *",
+      "deadline": "Desired Deadline *",
+      "description": "Project Details",
+      "descriptionPlaceholder": "Tell us more... (Objectives, competitors, inspiration)",
+      "back": "Back",
+      "submit": "Confirm Project",
+      "sending": "Sending..."
+    },
     "steps": {
       "identity": "Identity",
       "needs": "Needs",
       "message": "Message"
-    },
-    "success": {
-      "title": "Got it!",
-      "message": "Thank you {name}. We are analyzing your request and will get back to you within 24 hours.",
-      "button": "New Request"
     },
     "labels": {
       "name": "Full Name",
@@ -45,13 +81,61 @@
       "sending": "Sending...",
       "send": "Send",
       "next": "Next"
-    }
-  },
-  "info": {
-    "directLine": "Direct Line",
-    "emailPro": "Work Email",
-    "followUs": "Follow Us",
-    "copied": "Copied!"
+    },
+    "success": {
+      "title": "Got it!",
+      "message": "Thank you {name}. We are analyzing your request and will get back to you within 24 hours.",
+      "button": "New Request",
+      "newRequest": "New Request"
+    },
+    "options": {
+      "services": {
+        "strategy": "Strategy & Consulting",
+        "branding": "Branding & Identity",
+        "website": "Custom Website",
+        "ecommerce": "E-Commerce",
+        "mobile": "Mobile App / Web App",
+        "uiux": "UI/UX Design",
+        "seo": "SEO & Indexing",
+        "ads": "Advertising (Ads)",
+        "social": "Social Media",
+        "content": "Content Creation",
+        "other": "Other"
+      },
+      "budgets": {
+        "lt20k": "< 20k MAD",
+        "20k50k": "20k - 50k MAD",
+        "50k100k": "50k - 100k MAD",
+        "gt100k": "+ 100k MAD",
+        "tbd": "To be defined"
+      },
+      "timelines": {
+        "asap": "As soon as possible",
+        "1month": "Within 1 month",
+        "onetreemonths": "1-3 months",
+        "undefined": "Undefined"
+      },
+      "countries": {
+        "morocco": "Morocco",
+        "france": "France",
+        "usa": "USA",
+        "uk": "UK",
+        "belgium": "Belgium",
+        "switzerland": "Switzerland",
+        "spain": "Spain"
+      }
+    },
+    "errors": {
+      "name": "Name is required",
+      "email": "Email is required",
+      "emailInvalid": "Invalid email format",
+      "phone": "Number is required",
+      "phoneInvalid": "Invalid number",
+      "services": "Please select at least one service",
+      "budget": "Please define a budget",
+      "deadline": "Please choose a deadline"
+    },
+    "errorMessage": "An error occurred while sending. Please try again."
   },
   "locations": {
     "badge": "Global Presence Hub",

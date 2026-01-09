@@ -1,20 +1,56 @@
 {
+  "tag": "Contact",
+  "title": "Parlons de votre <highlight>futur succès</highlight>",
+  "subtitle": "Prêt à transformer votre vision en réalité digitale ? Remplissez ce formulaire pour démarrer une collaboration d'exception.",
+  "success": {
+    "title": "Bien reçu !",
+    "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
+    "newRequest": "Nouvelle demande"
+  },
   "header": {
     "badge": "Nous Contacter",
     "titlePrefix": "Parlons",
     "titleSuffix": "Projet.",
     "description": "Une vision ? Un défi ? Notre équipe transforme vos idées en expériences digitales d'exception."
   },
+  "info": {
+    "email": "Email",
+    "emailPro": "Email Professionnel",
+    "phone": "Téléphone",
+    "directLine": "Ligne Directe",
+    "followUs": "Suivez-nous",
+    "copied": "Copié !"
+  },
   "form": {
+    "step1": {
+      "title": "Vos Coordonnées",
+      "subtitle": "Commençons par les présentations.",
+      "name": "Nom Complet *",
+      "namePlaceholder": "Votre Nom",
+      "email": "Email Professionnel *",
+      "emailPlaceholder": "nom@entreprise.com",
+      "phone": "Téléphone *",
+      "phonePlaceholder": "6 00 00 00",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre société",
+      "next": "Continuer"
+    },
+    "step2": {
+      "title": "Votre Projet",
+      "subtitle": "Dites-nous en plus sur vos ambitions.",
+      "services": "Services Recherchés *",
+      "budget": "Budget Estimé *",
+      "deadline": "Délai Souhaité *",
+      "description": "Détails du projet",
+      "descriptionPlaceholder": "Racontez-nous en plus... (Objectifs, concurrents, inspiration)",
+      "back": "Retour",
+      "sending": "Envoi...",
+      "submit": "Confirmer le projet"
+    },
     "steps": {
       "identity": "Identité",
       "needs": "Besoins",
       "message": "Message"
-    },
-    "success": {
-      "title": "Bien reçu !",
-      "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
-      "button": "Nouvelle demande"
     },
     "labels": {
       "name": "Nom Complet",
@@ -25,12 +61,12 @@
       "message": "Parlez-nous de votre projet"
     },
     "placeholders": {
-      "name": "John Doe",
-      "email": "john@company.com",
-      "company": "Studio Digital",
-      "phone": "+212 6...",
-      "otherService": "Précisez votre besoin...",
-      "message": "Contexte, objectifs, délais, budget estimé..."
+       "name": "John Doe",
+       "email": "john@company.com",
+       "company": "Studio Digital",
+       "phone": "+212 6...",
+       "otherService": "Précisez votre besoin...",
+       "message": "Contexte, objectifs, délais, budget estimé..."
     },
     "services": {
       "vitrine": "Site Vitrine",
@@ -45,13 +81,61 @@
       "sending": "Envoi...",
       "send": "Envoyer",
       "next": "Suivant"
-    }
-  },
-  "info": {
-    "directLine": "Ligne Directe",
-    "emailPro": "Email Pro",
-    "followUs": "Suivez-nous",
-    "copied": "Copié !"
+    },
+    "success": {
+      "title": "Bien reçu !",
+      "message": "Merci {name}. Nous analysons votre demande et revenons vers vous sous 24h.",
+      "button": "Nouvelle demande",
+      "newRequest": "Nouvelle demande"
+    },
+    "options": {
+      "services": {
+        "strategy": "Stratégie & Consulting",
+        "branding": "Branding & Identité",
+        "website": "Site Web Sur Mesure",
+        "ecommerce": "E-Commerce",
+        "mobile": "App Mobile / Web App",
+        "uiux": "UI/UX Design",
+        "seo": "SEO & Référencement",
+        "ads": "Publicité (Ads)",
+        "social": "Social Media",
+        "content": "Création de Contenu",
+        "other": "Autre"
+      },
+      "budgets": {
+        "lt20k": "< 20k MAD",
+        "20k50k": "20k - 50k MAD",
+        "50k100k": "50k - 100k MAD",
+        "gt100k": "+ 100k MAD",
+        "tbd": "À définir"
+      },
+      "timelines": {
+        "asap": "Dès que possible",
+        "1month": "Dans 1 mois",
+        "onetreemonths": "1-3 mois",
+        "undefined": "Indéfini"
+      },
+      "countries": {
+        "morocco": "Maroc",
+        "france": "France",
+        "usa": "USA",
+        "uk": "Royaume-Uni",
+        "belgium": "Belgique",
+        "switzerland": "Suisse",
+        "spain": "Espagne"
+      }
+    },
+    "errors": {
+      "name": "Le nom est requis",
+      "email": "L'email est requis",
+      "emailInvalid": "Format d'email invalide",
+      "phone": "Le numéro est requis",
+      "phoneInvalid": "Numéro invalide",
+      "services": "Veuillez sélectionner au moins un service",
+      "budget": "Veuillez définir un budget",
+      "deadline": "Veuillez choisir un délai"
+    },
+    "errorMessage": "Une erreur est survenue lors de l'envoi. Veuillez réessayer."
   },
   "locations": {
     "badge": "Global Presence Hub",
