@@ -68,6 +68,7 @@ const getTeamMembers = (t: any): TeamMember[] => [
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766580829355-scaled.webp",
     category: "dev",
     level: 2,
+    linkedin: "https://www.linkedin.com/in/ait-elouhab-marouane",
   },
   {
     name: "Abd Allah Jben",
