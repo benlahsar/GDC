@@ -1,7 +1,7 @@
 import { NavItem } from './types';
 
 export const getNavItems = (t: any): NavItem[] => [
-  { label: t('nav.home'), href: '#', id: 'home' },
+  { label: t('nav.home'), href: '/', id: 'home' },
   { label: t('nav.agency'), href: '/agency', id: 'agency' },
   { label: t('nav.team'), href: '/team', id: 'team' },
   { 
@@ -51,7 +51,5 @@ export const getNavItems = (t: any): NavItem[] => [
       { label: 'Group Plancy Call', id: 'proj-plancy', href: 'https://group-plancycall.com/' },
     ]
   },
-  { label: t('header.navItems.blog'), href: '/blog', id: 'blog' },
-  { label: t('header.navItems.about'), href: '/about', id: 'about' },
   { label: t('nav.contact'), href: '/contact', id: 'contact-page' },
 ];
