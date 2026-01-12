@@ -24,6 +24,7 @@ interface TeamMember {
   image: string;
   category: "executive" | "dev" | "design";
   level: number;
+  linkedin?: string;
 }
 
 const getTeamMembers = (t: any): TeamMember[] => [
@@ -58,6 +59,7 @@ const getTeamMembers = (t: any): TeamMember[] => [
       "https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766581123204-scaled.webp",
     category: "dev",
     level: 2,
+    linkedin: "https://www.linkedin.com/in/nizar-benlahsar-7181861a2/",
   },
   {
     name: "Marouane Ait Elouhab",
@@ -120,6 +122,12 @@ const MemberCard: React.FC<{
     setIsHovered(false);
   };
 
+  const handleCardClick = () => {
+    if (member.linkedin) {
+      window.open(member.linkedin, "_blank");
+    }
+  };
+
   const Icon =
     member.category === "executive"
       ? Crown
@@ -140,8 +148,9 @@ const MemberCard: React.FC<{
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
+      onClick={handleCardClick}
       className={`group relative flex flex-col items-center animate-fade-in-up opacity-0 ${isMobile ? "" : "perspective-1000"
-        }`}
+        } ${member.linkedin ? "cursor-pointer" : ""}`}
       style={{
         animationDelay: `${delay}ms`,
         animationFillMode: "forwards",

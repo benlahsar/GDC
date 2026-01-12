@@ -3,7 +3,12 @@ import React, { useState } from 'react';
 import { Plus, Minus, MessageCircle, ArrowRight, HelpCircle } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-const getFaqs = (t: any) => t.raw("faqs").map((faq: any) => ({
+interface FAQ {
+    question: string;
+    answer: string;
+}
+
+const getFaqs = (t: any): FAQ[] => t.raw("faqs").map((faq: any) => ({
     question: faq.q,
     answer: faq.a
 }));
