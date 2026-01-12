@@ -1,0 +1,110 @@
+{
+  "header": {
+    "badge": "GDC SHOWCASE • ELITE",
+    "title": "ARCHIVIO",
+    "impact": "DI IMPATTO.",
+    "subtitle": "Ingegneria Digitale <black>&</black> Estetica Pura."
+  },
+  "filters": {
+    "all": "Tutto",
+    "web": "Web",
+    "branding": "Branding",
+    "seo": "SEO",
+    "content": "Contenuti"
+  },
+  "stats": {
+    "analytics": "Analytics Live",
+    "solutions": "Soluzioni High-Perf",
+    "avg_load": "Caricamento Medio",
+    "roi_score": "Punteggio ROI"
+  },
+  "form": {
+    "title": "Inizia il Brief",
+    "step": "Step {step} di 3",
+    "success": {
+      "title": "Protocollo Attivato.",
+      "subtitle": "Stiamo analizzando i tuoi dati. Risposta entro 12h."
+    },
+    "labels": {
+      "identity": "Identità",
+      "contact": "Contatto Pro",
+      "vision": "Visione Progetto"
+    },
+    "placeholders": {
+      "name": "Mario Rossi / Brand",
+      "email": "email@diretto.com",
+      "vision": "Obiettivi, ispirazioni..."
+    },
+    "buttons": {
+      "back": "Indietro",
+      "next": "Avanti",
+      "deploy": "Deploy"
+    }
+  },
+  "cta": {
+    "badge": "INIZIA LA RIVOLUZIONE",
+    "vision": "LA TUA VISIONE.",
+    "deployed": "REALIZZATA.",
+    "subtitle": "Competenza chirurgica • Impatto monumentale",
+    "button": "Lancia Progetto",
+    "mastery": "Padronanza Digitale",
+    "impact": "Impatto Globale",
+    "roi": "Focus ROI"
+  },
+  "projects": {
+    "majorelle": {
+      "tagline": "Eccellenza business a Marrakech",
+      "category": "Immobiliare",
+      "impact": "+150% Lead",
+      "tech": "React Engine"
+    },
+    "smashy": {
+      "tagline": "Branding prestigio culinario",
+      "category": "Ristorazione",
+      "impact": "Icona Lusso",
+      "tech": "3D Design"
+    },
+    "comewithus": {
+      "tagline": "Spedizione Marocco 8K",
+      "category": "Viaggi",
+      "impact": "Virale",
+      "tech": "RAW 8K"
+    },
+    "batiment": {
+      "tagline": "Digitalizzare l'arte del costruire",
+      "category": "Costruzioni",
+      "impact": "Top 3 Google",
+      "tech": "Full-Stack"
+    },
+    "plancy": {
+      "tagline": "Comunicazione umana",
+      "category": "Tech",
+      "impact": "+200% ROI",
+      "tech": "Automazione"
+    },
+    "mmreseaux": {
+      "tagline": "Connettività infrastrutture",
+      "category": "Telecom",
+      "impact": "Leader",
+      "tech": "Enterprise"
+    },
+    "services": {
+      "web": "Web",
+      "seo": "SEO",
+      "identity": "Identità",
+      "social": "Social",
+      "content": "Contenuti",
+      "video": "Video",
+      "leads": "Lead",
+      "branding": "Branding"
+    }
+  },
+  "form_services": {
+    "web": "Web Design",
+    "seo": "SEO / SEA",
+    "brand": "Identità",
+    "content": "Contenuti",
+    "app": "App Mobile",
+    "other": "Altro"
+  }
+}

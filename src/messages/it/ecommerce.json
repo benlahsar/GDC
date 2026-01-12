@@ -1,0 +1,386 @@
+{
+  "EcommercePage": {
+    "badge": "Conquista il Mercato Online",
+    "title": "Group Digital Concept – {br} La Tua Agenzia per la {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Creazione Siti E-commerce</span> {br} a Marrakech",
+    "description": "In Group Digital Concept, agenzia esperta nella creazione di siti e-commerce a Marrakech, trasformiamo le tue ambizioni commerciali in piattaforme e-commerce ad alta conversione, tecnicamente impeccabili, perfettamente adattate alle aspettative del mercato marocchino.",
+    "cta": "Lancia il mio negozio",
+    "visual": {
+      "payments": "Pagamenti Sicuri",
+      "gateways": "CMI, Stripe, PayPal",
+      "conversion": "Tasso di Conversione"
+    },
+    "features": {
+      "seo": {
+        "title": "SEO & Performance",
+        "description": "Siti ottimizzati per Google Marocco. Caricamento ultra-rapido."
+      },
+      "design": {
+        "title": "Design Personalizzato",
+        "description": "Identità visiva unica che riflette il tuo brand."
+      },
+      "security": {
+        "title": "Sicurezza Massima",
+        "description": "Protezione dati clienti e transazioni sicure."
+      },
+      "support": {
+        "title": "Supporto 24/7",
+        "label": "Supporto 24/7"
+      },
+      "results": {
+        "label": "Risultati Garantiti"
+      }
+    },
+    "stats": {
+      "projects": "Progetti di contenuti digitali consegnati",
+      "satisfaction": "Soddisfazione Cliente",
+      "uptime": "Disponibilità"
+    },
+    "technologies": {
+      "title": "Le Nostre Tecnologie <span class='text-brand-red'>E-Commerce</span>",
+      "platforms": {
+        "shopify": {
+          "name": "Shopify",
+          "desc": "Ideale per un lancio rapido e gestione semplificata. Leader globale e-commerce.",
+          "features": [
+            "Hosting incluso",
+            "Temi Premium",
+            "App Marketing"
+          ]
+        },
+        "woocommerce": {
+          "name": "WooCommerce",
+          "desc": "La flessibilità di WordPress. Perfetto per controllo totale e SEO avanzato.",
+          "features": [
+            "100% Personalizzabile",
+            "SEO Friendly",
+            "Nessun canone mensile"
+          ]
+        },
+        "custom": {
+          "name": "Personalizzato (Dev)",
+          "desc": "Per progetti complessi che richiedono funzionalità uniche e alte prestazioni.",
+          "features": [
+            "React / Next.js",
+            "Architettura Headless",
+            "Scalabilità Infinita"
+          ]
+        }
+      }
+    }
+  },
+  "EcommerceWhyChoose": {
+    "badge": "Il Nostro Valore Aggiunto",
+    "title": "Perché Scegliere {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Group Digital Concept?</span>",
+    "illustration": {
+      "shop": "Negozio",
+      "payments": "Pagamenti",
+      "shipping": "Spedizioni",
+      "analytics": "Analytics"
+    },
+    "main": {
+      "intro": "In <highlight>Group Digital Concept</highlight>, siamo partner strategici dedicati al successo del tuo progetto e-commerce.",
+      "subtitle": "Cosa Ti Offriamo",
+      "items": [
+        {
+          "title": "Competenza Tecnica & Marketing",
+          "desc": "Team multidisciplinare che padroneggia Shopify, WooCommerce e PrestaShop."
+        },
+        {
+          "title": "Approccio 100% Personalizzato",
+          "desc": "Analisi del tuo settore e dei tuoi competitor."
+        },
+        {
+          "title": "Performance & Sicurezza",
+          "desc": "Siti ultra-rapidi protetti contro minacce cyber."
+        },
+        {
+          "title": "Supporto Continuo",
+          "desc": "Follow-up reattivo e manutenzione proattiva."
+        }
+      ]
+    },
+    "vision": {
+      "title": "Visione",
+      "content": "Diventare il <highlight>partner di riferimento</highlight> nell'e-commerce a Marrakech."
+    },
+    "mission": {
+      "title": "Missione",
+      "item1": {
+        "title": "Massimizzare la visibilità",
+        "desc": "Attraverso SEO e design responsive."
+      }
+    }
+  },
+  "EcommerceAdvantages": {
+    "badge": "I Nostri Punti di Forza",
+    "title": "Eccellenza {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Senza Compromessi</span>",
+    "items": [
+      {
+        "title": "Soddisfazione Cliente"
+      },
+      {
+        "title": "Chiavi in Mano"
+      },
+      {
+        "title": "Conformità e GDPR"
+      },
+      {
+        "title": "Strategia Data-Driven"
+      },
+      {
+        "title": "Design Unici"
+      },
+      {
+        "title": "Analytics in Tempo Reale"
+      },
+      {
+        "title": "Prezzi Competitivi"
+      },
+      {
+        "title": "SEO Ottimizzato"
+      }
+    ]
+  },
+  "EcommerceStrategyGrid": {
+    "badge": "Strategia Vincente",
+    "title": "Vuoi Conquistare il Mercato Online con un {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Sito E-commerce ad Alte Prestazioni?</span>",
+    "items": [
+      {
+        "title": "Sviluppo Tecnico e Ottimizzazione SEO",
+        "description": "Il nostro approccio combina architettura robusta e strategie SEO avanzate per risultati tangibili.",
+        "points": [
+          "Sviluppo Personalizzato: Piattaforme e-commerce ottimizzate per i motori di ricerca.",
+          "Design Responsive e Intuitivo: Interfacce mobile-first, navigazione fluida.",
+          "Integrazione Sicura: Pagamenti crittografati (CMI, PayPal), gestione magazzino.",
+          "Ottimizzazione Tecnica: Tag HTML semantici, meta-descrizioni."
+        ]
+      },
+      {
+        "title": "Design Centrato sulla Conversione",
+        "description": "Un sito e-commerce di successo trasforma i visitatori in clienti fedeli.",
+        "points": [
+          "User Experience Premium: Percorso cliente semplificato.",
+          "Identità Visiva d'Impatto: Design allineato al tuo brand.",
+          "Call-to-Action Strategiche: Pulsanti incentivanti posizionati nei punti chiave.",
+          "A/B Testing: Ottimizzazione continua del funnel di vendita."
+        ]
+      },
+      {
+        "title": "Analisi & Strategia",
+        "description": "Prima di sviluppare, analizziamo il tuo settore e i tuoi competitor.",
+        "points": [
+          "Audit Tecnico & Obiettivi: Identificazione opportunità SEO.",
+          "Benchmark Competitivo: Studio delle best practice.",
+          "Pianificazione Agile: Calendario sviluppo e consegne.",
+          "Buyer Personas: Adattamento del design al profilo target."
+        ]
+      },
+      {
+        "title": "Ottimizzazione & Performance",
+        "description": "Garantiamo siti e-commerce sempre competitivi.",
+        "points": [
+          "Analisi in Tempo Reale: Tracking traffico e carrello medio.",
+          "Manutenzione Proattiva: Aggiornamenti e correzioni tecniche.",
+          "GDPR & Sicurezza: Conformità legale e protezione dati."
+        ]
+      }
+    ]
+  },
+  "EcommerceProcessSection": {
+    "badge": "Roadmap",
+    "title": "Il Tuo Negozio, {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Passo dopo Passo</span>",
+    "steps": [
+      {
+        "title": "Strategia & Audit",
+        "desc": "Analisi di mercato, scelta della soluzione tecnica (Shopify, WooCommerce, Personalizzato)."
+      },
+      {
+        "title": "Design UX/UI",
+        "desc": "Creazione di mockup centrati sull'utente per massimizzare la conversione."
+      },
+      {
+        "title": "Sviluppo",
+        "desc": "Integrazione tecnica, configurazione pagamenti (CMI, Stripe) e test."
+      }
+    ],
+    "launch": {
+      "badge": "Go Live",
+      "title": "Lancio & {br}Protezione"
+    },
+    "growth": {
+      "title": "Crescita & Follow-up",
+      "cta": "Aumenta le mie vendite"
+    }
+  },
+  "EcommerceMethodology": {
+    "badge": "Processo",
+    "title": "La Nostra {br} Metodologia {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>di Lavoro</span>",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Consulenza Iniziale",
+        "description": "Iniziamo con l'ascolto attivo per catturare l'essenza del tuo brand."
+      },
+      {
+        "id": "02",
+        "title": "Audit e Analisi",
+        "description": "I nostri esperti eseguono una diagnosi completa del tuo ecosistema digitale."
+      },
+      {
+        "id": "03",
+        "title": "Sviluppo del Piano d'Azione",
+        "description": "Sulla base della nostra analisi, progettiamo una strategia su misura."
+      },
+      {
+        "id": "04",
+        "title": "Esecuzione e Follow-up",
+        "description": "Implementiamo le soluzioni definite con rigore."
+      }
+    ]
+  },
+  "EcommerceTestimonials": {
+    "badge": "Recensioni Clienti",
+    "title": "Testimonianze Clienti: {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Storie di Successo Ispiranti</span>",
+    "items": [
+      {
+        "name": "Bousnitra Saida",
+        "role": "CEO, MAJORELLE CENTRE D'AFFAIRE",
+        "text": "Group Digital Concept ha trasformato la nostra presenza digitale. Grazie alla loro competenza, abbiamo migliorato considerevolmente la nostra visibilità."
+      },
+      {
+        "name": "Mehdi Berrada",
+        "role": "CEO, MM RÉSEAUX COM",
+        "text": "Un'agenzia di comunicazione digitale in Marocco che padroneggia perfettamente il suo campo."
+      },
+      {
+        "name": "Karim Belkadi",
+        "role": "CEO, COMPAGNONS BÂTIMENT",
+        "text": "Abbiamo affidato il restyling del nostro sito web a Group Digital Concept e siamo entusiasti del risultato."
+      },
+      {
+        "name": "Samir Aït Benhaddou",
+        "role": "CEO, LOCATION CENTRE D'APPEL",
+        "text": "La loro competenza in SEO e SEA ha potenziato la nostra visibilità su Google. Un vero partner!"
+      },
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professionali e reattivi, hanno capito le nostre esigenze. La nostra presenza online è performante."
+      },
+      {
+        "name": "Sarah Lahlou",
+        "role": "Fondatrice, BIO MAROC",
+        "text": "Un bellissimo sito e-commerce che converte. L'interfaccia è intuitiva per i miei clienti."
+      },
+      {
+        "name": "Youssef El Alami",
+        "role": "Direttore, TECH SOLUTIONS",
+        "text": "Eccellente lavoro sulla nostra applicazione web. Il team tecnico è molto competente."
+      },
+      {
+        "name": "Amina Tazi",
+        "role": "Manager, RIAD LUXE",
+        "text": "Dal lancio del nuovo sito, le nostre prenotazioni dirette sono aumentate del 40%."
+      },
+      {
+        "name": "Hassan Chraibi",
+        "role": "Marketing, AUTO PRO",
+        "text": "Una strategia di lead generation formidabile. Li raccomando vivamente."
+      }
+    ]
+  },
+  "EcommerceFAQ": {
+    "badge": "Supporto & Aiuto",
+    "title": "Esplora le {br} Domande {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Frequenti.</span>",
+    "specific": {
+      "title": "Domanda specifica?",
+      "desc": "I nostri esperti ti rispondono.",
+      "cta": "Contattaci"
+    },
+    "items": [
+      {
+        "question": "Perché è importante avere un sito e-commerce?",
+        "answer": "Avere un sito e-commerce ti permette di raggiungere un pubblico più ampio, aumentare le vendite online e offrire i tuoi prodotti 24/7."
+      },
+      {
+        "question": "Quanto costa creare un sito e-commerce?",
+        "answer": "Il costo varia in base alla complessità del progetto. Offriamo soluzioni adattate a tutti i budget, dal sito Shopify al su misura."
+      },
+      {
+        "question": "Qual è la migliore piattaforma e-commerce?",
+        "answer": "Dipende dai tuoi obiettivi. Shopify è eccellente per un lancio rapido, WooCommerce offre totale flessibilità."
+      },
+      {
+        "question": "Quanto tempo ci vuole per creare un negozio?",
+        "answer": "In media, un progetto e-commerce richiede tra le 4 e le 8 settimane, dal design al lancio."
+      },
+      {
+        "question": "Come ottimizzare il mio sito per il SEO?",
+        "answer": "Ottimizziamo la struttura tecnica, le schede prodotto, i meta-dati e il linking interno."
+      }
+    ]
+  },
+  "EcommerceContactForm": {
+    "badge": "Inizia un progetto",
+    "title": "Agenzia Web & {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Comunicazione Digitale Innovativa</span>",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Informazioni"
+      },
+      {
+        "id": 2,
+        "label": "Servizio"
+      },
+      {
+        "id": 3,
+        "label": "Dettagli"
+      }
+    ],
+    "fields": {
+      "name": "Nome Completo",
+      "email": "Email",
+      "serviceLabel": "Servizio desiderato",
+      "detailsPlaceholder": "Raccontaci del tuo negozio..."
+    },
+    "services": [
+      {
+        "id": "web",
+        "label": "Sito E-Commerce"
+      },
+      {
+        "id": "seo",
+        "label": "SEO / SEA"
+      },
+      {
+        "id": "social",
+        "label": "Social Media"
+      },
+      {
+        "id": "branding",
+        "label": "Branding"
+      },
+      {
+        "id": "app",
+        "label": "App Mobile"
+      },
+      {
+        "id": "dev",
+        "label": "Su Misura"
+      }
+    ],
+    "success": {
+      "title": "Messaggio Inviato!",
+      "cta": "Nuovo Progetto"
+    },
+    "actions": {
+      "back": "Indietro",
+      "next": "Avanti",
+      "confirm": "Conferma"
+    }
+  },
+  "EcommerceFinalCTA": {
+    "title": "Parliamo del {br} tuo progetto.",
+    "cta": "Discutiamo un progetto"
+  }
+}

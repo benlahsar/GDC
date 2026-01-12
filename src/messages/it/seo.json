@@ -1,0 +1,626 @@
+{
+  "hero": {
+    "badge": "Dominio Motori di Ricerca",
+    "title": "Strategia <elite>SEO Elite</elite> per la tua Attività.",
+    "description": "Più di un semplice audit. Costruiamo visibilità duratura per posizionare <black>il tuo brand in cima a Google</black>.",
+    "cta": "Lancia audit completo",
+    "successRate": "Tasso di Successo: 98%"
+  },
+  "scanner": {
+    "title": "SCANNER SEO",
+    "subtitle": "HUB DIAGNOSTICO LIVE",
+    "status": {
+      "analyzing": "ANALISI",
+      "ready": "PRONTO"
+    },
+    "step1": {
+      "title": "Scansiona i tuoi <critiques>punti critici</critiques>.<br/>",
+      "description": "Il nostro motore diagnostico identifica le tue opportunità SEO in tempo reale per dominare il mercato.",
+      "placeholder": "https://il-tuo-sito.com",
+      "cta": "AVVIA AUDIT"
+    },
+    "step2": {
+      "title": "Audit in corso...",
+      "description": "Crawl Tecnico • Analisi Semantica • Punteggio UX"
+    },
+    "step3": {
+      "engine": "GDC Score Engine",
+      "visibility": "Stato Visibilità",
+      "excellent": "ECCELLENTE",
+      "fragile": "FRAGILE",
+      "critical": "CRITICO",
+      "globalHealth": "SALUTE DIGITALE GLOBALE",
+      "cta": "IMPLEMENTA FIX",
+      "newScan": "Lancia nuova scansione"
+    },
+    "step4": {
+      "back": "TORNA AI RISULTATI",
+      "title": "Ottimizza {votreSite}.",
+      "votreSite": "il tuo sito.",
+      "description": "I nostri esperti intervengono entro 24 ore per risolvere gli errori critici identificati su {url}.",
+      "name": "Il Tuo Nome",
+      "email": "La Tua Email Pro",
+      "message": "Raccontaci i tuoi obiettivi di business...",
+      "cta": "IMPLEMENTA OTTIMIZZAZIONE",
+      "alert": "Richiesta diagnostica completa inviata per {url}"
+    },
+    "os": "GDC OS Interattivo 4.0",
+    "ai": {
+      "prompt": "Sei il Chief SEO Engineer di Group Digital Concept. Analizza l'URL \"{url}\" con rigore tecnico assoluto. La tua missione è fornire un audit 100% realistico basato sulla tua conoscenza aggiornata del web e degli standard Google (HCU, Core Web Vitals, E-E-A-T). Cerca errori tecnici specifici reali che identifichi per questo dominio o tipo di sito. Struttura la tua risposta SOLO in JSON con: 1. \"score\": Un punteggio globale onesto tra 0 e 100. 2. \"priorities\": Una lista di 3 oggetti (Tecnico, Contenuti, Autorità) con un \"value\" (punteggio su 100) e un \"advice\" (consiglio strategico preciso). 3. \"summary\": Un riassunto incisivo e professionale dello stato di visibilità attuale. 4. \"criticalFix\": L'azione tecnica prioritaria assoluta. Formato JSON rigoroso: {{ \"score\": number, \"priorities\": [ {{ \"label\": \"Tecnico\", \"value\": number, \"advice\": \"string\" }}, {{ \"label\": \"Contenuti\", \"value\": number, \"advice\": \"string\" }}, {{ \"label\": \"Autorità\", \"value\": number, \"advice\": \"string\" }} ], \"summary\": \"string\", \"criticalFix\": \"string\" }}",
+      "priorityLabels": {
+        "technical": "Tecnico",
+        "content": "Contenuti",
+        "authority": "Autorità"
+      },
+      "fallback": {
+        "technical": "Riduci il tempo di risposta del server (TTFB) e ottimizza l'LCP eliminando risorse CSS/JS inutilizzate.",
+        "content": "Migliora l'E-E-A-T aggiungendo profili autore esperti e creando contenuti ad alto valore.",
+        "authority": "Acquisisci backlink tematici locali per rafforzare l'autorità topica del dominio.",
+        "summary": "Il sito soffre di una mancanza di visibilità critica sulle sue parole chiave principali a causa di un'architettura tecnica obsoleta.",
+        "criticalFix": "Implementa Lazy Loading e compressione Brotli per ridurre il peso delle pagine del 60%."
+      }
+    }
+  },
+  "features": {
+    "audit360": {
+      "title": "Audit 360°",
+      "description": "Analisi tecnica, semantica e competitiva completa per identificare le tue leve di crescita immediate."
+    },
+    "contentStrategist": {
+      "title": "Content Strategist",
+      "description": "Scrittura ottimizzata e storytelling del brand per catturare il tuo pubblico e piacere agli algoritmi."
+    },
+    "netlinkingElite": {
+      "title": "Netlinking Elite",
+      "description": "Acquisizione di backlink premium per rafforzare l'autorità del tuo dominio e assicurare il tuo ranking top 1."
+    }
+  },
+  "stats_strip": {
+    "keywords": "Parole Chiave in Top 3",
+    "traffic": "Traffico Organico Medio",
+    "retention": "Tasso di Retention Clienti"
+  },
+  "quick_services": {
+    "local": {
+      "title": "SEO Locale (Marrakech)",
+      "description": "Targettizza clienti nella tua regione con precisione."
+    },
+    "ecommerce": {
+      "title": "SEO E-Commerce",
+      "description": "Ottimizzazione massiva delle tue schede prodotto."
+    },
+    "international": {
+      "title": "SEO Internazionale",
+      "description": "Conquista nuovi mercati di esportazione."
+    },
+    "recovery": {
+      "title": "Recupero Traffico",
+      "description": "Recupera dalle penalizzazioni Google (Panda/Penguin)."
+    }
+  },
+  "contact": {
+    "badge": "Potenzia la tua Visibilità",
+    "title": "Pronto per il {top1}",
+    "top1": "Top 1?",
+    "description": "Compila il modulo sottostante per ricevere il tuo audit SEO gratuito e una strategia personalizzata.",
+    "success": {
+      "title": "Audit Richiesto!",
+      "message": "Grazie {name}. Il nostro team sta analizzando il tuo sito {website} e ti ricontatterà entro 24 ore.",
+      "cta": "Nuova richiesta"
+    },
+    "form": {
+      "nameLabel": "Nome Completo",
+      "namePlaceholder": "Il tuo nome",
+      "emailLabel": "Email Professionale",
+      "emailPlaceholder": "email@azienda.com",
+      "websiteLabel": "URL Sito Web",
+      "websitePlaceholder": "https://il-tuo-sito.com",
+      "objectivesLabel": "Obiettivi SEO",
+      "objectivesPlaceholder": "Es: Migliorare ranking per 'Hotel Marrakech', aumentare traffico organico...",
+      "rgpd": "I tuoi dati sono protetti dal GDPR.",
+      "cta": "Ricevi il mio Audit"
+    },
+    "side": {
+      "growth": "Crescita Traffico Media",
+      "dataTitle": "Analisi Dati",
+      "dataDesc": "Decisioni strategiche basate su risultati reali.",
+      "expertiseTitle": "Competenza Marrakech &   Internazionale.",
+      "support": "Supporto Locale"
+    },
+    "trust": {
+      "ranking": "RANKING GOOGLE",
+      "whitehat": "SEO WHITE HAT",
+      "elite": "PERFORMANCE ELITE"
+    }
+  },
+  "excellence": {
+    "badge": "Soluzioni di Eccellenza",
+    "title": "Creiamo <solutions>Soluzioni Digitali</solutions> <excellence>di Eccellenza</excellence>",
+    "description": "La nostra agenzia di strategia SEO a Marrakech offre servizi completi, progettati specificamente per soddisfare le esigenze di aziende locali e internazionali.",
+    "items": {
+      "label": "VEDI DETTAGLI",
+      "vitrine": {
+        "title": "SEO Organico per Siti Vetrina",
+        "description": "Il nostro servizio di SEO organico a Marrakech dà al tuo sito vetrina la visibilità che merita. Specializzati nell'ottimizzazione SEO per professionisti e artigiani locali, applichiamo strategie su misura per evidenziare la tua attività targettizzando perfettamente il tuo pubblico di Marrakech. Ogni progetto include ottimizzazione tecnica ed editoriale completa per un posizionamento duraturo.",
+        "badge": "Visibilità"
+      },
+      "ecommerce": {
+        "title": "SEO E-Commerce ad Alte Prestazioni",
+        "description": "Con la nostra competenza in SEO organico a Marrakech, potenziamo i tuoi negozi online per dominare i risultati di ricerca locali. Ottimizziamo le tue schede prodotto, struttura tecnica e linking interno per migliorare il tuo tasso di conversione. Un approccio 100% adattato al mercato di Marrakech e alle sue specificità commerciali.",
+        "badge": "Conversione"
+      },
+      "institution": {
+        "title": "SEO Premium per Istituzioni",
+        "description": "Il nostro servizio di SEO organico a Marrakech per istituzioni combina strategia contenuti premium e ottimizzazione tecnica avanzata. Lavoriamo su immagine del brand, ricerca settoriale e multilinguismo per posizionare la tua organizzazione come riferimento nel suo campo a Marrakech.",
+        "badge": "Autorità"
+      },
+      "app": {
+        "title": "SEO per Applicazioni Business",
+        "description": "Il SEO organico a Marrakech che offriamo include l'ottimizzazione di piattaforme business con un approccio personalizzato. Miglioriamo l'indicizzazione dei tuoi strumenti professionali (CRM, dashboard) tenendo conto delle particolarità locali del mercato di Marrakech per traffico qualificato e costante.",
+        "badge": "Performance"
+      }
+    },
+    "banner": {
+      "title": "Pronto a Dominare il Tuo Settore?",
+      "description": "Le nostre strategie SEO generano in media <bold>+180% di traffico organico</bold> dopo 6 mesi di supporto.",
+      "ranking": "Ranking",
+      "success": "Successo",
+      "cta": "Inizia"
+    }
+  },
+  "features_grid": {
+    "badge": "Know-How Digitale",
+    "title": "Eccellenza <seo>SEO a Marrakech</seo>",
+    "items": {
+      "natural": {
+        "title": "SEO Organico a Marrakech",
+        "description": "Specialista in SEO organico a Marrakech, la nostra agenzia offre strategie SEO premium, progettate secondo gli ultimi standard internazionali. Le nostre soluzioni sono ottimizzate per aziende locali, negozi online e professionisti a Marrakech e nella sua regione."
+      },
+      "custom": {
+        "title": "Strategia SEO Personalizzata",
+        "description": "Sviluppiamo piani di SEO organico unici a Marrakech, combinando tecniche moderne e ottimizzazione mirata. Ogni strategia è adattata al tuo settore."
+      },
+      "guarantee": {
+        "title": "Performance SEO Garantite",
+        "description": "Soluzioni tecniche ottimizzate per Marrakech:",
+        "points": [
+          "Tempo di caricamento ultra-rapido",
+          "Sicurezza rafforzata (HTTPS)",
+          "SEO mobile-first perfetto"
+        ]
+      },
+      "local": {
+        "title": "SEO Organico Marrakech (Local SEO)",
+        "description": "Integrazione del SEO organico Marrakech dall'audit iniziale per un posizionamento ottimale su Google. Strategie adattate alle ricerche locali (es. \"SEO organico Marrakech\", \"agenzia SEO Marrakech\")."
+      },
+      "support": {
+        "title": "Supporto Personalizzato",
+        "description": "Supporto dedicato per aziende a Marrakech, con gestione progetto fluida e multilingue (FR/AR/EN). Ideale per artigiani e hotel."
+      },
+      "security": {
+        "title": "Sicurezza & Affidabilità",
+        "description": "Protezione avanzata per la tua strategia SEO:",
+        "points": [
+          "Audit regolari",
+          "Protezione contro penalizzazioni",
+          "Backup sicuri"
+        ]
+      }
+    },
+    "banner": {
+      "title": "Domina il Tuo   Settore da <aujourdhui>Oggi.</aujourdhui>",
+      "description": "I nostri esperti di SEO organico a Marrakech trasformano le tue ambizioni in posizioni dominanti su Google.",
+      "cta": "LANCIA AUDIT"
+    }
+  },
+  "why_choose": {
+    "title": "Perché Scegliere la Nostra Agenzia per la Creazione Siti Web a Marrakech?",
+    "description": "Come specialisti in <bold>SEO organico Marrakech</bold>, ottimizziamo la tua visibilità online attraverso strategie SEO personalizzate. La nostra competenza nel <bold>SEO web</bold> combina tecniche avanzate e profonda conoscenza del mercato di Marrakech per risultati concreti. Che tu gestisca un e-commerce, un hotel, una PMI o un'attività a Marrakech, sviluppiamo soluzioni adattate ai tuoi obiettivi di business.",
+    "approach": "Il nostro approccio si basa su 3 pilastri essenziali:",
+    "pillars": {
+      "audit": {
+        "title": "Audit SEO Completo",
+        "description": "Analisi approfondita del tuo sito e benchmarking competitivo specifico per Marrakech per identificare tutte le opportunità di ottimizzazione."
+      },
+      "technical": {
+        "title": "Ottimizzazione Tecnica Accurata",
+        "description": "Miglioramento delle performance (velocità, mobile-first, sicurezza) secondo gli ultimi requisiti degli algoritmi Google."
+      },
+      "content": {
+        "title": "Strategia Contenuti Localizzata",
+        "description": "Creazione di contenuti ottimizzati che targettizzano precisamente le intenzioni di ricerca degli utenti internet a Marrakech."
+      }
+    },
+    "stats": {
+      "delivered": "progetti consegnati a   Marrakech",
+      "optimized": "siti ottimizzati   nel mondo"
+    },
+    "cta": "Contattaci!",
+    "methodology": {
+      "title": "La Nostra Metodologia SEO Organico a Marrakech",
+      "steps": [
+        {
+          "title": "Audit SEO Completo",
+          "description": "Analizziamo in profondità il tuo settore di attività, il tuo posizionamento competitivo a Marrakech e il comportamento del tuo pubblico target. Questa diagnostica strategica ci permette di stabilire un piano d'azione SEO perfettamente allineato con i tuoi obiettivi commerciali."
+        },
+        {
+          "title": "Ottimizzazione Tecnica Avanzata",
+          "description": "Il nostro team di esperti interviene su tutti gli aspetti tecnici: miglioramento tempi di caricamento, ottimizzazione mobile, architettura del sito e markup semantico. Ogni modifica è progettata per rafforzare il tuo posizionamento organico."
+        },
+        {
+          "title": "Strategia Contenuti ad Alte Prestazioni",
+          "description": "Sviluppiamo contenuti ottimizzati che targettizzano precisamente le intenzioni di ricerca del tuo pubblico a Marrakech. Il nostro approccio combina rilevanza semantica, ottimizzazione on-page e linking interno strategico."
+        }
+      ],
+      "result": "Il risultato? <bold>Visibilità aumentata</bold> sui motori di ricerca, <bold>traffico qualificato</bold> in costante progressione e <bold>conversioni ottimizzate</bold> per trasformare i tuoi visitatori in clienti fedeli.",
+      "engagements_title": "I nostri impegni:",
+      "engagements": [
+        "Tecniche 100% conformi alle linee guida Google",
+        "Trasparenza totale con report mensili dettagliati",
+        "Risultati misurabili e duraturi",
+        "Supporto personalizzato in ogni fase"
+      ]
+    },
+    "expertise": {
+      "title": "La Nostra Competenza in SEO Organico a Marrakech",
+      "description": "Il nostro approccio SEO va ben oltre le tecniche di base. Come agenzia specializzata in <bold>SEO organico Marrakech</bold>, integriamo l'ottimizzazione dalla concezione della tua strategia digitale.",
+      "techTitle": "Ottimizzazione Tecnica Avanzata",
+      "techDesc": "Implementiamo un'architettura tecnica perfettamente adattata agli algoritmi dei motori di ricerca. Ogni elemento è progettato per il tuo specifico settore di attività a Marrakech e i comportamenti dei tuoi potenziali clienti.",
+      "strategyTitle": "Strategia SEO Completa",
+      "strategyDesc": "Implementiamo una metodologia esaustiva che include:",
+      "strategyItems": [
+        "Analisi semantica approfondita delle parole chiave strategiche",
+        "Ottimizzazione on-page tecnica ed editoriale",
+        "Linking interno intelligente che potenzia l'autorità",
+        "Stretta conformità agli standard Google (Core Web Vitals, E-A-T)"
+      ],
+      "resultPrefix": "Il risultato? Un <bold>SEO organico Marrakech</bold> ad alte prestazioni che ti permette di:",
+      "results": [
+        "Raggiungere le prime posizioni su Google",
+        "Generare traffico qualificato e convertente",
+        "Costruire un'immagine di brand digitale forte e credibile"
+      ]
+    }
+  },
+  "bento_details": {
+    "title": "Sogni un   <referencement>SEO Organico</referencement>   Che Superi le Tue Aspettative?",
+    "description": "In <bold>Group Digital Concept</bold>, non ci limitiamo a creare <site>siti web</site> – progettiamo <experiences>esperienze digitali uniche</experiences>. Il tuo sito è molto più di una vetrina online: è la tua identità digitale, il tuo strumento di conversione ad alte prestazioni e il tuo vantaggio competitivo per conquistare nuovi mercati.",
+    "footer": "Con la nostra competenza in <bold>creazione siti web a Marrakech</bold>, trasformiamo le tue ambizioni in realtà digitale, combinando design sofisticato, tecnologie performanti e strategia SEO integrata.",
+    "philosophy": {
+      "badge": "Filosofia",
+      "title": "Collaborazione & Eccellenza:  <philosophie>La Nostra Filosofia</philosophie>",
+      "approachTitle": "Il Nostro Approccio",
+      "approach": [
+        "Analisi approfondita dei tuoi obiettivi di business",
+        "Strategia SEO adattata al tuo settore di attività",
+        "Trasparenza totale in ogni fase"
+      ],
+      "engagementsTitle": "I Nostri Impegni",
+      "engagements": [
+        "Risultati visibili entro 3 mesi",
+        "Comunicazione chiara e report mensili",
+        "Tecniche 100% conformi alle linee guida Google"
+      ],
+      "advantageTitle": "Il Tuo Vantaggio",
+      "advantages": [
+        "Il tuo miglior canale di acquisizione clienti",
+        "Un vantaggio competitivo duraturo",
+        "La chiave della tua visibilità digitale"
+      ]
+    },
+    "success": {
+      "title": "Il Tuo Successo,  Il Nostro Impegno",
+      "description": "Il nostro supporto va ben oltre il semplice posizionamento. Costruiamo <bold>strategie vincenti</bold>.",
+      "trackingTitle": "Follow-up Continuo",
+      "tracking": [
+        "Ottimizzazioni mensili incluse",
+        "Analisi tecniche regolari",
+        "Consulenza strategica adattata al tuo mercato"
+      ],
+      "whyTitle": "Perché Sceglierci?",
+      "why": [
+        "Un partner SEO impegnato nella tua crescita",
+        "Risultati duraturi e misurabili",
+        "Conoscenza profonda del mercato di Marrakech"
+      ],
+      "footer": "In <bold>Group Digital Concept</bold>, la tua visibilità è molto più di un ranking: è la tua credibilità digitale, il tuo canale di conversione ad alte prestazioni e il tuo asset per dominare il tuo mercato."
+    },
+    "performance": {
+      "title": "Performance & Risultati SEO:  <excellence>Eccellenza Digitale</excellence>",
+      "keysTitle": "Ottimizzazioni Chiave",
+      "keys": [
+        { "t": "Velocità ultra-rapida", "s": "Core Web Vitals ottimizzati" },
+        { "t": "Contenuti strategici", "s": "Targeting semantico preciso" },
+        { "t": "Compatibilità totale", "s": "Mobile-first indexing" }
+      ],
+      "strategyTitle": "Strategia Avanzata",
+      "strategy": [
+        "Audit tecnico completo dall'inizio",
+        "Posizionamento sulle tue parole chiave strategiche",
+        "Attrazione di traffico qualificato e convertibile"
+      ],
+      "resultLabel": "Risultato:",
+      "resultValue": "Dominio del Mercato"
+    },
+    "natural": {
+      "title": "SEO Organico a Marrakech  <performe>Che Performa</performe>",
+      "items": [
+        { "t": "Analisi competitiva", "s": "Benchmarking preciso" },
+        { "t": "Netlinking qualitativo", "s": "Autorità di dominio" },
+        { "t": "Reporting trasparente", "s": "Tracking KPI" },
+        { "t": "Approccio locale", "s": "Targeting Marrakech" }
+      ],
+      "quote": "\"SEO che converte immediatamente e performa durevolmente. Costruisci un'immagine di brand digitale forte e credibile.\"",
+      "badge": "GDC Elite Expertise"
+    }
+  },
+  "regional": {
+    "cities": {
+      "maroc": {
+        "city": "Marocco & Marrakech",
+        "description": "La nostra agenzia specializzata in SEO organico Marocco e Marrakech offre strategie SEO su misura. Ottimizziamo siti web di alto livello per migliorare la loro visibilità in Marocco."
+      },
+      "marrakech": {
+        "city": "Marrakech",
+        "description": "A Marrakech, la nostra competenza in SEO organico Marocco si concentra su strategie uniche per attività locali. Siamo leader nel SEO organico Marrakech con risultati duraturi e misurabili."
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "description": "La nostra agenzia SEO a Casablanca offre soluzioni e-commerce ad alte prestazioni (Shopify, WooCommerce) con funnel di conversione ottimizzati. Utilizziamo le ultime tecniche SEO (Schema, Core Web Vitals) per siti con alti tassi di trasformazione."
+      },
+      "rabat": {
+        "city": "Rabat",
+        "description": "A Rabat, implementiamo strategie SEO premium, coerenti con la nostra competenza in SEO organico Marocco e Marrakech."
+      },
+      "tanger": {
+        "city": "Tangeri",
+        "description": "La nostra agenzia a Tangeri sviluppa soluzioni multilingue, combinando competenza in SEO organico Marocco e approccio internazionale."
+      },
+      "agadir": {
+        "city": "Agadir",
+        "description": "Ad Agadir, ottimizziamo siti turistici con la stessa qualità del nostro SEO organico Marrakech, adattata al mercato marocchino."
+      }
+    },
+    "header": {
+      "title": "SEO Organico Marrakech:  <visibilite>Visibilità Ottimale e Duratura</visibilite>"
+    },
+    "solution": {
+      "title": "Una Soluzione Completa per il Tuo SEO a Marrakech",
+      "description": "Il nostro approccio nel <bold>SEO organico Marrakech</bold> combina competenza tecnica e strategia personalizzata:",
+      "steps": [
+        {
+          "title": "Audit Completo",
+          "items": [
+            "Analisi approfondita del tuo posizionamento attuale",
+            "Benchmarking competitivo specifico per Marrakech"
+          ]
+        },
+        {
+          "title": "Ottimizzazione Tecnica",
+          "items": [
+            "Miglioramento dei Core Web Vitals",
+            "Compatibilità mobile-first obbligatoria"
+          ]
+        },
+        {
+          "title": "Sicurezza Rafforzata",
+          "items": [
+            "Protezione contro penalizzazioni Google",
+            "Monitoraggio continuo delle performance"
+          ]
+        },
+        {
+          "title": "Strategia SEO",
+          "items": [
+            "Piano d'azione personalizzato per il tuo settore",
+            "Posizionamento sulle tue parole chiave strategiche"
+          ]
+        }
+      ],
+      "commit": "Ci impegniamo a:",
+      "result": "Ottenere risultati entro 3 mesi",
+      "cta": "Contattaci!"
+    },
+    "footer": {
+      "engagement": "Ci impegniamo a:",
+      "results": "Ottenere risultati entro 3 mesi",
+      "cta": "Contattaci!"
+    }
+  },
+  "digital_projects": {
+    "badge": "Portfolio Clienti",
+    "title": "I Nostri progetti <digitaux>digitali</digitaux>:",
+    "projects": {
+      "majorelle": "Majorelle Business Center",
+      "compagnons": "Entreprise Des Compagnons Group in Buildings",
+      "plancycall": "Plancy Call Group",
+      "mmreseaux": "M.M. Réseaux Com"
+    }
+  },
+  "methodology": {
+    "title": "La Nostra   Metodologia di {travail}",
+    "travail": "Lavoro",
+    "description": "Un processo strutturato in 4 step chiave per garantire l'eccellenza della tua trasformazione digitale a Marrakech.",
+    "steps": [
+      {
+        "title": "Audit & Concezione",
+        "description": "Iniziamo con un'<bold>analisi approfondita</bold> delle tue esigenze, del tuo settore e della tua concorrenza. Questo step è cruciale per il successo della <bold>creazione siti web Marrakech</bold>. Definiamo i tuoi obiettivi, identifichiamo il tuo pubblico target e progettiamo una struttura del sito ottimizzata per esperienza utente e SEO."
+      },
+      {
+        "title": "Design & Sviluppo",
+        "description": "Progettiamo interfacce visive uniche e accattivanti che incarnano il DNA del tuo brand. I nostri <bold>sviluppatori esperti</bold> trasformano poi questi design in una piattaforma web fluida, responsive e ottimizzata per la conversione, utilizzando le ultime tecnologie sul mercato."
+      },
+      {
+        "title": "Ottimizzazione & Sicurezza",
+        "description": "Ogni riga di codice è progettata per le performance. Integriamo le <bold>best practice SEO</bold> dalla concezione tecnica, ottimizziamo i <bold>Core Web Vitals</bold> per velocità lampo e rafforziamo la tua infrastruttura con protocolli di sicurezza avanzati."
+      },
+      {
+        "title": "Consegna & Formazione",
+        "description": "Dopo una fase di <bold>test rigorosi</bold> su tutti i media, procediamo al lancio ufficiale del tuo sito. Ti supportiamo con una <bold>formazione completa</bold> sulla tua interfaccia di amministrazione per garantire totale autonomia."
+      }
+    ],
+    "protocol": "Protocollo Eccellenza GDC"
+  },
+  "expertise_cities": {
+    "title": "La Nostra Competenza in <seo>SEO Organico in Marocco</seo>",
+    "badge": "GDC Regional Expertise",
+    "items": {
+      "maroc": {
+        "title": "Agenzia SEO - SEO Organico Marocco",
+        "description": "La nostra agenzia padroneggia tutte le tecniche di SEO organico, dalle ottimizzazioni base alle strategie avanzate. A Marrakech come in tutto il Marocco, combiniamo la potenza degli strumenti SEO (Ahrefs, SEMrush) con sviluppi tecnici personalizzati. Ogni progetto integra: un audit completo per Google Marocco, ottimizzazioni tecniche per tempi di caricamento sotto 1.5 secondi e sicurezza rafforzata contro le penalizzazioni. Per gli e-commerce, ottimizziamo i funnel di conversione per i motori di ricerca con targeting locale (CMI, PayZone) e internazionale."
+      },
+      "marrakech": {
+        "title": "SEO Organico Marrakech: Soluzioni Premium per Ospitalità & Artigianato",
+        "description": "A Marrakech, la nostra competenza in SEO organico si traduce in strategie ibride uniche. Per riad e hotel: ottimizziamo sistemi di prenotazione (SynXis o API), video 360° per SEO locale e sincronizzazione con Booking/Expedia. Gli artigiani beneficiano di ottimizzazioni WooCommerce che targettizzano ricerche locali. Specificità Marrakech: le nostre strategie includono sistematicamente l'ottimizzazione per mappe interattive dei souk e geolocalizzazione in tempo reale."
+      },
+      "casablanca": {
+        "title": "SEO Organico Casablanca: Hub di Eccellenza E-Commerce",
+        "description": "Leader nel SEO organico e-commerce a Casablanca, ottimizziamo marketplace WooCommerce. Le nostre soluzioni includono: ottimizzazione schede prodotto, architettura SEO per multi-magazzino e integrazione con ERP marocchini (SAP, Odoo). I siti beneficiano di un'infrastruttura tecnica ottimizzata per il SEO in Marocco con tempo di risposta < 0.5s."
+      },
+      "rabat": {
+        "title": "SEO Organico Rabat: Strategie Istituzionali",
+        "description": "Il nostro approccio SEO organico per istituzioni a Rabat combina sicurezza SEO e accessibilità. Ottimizziamo portali governativi con: markup semantico avanzato, architettura contenuti adattata alle ricerche dei cittadini e ottimizzazione per picchi di traffico. Specificità: riduzione del 70% del carico server grazie alla nostra cache intelligente."
+      },
+      "tanger": {
+        "title": "SEO Organico Tangeri: Strategie Multilingue per Export",
+        "description": "Per il SEO organico export a Tangeri, implementiamo strategie multilingue (FR/AR/EN/ES) con: ottimizzazione calcolatori dazi doganali, markup SEO per valute internazionali e SEO geolocalizzato verso Europa e Africa. Tecnologia ibrida: ottimizzazione front-office WordPress e soluzioni tecniche personalizzate."
+      },
+      "agadir": {
+        "title": "SEO Organico Agadir: Strategie Turistiche ad Alte Prestazioni",
+        "description": "Il nostro SEO organico turistico ad Agadir si concentra sull'ottimizzazione visiva: video e immagini ottimizzate per SEO locale, mappe interattive con markup ricco, integrazione API meteo/maree nel SEO. Specificità: strategia contenuti che genera +45% di traffico organico."
+      }
+    },
+    "labels": {
+      "protocol": "PROTOCOLLO",
+      "protocolVal": "Elite SEO v3.0",
+      "objective": "OBIETTIVO",
+      "objectiveVal": "Max Conversione"
+    }
+  },
+  "testimonials": {
+    "badge": "Recensioni Clienti",
+    "title": "<clients>Testimonianze dei</clients> Nostri Clienti",
+    "subtitle": "Successi Ispiranti",
+    "tags": {
+      "strategy": "Strategia",
+      "ecommerce": "E-Commerce",
+      "ads": "Pubblicità",
+      "social": "Social Media",
+      "it": "Supporto IT"
+    },
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professionali e reattivi, hanno capito le nostre esigenze e implementato una strategia digitale efficace. La nostra presenza online è molto più performante."
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "MARKETING MANAGER",
+        "text": "Un'agenzia seria e competente. Il loro team ha progettato un sito e-commerce fluido e sicuro per il nostro negozio online. Molto soddisfatti del lavoro!"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "DIRETTORE COMMERCIALE",
+        "text": "Li abbiamo chiamati per gestire le nostre campagne pubblicitarie online. Il loro approccio mirato ha migliorato significativamente il nostro ritorno sull'investimento."
+      },
+      {
+        "name": "Salma Bennani",
+        "role": "GRAPHIC DESIGNER",
+        "text": "Grazie a Group Digital Concept, i nostri social network sono più dinamici e professionali. Sanno creare contenuti coinvolgenti adatti al nostro pubblico."
+      },
+      {
+        "name": "Anas Rachidi",
+        "role": "IT MANAGER",
+        "text": "Servizio tecnico top! Hanno ottimizzato i nostri sistemi IT e implementato soluzioni di backup affidabili. Un vero sollievo per la nostra azienda."
+      }
+    ]
+  },
+  "stats": {
+    "badge": "Le Nostre Performance",
+    "title": "Numeri Che <talk>Parlano</talk>",
+    "items": {
+      "sites": { "val": "200", "prefix": "+", "suffix": "", "label": "Siti Ottimizzati" },
+      "visible": { "val": "3", "prefix": "", "suffix": " Mesi", "label": "Per risultati visibili" },
+      "position": { "val": "3", "prefix": "TOP ", "suffix": "", "label": "Posizionamento medio" },
+      "traffic": { "val": "60", "prefix": "+", "suffix": "%", "label": "Traffico Organico" },
+      "google": { "val": "100", "prefix": "", "suffix": "%", "label": "Conformità Google" }
+    }
+  },
+  "faq": {
+    "title": "Esplora le   domande   <faqs>frequenti</faqs>",
+    "cta": "Hai bisogno di un'analisi specifica?",
+    "items": [
+      { "question": "Cos'è il SEO organico a Marrakech?", "answer": "Il SEO organico Marrakech si riferisce all'ottimizzazione tecnica ed editoriale di un sito web per migliorare il suo posizionamento nei risultati Google, targettizzando specificamente le ricerche locali a Marrakech e nella sua regione." },
+      { "question": "Quanto tempo ci vuole per vedere risultati SEO a Marrakech?", "answer": "I primi risultati del SEO a Marrakech appaiono generalmente tra 3 e 6 mesi. Questo dipende dalla competizione delle tue parole chiave e dallo stato tecnico del tuo sito all'inizio." },
+      { "question": "Quali sono le tariffe di un'agenzia SEO a Marrakech?", "answer": "Le tariffe variano in base alla complessità e agli obiettivi. Offriamo pacchetti mensili adattati a PMI, hotel ed e-commerce locali a Marrakech." },
+      { "question": "Come ottimizzare un sito per il mercato di Marrakech?", "answer": "L'ottimizzazione per Marrakech implica contenuti bilingue (o multilingue), geolocalizzazione precisa su Google Maps e uso di parole chiave specifiche per la città." },
+      { "question": "Perché scegliere un'agenzia locale a Marrakech?", "answer": "Un'agenzia a Marrakech conosce le specificità del mercato locale, i comportamenti dei consumatori e le opportunità stagionali legate al turismo." },
+      { "question": "Quali sono le differenze tra SEO e Google Ads?", "answer": "Il SEO è un investimento duraturo e organico (gratuito per click), mentre Google Ads offre visibilità immediata ma a pagamento per ogni click." }
+    ]
+  },
+  "form_section": {
+    "title": "Agenzia Web &   <digital>Comunicazione Digitale</digital> Innovativa.",
+    "desc1": "Non siamo solo un'agenzia di marketing digitale. Supportiamo le aziende con soluzioni personalizzate per potenziare la loro presenza online e massimizzare il loro impatto.",
+    "desc2": "Con sede in Marocco, combiniamo competenza locale e tendenze internazionali per offrire strategie performanti adattate a ogni progetto.",
+    "experts": "+15 Esperti Dedicati",
+    "success": {
+      "title": "Richiesta Ricevuta!",
+      "description": "I nostri esperti ti ricontatteranno entro 24 ore."
+    },
+    "services_list": [
+      "Creazione Siti Web",
+      "Sito vetrina",
+      "Sito e-commerce",
+      "Sito personalizzato",
+      "Restyling sito",
+      "SEO (Ottimizzazione Motori di Ricerca Organica)",
+      "Audit SEO",
+      "Ottimizzazione on-page",
+      "Netlinking & backlink",
+      "Strategia contenuti",
+      "SEA (Search Engine Advertising – Google Ads)",
+      "Pubblicità Google Ads",
+      "Campagne PPC",
+      "Gestione e ottimizzazione annunci",
+      "SMO (Social Media Optimization)",
+      "Gestione social media",
+      "Creazione contenuti social",
+      "Pubblicità Facebook, Instagram, LinkedIn",
+      "Identità Visiva & Branding",
+      "Logo & linee guida brand",
+      "Design UX/UI",
+      "Creazione materiali marketing",
+      "Sviluppo Software & Applicazioni",
+      "Software gestione aziendale",
+      "Sviluppo applicazioni web e mobile",
+      "Soluzioni personalizzate",
+      "Soluzioni Specializzate",
+      "Hotelio (Soluzione gestione hotel)",
+      "Point of Sale (Sistemi cassa e gestione vendite)"
+    ],
+    "budget_options": [
+      "< 40.000 MAD",
+      "40.000 - 80.000 MAD",
+      "80.000 - 150.000 MAD",
+      "+ 150.000 MAD",
+      "Da definire"
+    ],
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "company": "Azienda",
+      "services_label": "Servizi Desiderati *",
+      "budget_label": "Budget Stimato *",
+      "subject": "Oggetto",
+      "details": "Dacci più dettagli sul tuo progetto",
+      "footer": "Analisi gratuita e risposta garantita entro 24 ore."
+    },
+    "buttons": {
+      "prev": "Precedente",
+      "next": "Avanti",
+      "send": "Invia"
+    }
+  }
+}

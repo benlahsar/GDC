@@ -36,7 +36,7 @@ export const ProjectsSection: React.FC = () => {
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {!isMobile && (
                     <div className="absolute inset-0 opacity-20 dark:opacity-10 transition-opacity duration-300"
-                        style={{ background: `radial-gradient(600px circle at ${cursorPos.x}px ${cursorPos.y}px, rgba(255, 0, 0, 0.15), transparent 40%), linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`, backgroundSize: '100% 100%, 40px 40px, 40px 40px' }} />
+                        style={{ backgroundImage: `radial-gradient(600px circle at ${cursorPos.x}px ${cursorPos.y}px, rgba(255, 0, 0, 0.15), transparent 40%), linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)`, backgroundSize: '100% 100%, 40px 40px, 40px 40px' }} />
                 )}
                 <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-brand-red/[0.03] rounded-full blur-[120px]" />
             </div>

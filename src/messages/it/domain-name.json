@@ -1,0 +1,436 @@
+{
+  "DomainNamePage": {
+    "badge": "Sistema Registro Live",
+    "title": "Verifica {br} in Tempo Reale dei {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Nomi di Dominio.</span>",
+    "search": {
+      "placeholder": "Cerca il tuo dominio...",
+      "button": "VERIFICA",
+      "available": "Disponibile immediatamente",
+      "registered": "Già registrato",
+      "reserve": "PRENOTA"
+    },
+    "info": {
+      "sync": "Database ICANN & ANRT Sincronizzato",
+      "desc": "Ottieni uno stato reale sulla disponibilità della tua identità web in meno di 2 secondi.",
+      "cta": "Consulenza Esperta"
+    },
+    "visual": {
+      "title": "Chi prima arriva, {br} <span class='text-brand-red italic'>Meglio alloggia.</span>",
+      "version": "GDC Live Hub v.4"
+    },
+    "cards": {
+      "process": {
+        "title": "Processo Completo",
+        "desc": "Il nostro processo include un'<strong class='text-black dark:text-white'>analisi approfondita del tuo settore</strong>, ricerca strategica di disponibilità per evitare conflitti e consulenza personalizzata."
+      },
+      "benefits": {
+        "title": "Sicurezza & Competenza",
+        "desc": "Scegliendo il nostro servizio, benefici di una partnership con un team riconosciuto per la sua <strong class='text-black dark:text-white'>reattività</strong> e competenza."
+      }
+    },
+    "stats": {
+      "acquisition": "Tempo di Acquisizione",
+      "satisfaction": "Soddisfazione Cliente",
+      "support": "Supporto Tecnico"
+    },
+    "icons": {
+      "team": "Team",
+      "local": "Locale",
+      "security": "Sicurezza",
+      "followup": "Follow-up",
+      "award": "360°"
+    },
+    "modal": {
+      "badge": "Sicurezza Prioritaria",
+      "title": "PRENOTA {br} <span class='text-brand-red italic'>{domain}</span>",
+      "success": {
+        "title": "Richiesta Inviata",
+        "desc": "Abbiamo ricevuto la tua richiesta di prenotazione per <strong class='text-black dark:text-white underline decoration-emerald-500 decoration-2'>{domain}</strong>.",
+        "footer": "Un esperto GDC ti contatterà a breve."
+      },
+      "fields": {
+        "nameLabel": "Nome Completo",
+        "namePlaceholder": "Il tuo nome",
+        "emailLabel": "Email",
+        "emailPlaceholder": "tua@email.com",
+        "phoneLabel": "Telefono",
+        "phonePlaceholder": "+39...",
+        "button": "CONFERMA PRENOTAZIONE",
+        "footer": "Validando questo modulo, avvii una procedura di acquisizione {br} assistita dal polo tecnico GDC."
+      }
+    }
+  },
+  "DomainWhyChooseSection": {
+    "badge": "La Nostra Competenza",
+    "title": "Perché Scegliere {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Noi?</span>",
+    "intro": {
+      "title": "Scelta Strategica",
+      "desc": "In <strong class='text-black dark:text-white'>Group Digital Concept</strong>, non ci limitiamo a vendere nomi di dominio. Ti supportiamo nella scelta strategica di un'identità digitale forte e duratura. Un nome di dominio è molto più di un semplice indirizzo web: è un elemento chiave della tua visibilità online, credibilità e posizionamento. Ecco perché mettiamo la nostra competenza per garantire un acquisto di nome di dominio sicuro, ottimizzato a Marrakech e adattato ai tuoi obiettivi professionali."
+    },
+    "vision": {
+      "title": "Visione",
+      "desc": "Diventare il partner di riferimento per l'acquisto di nomi di dominio a Marrakech. Crediamo che ogni progetto meriti un nome strategico per un successo duraturo."
+    },
+    "features": [
+      {
+        "title": "Ampia scelta di estensioni",
+        "desc": "Offriamo una gamma completa di estensioni, dal .ma al .com passando per .net e molte altre, per permetterti di scegliere l'opzione più pertinente per la tua attività e il tuo target durante l'acquisto del nome di dominio a Marrakech."
+      },
+      {
+        "title": "Sicurezza e protezione",
+        "desc": "Assicuriamo la registrazione sicura del tuo nome di dominio con soluzioni di protezione contro furto, cybersquatting e divulgazione delle tue informazioni personali grazie all'opzione WHOIS privato."
+      },
+      {
+        "title": "Hosting e servizi",
+        "desc": "Inoltre, offriamo soluzioni di hosting web ad alte prestazioni, certificati SSL per proteggere il tuo sito, nonché strumenti di gestione DNS avanzati per ottimizzare l'affidabilità."
+      },
+      {
+        "title": "Trasferimento e rinnovo semplificati",
+        "desc": "Facilitiamo il trasferimento e il rinnovo dei tuoi nomi di dominio garantendo una gestione fluida senza interruzione del servizio. Ti accompagniamo in ogni passo per assicurare la longevità della tua identità digitale."
+      },
+      {
+        "title": "Supporto tecnico e guida",
+        "desc": "Il nostro team è disponibile per consigliarti, assisterti nella configurazione del tuo dominio e fornire supporto personalizzato. Una strategia progettata per massimizzare il tuo impatto online."
+      }
+    ],
+    "mission": {
+      "title": "Missione",
+      "desc": "Semplificare e proteggere l'acquisto di nomi di dominio a Marrakech. Aiutiamo i nostri clienti a scegliere, proteggere e sfruttare il loro nome di dominio per rafforzare la loro credibilità. Dalla prenotazione alla gestione, garantiamo un servizio fluido.",
+      "tags": [
+        "Semplificare",
+        "Proteggere",
+        "Ottimizzare"
+      ]
+    },
+    "engagement": {
+      "title": "Il Nostro Impegno",
+      "desc": "Adottiamo un approccio trasparente e orientato alle performance. Ogni acquisto di nome di dominio è ottimizzato per essere una vera leva di crescita, garantendo affidabilità, sicurezza e visibilità ottimale.",
+      "cta": "Inizia Ora"
+    }
+  },
+  "DomainAtouts": {
+    "badge": "I Nostri Punti di Forza",
+    "title": "I Punti di Forza di <span class='text-brand-red'>Group Digital Concept</span> {br} nell'acquisto di nomi di dominio a Marrakech",
+    "items": [
+      "Team Esperto",
+      "Progetti Chiavi in Mano",
+      "Applicazioni Scalabili",
+      "Prezzi Competitivi",
+      "Tecnologie Moderne",
+      "Conformità & GDPR",
+      "Soddisfazione Cliente",
+      "Follow-up Personalizzato"
+    ],
+    "footer": {
+      "text": "Un approccio globale che garantisce sicurezza, performance e longevità della tua identità digitale.",
+      "tags": [
+        "Competenza",
+        "Qualità",
+        "Risultato"
+      ]
+    }
+  },
+  "DomainDetailedStrategies": {
+    "badge": "Approccio Globale",
+    "title": "Vuoi Un <span class='text-brand-red'>Nome di Dominio</span> Strategico?",
+    "strategies": [
+      {
+        "id": "strategy",
+        "title": "Analisi & Strategia",
+        "subtitle": "Market Intelligence",
+        "desc": "Analizziamo il tuo mercato, la tua concorrenza e l'immagine del tuo brand per aiutarti a scegliere il nome di dominio più pertinente per la tua attività.",
+        "points": [
+          {
+            "label": "Studio di mercato",
+            "text": "Selezione delle migliori estensioni (.ma, .com, .net...)."
+          },
+          {
+            "label": "Audit disponibilità",
+            "text": "Verifica rapida e prenotazione per evitare perdite."
+          },
+          {
+            "label": "Strategia brand",
+            "text": "Un nome di dominio d'impatto e memorabile."
+          },
+          {
+            "label": "Protezione brand",
+            "text": "Protezione contro il cybersquatting."
+          },
+          {
+            "label": "Pianificazione SEO",
+            "text": "Ottimizzazione per un buon posizionamento naturale."
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Protezione & Sicurezza",
+        "subtitle": "Scudo Digitale",
+        "desc": "Garantiamo la protezione del tuo nome di dominio con soluzioni avanzate contro i rischi digitali.",
+        "points": [
+          {
+            "label": "WHOIS Privacy",
+            "text": "Protezione dei tuoi dati personali."
+          },
+          {
+            "label": "Certificato SSL",
+            "text": "Protezione transazioni e connessioni."
+          },
+          {
+            "label": "Auto-rinnovo",
+            "text": "Evita la perdita accidentale del tuo dominio."
+          },
+          {
+            "label": "Anti-cybersquatting",
+            "text": "Prenotazione strategica per evitare furti."
+          },
+          {
+            "label": "Monitoraggio & Alert",
+            "text": "Sorveglianza per evitare usurpazioni."
+          }
+        ]
+      },
+      {
+        "id": "management",
+        "title": "Gestione & Hosting",
+        "subtitle": "Infrastruttura Robusta",
+        "desc": "Gestione semplificata e opzioni avanzate per una presenza online performante e scalabile.",
+        "points": [
+          {
+            "label": "Dashboard intuitiva",
+            "text": "Gestione completa dei tuoi nomi di dominio."
+          },
+          {
+            "label": "Redirect intelligenti",
+            "text": "Configurazione verso le tue pagine principali."
+          },
+          {
+            "label": "DNS avanzato",
+            "text": "Ottimizzazione performance e velocità."
+          },
+          {
+            "label": "Integrazione email Pro",
+            "text": "Creazione di indirizzi personalizzati."
+          },
+          {
+            "label": "Hosting performante",
+            "text": "Soluzioni adattate alla tua attività."
+          }
+        ]
+      },
+      {
+        "id": "performance",
+        "title": "Performance & Scalabilità",
+        "subtitle": "Velocità & Crescita",
+        "desc": "Ottimizza la velocità e l'affidabilità del tuo sito grazie a infrastrutture di alto livello.",
+        "points": [
+          {
+            "label": "Cloud Hosting",
+            "text": "Server sicuri ad alte prestazioni."
+          },
+          {
+            "label": "Ottimizzazione caricamento",
+            "text": "Accesso rapido al tuo sito."
+          },
+          {
+            "label": "Backup regolari",
+            "text": "Protezione contro la perdita di dati."
+          },
+          {
+            "label": "Multi-piattaforma",
+            "text": "Compatibilità mobile, tablet, desktop."
+          },
+          {
+            "label": "Protezione DDoS",
+            "text": "Sicurezza rafforzata contro cyberattacchi."
+          }
+        ]
+      }
+    ],
+    "cta": "Inizia Analisi"
+  },
+  "DomainIdentitySection": {
+    "header": {
+      "title": "Acquisto Nome di Dominio: {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-500'>La Tua Identità Digitale</span> {br} Inizia Qui!",
+      "subtitle": "Perché Sceglierci?"
+    },
+    "items": [
+      {
+        "id": "strategy",
+        "title": "Consulenza Strategica",
+        "text": "Studio di mercato, analisi concorrenza e scelta del nome migliore per la tua attività."
+      },
+      {
+        "id": "security",
+        "title": "Protezione Avanzata",
+        "text": "Protezione contro cybersquatting, privacy WHOIS e certificati SSL inclusi."
+      },
+      {
+        "id": "management",
+        "title": "Gestione Semplificata",
+        "text": "Dashboard intuitiva, rinnovo automatico e redirect professionali."
+      },
+      {
+        "id": "seo",
+        "title": "Performance SEO",
+        "text": "Nomi di dominio ottimizzati per un miglior posizionamento su Google."
+      }
+    ],
+    "mobile": {
+      "badge": "GDC Mobile"
+    }
+  },
+  "DomainProcessTestimonials": {
+    "header": {
+      "title": "La Nostra {br} Metodologia di Lavoro",
+      "subtitle": "Un processo strutturato e trasparente per garantire il successo del tuo progetto, dall'idea alla realizzazione."
+    },
+    "process": [
+      {
+        "id": 1,
+        "title": "Consulenza Iniziale",
+        "content": "Iniziamo con una fase di ascolto attivo per comprendere le tue esigenze, il tuo mercato target e i tuoi obiettivi specifici riguardo al tuo nome di dominio e identità digitale."
+      },
+      {
+        "id": 2,
+        "title": "Audit e Analisi",
+        "content": "Analisi approfondita di disponibilità, concorrenza e opportunità SEO per selezionare le estensioni più performanti (.ma, .com) per il tuo brand."
+      },
+      {
+        "id": 3,
+        "title": "Sviluppo Piano d'Azione",
+        "content": "Definizione di una strategia chiara: prenotazione, protezione brand, configurazione DNS e implementazione dei redirect necessari."
+      },
+      {
+        "id": 4,
+        "title": "Esecuzione e Monitoraggio",
+        "content": "Implementazione tecnica immediata, protezione SSL e monitoraggio continuo per garantire la longevità del tuo asset digitale."
+      }
+    ],
+    "testimonials": {
+      "title": "Testimonianze dei Nostri Clienti:",
+      "subtitle": "Successi Ispiranti con la Nostra Agenzia Web",
+      "items": [
+        {
+          "name": "Mehdi Berrada",
+          "role": "CEO, MM RÉSEAUX COM",
+          "text": "Un'agenzia di comunicazione digitale in Marocco che padroneggia perfettamente il suo campo. Il loro team ci ha accompagnato su SEO e pubblicità online con risultati impressionanti."
+        },
+        {
+          "name": "Karim Belkadi",
+          "role": "CEO, GROUP DES COMPAGNONS EN BÂTIMENT",
+          "text": "Abbiamo affidato il restyling del nostro sito web a Group Digital Concept e siamo entusiasti del risultato. Design moderno, sito veloce e ben ottimizzato per il SEO."
+        },
+        {
+          "name": "Samir Ait Benhaddou",
+          "role": "CEO, LOCATION CENTRE D'APPEL",
+          "text": "La loro competenza in SEO e SEA ha potenziato la nostra visibilità su Google. Ora riceviamo più richieste qualificate. Un vero partner di crescita!"
+        },
+        {
+          "name": "Oussama Jabrane",
+          "role": "CEO, GROUP PLANCYCALL",
+          "text": "Professionali e reattivi, hanno capito le nostre esigenze e implementato una strategia digitale efficace. La nostra presenza online è molto più efficiente."
+        },
+        {
+          "name": "Nadia El Fakir",
+          "role": "MARKETING MANAGER",
+          "text": "Un'agenzia seria e competente. Il loro team ha progettato un sito e-commerce fluido e sicuro per il nostro negozio online. Molto soddisfatti del lavoro!"
+        }
+      ]
+    }
+  },
+  "DomainFAQSection": {
+    "header": {
+      "title": "Esplora le {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>domande frequenti</span>",
+      "desc": "Domande sull'acquisto o gestione del tuo nome di dominio? I nostri esperti hanno raccolto qui le risposte essenziali per guidarti.",
+      "supportTitle": "Hai bisogno di aiuto?",
+      "supportDesc": "Contatta il nostro supporto."
+    },
+    "items": [
+      {
+        "question": "Perché acquistare un nome di dominio a Marrakech?",
+        "answer": "Un nome di dominio è essenziale per stabilire la tua presenza online e rafforzare la tua credibilità. Ti permette di avere un indirizzo web professionale e migliorare la tua visibilità su internet con la tua clientela locale e internazionale."
+      },
+      {
+        "question": "Come scegliere il nome di dominio giusto per la mia attività?",
+        "answer": "Opta per un nome corto, memorabile e facile da scrivere. Dovrebbe riflettere la tua attività e idealmente contenere parole chiave pertinenti per il tuo SEO locale a Marrakech. Consigliamo di evitare trattini multipli."
+      },
+      {
+        "question": "Qual è la differenza tra un dominio .ma e .com?",
+        "answer": "Il .ma si rivolge specificamente al mercato marocchino e migliora significativamente il tuo posizionamento locale in Marocco. Il .com è un'estensione internazionale, ideale se ti rivolgi a un pubblico globale o se desideri proteggere il tuo brand a livello internazionale."
+      },
+      {
+        "question": "Quanto costa un nome di dominio a Marrakech?",
+        "answer": "I prezzi variano in base all'estensione (.ma, .com, .net, ecc.) e alla rarità del nome. In Group Digital Concept, offriamo tariffe competitive che includono gestione DNS, protezione dei tuoi dati e supporto tecnico reattivo."
+      },
+      {
+        "question": "Come proteggere il mio nome di dominio dal cybersquatting?",
+        "answer": "Raccomandiamo di registrare le principali varianti del tuo nome di dominio (diverse estensioni, errori di ortografia comuni) e attivare il blocco trasferimento. Il nostro servizio include monitoraggio proattivo."
+      },
+      {
+        "question": "Cosa succede se il mio nome di dominio è già preso?",
+        "answer": "Se il dominio è già registrato, possiamo aiutarti a trovare alternative pertinenti o avviare una procedura di riacquisto se è in vendita. Offriamo anche un servizio di monitoraggio (backorder) per essere avvisati se torna disponibile."
+      },
+      {
+        "question": "Come trasferire un nome di dominio a un altro provider?",
+        "answer": "Il trasferimento richiede il codice EPP (Auth Code) che ti aiutiamo a ottenere, e lo sblocco del dominio presso il precedente registrar. Il nostro team tecnico gestisce l'intero processo per garantire una transizione senza interruzione del servizio."
+      },
+      {
+        "question": "Devo rinnovare il mio nome di dominio ogni anno?",
+        "answer": "Sì, un nome di dominio viene affittato per un periodo definito (generalmente da 1 a 10 anni). Offriamo rinnovo automatico per evitare la perdita accidentale del tuo indirizzo web e del tuo traffico."
+      },
+      {
+        "question": "Posso acquistare un nome di dominio senza creare subito un sito web?",
+        "answer": "Assolutamente. Puoi prenotare il tuo nome di dominio per proteggere il tuo brand e usarlo in seguito. Nel frattempo, possiamo configurare una pagina di attesa professionale o reindirizzare il traffico verso i tuoi social network."
+      },
+      {
+        "question": "Offrite servizi complementari con l'acquisto del dominio?",
+        "answer": "Sì, offriamo una suite completa: hosting web performante, creazione di indirizzi email professionali, certificati SSL per la sicurezza e gestione DNS avanzata per ottimizzare la velocità del tuo sito."
+      }
+    ]
+  },
+  "DomainContactForm": {
+    "header": {
+      "title": "Agenzia Web & {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Comunicazione Digitale Innovativa</span>",
+      "p1": "Non siamo solo un'agenzia di marketing digitale. Supportiamo le aziende con soluzioni su misura per potenziare la loro presenza online e massimizzare il loro impatto.",
+      "p2": "Con sede in Marocco, combiniamo competenza locale e tendenze internazionali per offrire strategie performanti adattate a ogni progetto."
+    },
+    "steps": {
+      "info": "Informazioni",
+      "service": "Servizio",
+      "details": "Dettagli"
+    },
+    "form": {
+      "namePlaceholder": "Nome Completo",
+      "emailPlaceholder": "Email",
+      "companyPlaceholder": "Azienda",
+      "employeesLabel": "Numero di dipendenti *",
+      "phonePlaceholder": "Telefono",
+      "serviceLabel": "Servizio Desiderato",
+      "projectDescLabel": "Descrizione Progetto",
+      "projectDescPlaceholder": "Raccontaci i tuoi obiettivi...",
+      "budgetLabel": "Budget Stimato",
+      "back": "Indietro",
+      "next": "Avanti",
+      "confirm": "Conferma"
+    },
+    "success": {
+      "title": "Messaggio Inviato!",
+      "desc": "Il tuo progetto è in buone mani.{br}Ti contatteremo entro 24 ore.",
+      "button": "Nuovo Progetto"
+    },
+    "services": {
+      "web": "Sito Web",
+      "seo": "SEO / SEA",
+      "social": "Social Media",
+      "branding": "Branding",
+      "app": "App Mobile",
+      "dev": "Sviluppo Personalizzato"
+    }
+  },
+  "DomainFinalCTA": {
+    "title": "Parliamo del {br} tuo progetto.",
+    "button": "Discutiamo un progetto",
+    "cta": "Discutiamo un progetto"
+  }
+}

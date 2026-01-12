@@ -1,0 +1,125 @@
+{
+  "pack-siteweb": {
+    "hero": {
+      "badge": "GDC ELITE SOLUTIONS",
+      "vision": "PROIETTA LA TUA VISIONE",
+      "title_part1": "I NOSTRI PACK",
+      "title_part2": "SITO WEB",
+      "subtitle": "Eccellenza al servizio della tua crescita",
+      "scroll": "Scorri per esplorare"
+    },
+    "values": {
+      "v1": {
+        "title": "Su Misura",
+        "desc": "Soluzioni su misura secondo le tue esigenze specifiche per massime performance."
+      },
+      "v2": {
+        "title": "Innovativo",
+        "desc": "Integrazione nativa delle ultime tecnologie per rimanere all'avanguardia."
+      },
+      "v3": {
+        "title": "Efficace",
+        "desc": "Risultati tangibili e misurabili dal primo giorno di messa online."
+      },
+      "protocol": "Protocollo v.9"
+    },
+    "pricing": {
+      "badge": "OFFERTE ESCLUSIVE • GDC ELITE",
+      "title": "La nostra agenzia ti accompagna nei tuoi <highlight>primi passi</highlight> nel mondo digitale",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "485",
+          "currency": "€",
+          "tax": "IVA esclusa",
+          "features": [
+            "2 Pagine Vetrina + Pagina Contatti",
+            "Design Semplice",
+            "Contenuto base incluso",
+            "Ottimizzazione velocità",
+            "Sicurezza base",
+            "Supporto dominio/hosting"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "975",
+          "currency": "€",
+          "tax": "IVA esclusa",
+          "features": [
+            "5 Pagine Vetrina + Pagina Contatti",
+            "Design Responsive",
+            "UX esperienza utente",
+            "Contenuto personalizzato incluso",
+            "Ottimizzazione velocità",
+            "Sicurezza avanzata",
+            "Supporto dominio/hosting"
+          ]
+        },
+        "ultime": {
+          "name": "Ultimate",
+          "price": "Personalizzato",
+          "currency": "",
+          "tax": "",
+          "features": [
+            "+5 Pagine",
+            "Pagina Contatti",
+            "Design Responsive",
+            "UX esperienza utente",
+            "Contenuto personalizzato incluso",
+            "Ottimizzazione velocità",
+            "Sicurezza avanzata",
+            "Supporto dominio/hosting"
+          ]
+        }
+      },
+      "starting_at": "A partire da",
+      "cta": "Contattaci!"
+    },
+    "showcase": {
+      "custom_site": {
+        "title": "Sito Web Personalizzato",
+        "features": [
+          "Design personalizzato fino a 5 pagine",
+          "10 Immagini GRATUITE",
+          "Integrazione social media",
+          "Inclusione Google Maps",
+          "Moduli di contatto interattivi",
+          "Design mobile-responsive",
+          "Team di tre sviluppatori esperti"
+        ]
+      },
+      "hub": {
+        "title": "Soluzione Completa di <highlight>Creazione Siti Web</highlight>"
+      },
+      "benefits": {
+        "title": "VANTAGGI",
+        "items": [
+          "Art director dedicato per ogni progetto",
+          "Diritti di proprietà esclusivi",
+          "Impegno di soddisfazione totale",
+          "Garanzia design 100% unico",
+          "Supporto disponibile",
+          "Servizio post-vendita esemplare"
+        ]
+      },
+      "logo": {
+        "title": "DESIGN LOGO",
+        "features": [
+          "3 proposte di logo uniche",
+          "2 sessioni di revisione incluse",
+          "Team di tre designer specializzati",
+          "Creazione logo e icona del brand",
+          "Animazione logo",
+          "Guide all'uso del logo",
+          "File consegnabili (AI, PDF, SVG, EPS, PNG)"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pronto a <highlight>conquistare</highlight> il web?",
+      "subtitle": "Eccellenza Digitale Marrakech • v.9",
+      "button": "INIZIA ORA"
+    }
+  }
+}

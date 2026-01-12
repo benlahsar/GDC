@@ -1,0 +1,195 @@
+{
+  "HostingPage": {
+    "badge": "Infrastruttura ad Alte Prestazioni",
+    "title": "Web Hosting {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>a Marrakech</span> {br} & in Marocco",
+    "description": "In <highlight>Group Digital Concept</highlight>, siamo specializzati in web hosting a Marrakech, una soluzione chiave per una presenza online performante e sicura.",
+    "cta": "Scegli il mio piano",
+    "configurator": {
+      "title": "Configuratore",
+      "badge": "Calcolatore Diretto",
+      "siteType": "Tipo di Sito",
+      "types": {
+        "vitrine": "Vetrina",
+        "ecommerce": "Negozio",
+        "corporate": "Corp."
+      },
+      "estimatedTraffic": "Traffico Stimato",
+      "month": "/mese",
+      "ssdStorage": "Storage SSD",
+      "recommendation": "Raccomandazione GDC",
+      "optimizedInfra": "Infrastruttura Ottimizzata",
+      "getProposal": "RICHIEDI PROPOSTA"
+    },
+    "plans": {
+      "dedicated": "Cloud Dedicato",
+      "vps": "VPS Performance",
+      "shared": "Condiviso Standard"
+    },
+    "features": [
+      {
+        "title": "Velocità Ottimale",
+        "description": "Server NVMe ad alte prestazioni. Tempi di caricamento ridotti per un SEO migliore."
+      },
+      {
+        "title": "Sicurezza Rafforzata",
+        "description": "Certificazione SSL inclusa, protezione anti-DDoS e backup automatici giornalieri."
+      },
+      {
+        "title": "Scalabilità",
+        "description": "Soluzioni cloud che si adattano al tuo traffico. Passa dal condiviso al dedicato senza downtime."
+      },
+      {
+        "title": "Supporto Locale",
+        "description": "Un team tecnico basato a Marrakech, disponibile e reattivo per supportarti 24/7."
+      }
+    ],
+    "stats": {
+      "uptime": "Uptime Garantito",
+      "satisfaction": "Soddisfazione Cliente",
+      "support": "Supporto Tecnico"
+    },
+    "footerText": "Scegliendo il nostro <highlight>servizio di web hosting a Marrakech</highlight>, benefici di una partnership con un team riconosciuto per la sua competenza tecnica, conoscenza locale e impegno incrollabile."
+  },
+  "HostingWhyChoose": {
+    "badge": "Infrastruttura & Sicurezza",
+    "title": "Perché Sceglierci per il {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Web Hosting a Marrakech</span>",
+    "reasons": {
+      "performance": {
+        "title": "Performance e Velocità",
+        "desc": "Le nostre infrastrutture di web hosting a Marrakech sono ottimizzate per garantire massime performance. Goditi server ultra-rapidi con tempi di risposta ridotti per ottimizzare l'esperienza utente e migliorare il tuo SEO su Google."
+      },
+      "security": {
+        "title": "Sicurezza e Protezione Dati",
+        "desc": "Implementiamo protocolli di sicurezza avanzati, inclusi certificati SSL, firewall e protezioni anti-DDoS, garantendo sicurezza ottimale per il tuo sito e i tuoi dati."
+      },
+      "hosting": {
+        "title": "Hosting e Servizi Complementari",
+        "desc": "Oltre al tuo web hosting a Marrakech, offriamo soluzioni adattate alle tue esigenze: hosting condiviso, dedicato e VPS, nonché servizi come registrazione dominio, certificati di sicurezza e ottimizzazione delle performance."
+      },
+      "backup": {
+        "title": "Backup e Affidabilità",
+        "desc": "I tuoi dati sono preziosi. Ecco perché assicuriamo backup automatici e regolari per prevenire perdite accidentali. Benefici di un'infrastruttura affidabile che garantisce accessibilità permanente del tuo sito."
+      },
+      "support": {
+        "title": "Supporto Tecnico e Guida",
+        "desc": "Il nostro team ti supporta in ogni fase del tuo web hosting a Marrakech. Ti consigliamo sulla scelta della tua offerta e assicuriamo un follow-up tecnico reattivo per garantire assistenza quando ne hai bisogno."
+      },
+      "engagement": {
+        "title": "Il Nostro Impegno",
+        "desc": "Il nostro impegno si basa su tre principi fondamentali: performance, sicurezza e guida. Ci impegniamo a offrirti un web hosting affidabile e veloce a Marrakech adattato ai requisiti dei motori di ricerca. La nostra priorità è garantire un servizio sicuro con infrastrutture ad alte prestazioni per assicurare la stabilità e l'evoluzione del tuo sito web."
+      }
+    },
+    "vision": {
+      "title": "Visione",
+      "p1": "In <highlight>Group Digital Concept</highlight>, la nostra ambizione è diventare il leader nel web hosting a Marrakech.",
+      "p2": "Offriamo soluzioni adattate alle esigenze delle aziende, permettendo loro di avere un sito web affidabile e performante."
+    },
+    "mission": {
+      "title": "Missione",
+      "p1": "La nostra missione è semplificare e proteggere il web hosting a Marrakech fornendo competenza completa e supporto personalizzato."
+    }
+  },
+  "HostingAtouts": {
+    "badge": "I Nostri Punti di Forza",
+    "title": "I Punti di Forza di <span class='text-brand-red'>Group Digital Concept</span> {br} nel Web Hosting",
+    "items": {
+      "tracking": "Follow-up Personalizzato",
+      "price": "Prezzi Competitivi",
+      "compliance": "Conformità e GDPR",
+      "scalable": "Applicazioni Scalabili",
+      "turnkey": "Progetti Chiavi in Mano",
+      "team": "Team Esperto",
+      "satisfaction": "Soddisfazione Cliente",
+      "tech": "Tecnologie Moderne"
+    }
+  },
+  "HostingSolutionsGrid": {
+    "badge": "Soluzioni Performanti",
+    "title": "Vuoi un <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Web Hosting ad Alte Prestazioni per la Tua Attività?</span>",
+    "cta": "Richiedi preventivo hosting",
+    "solutions": {
+      "strategy": {
+        "title": "Analisi & Strategia",
+        "desc": "Analizziamo le tue esigenze e l'infrastruttura per offrirti un web hosting performante e scalabile a Marrakech.",
+        "points": [
+          "Audit del sito web: Valutazione della tua piattaforma per un hosting su misura.",
+          "Ottimizzazione performance: Tempi di caricamento più rapidi.",
+          "Hosting sicuro: Server ad alte prestazioni per garantire stabilità.",
+          "Consulenza personalizzata: Ti aiutiamo a scegliere la soluzione migliore."
+        ]
+      },
+      "security": {
+        "title": "Protezione & Sicurezza",
+        "desc": "Mettiamo la sicurezza al centro delle nostre soluzioni di web hosting a Marrakech per proteggere i tuoi dati e quelli dei tuoi clienti.",
+        "points": [
+          "Protezione avanzata: Sicurezza rafforzata contro minacce cyber e DDoS.",
+          "Certificati SSL inclusi: Protezione scambi e crittografia dati.",
+          "Backup automatici: Protezione e recupero rapido dei tuoi file.",
+          "Monitoraggio 24/7: Intervento rapido in caso di guasto o intrusione."
+        ]
+      },
+      "management": {
+        "title": "Gestione & Hosting",
+        "desc": "Una soluzione completa per garantire una presenza online performante e scalabile.",
+        "points": [
+          "Storage ottimizzato: Spazio disco adattato alle tue esigenze specifiche.",
+          "Alta disponibilità: Server affidabili con uptime massimo.",
+          "Hosting performante: Adattato a siti vetrina, e-commerce e piattaforme.",
+          "Integrazione email Pro: Indirizzo email professionale incluso."
+        ]
+      },
+      "performance": {
+        "title": "Performance & Scalabilità",
+        "desc": "Il web hosting è essenziale per garantire reattività e velocità del tuo sito.",
+        "points": [
+          "Velocità e ottimizzazione: Caricamento rapido per una migliore esperienza utente.",
+          "Infrastruttura scalabile: Capacità di adattamento secondo le esigenze del tuo sito.",
+          "Protezione avanzata: Sistemi di sicurezza rafforzati contro gli attacchi.",
+          "Compatibilità multi-piattaforma: Supporto per i CMS più popolari."
+        ]
+      }
+    }
+  },
+  "HostingContactForm": {
+    "badge": "Preventivo Rapido",
+    "title": "Pronto a passare al {br} <span class='text-brand-red'>Livello Successivo?</span>",
+    "stats": {
+      "responseTime": "Tempo di risposta",
+      "uptime": "SLA Disponibilità"
+    },
+    "success": {
+      "title": "Configurazione Ricevuta!",
+      "cta": "Nuovo Preventivo"
+    },
+    "form": {
+      "placeholders": {
+        "name": "Il tuo nome",
+        "email": "email@azienda.com",
+        "details": "Dettagli del tuo progetto..."
+      },
+      "plans": {
+        "shared": {
+          "label": "Condiviso",
+          "desc": "Ideale per iniziare"
+        },
+        "vps": {
+          "label": "Cloud VPS",
+          "desc": "Performance & Controllo"
+        },
+        "dedicated": {
+          "label": "Dedicato",
+          "desc": "Potenza massima"
+        },
+        "pro": {
+          "label": "Pack Pro",
+          "desc": "Sicurezza totale"
+        }
+      },
+      "actions": {
+        "back": "Indietro",
+        "next": "Avanti",
+        "confirm": "Conferma"
+      }
+    }
+  }
+}

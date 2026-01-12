@@ -1,0 +1,152 @@
+{
+  "tag": "Contatti",
+  "title": "Parliamo del Tuo <highlight>Successo Futuro</highlight>",
+  "subtitle": "Pronto a trasformare la tua visione in realtà digitale? Compila questo modulo per iniziare una collaborazione eccezionale.",
+  "success": {
+    "title": "Messaggio Ricevuto!",
+    "message": "Grazie {name}. Stiamo analizzando la tua richiesta e ti risponderemo entro 24 ore.",
+    "newRequest": "Nuova richiesta"
+  },
+  "header": {
+    "badge": "Contattaci",
+    "titlePrefix": "Parliamo di",
+    "titleSuffix": "Progetto.",
+    "description": "Una visione? Una sfida? Il nostro team trasforma le tue idee in esperienze digitali eccezionali."
+  },
+  "info": {
+    "email": "Email",
+    "emailPro": "Email Aziendale",
+    "phone": "Telefono",
+    "directLine": "Linea Diretta",
+    "followUs": "Seguici",
+    "copied": "Copiato!"
+  },
+  "form": {
+    "step1": {
+      "title": "I Tuoi Dati",
+      "subtitle": "Iniziamo con le presentazioni.",
+      "name": "Nome Completo *",
+      "namePlaceholder": "Il Tuo Nome",
+      "email": "Email Aziendale *",
+      "emailPlaceholder": "nome@azienda.com",
+      "phone": "Telefono *",
+      "phonePlaceholder": "3 00 00 00",
+      "company": "Azienda",
+      "companyPlaceholder": "Nome della tua azienda",
+      "next": "Continua"
+    },
+    "step2": {
+      "title": "Il Tuo Progetto",
+      "subtitle": "Raccontaci di più sulle tue ambizioni.",
+      "services": "Servizi Richiesti *",
+      "budget": "Budget Stimato *",
+      "deadline": "Scadenza Desiderata *",
+      "description": "Dettagli Progetto",
+      "descriptionPlaceholder": "Raccontaci di più... (Obiettivi, competitor, ispirazione)",
+      "back": "Indietro",
+      "submit": "Conferma Progetto",
+      "sending": "Invio..."
+    },
+    "steps": {
+      "identity": "Identità",
+      "needs": "Esigenze",
+      "message": "Messaggio"
+    },
+    "labels": {
+      "name": "Nome Completo",
+      "email": "Email Aziendale",
+      "company": "Azienda",
+      "phone": "Telefono",
+      "needs": "Seleziona le tue esigenze",
+      "message": "Raccontaci del tuo progetto"
+    },
+    "placeholders": {
+      "name": "Mario Rossi",
+      "email": "mario@azienda.com",
+      "company": "Digital Studio",
+      "phone": "+39 3...",
+      "otherService": "Specifica la tua esigenza...",
+      "message": "Contesto, obiettivi, scadenze, budget stimato..."
+    },
+    "services": {
+      "vitrine": "Sito Vetrina",
+      "ecommerce": "E-Commerce",
+      "appweb": "Web App",
+      "seo": "SEO / Ads",
+      "branding": "Branding",
+      "other": "Altro"
+    },
+    "buttons": {
+      "back": "Indietro",
+      "sending": "Invio...",
+      "send": "Invia",
+      "next": "Avanti"
+    },
+    "success": {
+      "title": "Ricevuto!",
+      "message": "Grazie {name}. Stiamo analizzando la tua richiesta e ti risponderemo entro 24 ore.",
+      "button": "Nuova Richiesta",
+      "newRequest": "Nuova Richiesta"
+    },
+    "options": {
+      "services": {
+        "strategy": "Strategia & Consulenza",
+        "branding": "Branding & Identità",
+        "website": "Sito Web Personalizzato",
+        "ecommerce": "E-Commerce",
+        "mobile": "App Mobile / Web App",
+        "uiux": "Design UI/UX",
+        "seo": "SEO & Indicizzazione",
+        "ads": "Pubblicità (Ads)",
+        "social": "Social Media",
+        "content": "Creazione Contenuti",
+        "other": "Altro"
+      },
+      "budgets": {
+        "lt20k": "< 20k MAD",
+        "20k50k": "20k - 50k MAD",
+        "50k100k": "50k - 100k MAD",
+        "gt100k": "+ 100k MAD",
+        "tbd": "Da definire"
+      },
+      "timelines": {
+        "asap": "Il prima possibile",
+        "1month": "Entro 1 mese",
+        "onetreemonths": "1-3 mesi",
+        "undefined": "Non definito"
+      },
+      "countries": {
+        "morocco": "Marocco",
+        "france": "Francia",
+        "usa": "USA",
+        "uk": "Regno Unito",
+        "belgium": "Belgio",
+        "switzerland": "Svizzera",
+        "spain": "Spagna"
+      }
+    },
+    "errors": {
+      "name": "Il nome è obbligatorio",
+      "email": "L'email è obbligatoria",
+      "emailInvalid": "Formato email non valido",
+      "phone": "Il numero è obbligatorio",
+      "phoneInvalid": "Numero non valido",
+      "services": "Seleziona almeno un servizio",
+      "budget": "Definisci un budget",
+      "deadline": "Scegli una scadenza"
+    },
+    "errorMessage": "Si è verificato un errore durante l'invio. Riprova."
+  },
+  "locations": {
+    "badge": "Hub Presenza Globale",
+    "titlePrefix": "Le Nostre",
+    "titleSuffix": "Sedi.",
+    "localExpert": "Esperto Locale",
+    "operational": "Operativo",
+    "labels": {
+      "headquarters": "Sede Centrale",
+      "secondary": "Indirizzo Secondario",
+      "france": "Sede in Francia"
+    }
+  }
+}
