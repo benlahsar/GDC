@@ -30,7 +30,8 @@ import {
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import { AGENCY_INFO, NAV_ITEMS } from '@/lib/constants';
+import { AGENCY_INFO } from '@/lib/constants';
+import { getNavItems } from '@/lib/nav-items';
 import { NavItem } from '@/lib/types';
 
 // Fix: Use NavItem everywhere, remove DropdownItem
@@ -56,7 +57,19 @@ export const Header: React.FC = () => {
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
   const [isClient, setIsClient] = useState(false);
   const tNav = useTranslations('nav');
+  const tHeader = useTranslations('header');
   const headerRef = useRef<HTMLDivElement>(null);
+
+  // Create a universal translation function
+  const t = useCallback((key: string) => {
+    const parts = key.split('.');
+    if (parts[0] === 'nav') {
+      return tNav(parts[1]);
+    } else if (parts[0] === 'header') {
+      return tHeader(parts.slice(1).join('.'));
+    }
+    return key;
+  }, [tNav, tHeader]);
 
   // Initialize client-side
   useEffect(() => {
@@ -196,25 +209,17 @@ export const Header: React.FC = () => {
 
   // Fix: Remove hasMega, use hasDropdown for mega menu as well
   const translatedNav: NavItem[] = useMemo(
-    () => [
-      { label: tNav('home'), id: 'home', href: '/' },
-      { label: tNav('agency'), id: 'agency', href: '/agency' },
-      { label: tNav('team'), id: 'team', href: '/team' },
-      { label: tNav('expertise'), id: 'expertises', href: '#', hasDropdown: true, isNotPage: true },
-      { label: tNav('solutions'), id: 'solutions', href: '#', hasDropdown: true, isNotPage: true },
-      { label: tNav('portfolio'), id: 'portfolio', href: '/portfolio', hasDropdown: true },
-      { label: tNav('contact'), id: 'contact-page', href: '/contact' },
-    ],
-    [tNav]
+    () => getNavItems(t),
+    [t]
   );
 
-  const expertisesItem = useMemo(() => NAV_ITEMS.find((n) => n.id === 'expertises'), []);
+  const expertisesItem = useMemo(() => translatedNav.find((n) => n.id === 'expertises'), [translatedNav]);
   const activeCatData = useMemo(
-    () => expertisesItem?.dropdownItems?.find((cat) => cat.id === activeCategory),
+    () => expertisesItem?.dropdownItems?.find((cat: NavItem) => cat.id === activeCategory),
     [expertisesItem, activeCategory]
   );
   const activeSubCatData = useMemo(
-    () => activeCatData?.dropdownItems?.find((sub) => sub.id === activeSubCategory),
+    () => activeCatData?.dropdownItems?.find((sub: NavItem) => sub.id === activeSubCategory),
     [activeCatData, activeSubCategory]
   );
 
@@ -259,7 +264,7 @@ export const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {translatedNav.map((item, index) => {
-            const constantItem = NAV_ITEMS.find((n) => n.id === item.id);
+            const constantItem = translatedNav.find((n: NavItem) => n.id === item.id);
             const isHoveredState = hoveredItem === item.label;
 
             return (
@@ -304,6 +309,7 @@ export const Header: React.FC = () => {
                     onCategoryChange={setActiveCategory}
                     onSubCategoryChange={setActiveSubCategory}
                     onSubItemClick={handleSubItemClick}
+                    tHeader={tHeader}
                   />
                 )}
 
@@ -385,6 +391,7 @@ const MegaMenu: React.FC<{
   onCategoryChange: (id: string | null) => void;
   onSubCategoryChange: (id: string | null) => void;
   onSubItemClick: (e: React.MouseEvent, item: NavItem) => void;
+  tHeader: any;
 }> = ({
   isVisible,
   constantItem,
@@ -395,6 +402,7 @@ const MegaMenu: React.FC<{
   onCategoryChange,
   onSubCategoryChange,
   onSubItemClick,
+  tHeader,
 }) => {
   return (
     <div
@@ -415,12 +423,11 @@ const MegaMenu: React.FC<{
             <div className="flex items-center gap-2 mb-2">
               <div className="w-2 h-2 rounded-full bg-brand-red animate-pulse" />
               <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400">
-                Services Hub
+                {tHeader('servicesHub')}
               </span>
             </div>
             <h3 className="text-3xl font-black text-black dark:text-white uppercase tracking-tighter leading-none">
-              Nos <br />
-              Métiers.
+              {tHeader('ourServices')}
             </h3>
           </div>
           {constantItem?.dropdownItems?.map((sub: NavItem) => {
@@ -481,7 +488,7 @@ const MegaMenu: React.FC<{
             <>
               <div className="px-2 py-4 mb-6">
                 <h3 className="text-3xl font-black text-black dark:text-white uppercase tracking-tighter leading-none">
-                  Architectures <br />
+                  {tHeader('architectures')} <br />
                   <span className="text-brand-red">{activeCatData?.label}</span>
                 </h3>
               </div>
@@ -553,7 +560,7 @@ const MegaMenu: React.FC<{
                     {activeSubCatData.label}
                   </h3>
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest leading-relaxed border-l-2 border-brand-red pl-4">
-                    Protocole d'exécution haute performance disponible.
+                    {tHeader('solution')}
                   </p>
                 </div>
                 <div className="space-y-3">
@@ -583,16 +590,16 @@ const MegaMenu: React.FC<{
                   </div>
                 </div>
                 <p className="text-[11px] font-black uppercase tracking-[0.5em] text-white/40 leading-relaxed">
-                  Survoler pour <br /> explorer le génome <br /> du succès
+                  {tHeader('hoverToExplore')}
                 </p>
               </div>
             )}
 
             <div className="mt-auto pt-10 border-t border-white/10 flex items-center justify-between">
               <div className="flex flex-col">
-                <span className="text-[10px] font-black text-white tracking-tighter">ELITE PARTNER</span>
+                <span className="text-[10px] font-black text-white tracking-tighter">{tHeader('elitePartner')}</span>
                 <span className="text-[8px] font-bold text-gray-500 uppercase tracking-widest">
-                  ISO-9001 Digital
+                  {tHeader('isoDigital')}
                 </span>
               </div>
               <Zap size={18} className="text-brand-red animate-pulse" />
@@ -758,7 +765,7 @@ const MobileMenu: React.FC<{
       </div>
       <nav className="flex flex-col gap-2 p-8 mt-10">
         {translatedNav.map((item) => {
-          const constantItem = NAV_ITEMS.find((n) => n.id === item.id);
+          const constantItem = translatedNav.find((n: NavItem) => n.id === item.id);
           const isExpanded = expandedMobileItems.includes(item.id!);
           const hasChildren = constantItem?.dropdownItems && constantItem.dropdownItems.length > 0;
 
@@ -787,7 +794,7 @@ const MobileMenu: React.FC<{
               </div>
               {hasChildren && isExpanded && (
                 <div className="flex flex-col gap-2 pl-6 py-4 border-l-2 border-brand-red/30">
-                  {constantItem.dropdownItems?.map((sub) => (
+                  {constantItem.dropdownItems?.map((sub: NavItem) => (
                     <button
                       key={sub.id}
                       onClick={(e) => onSubItemClick(e, sub)}
