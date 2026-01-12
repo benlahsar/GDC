@@ -1,0 +1,195 @@
+{
+  "HostingPage": {
+    "badge": "Hochleistungs-Infrastruktur",
+    "title": "Webhosting {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>in Marrakesch</span> {br} & Marokko",
+    "description": "Bei <highlight>Group Digital Concept</highlight> sind wir auf Webhosting in Marrakesch spezialisiert, eine Schlüssellösung für eine leistungsstarke und sichere Online-Präsenz.",
+    "cta": "Meinen Plan wählen",
+    "configurator": {
+      "title": "Konfigurator",
+      "badge": "Direktrechner",
+      "siteType": "Websitetyp",
+      "types": {
+        "vitrine": "Visitenkarte",
+        "ecommerce": "Shop",
+        "corporate": "Unternehmen"
+      },
+      "estimatedTraffic": "Geschätzter Traffic",
+      "month": "/Monat",
+      "ssdStorage": "SSD-Speicher",
+      "recommendation": "GDC-Empfehlung",
+      "optimizedInfra": "Optimierte Infrastruktur",
+      "getProposal": "ANGEBOT ANFORDERN"
+    },
+    "plans": {
+      "dedicated": "Dedicated Cloud",
+      "vps": "VPS Performance",
+      "shared": "Standard Shared"
+    },
+    "features": [
+      {
+        "title": "Optimale Geschwindigkeit",
+        "description": "Hochleistungs-NVMe-Server. Reduzierte Ladezeiten für bessere SEO."
+      },
+      {
+        "title": "Verstärkte Sicherheit",
+        "description": "Inklusive SSL-Zertifizierung, DDoS-Schutz und tägliche automatische Backups."
+      },
+      {
+        "title": "Skalierbarkeit",
+        "description": "Cloud-Lösungen, die mit Ihrem Traffic wachsen. Wechseln Sie von Shared zu Dedicated ohne Ausfall."
+      },
+      {
+        "title": "Lokaler Support",
+        "description": "Ein in Marrakesch ansässiges Technikteam, verfügbar und reaktiv, um Sie 24/7 zu unterstützen."
+      }
+    ],
+    "stats": {
+      "uptime": "Garantierte Verfügbarkeit",
+      "satisfaction": "Kundenzufriedenheit",
+      "support": "Technischer Support"
+    },
+    "footerText": "Indem Sie unseren Service für <highlight>Webhosting in Marrakesch</highlight> wählen, profitieren Sie von einer Partnerschaft mit einem Team, das für seine technische Expertise, seine Kenntnis lokaler Besonderheiten und sein unerschütterliches Engagement anerkannt ist."
+  },
+  "HostingWhyChoose": {
+    "badge": "Infrastruktur & Sicherheit",
+    "title": "Warum Sie Uns für {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Webhosting in Marrakesch</span> Wählen Sollten",
+    "reasons": {
+      "performance": {
+        "title": "Leistung und Geschwindigkeit",
+        "desc": "Unsere Infrastrukturen für Webhosting in Marrakesch sind für maximale Leistung optimiert. Profitieren Sie von ultraschnellen Servern mit reduzierter Antwortzeit, um das Nutzererlebnis zu optimieren und Ihre Platzierung bei Google zu verbessern."
+      },
+      "security": {
+        "title": "Sicherheit und Datenschutz",
+        "desc": "Wir setzen fortschrittliche Sicherheitsprotokolle ein, einschließlich SSL-Zertifikaten, Firewalls und DDoS-Schutz, um optimale Sicherheit für Ihre Website und Ihre Daten zu gewährleisten."
+      },
+      "hosting": {
+        "title": "Hosting und ergänzende Dienstleistungen",
+        "desc": "Ergänzend zu Ihrem Webhosting in Marrakesch bieten wir Lösungen an, die auf die Bedürfnisse von Unternehmen zugeschnitten sind: Shared Hosting, Dedicated Hosting, VPS sowie Dienstleistungen wie Domain-Registrierung, Sicherheitszertifikate und Leistungsoptimierung."
+      },
+      "backup": {
+        "title": "Backup und Zuverlässigkeit",
+        "desc": "Ihre Daten sind wertvoll. Deshalb gewährleisten wir automatische und regelmäßige Backups, um versehentlichen Verlust zu vermeiden. So profitieren Sie von einer zuverlässigen Infrastruktur, die den permanenten Zugriff auf Ihre Website garantiert."
+      },
+      "support": {
+        "title": "Technische Unterstützung und Begleitung",
+        "desc": "Unser Team begleitet Sie bei jedem Schritt Ihres Webhostings in Marrakesch. Wir beraten Sie bei der Auswahl Ihres Angebots und gewährleisten ein reaktionsschnelles technisches Follow-up, um Ihnen bei Bedarf Unterstützung zu garantieren."
+      },
+      "engagement": {
+        "title": "Unser Engagement",
+        "desc": "Unser Engagement basiert auf drei Grundprinzipien: Leistung, Sicherheit und Begleitung. Wir verpflichten uns, Ihnen ein zuverlässiges, schnelles und an die Anforderungen der Suchmaschinen angepasstes Webhosting in Marrakesch zu bieten. Unsere Priorität ist es, einen sicheren Service mit leistungsstarken Infrastrukturen zu gewährleisten, um die Stabilität und Entwicklung Ihrer Website sicherzustellen."
+      }
+    },
+    "vision": {
+      "title": "Vision",
+      "p1": "Bei <highlight>Group Digital Concept</highlight> haben wir den Anspruch, der Referenzanbieter für Webhosting in Marrakesch zu werden.",
+      "p2": "Wir bieten Lösungen an, die auf die Bedürfnisse von Unternehmen zugeschnitten sind und ihnen eine zuverlässige und leistungsstarke Website ermöglichen."
+    },
+    "mission": {
+      "title": "Mission",
+      "p1": "Unsere Mission ist es, Webhosting in Marrakesch zu vereinfachen und zu sichern, indem wir umfassende Expertise und persönliche Begleitung bereitstellen."
+    }
+  },
+  "HostingAtouts": {
+    "badge": "Unsere Stärken",
+    "title": "Die Stärken von <span class='text-brand-red'>Group Digital Concept</span> {br} im Webhosting",
+    "items": {
+      "tracking": "Persönliche Betreuung",
+      "price": "Wettbewerbsfähige Preise",
+      "compliance": "Konformität und DSGVO",
+      "scalable": "Skalierbare Anwendungen",
+      "turnkey": "Schlüsselfertige Projekte",
+      "team": "Erfahrenes Team",
+      "satisfaction": "Kundenzufriedenheit",
+      "tech": "Moderne Technologien"
+    }
+  },
+  "HostingSolutionsGrid": {
+    "badge": "Leistungsstarke Lösungen",
+    "title": "Sie Wollen ein Leistungsstarkes Webhosting {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>für Ihr Unternehmen?</span>",
+    "cta": "Hosting-Angebot anfordern",
+    "solutions": {
+      "strategy": {
+        "title": "Analyse & Strategie",
+        "desc": "Wir analysieren Ihre Bedürfnisse und Ihre Infrastruktur, um Ihnen ein leistungsstarkes und skalierbares Webhosting in Marrakesch vorzuschlagen.",
+        "points": [
+          "Audit Ihrer Website: Bewertung Ihrer Plattform für maßgeschneidertes Hosting.",
+          "Leistungsoptimierung: Beschleunigung der Ladezeiten.",
+          "Sicheres Hosting: Hochleistungsserver zur Gewährleistung der Stabilität.",
+          "Persönliche Beratung: Wir helfen Ihnen, die beste Lösung zu wählen."
+        ]
+      },
+      "security": {
+        "title": "Absicherung & Schutz",
+        "desc": "Wir stellen Sicherheit in den Mittelpunkt unserer Webhosting-Lösungen in Marrakesch, um Ihre Daten und die Ihrer Kunden zu schützen.",
+        "points": [
+          "Erweiterter Schutz: Verstärkte Sicherheit gegen Cyber-Bedrohungen und DDoS.",
+          "Inklusive SSL-Zertifikate: Sicherung Ihrer Datenübertragungen und Verschlüsselung der Daten.",
+          "Automatische Backups: Schutz und schnelle Wiederherstellung Ihrer Dateien.",
+          "24/7-Überwachung: Schnelles Eingreifen bei Ausfall oder Eindringlingen."
+        ]
+      },
+      "management": {
+        "title": "Verwaltung & Hosting",
+        "desc": "Eine Komplettlösung, um eine leistungsstarke und skalierbare Online-Präsenz sicherzustellen.",
+        "points": [
+          "Optimierter Speicher: Festplattenspeicher, der auf Ihre spezifischen Bedürfnisse zugeschnitten ist.",
+          "Hohe Verfügbarkeit: Zuverlässige Server mit maximaler Verfügbarkeitszeit.",
+          "Leistungsstarkes Hosting: Geeignet für Visitenkarten-Websites, E-Commerce und Plattformen.",
+          "Integration professioneller E-Mails: Professionelle E-Mail-Adresse inklusive."
+        ]
+      },
+      "performance": {
+        "title": "Leistung & Skalierbarkeit",
+        "desc": "Webhosting ist entscheidend, um die Reaktionsfähigkeit und Geschwindigkeit Ihrer Website sicherzustellen.",
+        "points": [
+          "Geschwindigkeit und Optimierung: Schnelles Laden für ein besseres Nutzererlebnis.",
+          "Skalierbare Infrastruktur: Anpassungsfähigkeit gemäß den Anforderungen Ihrer Website.",
+          "Erweiterter Schutz: Verstärkte Sicherheitssysteme gegen Angriffe.",
+          "Multi-Plattform-Kompatibilität: Unterstützung der beliebtesten CMS."
+        ]
+      }
+    }
+  },
+  "HostingContactForm": {
+    "badge": "Schnelles Angebot",
+    "title": "Bereit für den {br} <span class='text-brand-red'>nächsten Level?</span>",
+    "stats": {
+      "responseTime": "Reaktionszeit",
+      "uptime": "SLA Verfügbarkeit"
+    },
+    "success": {
+      "title": "Konfiguration erhalten!",
+      "cta": "Neues Angebot"
+    },
+    "form": {
+      "placeholders": {
+        "name": "Ihr Name",
+        "email": "email@unternehmen.ma",
+        "details": "Details zu Ihrem Projekt..."
+      },
+      "plans": {
+        "shared": {
+          "label": "Shared",
+          "desc": "Ideal für den Start"
+        },
+        "vps": {
+          "label": "VPS Cloud",
+          "desc": "Leistung & Kontrolle"
+        },
+        "dedicated": {
+          "label": "Dedicated",
+          "desc": "Maximale Leistung"
+        },
+        "pro": {
+          "label": "Pro-Paket",
+          "desc": "Totale Sicherheit"
+        }
+      },
+      "actions": {
+        "back": "Zurück",
+        "next": "Weiter",
+        "confirm": "Bestätigen"
+      }
+    }
+  }
+}

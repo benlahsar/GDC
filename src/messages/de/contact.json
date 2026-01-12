@@ -1,0 +1,152 @@
+{
+  "tag": "Kontakt",
+  "title": "Sprechen wir über Ihren <highlight>zukünftigen Erfolg</highlight>",
+  "subtitle": "Bereit, Ihre Vision in digitale Realität zu verwandeln? Füllen Sie dieses Formular aus, um eine außergewöhnliche Zusammenarbeit zu starten.",
+  "success": {
+    "title": "Gut erhalten!",
+    "message": "Danke {name}. Wir analysieren Ihre Anfrage und melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "newRequest": "Neue Anfrage"
+  },
+  "header": {
+    "badge": "Kontaktieren Sie uns",
+    "titlePrefix": "Sprechen wir über",
+    "titleSuffix": "Projekt.",
+    "description": "Eine Vision? Eine Herausforderung? Unser Team verwandelt Ihre Ideen in außergewöhnliche digitale Erlebnisse."
+  },
+  "info": {
+    "email": "E-Mail",
+    "emailPro": "Geschäftliche E-Mail",
+    "phone": "Telefon",
+    "directLine": "Direktleitung",
+    "followUs": "Folgen Sie uns",
+    "copied": "Kopiert!"
+  },
+  "form": {
+    "step1": {
+      "title": "Ihre Kontaktdaten",
+      "subtitle": "Beginnen wir mit den Vorstellungen.",
+      "name": "Vollständiger Name *",
+      "namePlaceholder": "Ihr Name",
+      "email": "Geschäftliche E-Mail *",
+      "emailPlaceholder": "name@unternehmen.com",
+      "phone": "Telefon *",
+      "phonePlaceholder": "6 00 00 00",
+      "company": "Unternehmen",
+      "companyPlaceholder": "Name Ihres Unternehmens",
+      "next": "Weiter"
+    },
+    "step2": {
+      "title": "Ihr Projekt",
+      "subtitle": "Erzählen Sie uns mehr über Ihre Ambitionen.",
+      "services": "Gewünschte Dienstleistungen *",
+      "budget": "Geschätztes Budget *",
+      "deadline": "Gewünschte Frist *",
+      "description": "Projektdetails",
+      "descriptionPlaceholder": "Erzählen Sie uns mehr... (Ziele, Wettbewerber, Inspiration)",
+      "back": "Zurück",
+      "sending": "Wird gesendet...",
+      "submit": "Projekt bestätigen"
+    },
+    "steps": {
+      "identity": "Identität",
+      "needs": "Bedürfnisse",
+      "message": "Nachricht"
+    },
+    "labels": {
+      "name": "Vollständiger Name",
+      "email": "Geschäftliche E-Mail",
+      "company": "Unternehmen",
+      "phone": "Telefon",
+      "needs": "Wählen Sie Ihre Bedürfnisse",
+      "message": "Erzählen Sie uns von Ihrem Projekt"
+    },
+    "placeholders": {
+       "name": "Max Mustermann",
+       "email": "max@unternehmen.com",
+       "company": "Digital Studio",
+       "phone": "+49 ...",
+       "otherService": "Geben Sie Ihren Bedarf an...",
+       "message": "Kontext, Ziele, Fristen, geschätztes Budget..."
+    },
+    "services": {
+      "vitrine": "Schaufenster-Website",
+      "ecommerce": "E-Commerce",
+      "appweb": "Web-App",
+      "seo": "SEO / Ads",
+      "branding": "Branding",
+      "other": "Andere"
+    },
+    "buttons": {
+      "back": "Zurück",
+      "sending": "Wird gesendet...",
+      "send": "Senden",
+      "next": "Weiter"
+    },
+    "success": {
+      "title": "Gut erhalten!",
+      "message": "Danke {name}. Wir analysieren Ihre Anfrage und melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "button": "Neue Anfrage",
+      "newRequest": "Neue Anfrage"
+    },
+    "options": {
+      "services": {
+        "strategy": "Strategie & Beratung",
+        "branding": "Branding & Identität",
+        "website": "Maßgeschneiderte Website",
+        "ecommerce": "E-Commerce",
+        "mobile": "Mobile App / Web App",
+        "uiux": "UI/UX Design",
+        "seo": "SEO & Suchmaschinenoptimierung",
+        "ads": "Werbung (Ads)",
+        "social": "Social Media",
+        "content": "Content-Erstellung",
+        "other": "Andere"
+      },
+      "budgets": {
+        "lt20k": "< 20k MAD",
+        "20k50k": "20k - 50k MAD",
+        "50k100k": "50k - 100k MAD",
+        "gt100k": "+ 100k MAD",
+        "tbd": "Noch festzulegen"
+      },
+      "timelines": {
+        "asap": "So schnell wie möglich",
+        "1month": "In 1 Monat",
+        "onetreemonths": "1-3 Monate",
+        "undefined": "Unbestimmt"
+      },
+      "countries": {
+        "morocco": "Marokko",
+        "france": "Frankreich",
+        "usa": "USA",
+        "uk": "Vereinigtes Königreich",
+        "belgium": "Belgien",
+        "switzerland": "Schweiz",
+        "spain": "Spanien"
+      }
+    },
+    "errors": {
+      "name": "Name ist erforderlich",
+      "email": "E-Mail ist erforderlich",
+      "emailInvalid": "Ungültiges E-Mail-Format",
+      "phone": "Nummer ist erforderlich",
+      "phoneInvalid": "Ungültige Nummer",
+      "services": "Bitte wählen Sie mindestens einen Service aus",
+      "budget": "Bitte legen Sie ein Budget fest",
+      "deadline": "Bitte wählen Sie eine Frist"
+    },
+    "errorMessage": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "locations": {
+    "badge": "Globaler Präsenz-Hub",
+    "titlePrefix": "Unsere",
+    "titleSuffix": "Standorte.",
+    "localExpert": "Lokaler Experte",
+    "operational": "Betriebsbereit",
+    "labels": {
+      "headquarters": "Hauptsitz",
+      "secondary": "Zweite Adresse",
+      "france": "Hauptsitz in Frankreich"
+    }
+  }
+}

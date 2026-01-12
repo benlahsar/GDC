@@ -1,0 +1,475 @@
+{
+  "ApplicationCreationPage": {
+    "badge": "App-Expertise Marrakesch",
+    "title": "Willkommen bei Group Digital Concept, der auf {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600 relative inline-block'>App-Erstellung in Marrakesch spezialisierten Agentur.</span>",
+    "description": {
+      "p1": "Suchen Sie einen <strong class='text-black dark:text-white'>Experten für App-Erstellung in Marrakesch</strong>, um Ihr Digitalprojekt zu verwirklichen? Group Digital Concept begleitet Sie bei der Entwicklung maßgeschneiderter mobiler und Web-Apps.",
+      "p2": "Wir kombinieren <strong class='text-black dark:text-white'>fortschrittliche Technologie und Nutzererfahrung</strong>, um intuitive, moderne und effektive Anwendungen zu schaffen. In weniger als 30 Tagen helfen wir Ihnen, Ihrer App Leben einzuhauchen."
+    },
+    "cta": {
+      "start": "Projekt starten",
+      "contact": "Kontaktieren Sie uns!"
+    },
+    "experts": "Dediziertes Expertenteam",
+    "imageCard": {
+      "code": "Clean Architecture",
+      "mobile": "Cross-Platform (iOS/Android)"
+    },
+    "process": {
+      "title": "Unser Ansatz",
+      "items": [
+        "Detaillierte funktionale und technische Studie",
+        "Maßgeschneidertes UX/UI-Design",
+        "Optimierte Mobile- und Web-Entwicklung",
+        "Rigorose Tests und sichere Bereitstellung"
+      ]
+    },
+    "benefits": {
+      "title": "Ihre Kunden-Vorteile:",
+      "items": [
+        "Umfassende und persönliche Betreuung",
+        "Agile Nachverfolgung und reaktives Team 7 Tage/Woche",
+        "Skalierbare und 100% angepasste Lösungen",
+        "Multi-Plattform-Kompatibilität (Web/App)",
+        "Bereit zur Leistungsfähigkeit"
+      ]
+    },
+    "stats": {
+      "label": "Rekorddauer",
+      "sub": "Tage"
+    },
+    "icons": {
+      "text": "Group Digital Concept verwandelt Ihre Ideen in konkrete digitale Lösungen.",
+      "items": [
+        {
+          "label": "Modernes Design"
+        },
+        {
+          "label": "SEO-optimiert"
+        },
+        {
+          "label": "Garantierte Leistung"
+        },
+        {
+          "label": "Reaktiver Support"
+        },
+        {
+          "label": "Verstärkte Sicherheit"
+        }
+      ]
+    }
+  },
+  "AppContactBanner": {
+    "priority": "Prioritärer Kanal",
+    "title": "Kontaktieren Sie {br} <span class='text-brand-red underline decoration-red-900/50 underline-offset-8'>unsere Experten</span> {br} für Apps.",
+    "phone": {
+      "label": "Direkte Leitung"
+    },
+    "email": {
+      "label": "Offizieller Kanal"
+    },
+    "hq": "Marrakesch HQ • v2.5",
+    "form": {
+      "title": "Projektformular",
+      "subtitle": "Eine Antwort innerhalb von 12 Arbeitsstunden",
+      "name": "Ihr vollständiger Name",
+      "phone": "Mobiltelefon",
+      "submit": "PROTOKOLL INITIIEREN",
+      "secure": "Gesichert durch GDC Elite-Verschlüsselung"
+    },
+    "uptime": {
+      "title": "BETRIEBSZEIT {br} <span class='text-gray-400'>OPERATIV</span>",
+      "days": "Montag bis Freitag"
+    }
+  },
+  "AppExpertSection": {
+    "headlines": {
+      "us": "Wir sind",
+      "expert": "Ihr Experte"
+    },
+    "mainTitle": {
+      "line1": "App-Erstellung",
+      "line2": "in Marrakesch"
+    },
+    "floatingCard": {
+      "text": "Unsere Expertenagentur für <strong class='text-black dark:text-white font-black'>App-Erstellung in Marrakesch</strong> entwickelt maßgeschneiderte mobile Lösungen. Wir konzipieren native und hybride Apps (iOS/Android), die lokalisiertes UX-Design, leistungsstarke Technologien (Flutter, React Native) und integrierte ASO-Optimierung kombinieren.",
+      "badge": "GDC EXZELLENZVISION"
+    },
+    "cards": [
+      {
+        "title": "Mobile-Optimierung Marrakesch",
+        "subtitle": "ASO & Leistung",
+        "desc": "Als Experte für App-Erstellung in Marrakesch verwandeln wir Ihre Ideen in hochleistungsfähige mobile Lösungen. Rigorose technische Prüfung und auf die Stores zugeschnittene SEO-Optimierung, um Ihre Sichtbarkeit auf dem lokalen Markt zu maximieren. Wir integrieren lokalisiertes UX-Design und angepasste Zahlungsfunktionen (CMI, Paypal Marokko)."
+      },
+      {
+        "title": "E-Commerce von Morgen",
+        "subtitle": "Verkaufstunnel",
+        "desc": "Unsere E-Commerce-Apps sind für Konversion ausgelegt. Wir entwickeln flüssige Plattformen mit optimierten Konversionstunneln, einschließlich Funktionen wie One-Click-Checkout und Integration lokaler Zahlungsmethoden für eine reibungslose Benutzererfahrung."
+      },
+      {
+        "title": "Branchenlösungen Marrakesch",
+        "subtitle": "Interne Effizienz",
+        "desc": "Spezialisiert auf App-Erstellung in Marrakesch für Fachleute, konzipieren wir maßgeschneiderte Branchen-Tools: Bestandsverwaltung, lokales CRM und Kundenbetreuung. Unsere Apps entsprechen den technischen und rechtlichen Besonderheiten (DSGVO Marokko) Ihres lokalen Unternehmens."
+      },
+      {
+        "title": "Technologische Integration",
+        "subtitle": "Flutter & React Native",
+        "desc": "Hybride Technologien für native Leistung. Skalierbare Architektur und ultraschnelle Ladezeiten, um die App-Stores zu dominieren und maximale Nutzerbindung in Marrakesch sicherzustellen."
+      }
+    ]
+  },
+  "AppFeaturesGrid": {
+    "items": [
+      {
+        "title": "Expertise in App-Erstellung Marrakesch",
+        "desc": "Als Spezialist für App-Erstellung in Marrakesch bieten wir digitale Premium-Lösungen nach internationalen Standards. Unsere Apps entsprechen den neuesten Anforderungen von Google."
+      },
+      {
+        "title": "Maßgeschneiderte Entwicklungsstrategie",
+        "desc": "Wir entwerfen leistungsstarke Apps in Marrakesch, die fortschrittliche Technologien und einen zielgerichteten Ansatz kombinieren, um Ihre Nutzer in treue Kunden zu verwandeln. Unsere Methodik ist auf Ihre Bedürfnisse zugeschnitten."
+      },
+      {
+        "title": "Garantierte technische Leistung",
+        "desc": "Unsere technischen Lösungen umfassen ultraschnelle Ladezeiten, verstärkte Sicherheit gegen Cyberbedrohungen und perfekte mobile Kompatibilität. Jede App ist für Flüssigkeit optimiert."
+      },
+      {
+        "title": "Platzierung und lokale Sichtbarkeit",
+        "desc": "Wir integrieren eine komplexe Strategie zur natürlichen Suchmaschinenoptimierung (SEO), um Ihre App an der Spitze der Google-Ergebnisse zu positionieren. Wir ziehen qualifizierten und relevanten Traffic für Ihr Geschäft an."
+      },
+      {
+        "title": "Mehrsprachiger Kundensupport",
+        "desc": "Dedizierte Betreuung für Unternehmen in Marrakesch, mit flüssigem Support auf Französisch, Arabisch und Englisch. Ideal für die Bereiche Tourismus, Hotellerie und lokalen Handel."
+      },
+      {
+        "title": "Sicherheit und kontinuierliche Wartung",
+        "desc": "Erweiterter Schutz für Ihre App in Marrakesch: Regelmäßige technische Audits, Schutz vor Angriffen und algorithmische Überwachung, um Updates der Stores vorwegzunehmen."
+      }
+    ]
+  },
+  "AppDeepExpertise": {
+    "title": "Warum unsere Agentur für die App-Erstellung wählen?",
+    "intro": "Als Spezialist für <strong class='text-black dark:text-white'>App-Erstellung</strong> verwandeln wir Ihre Ideen mithilfe maßgeschneiderter Entwicklungsstrategien in leistungsstarke Werkzeuge.",
+    "items": [
+      {
+        "title": "Vollständiges technisches Audit",
+        "desc": "Wir führen eine tiefgehende Diagnose Ihres Projekts durch und identifizieren jede Optimierungsmöglichkeit. Unsere Methodik umfasst die Analyse technischer Leistungen und die Bewertung Ihres bestehenden Inhalts."
+      },
+      {
+        "title": "Leistungsoptimierung",
+        "desc": "Unsere Lösungen garantieren greifbare Ergebnisse: ultraschnelle Ladezeiten, optimierte technische Architektur und verstärkte Sicherheit gegen Cyberbedrohungen."
+      },
+      {
+        "title": "Entwicklungsstrategie",
+        "desc": "Unsere exklusive Methodik umfasst: UX/UI-Design mit Fokus auf Benutzererfahrung, Integration hybrider oder nativer Technologien (React Native, Flutter, Swift) und transparente monatliche Nachverfolgung."
+      }
+    ],
+    "cta": "Kontaktieren Sie uns!",
+    "process": {
+      "title": "Unser {br} <span class='text-brand-red'>Erstellungsprozess</span>",
+      "steps": [
+        {
+          "title": "1. Strategisches Audit",
+          "desc": "Tiefgehende Analyse Ihrer Bedürfnisse, der Konkurrenz und der technischen Chancen für eine perfekt abgestimmte Lastenhefterstellung."
+        },
+        {
+          "title": "2. Technische Optimierung",
+          "desc": "Hochleistungs-Backend-Architektur, regelkonforme Sicherheit und Integration lokaler APIs."
+        },
+        {
+          "title": "3. Inhaltsstrategie",
+          "desc": "Einsatz einer maßgeschneiderten Post-Launch-Strategie mit regelmäßigen Updates und strategischem Deep Linking, um Ihren Markt zu dominieren."
+        }
+      ]
+    },
+    "expertise": {
+      "title": "Technische {br} <span class='text-brand-red'>Expertise</span>",
+      "guaranteesTitle": "Garantien & Qualität:",
+      "guarantees": [
+        "Vollständiges Audit der funktionalen Bedürfnisse",
+        "An Nutzungsgewohnheiten angepasstes UI/UX-Design",
+        "Integration von Echtzeit-Analysen",
+        "Strikte Einhaltung der Store-Normen"
+      ],
+      "objectivesTitle": "Leistungsziele:",
+      "objectives": [
+        "Optimale technische Leistung",
+        "Flüssige Benutzererfahrung",
+        "Return on Investment (ROI)",
+        "Wartung & monatliche Nachverfolgung"
+      ]
+    }
+  },
+  "AppSolutionSection": {
+    "vision": "Unsere GDC Vision",
+    "title": "Eine maßgeschneiderte {br} Digital-Lösung für Marrakesch.",
+    "intro": "Group Digital Concept, Ihr Expertenpartner für <strong class='text-black dark:text-white'>App-Erstellung in Marrakesch</strong>, bietet Ihnen innovative Lösungen. Wir konzipieren leistungsstarke mobile und Web-Plattformen, um Ihr Geschäft voranzutreiben.",
+    "solutions": [
+      {
+        "title": "App-Erstellung Marrakesch",
+        "desc": "Wir entwickeln native und hybride mobile Apps (iOS/Android), die ein flüssiges und intuitives Nutzererlebnis bieten.",
+        "subPoints": [
+          "Lokalisiertes UX/UI-Design",
+          "Optimierte technische Leistung",
+          "Integrierte Mobile-Zahlung"
+        ]
+      },
+      {
+        "title": "Professionelle Web-Apps",
+        "desc": "Konzeption von Progressive Web Apps (PWA) und skalierbaren SaaS-Plattformen, um den Bedürfnissen Ihres Unternehmens gerecht zu werden.",
+        "subPoints": [
+          "Höhere Geschwindigkeit und SEO",
+          "Datensicherheit",
+          "Unbegrenzte Skalierbarkeit"
+        ]
+      }
+    ],
+    "engagements": {
+      "title": "Unsere Qualitätsverpflichtungen",
+      "items": [
+        {
+          "text": "Auf Konversion und ROI für Ihr Geschäft ausgerichtete Lösungen."
+        },
+        {
+          "text": "Technische Leistung über den Store-Normen."
+        },
+        {
+          "text": "Reaktiver Support und kontinuierliche Betreuung 7 Tage/Woche."
+        }
+      ]
+    },
+    "freeAudit": "Kostenlose Projektprüfung:",
+    "cta": "Projekt starten"
+  },
+  "AppRegionalExpertise": {
+    "items": [
+      {
+        "title": "Web-Expertise Marokko",
+        "desc": "An den nationalen Markt angepasste Digitalstrategien mit globaler Vision.",
+        "city": "MAROKKO"
+      },
+      {
+        "title": "Luxus & Tourismus Marrakesch",
+        "desc": "Hochwertige digitale Lösungen für Luxushotellerie und Riads.",
+        "city": "MARRAKESCH"
+      },
+      {
+        "title": "Business & E-Commerce Casablanca",
+        "desc": "Robuste Transaktionsplattformen für das Wirtschaftszentrum des Landes.",
+        "city": "CASABLANCA"
+      },
+      {
+        "title": "Institutionell Rabat",
+        "desc": "Strenge und Sicherheit für institutionelle und Regierungsportale.",
+        "city": "RABAT"
+      },
+      {
+        "title": "International Tanger",
+        "desc": "Mehrsprachige Lösungen für exportorientierte Unternehmen.",
+        "city": "TANGER"
+      },
+      {
+        "title": "Tourismus & Freizeit Agadir",
+        "desc": "Immersive Erlebnisse, um die lokale touristische Attraktivität zu steigern.",
+        "city": "AGADIR"
+      }
+    ]
+  },
+  "AppProjectPortfolio": {
+    "badge": "Umsetzungen",
+    "title": "Unser {br} Elite-Portfolio",
+    "items": [
+      {
+        "title": "Majorelle Business Center",
+        "logo": "/images/portfolio/majorelle.webp",
+        "accent": "from-brand-red to-red-600"
+      },
+      {
+        "title": "Plancy Call Center",
+        "logo": "/images/portfolio/plancy.webp",
+        "accent": "from-blue-600 to-indigo-600"
+      },
+      {
+        "title": "Entreprise des Compagnons",
+        "logo": "/images/portfolio/compagnons.webp",
+        "accent": "from-emerald-600 to-teal-600"
+      },
+      {
+        "title": "M.M. Réseaux Com",
+        "logo": "/images/portfolio/mmreseaux.webp",
+        "accent": "from-violet-600 to-purple-600"
+      }
+    ]
+  },
+  "AppMethodology": {
+    "badge": "GDC METHODIK",
+    "title": "Ein Prozess {br} <span class='text-brand-red'>der Exzellenz</span>",
+    "subtitle": "Wir haben eine rigorose Methodik in 4 Schritten entwickelt, um den Erfolg Ihres Digitalprojekts zu garantieren.",
+    "steps": [
+      {
+        "id": "01",
+        "title": "Strategisches Audit",
+        "description": "Tiefgehende Analyse Ihrer Bedürfnisse, der Konkurrenz und der technischen Chancen für eine perfekt abgestimmte Lastenhefterstellung."
+      },
+      {
+        "id": "02",
+        "title": "Design & UX/UI",
+        "description": "Konzeption einzigartiger und intuitiver Schnittstellen, die auf die Benutzererfahrung ausgerichtet sind, um das Engagement zu maximieren."
+      },
+      {
+        "id": "03",
+        "title": "Agile Entwicklung",
+        "description": "Hochleistungs-Codierung mit den neuesten Technologien (Next.js, Flutter) für eine schnelle und sichere Lösung."
+      },
+      {
+        "id": "04",
+        "title": "Start & Nachverfolgung",
+        "description": "Bereitstellung in den Stores und auf Servern, mit proaktiver Wartung, um die Langlebigkeit Ihrer App sicherzustellen."
+      }
+    ]
+  },
+  "AppDetailedRegionalExpertise": {
+    "badge": "Territoriale Analyse",
+    "headerTitle": "Detaillierte regionale {br} Expertise",
+    "cta": "Details ansehen",
+    "items": [
+      {
+        "title": "Pol Marrakesch & Süden",
+        "desc": "Fokus auf Luxushotellerie, hochwertige Immobilien und touristische Dienstleistungen. Wir schaffen immersive digitale Erlebnisse, die die Eleganz der Ockerstadt widerspiegeln.",
+        "image": "https://images.unsplash.com/photo-1597212618440-8062a28d65bd?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Achse Casablanca - Rabat",
+        "desc": "Expertise in E-Commerce-Lösungen, Branchen-Apps und institutionellen Portalen. Wir begleiten die digitale Transformation des wirtschaftlichen und administrativen Herzens Marokkos.",
+        "image": "https://images.unsplash.com/photo-1578145289078-43844f770417?auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Region Nord & Export",
+        "desc": "Entwicklung mehrsprachiger Plattformen und Logistiklösungen für Tanger-Med und Freihandelszonen. Eine robuste Webarchitektur mit internationaler Ausrichtung.",
+        "image": "https://images.unsplash.com/photo-1627389955609-72f697486f05?auto=format&fit=crop&q=80"
+      }
+    ]
+  },
+  "AppTestimonials": {
+    "badge": "Kundenzufriedenheit",
+    "title": "Was unsere {br} Partner {span}",
+    "titleHighlight": "sagen",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, Group PlancyCall",
+        "text": "Professionell und reaktiv, sie konnten unsere Bedürfnisse verstehen und eine effektive Digitalstrategie umsetzen. Unsere Online-Präsenz ist viel leistungsfähiger.",
+        "tag": "Expertise"
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "Marketingleiterin",
+        "text": "Eine seriöse und kompetente Agentur. Ihr Team hat einen flüssigen und sicheren E-Commerce-Shop für unseren Online-Shop entworfen. Sehr zufrieden mit der Arbeit!",
+        "tag": "E-Commerce"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "Handelsleiter",
+        "text": "Wir haben sie für die Verwaltung unserer Online-Werbekampagnen beauftragt. Ihr zielgerichteter Ansatz hat unsere Kapitalrendite deutlich verbessert.",
+        "tag": "Marketing"
+      }
+    ]
+  },
+  "AppStats": {
+    "header": {
+      "title": "Die Wirkung von Group Digital Concept",
+      "subtitle": "Zahlen, die unser Engagement für Exzellenz belegen."
+    },
+    "items": [
+      {
+        "value": 200,
+        "prefix": "+",
+        "label": "Erstellte Apps"
+      },
+      {
+        "value": 30,
+        "suffix": " Tage",
+        "label": "Lieferdauer"
+      },
+      {
+        "value": 98,
+        "suffix": " %",
+        "label": "Zufriedene Kunden"
+      },
+      {
+        "value": 15,
+        "prefix": "+",
+        "label": "Dedizierte Experten"
+      },
+      {
+        "value": 100,
+        "prefix": "",
+        "suffix": " %",
+        "label": "Code-Eigentum"
+      }
+    ]
+  },
+  "AppFAQ": {
+    "badge": "FAQ",
+    "title": "Häufig gestellte {br} Fragen",
+    "items": [
+      {
+        "question": "Wie lange dauert die Erstellung einer App?",
+        "answer": "Die Dauer variiert je nach Komplexität, von 4 Wochen für einen MVP bis zu 12 Wochen für eine komplette Lösung."
+      },
+      {
+        "question": "Bieten Sie Wartung nach der Lieferung an?",
+        "answer": "Ja, wir bieten Wartungsverträge an, um die Sicherheit und Leistung Ihrer App zu garantieren."
+      },
+      {
+        "question": "Wird meine App für SEO optimiert sein?",
+        "answer": "Absolut, alle unsere Web-Lösungen sind mit einer für die natürliche Suchmaschinenoptimierung optimierten Struktur aufgebaut."
+      }
+    ]
+  },
+  "AppProjectForm": {
+    "brading": {
+      "title": "Bereit für {br} <span class='text-brand-red'>Expansion</span>?",
+      "p1": "Vertrauen Sie Ihr App-Erstellungsprojekt der führenden Agentur in Marrakesch an.",
+      "p2": "Unsere Experten melden sich innerhalb von 24 Stunden mit einer kostenlosen, persönlichen Studie zurück.",
+      "experts": "Unser Elite-Team"
+    },
+    "stepper": [
+      { "id": 1, "label": "Kontaktinfos" },
+      { "id": 2, "label": "Ihre Bedürfnisse" },
+      { "id": 3, "label": "Details" }
+    ],
+    "fields": {
+      "name": "Ihr vollständiger Name",
+      "email": "Geschäfts-E-Mail",
+      "company": "Name des Unternehmens",
+      "phone": "Mobiltelefon",
+      "subject": "Betreff der Anfrage",
+      "message": "Beschreiben Sie Ihr Projekt..."
+    },
+    "labels": {
+      "employees": "Teamgröße",
+      "consent": "Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verarbeitet werden."
+    },
+    "employees_ranges": ["1-10", "11-50", "51-200", "200+"],
+    "services_list": [
+      "Mobile-App-Erstellung",
+      "Maßgeschneiderte Web-Entwicklung",
+      "SaaS-Plattform-Relaunch",
+      "Technisches Audit & Beratung"
+    ],
+    "budgets_ranges": [
+      "< 40.000 MAD",
+      "40k - 80k MAD",
+      "80k - 150k MAD",
+      "+ 150.000 MAD"
+    ],
+    "buttons": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "send": "Projekt senden"
+    },
+    "country_codes": [
+      { "code": "+212", "flag": "🇲🇦" }
+    ]
+  }
+}

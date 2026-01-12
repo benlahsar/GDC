@@ -623,5 +623,9 @@
       "next": "Next",
       "send": "Send"
     }
-  }
+  },
+  "title": "SEO",
+  "audit": "SEO Audit",
+  "optimization": "SEO Optimization",
+  "content": "Content Strategy"
 }

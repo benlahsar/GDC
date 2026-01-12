@@ -386,5 +386,9 @@
       "sup_title": "Support",
       "sup_desc": "Dedicated Advisor"
     }
-  }
+  },
+  "title": "Maintenance",
+  "support": "Technical Support",
+  "security": "Security",
+  "updates": "Updates"
 }

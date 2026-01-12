@@ -1,0 +1,248 @@
+{
+  "hero": {
+    "badge": "Akquise & Bekanntheit",
+    "title": "Target. <convert>Convert.</convert> Dominate.",
+    "description": "Chirurgische SEA- & SMO-Expertise. Wir verwandeln Ihre Werbebudgets in profitable Investitionen und Ihr Publikum in eine engagierte Community.",
+    "cta": "Kampagne starten",
+    "clients": "+50 Aktive Kunden"
+  },
+  "stats_grid": {
+    "audience": "Publikumswachstum",
+    "clients": "Zufriedene Kunden",
+    "campaigns": "Verwaltete Kampagnen",
+    "roi": "Durchschnittlicher ROI"
+  },
+  "intro": {
+    "title_1": "Wir suchen keine Likes.",
+    "title_2": "Wir suchen Kunden.",
+    "description": "Sichtbarkeit allein reicht nicht mehr. Unser SEA- & SMO-Ansatz ist zu 100% leistungsorientiert. Wir nutzen Daten, um Ihre perfekte Zielgruppe genau dann zu erreichen, wenn sie kaufbereit ist.",
+    "points": {
+      "targeting": "Behavioral Targeting",
+      "retargeting": "Dynamisches Retargeting",
+      "testing": "Kontinuierliches A/B-Testing"
+    },
+    "testimonial": {
+      "quote": "GDC hat unsere Konversionsrate in 3 Monaten verdoppelt.",
+      "author": "Marketingdirektor • Immobilien"
+    }
+  },
+  "smashy": {
+    "title": "Smashy Burger: <gold>Die Kunst des kulinarischen Buzz.</gold>",
+    "description": "Wie verwandelt man einen Burgerladen in eine echte Lifestyle-Marke in Marrakesch? GDC hat eine engagierte Community geschaffen, die jedes neue Produkt sehnsüchtig erwartet."
+  },
+  "services": {
+    "title": "Dominieren Sie <red>die sozialen Medien</red>",
+    "items": {
+      "community": {
+        "title": "COMMUNITY MANAGEMENT",
+        "subtitle": "Beleben Sie Ihre Online-Präsenz!",
+        "desc": "Mit unseren erfahrenen Community Managern entwickeln wir eine <strong>wirksame Kommunikationsstrategie</strong>, um Ihr Unternehmen in den sozialen Medien voranzutreiben. Wir bauen Ihre Online-Community auf und animieren sie, um Ihre Sichtbarkeit zu erhöhen und Ihre Bekanntheit zu stärken."
+      },
+      "identity": {
+        "title": "VISUELLE IDENTITÄT",
+        "subtitle": "Wagen Sie Engagement!",
+        "desc": "Wir gestalten für Sie einen fesselnden Redaktionsplan, der das Interesse Ihres Publikums weckt, Ihre Präsenz in den sozialen Medien stärkt, Traffic auf Ihre <strong>Website</strong> lenkt und das Vertrauen in Ihr Unternehmen festigt."
+      },
+      "ads": {
+        "title": "SOCIAL MEDIA ADS",
+        "subtitle": "Zielen Sie und konvertieren Sie!",
+        "desc": "Wir erstellen und optimieren Ihre <strong>Werbekampagnen</strong> auf sozialen Plattformen wie Facebook Ads, Google Ads und LinkedIn Ads. Gemeinsam zielen wir auf Ihre perfekte Zielgruppe und gestalten beeindruckende Anzeigen für herausragende Ergebnisse."
+      },
+      "influencers": {
+        "title": "INFLUENCER-MARKETING",
+        "subtitle": "Nutzen Sie die Kraft der Influencer!",
+        "desc": "Influencer spielen eine entscheidende Rolle in einer <strong>erfolgreichen Digital-Marketing-Strategie</strong>. Wir binden die besten Influencer Ihrer Branche in Ihre Kampagnen ein, um deren Wirkung zu maximieren und Ihre Reichweite zu erweitern."
+      },
+      "content": {
+        "title": "CONTENT-ERSTELLUNG",
+        "subtitle": "Begeistern und binden Sie Ihr Publikum!",
+        "desc": "Wir begleiten Sie bei der Erstellung unwiderstehlicher Inhalte, die Ihr Publikum überzeugen und in treue Kunden verwandeln. Unser Expertenteam für Marketing gestaltet fesselnde, informative und ansprechende Inhalte, die Sie von der Masse abheben."
+      },
+      "branding": {
+        "title": "POSITIONIERUNG UND BRANDING",
+        "subtitle": "Behaupten Sie Ihre Identität!",
+        "desc": "Unsere Agentur führt Sie zu einer starken Positionierung und Markenidentität durch einwandfreies Social-Media-Management. Wir erstellen und verwalten Ihre Social-Media-Konten, um Sie mit Ihrer Zielgruppe zu verbinden und Ihre Online-Sichtbarkeit zu steigern."
+      }
+    }
+  },
+  "faq": {
+    "title": "Strategische <red>Entschlüsselung.</red>",
+    "items": [
+      {
+        "id": "01",
+        "question": "Was ist der Unterschied zwischen SEA und SEO?",
+        "answer": "SEO (Search Engine Optimization) ist ein Marathon: Es baut langfristig Ihre organische Sichtbarkeit auf. SEA (Search Engine Advertising) ist ein Sprint: Es garantiert sofortige Sichtbarkeit durch den Kauf von Werbeplätzen. Für totale Dominanz kombiniert GDC beides: Die Unmittelbarkeit von SEA für Cashflow und die Nachhaltigkeit von SEO für Rentabilität.",
+        "tags": ["Akquise", "Strategie"]
+      },
+      {
+        "id": "02",
+        "question": "Welches Budget ist nötig, um zu starten?",
+        "answer": "Es gibt keinen festen 'Mindestbeitrag', sondern eine Rentabilitätsschwelle. Wir passen die Strategie Ihrer Investitionsfähigkeit an. Ob 500 € oder 50.000 €, jeder Euro wird getrackt. Wir empfehlen ein anfängliches Testbudget, um die CPA (Cost per Acquisition) zu kalibrieren, bevor wir skalieren.",
+        "tags": ["Budget", "ROI"]
+      },
+      {
+        "id": "03",
+        "question": "Warum SMO (Social Media) betreiben?",
+        "answer": "Ihre Kunden sind nicht nur bei Google, sie leben in den sozialen Medien. SMO vermenschlicht Ihre Marke, schafft Social Proof und bindet Kunden. Eine Marke ohne soziale Präsenz ist eine stumme Marke. Wir verwandeln Ihre Follower in aktive Botschafter.",
+        "tags": ["Bekanntheit", "Engagement"]
+      },
+      {
+        "id": "04",
+        "question": "Wie messen Sie den Erfolg?",
+        "answer": "Wir glauben nicht an 'Vanity Metrics' (Likes, Aufrufe). Wir steuern mit DATA: ROAS (Return On Ad Spend), CPA (Cost per Acquisition) und LTV (Lifetime Value). Sie erhalten Zugang zu einem Echtzeit-Dashboard. Wenn es keinen Ertrag bringt, stoppen wir es. Wenn es Ertrag bringt, beschleunigen wir es.",
+        "tags": ["Data", "Performance"]
+      },
+      {
+        "id": "05",
+        "question": "Übernehmen Sie die visuelle Gestaltung?",
+        "answer": "Absolut. Ein hässlicher Werbeinhalt konvertiert nicht, selbst mit dem besten Targeting. Unser internes Kreativstudio produziert 'Stop-Scrolling'-Visuals und nutzergenerierte Inhalte (UGC), die speziell dafür entwickelt wurden, die Aufmerksamkeit in weniger als 3 Sekunden zu erfassen.",
+        "tags": ["Studio", "Erstellung"]
+      }
+    ]
+  },
+  "strategy": {
+    "badge": "360°-Strategie GDC",
+    "title": "Maximieren Sie Ihre <italic>Wirkung</italic> im Web!",
+    "subheadline": "Wir sind Experten für Social-Media-Management, <red>aber nicht nur das!</red>",
+    "description": "Wir verstehen, dass Social-Media-Management nur ein Teil Ihrer gesamten Marketingstrategie ist. Deshalb laden wir Sie ein, unsere gesamten Marketinglösungen zu erkunden, die darauf ausgelegt sind, alle Ihre Bedürfnisse zu erfüllen und Ihnen den Weg zum Erfolg zu ebnen.",
+    "cta": "Unsere Angebote erkunden",
+    "sea": {
+      "title": "Online-Werbung (SEA)",
+      "desc": "Steigern Sie Ihre Social-Media-Strategie mit leistungsstarken und gezielten Online-Werbekampagnen. Unsere SEA-Experten arbeiten in perfekter Synergie mit Ihren Social-Media-Aktivitäten, um Ihre Konversionen zu maximieren.",
+      "badge": "Performance Engine"
+    },
+    "photo": {
+      "title": "Professionelle Fotografie",
+      "desc": "Steigern Sie Ihre Präsenz in den sozialen Medien und im Web mit professionellen und fesselnden Bildern. Unsere talentierten Fotografen kreieren unwiderstehliche Visuals, die Ihr Publikum begeistern und das Engagement stärken.",
+      "badge": "Visual Excellence"
+    },
+    "email": {
+      "title": "E-Mail-Marketing",
+      "desc": "Die Kunst, mit Worten zu verkaufen. Unsere talentierten Texter arbeiten mit Ihnen zusammen, um überzeugende, ansprechende und handlungsorientierte Texte zu erstellen. Von Webinhalten über Blogartikel bis hin zu Marketing-E-Mails.",
+      "badge": "Conversion Content"
+    },
+    "ecosystem": {
+      "title": "Integrierte <red>Erfolgsarchitektur.</red>",
+      "desc": "Jeder Baustein unseres Ökosystems ist darauf ausgelegt, die anderen zu verstärken. Lassen Sie Ihr digitales Potenzial nicht zersplittert."
+    }
+  },
+  "testimonials": {
+    "badge": "SMO • SUCCESS HUB",
+    "title": "<red>Zufriedene Kunden</red> mit unserer Expertise.",
+    "riad": {
+      "title": "Riad Al-Ounass",
+      "subtitle": "MARRAKECH • LUXURY DESTINATION",
+      "quote": "Seit GDC unser soziales Ökosystem steuert, sind unsere Direktbuchungen um <red>65% explodiert</red>. Sie posten keine Inhalte, sie bauen ein narratives Imperium auf.",
+      "roi": "Monatlicher ROI",
+      "reach": "Organische Reichweite",
+      "expertise": "GDC-Expertise"
+    },
+    "performance": {
+      "title": "Retinale Performance.",
+      "desc": "Jedes Visual ist chirurgisch kalibriert, um die Aufmerksamkeit in weniger als <white>1,5 Sekunden</white> zu erfassen.",
+      "rate": "DURCHSCHN. ENGAGEMENT-RATE"
+    },
+    "security": {
+      "subtitle": "SECURITY & DNA",
+      "title": "Qualifiziertes Publikum"
+    }
+  },
+  "form_section": {
+    "protocol_badge": "SEA // SMO PROTOCOL v5.0",
+    "title": "Globale <red>Konfiguration.</red>",
+    "steps": {
+      "1": { "label": "SIGNAL", "desc": "Werbenetzwerke & Kanäle" },
+      "2": { "label": "ZIELE", "desc": "Conversion & Reichweite" },
+      "3": { "label": "TECH & DATA", "desc": "Pixels & Tracking" },
+      "4": { "label": "CREATIVE DNA", "desc": "Assets & Tonfall" },
+      "5": { "label": "DEPLOYMENT", "desc": "Budget & Validierung" }
+    },
+    "terminal": {
+      "initializing": "> INITIALIZING_COMMAND_HUB...",
+      "fetching": "> FETCHING_REALTIME_ALGORITHMS...",
+      "module_active": "> MODULE_ACTIVE: PHASE_{step}"
+    },
+    "success": {
+      "title": "Orchestrierung <emerald>validiert.</emerald>",
+      "message": "Ihr Kampagnensignal wurde verschlüsselt und übertragen. Ein Senior-GDC-Stratege wird sich innerhalb von 12 Stunden bei Ihnen melden.",
+      "reset_btn": "PROTOKOLL ZURÜCKSETZEN"
+    },
+    "step1": {
+      "badge": "SCHRITT 01 // SIGNAL DETECTION",
+      "title": "Architektur der Erfassungskanäle.",
+      "note": "Hinweis: Ein konsistenter Multi-Channel-Ansatz erhöht die Werbeerinnerungsrate durchschnittlich um 35%.",
+      "platforms": {
+        "google": "Google Ads",
+        "meta": "Meta (IG/FB)",
+        "tiktok": "TikTok",
+        "snap": "Snapchat",
+        "linkedin": "LinkedIn",
+        "pinterest": "Pinterest",
+        "twitch": "Twitch",
+        "reddit": "Reddit"
+      }
+    },
+    "step2": {
+      "badge": "SCHRITT 02 // TARGET INTEL",
+      "title": "Performance-Vektoren.",
+      "objectives": {
+        "sales": "Verkäufe / Direkter ROI",
+        "leads": "Lead-Akquise",
+        "traffic": "Qualifizierter Traffic",
+        "notoriety": "Bekanntheit & Branding",
+        "retarget": "Kunden-Retargeting",
+        "app": "App-Installation"
+      },
+      "industry": {
+        "label": "Tätigkeitsbereich / Nische",
+        "placeholder": "Z.B.: Luxusimmobilien, Mode-E-Commerce, B2B-Tech..."
+      }
+    },
+    "step3": {
+      "badge": "SCHRITT 03 // TECH CORE",
+      "title": "Analytics-Absicherung.",
+      "server_side": {
+        "title": "Server-Side-Architektur",
+        "desc": "CAPI-Tracking reduziert den Datenverlust nach iOS14 um 30% und verbessert Ihren ROAS drastisch."
+      }
+    },
+    "step4": {
+      "badge": "SCHRITT 04 // CREATIVE DNA",
+      "title": "Visuelle Identität & Wirkung.",
+      "styles": {
+        "ugc": "UGC-Content",
+        "motion": "Motion Design",
+        "static": "Premium-Static",
+        "minimal": "Minimalistischer Ton",
+        "disruptive": "Disruptiver Ton",
+        "expert": "Professioneller Ton"
+      },
+      "creative": {
+        "label": "Spezifische kreative Vorgaben",
+        "placeholder": "Beschreiben Sie Ihren Ton, inspirierende Wettbewerber, Ihr Styleguide..."
+      }
+    },
+    "step5": {
+      "badge": "SCHRITT 05 // LAUNCH PROTOCOL",
+      "title": "Finalisierung.",
+      "url_label": "Ziel-URL",
+      "budget_label": "Geschätztes Monatsbudget",
+      "name_placeholder": "Vollständiger Name",
+      "email_placeholder": "Geschäfts-E-Mail",
+      "phone_placeholder": "WhatsApp / Handy",
+      "security_note": "GDC Sicherheitsprotokoll v5.0 aktiv. Datenverschlüsselung über verschlüsselten TLS-1.3-Tunnel. Ihre Strategie ist durch unsere Premium-Vertraulichkeitsvereinbarung geschützt."
+    },
+    "back_btn": "ZURÜCK",
+    "btn": {
+      "launch": "KAMPAGNE INITIALISIEREN",
+      "next": "NÄCHSTES PROTOKOLL",
+      "sending": "DATENÜBERTRAGUNG..."
+    }
+  },
+  "final_cta": {
+    "badge": "READY TO SCALE?",
+    "title": "Gehen Sie auf die <gradient>nächste Ebene.</gradient>",
+    "desc": "Lassen Sie Ihr Werbebudget nicht schlafen. Aktivieren Sie die Lead-Maschine von <strong>Group Digital Concept</strong>.",
+    "btn": "MEINE KAMPAGNE AKTIVIEREN"
+  }
+}

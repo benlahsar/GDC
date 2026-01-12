@@ -1,0 +1,415 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "agency": "Agentur",
+    "team": "Team",
+    "expertise": "Expertisen",
+    "solutions": "Lösungen",
+    "portfolio": "Umsetzungen",
+    "contact": "Kontakt",
+    "project": "Projekt"
+  },
+  "hero": {
+    "subtitle": "Premium Digitalmarketing-Agentur: Der Schlüssel zur Steigerung Ihrer Einnahmen",
+    "line1": "Experten in",
+    "line2": "Digitalisierung",
+    "line3": "und innovativem",
+    "line4": "Marketing",
+    "description": "Verwirklichen Sie Ihre Ambitionen mit einer visionären Digitalmarketing-Agentur. Strategische Lösungen, die von konkreten Ergebnissen gestützt werden.",
+    "cta": "Projekt starten",
+    "portfolio": "Unser Portfolio"
+  },
+  "ai": {
+    "title": "KI-Strateg",
+    "placeholder": "Z.B.: Riad in Marrakesch, E-Commerce...",
+    "button": "Analysieren",
+    "status": "Angetrieben von Gemini 3",
+    "newAnalysis": "Neue Analyse",
+    "prompt": "Sie sind ein Senior-Strateg. Geben Sie 3 Tipps für:",
+    "hint": "Benötigen Sie eine Strategie? Geben Sie Ihre Branche an.",
+    "error": "Hub-Verbindung fehlgeschlagen. Kontaktieren Sie uns für eine manuelle Analyse!"
+  },
+  "stats": {
+    "performance": "Leistung",
+    "growth": "Wachstum",
+    "satisfaction": "Zufriedenheit",
+    "projects": "Projekte",
+    "support": "Support",
+    "liveHub": "Live Hub"
+  },
+  "innovation": {
+    "tag": "Zukunftsinnovation",
+    "headline": "Die Digitalmarketing-Agentur, die Ihre Präsenz in Richtung <success>Erfolg</success> treibt.",
+    "description": "Strategischer Partner für digitale Transformation in Marrakesch. Konzeption und Umsetzung innovativer Lösungen zur Optimierung von Sichtbarkeit, Bekanntheit und Gesamtleistung.",
+    "discoverCta": "GDC entdecken"
+  },
+  "header": {
+    "servicesHub": "Services Hub",
+    "ourServices": "Unsere Leistungen",
+    "architectures": "Architekturen",
+    "solution": "Lösung",
+    "hoverToExplore": "Bewegen Sie die Maus, um die Erfolgs-DNA zu erkunden",
+    "elitePartner": "ELITE-PARTNER",
+    "isoDigital": "ISO-9001 Digital",
+    "hqMarrakech": "HQ Marrakesch",
+    "directLine": "Direktleitung",
+    "startProject": "PROJEKT STARTEN",
+    "ariaHome": "Startseite",
+    "languageSwitcher": {
+      "switchLanguage": "Sprache wechseln"
+    },
+    "ariaMobileMenu": "Mobiles Menü",
+    "ariaCloseMenu": "Menü schließen",
+    "ariaCollapse": "Reduzieren",
+    "ariaExpand": "Erweitern",
+    "expertiseMeta": {
+      "websiteCreation": {
+        "desc": "E-Commerce & Präsentationsseiten",
+        "stats": "+200 Websites"
+      },
+      "seo": {
+        "desc": "Google-Dominanz",
+        "stats": "Top 1 Platzierung"
+      },
+      "ads": {
+        "desc": "Werbung ROI",
+        "stats": "x4 Konversionen"
+      },
+      "applicationCreation": {
+        "desc": "iOS & Android Native",
+        "stats": "Flüssige Apps"
+      },
+      "visualIdentity": {
+        "desc": "Logos & Branding",
+        "stats": "Starke Identität"
+      },
+      "maintenance": {
+        "desc": "Support & Sicherheit",
+        "stats": "99,9 % Betriebszeit"
+      }
+    },
+    "navItems": {
+      "websiteCreation": "Webseitenerstellung",
+      "ecommerce": "E-Commerce-Websites",
+      "domainName": "Domainnamen",
+      "hosting": "Webhosting",
+      "maintenance": "Web-Wartung",
+      "seo": "Natürliche Suchmaschinenoptimierung",
+      "ads": "SEA & SMO",
+      "appCreation": "App-Erstellung",
+      "visualIdentity": "Visuelle Identität",
+      "packWebsite": "Web-Paket",
+      "packSeo": "SEO-Paket",
+      "blog": "Blog",
+      "about": "Über uns"
+    }
+  },
+  "team": {
+    "tag": "Unsere DNA",
+    "title": "Team <highlight>hingebungsvoller</highlight> digitaler Profis",
+    "notreAdn": "Unsere DNA",
+    "expertise": {
+      "tag": "Expertise",
+      "desc": "Fortgeschrittene technische und strategische Beherrschung für überlegene Ergebnisse."
+    },
+    "vision": {
+      "title": "<highlight>Group Digital Concept</highlight> verwandelt Ihre Ambitionen in digitale Realität.",
+      "desc": "Wir begleiten unsere Kunden in ihrer digitalen Transformation mit maßgeschneiderten und innovativen Lösungen. Unser Ansatz kombiniert Kreativität, Technologie und Strategie für konkrete Ergebnisse.",
+      "cta": "Kontaktieren Sie uns"
+    },
+    "success": {
+      "tag": "Erfolg",
+      "desc": "Gelieferte Projekte mit messbarer Wirkung und maximaler Kundenzufriedenheit."
+    }
+  },
+  "services": {
+    "title": "Unsere Expertise",
+    "headline": "Entdecken Sie, wie wir Ihren <highlight>digitalen Erfolg</highlight> begleiten",
+    "description": "Innovative und maßgeschneiderte Lösungen, um Ihr Wachstum voranzutreiben.",
+    "marquee": {
+      "customDev": "Maßgeschneiderte Entwicklung",
+      "appDesigns": "App-Design",
+      "websiteCreation": "Webseitenerstellung",
+      "ads": "Eindrucksvolle Werbung",
+      "strategy": "Digitalstrategie",
+      "uiux": "UI/UX-Design",
+      "ecommerce": "E-Commerce",
+      "branding": "Markenidentität"
+    },
+    "cards": {
+      "social": {
+        "category": "Social Media",
+        "headline": "Steigern Sie das Engagement Ihrer Marke in sozialen Netzwerken",
+        "description": "Unsere Digitalmarketing-Agentur dynamisiert das Engagement in sozialen Netzwerken und schafft authentische Verbindungen mit Ihrem Publikum. Unser Ansatz? Fesselnde Inhalte und präzises Targeting, um Interaktion und Kundenbindung zu fördern.",
+        "highlight": "Engagement & Bindung"
+      },
+      "strategy": {
+        "category": "Strategie",
+        "headline": "Bewährte Digitalstrategie für konkrete Ergebnisse",
+        "description": "Unsere Agentur setzt maßgeschneiderte Digitalstrategien um, die für die Maximierung Ihrer Kapitalrendite konzipiert sind. Dank unserer Expertise ist jede Kampagne für die Erreichung Ihrer Wachstumsziele optimiert.",
+        "highlight": "Wachstum & Ergebnisse"
+      },
+      "ads": {
+        "category": "Werbung",
+        "headline": "Gezielte bezahlte Werbung für maximalen ROI",
+        "description": "Unsere Expertise in bezahlter Werbung verwandelt jede Anzeige in eine Einnahmequelle. Wir optimieren Werbekampagnen, um präzises Targeting zu gewährleisten und genau Ihre Interessenten zu erreichen.",
+        "highlight": "Targeting & Gewinne"
+      },
+      "web": {
+        "category": "Webdesign",
+        "headline": "Erstellung und Optimierung leistungsfähiger Websites",
+        "description": "Unser Team erstellt leistungsfähige Websites, die an Ihre Bedürfnisse und die Benutzererfahrung angepasst sind. Wir optimieren Ihre Website, um ihre Sichtbarkeit, Geschwindigkeit und ihre gesamte Konversionsrate zu verbessern.",
+        "highlight": "Leistung & Verkäufe"
+      }
+    }
+  },
+  "timeline": {
+    "tag": "Unser Weg",
+    "title": "Erkunden Sie <highlight>die Entwicklung</highlight>",
+    "steps": {
+      "2020": {
+        "title": "Die Gründung",
+        "subtitle": "Gründung",
+        "desc": "Group Digital Concept wurde mit einem klaren Ziel geboren: eine Referenz-Digitalmarketing-Agentur in Marrakesch und in ganz Marokko zu werden."
+      },
+      "2021": {
+        "title": "Innovativer Start",
+        "subtitle": "Innovation",
+        "desc": "Wir haben unser Leistungsspektrum (SEO, PPC, Social Ads) erweitert, um den wachsenden Bedürfnissen lokaler Unternehmen gerecht zu werden."
+      },
+      "2022": {
+        "title": "Expansion Marokko",
+        "subtitle": "Expansion",
+        "desc": "Unsere Agentur etablierte sich als unverzichtbarer Akteur in Marokko und erweiterte ihre Präsenz über Marrakesch hinaus."
+      },
+      "2023": {
+        "title": "Erfolg & Wachstum",
+        "subtitle": "Wachstum",
+        "desc": "Mehr als 100 Unternehmen mit beeindruckenden Ergebnissen begleitet und unsere Position als Partner der Wahl gestärkt."
+      },
+      "2024": {
+        "title": "KI & Zukunft",
+        "subtitle": "Innovation",
+        "desc": "Integration von künstlicher Intelligenz in unsere Dienstleistungen für vervielfachte SEO- und Content-Leistungen."
+      },
+      "2025": {
+        "title": "Elite-Digitalisierung",
+        "subtitle": "Elite",
+        "desc": "GDC wird als Elite-Agentur anerkannt, die die Ambitionen ihrer Kunden in nachhaltigen Erfolg verwandelt."
+      },
+      "2026": {
+        "title": "Neue Horizonte",
+        "subtitle": "In Kürze",
+        "desc": "Das Abenteuer geht weiter. Wir bereiten neue Innovationen vor, um die Digitalmarketing-Landschaft zu revolutionieren."
+      }
+    }
+  },
+  "solutionsSection": {
+    "tag": "Unsere Lösungen",
+    "title": "360° <highlight>Expertise</highlight>",
+    "subtitle": "Digitale Lösungen, die für absolute Leistung konzipiert sind.",
+    "cta": "Starten",
+    "items": {
+      "marketing": {
+        "title": "Digitalmarketing",
+        "desc": "Wir entwickeln maßgeschneiderte Digitalmarketing-Strategien, um Ihre Online-Sichtbarkeit zu stärken, qualifizierten Traffic anzuziehen und Ihre Konversionen durch SEO, SEM und Social Ads zu maximieren."
+      },
+      "website": {
+        "title": "Webseitenerstellung",
+        "desc": "Konzeption moderner, responsiver und leistungsfähiger Websites. Ob für eine Präsentationsseite oder einen E-Commerce-Shop, jedes Projekt ist für eine optimale Benutzererfahrung konzipiert."
+      },
+      "software": {
+        "title": "Personalisierte Software",
+        "desc": "Entwicklung maßgeschneiderter Software, die perfekt auf die einzigartigen Bedürfnisse Ihres Unternehmens eingeht. Optimieren Sie Ihre Prozesse und beschleunigen Sie Ihre digitale Transformation."
+      },
+      "content": {
+        "title": "Visueller Content",
+        "desc": "Erstellung fesselnder visueller Inhalte, die Ihr Markenimage stärken und Ihr Online-Engagement in sozialen Netzwerken und digitalen Medien steigern."
+      },
+      "consulting": {
+        "title": "Strategische Beratung",
+        "desc": "Persönliche Begleitung in Digitalstrategie, um Ihre Online-Wirkung durch einen analytischen Ansatz und tiefgreifende Marktexpertise zu maximieren."
+      },
+      "ads": {
+        "title": "Online-Werbung",
+        "desc": "Strategische Werbekampagnen, um Ihre Sichtbarkeit zu steigern und Ihre Konversionen durch SEM, Retargeting und zielgerichtete Hochleistungsanzeigen zu maximieren."
+      }
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Häufig gestellte <highlight>Fragen.</highlight>",
+    "subtitle": "Alles, was Sie über unseren Prozess, unsere Dienstleistungen und wie wir Ihr Unternehmen vorantreiben können, wissen müssen.",
+    "anotherQuestion": "Eine andere Frage?",
+    "expertsHere": "Unsere Experten sind für Sie da.",
+    "contactUs": "Kontaktieren Sie uns",
+    "questions": {
+      "q1": {
+        "question": "Welche Dienstleistungen bieten Sie bei Group Digital Concept an?",
+        "answer": "Wir bieten ein komplettes Spektrum an Dienstleistungen in Kommunikation, Digitalmarketing, Webseitenerstellung, App-Entwicklung und mehr, um auf die spezifischen Bedürfnisse jedes Kunden einzugehen."
+      },
+      "q2": {
+        "question": "Wie läuft die Erstellung meiner Website ab?",
+        "answer": "Wir folgen einem strukturierten Prozess: Ermittlung Ihrer Bedürfnisse, UX/UI-Konzeption, technische Entwicklung, Content-Integration, rigorose Tests und Veröffentlichung, gefolgt von einer Schulung im Management."
+      },
+      "q3": {
+        "question": "Wie lange dauert die Erstellung einer Website?",
+        "answer": "Die Dauer variiert je nach Komplexität. Eine Präsentationsseite dauert in der Regel 2 bis 4 Wochen, während ein E-Commerce-Shop oder eine maßgeschneiderte Anwendung 6 bis 10 Wochen benötigen kann."
+      },
+      "q4": {
+        "question": "Was ist SEO und warum ist es wichtig?",
+        "answer": "SEO (Search Engine Optimization) verbessert Ihre Sichtbarkeit bei Google. Es ist entscheidend, um qualifizierten organischen Traffic anzuziehen, Ihre Bekanntheit zu steigern und Leads ohne bezahlte Werbung zu generieren."
+      },
+      "q5": {
+        "question": "Kann ich meine Website nach ihrer Erstellung selbst verwalten?",
+        "answer": "Absolut. Wir entwickeln unsere Websites (WordPress, Shopify oder maßgeschneidert) mit intuitiven Administrationsoberflächen und schulen Sie, damit Sie vollständig autonom sind."
+      },
+      "q6": {
+        "question": "Was ist UX-Design und warum ist es wichtig?",
+        "answer": "UX-Design (Benutzererfahrung) erleichtert die Navigation Ihrer Besucher. Ein gutes UX-Design erhöht die Verweildauer auf der Website, reduziert die Absprungrate und steigert Ihre Konversionen erheblich."
+      },
+      "q7": {
+        "question": "Bieten Sie Digitalmarketing-Dienstleistungen an?",
+        "answer": "Ja, wir sind Experten in Digitalstrategie: Online-Werbung (Google Ads, Facebook Ads), Social-Media-Management, Content-Marketing und E-Mail-Marketing, um Ihren ROI zu maximieren."
+      },
+      "q8": {
+        "question": "Kann ich eine responsive Website für Mobilgeräte haben?",
+        "answer": "Das ist bei uns Standard. Alle unsere Websites werden 'Mobile First' entwickelt und garantieren eine perfekte Darstellung und Navigation auf Smartphones, Tablets und Computern."
+      },
+      "q9": {
+        "question": "Bieten Sie Support nach der Erstellung der Website an?",
+        "answer": "Ja, wir bieten verschiedene Wartungs-Pakete an, um die Sicherheit, Updates und Weiterentwicklungen Ihrer Website langfristig sicherzustellen."
+      },
+      "q10": {
+        "question": "Wie erhalte ich ein Angebot für meine Bedürfnisse?",
+        "answer": "Kontaktieren Sie uns einfach über unser Online-Formular, per E-Mail oder Telefon. Wir analysieren Ihr Projekt und erstellen Ihnen innerhalb von 24 Stunden ein detailliertes, persönliches Angebot."
+      }
+    }
+  },
+  "contactPage": {
+    "tag": "Kontaktieren Sie uns",
+    "title": "Sprechen wir über Ihr Projekt.",
+    "subtitle": "Eine Vision? Eine Herausforderung? Unser Team verwandelt Ihre Ideen in außergewöhnliche digitale Erlebnisse.",
+    "steps": {
+      "identity": "Identität",
+      "needs": "Bedürfnisse",
+      "message": "Nachricht"
+    },
+    "form": {
+      "fullName": "Vollständiger Name",
+      "proEmail": "Geschäfts-E-Mail",
+      "company": "Unternehmen",
+      "phone": "Telefon",
+      "placeholders": {
+        "name": "Jean Dupont",
+        "email": "jean@unternehmen.com",
+        "company": "Studio Digital",
+        "phone": "+212 6..."
+      },
+      "selectNeeds": "Wählen Sie Ihre Bedürfnisse",
+      "specifyNeed": "Geben Sie Ihren Bedarf an...",
+      "tellUsProject": "Erzählen Sie uns von Ihrem Projekt",
+      "projectPlaceholder": "Kontext, Ziele, Fristen, geschätztes Budget...",
+      "back": "Zurück",
+      "sending": "Wird gesendet...",
+      "send": "Senden",
+      "next": "Weiter"
+    },
+    "success": {
+      "title": "Erhalten!",
+      "message": "Danke {name}. Wir analysieren Ihre Anfrage und melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "newRequest": "Neue Anfrage"
+    },
+    "services": {
+      "showcase": "Präsentationswebsite",
+      "ecommerce": "E-Commerce",
+      "webApp": "Web-App",
+      "seoAds": "SEO / Werbung",
+      "branding": "Branding",
+      "other": "Anderes"
+    },
+    "info": {
+      "directLine": "Direktleitung",
+      "proEmail": "Geschäfts-E-Mail",
+      "followUs": "Folgen Sie uns"
+    },
+    "locations": {
+      "tag": "Global Presence Hub",
+      "title": "Unsere Standorte.",
+      "casablanca": {
+        "city": "Casablanca",
+        "label": "Hauptsitz",
+        "address": "10, Rue Zayd Ibnou Rifaii Maarif, 20160 Casablanca"
+      },
+      "marrakech": {
+        "city": "Marrakesch",
+        "label": "Zweite Adresse",
+        "address": "Résidence Plateau Bureau Al Amira III, 4. Stock, Büro Nr. 35, Av. Yacoub El Mansour, Guéliz, Marrakesch",
+        "badge": "Lokaler Experte"
+      },
+      "neuilly": {
+        "city": "Neuilly-sur-Seine",
+        "label": "Hauptsitz in Frankreich",
+        "address": "20 bis, Rue Louis Philippe, 92200 Neuilly-sur-Seine, Frankreich"
+      },
+      "operational": "Operativ"
+    },
+    "countries": {
+      "morocco": "Marokko",
+      "france": "Frankreich",
+      "usa": "USA",
+      "uk": "Vereinigtes Königreich",
+      "belgium": "Belgien",
+      "switzerland": "Schweiz",
+      "spain": "Spanien",
+      "uae": "Vereinigte Arabische Emirate",
+      "saudiArabia": "Saudi-Arabien",
+      "canada": "Kanada"
+    },
+    "timeline": {
+      "asap": "So bald wie möglich",
+      "1month": "In 1 Monat",
+      "1to3months": "1-3 Monate",
+      "undefined": "Unbestimmt"
+    }
+  },
+  "testimonials": {
+    "tag": "Sie vertrauen uns",
+    "title": "Inspirierende Erfolge <highlight>mit unserer Webagentur</highlight>",
+    "subtitle": "Entdecken Sie, wie wir die Herausforderungen unserer Kunden in Chancen für exponentielles Wachstum verwandeln.",
+    "cta": "Schließen Sie sich der Elite an",
+    "modal": {
+      "title": "Ihre <highlight>GDC</highlight>-Erfahrung",
+      "subtitle": "Teilen Sie Ihren Erfolg mit der Community.",
+      "rating": "Gesamtbewertung",
+      "name": "Vollständiger Name",
+      "role": "Position / Unternehmen",
+      "message": "Ihre Nachricht... beschreiben Sie die Wirkung unserer Zusammenarbeit",
+      "submit": "MEINE BEWERTUNG VERÖFFENTLICHEN",
+      "successTitle": "Danke für Ihr Vertrauen!",
+      "successDesc": "Ihr Erfahrungsbericht wurde zu unserer Team-Validierung gesendet."
+    }
+  },
+  "finalCta": {
+    "tag": "Die Zukunft ist jetzt",
+    "title": {
+      "part1": "Ihre",
+      "part2": "Vision.",
+      "part3": "Unsere",
+      "part4": "Mission."
+    },
+    "button": "Starten",
+    "hover": "Los geht's"
+  },
+  "languages": {
+    "ar": "Arabisch",
+    "nl": "Niederländisch",
+    "en": "Englisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "it": "Italienisch",
+    "pt": "Portugiesisch",
+    "ru": "Russisch",
+    "es": "Spanisch"
+  }
+}

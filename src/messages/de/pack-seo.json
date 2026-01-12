@@ -1,0 +1,112 @@
+{
+  "pack-seo": {
+    "hero": {
+      "title": "Steigern Sie Ihre Sichtbarkeit mit unserem <highlight>SEO-Paket</highlight>"
+    },
+    "bento": {
+      "performance": "Leistungsanalyse",
+      "ecommerce": "E-Commerce-Websites",
+      "showcase": "Schaufenster-Websites",
+      "creation": "Website-Erstellung",
+      "mobile": "Mobile Anwendungen",
+      "photo": "Professionelle Fotografie",
+      "video": "Videografie",
+      "visual": "Visuelle Content-Erstellung",
+      "ads": "Online-Werbung",
+      "erp": "ERP-Lösungen",
+      "audits": "Digitale Audits",
+      "marketing": "Digitales Marketing",
+      "branding": "Markenbildung",
+      "software": "Software-Entwicklung",
+      "tracking": "Projektverfolgung",
+      "seo": "SEO"
+    },
+    "values": {
+      "v1": {
+        "title": "Maßgeschneidert",
+        "desc": "Wir bieten Lösungen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind, um optimale Ergebnisse zu garantieren."
+      },
+      "v2": {
+        "title": "Innovativ",
+        "desc": "Unsere Dienstleistungen integrieren die neuesten Technologien und Strategien, um an der Spitze der Innovation zu bleiben."
+      },
+      "v3": {
+        "title": "Effektiv",
+        "desc": "Wir gewährleisten konkrete und leistungsstarke Lösungen, die greifbare Ergebnisse für Ihr Unternehmen generieren."
+      },
+      "protocol": "GDC Excellence"
+    },
+    "marquee": "Group Digital Concept",
+    "pricing": {
+      "title": "Unsere Pakete für natürliche <highlight>SEO</highlight>-Suchmaschinenoptimierung",
+      "subtitle": "Verbessern Sie das Ranking Ihrer <highlight>Website</highlight> mit unseren Experten",
+      "starting_at": "ab nur",
+      "tax": "zzgl. MwSt.",
+      "period": "/pro Monat",
+      "cta": "Kontaktieren Sie uns!",
+      "packs": {
+        "starter": "STARTER-PAKET",
+        "bronze": "BRONZE-PAKET",
+        "silver": "SILBER-PAKET",
+        "gold": "GOLD-PAKET",
+        "platinium": "PLATIN-PAKET",
+        "titanium": "TITAN-PAKET"
+      },
+      "features": {
+        "audit": "SEO-Audit: technisch, Wettbewerb und Positionierung",
+        "submission": "Einreichung in den wichtigsten Suchmaschinen Google, Bing, Yahoo",
+        "targeting": "Keyword-Targeting und Meta-Tag-Optimierung für {count} Seite",
+        "targeting_plural": "Keyword-Targeting und Meta-Tag-Optimierung für {count} Seiten",
+        "sitemap": "Erstellung der Sitemap für Google",
+        "ranking": "Verbesserung der Positionierung für Ihre Keywords",
+        "delivery": "Service-Lieferung innerhalb von {hours} Stunden",
+        "commitment": "Keine Verpflichtung",
+        "frequency": "Service wird 1 Mal pro Monat durchgeführt",
+        "blocking": "Kontrolle blockierender Faktoren",
+        "backlinks": "Erstellung von {count} hochwertigen Backlinks",
+        "article": "Verfassen eines SEO-optimierten Artikels mit 300 Wörtern"
+      },
+      "custom": {
+        "badge": "ULTIMATIVES PAKET",
+        "title": "Maßgeschneidert",
+        "feature1": "Maßgeschneidert",
+        "feature2": "Mehr als 10 Seiten",
+        "request": "Anfordern",
+        "quote": "Ein Angebot"
+      }
+    },
+    "solutions": {
+      "title": "<highlight>SEO-Optimierung</highlight> mit hoher Leistung",
+      "header_primary": "Komplette Lösung für",
+      "seo_opt": {
+        "title": "SEO-Optimierung",
+        "features": [
+          "Keyword-Analyse und -Optimierung",
+          "On-Page-Optimierung",
+          "Fortgeschrittene SEO-Techniken",
+          "Angereicherter und gezielter Web-Content",
+          "Lokales SEO",
+          "Backlinking-Strategien",
+          "Detaillierte SEO-Analyseberichte"
+        ]
+      },
+      "advantages": {
+        "title": "VORTEILE",
+        "features": [
+          "Dedizierter Art Director für jedes Projekt",
+          "Exklusive Eigentumsrechte",
+          "Garantie für vollständige Zufriedenheit",
+          "Garantie für 100% einzigartiges Design",
+          "24/7 verfügbarer Support",
+          "Vorbildlicher Kundenservice"
+        ]
+      },
+      "analytics": "GDC ANALYTICS"
+    },
+    "final_cta": {
+      "title": "Bereit, die Ergebnisse zu <highlight>dominieren</highlight>?",
+      "subtitle": "SEO-Exzellenz Marrakesch • v.9",
+      "button": "STARTEN"
+    }
+  }
+}

@@ -686,5 +686,11 @@
         "desc": "Chaque création site web Marrakech bénéficie d'une protection avancée : certificat SSL premium, sauvegardes quotidiennes et pare-feu professionnel. Nos solutions garantissent la confidentialité de vos données et la stabilité de votre site en toutes circonstances. Sécurisé, fiable et conforme aux normes de cybersécurité, votre site reste opérationnel 24h/24 pour protéger votre activité."
       }
     }
+  },
+  "WebsiteCreationServices": {
+    "title": "Création de site web",
+    "showcase": "Site vitrine",
+    "ecommerce": "Site e-commerce",
+    "custom": "Site sur-mesure"
   }
 }

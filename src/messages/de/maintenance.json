@@ -1,0 +1,390 @@
+{
+  "MaintenancePage": {
+    "hero": {
+      "badge": "Sicherheit, Leistung und Updates",
+      "title": "Website-Wartung – {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600 relative'>Sichern und optimieren Sie</span> {br} Ihre Website mit GDC",
+      "description": "Bei <strong class='text-black dark:text-white underline decoration-brand-red'>Group Digital Concept</strong> sind wir spezialisiert auf Website-Wartung, eine wesentliche Lösung, um die Leistung, Sicherheit und Langlebigkeit Ihrer Online-Präsenz sicherzustellen.",
+      "cta": "Meine Website sichern"
+    },
+    "diagnostic": {
+      "header": {
+        "title": "DIAGNOSE-HUB",
+        "subtitle": "LIVE-DIGITALGESUNDHEIT"
+      },
+      "step1": {
+        "title": "Welche Art von Website {br} <span class='text-brand-red'>verwalten Sie?</span>",
+        "options": {
+          "vitrine": {
+            "label": "Präsentationswebsite",
+            "desc": "Präsentation & Portfolio"
+          },
+          "ecommerce": {
+            "label": "E-Commerce",
+            "desc": "Shop & Verkäufe"
+          },
+          "app": {
+            "label": "Webanwendung",
+            "desc": "SaaS & Plattformen"
+          }
+        }
+      },
+      "step2": {
+        "title": "Ihr prioritärer {br} <span class='text-brand-red'>Bedarf?</span>",
+        "options": {
+          "sec": "Sicherheit",
+          "perf": "Geschwindigkeit",
+          "update": "Updates",
+          "audit": "SEO-Audit"
+        }
+      },
+      "step3": {
+        "loading": {
+          "title": "GDC KI-Analyse...",
+          "subtitle": "Technisches Protokoll wird berechnet"
+        },
+        "success": {
+          "badge": "Diagnose abgeschlossen",
+          "title": "Technischer {br} <span class='text-brand-red'>Bericht.</span>",
+          "cta": "ANGEBOT ANFORDERN",
+          "restart": "Audit neu starten"
+        }
+      },
+      "footer": "SYSTEM CORE V.4"
+    },
+    "pillars": {
+      "seo": "Suchmaschinenoptimierung",
+      "perf": "Leistung",
+      "sec": "Sicherheit",
+      "update": "Updates",
+      "support": "Support 24/7"
+    },
+    "stats": {
+      "uptime": {
+        "label": "Verfügbarkeit",
+        "sub": "Garantiert"
+      },
+      "improvement": {
+        "label": "Verbesserung",
+        "sub": "Leistung"
+      },
+      "support": {
+        "label": "Support",
+        "sub": "Verfügbar"
+      }
+    },
+    "performance": {
+      "title": "Website-Wartungsdienste in Marrakesch für eine {br} <span class='text-brand-red'>optimale Leistung</span>",
+      "subtitle": "Sichern Sie die Stabilität und Sicherheit Ihrer Website durch professionelle Wartung.",
+      "updates": {
+        "label": "Updates",
+        "sub": "wichtige durchgeführt"
+      },
+      "cta": "Kontaktieren Sie uns!",
+      "items": [
+        {
+          "num": "01",
+          "title": "Technische Wartung",
+          "desc": "Schützen Sie Ihre Website und gewährleisten Sie ihre ordnungsgemäße Funktion. Wir überwachen und beheben Schwachstellen."
+        },
+        {
+          "num": "02",
+          "title": "Leistungsoptimierung",
+          "desc": "Verbessern Sie die Geschwindigkeit und Benutzererfahrung, um die Ladezeit zu beschleunigen."
+        },
+        {
+          "num": "03",
+          "title": "Technischer Support",
+          "desc": "Reaktive Betreuung für Sorgenfreiheit mit einem spezialisierten Team."
+        },
+        {
+          "num": "04",
+          "title": "Backups",
+          "desc": "Halten Sie Ihre Website aktuell und vor Datenverlust geschützt mit regelmäßigen Sicherungen."
+        }
+      ]
+    },
+    "atouts": {
+      "title": "Die Vorteile von <span class='text-brand-red'>Group Digital Concept</span> bei der {br} Website-Wartung in Marrakesch",
+      "items": [
+        {
+          "title": "Sofortige Reaktivität",
+          "desc": "Priorisierter Support mit einer garantierten Antwortzeit von unter 2h für technische Notfälle.",
+          "stat": "2h",
+          "label": "Antwort"
+        },
+        {
+          "title": "Fehlerlose Sicherheit",
+          "desc": "WAF-Schutz, tägliche Anti-Malware-Scans und hochsichere SSL-Zertifikate.",
+          "stat": "100%",
+          "label": "Sicher"
+        },
+        {
+          "title": "Optimierte Geschwindigkeit",
+          "desc": "Kontinuierliche Überwachung der Core Web Vitals, um eine außergewöhnliche PageSpeed-Bewertung zu erhalten.",
+          "stat": "0,8s",
+          "label": "Geschwindigkeit"
+        },
+        {
+          "title": "Cloud-Hosting",
+          "desc": "Skalierbare und georedundante Infrastruktur, die eine totale Dienstkontinuität gewährleistet.",
+          "stat": "99,9%",
+          "label": "Betriebszeit"
+        },
+        {
+          "title": "Audit und Reporting",
+          "desc": "Detaillierter monatlicher Bericht über den technischen Zustand, die Leistung und den Traffic Ihrer Website.",
+          "stat": "Monatlich",
+          "label": "Audit"
+        },
+        {
+          "title": "Proaktive Updates",
+          "desc": "Automatische Anwendung von Sicherheitspatches und neuen CMS-Versionen (WordPress).",
+          "stat": "24/7",
+          "label": "Update"
+        }
+      ]
+    },
+    "professional": {
+      "title": "Sie möchten eine {br} <span class='text-brand-red'>professionelle Website-Wartung</span>",
+      "intro": "Bei <strong class='text-black dark:text-white'>Group Digital Concept</strong> wissen wir, dass Website-Wartung essenziell ist, um Sicherheit und Leistung zu gewährleisten.",
+      "solutions": [
+        {
+          "title": "Analyse & Optimierung",
+          "intro": "Wir führen ein vollständiges Audit Ihrer Website für eine effektive Website-Wartung in Marrakesch durch:",
+          "points": [
+            "Analyse Ihrer Website: Erkennung von Schwachstellen, Fehlern und notwendigen Verbesserungen.",
+            "Leistungsoptimierung: Verbesserung der Ladegeschwindigkeit und Flüssigkeit.",
+            "Technische Updates: Plugins, Themes und Software immer aktuell, um Schwachstellen zu vermeiden.",
+            "Fehlerbehebungen: Identifikation und Lösung technischer Probleme in Rekordzeit."
+          ]
+        },
+        {
+          "title": "Absicherung & Schutz",
+          "intro": "Wir stellen Sicherheit in den Mittelpunkt unserer Website-Wartungsdienste in Marrakesch:",
+          "points": [
+            "Erweiterter Schutz vor Cyberangriffen: Sicherung gegen Viren, Malware und DDoS.",
+            "Inklusive SSL-Zertifikate: Verschlüsselung der Daten für sicheres Surfen.",
+            "Automatische Backups: Schnelle Datenwiederherstellung bei Problemen.",
+            "24/7-Überwachung: Sofortiges Eingreifen bei Angriffen oder Ausfällen."
+          ]
+        },
+        {
+          "title": "Verwaltung & Hosting",
+          "intro": "Mit unserem Website-Wartungsservice in Marrakesch profitieren Sie von einer zuverlässigen und skalierbaren Lösung:",
+          "points": [
+            "Sicherer Speicher: Nach Ihren Bedürfnissen optimierter Cloud-Speicher.",
+            "Hohe Verfügbarkeit: Leistungsfähige Server für unterbrechungsfreien Zugriff.",
+            "Reduzierte Ladezeiten: Verbesserung der Suchmaschinenoptimierung und Benutzererfahrung.",
+            "Leistungsstarkes Hosting: Lösungen angepasst an Präsentationswebsites, E-Commerce und Plattformen."
+          ]
+        },
+        {
+          "title": "Leistung & Skalierbarkeit",
+          "intro": "Ihre Website muss schnell und skalierbar sein, weshalb unsere Website-Wartung in Marrakesch beinhaltet:",
+          "points": [
+            "Geschwindigkeitsoptimierung: Verkürzung der Ladezeit für ein besseres Erlebnis.",
+            "Skalierbare Infrastruktur: Anpassung Ihrer Website an neue Technologien.",
+            "Erweiterter Schutz: Verstärkte Sicherheitssysteme gegen Cyberangriffe.",
+            "Multi-Plattform-Kompatibilität: Unterstützung der meistgenutzten CMS (WordPress, Shopify, etc.)."
+          ]
+        }
+      ]
+    },
+    "mockup": {
+      "title": "Website-Wartung in Marrakesch: {br} <span class='text-brand-red'>Sichern Sie Leistung und Sicherheit</span>",
+      "subtitle": "Warum unseren Service wählen?",
+      "list": [
+        {
+          "title": "Überwachung und Sicherheit",
+          "desc": "Schutz vor Cyberangriffen und Sicherheitslücken."
+        },
+        {
+          "title": "Regelmäßige Updates",
+          "desc": "Installation der neuesten Versionen von CMS, Plugins und Themes."
+        },
+        {
+          "title": "Leistungsoptimierung",
+          "desc": "Beschleunigung der Ladezeit und verbesserte Benutzererfahrung."
+        }
+      ]
+    }
+  },
+  "MaintenanceMethodology": {
+    "title": "Unsere {br} Arbeitsmethodik",
+    "steps": [
+      {
+        "title": "Erstberatung",
+        "description": "Wir beginnen jede Zusammenarbeit mit einer umfassenden Beratung. Wir besprechen Ihre Bedürfnisse, Ziele und Herausforderungen."
+      },
+      {
+        "title": "Audit und Analyse",
+        "description": "Unsere Experten analysieren Ihre aktuelle Website technisch, um Sicherheitslücken und Langsamkeiten zu identifizieren."
+      },
+      {
+        "title": "Erstellung des Aktionsplans",
+        "description": "Wir definieren einen Wartungs- und präventiven Update-Kalender."
+      },
+      {
+        "title": "Umsetzung und Nachverfolgung",
+        "description": "Implementierung von Korrekturen, 24/7-Überwachung und monatliche Leistungsberichte."
+      }
+    ]
+  },
+  "MaintenanceTestimonials": {
+    "title": "Die Erfahrungsberichte unserer Kunden: {br} <span class='text-gray-500 dark:text-gray-400 opacity-60'>Inspirierende Erfolge mit unserer Webagentur</span>",
+    "items": [
+      {
+        "name": "Oussama Jabrane",
+        "role": "CEO, GROUP PLANCYCALL",
+        "text": "Professionell und reaktiv, sie konnten unsere Bedürfnisse verstehen und eine effektive Digitalstrategie umsetzen. Unsere Online-Präsenz ist viel leistungsfähiger."
+      },
+      {
+        "name": "Nadia El Fakir",
+        "role": "MARKETINGLEITERIN",
+        "text": "Eine seriöse und kompetente Agentur. Ihr Team hat einen flüssigen und sicheren E-Commerce-Shop für unseren Online-Shop entworfen. Sehr zufrieden mit der Arbeit!"
+      },
+      {
+        "name": "Amine Tazi",
+        "role": "HANDELSLEITER",
+        "text": "Wir haben sie für die Verwaltung unserer Online-Werbekampagnen beauftragt. Ihr zielgerichteter Ansatz hat unsere Kapitalrendite deutlich verbessert."
+      },
+      {
+        "name": "Salma Bennani",
+        "role": "GRAFIKDESIGNERIN",
+        "text": "Dank Group Digital Concept sind unsere Social-Media-Kanäle dynamischer und professioneller. Sie verstehen es, fesselnde Inhalte zu erstellen."
+      },
+      {
+        "name": "Anas Rachidi",
+        "role": "IT-LEITER",
+        "text": "Ein erstklassiger technischer Service! Sie haben unsere IT-Systeme optimiert und zuverlässige Backup-Lösungen eingerichtet."
+      }
+    ]
+  },
+  "MaintenanceFAQ": {
+    "title": "Entdecken Sie die {br} häufig gestellten Fragen",
+    "badge": "GDC Support-Expertise",
+    "items": [
+      {
+        "question": "Was ist Website-Wartung und warum ist sie wichtig?",
+        "answer": "Die Website-Wartung gewährleistet die Sicherheit, Leistung und kontinuierliche Aktualisierung einer Website. Sie vermeidet Fehler, Sicherheitslücken und Langsamkeiten."
+      },
+      {
+        "question": "Warum einen Website-Wartungsservice in Marrakesch wählen?",
+        "answer": "Unsere lokale Agentur versteht die spezifischen Herausforderungen des marokkanischen Marktes und bietet reaktiven Vor-Ort-Support."
+      },
+      {
+        "question": "Welche Arten von Website-Wartung gibt es?",
+        "answer": "Wir bieten präventive, korrektive und evolutionäre Wartung an."
+      },
+      {
+        "question": "Wie oft sollte Website-Wartung durchgeführt werden?",
+        "answer": "Eine Grundwartung sollte monatlich erfolgen, aber eine Sicherheitsüberwachung muss 24/7 aktiv sein."
+      },
+      {
+        "question": "Welche Risiken birgt eine Website ohne Wartung?",
+        "answer": "Hacking, Datenverlust, Verlangsamung der Website und drastischer Rückgang der Google-Ergebnisse."
+      },
+      {
+        "question": "Beinhaltet Website-Wartung die Datensicherung?",
+        "answer": "Ja, wir führen täglich externe Backups durch."
+      },
+      {
+        "question": "Wie viel kostet ein Website-Wartungsservice in Marrakesch?",
+        "answer": "Unsere Pakete sind an die Größe und Komplexität Ihrer Website angepasst. Kontaktieren Sie uns für ein Angebot."
+      },
+      {
+        "question": "Kann ich die Wartung meiner Website selbst durchführen?",
+        "answer": "Technisch möglich, aber riskant ohne fundiertes Fachwissen."
+      },
+      {
+        "question": "Wie erkenne ich, ob meine Website Wartung benötigt?",
+        "answer": "Wenn Ihre Website langsam ist, defekte Links enthält oder Sie Sicherheitswarnungen erhalten."
+      },
+      {
+        "question": "Welche Arten von Websites benötigen Website-Wartung?",
+        "answer": "Absolut alle: Präsentationswebsites, E-Commerce, Blogs und Anwendungsplattformen."
+      }
+    ]
+  },
+  "MaintenanceFormSection": {
+    "title": "Webagentur & {br} Innovative digitale {br} Kommunikation",
+    "intro": {
+      "p1": "Wir sind nicht nur eine Digitalmarketing-Agentur. Wir begleiten Unternehmen mit maßgeschneiderten Lösungen, um ihre Online-Präsenz zu steigern und ihre Wirkung zu maximieren.",
+      "p2": "Mit Sitz in Marokko kombinieren wir lokale Expertise und internationale Trends, um für jedes Projekt leistungsstarke Strategien zu bieten."
+    },
+    "experts_count": "+200 gelieferte Projekte",
+    "steps": [
+      {
+        "id": 1,
+        "label": "Informationen"
+      },
+      {
+        "id": 2,
+        "label": "Service"
+      },
+      {
+        "id": 3,
+        "label": "Details"
+      }
+    ],
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "company": "Unternehmen",
+      "employees": "Anzahl der Mitarbeiter",
+      "phone": "Telefon",
+      "detailsLabel": "Projektbeschreibung",
+      "detailsPlaceholder": "Erzählen Sie uns von Ihren Zielen, Fristen..."
+    },
+    "services": [
+      {
+        "id": "web",
+        "label": "Website-Wartung"
+      },
+      {
+        "id": "seo",
+        "label": "SEO-Audit"
+      },
+      {
+        "id": "security",
+        "label": "Sicherheit"
+      },
+      {
+        "id": "hosting",
+        "label": "Hosting"
+      },
+      {
+        "id": "app",
+        "label": "App-Optimierung"
+      },
+      {
+        "id": "dev",
+        "label": "Maßgeschneidert"
+      }
+    ],
+    "success": {
+      "title": "Anfrage gesendet!",
+      "desc": "Wir melden uns innerhalb von 24 Stunden zurück.",
+      "cta": "Neues Projekt"
+    },
+    "actions": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "confirm": "Bestätigen"
+    }
+  },
+  "MaintenanceFinalCTA": {
+    "badge": "GDC Prestige Elite",
+    "title": "Ihre Website verdient {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red via-red-500 to-red-700'>die digitale Elite.</span>",
+    "desc": "Lassen Sie nicht die Technik Ihre Ambitionen bremsen. Vertrauen Sie Ihr Ökosystem unseren Experten an für Leistung und Sicherheit auf Weltklasse-Niveau.",
+    "cta": "PROJEKT BESPRECHEN",
+    "features": {
+      "sec_title": "Sicherheit",
+      "sec_desc": "100% fehlerfrei",
+      "perf_title": "Leistung",
+      "perf_desc": "PageSpeed-Optimierung",
+      "sup_title": "Support",
+      "sup_desc": "Persönlicher Berater"
+    }
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "WebsiteCreationPage": {
+    "hero": {
+      "premium": "Premium",
+      "expert": "Experte",
+      "digital": "Digital",
+      "title": {
+        "line1": "Webseitenerstellung Marrakesch:",
+        "highlight": "Ihr digitales Schaufenster",
+        "line2": "professionell sofort"
+      },
+      "description": "Suchen Sie eine <highlight>professionelle Webseitenerstellung Marrakesch</highlight>? Bei <highlight>Group Digital Concept</highlight> entwerfen wir maßgeschneiderte Websites, die Design, Geschwindigkeit und SEO vereinen, um Ihre Präsenz in einen Wachstumshebel zu verwandeln.",
+      "cta": "Kontaktieren Sie uns!"
+    },
+    "cards": {
+      "knowhow": {
+        "title": "Einzigartiges Know-how",
+        "desc": "Präsentationswebsites, E-Commerce oder Plattformen: Jedes Projekt entspricht den technischen Standards von Google."
+      },
+      "support": {
+        "title": "Umfassende Begleitung",
+        "desc": "Von der Konzeption bis zur Veröffentlichung garantieren wir eine schnelle, sichere und responsive Website, schlüsselfertig geliefert."
+      }
+    },
+    "icons": {
+      "design": "Modernes Design",
+      "seo": "SEO-optimiert",
+      "performance": "Garantierte Leistung",
+      "support": "Reaktiver Support",
+      "security": "Verstärkte Sicherheit"
+    },
+    "contact": {
+      "title": "Kontaktieren Sie unsere Experten für",
+      "highlight": "Webseitenerstellung",
+      "form": {
+        "quickContact": "Schneller Kontakt",
+        "name": "Vollständiger Name",
+        "phone": "Telefon",
+        "submit": "Senden"
+      },
+      "hours": {
+        "title": "Arbeitszeiten",
+        "days": "Montag bis Freitag",
+        "time1": "9:30 - 13:30 Uhr",
+        "time2": "14:30 - 18:30 Uhr"
+      }
+    },
+    "solutions": {
+      "badge": "Digitale Exzellenz",
+      "backgroundText": "LÖSUNGEN",
+      "title": {
+        "line1": "Wir schaffen",
+        "line2": "digitale",
+        "highlight": "Lösungen."
+      },
+      "description": "Unsere Expertenagentur für <highlight>Webseitenerstellung Marrakesch</highlight> entwirft maßgeschneiderte Plattformen. Ob Präsentationswebsite, E-Commerce oder institutionelle Seite, wir garantieren hochwertige Ergebnisse.",
+      "discover": "Entdecken",
+      "items": {
+        "vitrine": {
+          "title": "Professionelle Präsentationswebsites",
+          "desc": "Ein elegantes und leistungsstarkes digitales Schaufenster. Maßgeschneidertes Design und lokale SEO, um Ihr Publikum auf den ersten Blick zu erreichen."
+        },
+        "ecommerce": {
+          "title": "E-Commerce-Shops",
+          "desc": "Intuitive und sichere Online-Shops. Vereinfachte Zahlungen, Bestandsverwaltung und für die Konversion optimierte Verkaufstunnel."
+        },
+        "institutional": {
+          "title": "Premium-Websites für Institutionen",
+          "desc": "Robuste Plattformen für große Strukturen. Mitgliederbereiche, verstärkte Sicherheit und fortschrittliches Dokumentenmanagement."
+        },
+        "apps": {
+          "title": "Branchenanwendungen",
+          "desc": "Maßgeschneiderte Tools für Ihre Produktivität: CRM, Dashboards und intelligente Automatisierungen."
+        }
+      }
+    }
+  },
+  "ExpertiseSection": {
+    "badge": "Know-how",
+    "title": "Expertise in",
+    "highlight": "Webseitenerstellung Marrakesch",
+    "description": "Unsere auf <highlight>Webseitenerstellung Marrakesch</highlight> spezialisierte Agentur verwandelt Ihre digitale Vision mithilfe maßgeschneiderter Lösungen in die Realität, die außergewöhnliches Design, technische Leistung und fortschrittliche SEO-Strategie vereinen.",
+    "features": {
+      "design": {
+        "title": "Einzigartiges und responsives Design",
+        "desc": "Wir entwerfen moderne und intuitive Designs, die Ihre Markenidentität stärken. Jedes Projekt zur <highlight>Webseitenerstellung Marrakesch</highlight> ist für alle Geräte mit einer außergewöhnlichen Benutzererfahrung optimiert."
+      },
+      "performance": {
+        "title": "Optimale Leistung und Geschwindigkeit",
+        "desc": "Unsere technischen Lösungen garantieren eine der schnellsten Ladezeiten der Branche. Wir optimieren jeden Aspekt Ihrer Webseitenerstellung Marrakesch für maximale Leistung und ein reibungsloses Benutzererlebnis."
+      },
+      "seo": {
+        "title": "Maßgeschneidertes SEO für Marrakesch",
+        "desc": "Unsere Strategie für natürliches Ranking ist speziell auf den Markt in Marrakesch zugeschnitten. Wir identifizieren strategische Keywords und optimieren Ihre Webseitenerstellung Marrakesch, um Ihre lokale Sichtbarkeit zu maximieren."
+      }
+    },
+    "impact": {
+      "title": "Unsere Wirkung in Zahlen",
+      "stat1": "Ausgelieferte Webseitenprojekte für Marrakesch",
+      "stat2": "Kundenzufriedenheit",
+      "stat3": "Verbesserung der Platzierung",
+      "stat4": "Durchschnittliche Ladezeit",
+      "realtime": "Daten in Echtzeit aktualisiert"
+    }
+  },
+  "AtoutsSection": {
+    "badge": "Stärken",
+    "titlePrefix": "Die Vorteile von",
+    "bubbles": {
+      "expertise": "Unübertroffene Expertise",
+      "delivery": "Schnelle Lieferung",
+      "custom": "100% Maßgeschneidert",
+      "support": "Support 24/7",
+      "seo": "Leistungsstarkes SEO",
+      "security": "Maximale Sicherheit",
+      "design": "Modernes Design",
+      "mobile": "Mobile First",
+      "roi": "Garantierte ROI",
+      "catch": "Fangen Sie die Blasen"
+    }
+  },
+  "ProcessRoadmap": {
+    "mobile": {
+      "title": "Prozess der {br}{span}",
+      "titleHighlight": "Erstellung",
+      "description": "3 Schlüsselschritte für eine leistungsstarke Website in Marrakesch."
+    },
+    "desktop": {
+      "title": "Prozess der {span}",
+      "titleHighlight": "Webseitenerstellung Marrakesch",
+      "description": "Unsere bewährte Methodik garantiert konkrete Ergebnisse für Ihr Projekt {br} zur <highlight>Webseitenerstellung Marrakesch</highlight>"
+    },
+    "steps": {
+      "step1": {
+        "title": "Analyse und Strategie",
+        "desc": "Tiefgehende Untersuchung Ihres Sektors in Marrakesch, Wettbewerbsanalyse und Definition einer mit Ihren Zielen abgestimmten Digitalstrategie."
+      },
+      "step2": {
+        "title": "Design & UX",
+        "desc": "Erstellung moderner und intuitiver Schnittstellen, die Ihre visuelle Identität widerspiegeln. Für alle Geräte optimiertes Design."
+      },
+      "step3": {
+        "title": "Entwicklung & Optimierung",
+        "desc": "Leistungsstarke technische Entwicklung, semantische HTML-Struktur und fortschrittliche SEO-Integration für maximale Leistung."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihr Projekt zur {br}{span} zu starten?",
+      "titleHighlight": "Webseitenerstellung Marrakesch",
+      "description": "Unsere Expertenagentur für Webseitenerstellung Marrakesch begleitet Sie von der Konzeption bis zur Veröffentlichung, mit integrierter SEO-Strategie, um Ihre Sichtbarkeit zu maximieren.",
+      "button": "Mein Projekt starten"
+    }
+  },
+  "PhilosophySection": {
+    "badge": "Vision & Expertise",
+    "mainTitle": {
+      "text": "Träumen Sie von einer {span}, die {br} Ihre Erwartungen übertrifft?",
+      "highlight": "Webseite"
+    },
+    "mainDesc": "Eine <highlight>maßgeschneiderte Webseitenerstellung in Marrakesch</highlight>. Wir erstellen nicht nur Websites, wir bauen Ihren Wettbewerbsvorteil.",
+    "vision": {
+      "title": "Unsere Vision",
+      "desc": "Ihre Website ist Ihre digitale Identität. Wir vereinen anspruchsvolles Design und Spitzentechnologie, um Ihren Markt zu erobern."
+    },
+    "pillars": {
+      "approach": {
+        "title": "Unser Ansatz",
+        "items": [
+          "Aktives Zuhören der Bedürfnisse",
+          "100% maßgeschneiderte Lösungen",
+          "Transparenter Prozess"
+        ]
+      },
+      "commitments": {
+        "title": "Unsere Verpflichtungen",
+        "items": [
+          "Strikte Einhaltung der Fristen",
+          "Regelmäßige Kommunikation",
+          "Totale Anpassungsfähigkeit"
+        ]
+      },
+      "advantage": {
+        "title": "Ihr Vorteil",
+        "items": [
+          "Hebel für Wachstum",
+          "Nachhaltiger Wettbewerbsvorteil",
+          "Exzellentes digitales Schaufenster"
+        ]
+      }
+    }
+  },
+  "RegionalExpertiseSection": {
+    "badge": "Nationale Präsenz",
+    "title": "Web-Expertise {br} {span}",
+    "titleHighlight": "Überall in Marokko",
+    "description": "Von Marrakesch bis Tanger setzen wir digitale Strategien ein, die auf die Besonderheiten jedes lokalen Marktes zugeschnitten sind.",
+    "card": {
+      "title": "Webseitenerstellung"
+    },
+    "regions": {
+      "morocco": {
+        "city": "Marokko & Marrakesch",
+        "subtitle": "Hauptsitz & Globale Expertise",
+        "desc": "Unsere auf Webseitenerstellung in Marokko und Marrakesch spezialisierte Agentur entwirft maßgeschneiderte digitale Lösungen. Wir entwickeln hochwertige Websites, optimiert für natürliches Ranking in Marokko."
+      },
+      "marrakech": {
+        "city": "Marrakesch",
+        "subtitle": "Hotellerie & Luxus",
+        "desc": "In Marrakesch konzentriert sich unsere Expertise auf einzigartige Designs für Hotels, Riads und lokale Unternehmen. Marktführer in der Webseitenerstellung Marrakesch mit ultra-leistungsstarken Websites."
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "subtitle": "Business & E-Commerce",
+        "desc": "Unsere Webagentur in Casablanca bietet leistungsstarke E-Commerce-Lösungen (Shopify, WooCommerce) mit optimierten Konversionstunneln. Spitzentechnologien (React, GSAP)."
+      },
+      "rabat": {
+        "city": "Rabat",
+        "subtitle": "Institutionell & Premium",
+        "desc": "In Rabat erstellen wir Premium-Websites für Institutionen, im Einklang mit unserem Know-how in der Webseitenerstellung Marokko. Strenge, Sicherheit und Eleganz für Organisationen."
+      },
+      "tanger": {
+        "city": "Tanger",
+        "subtitle": "International & Mehrsprachig",
+        "desc": "Unsere Agentur in Tanger entwickelt mehrsprachige Plattformen, die Expertise in der Webseitenerstellung Marokko mit internationaler Ausrichtung für Freihandelszonen und Export verbindet."
+      },
+      "agadir": {
+        "city": "Agadir",
+        "subtitle": "Tourismus & Freizeit",
+        "desc": "In Agadir entwerfen wir touristische Websites mit der gleichen Qualität wie unsere Webseitenerstellung Marrakesch, angepasst an den marokkanischen Markt und internationale Touristenströme."
+      }
+    }
+  },
+  "WebsiteCreationFAQ": {
+    "badge": "FAQ & Hilfe",
+    "title": "Häufig gestellte {br} {span}",
+    "titleHighlight": "Fragen.",
+    "description": "Finden Sie klare Antworten zu Webseitenerstellung, Suchmaschinenoptimierung und unserer digitalen Begleitung in Marrakesch.",
+    "support": {
+      "title": "Andere Frage?",
+      "subtitle": "Unsere Experten antworten Ihnen.",
+      "button": "Kontaktieren Sie uns"
+    },
+    "faqs": [
+      {
+        "q": "Warum eine Agentur für Webseitenerstellung Marrakesch beauftragen?",
+        "a": "Eine auf <strong class='text-brand-red'>Webseitenerstellung Marrakesch</strong> spezialisierte Agentur versteht die spezifischen Bedürfnisse lokaler Unternehmen. Sie bietet Lösungen, die auf den Markt in Marrakesch zugeschnitten sind, sei es für Tourismus, Immobilien oder Handel."
+      },
+      {
+        "q": "Wie viel kostet eine Webseitenerstellung in Marrakesch?",
+        "a": "Der Preis variiert je nach Komplexität des Projekts (Präsentationsseite, E-Commerce, maßgeschneidert). Wir bieten personalisierte Angebote an, die auf Ihr Budget und Ihre Wachstumsziele zugeschnitten sind."
+      },
+      {
+        "q": "Welche Art von Website soll ein Unternehmen in Marrakesch wählen?",
+        "a": "Das hängt von Ihrer Tätigkeit ab. Ein Riad benötigt eine Präsentationswebsite mit Buchungsfunktion, während ein Kunsthandwerker von einem Online-Shop profitieren kann. Wir beraten Sie zur besten Strategie."
+      },
+      {
+        "q": "Wie lange dauert eine Webseitenerstellung in Marrakesch?",
+        "a": "Durchschnittlich dauert eine Präsentationswebsite 2 bis 4 Wochen, während eine komplexe E-Commerce-Website 6 bis 8 Wochen benötigen kann. Wir verpflichten uns von Anfang an zu klaren Fristen."
+      },
+      {
+        "q": "Wie optimiert man das Ranking einer Website in Marrakesch?",
+        "a": "Wir integrieren SEO von Anfang an: technische Struktur, lokale Keywords ('Marrakesch', 'Marokko'), Ladegeschwindigkeit und für Google optimierte Inhalte."
+      },
+      {
+        "q": "Kann man seine Website nach der Erstellung in Marrakesch ändern?",
+        "a": "Absolut. Wir bieten Ihnen eine Schulung zur Verwaltung Ihrer Inhalte oder können Wartung und Weiterentwicklung über unsere Support-Pakete sicherstellen."
+      },
+      {
+        "q": "Welchen Hosting-Anbieter wählt man für eine Webseitenerstellung in Marrakesch?",
+        "a": "Wir empfehlen leistungsstarke und sichere Hosting-Anbieter mit Servern in der Nähe Ihrer Zielgruppe, um maximale Geschwindigkeit zu garantieren."
+      },
+      {
+        "q": "Kann eine Website ein Unternehmen in Marrakesch fördern?",
+        "a": "Ja, durch Erhöhung Ihrer lokalen und internationalen Sichtbarkeit. Es ist ein unverzichtbares Tool, um Touristen- und Lokalkundschaft in Marrakesch zu erreichen."
+      },
+      {
+        "q": "Braucht man für eine Webseitenerstellung in Marrakesch eine mehrsprachige Website?",
+        "a": "Um eine touristische Kundschaft (Französisch, Englisch, Spanisch) anzusprechen, wird eine mehrsprachige Website dringend empfohlen, und wir beherrschen diese Integrationen perfekt."
+      },
+      {
+        "q": "Wie wählt man eine gute Agentur für eine Webseitenerstellung in Marrakesch?",
+        "a": "Prüfen Sie deren Portfolio, Kundenbewertungen und technische Expertise. Wählen Sie eine Agentur, die Ihren Markt versteht und langfristige Begleitung anbietet."
+      }
+    ]
+  },
+  "WebsiteCreationStats": {
+    "badge": "Leistung",
+    "title": "Die sprechenden Zahlen: {br} {span}",
+    "titleHighlight": "Unsere Webdesign-Agentur Marrakesch",
+    "stats": {
+      "sites": {
+        "label": "Ausgelieferte Websites",
+        "sub": "Volle Zufriedenheit"
+      },
+      "delivery": {
+        "label": "Durchschnittliche Lieferzeit in Tagen",
+        "sub": "Einhaltung der Fristen"
+      },
+      "speed": {
+        "label": "Ladezeit",
+        "sub": "Blitzschnell"
+      },
+      "seo": {
+        "label": "SEO-Traffic in 6 Monaten",
+        "sub": "Nachhaltiges Wachstum"
+      },
+      "security": {
+        "label": "Sicherheit",
+        "sub": "Maximaler Schutz"
+      }
+    }
+  },
+  "WebsiteCreationTestimonials": {
+    "badge": "Kundenzufriedenheit",
+    "title": "Zertifizierte {br} {span}",
+    "titleHighlight": "Exzellenz.",
+    "description": "Schließen Sie sich den Branchenführern an, die ihre Vision mit einer <highlight>Elite-Digitalstrategie</highlight> vorantreiben wollten.",
+    "cta": "Mein Projekt starten",
+    "testimonials": {
+      "amine": {
+        "name": "Amine Tahiri",
+        "role": "Innenarchitekt",
+        "company": "Atlas Design Studio",
+        "text": "Das Portfolio, das sie für mein Büro entworfen haben, ist ein Kunstwerk. Minimalistisch, schnell und perfekt auf die Keywords für Architektur in Marrakesch optimiert.",
+        "tag": "Portfolio & SEO"
+      },
+      "kenza": {
+        "name": "Kenza Bennani",
+        "role": "Geschäftsführerin",
+        "company": "Riad Al-Jasmine",
+        "text": "Eine Website für Direktbuchungen, die es uns ermöglicht hat, unsere OTA-Provisionen zu reduzieren. Das Team hat die Seele unseres Riads eingefangen. Einige kleinere Anpassungen am Anfang, aber das Ergebnis ist da.",
+        "tag": "Hotellerie"
+      },
+      "omar": {
+        "name": "Omar Kabbaj",
+        "role": "Exportleiter",
+        "company": "Agro-Atlas",
+        "text": "Unsere B2B-Präsentationsseite für den Export ist makellos. Mehrsprachig, flüssig und sicher. Unsere europäischen Partner sind von der Qualität unserer digitalen Präsenz beeindruckt.",
+        "tag": "B2B & Export"
+      },
+      "noura": {
+        "name": "Noura Alami",
+        "role": "Gründerin",
+        "company": "BioMaroc Cosmetics",
+        "text": "Der von ihnen entwickelte Shopify-Shop ist eine Verkaufsmaschine. Puristisches Design, optimierter Verkaufstunnel. Unsere Verkäufe sind in der ersten Woche explodiert.",
+        "tag": "E-Commerce"
+      },
+      "tarik": {
+        "name": "Tarik Jelloun",
+        "role": "Partneranwalt",
+        "company": "Kanzlei Jelloun",
+        "text": "Seriosität und Strenge. Die institutionelle Website unserer Kanzlei strahlt Vertrauen und Professionalität aus. Der technische Support ist reaktiv, was für uns entscheidend ist.",
+        "tag": "Corporate"
+      },
+      "salma": {
+        "name": "Salma Berrada",
+        "role": "Marketingleiterin",
+        "company": "Groupe Immo Horizon",
+        "text": "Eine komplette Überarbeitung unseres Immobilienportals. Die interaktive Karte und die virtuellen Besichtigungen funktionieren auf Mobilgeräten hervorragend. Ein echter Mehrwert für unsere Kunden.",
+        "tag": "Immobilien"
+      },
+      "youssef": {
+        "name": "Youssef Chraibi",
+        "role": "CEO",
+        "company": "LogisTrans Marokko",
+        "text": "Operative Effizienz. Die Präsentationsseite stellt unsere Logistikdienstleistungen klar dar. Das dynamische Angebotsformular bringt uns täglich qualifizierte Leads.",
+        "tag": "Logistik"
+      },
+      "hajar": {
+        "name": "Hajar Sefrioui",
+        "role": "Modedesignerin",
+        "company": "Caftan Haute Couture",
+        "text": "Erhaben. Sie haben die Eleganz meiner Kreationen in Code übersetzt. Die Website ist schnell, visuell und das Benutzererlebnis ist eines Luxushauses würdig.",
+        "tag": "Luxus & Mode"
+      },
+      "rachid": {
+        "name": "Rachid El Fassi",
+        "role": "Restaurantbesitzer",
+        "company": "La Table de la Médina",
+        "text": "Seit der Veröffentlichung der Website mit dem Buchungsmodul sind wir jeden Abend ausgebucht. Die lokale Suchmaschinenoptimierung für Marrakesch wurde perfekt umgesetzt.",
+        "tag": "Gastronomie"
+      }
+    }
+  },
+  "WebsiteCreationForm": {
+    "badge": "Projekt starten",
+    "title": "Ihre Vision, {br} {span}",
+    "titleHighlight": "Unsere Expertise.",
+    "description": "Verwandeln Sie Ihre digitale Präsenz mit einem Team, das sich der Exzellenz verschrieben hat. Füllen Sie dieses Formular aus, um eine maßgeschneiderte Strategie zu erhalten.",
+    "trust": {
+      "secure": {
+        "top": "Daten",
+        "bottom": "Gesichert"
+      },
+      "response": {
+        "top": "Antwort",
+        "bottom": "Innerhalb von 24h"
+      }
+    },
+    "steps": {
+      "step1": "Identität",
+      "step2": "Dienstleistungen",
+      "step3": "Details"
+    },
+    "form": {
+      "name": {
+        "label": "Vollständiger Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Geschäfts-E-Mail",
+        "placeholder": "contact@unternehmen.com"
+      },
+      "company": {
+        "label": "Unternehmen",
+        "placeholder": "Name des Unternehmens"
+      },
+      "size": {
+        "label": "Unternehmensgröße",
+        "option": "{count} Mitarbeiter"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "6 00 00 00 00"
+      },
+      "services": {
+        "title": "Was benötigen Sie?",
+        "other": "Anderes",
+        "otherPlaceholder": "Geben Sie Ihren Bedarf an...",
+        "items": {
+          "creation": "Webseitenerstellung",
+          "refonte": "Website-Relaunch",
+          "ecommerce": "E-Commerce",
+          "seo": "SEO & Suchmaschinenoptimierung",
+          "ads": "Werbung (Ads)",
+          "branding": "Branding"
+        }
+      },
+      "budget": {
+        "label": "Geschätztes Budget",
+        "options": [
+          "< 20k MAD",
+          "20k - 50k MAD",
+          "50k - 100k MAD",
+          "+ 100k MAD"
+        ]
+      },
+      "details": {
+        "label": "Projektdetails",
+        "placeholder": "Beschreiben Sie Ihre Ziele, Ihre Fristen und Ihre Inspirationen..."
+      },
+      "actions": {
+        "back": "Zurück",
+        "next": "Weiter",
+        "confirm": "Projekt bestätigen"
+      }
+    },
+    "success": {
+      "title": "Projekt bestätigt!",
+      "message": "Danke {name}, Ihre Anfrage wurde an unsere Experten weitergeleitet.",
+      "subMessage": "Eine Bestätigungs-E-Mail wurde an Sie gesendet.",
+      "button": "Neue Anfrage"
+    }
+  },
+  "TechStackDivider": {
+    "title": "Unsere Vertrauenspartner"
+  },
+  "PerformanceSection": {
+    "badge": "Technische Exzellenz",
+    "title": "Technische Leistung & SEO: {br} {span}",
+    "titleHighlight": "Die digitale Exzellenz",
+    "optimisations": {
+      "title": "Schlüsseloptimierungen",
+      "items": [
+        {
+          "title": "Ultra-schnelle Geschwindigkeit",
+          "desc": "Ladezeit unter 1s (auf lokalen Netzwerken getestet)"
+        },
+        {
+          "title": "Intuitive Navigation",
+          "desc": "Optimierter Nutzerpfad für ein flüssiges Erlebnis"
+        },
+        {
+          "title": "Volle Kompatibilität",
+          "desc": "Perfekte Darstellung auf Mobilgerät, Tablet & Desktop"
+        },
+        {
+          "title": "Verstärkte Sicherheit",
+          "desc": "Datenschutz und Angriffsprävention"
+        },
+        {
+          "title": "Proaktive Wartung",
+          "desc": "Regelmäßige Updates für optimale Leistung"
+        }
+      ]
+    },
+    "seo": {
+      "title": "Fortschrittliche SEO-Strategie",
+      "items": [
+        "Integrierte natürliche Suchmaschinenoptimierung ab der Entwicklung",
+        "Platzierung auf Ihren lokalen strategischen Keywords",
+        "Anziehung von qualifiziertem und konvertierbarem Traffic",
+        "Kontinuierliche technische Leistungsoptimierung",
+        "Detaillierte analytische Erfolgsverfolgung"
+      ]
+    },
+    "quote": "Ihre Website existiert nicht nur – sie {bold} dank unserer Expertise in {span}."
+  },
+  "EngagementSection": {
+    "badge": "Premium-Partnerschaft",
+    "title": "Ihr Erfolg, {br} {span}",
+    "titleHighlight": "Unser Engagement.",
+    "description": "Unsere Begleitung geht über die reine Lieferung Ihres Projekts zur <highlight>Webseitenerstellung Marrakesch</highlight> hinaus. Wir werden zum Architekten Ihres digitalen Wachstums.",
+    "support": {
+      "title": "Kontinuierlicher Support",
+      "badge": "Totale Verfügbarkeit",
+      "items": [
+        "Priorisierter technischer Support (Antwort innerhalb von 2h)",
+        "Regelmäßige Updates inklusive für 12 Monate",
+        "An Ihre Tätigkeit angepasste strategische Beratung",
+        "Umfassende Schulung zur Nutzung Ihrer Website",
+        "Detaillierte monatliche Leistungsberichte",
+        "24/7-Sicherheitsmonitoring"
+      ],
+      "cta": "Angebot anfordern"
+    },
+    "why": {
+      "title": "Warum wir?",
+      "items": [
+        "Engagierter Partner für Ihren Erfolg",
+        "Mit Ihrem Wachstum skalierbare Lösungen",
+        "Expertise für lokalen & internationalen Markt",
+        "Messbare und nachhaltige Ergebnisse"
+      ]
+    },
+    "difference": {
+      "title": "Unser Unterschied",
+      "desc": "Indem Sie sich für unsere Expertise entscheiden, wählen Sie einen digitalen Partner, der Ihre lokalen Herausforderungen und Ihre globalen Ambitionen versteht."
+    },
+    "catchy": {
+      "title": "Eine {br} {span}",
+      "titleHighlight": "Die begeistert",
+      "desc": "Wir entwickeln Schnittstellen, die Besucher in treue Kunden verwandeln."
+    },
+    "features": [
+      {
+        "title": "Einzigartiges Design",
+        "desc": "Treue Verkörperung Ihrer Marke mit einer unverwechselbaren visuellen Identität."
+      },
+      {
+        "title": "Optimierte UX",
+        "desc": "Intuitiver Kundenpfad, der für maximale Konversionen konzipiert ist."
+      },
+      {
+        "title": "100% mobil",
+        "desc": "Perfekte Darstellung auf allen Geräten, vom Smartphone bis zum großen Bildschirm."
+      },
+      {
+        "title": "Leistung",
+        "desc": "Ultra-schnelle Ladezeiten für eine optimale Suchmaschinenplatzierung."
+      }
+    ]
+  },
+  "ProjectsSection": {
+    "badge": "Premium-Portfolio",
+    "title": "Unsere digitalen {span}",
+    "titleHighlight": "Umsetzungen.",
+    "cta": "Website besuchen",
+    "projects": {
+      "mmreseaux": {
+        "category": "Telekom & Infrastruktur",
+        "desc": "Hochmoderne Netzwerkinfrastrukturlösungen und Glasfaserinstallation."
+      },
+      "plancycall": {
+        "category": "Kundenbeziehung",
+        "desc": "Callcenter der nächsten Generation mit Fokus auf Beziehungsqualität."
+      },
+      "compagnons": {
+        "category": "Bauwesen",
+        "desc": "Generalunternehmer im Baugewerbe. Eine robuste digitale Präsenz."
+      },
+      "majorelle": {
+        "category": "Business Center",
+        "desc": "Das Referenz-Businesscenter in Marrakesch."
+      }
+    }
+  },
+  "CityExpertiseSection": {
+    "badge": "Territorium & Innovation",
+    "title": "Maßgeschneiderte Web-{br}{span}",
+    "titleHighlight": "Expertise",
+    "description": "Von Marrakesch bis Tanger setzen wir digitale Strategien ein, die auf die Besonderheiten jedes Wirtschaftszentrums zugeschnitten sind.",
+    "cities": {
+      "maroc": {
+        "city": "Webagentur Marokko",
+        "title": "Webagentur - Webseitenerstellung Marokko",
+        "subtitle": "Nationale Exzellenz",
+        "desc": "Unsere Agentur beherrscht alle Lösungen zur Webseitenerstellung, von schlüsselfertigen CMS bis zu maßgeschneiderter Entwicklung. In Marrakesch wie in ganz Marokko kombinieren wir die Leistungsfähigkeit von WordPress/Elementor für schnelle Projekte mit reinem Coding (HTML5, CSS3, JavaScript und PHP) für komplexe Anforderungen. Jedes Projekt integriert nativ: eine für Google Marokko optimierte Suchmaschinenplatzierung, Ladezeiten unter 1,5 Sekunden dank unseres lokalen Hostings in Casablanca und verstärkte Sicherheit (SSL-Zertifikate und DDoS-Schutz).",
+        "features": [
+          "Suchmaschinenoptimierung für Google Marokko",
+          "Lokales Hosting",
+          "Sicherheit SSL & Anti-DDoS",
+          "Zahlungen CMI / Stripe"
+        ]
+      },
+      "marrakech": {
+        "city": "Marrakesch",
+        "title": "Webseitenerstellung Marrakesch: Premium-Lösungen",
+        "subtitle": "Luxus & Tourismus",
+        "desc": "In Marrakesch konzentriert sich unsere Expertise auf einzigartige Hybridlösungen. Für Riads und Hotels: Wir entwerfen WordPress-Websites mit Elementor Pro, die Buchungssysteme (SynXis oder maßgeschneiderte API-Entwicklungen), für Mobilgeräte optimierte 360°-Rundgänge und automatische Synchronisierung mit Booking/Expedia integrieren. Besonderheit Marrakesch: Unsere Entwickler integrieren systematisch interaktive Karten der Souks.",
+        "features": [
+          "Buchung SynXis/API",
+          "360°-Virtuelle Rundgänge"
+        ]
+      },
+      "casablanca": {
+        "city": "Casablanca",
+        "title": "Casablanca: E-Commerce- & Business-Zentrum",
+        "subtitle": "Business & Marktplätze",
+        "desc": "Marktführer in der Webseitenerstellung in Casablanca, bauen wir leistungsstarke WooCommerce-Marktplätze. Unsere Lösungen umfassen: Multi-Lager-Verwaltung, Integration mit marokkanischen ERP-Systemen (SAP, Odoo) und optimierte Zahlungstunnel (CMI/PayZone). Lokaal gehostete Infrastruktur für eine Latenz <20ms.",
+        "features": [
+          "WooCommerce-Marktplatz",
+          "ERP-Integration (SAP)"
+        ]
+      },
+      "rabat": {
+        "city": "Rabat",
+        "title": "Rabat: Institutionelle & Regierungs-Websites",
+        "subtitle": "Corporate & Sicherheit",
+        "desc": "Unser Ansatz in Rabat verbindet Sicherheit und Modularität. Wir entwickeln W3C-zertifizierte Portale mit biometrischer Authentifizierung und automatischer Archivierung. Zweisprachige Administratorenoberfläche und intelligentes Cache-System, um Verkehrsspitzen der Regierung standzuhalten.",
+        "features": [
+          "W3C-zertifiziert / Biometrie",
+          "Dialektal arabische Oberfläche"
+        ]
+      },
+      "tanger": {
+        "city": "Tanger",
+        "title": "Tanger: Export- & Logistikplattformen",
+        "subtitle": "Internationaler Handel",
+        "desc": "Für Tanger Med und Freihandelszonen entwerfen wir mehrsprachige Plattformen (FR/AR/EN/ES) mit Echtzeit-Zollkostenrechnern und automatischen Währungsmodulen. Hybride WordPress/Node.js-Lösungen für maximale Flexibilität.",
+        "features": [
+          "Viersprachig",
+          "Zollrechner"
+        ]
+      },
+      "agadir": {
+        "city": "Agadir",
+        "title": "Agadir: Touristische & Sport-Erlebnisse",
+        "subtitle": "Tourismus & Surfen",
+        "desc": "In Agadir setzen wir auf visuelles Eintauchen: 4K-Templates, Video-Hintergrund und interaktive Karten der Surf-/Golf-Spots. Integration von Wetter-/Gezeiten-APIs und 'Guide du Routard'-Content-Strategie, um organischen Traffic zu maximieren.",
+        "features": [
+          "4K-Video / Spot-Karten",
+          "Wetter- & Gezeiten-API"
+        ]
+      }
+    }
+  },
+  "ExcellenceDivider": {
+    "title": "Unsere",
+    "highlight": "Verpflichtungen",
+    "description": "Eine technische und kreative Expertise im Dienst Ihres digitalen Wachstums. Wir machen keine Kompromisse bei der Qualität.",
+    "cta": "Spezifikation validiert",
+    "items": {
+      "01": {
+        "title": "Digitale Exzellenz in Marrakesch",
+        "desc": "Spezialist für Webseitenerstellung Marrakesch, unsere Agentur entwirft hochwertige digitale Plattformen nach internationalen Standards. Wir entwickeln leistungsstarke Websites, die WCAG- und DSGVO-Normen entsprechen, angepasst an Hotels, Geschäfte, lokale Unternehmen und Fachleute in Marokko. Jedes Projekt zur Webseitenerstellung Marrakesch zielt auf visuelle, technische und SEO-Exzellenz für eine dauerhafte Online-Präsenz ab."
+      },
+      "02": {
+        "title": "Maßgeschneidertes Design",
+        "desc": "Wir realisieren maßgeschneiderte Websites in Marrakesch, die moderne Ästhetik, Nutzungsflüssigkeit und optimale Konversion vereinen. Jede Webseitenerstellung Marrakesch wird konzipiert, um Ihre visuelle Identität widerzuspiegeln und gleichzeitig Ihre Besucher zu begeistern. Unsere responsiven Designs passen sich perfekt Ihrer Branche an (Hotellerie, Gastronomie, Immobilien, E-Commerce, Tourismus usw.) und garantieren ein hochwertiges Benutzererlebnis."
+      },
+      "03": {
+        "title": "Hochleistungstechnologie",
+        "desc": "Unsere Lösungen zur Webseitenerstellung Marrakesch integrieren die neuesten Technologien, um maximale Leistung zu gewährleisten: ultra-schnelles Laden (< 1s), sicheres lokales oder internationales Hosting und volle Kompatibilität mit allen Mobilgeräten. Jede Website ist für ein flüssiges, stabiles und für die natürliche Suchmaschinenoptimierung optimiertes Surferlebnis konzipiert."
+      },
+      "04": {
+        "title": "Suchmaschinenoptimierung (Marrakesch)",
+        "desc": "Von der Konzeption an integrieren wir die besten SEO-Praktiken für Marrakesch, um Ihre Webseitenerstellung Marrakesch in den Top-Ergebnissen von Google zu positionieren. Dank optimierter Struktur, reichhaltiger Inhalte und strategischer Tags gewinnt Ihre Website schnell an lokaler Sichtbarkeit. Unsere Strategien sind auf lokale Suchanfragen wie \"Website Marrakesch\" oder \"Digitale Agentur Marrakesch\" zugeschnitten."
+      },
+      "05": {
+        "title": "Personalisierter Support",
+        "desc": "Wir begleiten jeden Kunden in jeder Phase seiner Webseitenerstellung Marrakesch mit menschlicher und reaktiver Betreuung. Unser mehrsprachiger Support (FR/AR/EN) garantiert ein flüssiges und transparentes Projektmanagement. Ob Sie Handwerker, Hotelier oder Unternehmer sind, wir bleiben für Sie nach der Veröffentlichung verfügbar und sichern den kontinuierlichen Erfolg Ihrer digitalen Präsenz."
+      },
+      "06": {
+        "title": "Verstärkte Sicherheit",
+        "desc": "Jede Webseitenerstellung Marrakesch profitiert von fortschrittlichem Schutz: Premium-SSL-Zertifikat, tägliche Backups und professionelle Firewall. Unsere Lösungen garantieren die Vertraulichkeit Ihrer Daten und die Stabilität Ihrer Website unter allen Umständen. Sicher, zuverlässig und konform mit Cybersicherheitsnormen bleibt Ihre Website 24/7 betriebsbereit, um Ihre Aktivität zu schützen."
+      }
+    }
+  }
+}

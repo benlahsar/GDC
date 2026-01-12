@@ -1,0 +1,435 @@
+{
+  "DomainNamePage": {
+    "badge": "Live-Registrierungssystem",
+    "title": "Echte {br} Überprüfung von {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Domainnamen.</span>",
+    "search": {
+      "placeholder": "Ihre Domain suchen...",
+      "button": "ÜBERPRÜFEN",
+      "available": "Sofort verfügbar",
+      "registered": "Bereits registriert",
+      "reserve": "RESERVIEREN"
+    },
+    "info": {
+      "sync": "ICANN & ANRT Datenbank synchronisiert",
+      "desc": "Erhalten Sie in weniger als 2 Sekunden einen echten Status über die Verfügbarkeit Ihrer Web-Identität.",
+      "cta": "Expertenrat"
+    },
+    "visual": {
+      "title": "Wer zuerst kommt, {br} <span class='text-brand-red italic'>mahlt zuerst.</span>",
+      "version": "GDC Live Hub v.4"
+    },
+    "cards": {
+      "process": {
+        "title": "Vollständiger Prozess",
+        "desc": "Unser Prozess beinhaltet eine <strong class='text-black dark:text-white'>tiefgehende Analyse Ihres Sektors</strong>, eine strategische Verfügbarkeitsrecherche zur Vermeidung von Konflikten und eine persönliche Beratung."
+      },
+      "benefits": {
+        "title": "Sicherheit & Expertise",
+        "desc": "Mit der Wahl unseres Services profitieren Sie von einer Partnerschaft mit einem Team, das für seine <strong class='text-black dark:text-white'>Reaktivität</strong> und Expertise bekannt ist."
+      }
+    },
+    "stats": {
+      "acquisition": "Akquisitionsdauer",
+      "satisfaction": "Kundenzufriedenheit",
+      "support": "Technischer Support"
+    },
+    "icons": {
+      "team": "Team",
+      "local": "Lokal",
+      "security": "Sicherheit",
+      "followup": "Nachverfolgung",
+      "award": "360°"
+    },
+    "modal": {
+      "badge": "Prioritäre Sicherung",
+      "title": "RESERVIEREN {br} <span class='text-brand-red italic'>{domain}</span>",
+      "success": {
+        "title": "Anfrage gesendet",
+        "desc": "Wir haben Ihre Reservierungsanfrage für <strong class='text-black dark:text-white underline decoration-emerald-500 decoration-2'>{domain}</strong> erhalten.",
+        "footer": "Ein GDC-Experte wird Sie in Kürze kontaktieren."
+      },
+      "fields": {
+        "nameLabel": "Vollständiger Name",
+        "namePlaceholder": "Ihr Name",
+        "emailLabel": "E-Mail",
+        "emailPlaceholder": "ihre@email.com",
+        "phoneLabel": "Telefon",
+        "phonePlaceholder": "+212...",
+        "button": "RESERVIERUNG BESTÄTIGEN",
+        "footer": "Durch die Validierung dieses Formulars leiten Sie ein von der {br} GDC-Technikabteilung unterstütztes Akquisitionsverfahren ein."
+      }
+    }
+  },
+  "DomainWhyChooseSection": {
+    "badge": "Unsere Expertise",
+    "title": "Warum {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>uns wählen?</span>",
+    "intro": {
+      "title": "Strategische Wahl",
+      "desc": "Bei <strong class='text-black dark:text-white'>Group Digital Concept</strong> begnügen wir uns nicht damit, Domainnamen zu verkaufen. Wir begleiten Sie bei der strategischen Wahl einer starken und nachhaltigen digitalen Identität. Ein Domainname ist viel mehr als nur eine Webadresse: Er ist ein Schlüsselelement für Ihre Sichtbarkeit, Ihre Glaubwürdigkeit und Ihr Online-Ranking. Deshalb stellen wir Ihnen unsere Expertise zur Verfügung, um einen sicheren, optimierten und auf Ihre beruflichen Ziele zugeschnittenen Domainnamenkauf in Marrakesch zu gewährleisten."
+    },
+    "vision": {
+      "title": "Vision",
+      "desc": "Der Referenzpartner für den Domainnamenkauf in Marrakesch zu werden. Wir glauben, dass jedes Projekt einen strategischen Namen für nachhaltigen Erfolg verdient."
+    },
+    "features": [
+      {
+        "title": "Große Auswahl an Endungen",
+        "desc": "Wir bieten Ihnen ein komplettes Sortiment an Endungen, von .ma über .com bis hin zu .net und vielen anderen, um Ihnen bei Ihrem Domainnamenkauf in Marrakesch die Wahl der relevantesten Option für Ihre Tätigkeit und Ihre Zielgruppe zu ermöglichen."
+      },
+      {
+        "title": "Sicherung und Schutz",
+        "desc": "Wir gewährleisten eine sichere Registrierung Ihres Domainnamens mit Lösungen zum Schutz vor Diebstahl, Cybersquatting und der Offenlegung Ihrer persönlichen Daten durch die Option Private WHOIS."
+      },
+      {
+        "title": "Hosting und Services",
+        "desc": "Zusätzlich bieten wir leistungsstarke Webhosting-Lösungen, SSL-Zertifikate zur Sicherung Ihrer Website sowie erweiterte DNS-Verwaltungstools zur Optimierung der Zuverlässigkeit."
+      },
+      {
+        "title": "Vereinfachter Transfer und Verlängerung",
+        "desc": "Wir erleichtern den Transfer und die Verlängerung Ihrer Domainnamen und garantieren ein reibungsloses Management ohne Dienstunterbrechung. Wir begleiten Sie in jeder Phase, um die Langlebigkeit Ihrer digitalen Identität sicherzustellen."
+      },
+      {
+        "title": "Technischer Support und Begleitung",
+        "desc": "Unser Team steht Ihnen zur Verfügung, um Sie zu beraten, bei der Konfiguration Ihrer Domain zu unterstützen und Ihnen eine persönliche Betreuung zu bieten. Eine Strategie, die darauf ausgelegt ist, Ihre Online-Wirkung zu maximieren."
+      }
+    ],
+    "mission": {
+      "title": "Mission",
+      "desc": "Den Domainnamenkauf in Marrakesch vereinfachen und absichern. Wir helfen unseren Kunden bei der Auswahl, dem Schutz und der Nutzung ihres Domainnamens, um ihre Glaubwürdigkeit zu stärken. Von der Reservierung bis zum Management garantieren wir einen reibungslosen Service.",
+      "tags": [
+        "Vereinfachen",
+        "Absichern",
+        "Optimieren"
+      ]
+    },
+    "engagement": {
+      "title": "Unser Engagement",
+      "desc": "Wir verfolgen einen transparenten und leistungsorientierten Ansatz. Jeder Domainnamenkauf ist optimiert, um ein echter Wachstumshebel zu sein, und garantiert Zuverlässigkeit, Sicherheit und optimale Sichtbarkeit.",
+      "cta": "Jetzt starten"
+    }
+  },
+  "DomainAtouts": {
+    "badge": "Unsere Stärken",
+    "title": "Die Vorteile von <span class='text-brand-red'>Group Digital Concept</span> {br} beim Domainnamenkauf in Marrakesch",
+    "items": [
+      "Erfahrenes Team",
+      "Schlüsselfertige Projekte",
+      "Skalierbare Anwendungen",
+      "Wettbewerbsfähige Preise",
+      "Moderne Technologien",
+      "Konformität und DSGVO",
+      "Kundenzufriedenheit",
+      "Persönliche Nachverfolgung"
+    ],
+    "footer": {
+      "text": "Ein ganzheitlicher Ansatz, der die Sicherheit, Leistung und Langlebigkeit Ihrer digitalen Identität garantiert.",
+      "tags": [
+        "Expertise",
+        "Qualität",
+        "Ergebnis"
+      ]
+    }
+  },
+  "DomainDetailedStrategies": {
+    "badge": "Ganzheitlicher Ansatz",
+    "title": "Möchten Sie einen <span class='text-brand-red'>strategischen Domainnamen</span>?",
+    "strategies": [
+      {
+        "id": "strategy",
+        "title": "Analyse & Strategie",
+        "subtitle": "Marktintelligenz",
+        "desc": "Wir analysieren Ihren Markt, Ihre Konkurrenz und Ihr Markenimage, um Ihnen bei der Wahl des relevantesten Domainnamens für Ihre Tätigkeit zu helfen.",
+        "points": [
+          {
+            "label": "Marktstudie",
+            "text": "Auswahl der besten Endungen (.ma, .com, .net...)."
+          },
+          {
+            "label": "Verfügbarkeitsprüfung",
+            "text": "Schnelle Überprüfung und Reservierung, um Verlust zu vermeiden."
+          },
+          {
+            "label": "Markenstrategie",
+            "text": "Ein einprägsamer und eindrucksvoller Domainname."
+          },
+          {
+            "label": "Markenschutz",
+            "text": "Absicherung gegen Cybersquatting."
+          },
+          {
+            "label": "SEO-Planung",
+            "text": "Optimierung für eine gute natürliche Platzierung."
+          }
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Sicherung & Schutz",
+        "subtitle": "Digitale Absicherung",
+        "desc": "Wir garantieren den Schutz Ihres Domainnamens mit fortschrittlichen Lösungen gegen digitale Risiken.",
+        "points": [
+          {
+            "label": "WHOIS-Vertraulichkeit",
+            "text": "Schutz Ihrer persönlichen Daten."
+          },
+          {
+            "label": "SSL-Zertifikat",
+            "text": "Sicherung von Transaktionen und Verbindungen."
+          },
+          {
+            "label": "Automatische Verlängerung",
+            "text": "Vermeiden Sie den versehentlichen Verlust Ihrer Domain."
+          },
+          {
+            "label": "Anti-Cybersquatting",
+            "text": "Strategische Reservierung, um Diebstahl zu vermeiden."
+          },
+          {
+            "label": "Monitoring & Warnungen",
+            "text": "Überwachung, um jegliche unrechtmäßige Nutzung zu vermeiden."
+          }
+        ]
+      },
+      {
+        "id": "management",
+        "title": "Verwaltung & Hosting",
+        "subtitle": "Robuste Infrastruktur",
+        "desc": "Eine vereinfachte Verwaltung und erweiterte Optionen für eine reibungslose und leistungsstarke Online-Präsenz.",
+        "points": [
+          {
+            "label": "Intuitives Dashboard",
+            "text": "Komplette Verwaltung Ihrer Domainnamen."
+          },
+          {
+            "label": "Intelligente Weiterleitungen",
+            "text": "Konfiguration zu Ihren Hauptseiten."
+          },
+          {
+            "label": "Erweitertes DNS",
+            "text": "Optimierung von Leistung und Geschwindigkeit."
+          },
+          {
+            "label": "Integration professioneller E-Mails",
+            "text": "Erstellung personalisierter Adressen."
+          },
+          {
+            "label": "Leistungsstarkes Hosting",
+            "text": "Auf Ihre Tätigkeit zugeschnittene Lösungen."
+          }
+        ]
+      },
+      {
+        "id": "performance",
+        "title": "Leistung & Skalierbarkeit",
+        "subtitle": "Geschwindigkeit & Wachstum",
+        "desc": "Optimieren Sie die Geschwindigkeit und Zuverlässigkeit Ihrer Website dank hochwertiger Infrastrukturen.",
+        "points": [
+          {
+            "label": "Cloud-Hosting",
+            "text": "Sichere Hochleistungsserver."
+          },
+          {
+            "label": "Ladeoptimierung",
+            "text": "Schneller Zugriff auf Ihre Website."
+          },
+          {
+            "label": "Regelmäßige Backups",
+            "text": "Schutz vor Datenverlust."
+          },
+          {
+            "label": "Multi-Plattform",
+            "text": "Kompatibilität Mobilgerät, Tablet, Desktop."
+          },
+          {
+            "label": "DDoS-Schutz",
+            "text": "Verstärkte Sicherheit gegen Cyberangriffe."
+          }
+        ]
+      }
+    ],
+    "cta": "Analyse starten"
+  },
+  "DomainIdentitySection": {
+    "header": {
+      "title": "Domainnamenkauf: {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-500'>Ihre digitale Identität</span> {br} beginnt hier!",
+      "subtitle": "Warum uns wählen?"
+    },
+    "items": [
+      {
+        "id": "strategy",
+        "title": "Strategische Beratung",
+        "text": "Marktstudie, Wettbewerbsanalyse und Wahl des besten Namens für Ihre Tätigkeit."
+      },
+      {
+        "id": "security",
+        "title": "Erweiterte Sicherung",
+        "text": "Schutz gegen Cybersquatting, WHOIS-Vertraulichkeit und inklusive SSL-Zertifikate."
+      },
+      {
+        "id": "management",
+        "title": "Vereinfachte Verwaltung",
+        "text": "Intuitives Dashboard, automatische Verlängerung und professionelle Weiterleitungen."
+      },
+      {
+        "id": "seo",
+        "title": "SEO-Leistung",
+        "text": "Für eine bessere Platzierung auf Google optimierte Domainnamen."
+      }
+    ],
+    "mobile": {
+      "badge": "GDC Mobile"
+    }
+  },
+  "DomainProcessTestimonials": {
+    "header": {
+      "title": "Unsere Arbeitsmethodik {br}",
+      "subtitle": "Ein strukturierter und transparenter Prozess, um den Erfolg Ihres Projekts von der Idee bis zur Umsetzung zu garantieren."
+    },
+    "process": [
+      {
+        "id": 1,
+        "title": "Erstberatung",
+        "content": "Wir beginnen mit einer Phase des aktiven Zuhörens, um Ihre Bedürfnisse, Ihre Zielgruppe und Ihre spezifischen Ziele in Bezug auf Ihren Domainnamen und Ihre digitale Identität zu verstehen."
+      },
+      {
+        "id": 2,
+        "title": "Prüfung und Analyse",
+        "content": "Tiefgehende Analyse der Verfügbarkeit, der Konkurrenz und der SEO-Chancen, um die leistungsstärksten Endungen (.ma, .com) für Ihre Marke auszuwählen."
+      },
+      {
+        "id": 3,
+        "title": "Erstellung des Aktionsplans",
+        "content": "Definition einer klaren Strategie: Reservierung, Markenschutz, DNS-Konfiguration und Einrichtung der notwendigen Weiterleitungen."
+      },
+      {
+        "id": 4,
+        "title": "Umsetzung und Nachverfolgung",
+        "content": "Sofortige technische Umsetzung, SSL-Sicherung und kontinuierliche Überwachung, um die Langlebigkeit Ihres digitalen Assets zu gewährleisten."
+      }
+    ],
+    "testimonials": {
+      "title": "Die Erfahrungsberichte unserer Kunden:",
+      "subtitle": "Inspirierende Erfolge mit unserer Webagentur",
+      "items": [
+        {
+          "name": "Mehdi Berrada",
+          "role": "CEO, MM RÉSEAUX COM",
+          "text": "Eine Digitalmarketing-Agentur in Marokko, die ihr Gebiet perfekt beherrscht. Ihr Team hat uns in SEO und Online-Werbung mit beeindruckenden Ergebnissen begleitet."
+        },
+        {
+          "name": "Karim Belkadi",
+          "role": "CEO, GROUP DES COMPAGNONS EN BÂTIMENT",
+          "text": "Wir haben die Überarbeitung unserer Website Group Digital Concept anvertraut und sind mit dem Ergebnis sehr zufrieden. Modernes Design, schnelle Website und gut für die Suchmaschinenoptimierung optimiert."
+        },
+        {
+          "name": "Samir Ait Benhaddou",
+          "role": "CEO, LOCATION CENTRE D'APPEL",
+          "text": "Ihre Expertise in SEO und SEA hat unsere Sichtbarkeit auf Google gesteigert. Wir erhalten nun mehr qualifizierte Anfragen. Ein echter Wachstumspartner!"
+        },
+        {
+          "name": "Oussama Jabrane",
+          "role": "CEO, GROUP PLANCYCALL",
+          "text": "Professionell und reaktiv, sie konnten unsere Bedürfnisse verstehen und eine effektive Digitalstrategie umsetzen. Unsere Online-Präsenz ist viel leistungsfähiger."
+        },
+        {
+          "name": "Nadia El Fakir",
+          "role": "RESPONSABLE MARKETING",
+          "text": "Eine seriöse und kompetente Agentur. Ihr Team hat einen flüssigen und sicheren E-Commerce-Shop für unseren Online-Shop entworfen. Sehr zufrieden mit der Arbeit!"
+        }
+      ]
+    }
+  },
+  "DomainFAQSection": {
+    "header": {
+      "title": "Entdecken Sie die {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>häufig gestellten Fragen</span>",
+      "desc": "Haben Sie Fragen zum Kauf oder zur Verwaltung Ihres Domainnamens? Unsere Experten haben hier die wesentlichen Antworten für Ihre Anleitung gesammelt.",
+      "supportTitle": "Brauchen Sie Hilfe?",
+      "supportDesc": "Kontaktieren Sie unseren Support."
+    },
+    "items": [
+      {
+        "question": "Warum einen Domainnamen in Marrakesch kaufen?",
+        "answer": "Ein Domainname ist entscheidend, um Ihre Online-Präsenz zu etablieren und Ihre Glaubwürdigkeit zu stärken. Er ermöglicht Ihnen eine professionelle Webadresse und verbessert Ihre Sichtbarkeit im Internet bei Ihrer lokalen und internationalen Kundschaft."
+      },
+      {
+        "question": "Wie wähle ich den richtigen Domainnamen für mein Unternehmen?",
+        "answer": "Wählen Sie einen kurzen, einprägsamen und einfach zu schreibenden Namen. Er sollte Ihre Tätigkeit widerspiegeln und idealerweise relevante Keywords für Ihre lokale SEO in Marrakesch enthalten. Wir raten davon ab, mehrere Bindestriche zu verwenden."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einer .ma- und einer .com-Domain?",
+        "answer": "Die .ma-Domain zielt spezifisch auf den marokkanischen Markt ab und verbessert Ihre lokale Platzierung in Marokko signifikant. Die .com-Domain ist eine internationale Endung, ideal, wenn Sie ein globales Publikum ansprechen oder Ihre Marke international schützen möchten."
+      },
+      {
+        "question": "Wie viel kostet ein Domainname in Marrakesch?",
+        "answer": "Die Preise variieren je nach Endung (.ma, .com, .net, etc.) und Seltenheit des Namens. Bei Group Digital Concept bieten wir wettbewerbsfähige Preise inklusive DNS-Verwaltung, Schutz Ihrer Daten und reaktiven technischen Support."
+      },
+      {
+        "question": "Wie schütze ich meinen Domainnamen vor Cybersquatting?",
+        "answer": "Wir empfehlen, die Hauptvarianten Ihres Domainnamens (verschiedene Endungen, häufige Rechtschreibfehler) zu registrieren und die Transfer-Sperre zu aktivieren. Unser Service beinhaltet eine proaktive Überwachung."
+      },
+      {
+        "question": "Was passiert, wenn mein Domainname bereits vergeben ist?",
+        "answer": "Wenn die Domain bereits registriert ist, können wir Ihnen helfen, relevante Alternativen zu finden oder ein Kaufverfahren einzuleiten, wenn sie zum Verkauf steht. Wir bieten auch einen Überwachungsservice (Backorder) an, um benachrichtigt zu werden, falls sie wieder verfügbar wird."
+      },
+      {
+        "question": "Wie übertrage ich einen Domainnamen zu einem anderen Anbieter?",
+        "answer": "Die Übertragung erfordert den EPP-Code (Auth Code), den wir Ihnen helfen zu erhalten, und die Entsperrung der Domain beim bisherigen Registrar. Unser technisches Team übernimmt den gesamten Prozess, um einen nahtlosen Übergang ohne Dienstunterbrechung zu gewährleisten."
+      },
+      {
+        "question": "Muss ich meinen Domainnamen jedes Jahr verlängern?",
+        "answer": "Ja, ein Domainname wird für einen festgelegten Zeitraum (in der Regel 1 bis 10 Jahre) gemietet. Wir bieten die automatische Verlängerung an, um einen versehentlichen Verlust Ihrer Webadresse und Ihres Traffics zu vermeiden."
+      },
+      {
+        "question": "Kann ich einen Domainnamen kaufen, ohne sofort eine Website zu erstellen?",
+        "answer": "Absolut. Sie können Ihren Domainnamen reservieren, um Ihre Marke zu schützen und ihn später zu nutzen. In der Zwischenzeit können wir eine professionelle Warteseite konfigurieren oder den Traffic zu Ihren Social-Media-Kanälen weiterleiten."
+      },
+      {
+        "question": "Bieten Sie ergänzende Services zum Domainkauf an?",
+        "answer": "Ja, wir bieten ein komplettes Paket: Hochleistungs-Webhosting, Erstellung professioneller E-Mail-Adressen, SSL-Zertifikate für die Sicherheit und erweiterte DNS-Verwaltung, um die Geschwindigkeit Ihrer Website zu optimieren."
+      }
+    ]
+  },
+  "DomainContactForm": {
+    "header": {
+      "title": "Webagentur & {br} <span class='text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600'>Innovative digitale Kommunikation</span>",
+      "p1": "Wir sind nicht nur eine Digitalmarketing-Agentur. Wir begleiten Unternehmen mit maßgeschneiderten Lösungen, um ihre Online-Präsenz zu steigern und ihre Wirkung zu maximieren.",
+      "p2": "Mit Sitz in Marokko kombinieren wir lokale Expertise und internationale Trends, um für jedes Projekt leistungsstarke Strategien zu bieten."
+    },
+    "steps": {
+      "info": "Informationen",
+      "service": "Service",
+      "details": "Details"
+    },
+    "form": {
+      "namePlaceholder": "Vollständiger Name",
+      "emailPlaceholder": "E-Mail",
+      "companyPlaceholder": "Unternehmen",
+      "employeesLabel": "Anzahl der Mitarbeiter *",
+      "phonePlaceholder": "Telefon",
+      "serviceLabel": "Gewünschter Service",
+      "projectDescLabel": "Projektbeschreibung",
+      "projectDescPlaceholder": "Erzählen Sie uns von Ihren Zielen...",
+      "budgetLabel": "Geschätztes Budget",
+      "back": "Zurück",
+      "next": "Weiter",
+      "confirm": "Bestätigen"
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "desc": "Ihr Projekt ist in guten Händen.{br}Wir melden uns innerhalb von 24 Stunden zurück.",
+      "button": "Neues Projekt"
+    },
+    "services": {
+      "web": "Website",
+      "seo": "SEO / SEA",
+      "social": "Social Media",
+      "branding": "Branding",
+      "app": "Mobile App",
+      "dev": "Maßgeschneidert"
+    }
+  },
+  "DomainFinalCTA": {
+    "title": "Sprechen wir über {br} Ihr Projekt.",
+    "button": "Besprechen wir ein Projekt"
+  }
+}

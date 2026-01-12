@@ -1,0 +1,125 @@
+{
+  "pack-siteweb": {
+    "hero": {
+      "badge": "GDC ELITE SOLUTIONS",
+      "vision": "SETZEN SIE IHRE VISION UM",
+      "title_part1": "UNSERE WEBSITE-",
+      "title_part2": "PAKETE",
+      "subtitle": "Exzellenz im Dienste Ihres Wachstums",
+      "scroll": "Scrollen zum Erkunden"
+    },
+    "values": {
+      "v1": {
+        "title": "Maßgeschneidert",
+        "desc": "Präzise auf Ihre spezifischen Bedürfnisse zugeschnittene Lösungen für maximale Leistung."
+      },
+      "v2": {
+        "title": "Innovativ",
+        "desc": "Native Integration der neuesten Technologien, um immer einen Schritt voraus zu sein."
+      },
+      "v3": {
+        "title": "Effizient",
+        "desc": "Greifbare und messbare Ergebnisse ab dem ersten Tag der Veröffentlichung."
+      },
+      "protocol": "Protokoll v.9"
+    },
+    "pricing": {
+      "badge": "EXKLUSIVE ANGEBOTE • GDC ELITE",
+      "title": "Unsere Agentur begleitet Sie bei Ihren <highlight>ersten Schritten</highlight> in der digitalen Welt",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "485",
+          "currency": "€",
+          "tax": "zzgl. MwSt.",
+          "features": [
+            "2 Showcase-Seiten + Kontaktseite",
+            "Einfaches Design",
+            "Grundlegender Inhalt inklusive",
+            "Geschwindigkeitsoptimierung",
+            "Basissicherheit",
+            "Domain-/Hosting-Begleitung"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": "975",
+          "currency": "€",
+          "tax": "zzgl. MwSt.",
+          "features": [
+            "5 Showcase-Seiten + Kontaktseite",
+            "Responsives Design",
+            "UX-Benutzererfahrung",
+            "Maßgeschneiderter Inhalt inklusive",
+            "Geschwindigkeitsoptimierung",
+            "Erweiterte Sicherheit",
+            "Domain-/Hosting-Begleitung"
+          ]
+        },
+        "ultime": {
+          "name": "Ultimate",
+          "price": "Maßgeschneidert",
+          "currency": "",
+          "tax": "",
+          "features": [
+            "+5 Seiten",
+            "Kontaktseite",
+            "Responsives Design",
+            "UX-Benutzererfahrung",
+            "Maßgeschneiderter Inhalt inklusive",
+            "Geschwindigkeitsoptimierung",
+            "Erweiterte Sicherheit",
+            "Domain-/Hosting-Begleitung"
+          ]
+        }
+      },
+      "starting_at": "Ab",
+      "cta": "Kontaktieren Sie uns!"
+    },
+    "showcase": {
+      "custom_site": {
+        "title": "Personalisierte Website",
+        "features": [
+          "Maßgeschneiderte Gestaltung bis zu 5 Seiten",
+          "10 Bilder KOSTENLOS",
+          "Social-Media-Integration",
+          "Google Maps-Einbindung",
+          "Interaktive Kontaktformulare",
+          "Responsives, mobiloptimiertes Design",
+          "Team von drei erfahrenen Entwicklern"
+        ]
+      },
+      "hub": {
+        "title": "Komplettlösung für <highlight>Website-Erstellung</highlight>"
+      },
+      "benefits": {
+        "title": "VORTEILE",
+        "items": [
+          "Dedizierter Art Director für jedes Projekt",
+          "Exklusive Eigentumsrechte",
+          "Verpflichtung zur vollständigen Zufriedenheit",
+          "Garantie für 100% einzigartiges Design",
+          "Support verfügbar",
+          "Vorbildlicher Kundendienst"
+        ]
+      },
+      "logo": {
+        "title": "LOGO DESIGN",
+        "features": [
+          "3 einzigartige Logo-Vorschläge",
+          "2 Überarbeitungsrunden inklusive",
+          "Team von drei spezialisierten Designern",
+          "Erstellung von Logo und Marken-Icon",
+          "Logo-Animation",
+          "Logo-Nutzungsrichtlinien",
+          "Lieferbare Dateien (AI, PDF, SVG, EPS, PNG)"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Bereit, das Web zu <highlight>erobern</highlight>?",
+      "subtitle": "Digitale Exzellenz Marrakesch • v.9",
+      "button": "STARTEN"
+    }
+  }
+}
