@@ -280,22 +280,22 @@
     "items": [
       {
         "title": "Majorelle Business Center",
-        "logo": "/images/portfolio/majorelle.webp",
+        "logo": "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144006.802.png",
         "accent": "from-brand-red to-red-600"
       },
       {
         "title": "Plancy Call Center",
-        "logo": "/images/portfolio/plancy.webp",
+        "logo": "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144356.680.png",
         "accent": "from-blue-600 to-indigo-600"
       },
       {
         "title": "Entreprise des Compagnons",
-        "logo": "/images/portfolio/compagnons.webp",
+        "logo": "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144222.368.png",
         "accent": "from-emerald-600 to-teal-600"
       },
       {
         "title": "M.M. Réseaux Com",
-        "logo": "/images/portfolio/mmreseaux.webp",
+        "logo": "https://group-digitalconcept.com/wp-content/uploads/2025/03/Design-sans-titre-2025-03-18T144735.987.png",
         "accent": "from-violet-600 to-purple-600"
       }
     ]
