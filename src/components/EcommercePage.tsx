@@ -254,13 +254,13 @@ export const EcommercePage: React.FC = () => {
                                 name: t("technologies.platforms.shopify.name"),
                                 desc: t("technologies.platforms.shopify.desc"),
                                 features: t.raw("technologies.platforms.shopify.features") as string[],
-                                icon: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/shfy-p-.svg"
+                                icon: "https://group-digitalconcept.com/wp-content/uploads/2025/03/shfy-p-.svg"
                             },
                             {
                                 name: t("technologies.platforms.woocommerce.name"),
                                 desc: t("technologies.platforms.woocommerce.desc"),
                                 features: t.raw("technologies.platforms.woocommerce.features") as string[],
-                                icon: "https://groupdigitalconcept.com/wp-content/uploads/2025/03/WordPress_logo_2.svg"
+                                icon: "https://group-digitalconcept.com/wp-content/uploads/2025/03/WordPress_logo_2.svg"
                             },
                             {
                                 name: t("technologies.platforms.custom.name"),

@@ -744,7 +744,7 @@ export const PackSEOPage: React.FC = () => {
                 >
                   <div className="relative overflow-hidden rounded-[50px] aspect-square bg-[#050505]">
                     <img
-                      src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-80.png"
+                      src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-80.png"
                       alt="Sophisticated SEO Analysis"
                       className={`w-full h-full object-contain filter brightness-110 contrast-125 saturate-125 transition-transform ${
                         isMobile ? "" : "duration-[3s]"

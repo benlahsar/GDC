@@ -468,7 +468,7 @@ export const MaintenancePage: React.FC = () => {
                             <div className={`lg:col-span-5 flex justify-center relative ${!isMobile ? 'perspective-2000' : ''}`}>
                                 <div className={`relative z-10 w-full max-w-[420px] transition-all duration-700 group/mockup ${!isMobile ? 'hover:scale-105' : ''}`}>
                                     <div className="relative overflow-hidden rounded-[3rem] border border-black/5 dark:border-white/10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.4)]">
-                                        <img src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-82.png" alt="Phone Mockup" className="w-full h-auto" />
+                                        <img src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-82.png" alt="Phone Mockup" className="w-full h-auto" />
                                     </div>
                                 </div>
                             </div>

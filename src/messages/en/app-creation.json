@@ -196,7 +196,7 @@
         "Optimal technical performance",
         "Fluid user experience",
         "Return on investment (ROI)",
-    "Monthly Maintenance & Monitoring"
+        "Monthly Maintenance & Monitoring"
       ]
     }
   },
@@ -336,17 +336,17 @@
       {
         "title": "Marrakech & South Hub",
         "desc": "Focus on luxury hospitality, high-end real estate, and tourism services. We create immersive digital experiences that reflect the elegance of the red city.",
-        "image": "https://images.unsplash.com/photo-1597212618440-8062a28d65bd?auto=format&fit=crop&q=80"
+        "image": "https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=2669&auto=format&fit=crop"
       },
       {
         "title": "Casablanca - Rabat Axis",
         "desc": "Expertise in e-commerce solutions, business applications, and institutional portals. We support the digital transformation of Morocco's economic and administrative heart.",
-        "image": "https://images.unsplash.com/photo-1578145289078-43844f770417?auto=format&fit=crop&q=80"
+        "image": "https://group-digitalconcept.com/wp-content/uploads/2025/12/360_F_267201056_wcEH6uQ6xu5oNHtY9Hq3YOhDwe1zk1XX.jpg"
       },
       {
         "title": "North & Export Region",
         "desc": "Development of multilingual platforms and logistics solutions for Tangier-Med and free zones. A robust web architecture turned towards the international market.",
-        "image": "https://images.unsplash.com/photo-1627389955609-72f697486f05?auto=format&fit=crop&q=80"
+        "image": "https://group-digitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif"
       }
     ]
   },
@@ -469,8 +469,6 @@
       "next": "Next",
       "send": "Send the Project"
     },
-    "country_codes": [
-      { "code": "+212", "flag": "🇲🇦" }
-    ]
+    "country_codes": [{ "code": "+212", "flag": "🇲🇦" }]
   }
 }
