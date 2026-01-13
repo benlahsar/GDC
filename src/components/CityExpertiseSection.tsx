@@ -42,7 +42,7 @@ const getExpertiseData = (t: any) => [
     desc: t("cities.casablanca.desc"),
     features: t.raw("cities.casablanca.features"),
     icon: ShoppingBag,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/360_F_267201056_wcEH6uQ6xu5oNHtY9Hq3YOhDwe1zk1XX.jpg",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/360_F_267201056_wcEH6uQ6xu5oNHtY9Hq3YOhDwe1zk1XX.jpg",
     colSpan: "lg:col-span-12",
     layout: "horizontal",
     height: "min-h-[450px]"
@@ -55,7 +55,7 @@ const getExpertiseData = (t: any) => [
     desc: t("cities.rabat.desc"),
     features: t.raw("cities.rabat.features"),
     icon: Landmark,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/10.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/10.webp",
     colSpan: "lg:col-span-12",
     layout: "horizontal",
     height: "min-h-[450px]"
@@ -68,7 +68,7 @@ const getExpertiseData = (t: any) => [
     desc: t("cities.tanger.desc"),
     features: t.raw("cities.tanger.features"),
     icon: Container,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/premium_photo-1705004597770-40e4db5df8a6.avif",
     colSpan: "lg:col-span-12",
     layout: "horizontal",
     height: "min-h-[450px]"
@@ -81,7 +81,7 @@ const getExpertiseData = (t: any) => [
     desc: t("cities.agadir.desc"),
     features: t.raw("cities.agadir.features"),
     icon: Sun,
-    image: "https://groupdigitalconcept.com/wp-content/uploads/2025/12/1.webp",
+    image: "https://group-digitalconcept.com/wp-content/uploads/2025/12/1.webp",
     colSpan: "lg:col-span-12",
     layout: "horizontal",
     height: "min-h-[450px]"

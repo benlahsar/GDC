@@ -40,7 +40,7 @@ export const getNavItems = (t: any): NavItem[] => [
   },
   { 
     label: t('nav.portfolio'), 
-    href: '#portfolio', 
+    href: '/portfolio', 
     id: 'portfolio',
     hasDropdown: true,
     dropdownItems: [
