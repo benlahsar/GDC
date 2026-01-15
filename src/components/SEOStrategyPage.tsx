@@ -152,7 +152,7 @@ export const SEOStrategyPage: React.FC = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen bg-[#F0F0F2] dark:bg-[#050505] text-black dark:text-white pt-32 md:pt-48 overflow-hidden transition-colors duration-500 selection:bg-brand-red selection:text-white"
+      className="relative w-full min-h-screen bg-[#F0F0F2] dark:bg-[#050505] text-black dark:text-white pt-48 md:pt-48 overflow-hidden transition-colors duration-500 selection:bg-brand-red selection:text-white"
     >
       {/* --- BACKGROUND FX --- */}
       <div className="absolute inset-0 pointer-events-none">

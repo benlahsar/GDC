@@ -29,7 +29,7 @@ import { AppTestimonials } from "./AppTestimonials";
 import { AppStats } from "./AppStats";
 import { AppFAQ } from "./AppFAQ";
 import { AppProjectForm } from "./AppProjectForm";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export const ApplicationCreationPage: React.FC = () => {
   const t = useTranslations("ApplicationCreationPage");
@@ -44,16 +44,18 @@ export const ApplicationCreationPage: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen bg-white dark:bg-[#050505] text-black dark:text-white pt-32 md:pt-48 pb-0 overflow-hidden transition-colors duration-500 selection:bg-brand-red selection:text-white">
+    <section className="relative w-full min-h-screen bg-[#F0F0F2] dark:bg-[#000000] text-black dark:text-white pt-48 md:pt-56 lg:pt-64 pb-0 px-0 md:px-0 lg:px-0 selection:bg-brand-red selection:text-white font-sans transition-colors duration-500 overflow-x-clip">
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none">
         <div
-          className={`absolute top-0 right-0 w-[800px] h-[800px] bg-brand-red/[0.03] rounded-full blur-[120px] ${!isMobile ? "animate-blob" : ""
-            }`}
+          className={`absolute top-0 right-0 w-[800px] h-[800px] bg-brand-red/[0.03] rounded-full blur-[120px] ${
+            !isMobile ? "animate-blob" : ""
+          }`}
         ></div>
         <div
-          className={`absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/[0.03] rounded-full blur-[120px] ${!isMobile ? "animate-blob animation-delay-2000" : ""
-            }`}
+          className={`absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/[0.03] rounded-full blur-[120px] ${
+            !isMobile ? "animate-blob animation-delay-2000" : ""
+          }`}
         ></div>
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03]"></div>
       </div>
@@ -79,8 +81,9 @@ export const ApplicationCreationPage: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-8 shadow-sm">
                 <Sparkles
                   size={14}
-                  className={`text-brand-red ${!isMobile ? "animate-pulse" : ""
-                    }`}
+                  className={`text-brand-red ${
+                    !isMobile ? "animate-pulse" : ""
+                  }`}
                 />
                 <span className="text-[10px] font-black uppercase tracking-[0.25em] text-gray-800 dark:text-gray-200">
                   {t("badge")}
@@ -89,19 +92,26 @@ export const ApplicationCreationPage: React.FC = () => {
 
               <h1
                 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-8 text-black dark:text-white"
-                dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>") }}
+                dangerouslySetInnerHTML={{
+                  __html: t.raw("title").replace(/{br}/g, "<br/>"),
+                }}
               />
 
               <div className="space-y-6 text-base md:text-lg text-gray-600 dark:text-gray-400 font-medium leading-relaxed max-w-3xl mb-12 border-l-2 border-brand-red pl-6">
-                <p dangerouslySetInnerHTML={{ __html: t.raw("description.p1") }} />
-                <p dangerouslySetInnerHTML={{ __html: t.raw("description.p2") }} />
+                <p
+                  dangerouslySetInnerHTML={{ __html: t.raw("description.p1") }}
+                />
+                <p
+                  dangerouslySetInnerHTML={{ __html: t.raw("description.p2") }}
+                />
               </div>
 
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
-                  className={`group px-10 py-5 bg-brand-red text-white rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-[0_20px_40px_rgba(220,38,38,0.3)] flex items-center gap-3 ${!isMobile ? "hover:scale-105" : ""
-                    }`}
+                  className={`group px-10 py-5 bg-brand-red text-white rounded-2xl font-black uppercase tracking-widest text-xs transition-all shadow-[0_20px_40px_rgba(220,38,38,0.3)] flex items-center gap-3 ${
+                    !isMobile ? "hover:scale-105" : ""
+                  }`}
                 >
                   {t("cta.start")}{" "}
                   <ArrowRight
@@ -144,10 +154,11 @@ export const ApplicationCreationPage: React.FC = () => {
                 flex items-center justify-center p-4
                 shadow-2xl shadow-black/50
                 group
-                ${!isMobile
-                ? "opacity-0 animate-enter-right delay-200"
-                : "opacity-100"
-              }
+                ${
+                  !isMobile
+                    ? "opacity-0 animate-enter-right delay-200"
+                    : "opacity-100"
+                }
                 min-h-[400px]
             `}
           >
@@ -155,20 +166,22 @@ export const ApplicationCreationPage: React.FC = () => {
               <img
                 src="https://group-digitalconcept.com/wp-content/uploads/2025/12/app.jpg"
                 alt="Application Development Illustration"
-                className={`w-full h-full object-cover opacity-90 ${!isMobile
-                  ? "group-hover:scale-110 transition-transform duration-[2s] ease-out"
-                  : ""
-                  }`}
+                className={`w-full h-full object-cover opacity-90 ${
+                  !isMobile
+                    ? "group-hover:scale-110 transition-transform duration-[2s] ease-out"
+                    : ""
+                }`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             </div>
 
             <div className="absolute bottom-8 left-8 right-8 z-20 flex flex-col gap-3">
               <div
-                className={`px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center gap-3 ${!isMobile
-                  ? "transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
-                  : ""
-                  }`}
+                className={`px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center gap-3 ${
+                  !isMobile
+                    ? "transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                    : ""
+                }`}
               >
                 <Code2 size={16} className="text-brand-red" />
                 <span className="text-[10px] font-black text-white uppercase tracking-widest">
@@ -176,10 +189,11 @@ export const ApplicationCreationPage: React.FC = () => {
                 </span>
               </div>
               <div
-                className={`px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center gap-3 ${!isMobile
-                  ? "transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100"
-                  : ""
-                  }`}
+                className={`px-4 py-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center gap-3 ${
+                  !isMobile
+                    ? "transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100"
+                    : ""
+                }`}
               >
                 <Smartphone size={16} className="text-blue-400" />
                 <span className="text-[10px] font-black text-white uppercase tracking-widest">
@@ -196,10 +210,11 @@ export const ApplicationCreationPage: React.FC = () => {
                 bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10
                 border border-black/5 dark:border-white/10
                 group transition-all duration-500
-                ${!isMobile
-                ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
-                : "opacity-100"
-              }
+                ${
+                  !isMobile
+                    ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
+                    : "opacity-100"
+                }
             `}
           >
             <div className="flex items-center gap-4 mb-8">
@@ -215,8 +230,9 @@ export const ApplicationCreationPage: React.FC = () => {
               {(t.raw("process.items") as string[]).map((item, i) => (
                 <li key={i} className="flex items-center gap-4 group/item">
                   <div
-                    className={`w-2 h-2 rounded-full bg-brand-red transition-transform ${!isMobile ? "group-hover/item:scale-150" : ""
-                      }`}
+                    className={`w-2 h-2 rounded-full bg-brand-red transition-transform ${
+                      !isMobile ? "group-hover/item:scale-150" : ""
+                    }`}
                   ></div>
                   <span className="text-sm font-bold text-gray-700 dark:text-gray-300 transition-colors">
                     {item}
@@ -233,10 +249,11 @@ export const ApplicationCreationPage: React.FC = () => {
                 bg-[#F5F5F7] dark:bg-[#080808] rounded-[40px] p-8 md:p-12
                 border border-black/5 dark:border-white/10
                 group transition-all duration-500
-                ${!isMobile
-                ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
-                : "opacity-100"
-              }
+                ${
+                  !isMobile
+                    ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
+                    : "opacity-100"
+                }
                 relative overflow-hidden
             `}
           >
@@ -254,8 +271,9 @@ export const ApplicationCreationPage: React.FC = () => {
                       className="flex items-start gap-3 p-3 rounded-2xl bg-white dark:bg-black/40 border border-black/5 dark:border-white/5 group/benefit"
                     >
                       <Check
-                        className={`text-brand-red mt-1 shrink-0 transition-transform ${!isMobile ? "group-hover/benefit:scale-110" : ""
-                          }`}
+                        className={`text-brand-red mt-1 shrink-0 transition-transform ${
+                          !isMobile ? "group-hover/benefit:scale-110" : ""
+                        }`}
                         size={16}
                         strokeWidth={3}
                       />
@@ -283,26 +301,34 @@ export const ApplicationCreationPage: React.FC = () => {
 
           {/* 5. ICONS STRIP & CTA */}
           <div
-            className={`lg:col-span-12 mt-4 bg-white/50 dark:bg-[#0A0A0A]/50 backdrop-blur-xl rounded-[40px] border border-black/5 dark:border-white/10 p-8 md:p-12 mb-12 ${!isMobile
-              ? "opacity-0 animate-enter-bottom delay-500"
-              : "opacity-100"
-              }`}
+            className={`lg:col-span-12 mt-4 bg-white/50 dark:bg-[#0A0A0A]/50 backdrop-blur-xl rounded-[40px] border border-black/5 dark:border-white/10 p-8 md:p-12 mb-12 ${
+              !isMobile
+                ? "opacity-0 animate-enter-bottom delay-500"
+                : "opacity-100"
+            }`}
           >
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 lg:gap-12 w-full lg:w-auto">
                 {/* We map over the icons, but labels come from translation */}
                 {(t.raw("icons.items") as any[]).map((item, idx) => {
-                  const Icon = [Paintbrush, CheckCircle2, Crown, MessagesSquare, Lock][idx % 5];
+                  const Icon = [
+                    Paintbrush,
+                    CheckCircle2,
+                    Crown,
+                    MessagesSquare,
+                    Lock,
+                  ][idx % 5];
                   return (
                     <div
                       key={idx}
                       className="flex flex-col items-center text-center gap-4 group cursor-default"
                     >
                       <div
-                        className={`w-16 h-16 rounded-2xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center transition-all duration-300 shadow-lg ${!isMobile
-                          ? "group-hover:bg-brand-red group-hover:text-white group-hover:scale-110"
-                          : ""
-                          }`}
+                        className={`w-16 h-16 rounded-2xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center transition-all duration-300 shadow-lg ${
+                          !isMobile
+                            ? "group-hover:bg-brand-red group-hover:text-white group-hover:scale-110"
+                            : ""
+                        }`}
                       >
                         <Icon size={28} strokeWidth={1.5} />
                       </div>
@@ -310,7 +336,7 @@ export const ApplicationCreationPage: React.FC = () => {
                         {item.label}
                       </span>
                     </div>
-                  )
+                  );
                 })}
               </div>
 
@@ -320,8 +346,9 @@ export const ApplicationCreationPage: React.FC = () => {
                 </p>
                 <a
                   href="#contact"
-                  className={`px-12 py-5 bg-black dark:bg-white text-white dark:text-black rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all shadow-2xl flex items-center gap-4 group/btn ${!isMobile ? "hover:scale-105" : ""
-                    }`}
+                  className={`px-12 py-5 bg-black dark:bg-white text-white dark:text-black rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all shadow-2xl flex items-center gap-4 group/btn ${
+                    !isMobile ? "hover:scale-105" : ""
+                  }`}
                 >
                   {t("cta.contact")}{" "}
                   <ArrowRight

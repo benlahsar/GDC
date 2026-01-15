@@ -183,7 +183,7 @@ export const SeaSmoPage: React.FC = () => {
       </div>
 
       {/* --- HERO SECTION --- */}
-      <section className="relative pt-32 md:pt-48 pb-20 px-4 md:px-8 max-w-[1800px] mx-auto min-h-[90vh] flex flex-col justify-center overflow-hidden">
+      <section className="relative pt-48 md:pt-48 pb-20 px-4 md:px-8 max-w-[1800px] mx-auto min-h-[90vh] flex flex-col justify-center overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div
             className={`order-2 lg:order-1 space-y-10 relative z-10 ${

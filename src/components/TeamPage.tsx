@@ -133,14 +133,14 @@ const MemberCard: React.FC<{
     member.category === "executive"
       ? Crown
       : member.category === "dev"
-        ? Code2
-        : Palette;
+      ? Code2
+      : Palette;
   const accentColor =
     member.category === "executive"
       ? "brand-red"
       : member.category === "dev"
-        ? "blue-500"
-        : "purple-500";
+      ? "blue-500"
+      : "purple-500";
   const isResponsable = member.level === 1;
 
   return (
@@ -150,8 +150,9 @@ const MemberCard: React.FC<{
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={handleMouseLeave}
       onClick={handleCardClick}
-      className={`group relative flex flex-col items-center animate-fade-in-up opacity-0 ${isMobile ? "" : "perspective-1000"
-        } ${member.linkedin ? "cursor-pointer" : ""}`}
+      className={`group relative flex flex-col items-center animate-fade-in-up opacity-0 ${
+        isMobile ? "" : "perspective-1000"
+      } ${member.linkedin ? "cursor-pointer" : ""}`}
       style={{
         animationDelay: `${delay}ms`,
         animationFillMode: "forwards",
@@ -234,7 +235,9 @@ const MemberCard: React.FC<{
                 ) : (
                   t(`labels.${member.category}`)
                 )}
-                <span className="opacity-40">• {t("labels.level")} {member.level}</span>
+                <span className="opacity-40">
+                  • {t("labels.level")} {member.level}
+                </span>
               </p>
               <h3 className="text-lg md:text-2xl font-black text-white uppercase tracking-tighter leading-none mt-1">
                 {member.name}
@@ -288,7 +291,7 @@ export const TeamPage: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#F0F0F2] dark:bg-[#020202] transition-colors duration-1000 selection:bg-brand-red selection:text-white pb-20 md:pb-64 overflow-hidden">
+    <div className="min-h-screen bg-[#F8F8FA] dark:bg-[#050505] pt-48 md:pt-48 lg:pt-56 pb-0 transition-colors duration-1000 relative overflow-x-hidden selection:bg-brand-red selection:text-white">
       {/* --- CINEMATIC BACKGROUND --- */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[120vw] h-[120vw] bg-brand-red/[0.04] rounded-full blur-[200px]"></div>
@@ -318,7 +321,15 @@ export const TeamPage: React.FC = () => {
             <p
               className="text-lg md:text-3xl text-gray-500 dark:text-gray-400 font-light max-w-4xl mx-auto leading-relaxed animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
-              dangerouslySetInnerHTML={{ __html: t.raw("hero.description").replace("<highlight>", '<strong class="text-black dark:text-white font-black">').replace("</highlight>", "</strong>") }}
+              dangerouslySetInnerHTML={{
+                __html: t
+                  .raw("hero.description")
+                  .replace(
+                    "<highlight>",
+                    '<strong class="text-black dark:text-white font-black">'
+                  )
+                  .replace("</highlight>", "</strong>"),
+              }}
             />
           </div>
         </section>
@@ -437,19 +448,29 @@ export const TeamPage: React.FC = () => {
         {/* --- MISSION STATEMENT STRIP --- */}
         <section className="mt-24 md:mt-64 relative py-12 md:py-20 border-y border-black/5 dark:border-white/5 overflow-hidden group">
           <div
-            className={`flex items-center whitespace-nowrap w-max ${isMobile
+            className={`flex items-center whitespace-nowrap w-max ${
+              isMobile
                 ? "animate-[scroll_40s_linear_infinite]"
                 : "animate-scroll"
-              }`}
+            }`}
           >
             {[...Array(6)].map((_, i) => (
               <span
                 key={i}
                 className="text-2xl md:text-7xl font-black uppercase tracking-tighter mx-10 md:mx-20 opacity-20 transition-opacity md:group-hover:opacity-100"
               >
-                {t("strip.future").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.future").split(" ").pop()}</span> •
-                {t("strip.code").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.code").split(" ").pop()}</span> •
-                {t("strip.design").split(" ").slice(0, -1).join(" ")} <span className="text-brand-red">{t("strip.design").split(" ").pop()}</span>
+                {t("strip.future").split(" ").slice(0, -1).join(" ")}{" "}
+                <span className="text-brand-red">
+                  {t("strip.future").split(" ").pop()}
+                </span>{" "}
+                •{t("strip.code").split(" ").slice(0, -1).join(" ")}{" "}
+                <span className="text-brand-red">
+                  {t("strip.code").split(" ").pop()}
+                </span>{" "}
+                •{t("strip.design").split(" ").slice(0, -1).join(" ")}{" "}
+                <span className="text-brand-red">
+                  {t("strip.design").split(" ").pop()}
+                </span>
               </span>
             ))}
           </div>

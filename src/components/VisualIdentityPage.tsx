@@ -169,7 +169,7 @@ export const VisualIdentityPage: React.FC = () => {
   return (
     <div className="relative w-full min-h-screen bg-[#F4F4F5] dark:bg-[#000000] transition-colors duration-500 overflow-x-hidden selection:bg-brand-red selection:text-white">
       {/* --- HERO SECTION --- */}
-      <section className="relative pt-36 md:pt-48 lg:pt-56 pb-20 px-4 md:px-8 lg:px-12 max-w-[1600px] mx-auto">
+      <section className="relative pt-48 md:pt-48 lg:pt-56 pb-20 px-4 md:px-8 lg:px-12 max-w-[1600px] mx-auto">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
           <div
             className={`absolute top-1/4 -right-20 w-[600px] h-[600px] bg-brand-red/[0.05] rounded-full blur-[120px] ${

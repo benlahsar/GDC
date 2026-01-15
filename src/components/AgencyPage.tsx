@@ -241,7 +241,7 @@ export const AgencyPage: React.FC = () => {
   return (
     <div className="bg-[#F0F0F2] dark:bg-[#050505] min-h-screen transition-colors duration-500 overflow-x-hidden selection:bg-brand-red selection:text-white flex flex-col">
       {/* 1. ULTRA-MODERN BENTO HERO SECTION */}
-      <section className="relative w-full pt-32 pb-24 md:pt-48 md:pb-32 px-4 md:px-8 overflow-hidden">
+      <section className="relative w-full pt-48 pb-24 md:pt-48 md:pb-32 px-4 md:px-8 overflow-hidden">
         {/* Global Ambient Background */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div

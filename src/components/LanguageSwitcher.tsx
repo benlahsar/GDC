@@ -75,21 +75,23 @@ export const LanguageSwitcher: React.FC = () => {
 
       {/* Dropdown Menu */}
       <div className={`
-        absolute top-full right-0 mt-2 w-44
+        absolute top-full mt-2 w-44
+        left-0 lg:left-auto lg:right-0
         bg-white/95 dark:bg-[#121212]/95 backdrop-blur-2xl
         border border-black/5 dark:border-white/10
         rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]
-        overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] origin-top-right
+        overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]
+        origin-top-left lg:origin-top-right
         ${isOpen ? 'opacity-100 scale-100 translate-y-0 visible' : 'opacity-0 scale-95 -translate-y-2 invisible'}
       `}>
-        <div className="py-1.5 max-h-[300px] overflow-y-auto custom-scrollbar p-1">
+        <div className="py-1.5 max-h-[300px] overflow-y-auto custom-scrollbar px-2.5">
           {LANGUAGES.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
               disabled={isPending}
               className={`
-                w-full flex items-center justify-between px-3 py-2.5 rounded-xl
+                w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl
                 transition-all duration-200 group relative
                 ${isPending ? 'opacity-50 cursor-wait' : ''}
                 ${locale === lang.code

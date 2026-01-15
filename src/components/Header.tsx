@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { useRouter } from '@/i18n/navigation';
-import { flushSync } from 'react-dom';
-import Image from 'next/image';
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { useRouter } from "@/i18n/navigation";
+import { flushSync } from "react-dom";
+import Image from "next/image";
 import {
   ChevronDown,
   ChevronRight,
@@ -27,23 +27,56 @@ import {
   Code,
   Plus,
   Minus,
-} from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import { LanguageSwitcher } from './LanguageSwitcher';
-import { AGENCY_INFO } from '@/lib/constants';
-import { getNavItems } from '@/lib/nav-items';
-import { NavItem } from '@/lib/types';
+} from "lucide-react";
+import { useTranslations } from "next-intl";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { AGENCY_INFO } from "@/lib/constants";
+import { getNavItems } from "@/lib/nav-items";
+import { NavItem } from "@/lib/types";
 
 // Fix: Use NavItem everywhere, remove DropdownItem
 type DropdownItem = NavItem;
 
-const EXPERTISE_META: Record<string, { icon: any; desc: string; color: string; stats: string }> = {
-  'website-creation': { icon: Layout, desc: 'E-commerce & Vitrines', color: 'blue', stats: '+200 Sites' },
-  'seo': { icon: Search, desc: 'Domination Google', color: 'red', stats: 'Top 1 Rank' },
-  'ads': { icon: MousePointerClick, desc: 'ROI Publicitaire', color: 'orange', stats: 'x4 Conversions' },
-  'application-creation': { icon: Smartphone, desc: 'iOS & Android Native', color: 'purple', stats: 'Apps Fluides' },
-  'visual-identity': { icon: Palette, desc: 'Logos & Branding', color: 'pink', stats: 'Identité Forte' },
-  'maintenance': { icon: Code, desc: 'Support & Sécurité', color: 'emerald', stats: 'Uptime 99.9%' },
+const EXPERTISE_META: Record<
+  string,
+  { icon: any; desc: string; color: string; stats: string }
+> = {
+  "website-creation": {
+    icon: Layout,
+    desc: "E-commerce & Vitrines",
+    color: "blue",
+    stats: "+200 Sites",
+  },
+  seo: {
+    icon: Search,
+    desc: "Domination Google",
+    color: "red",
+    stats: "Top 1 Rank",
+  },
+  ads: {
+    icon: MousePointerClick,
+    desc: "ROI Publicitaire",
+    color: "orange",
+    stats: "x4 Conversions",
+  },
+  "application-creation": {
+    icon: Smartphone,
+    desc: "iOS & Android Native",
+    color: "purple",
+    stats: "Apps Fluides",
+  },
+  "visual-identity": {
+    icon: Palette,
+    desc: "Logos & Branding",
+    color: "pink",
+    stats: "Identité Forte",
+  },
+  maintenance: {
+    icon: Code,
+    desc: "Support & Sécurité",
+    color: "emerald",
+    stats: "Uptime 99.9%",
+  },
 };
 
 export const Header: React.FC = () => {
@@ -51,25 +84,30 @@ export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedMobileItems, setExpandedMobileItems] = useState<string[]>([]);
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
+  const [activeSubCategory, setActiveSubCategory] = useState<string | null>(
+    null
+  );
   const [isClient, setIsClient] = useState(false);
-  const tNav = useTranslations('nav');
-  const tHeader = useTranslations('header');
+  const tNav = useTranslations("nav");
+  const tHeader = useTranslations("header");
   const headerRef = useRef<HTMLDivElement>(null);
 
   // Create a universal translation function
-  const t = useCallback((key: string) => {
-    const parts = key.split('.');
-    if (parts[0] === 'nav') {
-      return tNav(parts[1]);
-    } else if (parts[0] === 'header') {
-      return tHeader(parts.slice(1).join('.'));
-    }
-    return key;
-  }, [tNav, tHeader]);
+  const t = useCallback(
+    (key: string) => {
+      const parts = key.split(".");
+      if (parts[0] === "nav") {
+        return tNav(parts[1]);
+      } else if (parts[0] === "header") {
+        return tHeader(parts.slice(1).join("."));
+      }
+      return key;
+    },
+    [tNav, tHeader]
+  );
 
   // Initialize client-side
   useEffect(() => {
@@ -79,147 +117,161 @@ export const Header: React.FC = () => {
   // Handle scroll
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Load theme from localStorage
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'light') {
-      setTheme('light');
-      document.documentElement.classList.remove('dark');
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "light") {
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
     } else {
-      setTheme('dark');
-      document.documentElement.classList.add('dark');
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
 
-  const toggleTheme = useCallback((event: React.MouseEvent<HTMLButtonElement>) => {
-    const isDark = document.documentElement.classList.contains('dark');
-    const nextTheme = isDark ? 'light' : 'dark';
+  const toggleTheme = useCallback(
+    (event: React.MouseEvent<HTMLButtonElement>) => {
+      const isDark = document.documentElement.classList.contains("dark");
+      const nextTheme = isDark ? "light" : "dark";
 
-    const applyTheme = () => {
-      flushSync(() => {
-        setTheme(nextTheme);
-      });
-      if (nextTheme === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
+      const applyTheme = () => {
+        flushSync(() => {
+          setTheme(nextTheme);
+        });
+        if (nextTheme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+        localStorage.setItem("theme", nextTheme);
+      };
+
+      // Check for View Transitions API support
+      if (!(document as any).startViewTransition) {
+        applyTheme();
+        return;
       }
-      localStorage.setItem('theme', nextTheme);
-    };
 
-    // Check for View Transitions API support
-    if (!(document as any).startViewTransition) {
-      applyTheme();
-      return;
-    }
-
-    const x = event.clientX;
-    const y = event.clientY;
-    const endRadius = Math.hypot(
-      Math.max(x, window.innerWidth - x),
-      Math.max(y, window.innerHeight - y)
-    );
-
-    document.documentElement.classList.add('no-transitions');
-
-    const transition = (document as any).startViewTransition(() => {
-      applyTheme();
-    });
-
-    transition.ready.then(() => {
-      const clipPath = [
-        `circle(0px at ${x}px ${y}px)`,
-        `circle(${endRadius}px at ${x}px ${y}px)`,
-      ];
-      document.documentElement.animate(
-        { clipPath },
-        {
-          duration: 500,
-          easing: 'ease-out',
-          pseudoElement: '::view-transition-new(root)',
-        } as any
+      const x = event.clientX;
+      const y = event.clientY;
+      const endRadius = Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y)
       );
-    });
 
-    transition.finished.finally(() => {
-      document.documentElement.classList.remove('no-transitions');
-    });
-  }, []);
+      document.documentElement.classList.add("no-transitions");
 
-  const handleNavClick = useCallback((e: React.MouseEvent, item: NavItem) => {
-    e.preventDefault();
+      const transition = (document as any).startViewTransition(() => {
+        applyTheme();
+      });
 
-    // Fix: Use id as required
-    if ((item as any).isNotPage) {
-      if (typeof window !== 'undefined' && window.innerWidth < 1024) {
-        setExpandedMobileItems((prev) =>
-          prev.includes(item.id!) ? prev.filter((i) => i !== item.id) : [...prev, item.id!]
-        );
-      }
-      return;
-    }
+      transition.ready.then(() => {
+        const clipPath = [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${endRadius}px at ${x}px ${y}px)`,
+        ];
+        document.documentElement.animate({ clipPath }, {
+          duration: 500,
+          easing: "ease-out",
+          pseudoElement: "::view-transition-new(root)",
+        } as any);
+      });
 
-    // Handle hash navigation for same-page sections
-    if (item.href?.startsWith('/#')) {
-      const hash = item.href.substring(1); // Remove the leading /
-      const element = document.getElementById(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else if (window.location.pathname !== '/') {
-        // If not on home page, navigate to home with hash
-        router.push(item.href);
-      }
-    } else if (item.href?.startsWith('#')) {
-      const element = document.getElementById(item.href.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } else {
-      // Navigate using Next.js router for different pages
-      router.push(item.href);
-    }
-
-    setMobileMenuOpen(false);
-    setHoveredItem(null);
-  }, [router]);
-
-  const handleSubItemClick = useCallback((e: React.MouseEvent, item: NavItem) => {
-    e.preventDefault();
-
-    // Handle external links (portfolio projects)
-    if (item.href?.startsWith('http')) {
-      window.open(item.href, '_blank', 'noopener,noreferrer');
-      return;
-    }
-
-    // Navigate using Next.js router
-    if (item.href) {
-      router.push(item.href);
-    }
-
-    setHoveredItem(null);
-    setActiveCategory(null);
-    setActiveSubCategory(null);
-    setMobileMenuOpen(false);
-  }, [router]);
-
-  // Fix: Remove hasMega, use hasDropdown for mega menu as well
-  const translatedNav: NavItem[] = useMemo(
-    () => getNavItems(t),
-    [t]
+      transition.finished.finally(() => {
+        document.documentElement.classList.remove("no-transitions");
+      });
+    },
+    []
   );
 
-  const expertisesItem = useMemo(() => translatedNav.find((n) => n.id === 'expertises'), [translatedNav]);
+  const handleNavClick = useCallback(
+    (e: React.MouseEvent, item: NavItem) => {
+      e.preventDefault();
+
+      // Fix: Use id as required
+      if ((item as any).isNotPage) {
+        if (typeof window !== "undefined" && window.innerWidth < 1024) {
+          setExpandedMobileItems((prev) =>
+            prev.includes(item.id!)
+              ? prev.filter((i) => i !== item.id)
+              : [...prev, item.id!]
+          );
+        }
+        return;
+      }
+
+      // Handle hash navigation for same-page sections
+      if (item.href?.startsWith("/#")) {
+        const hash = item.href.substring(1); // Remove the leading /
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else if (window.location.pathname !== "/") {
+          // If not on home page, navigate to home with hash
+          router.push(item.href);
+        }
+      } else if (item.href?.startsWith("#")) {
+        const element = document.getElementById(item.href.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      } else {
+        // Navigate using Next.js router for different pages
+        router.push(item.href);
+      }
+
+      setMobileMenuOpen(false);
+      setHoveredItem(null);
+    },
+    [router]
+  );
+
+  const handleSubItemClick = useCallback(
+    (e: React.MouseEvent, item: NavItem) => {
+      e.preventDefault();
+
+      // Handle external links (portfolio projects)
+      if (item.href?.startsWith("http")) {
+        window.open(item.href, "_blank", "noopener,noreferrer");
+        return;
+      }
+
+      // Navigate using Next.js router
+      if (item.href) {
+        router.push(item.href);
+      }
+
+      setHoveredItem(null);
+      setActiveCategory(null);
+      setActiveSubCategory(null);
+      setMobileMenuOpen(false);
+    },
+    [router]
+  );
+
+  // Fix: Remove hasMega, use hasDropdown for mega menu as well
+  const translatedNav: NavItem[] = useMemo(() => getNavItems(t), [t]);
+
+  const expertisesItem = useMemo(
+    () => translatedNav.find((n) => n.id === "expertises"),
+    [translatedNav]
+  );
   const activeCatData = useMemo(
-    () => expertisesItem?.dropdownItems?.find((cat: NavItem) => cat.id === activeCategory),
+    () =>
+      expertisesItem?.dropdownItems?.find(
+        (cat: NavItem) => cat.id === activeCategory
+      ),
     [expertisesItem, activeCategory]
   );
   const activeSubCatData = useMemo(
-    () => activeCatData?.dropdownItems?.find((sub: NavItem) => sub.id === activeSubCategory),
+    () =>
+      activeCatData?.dropdownItems?.find(
+        (sub: NavItem) => sub.id === activeSubCategory
+      ),
     [activeCatData, activeSubCategory]
   );
 
@@ -231,7 +283,7 @@ export const Header: React.FC = () => {
     <header
       ref={headerRef}
       className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-        isScrolled ? 'py-3' : 'py-6 md:py-8'
+        isScrolled ? "py-3" : "py-6 md:py-8"
       }`}
     >
       <div
@@ -240,23 +292,25 @@ export const Header: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center z-50">
           <button
-            onClick={(e) => handleNavClick(e, { label: 'home', id: 'home', href: '/' })}
+            onClick={(e) =>
+              handleNavClick(e, { label: "home", id: "home", href: "/" })
+            }
             className="block relative group transition-transform active:scale-95"
             aria-label="Accueil"
           >
             <Image
               src={AGENCY_INFO.logoLight}
               alt={`${AGENCY_INFO.subtitle} Logo`}
-              className="h-28 md:h-30 w-28 object-contain block dark:hidden"
-              width={120}
-              height={120}
+              className="h-24 md:h-20 w-24 object-contain block dark:hidden"
+              width={100}
+              height={100}
             />
             <Image
               src={AGENCY_INFO.logoDark}
               alt={`${AGENCY_INFO.subtitle} Logo Dark`}
-              className="h-28 md:h-30 w-28 object-contain hidden dark:block"
-              width={120}
-              height={120}
+              className="h-24 md:h-20 w-24 object-contain hidden dark:block"
+              width={100}
+              height={100}
             />
           </button>
         </div>
@@ -264,7 +318,9 @@ export const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {translatedNav.map((item, index) => {
-            const constantItem = translatedNav.find((n: NavItem) => n.id === item.id);
+            const constantItem = translatedNav.find(
+              (n: NavItem) => n.id === item.id
+            );
             const isHoveredState = hoveredItem === item.label;
 
             return (
@@ -273,8 +329,10 @@ export const Header: React.FC = () => {
                 className="relative group/nav"
                 onMouseEnter={() => {
                   setHoveredItem(item.label);
-                  if (item.id === 'expertises' && !activeCategory) {
-                    setActiveCategory(constantItem?.dropdownItems?.[0]?.id || null);
+                  if (item.id === "expertises" && !activeCategory) {
+                    setActiveCategory(
+                      constantItem?.dropdownItems?.[0]?.id || null
+                    );
                   }
                 }}
                 onMouseLeave={() => setHoveredItem(null)}
@@ -282,23 +340,25 @@ export const Header: React.FC = () => {
                 <button
                   onClick={(e) => handleNavClick(e, item)}
                   className={`relative px-4 py-2.5 text-[10px] xl:text-[11px] font-black uppercase tracking-[0.2em] transition-all duration-300 flex items-center gap-1.5 rounded-full ${
-                    (item as any).isNotPage ? 'cursor-default' : 'cursor-pointer'
+                    (item as any).isNotPage
+                      ? "cursor-default"
+                      : "cursor-pointer"
                   } text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5`}
                   aria-label={item.label}
                 >
                   <span>{item.label}</span>
-                  {(item.hasDropdown || item.id === 'contact-page') && (
+                  {(item.hasDropdown || item.id === "contact-page") && (
                     <ChevronDown
                       size={10}
                       className={`transition-transform duration-500 ${
-                        isHoveredState ? 'rotate-180 text-brand-red' : ''
+                        isHoveredState ? "rotate-180 text-brand-red" : ""
                       }`}
                     />
                   )}
                 </button>
 
                 {/* Mega Menu for Expertises */}
-                {item.id === 'expertises' && (
+                {item.id === "expertises" && (
                   <MegaMenu
                     isVisible={isHoveredState}
                     constantItem={constantItem}
@@ -314,7 +374,7 @@ export const Header: React.FC = () => {
                 )}
 
                 {/* Regular Dropdown */}
-                {item.hasDropdown && item.id !== 'expertises' && (
+                {item.hasDropdown && item.id !== "expertises" && (
                   <RegularDropdown
                     isVisible={isHoveredState}
                     dropdownItems={constantItem?.dropdownItems || []}
@@ -323,7 +383,7 @@ export const Header: React.FC = () => {
                 )}
 
                 {/* Contact Dropdown */}
-                {item.id === 'contact-page' && (
+                {item.id === "contact-page" && (
                   <ContactDropdown
                     isVisible={isHoveredState}
                     onNavClick={handleNavClick}
@@ -336,14 +396,16 @@ export const Header: React.FC = () => {
 
         {/* Right Actions */}
         <div className="flex items-center gap-3 sm:gap-5">
-          <LanguageSwitcher />
+          <div className="hidden lg:flex">
+            <LanguageSwitcher />
+          </div>
           <div className="h-8 w-px bg-black/5 dark:bg-white/5 hidden sm:block" />
           <button
             onClick={toggleTheme}
             className="w-11 h-11 rounded-full flex items-center justify-center transition-all text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 active:scale-90 border border-transparent hover:border-black/5 dark:border-white/10"
             aria-label="Basculer le thème"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <Sun size={18} strokeWidth={2.5} />
             ) : (
               <Moon size={18} strokeWidth={2.5} />
@@ -369,7 +431,9 @@ export const Header: React.FC = () => {
           expandedMobileItems={expandedMobileItems}
           onToggleExpand={(itemId) =>
             setExpandedMobileItems((prev) =>
-              prev.includes(itemId) ? prev.filter((i) => i !== itemId) : [...prev, itemId]
+              prev.includes(itemId)
+                ? prev.filter((i) => i !== itemId)
+                : [...prev, itemId]
             )
           }
           onNavClick={handleNavClick}
@@ -408,11 +472,11 @@ const MegaMenu: React.FC<{
     <div
       className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[1150px] transition-all duration-500 transform origin-top ${
         isVisible
-          ? 'opacity-100 scale-100 translate-y-0 visible pointer-events-auto'
-          : 'opacity-0 scale-95 -translate-y-4 invisible pointer-events-none'
+          ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
+          : "opacity-0 scale-95 -translate-y-4 invisible pointer-events-none"
       }`}
       style={{
-        visibility: isVisible ? 'visible' : 'hidden',
+        visibility: isVisible ? "visible" : "hidden",
         opacity: isVisible ? 1 : 0,
       }}
     >
@@ -423,19 +487,19 @@ const MegaMenu: React.FC<{
             <div className="flex items-center gap-2 mb-2">
               <div className="w-2 h-2 rounded-full bg-brand-red animate-pulse" />
               <span className="text-[9px] font-black uppercase tracking-[0.4em] text-gray-400">
-                {tHeader('servicesHub')}
+                {tHeader("servicesHub")}
               </span>
             </div>
             <h3 className="text-3xl font-black text-black dark:text-white uppercase tracking-tighter leading-none">
-              {tHeader('ourServices')}
+              {tHeader("ourServices")}
             </h3>
           </div>
           {constantItem?.dropdownItems?.map((sub: NavItem) => {
-            const meta = EXPERTISE_META[sub.id || ''] || {
+            const meta = EXPERTISE_META[sub.id || ""] || {
               icon: Globe,
-              desc: 'Expertise Digitale',
-              color: 'red',
-              stats: 'Premium',
+              desc: "Expertise Digitale",
+              color: "red",
+              stats: "Premium",
             };
             const isSelected = activeCategory === sub.id;
             const IconComponent = meta.icon;
@@ -450,16 +514,16 @@ const MegaMenu: React.FC<{
                 onClick={(e) => onSubItemClick(e, sub)}
                 className={`group/cat p-4 rounded-[2rem] border transition-all duration-500 cursor-pointer flex items-center justify-between w-full text-left ${
                   isSelected
-                    ? 'bg-white dark:bg-[#1A1A1A] border-brand-red shadow-xl scale-[1.03]'
-                    : 'bg-transparent border-transparent hover:bg-black/5 dark:hover:bg-white/5'
+                    ? "bg-white dark:bg-[#1A1A1A] border-brand-red shadow-xl scale-[1.03]"
+                    : "bg-transparent border-transparent hover:bg-black/5 dark:hover:bg-white/5"
                 }`}
               >
                 <div className="flex items-center gap-4 flex-1">
                   <div
                     className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-700 flex-shrink-0 ${
                       isSelected
-                        ? 'bg-brand-red text-white shadow-lg'
-                        : 'bg-white dark:bg-white/5 text-gray-400 group-hover/cat:text-brand-red group-hover/cat:scale-110'
+                        ? "bg-brand-red text-white shadow-lg"
+                        : "bg-white dark:bg-white/5 text-gray-400 group-hover/cat:text-brand-red group-hover/cat:scale-110"
                     }`}
                   >
                     <IconComponent size={22} strokeWidth={1.5} />
@@ -467,7 +531,9 @@ const MegaMenu: React.FC<{
                   <div>
                     <h4
                       className={`text-[10px] font-black uppercase tracking-widest leading-none ${
-                        isSelected ? 'text-black dark:text-white' : 'text-gray-500 dark:text-gray-400'
+                        isSelected
+                          ? "text-black dark:text-white"
+                          : "text-gray-500 dark:text-gray-400"
                       }`}
                     >
                       {sub.label}
@@ -488,7 +554,7 @@ const MegaMenu: React.FC<{
             <>
               <div className="px-2 py-4 mb-6">
                 <h3 className="text-3xl font-black text-black dark:text-white uppercase tracking-tighter leading-none">
-                  {tHeader('architectures')} <br />
+                  {tHeader("architectures")} <br />
                   <span className="text-brand-red">{activeCatData?.label}</span>
                 </h3>
               </div>
@@ -502,28 +568,37 @@ const MegaMenu: React.FC<{
                       onClick={(e) => onSubItemClick(e, sub)}
                       className={`group/sub p-6 rounded-[2.5rem] border transition-all duration-500 cursor-pointer flex flex-col justify-between aspect-square text-left ${
                         isSubSelected
-                          ? 'bg-black dark:bg-white border-transparent shadow-2xl scale-[1.02]'
-                          : 'bg-gray-100 dark:bg-white/5 border-transparent hover:border-brand-red/30'
+                          ? "bg-black dark:bg-white border-transparent shadow-2xl scale-[1.02]"
+                          : "bg-gray-100 dark:bg-white/5 border-transparent hover:border-brand-red/30"
                       }`}
                     >
                       <div
                         className={`w-8 h-8 rounded-full flex items-center justify-center transition-all ${
-                          isSubSelected ? 'bg-brand-red text-white' : 'bg-white dark:bg-white/5 text-brand-red'
+                          isSubSelected
+                            ? "bg-brand-red text-white"
+                            : "bg-white dark:bg-white/5 text-brand-red"
                         }`}
                       >
-                        <ArrowUpRight size={14} className={isSubSelected ? 'rotate-45' : ''} />
+                        <ArrowUpRight
+                          size={14}
+                          className={isSubSelected ? "rotate-45" : ""}
+                        />
                       </div>
                       <div>
                         <span
                           className={`text-[10px] font-black uppercase tracking-[0.2em] leading-tight block mb-2 ${
-                            isSubSelected ? 'text-white/60 dark:text-black/40' : 'text-gray-400'
+                            isSubSelected
+                              ? "text-white/60 dark:text-black/40"
+                              : "text-gray-400"
                           }`}
                         >
                           Solution
                         </span>
                         <span
                           className={`text-sm font-black uppercase tracking-tighter leading-none ${
-                            isSubSelected ? 'text-white dark:text-black' : 'text-black dark:text-white'
+                            isSubSelected
+                              ? "text-white dark:text-black"
+                              : "text-black dark:text-white"
                           }`}
                         >
                           {sub.label}
@@ -538,7 +613,9 @@ const MegaMenu: React.FC<{
             <div className="h-full flex items-center justify-center opacity-5">
               <div className="text-center">
                 <Target size={120} className="mx-auto mb-8" />
-                <p className="text-2xl font-black uppercase tracking-[0.5em]">Init System</p>
+                <p className="text-2xl font-black uppercase tracking-[0.5em]">
+                  Init System
+                </p>
               </div>
             </div>
           )}
@@ -560,7 +637,7 @@ const MegaMenu: React.FC<{
                     {activeSubCatData.label}
                   </h3>
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest leading-relaxed border-l-2 border-brand-red pl-4">
-                    {tHeader('solution')}
+                    {tHeader("solution")}
                   </p>
                 </div>
                 <div className="space-y-3">
@@ -586,20 +663,25 @@ const MegaMenu: React.FC<{
                 <div className="relative">
                   <div className="absolute inset-0 bg-brand-red/20 blur-3xl animate-pulse rounded-full" />
                   <div className="w-24 h-24 rounded-full border-2 border-white/10 flex items-center justify-center relative z-10 group/eye">
-                    <Eye size={44} className="text-white/20 group-hover:text-brand-red transition-all duration-700" />
+                    <Eye
+                      size={44}
+                      className="text-white/20 group-hover:text-brand-red transition-all duration-700"
+                    />
                   </div>
                 </div>
                 <p className="text-[11px] font-black uppercase tracking-[0.5em] text-white/40 leading-relaxed">
-                  {tHeader('hoverToExplore')}
+                  {tHeader("hoverToExplore")}
                 </p>
               </div>
             )}
 
             <div className="mt-auto pt-10 border-t border-white/10 flex items-center justify-between">
               <div className="flex flex-col">
-                <span className="text-[10px] font-black text-white tracking-tighter">{tHeader('elitePartner')}</span>
+                <span className="text-[10px] font-black text-white tracking-tighter">
+                  {tHeader("elitePartner")}
+                </span>
                 <span className="text-[8px] font-bold text-gray-500 uppercase tracking-widest">
-                  {tHeader('isoDigital')}
+                  {tHeader("isoDigital")}
                 </span>
               </div>
               <Zap size={18} className="text-brand-red animate-pulse" />
@@ -621,11 +703,11 @@ const RegularDropdown: React.FC<{
     <div
       className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-80 transition-all duration-500 transform origin-top ${
         isVisible
-          ? 'opacity-100 scale-100 translate-y-0 visible pointer-events-auto'
-          : 'opacity-0 scale-95 -translate-y-2 invisible pointer-events-none'
+          ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
+          : "opacity-0 scale-95 -translate-y-2 invisible pointer-events-none"
       }`}
       style={{
-        visibility: isVisible ? 'visible' : 'hidden',
+        visibility: isVisible ? "visible" : "hidden",
         opacity: isVisible ? 1 : 0,
       }}
     >
@@ -657,11 +739,11 @@ const ContactDropdown: React.FC<{
     <div
       className={`absolute top-full right-0 pt-4 w-[680px] transition-all duration-500 transform origin-top-right ${
         isVisible
-          ? 'opacity-100 scale-100 translate-y-0 visible pointer-events-auto'
-          : 'opacity-0 scale-95 -translate-y-4 invisible pointer-events-none'
+          ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
+          : "opacity-0 scale-95 -translate-y-4 invisible pointer-events-none"
       }`}
       style={{
-        visibility: isVisible ? 'visible' : 'hidden',
+        visibility: isVisible ? "visible" : "hidden",
         opacity: isVisible ? 1 : 0,
       }}
     >
@@ -709,11 +791,20 @@ const ContactDropdown: React.FC<{
               </div>
             </div>
             <button
-              onClick={(e) => onNavClick(e, { label: 'contact', id: 'contact-page', href: '/contact' })}
+              onClick={(e) =>
+                onNavClick(e, {
+                  label: "contact",
+                  id: "contact-page",
+                  href: "/contact",
+                })
+              }
               className="group/btn relative w-full py-6 bg-black dark:bg:white text-white dark:text-black rounded-2xl flex items-center justify-center gap-4 font-black uppercase text-[10px] tracking-[0.3em] overflow-hidden transition-all hover:scale-[1.02] shadow-xl"
             >
               <span className="relative z-10">DÉMARRER UN PROJET</span>
-              <ArrowUpRight size={14} className="relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+              <ArrowUpRight
+                size={14}
+                className="relative z-10 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"
+              />
               <div className="absolute inset-0 bg-brand-red translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500" />
             </button>
           </div>
@@ -727,7 +818,7 @@ const ContactDropdown: React.FC<{
 const MobileMenu: React.FC<{
   isOpen: boolean;
   onClose: () => void;
-  theme: 'dark' | 'light';
+  theme: "dark" | "light";
   translatedNav: NavItem[];
   expandedMobileItems: string[];
   onToggleExpand: (itemId: string) => void;
@@ -748,13 +839,7 @@ const MobileMenu: React.FC<{
   return (
     <div className="fixed inset-0 z-[200] bg-white dark:bg-[#020202] flex flex-col overflow-y-auto animate-enter-zoom transition-colors duration-500">
       <div className="flex items-center justify-between p-8 pt-12">
-        <Image
-          src={theme === 'dark' ? AGENCY_INFO.logoDark : AGENCY_INFO.logoLight}
-          alt={`${AGENCY_INFO.name || 'GDC'} Logo`}
-          className="h-10 w-auto"
-          width={40}
-          height={40}
-        />
+        <LanguageSwitcher />
         <button
           className="w-14 h-14 rounded-full bg-gray-50 dark:bg-white/5 border border-black/5 dark:border-white/10 shadow-xl flex items-center justify-center text-black dark:text-white"
           onClick={onClose}
@@ -763,11 +848,16 @@ const MobileMenu: React.FC<{
           <X size={28} />
         </button>
       </div>
+      
       <nav className="flex flex-col gap-2 p-8 mt-10">
         {translatedNav.map((item) => {
-          const constantItem = translatedNav.find((n: NavItem) => n.id === item.id);
+          const constantItem = translatedNav.find(
+            (n: NavItem) => n.id === item.id
+          );
           const isExpanded = expandedMobileItems.includes(item.id!);
-          const hasChildren = constantItem?.dropdownItems && constantItem.dropdownItems.length > 0;
+          const hasChildren =
+            constantItem?.dropdownItems &&
+            constantItem.dropdownItems.length > 0;
 
           return (
             <div key={item.id} className="flex flex-col">
@@ -783,10 +873,10 @@ const MobileMenu: React.FC<{
                     onClick={() => onToggleExpand(item.id!)}
                     className={`w-16 h-16 rounded-3xl flex items-center justify-center transition-all ${
                       isExpanded
-                        ? 'bg-brand-red text-white'
-                        : 'bg-black/5 dark:bg-white/5'
+                        ? "bg-brand-red text-white"
+                        : "bg-black/5 dark:bg-white/5"
                     }`}
-                    aria-label={isExpanded ? 'Réduire' : 'Développer'}
+                    aria-label={isExpanded ? "Réduire" : "Développer"}
                   >
                     {isExpanded ? <Minus size={24} /> : <Plus size={24} />}
                   </button>

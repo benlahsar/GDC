@@ -211,7 +211,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
   );
 
   return (
-    <div className="min-h-screen bg-[#F8F8FA] dark:bg-[#050505] pt-32 md:pt-48 lg:pt-56 pb-0 transition-colors duration-1000 relative overflow-x-hidden selection:bg-brand-red selection:text-white">
+    <div className="min-h-screen bg-[#F8F8FA] dark:bg-[#050505] pt-48 md:pt-48 lg:pt-56 pb-0 transition-colors duration-1000 relative overflow-x-hidden selection:bg-brand-red selection:text-white">
       {/* ARCHITECTURAL BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-full h-full bg-grid-pattern opacity-[0.05] dark:opacity-[0.1]"></div>
