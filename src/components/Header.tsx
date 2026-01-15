@@ -27,12 +27,14 @@ import {
   Code,
   Plus,
   Minus,
+  Leaf,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { AGENCY_INFO } from "@/lib/constants";
 import { getNavItems } from "@/lib/nav-items";
 import { NavItem } from "@/lib/types";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
 // Fix: Use NavItem everywhere, remove DropdownItem
 type DropdownItem = NavItem;
@@ -94,6 +96,11 @@ export const Header: React.FC = () => {
   const tNav = useTranslations("nav");
   const tHeader = useTranslations("header");
   const headerRef = useRef<HTMLDivElement>(null);
+  const { mode, setMode, isLite } = usePerformanceMode();
+
+  const togglePerformanceMode = useCallback(() => {
+    setMode(isLite ? "elite" : "lite");
+  }, [isLite, setMode]);
 
   // Create a universal translation function
   const t = useCallback(
@@ -401,6 +408,28 @@ export const Header: React.FC = () => {
           </div>
           <div className="h-8 w-px bg-black/5 dark:bg-white/5 hidden sm:block" />
           <button
+            onClick={togglePerformanceMode}
+            className={`w-11 h-11 rounded-full flex items-center justify-center transition-all active:scale-90 border border-transparent hover:border-black/5 dark:border-white/10 ${
+              isLite
+                ? "text-emerald-600 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-900/20 dark:text-emerald-400 dark:hover:bg-emerald-900/30"
+                : "text-purple-600 bg-purple-50 hover:bg-purple-100 dark:bg-purple-900/20 dark:text-purple-400 dark:hover:bg-purple-900/30"
+            }`}
+            aria-label={isLite ? "Passer en mode Elite" : "Passer en mode Lite"}
+            title={isLite ? "Mode Lite (Éco)" : "Mode Elite (Performance)"}
+          >
+            {isLite ? (
+              <Leaf size={18} strokeWidth={2.5} />
+            ) : (
+              <Zap
+                size={18}
+                strokeWidth={2.5}
+                fill="currentColor"
+                className="text-purple-600 dark:text-purple-400"
+              />
+            )}
+          </button>
+
+          <button
             onClick={toggleTheme}
             className="w-11 h-11 rounded-full flex items-center justify-center transition-all text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 active:scale-90 border border-transparent hover:border-black/5 dark:border-white/10"
             aria-label="Basculer le thème"
@@ -470,7 +499,7 @@ const MegaMenu: React.FC<{
 }) => {
   return (
     <div
-      className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[1150px] transition-all duration-500 transform origin-top ${
+      className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-[1150px] transition-all duration-500 transform origin-top preserve-transform ${
         isVisible
           ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
           : "opacity-0 scale-95 -translate-y-4 invisible pointer-events-none"
@@ -701,7 +730,7 @@ const RegularDropdown: React.FC<{
 }> = ({ isVisible, dropdownItems, onSubItemClick }) => {
   return (
     <div
-      className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-80 transition-all duration-500 transform origin-top ${
+      className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-80 transition-all duration-500 transform origin-top preserve-transform ${
         isVisible
           ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
           : "opacity-0 scale-95 -translate-y-2 invisible pointer-events-none"
@@ -737,7 +766,7 @@ const ContactDropdown: React.FC<{
 }> = ({ isVisible, onNavClick }) => {
   return (
     <div
-      className={`absolute top-full right-0 pt-4 w-[680px] transition-all duration-500 transform origin-top-right ${
+      className={`absolute top-full right-0 pt-4 w-[680px] transition-all duration-500 transform origin-top-right preserve-transform ${
         isVisible
           ? "opacity-100 scale-100 translate-y-0 visible pointer-events-auto"
           : "opacity-0 scale-95 -translate-y-4 invisible pointer-events-none"
@@ -848,7 +877,7 @@ const MobileMenu: React.FC<{
           <X size={28} />
         </button>
       </div>
-      
+
       <nav className="flex flex-col gap-2 p-8 mt-10">
         {translatedNav.map((item) => {
           const constantItem = translatedNav.find(

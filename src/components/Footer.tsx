@@ -1,15 +1,26 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { useRouter } from '@/i18n/navigation';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import { useRouter } from "@/i18n/navigation";
+import Image from "next/image";
 import {
-  Instagram, Facebook, Linkedin,
-  MapPin, Phone, Mail, Globe,
-  ArrowUpRight, Heart, Sparkles, X,
-  ChevronRight, Clock, ShieldCheck, Zap
-} from 'lucide-react';
-import { useLocale, useTranslations } from 'next-intl';
+  Instagram,
+  Facebook,
+  Linkedin,
+  MapPin,
+  Phone,
+  Mail,
+  Globe,
+  ArrowUpRight,
+  Heart,
+  Sparkles,
+  X,
+  ChevronRight,
+  Clock,
+  ShieldCheck,
+  Zap,
+} from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 interface NavLink {
   label: string;
@@ -24,9 +35,9 @@ interface NavGroup {
 }
 
 const SOCIAL_LINKS = [
-  { icon: Instagram, label: 'Instagram', url: 'https://instagram.com' },
-  { icon: Facebook, label: 'Facebook', url: 'https://facebook.com' },
-  { icon: Linkedin, label: 'LinkedIn', url: 'https://linkedin.com' },
+  { icon: Instagram, label: "Instagram", url: "https://instagram.com" },
+  { icon: Facebook, label: "Facebook", url: "https://facebook.com" },
+  { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com" },
 ];
 
 const getNavGroups = (t: any): NavGroup[] => [
@@ -34,12 +45,28 @@ const getNavGroups = (t: any): NavGroup[] => [
     num: "01",
     title: t("expertises"),
     links: [
-      { label: t("links.websiteCreation"), id: "website-creation", href: "/services/website-creation" },
-      { label: t("links.ecommerce"), id: "ecommerce", href: "/services/ecommerce" },
-      { label: t("links.mobileApps"), id: "application-creation", href: "/services/apps" },
+      {
+        label: t("links.websiteCreation"),
+        id: "website-creation",
+        href: "/services/website-creation",
+      },
+      {
+        label: t("links.ecommerce"),
+        id: "ecommerce",
+        href: "/services/ecommerce",
+      },
+      {
+        label: t("links.mobileApps"),
+        id: "application-creation",
+        href: "/services/apps",
+      },
       { label: t("links.seoStrategy"), id: "seo", href: "/services/seo" },
-      { label: t("links.visualIdentity"), id: "visual-identity", href: "/services/identity" },
-    ]
+      {
+        label: t("links.visualIdentity"),
+        id: "visual-identity",
+        href: "/services/identity",
+      },
+    ],
   },
   {
     num: "02",
@@ -50,8 +77,8 @@ const getNavGroups = (t: any): NavGroup[] => [
       { label: t("links.portfolio"), id: "portfolio", href: "/portfolio" },
       { label: t("links.elitePacks"), id: "pack-siteweb", href: "/packs" },
       { label: t("links.directContact"), id: "contact-page", href: "/contact" },
-    ]
-  }
+    ],
+  },
 ];
 
 const getFooterLinks = (t: any) => [
@@ -64,10 +91,11 @@ const COMPANY_NAME = "Group Digital Concept";
 const COMPANY_EMAIL = "groupdigitalconcept@gmail.com";
 const COMPANY_PHONE = "+212 666 37 03 06";
 const COMPANY_LOCATION = "Plateau Bureau Al Amira III, Guéliz";
-const LOGO_URL = "https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png";
+const LOGO_URL =
+  "https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png";
 
 export const Footer: React.FC = () => {
-  const tFooter = useTranslations('footer');
+  const tFooter = useTranslations("footer");
   const router = useRouter();
   const locale = useLocale();
 
@@ -88,19 +116,19 @@ export const Footer: React.FC = () => {
     const checkMobile = () => setIsMobile(window.innerWidth < 1024);
 
     checkMobile();
-    window.addEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
     return () => {
       clearInterval(timer);
-      window.removeEventListener('resize', checkMobile);
+      window.removeEventListener("resize", checkMobile);
     };
   }, []);
 
   const marrakechTime = time.toLocaleTimeString(locale, {
-    timeZone: 'Africa/Casablanca',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false
+    timeZone: "Africa/Casablanca",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
   });
 
   const handleNavClick = (e: React.MouseEvent, href?: string) => {
@@ -109,9 +137,9 @@ export const Footer: React.FC = () => {
     if (!href) return;
 
     // Handle anchor links
-    if (href.startsWith('#')) {
+    if (href.startsWith("#")) {
       const element = document.getElementById(href.slice(1));
-      element?.scrollIntoView({ behavior: 'smooth' });
+      element?.scrollIntoView({ behavior: "smooth" });
       return;
     }
 
@@ -120,7 +148,7 @@ export const Footer: React.FC = () => {
   };
 
   const handleSocialClick = (url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   if (!isClient) {
@@ -129,7 +157,6 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="relative w-full bg-white dark:bg-[#020202] pt-24 md:pt-40 transition-colors duration-1000 overflow-hidden">
-
       {/* --- BACKGROUND AMBIENCE --- */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 right-0 w-[80vw] h-[60vw] bg-brand-red/[0.03] rounded-full blur-[150px]" />
@@ -140,7 +167,7 @@ export const Footer: React.FC = () => {
       {/* --- TYPOGRAPHIC HEADER --- */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-[1800px] mb-20 md:mb-32 relative z-10">
         <div className="flex flex-col items-center">
-          <h2 className="text-[12vw] lg:text-[10rem] xl:text-[13rem] font-black text-black dark:text-white tracking-tighter leading-none uppercase select-none opacity-5 dark:opacity-10 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap">
+          <h2 className="text-[12vw] lg:text-[10rem] xl:text-[13rem] font-black text-black dark:text-white tracking-tighter leading-none uppercase select-none opacity-5 dark:opacity-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap preserve-transform">
             {tFooter("backgroundText")}
           </h2>
           <div className="relative pt-12 md:pt-20">
@@ -154,8 +181,24 @@ export const Footer: React.FC = () => {
                   height={64}
                 />
               </div>
-              <h3 className="text-2xl md:text-4xl font-black text-black dark:text-white tracking-tight text-center uppercase"
-                dangerouslySetInnerHTML={{ __html: tFooter.raw("tagline").replace("Mastering", '<span class="text-brand-red italic">Mastering</span>').replace("Dominer", '<span class="text-brand-red italic">Dominer</span>').replace("Dominar", '<span class="text-brand-red italic">Dominar</span>') }}
+              <h3
+                className="text-2xl md:text-4xl font-black text-black dark:text-white tracking-tight text-center uppercase"
+                dangerouslySetInnerHTML={{
+                  __html: tFooter
+                    .raw("tagline")
+                    .replace(
+                      "Mastering",
+                      '<span class="text-brand-red italic">Mastering</span>'
+                    )
+                    .replace(
+                      "Dominer",
+                      '<span class="text-brand-red italic">Dominer</span>'
+                    )
+                    .replace(
+                      "Dominar",
+                      '<span class="text-brand-red italic">Dominar</span>'
+                    ),
+                }}
               />
             </div>
           </div>
@@ -165,7 +208,6 @@ export const Footer: React.FC = () => {
       {/* --- BENTO GRID SYSTEM --- */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-[1800px] relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-6">
-
           {/* 1. NAVIGATION HUB (Col 5) */}
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             {NAV_GROUPS.map((group, gIdx) => (
@@ -174,7 +216,9 @@ export const Footer: React.FC = () => {
                 className="bg-gray-50 dark:bg-white/[0.02] rounded-[2.5rem] p-8 md:p-10 border border-black/5 dark:border-white/5 flex flex-col gap-8 shadow-sm"
               >
                 <div className="flex items-center gap-4">
-                  <span className="text-xs font-black font-mono text-brand-red">{group.num}</span>
+                  <span className="text-xs font-black font-mono text-brand-red">
+                    {group.num}
+                  </span>
                   <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">
                     {group.title}
                   </h4>
@@ -253,7 +297,7 @@ export const Footer: React.FC = () => {
                 })}
               </div>
               <button
-                onClick={(e) => handleNavClick(e, '/contact')}
+                onClick={(e) => handleNavClick(e, "/contact")}
                 className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-brand-red hover:gap-4 transition-all"
               >
                 {tFooter("chat")} <ArrowUpRight size={14} />
@@ -274,17 +318,23 @@ export const Footer: React.FC = () => {
                   <p className="text-[8px] font-black uppercase tracking-widest opacity-50 mb-1">
                     {tFooter("marrakechTime")}
                   </p>
-                  <p className="text-xl font-mono font-black">{marrakechTime}</p>
+                  <p className="text-xl font-mono font-black">
+                    {marrakechTime}
+                  </p>
                 </div>
               </div>
 
               <h4 className="text-2xl font-black uppercase tracking-tighter leading-none mb-6">
-                {tFooter("address").split(", ").map((line, i) => (
-                  <React.Fragment key={i}>
-                    {line}
-                    {i !== tFooter("address").split(", ").length - 1 && <br />}
-                  </React.Fragment>
-                ))}
+                {tFooter("address")
+                  .split(", ")
+                  .map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      {i !== tFooter("address").split(", ").length - 1 && (
+                        <br />
+                      )}
+                    </React.Fragment>
+                  ))}
               </h4>
 
               <button
@@ -302,14 +352,12 @@ export const Footer: React.FC = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
 
       {/* --- UTILITY FOOTER BAR --- */}
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-[1800px] mt-20 md:mt-32 pb-12 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pt-10 border-t border-black/5 dark:border-white/10">
-
           <div className="flex items-center gap-6">
             <Image
               src={LOGO_URL}
@@ -319,12 +367,13 @@ export const Footer: React.FC = () => {
               height={24}
             />
             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-              © {new Date().getFullYear()} {COMPANY_NAME}. {tFooter("allRightsReserved")}
+              © {new Date().getFullYear()} {COMPANY_NAME}.{" "}
+              {tFooter("allRightsReserved")}
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            {FOOTER_LINKS.map(item => (
+            {FOOTER_LINKS.map((item) => (
               <a
                 key={item.id}
                 href="#"

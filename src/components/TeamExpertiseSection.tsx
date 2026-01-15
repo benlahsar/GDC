@@ -238,51 +238,6 @@ export const TeamExpertiseSection: React.FC = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-16">
-          <span className="text-xs font-bold uppercase">{tTeam("tag")}</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
-            {tTeam.rich("title", {
-              highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
-            })}
-          </h2>
-
-          <div className="space-y-8">
-            <div>
-              <h4 className="text-xl font-semibold mb-4">
-                {tTeam("expertise.tag")}
-              </h4>
-              <p className="text-gray-600 dark:text-gray-400">
-                {tTeam("expertise.desc")}
-              </p>
-            </div>
-
-            <div>
-              <h3
-                className="text-3xl md:text-4xl font-bold leading-tight mb-4"
-              >
-                {tTeam.rich("vision.title", {
-                  highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
-                })}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
-                {tTeam("vision.desc")}
-              </p>
-              <button className="px-6 py-3 rounded-full bg-brand-red text-white font-semibold hover:bg-brand-red/90 transition-all">
-                {tTeam("vision.cta")}
-              </button>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-semibold mb-4">
-                {tTeam("success.tag")}
-              </h4>
-              <p className="text-gray-600 dark:text-gray-400">
-                {tTeam("success.desc")}
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

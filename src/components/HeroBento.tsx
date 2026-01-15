@@ -22,6 +22,7 @@ import { AnimatedCounter } from "./AnimatedCounter";
 import { GoogleGenAI } from "@google/genai";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
 export const HeroBento: React.FC = () => {
   const locale = useLocale();
@@ -31,6 +32,11 @@ export const HeroBento: React.FC = () => {
   const tInnovation = useTranslations("innovation");
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
+  const { isLite } = usePerformanceMode();
+
+  // Use simplified view if Mobile OR Lite Mode
+  const isSimplified = isMobile || isLite;
+
   const CONTENT_DELAY_BASE = 300;
   const isRTL = locale === "ar";
 
@@ -90,12 +96,12 @@ export const HeroBento: React.FC = () => {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div
           className={`absolute top-[10%] left-[20%] w-[40vw] h-[40vw] bg-brand-red/[0.04] rounded-full blur-[120px] ${
-            !isMobile ? "animate-blob" : ""
+            !isSimplified ? "animate-blob" : ""
           }`}
         ></div>
         <div
           className={`absolute bottom-[10%] right-[10%] w-[35vw] h-[35vw] bg-blue-900/[0.05] rounded-full blur-[120px] ${
-            !isMobile ? "animate-blob animation-delay-2000" : ""
+            !isSimplified ? "animate-blob animation-delay-2000" : ""
           }`}
         ></div>
         <div className="absolute inset-0 bg-grid-pattern bg-[size:60px_60px] opacity-[0.03]"></div>
@@ -106,7 +112,7 @@ export const HeroBento: React.FC = () => {
           {/* CARD 1: MAIN HERO */}
           <div
             className={`col-span-1 md:col-span-2 lg:col-span-8 row-span-2 relative group min-h-[550px] lg:min-h-[750px] rounded-[40px] overflow-hidden glass-card transition-all duration-700 ${
-              !isMobile ? "opacity-0 animate-enter-zoom" : "opacity-100"
+              !isSimplified ? "opacity-0 animate-enter-zoom" : "opacity-100"
             }`}
           >
             <div className="absolute inset-0 z-0">
@@ -114,7 +120,7 @@ export const HeroBento: React.FC = () => {
                 src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2832&auto=format&fit=crop"
                 alt="Digital Leadership"
                 className={`w-full h-full object-cover opacity-20 dark:opacity-30 transition-transform duration-[2s] ease-out mix-blend-overlay no-theme-change ${
-                  !isMobile ? "group-hover:scale-105" : ""
+                  !isSimplified ? "group-hover:scale-105" : ""
                 }`}
               />
             </div>
@@ -126,7 +132,7 @@ export const HeroBento: React.FC = () => {
             >
               <div
                 className={`mb-6 md:mb-8 ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE}ms` }}
               >
@@ -142,7 +148,7 @@ export const HeroBento: React.FC = () => {
                 <div className="relative w-fit pr-5 pb-1">
                   <span
                     className={`${
-                      isMobile
+                      isSimplified
                         ? "inline"
                         : "invisible whitespace-nowrap select-none"
                     }`}
@@ -150,7 +156,7 @@ export const HeroBento: React.FC = () => {
                   >
                     {tHero("line1")}
                   </span>
-                  {!isMobile && (
+                  {!isSimplified && (
                     <span
                       className={`absolute top-0 h-full overflow-hidden whitespace-nowrap border-r-4 border-transparent ${
                         isRTL ? "right-0" : "left-0"
@@ -170,7 +176,7 @@ export const HeroBento: React.FC = () => {
                 <div className="relative w-fit pr-5 pb-1">
                   <span
                     className={`${
-                      isMobile
+                      isSimplified
                         ? "inline text-brand-red"
                         : "invisible whitespace-nowrap select-none"
                     }`}
@@ -178,7 +184,7 @@ export const HeroBento: React.FC = () => {
                   >
                     {tHero("line2")}
                   </span>
-                  {!isMobile && (
+                  {!isSimplified && (
                     <span
                       className={`absolute top-0 h-full overflow-hidden whitespace-nowrap border-r-4 border-transparent ${
                         isRTL ? "right-0" : "left-0"
@@ -200,7 +206,7 @@ export const HeroBento: React.FC = () => {
                 <div className="relative w-fit pr-5 pb-1">
                   <span
                     className={`${
-                      isMobile
+                      isSimplified
                         ? "inline"
                         : "invisible whitespace-nowrap select-none"
                     }`}
@@ -208,7 +214,7 @@ export const HeroBento: React.FC = () => {
                   >
                     {tHero("line3")}
                   </span>
-                  {!isMobile && (
+                  {!isSimplified && (
                     <span
                       className={`absolute top-0 h-full overflow-hidden whitespace-nowrap border-r-4 border-transparent ${
                         isRTL ? "right-0" : "left-0"
@@ -228,7 +234,7 @@ export const HeroBento: React.FC = () => {
                 <div className="relative w-fit pr-5 pb-1">
                   <span
                     className={`${
-                      isMobile
+                      isSimplified
                         ? "inline text-brand-red"
                         : "invisible whitespace-nowrap select-none"
                     }`}
@@ -236,7 +242,7 @@ export const HeroBento: React.FC = () => {
                   >
                     {tHero("line4")}
                   </span>
-                  {!isMobile && (
+                  {!isSimplified && (
                     <span
                       className={`absolute top-0 h-full overflow-hidden whitespace-nowrap border-r-4 border-transparent ${
                         isRTL ? "right-0" : "left-0"
@@ -255,14 +261,14 @@ export const HeroBento: React.FC = () => {
 
               <div
                 className={`w-full h-[1px] bg-gradient-to-r from-black/20 dark:from-white/10 to-transparent mb-8 ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 1400}ms` }}
               ></div>
 
               <p
                 className={`text-lg sm:text-2xl md:text-3xl text-gray-800 dark:text-gray-400 max-w-3xl font-light leading-relaxed mb-10 ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 1500}ms` }}
               >
@@ -271,7 +277,7 @@ export const HeroBento: React.FC = () => {
 
               <div
                 className={`flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 1600}ms` }}
               >
@@ -301,7 +307,7 @@ export const HeroBento: React.FC = () => {
           {/* CARD 2: STATISTICS */}
           <BentoCard
             className={`col-span-1 md:col-span-1 lg:col-span-4 min-h-[280px] glass-card ${
-              !isMobile ? "opacity-0 animate-enter-right" : "opacity-100"
+              !isSimplified ? "opacity-0 animate-enter-right" : "opacity-100"
             }`}
             style={{ animationDelay: "100ms" }}
             noPadding
@@ -310,7 +316,7 @@ export const HeroBento: React.FC = () => {
               <div
                 className={`flex items-center justify-between mb-4 ${
                   isRTL ? "flex-row-reverse" : ""
-                } ${!isMobile ? "opacity-0 animate-fade-in-up" : ""}`}
+                } ${!isSimplified ? "opacity-0 animate-fade-in-up" : ""}`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 200}ms` }}
               >
                 <h3
@@ -323,7 +329,7 @@ export const HeroBento: React.FC = () => {
                 </h3>
                 <div className="flex items-center gap-2 px-3 py-1 bg-emerald-500/10 rounded-full border border-emerald-500/20">
                   <span className="relative flex h-2 w-2">
-                    {!isMobile && (
+                    {!isSimplified && (
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
                     )}
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -336,13 +342,13 @@ export const HeroBento: React.FC = () => {
 
               <div
                 className={`grid grid-cols-2 gap-3 h-full pb-2 ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 }`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 300}ms` }}
               >
                 <div
                   className={`group relative overflow-hidden rounded-[24px] bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/5 p-4 flex flex-col justify-between transition-all duration-500 ${
-                    !isMobile
+                    !isSimplified
                       ? "hover:scale-[1.05] hover:border-brand-red/30"
                       : ""
                   }`}
@@ -364,7 +370,7 @@ export const HeroBento: React.FC = () => {
 
                 <div
                   className={`group relative overflow-hidden rounded-[24px] bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/5 p-4 flex flex-col justify-between transition-all duration-500 ${
-                    !isMobile
+                    !isSimplified
                       ? "hover:scale-[1.05] hover:border-blue-500/30"
                       : ""
                   }`}
@@ -385,7 +391,7 @@ export const HeroBento: React.FC = () => {
 
                 <div
                   className={`group relative overflow-hidden rounded-[24px] bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/5 p-4 flex flex-col justify-between transition-all duration-500 ${
-                    !isMobile
+                    !isSimplified
                       ? "hover:scale-[1.05] hover:border-purple-500/30"
                       : ""
                   }`}
@@ -406,7 +412,7 @@ export const HeroBento: React.FC = () => {
 
                 <div
                   className={`group relative overflow-hidden rounded-[24px] bg-white/50 dark:bg-white/[0.03] border border-white/60 dark:border-white/5 p-4 flex flex-col justify-between transition-all duration-500 ${
-                    !isMobile
+                    !isSimplified
                       ? "hover:scale-[1.05] hover:border-amber-500/30"
                       : ""
                   }`}
@@ -428,7 +434,7 @@ export const HeroBento: React.FC = () => {
           {/* CARD 3: AI STRATEGY LAB */}
           <BentoCard
             className={`col-span-1 md:col-span-1 lg:col-span-4 min-h-[300px] glass-card group/ai ${
-              !isMobile ? "opacity-0 animate-enter-bottom" : "opacity-100"
+              !isSimplified ? "opacity-0 animate-enter-bottom" : "opacity-100"
             }`}
             style={{ animationDelay: "200ms" }}
             noPadding
@@ -437,7 +443,7 @@ export const HeroBento: React.FC = () => {
               <div
                 className={`flex items-center justify-between mb-6 ${
                   isRTL ? "flex-row-reverse" : ""
-                } ${!isMobile ? "opacity-0 animate-fade-in-up" : ""}`}
+                } ${!isSimplified ? "opacity-0 animate-fade-in-up" : ""}`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 400}ms` }}
               >
                 <h3
@@ -447,7 +453,7 @@ export const HeroBento: React.FC = () => {
                 >
                   <Cpu
                     className={`text-brand-red ${
-                      !isMobile ? "group-hover/ai:animate-spin" : ""
+                      !isSimplified ? "group-hover/ai:animate-spin" : ""
                     }`}
                     size={16}
                   />{" "}
@@ -456,7 +462,7 @@ export const HeroBento: React.FC = () => {
                 <Sparkles
                   size={14}
                   className={`text-brand-red ${
-                    !isMobile ? "animate-pulse" : ""
+                    !isSimplified ? "animate-pulse" : ""
                   }`}
                 />
               </div>
@@ -465,7 +471,7 @@ export const HeroBento: React.FC = () => {
                 <div
                   className={`flex-1 flex flex-col gap-4 ${
                     isRTL ? "text-right" : ""
-                  } ${!isMobile ? "opacity-0 animate-fade-in-up" : ""}`}
+                  } ${!isSimplified ? "opacity-0 animate-fade-in-up" : ""}`}
                   style={{ animationDelay: `${CONTENT_DELAY_BASE + 500}ms` }}
                 >
                   <p className="text-xs font-bold text-black dark:text-white mb-2 leading-relaxed">
@@ -537,14 +543,14 @@ export const HeroBento: React.FC = () => {
           {/* CARD 4: INNOVATION LAB */}
           <BentoCard
             className={`col-span-1 md:col-span-2 lg:col-span-12 xl:col-span-12 min-h-[220px] glass-card group overflow-hidden ${
-              !isMobile ? "opacity-0 animate-enter-bottom" : "opacity-100"
+              !isSimplified ? "opacity-0 animate-enter-bottom" : "opacity-100"
             }`}
             style={{ animationDelay: "300ms" }}
             noPadding
           >
             <div className="absolute inset-0 pointer-events-none">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.1),rgba(0,0,0,0))]" />
-              {!isMobile && (
+              {!isSimplified && (
                 <div className="absolute right-0 bottom-0 w-1/2 h-full bg-gradient-to-l from-brand-red/5 to-transparent"></div>
               )}
               <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent"></div>
@@ -557,33 +563,33 @@ export const HeroBento: React.FC = () => {
             >
               <div
                 className={`lg:col-span-2 xl:col-span-1 flex justify-center lg:justify-start ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 } ${isRTL ? "lg:order-2" : ""}`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 600}ms` }}
               >
                 <div className="relative">
                   <div
                     className={`w-20 h-20 md:w-24 md:h-24 rounded-[32px] bg-white dark:bg-white/5 border border-white/50 dark:border-white/10 backdrop-blur-md flex items-center justify-center relative z-10 shadow-2xl ${
-                      !isMobile ? "animate-float" : ""
+                      !isSimplified ? "animate-float" : ""
                     }`}
                   >
                     <Rocket className="text-black dark:text-white w-10 h-10" />
                   </div>
                   <div
                     className={`absolute -inset-4 bg-brand-red/20 blur-2xl rounded-full ${
-                      !isMobile ? "animate-pulse-slow" : ""
+                      !isSimplified ? "animate-pulse-slow" : ""
                     }`}
                   ></div>
                   <div
                     className={`absolute -top-2 -right-2 p-2 bg-white dark:bg-black border border-brand-red/20 rounded-xl shadow-xl backdrop-blur-sm ${
-                      !isMobile ? "animate-bounce" : ""
+                      !isSimplified ? "animate-bounce" : ""
                     }`}
                   >
                     <Cpu size={14} className="text-brand-red" />
                   </div>
                   <div
                     className={`absolute -bottom-1 -left-2 p-2 bg-white dark:bg-black border border-blue-500/20 rounded-xl shadow-xl backdrop-blur-sm ${
-                      !isMobile ? "animate-bounce animation-delay-2000" : ""
+                      !isSimplified ? "animate-bounce animation-delay-2000" : ""
                     }`}
                   >
                     <Globe size={14} className="text-blue-500" />
@@ -593,7 +599,7 @@ export const HeroBento: React.FC = () => {
 
               <div
                 className={`lg:col-span-7 xl:col-span-8 text-center lg:text-left ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 } ${isRTL ? "lg:order-1" : ""}`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 700}ms` }}
               >
@@ -624,14 +630,14 @@ export const HeroBento: React.FC = () => {
 
               <div
                 className={`lg:col-span-3 xl:col-span-3 flex justify-center lg:justify-end ${
-                  !isMobile ? "opacity-0 animate-fade-in-up" : ""
+                  !isSimplified ? "opacity-0 animate-fade-in-up" : ""
                 } ${isRTL ? "lg:order-0" : ""}`}
                 style={{ animationDelay: `${CONTENT_DELAY_BASE + 800}ms` }}
               >
                 <button
                   onClick={() => router.push("/agency")}
                   className={`group relative overflow-hidden bg-black dark:bg-white text-white dark:text-black font-black uppercase tracking-widest py-5 px-10 rounded-2xl transition-all duration-500 whitespace-nowrap ${
-                    !isMobile ? "hover:shadow-2xl hover:scale-110" : ""
+                    !isSimplified ? "hover:shadow-2xl hover:scale-110" : ""
                   }`}
                 >
                   <span className="relative z-10 flex items-center gap-4 text-xs md:text-sm">
@@ -639,7 +645,7 @@ export const HeroBento: React.FC = () => {
                     <ArrowRight
                       size={20}
                       className={`transition-transform ${
-                        !isMobile ? "group-hover:translate-x-2" : ""
+                        !isSimplified ? "group-hover:translate-x-2" : ""
                       } ${isRTL ? "rotate-180" : ""}`}
                     />
                   </span>

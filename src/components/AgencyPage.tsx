@@ -602,13 +602,8 @@ export const AgencyPage: React.FC = () => {
             >
               <div
                 className={`
-                w-full transition-all duration-1000
+                w-full
                 ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}
-                ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : `opacity-0 ${!isMobile ? "translate-y-20" : ""}`
-                }
               `}
               >
                 <div className="relative group/code-window">
@@ -702,18 +697,6 @@ export const AgencyPage: React.FC = () => {
                     ? "lg:order-1 lg:items-end"
                     : "lg:order-2 lg:items-start"
                 }
-                ${
-                  isVisible
-                    ? "opacity-100 translate-x-0"
-                    : `opacity-0 ${
-                        !isMobile
-                          ? index % 2 === 1
-                            ? "-translate-x-20"
-                            : "translate-x-20"
-                          : ""
-                      }`
-                }
-                transition-all duration-1000 delay-300
               `}
               >
                 <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-black/10 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-md shadow-lg">

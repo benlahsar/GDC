@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { Flag, Star, Globe, Zap, Trophy, Rocket, Layers } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
 const MILESTONES = [
   {
@@ -69,6 +70,7 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
   // Merged internal and prop-based mobile detection
   const [isMobileInternal, setIsMobileInternal] = useState(false);
   const isMobile = isMobileProp ?? isMobileInternal;
+  const { isLite } = usePerformanceMode();
 
   // --- Calculate Parabolic Arc ---
   const calculateGeometry = () => {
@@ -151,7 +153,9 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
         {/* Header */}
         <div
           className={`text-center mb-16 md:mb-24 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            isVisible || isLite
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
           }`}
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm">
@@ -195,10 +199,10 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
               ref={pathRef}
               d={arcPath}
               fill="none"
-              stroke="url(#arcGradient)"
+              stroke={isLite ? "#FF0000" : "url(#arcGradient)"}
               strokeWidth="4"
               strokeDasharray={pathLength}
-              strokeDashoffset={isVisible ? 0 : pathLength}
+              strokeDashoffset={isVisible || isLite ? 0 : pathLength}
               style={{
                 filter: "drop-shadow(0px 0px 15px rgba(185,28,28,0.4))",
                 transition: "stroke-dashoffset 2s ease-out",
@@ -218,9 +222,9 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                 key={index}
                 className={`
                                 absolute group
-                                transition-all duration-700 ease-out
+                                transition-all duration-700 ease-out preserve-transform
                                 ${
-                                  isVisible
+                                  isVisible || isLite
                                     ? "opacity-100 scale-100 translate-y-0"
                                     : "opacity-0 scale-0 translate-y-10"
                                 }
@@ -228,9 +232,10 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                 style={{
                   left: pos.x,
                   top: pos.y,
-                  transform: isVisible
-                    ? "translate(-50%, -50%)"
-                    : "translate(-50%, 50px)",
+                  transform:
+                    isVisible || isLite
+                      ? "translate(-50%, -50%)"
+                      : "translate(-50%, 50px)",
                   transitionDelay: `${delay + 500}ms`,
                 }}
               >
@@ -238,7 +243,11 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                 <div className="relative z-20 flex items-center justify-center">
                   {/* The Diamond */}
                   <div
-                    className={`w-6 h-6 rotate-45 bg-gradient-to-br ${item.gradient} border-2 border-white dark:border-black shadow-lg z-20 transition-transform duration-300 group-hover:scale-150`}
+                    className={`w-6 h-6 rotate-45 ${
+                      isLite
+                        ? "bg-brand-red"
+                        : `bg-gradient-to-br ${item.gradient}`
+                    } border-2 border-white dark:border-black shadow-lg z-20 transition-transform duration-300 group-hover:scale-150`}
                   ></div>
                   {/* Glow Effect */}
                   <div
@@ -249,8 +258,12 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                 {/* VERTICAL LINE CONNECTOR (Animates Height) */}
                 <div
                   className={`
-                                absolute left-1/2 -translate-x-1/2 w-[2px] bg-gradient-to-b ${item.gradient} opacity-40
-                                transition-all duration-700 h-16 top-3 group-hover:opacity-100 group-hover:h-24
+                                absolute left-1/2 -translate-x-1/2 w-[2px] ${
+                                  isLite
+                                    ? "bg-brand-red"
+                                    : `bg-gradient-to-b ${item.gradient}`
+                                } opacity-40
+                                transition-all duration-700 h-16 top-3 group-hover:opacity-100 group-hover:h-24 preserve-transform
                             `}
                   style={{ transitionDelay: `${delay + 700}ms` }} // Connector grows after point appears
                 ></div>
@@ -260,7 +273,7 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                   className={`
                                     absolute left-1/2 -translate-x-1/2 w-64
                                     top-20
-                                    transition-all duration-500 ease-out
+                                    transition-all duration-500 ease-out preserve-transform
                                     group-hover:-translate-y-4 group-hover:top-24
                                 `}
                 >
@@ -275,7 +288,11 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                   >
                     {/* Left Colored Strip with Rotated Year */}
                     <div
-                      className={`w-12 bg-gradient-to-b ${item.gradient} flex items-center justify-center py-4 relative overflow-hidden group-hover:w-14 transition-all duration-300`}
+                      className={`w-12 ${
+                        isLite
+                          ? "bg-brand-red"
+                          : `bg-gradient-to-b ${item.gradient}`
+                      } flex items-center justify-center py-4 relative overflow-hidden group-hover:w-14 transition-all duration-300`}
                     >
                       <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <span className="text-white font-black tracking-widest -rotate-90 whitespace-nowrap text-sm opacity-90">
@@ -310,7 +327,13 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
         {/* --- MOBILE VERTICAL TIMELINE --- */}
         <div className="md:hidden relative px-2">
           {/* Vertical Line */}
-          <div className="absolute left-6 top-0 bottom-0 w-[2px] bg-gradient-to-b from-red-700 to-red-800 opacity-30"></div>
+          <div
+            className={`absolute left-6 top-0 bottom-0 w-[2px] ${
+              isLite
+                ? "bg-brand-red"
+                : "bg-gradient-to-b from-red-700 to-red-800"
+            } opacity-30`}
+          ></div>
 
           <div className="space-y-8">
             {MILESTONES.map((item, index) => {
@@ -321,7 +344,11 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                   <div
                     className={`
                                 absolute left-[23px] top-6 -translate-x-1/2 w-4 h-4 rotate-45 
-                                bg-gradient-to-br ${item.gradient} 
+                                ${
+                                  isLite
+                                    ? "bg-brand-red"
+                                    : `bg-gradient-to-br ${item.gradient}`
+                                } 
                                 border-2 border-white dark:border-black shadow-md z-10
                             `}
                   ></div>
@@ -335,7 +362,11 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                             `}
                   >
                     <div
-                      className={`w-10 bg-gradient-to-b ${item.gradient} flex items-center justify-center py-4`}
+                      className={`w-10 ${
+                        isLite
+                          ? "bg-brand-red"
+                          : `bg-gradient-to-b ${item.gradient}`
+                      } flex items-center justify-center py-4`}
                     >
                       <span className="text-white font-bold text-xs -rotate-90 whitespace-nowrap">
                         {translatedItem.year}
