@@ -133,14 +133,14 @@ const MemberCard: React.FC<{
     member.category === "executive"
       ? Crown
       : member.category === "dev"
-      ? Code2
-      : Palette;
+        ? Code2
+        : Palette;
   const accentColor =
     member.category === "executive"
       ? "brand-red"
       : member.category === "dev"
-      ? "blue-500"
-      : "purple-500";
+        ? "blue-500"
+        : "purple-500";
   const isResponsable = member.level === 1;
 
   return (
@@ -172,13 +172,7 @@ const MemberCard: React.FC<{
       )}
 
       <div
-        className={`
-        relative w-[260px] h-[400px] md:w-[320px] md:h-[500px] rounded-[48px] overflow-hidden
-        bg-white dark:bg-[#0A0A0A] border-2 border-black/5 dark:border-white/5
-        shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]
-        md:group-hover:-translate-y-6 md:group-hover:border-${accentColor}/40
-        isolate
-      `}
+        className={`relative w-[260px] h-[400px] md:w-[320px] md:h-[500px] rounded-[48px] overflow-hidden bg-white dark:bg-[#0A0A0A] border-2 border-black/5 dark:border-white/5 shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] md:group-hover:-translate-y-6 md:group-hover:border-${accentColor}/40 isolate`}
         style={{
           WebkitMaskImage: "-webkit-radial-gradient(white, black)", // Fix for border-radius flicker on transforms
           backfaceVisibility: "hidden",
@@ -337,13 +331,14 @@ export const TeamPage: React.FC = () => {
         {/* --- THE ORGANIZATION TREE: MASTER DESIGN --- */}
         <div className="flex flex-col items-center">
           {/* LEVEL 0: THE VISIONARY BOSS */}
-          <div className="relative mb-20 md:mb-40 group">
+          <div className="relative mb-20 md:mb-40 group flex flex-col items-center">
             {ceo && <MemberCard member={ceo} delay={100} isMobile={isMobile} />}
 
             {/* Trunk Line Down (Glowing Red) */}
-            <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 w-[2px] md:w-[3px] h-12 md:h-32 bg-gradient-to-b from-brand-red via-brand-red/40 to-transparent shadow-[0_0_20px_rgba(255,0,0,0.4)]`}
-            >
+            <div className="absolute top-full left-0 w-full h-20 md:h-40 pointer-events-none">
+              <div
+                className={`absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-brand-red via-brand-red/40 to-transparent shadow-[0_0_20px_rgba(255,0,0,0.4)]`}
+              ></div>
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 md:w-4 md:h-4 bg-brand-red rounded-full blur-[8px] animate-pulse"></div>
             </div>
           </div>
@@ -351,18 +346,18 @@ export const TeamPage: React.FC = () => {
           {/* LEVEL 1 & 2 BRANCHES */}
           <div className="relative w-full max-w-[1700px]">
             {/* Main Horizontal Bridge Line (Technical Connectivity) */}
-            <div className="hidden lg:block absolute top-0 left-[22%] right-[22%] h-[3px] bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent">
+            <div className="hidden lg:block absolute top-0 left-[22%] right-[22%] h-[3px] bg-gradient-to-r from-transparent via-brand-red/20 to-transparent">
               {/* Visual Connector Pulse Nodes */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-black dark:bg-white rounded-full"></div>
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-black dark:bg-white rounded-full"></div>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-brand-red rounded-full shadow-[0_0_15px_rgba(255,0,0,0.5)]"></div>
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-brand-red rounded-full shadow-[0_0_15px_rgba(255,0,0,0.5)]"></div>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 md:gap-32 lg:gap-8">
               {/* BRANCH A: DEVELOPMENT (Left) */}
               <div className="flex flex-col items-center relative">
-                <div className="hidden lg:block w-[3px] h-16 bg-gradient-to-b from-black/10 dark:from-white/10 to-transparent"></div>
+                <div className="hidden lg:block w-[3px] h-16 bg-gradient-to-b from-brand-red/20 to-transparent"></div>
 
-                <div className="relative pt-6 mb-20 md:mb-32">
+                <div className="relative pt-6 mb-20 md:mb-32 flex flex-col items-center">
                   {devLead && (
                     <MemberCard
                       member={devLead}
@@ -370,17 +365,18 @@ export const TeamPage: React.FC = () => {
                       isMobile={isMobile}
                     />
                   )}
-                  {/* Trunk to Team (Blue Glow for Dev) */}
-                  <div
-                    className={`absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-12 md:h-32 bg-gradient-to-b from-blue-500/60 via-blue-500/20 to-transparent`}
-                  >
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-blue-500 rounded-full blur-[6px] animate-pulse"></div>
+                  {/* Trunk to Team (Red Glow) */}
+                  <div className="absolute top-full left-0 w-full h-12 md:h-32 pointer-events-none">
+                    <div
+                      className={`absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-brand-red via-brand-red/40 to-transparent shadow-[0_0_20px_rgba(255,0,0,0.4)]`}
+                    ></div>
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 md:w-4 md:h-4 bg-brand-red rounded-full blur-[8px] animate-pulse"></div>
                   </div>
                 </div>
 
                 {/* Level 2 Dev Team */}
                 <div className="relative w-full px-4">
-                  <div className="hidden lg:block absolute top-0 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
+                  <div className="hidden lg:block absolute top-0 left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-transparent via-brand-red/20 to-transparent"></div>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-8 pt-12">
                     {devTeam.map((m, i) => (
@@ -388,7 +384,7 @@ export const TeamPage: React.FC = () => {
                         key={m.name}
                         className="relative flex flex-col items-center"
                       >
-                        <div className="hidden lg:block absolute top-[-60px] left-1/2 -translate-x-1/2 w-[1px] h-16 bg-blue-500/10"></div>
+                        <div className="hidden lg:block absolute top-[-60px] left-1/2 -translate-x-1/2 w-[1px] h-16 bg-brand-red/10"></div>
                         <MemberCard
                           member={m}
                           delay={isMobile ? 0 : 500 + i * 150}
@@ -402,9 +398,9 @@ export const TeamPage: React.FC = () => {
 
               {/* BRANCH B: DESIGN (Right) */}
               <div className="flex flex-col items-center relative mt-20 lg:mt-0">
-                <div className="hidden lg:block w-[3px] h-16 bg-gradient-to-b from-black/10 dark:from-white/10 to-transparent"></div>
+                <div className="hidden lg:block w-[3px] h-16 bg-gradient-to-b from-brand-red/20 to-transparent"></div>
 
-                <div className="relative pt-6 mb-20 md:mb-32">
+                <div className="relative pt-6 mb-20 md:mb-32 flex flex-col items-center">
                   {designLead && (
                     <MemberCard
                       member={designLead}
@@ -412,17 +408,18 @@ export const TeamPage: React.FC = () => {
                       isMobile={isMobile}
                     />
                   )}
-                  {/* Trunk to Team (Purple Glow for Design) */}
-                  <div
-                    className={`absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-12 md:h-32 bg-gradient-to-b from-purple-500/60 via-purple-500/20 to-transparent`}
-                  >
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 bg-purple-500 rounded-full blur-[6px] animate-pulse"></div>
+                  {/* Trunk to Team (Red Glow) */}
+                  <div className="absolute top-full left-0 w-full h-12 md:h-32 pointer-events-none">
+                    <div
+                      className={`absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-brand-red via-brand-red/40 to-transparent shadow-[0_0_20px_rgba(255,0,0,0.4)]`}
+                    ></div>
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 md:w-4 md:h-4 bg-brand-red rounded-full blur-[8px] animate-pulse"></div>
                   </div>
                 </div>
 
                 {/* Level 2 Design Team */}
                 <div className="relative w-full max-w-[900px] px-4">
-                  <div className="hidden lg:block absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
+                  <div className="hidden lg:block absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-brand-red/20 to-transparent"></div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 pt-12">
                     {designTeam.map((m, i) => (
@@ -430,7 +427,7 @@ export const TeamPage: React.FC = () => {
                         key={m.name}
                         className="relative flex flex-col items-center"
                       >
-                        <div className="hidden lg:block absolute top-[-60px] left-1/2 -translate-x-1/2 w-[1px] h-16 bg-purple-500/10"></div>
+                        <div className="hidden lg:block absolute top-[-60px] left-1/2 -translate-x-1/2 w-[1px] h-16 bg-brand-red/10"></div>
                         <MemberCard
                           member={m}
                           delay={isMobile ? 0 : 500 + i * 150}

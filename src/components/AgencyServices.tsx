@@ -232,15 +232,11 @@ export const AgencyServices: React.FC<{ isMobile?: boolean }> = ({
 
           <div className="lg:col-span-7 relative z-20 pl-0 lg:pl-16 xl:pl-24">
             <div
-              className={`
-                    grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5
-                    transition-all duration-500 ease-out 
-                    ${
-                      isAnimating
-                        ? `opacity-0 ${!isMobile ? "translate-x-20" : ""}`
-                        : "opacity-100 translate-x-0"
-                    }
-                `}
+              className={`grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 transition-all duration-500 ease-out ${
+                isAnimating
+                  ? `opacity-0 ${!isMobile ? "translate-x-20" : ""}`
+                  : "opacity-100 translate-x-0"
+              }`}
             >
               <div className="md:col-span-2 p-6 md:p-8 rounded-[24px] bg-white/10 lg:backdrop-blur-md border border-white/20 text-white flex items-center justify-between shadow-xl">
                 <div className="flex flex-col">

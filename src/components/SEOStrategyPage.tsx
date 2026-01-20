@@ -167,16 +167,9 @@ export const SEOStrategyPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-fr">
           {/* 1. MAIN HEADLINE CARD */}
           <div
-            className={`
-                col-span-1 lg:col-span-8 row-span-2
-                bg-white dark:bg-[#0A0A0A]/60 backdrop-blur-xl 
-                rounded-[40px] p-8 md:p-12 lg:p-20
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-center
-                relative overflow-hidden group
-                shadow-2xl dark:shadow-none
-                ${!isMobile ? "opacity-0 animate-enter-left" : "opacity-100"}
-            `}
+            className={`col-span-1 lg:col-span-8 row-span-2 bg-white dark:bg-[#0A0A0A]/60 backdrop-blur-xl rounded-[40px] p-8 md:p-12 lg:p-20 border border-black/5 dark:border-white/10 flex flex-col justify-center relative overflow-hidden group shadow-2xl dark:shadow-none ${
+              !isMobile ? "opacity-0 animate-enter-left" : "opacity-100"
+            }`}
           >
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/[0.02] rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
@@ -238,19 +231,11 @@ export const SEOStrategyPage: React.FC = () => {
 
           {/* 2. REAL INTERACTIVE SCANNER (GDC HUB) */}
           <div
-            className={`
-                col-span-1 lg:col-span-4 row-span-2
-                relative rounded-[40px] overflow-hidden
-                bg-[#050505] text-white
-                border border-white/5 shadow-2xl
-                group flex flex-col
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-enter-right delay-200"
-                    : "opacity-100"
-                }
-                min-h-[650px]
-            `}
+            className={`col-span-1 lg:col-span-4 row-span-2 relative rounded-[40px] overflow-hidden bg-[#050505] text-white border border-white/5 shadow-2xl group flex flex-col ${
+              !isMobile
+                ? "opacity-0 animate-enter-right delay-200"
+                : "opacity-100"
+            } min-h-[650px]`}
           >
             <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
             <div
@@ -592,17 +577,11 @@ export const SEOStrategyPage: React.FC = () => {
 
           {/* 3. FEATURE: AUDIT */}
           <div
-            className={`
-                col-span-1 lg:col-span-4
-                bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-between group transition-all
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
-                    : "opacity-100"
-                }
-            `}
+            className={`col-span-1 lg:col-span-4 bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8 border border-black/5 dark:border-white/10 flex flex-col justify-between group transition-all ${
+              !isMobile
+                ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
+                : "opacity-100"
+            }`}
           >
             <div
               className={`w-12 h-12 rounded-xl bg-gray-100 dark:bg-white/5 flex items-center justify-center text-black dark:text-white border border-black/5 transition-colors duration-300 ${
@@ -629,17 +608,11 @@ export const SEOStrategyPage: React.FC = () => {
 
           {/* 4. FEATURE: CONTENT */}
           <div
-            className={`
-                col-span-1 lg:col-span-4
-                bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-between group transition-all
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
-                    : "opacity-100"
-                }
-            `}
+            className={`col-span-1 lg:col-span-4 bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8 border border-black/5 dark:border-white/10 flex flex-col justify-between group transition-all ${
+              !isMobile
+                ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
+                : "opacity-100"
+            }`}
           >
             <div
               className={`w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 border border-blue-500/20 transition-colors duration-300 ${
@@ -666,17 +639,11 @@ export const SEOStrategyPage: React.FC = () => {
 
           {/* 5. FEATURE: AUTHORITY */}
           <div
-            className={`
-                col-span-1 lg:col-span-4
-                bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-between group transition-all
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-500 hover:-translate-y-1"
-                    : "opacity-100"
-                }
-            `}
+            className={`col-span-1 lg:col-span-4 bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8 border border-black/5 dark:border-white/10 flex flex-col justify-between group transition-all ${
+              !isMobile
+                ? "opacity-0 animate-fade-in-up delay-500 hover:-translate-y-1"
+                : "opacity-100"
+            }`}
           >
             <div
               className={`w-12 h-12 rounded-xl bg-brand-red/10 flex items-center justify-center text-brand-red border border-brand-red/20 transition-colors duration-300 ${

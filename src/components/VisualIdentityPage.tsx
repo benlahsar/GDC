@@ -655,14 +655,11 @@ export const VisualIdentityPage: React.FC = () => {
                         className="relative z-10 flex flex-col items-center gap-4 bg-white dark:bg-[#080808] px-2 transition-colors duration-500"
                       >
                         <div
-                          className={`
-                                  w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold border-2 transition-all duration-500
-                                  ${
-                                    isActive || isCompleted
-                                      ? "bg-brand-red border-brand-red text-white scale-110 shadow-lg"
-                                      : "bg-[#CFCFD1] dark:bg-[#333] border-transparent text-white"
-                                  }
-                              `}
+                          className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold border-2 transition-all duration-500 ${
+                            isActive || isCompleted
+                              ? "bg-brand-red border-brand-red text-white scale-110 shadow-lg"
+                              : "bg-[#CFCFD1] dark:bg-[#333] border-transparent text-white"
+                          }`}
                         >
                           {isCompleted ? (
                             <Check size={14} strokeWidth={3} />
@@ -1100,14 +1097,12 @@ export const VisualIdentityPage: React.FC = () => {
           </div>
         </div>
 
-        <style>{`
-                    @keyframes flowDown { 0% { background-position: 0% 0%; } 100% { background-position: 0% 100%; } }
-                    @keyframes shine { 100% { left: 125%; } }
-                    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
-                    .animate-float { animation: float 4s ease-in-out infinite; }
-                    @keyframes enterZoom { 0% { opacity: 0; transform: scale(0.85) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
-                    .animate-enter-zoom { animation: enterZoom 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-                `}</style>
+        <style>{`@keyframes flowDown { 0% { background-position: 0% 0%; } 100% { background-position: 0% 100%; } }
+                @keyframes shine { 100% { left: 125%; } }
+                @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+                .animate-float { animation: float 4s ease-in-out infinite; }
+                @keyframes enterZoom { 0% { opacity: 0; transform: scale(0.85) translateY(20px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+                .animate-enter-zoom { animation: enterZoom 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }`}</style>
       </section>
     </div>
   );

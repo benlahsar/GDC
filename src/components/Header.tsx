@@ -827,7 +827,7 @@ const ContactDropdown: React.FC<{
                   href: "/contact",
                 })
               }
-              className="group/btn relative w-full py-6 bg-black dark:bg:white text-white dark:text-black rounded-2xl flex items-center justify-center gap-4 font-black uppercase text-[10px] tracking-[0.3em] overflow-hidden transition-all hover:scale-[1.02] shadow-xl"
+              className="group/btn relative w-full py-6 bg-black dark:bg-black text-white dark:text-white rounded-2xl flex items-center justify-center gap-4 font-black uppercase text-[10px] tracking-[0.3em] overflow-hidden transition-all hover:scale-[1.02] shadow-xl"
             >
               <span className="relative z-10">DÉMARRER UN PROJET</span>
               <ArrowUpRight

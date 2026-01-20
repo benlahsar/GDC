@@ -108,14 +108,11 @@ export const ServicesSection: React.FC = () => {
                 >
                   {/* Content */}
                   <span
-                    className={`
-                                text-2xl md:text-5xl font-black uppercase tracking-tight
-                                transition-all duration-300
-                                ${item.style === "outline"
+                    className={`text-2xl md:text-5xl font-black uppercase tracking-tight transition-all duration-300 ${
+                      item.style === "outline"
                         ? "text-outline-strong text-black dark:text-white hover:text-black dark:hover:text-white"
                         : "text-black dark:text-white"
-                      }
-                              `}
+                    }`}
                   >
                     {item.text}
                   </span>
@@ -145,8 +142,20 @@ export const ServicesSection: React.FC = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-brand-red/5 border border-brand-red/10 text-brand-red text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
             {tServices("title")}
           </span>
-          <h2 className="text-3xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tight mb-6"
-            dangerouslySetInnerHTML={{ __html: tServices.raw("headline").replace("<highlight>", '<span class="block mt-2">votre <span class="relative inline-block"><span class="relative z-10 text-brand-red">').replace("</highlight>", '</span><span class="absolute bottom-2 left-0 w-full h-[6px] md:h-[10px] bg-brand-red/10 -skew-x-12"></span></span></span>') }}
+          <h2
+            className="text-3xl md:text-5xl lg:text-7xl font-black text-black dark:text-white tracking-tight mb-6"
+            dangerouslySetInnerHTML={{
+              __html: tServices
+                .raw("headline")
+                .replace(
+                  "<highlight>",
+                  '<span class="block mt-2"><span class="relative inline-block"><span class="relative z-10 text-brand-red">'
+                )
+                .replace(
+                  "</highlight>",
+                  '</span><span class="absolute bottom-2 left-0 w-full h-[6px] md:h-[10px] bg-brand-red/10 -skew-x-12"></span></span></span>'
+                ),
+            }}
           />
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
             {tServices("description")}
@@ -158,18 +167,11 @@ export const ServicesSection: React.FC = () => {
           {SERVICES_DATA.map((service) => (
             <div
               key={service.id}
-              className={`
-                        group relative flex flex-col justify-between
-                        rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8
-                        bg-[#F5F5F7] dark:bg-[#0A0A0A]
-                        border border-black/5 dark:border-white/5
-                        overflow-hidden
-                        transition-all duration-500 h-full
-                        ${!isMobile
+              className={`group relative flex flex-col justify-between rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 bg-[#F5F5F7] dark:bg-[#0A0A0A] border border-black/5 dark:border-white/5 overflow-hidden transition-all duration-500 h-full ${
+                !isMobile
                   ? "hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-15px_rgba(255,255,255,0.05)]"
                   : "active:bg-gray-100 dark:active:bg-[#111]"
-                }
-                    `}
+              }`}
             >
               {/* Background Accents (Hidden on mobile) */}
               {!isMobile && (
@@ -183,22 +185,17 @@ export const ServicesSection: React.FC = () => {
               <div className="relative z-10 flex justify-between items-start mb-6 md:mb-8">
                 {/* Icon Box */}
                 <div
-                  className={`
-                            relative w-14 h-14 md:w-16 md:h-16 rounded-2xl
-                            bg-white dark:bg-[#151515]
-                            border border-black/5 dark:border-white/10
-                            flex items-center justify-center
-                            shadow-sm transition-all duration-500
-                            ${!isMobile
+                  className={`relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-white dark:bg-[#151515] border border-black/5 dark:border-white/10 flex items-center justify-center shadow-sm transition-all duration-500 ${
+                    !isMobile
                       ? "group-hover:shadow-lg group-hover:scale-110 group-hover:border-brand-red/20"
                       : ""
-                    }
-                        `}
+                  }`}
                 >
                   <service.icon
                     size={24}
-                    className={`text-gray-700 dark:text-gray-300 transition-colors duration-300 ${!isMobile ? "group-hover:text-brand-red" : ""
-                      }`}
+                    className={`text-gray-700 dark:text-gray-300 transition-colors duration-300 ${
+                      !isMobile ? "group-hover:text-brand-red" : ""
+                    }`}
                   />
                 </div>
 
@@ -220,8 +217,9 @@ export const ServicesSection: React.FC = () => {
 
                 {/* Headline */}
                 <h3
-                  className={`text-xl md:text-2xl font-bold text-black dark:text-white leading-tight transition-transform duration-300 ${!isMobile ? "group-hover:translate-x-1" : ""
-                    }`}
+                  className={`text-xl md:text-2xl font-bold text-black dark:text-white leading-tight transition-transform duration-300 ${
+                    !isMobile ? "group-hover:translate-x-1" : ""
+                  }`}
                 >
                   {service.headline}
                 </h3>
@@ -250,22 +248,19 @@ export const ServicesSection: React.FC = () => {
 
                 {/* Arrow Button */}
                 <div
-                  className={`
-                            w-10 h-10 rounded-full
-                            flex items-center justify-center
-                            transition-all duration-300
-                            ${!isMobile
+                  className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    !isMobile
                       ? "bg-transparent group-hover:bg-brand-red group-hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]"
                       : "bg-black/5 dark:bg-white/5"
-                    }
-                         `}
+                  }`}
                 >
                   <ArrowUpRight
                     size={18}
-                    className={`text-black dark:text-white transition-all duration-300 ${!isMobile
-                      ? "group-hover:text-white group-hover:rotate-45"
-                      : ""
-                      }`}
+                    className={`text-black dark:text-white transition-all duration-300 ${
+                      !isMobile
+                        ? "group-hover:text-white group-hover:rotate-45"
+                        : ""
+                    }`}
                   />
                 </div>
               </div>

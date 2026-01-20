@@ -113,20 +113,11 @@ export const AgencyMethodology: React.FC<{ isMobile?: boolean }> = ({
           {STEPS.map((step, idx) => (
             <div
               key={step.id}
-              className={`
-                        group relative flex flex-col justify-between min-h-[450px] md:min-h-[550px]
-                        rounded-[48px] p-8 md:p-10 lg:p-12
-                        bg-white dark:bg-[#0A0A0A]
-                        border border-black/[0.03] dark:border-white/[0.05]
-                        transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]
-                        shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]
-                        ${
-                          !isMobile
-                            ? "hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_40px_80px_-20px_rgba(255,0,0,0.15)] hover:border-brand-red/30"
-                            : ""
-                        }
-                        overflow-hidden isolate
-                    `}
+              className={`group relative flex flex-col justify-between min-h-[450px] md:min-h-[550px] rounded-[48px] p-8 md:p-10 lg:p-12 bg-white dark:bg-[#0A0A0A] border border-black/[0.03] dark:border-white/[0.05] transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] ${
+                !isMobile
+                  ? "hover:scale-[1.02] hover:-translate-y-2 hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_40px_80px_-20px_rgba(255,0,0,0.15)] hover:border-brand-red/30"
+                  : ""
+              } overflow-hidden isolate`}
               onMouseEnter={() => !isMobile && setHoveredStep(step.id)}
               onMouseLeave={() => !isMobile && setHoveredStep(null)}
             >
@@ -145,12 +136,7 @@ export const AgencyMethodology: React.FC<{ isMobile?: boolean }> = ({
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-12">
                   <div
-                    className={`
-                                w-16 h-16 rounded-3xl ${step.bg} border border-black/5 dark:border-white/10
-                                flex items-center justify-center ${step.accent}
-                                shadow-inner transition-all duration-700
-                                group-hover:bg-brand-red group-hover:text-white group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-red-900/20
-                            `}
+                    className={`w-16 h-16 rounded-3xl ${step.bg} border border-black/5 dark:border-white/10 flex items-center justify-center ${step.accent} shadow-inner transition-all duration-700 group-hover:bg-brand-red group-hover:text-white group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-red-900/20`}
                   >
                     <step.icon size={32} strokeWidth={1.5} />
                   </div>

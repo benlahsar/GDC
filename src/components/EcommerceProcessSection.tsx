@@ -102,16 +102,7 @@ export const EcommerceProcessSection: React.FC = () => {
           {STEPS.map((step, index) => (
             <div
               key={step.id}
-              className={`
-                        ${step.colSpan}
-                        group relative p-8 rounded-[32px]
-                        bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl
-                        border border-black/5 dark:border-white/10
-                        transition-all duration-500 ease-out
-                        overflow-hidden
-                        ${!isMobile ? 'hover:-translate-y-2 hover:shadow-2xl' : 'shadow-md'}
-                        ${isVisible || isMobile ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
-                    `}
+              className={`${step.colSpan} group relative p-8 rounded-[32px] bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 transition-all duration-500 ease-out overflow-hidden ${!isMobile ? 'hover:-translate-y-2 hover:shadow-2xl' : 'shadow-md'} ${isVisible || isMobile ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: !isMobile ? `${index * 100}ms` : '0ms' }}
             >
               {!isMobile && (

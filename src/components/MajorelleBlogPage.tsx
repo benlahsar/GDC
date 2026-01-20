@@ -56,7 +56,7 @@ export const MajorelleBlogPage: React.FC = () => {
               <div className="absolute -inset-4 bg-brand-red/10 blur-3xl rounded-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               <div className="relative rounded-[48px] overflow-hidden bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 shadow-2xl p-2 transition-all duration-700 hover:scale-[1.02] hover:-rotate-1">
                  <img 
-                   src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Capture-decran-2025-12-22-111738.png" 
+                   src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Capture-decran-2025-12-22-111738.png" 
                    alt="Majorelle Website Preview" 
                    className="w-full h-auto rounded-[40px] shadow-inner"
                  />
@@ -110,7 +110,7 @@ export const MajorelleBlogPage: React.FC = () => {
               {/* Detail Image Preview (Swapped URL) */}
               <div className="mt-auto p-1 rounded-3xl bg-gray-100 dark:bg-black/40 border border-black/5 dark:border-white/10 overflow-hidden">
                  <img 
-                    src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Capture-decran-2025-12-22-111836.png" 
+                    src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Capture-decran-2025-12-22-111836.png" 
                     alt="Section Details Preview" 
                     className="w-full h-auto rounded-2xl group-hover:scale-[1.02] transition-transform duration-700"
                  />

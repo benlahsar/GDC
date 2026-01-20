@@ -123,17 +123,13 @@ export const SEOExcellenceSection: React.FC = () => {
           {BENTO_ITEMS.map((item, idx) => (
             <div
               key={idx}
-              className={`
-                    ${item.size} group relative min-h-[400px] md:min-h-[450px]
-                    rounded-[40px] overflow-hidden flex flex-col justify-end
-                    bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10
-                    transition-all duration-700 ease-out
-                    ${
-                      !isMobile
-                        ? "hover:border-brand-red/30 hover:-translate-y-1 hover:shadow-2xl"
-                        : "shadow-xl"
-                    }
-                  `}
+              className={`${
+                item.size
+              } group relative min-h-[400px] md:min-h-[450px] rounded-[40px] overflow-hidden flex flex-col justify-end bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 transition-all duration-700 ease-out ${
+                !isMobile
+                  ? "hover:border-brand-red/30 hover:-translate-y-1 hover:shadow-2xl"
+                  : "shadow-xl"
+              }`}
               style={{ isolation: "isolate", transform: "translateZ(0)" }}
             >
               {/* Background Visual */}

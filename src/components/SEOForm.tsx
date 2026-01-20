@@ -233,16 +233,11 @@ export const SEOForm: React.FC = () => {
                             <div
                               key={service}
                               onClick={() => toggleService(service)}
-                              className={`
-                                                        flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all border
-                                                        ${
-                                                          formData.services.includes(
-                                                            service
-                                                          )
-                                                            ? "bg-brand-red/10 border-brand-red/30 text-black dark:text-white"
-                                                            : "bg-gray-50 dark:bg-white/5 border-transparent text-gray-500 hover:bg-gray-100 dark:hover:bg-white/10"
-                                                        }
-                                                    `}
+                              className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all border ${
+                                formData.services.includes(service)
+                                  ? "bg-brand-red/10 border-brand-red/30 text-black dark:text-white"
+                                  : "bg-gray-50 dark:bg-white/5 border-transparent text-gray-500 hover:bg-gray-100 dark:hover:bg-white/10"
+                              }`}
                             >
                               <div
                                 className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-all ${

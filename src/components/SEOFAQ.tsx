@@ -44,15 +44,11 @@ export const SEOFAQ: React.FC = () => {
               <div
                 key={index}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className={`
-                            group relative rounded-[32px] transition-all duration-500 cursor-pointer overflow-hidden
-                            ${
-                              openIndex === index
-                                ? "bg-white dark:bg-[#0A0A0A] shadow-2xl scale-[1.01] border-brand-red/30"
-                                : "bg-transparent hover:bg-white/40 dark:hover:bg-white/5 border-transparent"
-                            }
-                            border
-                        `}
+                className={`group relative rounded-[32px] transition-all duration-500 cursor-pointer overflow-hidden ${
+                  openIndex === index
+                    ? "bg-white dark:bg-[#0A0A0A] shadow-2xl scale-[1.01] border-brand-red/30"
+                    : "bg-transparent hover:bg-white/40 dark:hover:bg-white/5 border-transparent"
+                } border`}
               >
                 <div className="p-6 md:p-8">
                   <div className="flex items-center justify-between gap-6">

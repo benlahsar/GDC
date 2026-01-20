@@ -220,15 +220,11 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
             return (
               <div
                 key={index}
-                className={`
-                                absolute group
-                                transition-all duration-700 ease-out preserve-transform
-                                ${
-                                  isVisible || isLite
-                                    ? "opacity-100 scale-100 translate-y-0"
-                                    : "opacity-0 scale-0 translate-y-10"
-                                }
-                            `}
+                className={`absolute group transition-all duration-700 ease-out preserve-transform ${
+                  isVisible || isLite
+                    ? "opacity-100 scale-100 translate-y-0"
+                    : "opacity-0 scale-0 translate-y-10"
+                }`}
                 style={{
                   left: pos.x,
                   top: pos.y,
@@ -257,34 +253,20 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
 
                 {/* VERTICAL LINE CONNECTOR (Animates Height) */}
                 <div
-                  className={`
-                                absolute left-1/2 -translate-x-1/2 w-[2px] ${
-                                  isLite
-                                    ? "bg-brand-red"
-                                    : `bg-gradient-to-b ${item.gradient}`
-                                } opacity-40
-                                transition-all duration-700 h-16 top-3 group-hover:opacity-100 group-hover:h-24 preserve-transform
-                            `}
+                  className={`absolute left-1/2 -translate-x-1/2 w-[2px] ${
+                    isLite
+                      ? "bg-brand-red"
+                      : `bg-gradient-to-b ${item.gradient}`
+                  } opacity-40 transition-all duration-700 h-16 top-3 group-hover:opacity-100 group-hover:h-24 preserve-transform`}
                   style={{ transitionDelay: `${delay + 700}ms` }} // Connector grows after point appears
                 ></div>
 
                 {/* THE CARD */}
                 <div
-                  className={`
-                                    absolute left-1/2 -translate-x-1/2 w-64
-                                    top-20
-                                    transition-all duration-500 ease-out preserve-transform
-                                    group-hover:-translate-y-4 group-hover:top-24
-                                `}
+                  className={`absolute left-1/2 -translate-x-1/2 w-64 top-20 transition-all duration-500 ease-out preserve-transform group-hover:-translate-y-4 group-hover:top-24`}
                 >
                   <div
-                    className={`
-                                    relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111]
-                                    border border-black/5 dark:border-white/10
-                                    shadow-xl ${item.shadow}
-                                    group-hover:shadow-2xl group-hover:shadow-red-900/40
-                                    transition-all duration-300
-                                `}
+                    className={`relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111] border border-black/5 dark:border-white/10 shadow-xl ${item.shadow} group-hover:shadow-2xl group-hover:shadow-red-900/40 transition-all duration-300`}
                   >
                     {/* Left Colored Strip with Rotated Year */}
                     <div
@@ -342,24 +324,16 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
                 <div key={index} className="relative pl-16">
                   {/* Dot on Line */}
                   <div
-                    className={`
-                                absolute left-[23px] top-6 -translate-x-1/2 w-4 h-4 rotate-45 
-                                ${
-                                  isLite
-                                    ? "bg-brand-red"
-                                    : `bg-gradient-to-br ${item.gradient}`
-                                } 
-                                border-2 border-white dark:border-black shadow-md z-10
-                            `}
+                    className={`absolute left-[23px] top-6 -translate-x-1/2 w-4 h-4 rotate-45 ${
+                      isLite
+                        ? "bg-brand-red"
+                        : `bg-gradient-to-br ${item.gradient}`
+                    } border-2 border-white dark:border-black shadow-md z-10`}
                   ></div>
 
                   {/* Card */}
                   <div
-                    className={`
-                                relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111]
-                                border border-black/5 dark:border-white/10
-                                shadow-lg
-                            `}
+                    className={`relative flex overflow-hidden rounded-xl bg-white dark:bg-[#111] border border-black/5 dark:border-white/10 shadow-lg`}
                   >
                     <div
                       className={`w-10 ${

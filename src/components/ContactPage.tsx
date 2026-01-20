@@ -88,19 +88,11 @@ const GlassCard: React.FC<GlassCardProps> = ({
   isMobile = false,
 }) => (
   <div
-    className={`
-    relative overflow-hidden rounded-[30px] 
-    bg-white/10 dark:bg-black/40 
-    backdrop-blur-[40px] saturate-150
-    border border-white/20 dark:border-white/10
-    shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]
-    ${
+    className={`relative overflow-hidden rounded-[30px] bg-white/10 dark:bg-black/40 backdrop-blur-[40px] saturate-150 border border-white/20 dark:border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] ${
       !isMobile && hoverEffect
         ? "hover:bg-white/15 dark:hover:bg-black/50 hover:border-white/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
         : ""
-    }
-    ${className}
-  `}
+    } ${className}`}
   >
     {/* Noise Texture */}
     <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay"></div>
@@ -382,23 +374,19 @@ export const ContactPage: React.FC = () => {
                           }}
                         >
                           <div
-                            className={`
-                                  w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 border-2
-                                  ${
-                                    isActive
-                                      ? `${activeColorClass} scale-110`
-                                      : "bg-white dark:bg-[#151515] border-gray-200 dark:border-white/10 text-gray-400 group-hover:border-brand-red/50 dark:group-hover:border-brand-red/50"
-                                  }
-                                  ${
-                                    isCurrent && !isMobile
-                                      ? `ring-4 ${
-                                          step === 3
-                                            ? "ring-emerald-500/10 dark:ring-emerald-500/20"
-                                            : "ring-brand-red/10 dark:ring-brand-red/20"
-                                        }`
-                                      : ""
-                                  }
-                                `}
+                            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 border-2 ${
+                              isActive
+                                ? `${activeColorClass} scale-110`
+                                : "bg-white dark:bg-[#151515] border-gray-200 dark:border-white/10 text-gray-400 group-hover:border-brand-red/50 dark:group-hover:border-brand-red/50"
+                            } ${
+                              isCurrent && !isMobile
+                                ? `ring-4 ${
+                                    step === 3
+                                      ? "ring-emerald-500/10 dark:ring-emerald-500/20"
+                                      : "ring-brand-red/10 dark:ring-brand-red/20"
+                                  }`
+                                : ""
+                            }`}
                           >
                             {isCompleted ? (
                               <Check size={18} strokeWidth={3} />
@@ -574,19 +562,11 @@ export const ContactPage: React.FC = () => {
                                 <div
                                   key={srvKey}
                                   onClick={() => toggleService(srvKey)}
-                                  className={`
-                                               p-4 rounded-xl border cursor-pointer transition-all duration-300 flex items-center justify-between group
-                                               ${
-                                                 isSelected
-                                                   ? "bg-brand-red border-brand-red text-white shadow-lg shadow-brand-red/20"
-                                                   : "bg-white/50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-white/10"
-                                               }
-                                               ${
-                                                 !isMobile
-                                                   ? "hover:scale-[1.02]"
-                                                   : ""
-                                               }
-                                            `}
+                                  className={`p-4 rounded-xl border cursor-pointer transition-all duration-300 flex items-center justify-between group ${
+                                    isSelected
+                                      ? "bg-brand-red border-brand-red text-white shadow-lg shadow-brand-red/20"
+                                      : "bg-white/50 dark:bg-white/5 border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300 hover:bg-white dark:hover:bg-white/10"
+                                  } ${!isMobile ? "hover:scale-[1.02]" : ""}`}
                                 >
                                   <span className="font-bold text-xs md:text-sm">
                                     {t(`form.services.${srvKey}`)}
@@ -672,15 +652,11 @@ export const ContactPage: React.FC = () => {
                           step === 3 ? handleSubmit : () => setStep(step + 1)
                         }
                         disabled={isSubmitting}
-                        className={`
-                                group flex items-center gap-3 px-8 py-3 rounded-xl font-bold uppercase tracking-widest text-xs transition-all shadow-lg disabled:opacity-70
-                                ${
-                                  step === 3
-                                    ? "bg-emerald-500 text-white hover:bg-emerald-600 hover:shadow-emerald-500/20"
-                                    : "bg-black dark:bg-white text-white dark:text-black hover:shadow-brand-red/20"
-                                }
-                                ${!isMobile ? "hover:scale-105" : ""}
-                             `}
+                        className={`group flex items-center gap-3 px-8 py-3 rounded-xl font-bold uppercase tracking-widest text-xs transition-all shadow-lg disabled:opacity-70 ${
+                          step === 3
+                            ? "bg-emerald-500 text-white hover:bg-emerald-600 hover:shadow-emerald-500/20"
+                            : "bg-black dark:bg-white text-white dark:text-black hover:shadow-brand-red/20"
+                        } ${!isMobile ? "hover:scale-105" : ""}`}
                       >
                         {isSubmitting
                           ? t("form.buttons.sending")

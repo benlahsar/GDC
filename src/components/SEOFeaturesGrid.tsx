@@ -121,22 +121,13 @@ export const SEOFeaturesGrid: React.FC = () => {
           {FEATURES.map((item, idx) => (
             <div
               key={idx}
-              className={`
-                        ${item.span} group relative
-                        rounded-[40px] overflow-hidden
-                        bg-white/40 dark:bg-white/[0.02] 
-                        backdrop-blur-3xl saturate-150
-                        border border-white/60 dark:border-white/10
-                        transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]
-                        flex flex-col justify-between
-                        min-h-[300px] md:min-h-[350px]
-                        ${
-                          !isMobile
-                            ? "hover:scale-[1.01] hover:shadow-[0_30px_70px_-20px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_30px_70px_-20px_rgba(255,0,0,0.15)] hover:border-brand-red/30"
-                            : "shadow-xl"
-                        }
-                        opacity-0 animate-fade-in-up
-                    `}
+              className={`${
+                item.span
+              } group relative rounded-[40px] overflow-hidden bg-white/40 dark:bg-white/[0.02] backdrop-blur-3xl saturate-150 border border-white/60 dark:border-white/10 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] flex flex-col justify-between min-h-[300px] md:min-h-[350px] ${
+                !isMobile
+                  ? "hover:scale-[1.01] hover:shadow-[0_30px_70px_-20px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_30px_70px_-20px_rgba(255,0,0,0.15)] hover:border-brand-red/30"
+                  : "shadow-xl"
+              } opacity-0 animate-fade-in-up`}
               style={{ animationDelay: `${item.delay}ms` }}
             >
               {/* Hover Glow Component */}
@@ -148,19 +139,15 @@ export const SEOFeaturesGrid: React.FC = () => {
               <div className="relative z-10 p-8 md:p-12">
                 <div className="flex justify-between items-start mb-10">
                   <div
-                    className={`
-                                w-14 h-14 rounded-2xl 
-                                ${item.bg} flex items-center justify-center 
-                                ${
-                                  item.color
-                                } border border-white/20 dark:border-white/5
-                                shadow-inner transition-all duration-500
-                                ${
-                                  !isMobile
-                                    ? "group-hover:scale-110 group-hover:rotate-6 group-hover:bg-brand-red group-hover:text-white group-hover:shadow-lg group-hover:shadow-red-900/20"
-                                    : ""
-                                }
-                            `}
+                    className={`w-14 h-14 rounded-2xl ${
+                      item.bg
+                    } flex items-center justify-center ${
+                      item.color
+                    } border border-white/20 dark:border-white/5 shadow-inner transition-all duration-500 ${
+                      !isMobile
+                        ? "group-hover:scale-110 group-hover:rotate-6 group-hover:bg-brand-red group-hover:text-white group-hover:shadow-lg group-hover:shadow-red-900/20"
+                        : ""
+                    }`}
                   >
                     <item.icon size={28} strokeWidth={1.5} />
                   </div>

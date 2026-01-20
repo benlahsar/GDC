@@ -37,7 +37,7 @@ export const ComeWithUsPage: React.FC = () => {
       title: "Les Jardins de la Ménara",
       location: "Marrakech",
       image:
-        "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-89.png",
+        "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-89.png",
       icon: Camera,
       isPortrait: false,
       story:
@@ -49,7 +49,7 @@ export const ComeWithUsPage: React.FC = () => {
       title: "Plage de Legzira",
       location: "Sidi Ifni",
       image:
-        "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-91.png",
+        "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-91.png",
       icon: Wind,
       isPortrait: false,
       story:
@@ -61,7 +61,7 @@ export const ComeWithUsPage: React.FC = () => {
       title: "Grottes d'Hercule",
       location: "Tanger",
       image:
-        "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-95.png",
+        "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-95.png",
       icon: Map,
       isPortrait: true,
       story:
@@ -73,7 +73,7 @@ export const ComeWithUsPage: React.FC = () => {
       title: "Tour Hassan",
       location: "Rabat",
       image:
-        "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-98.png",
+        "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-98.png",
       icon: Landmark,
       isPortrait: false,
       story:
@@ -85,7 +85,7 @@ export const ComeWithUsPage: React.FC = () => {
       title: "Mosquée Al-Qarawiyyin",
       location: "Fès",
       image:
-        "https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-99.png",
+        "https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-99.png",
       icon: Shield,
       isPortrait: false,
       story:
@@ -182,7 +182,7 @@ export const ComeWithUsPage: React.FC = () => {
           {/* 2. IDENTITY CARD (Partner Logo) - CONTAINER REMOVED AS REQUESTED, ROUNDED EDGES ON LOGO */}
           <div className="lg:col-span-4 min-h-[250px] md:min-h-0 flex flex-col items-center justify-center relative overflow-hidden group">
             <img
-              src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-97.png"
+              src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-97.png"
               alt="Logo Come With Us"
               className="w-full max-w-[250px] h-auto object-contain relative z-10 transition-all duration-700 group-hover:scale-105 rounded-[40px] md:rounded-[56px]"
             />
@@ -476,7 +476,7 @@ export const ComeWithUsPage: React.FC = () => {
       <section className="relative py-24 md:py-64 bg-white dark:bg-[#020202] flex flex-col items-center justify-center transition-colors duration-1000 min-h-[60vh]">
         <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05]">
           <img
-            src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-93.png"
+            src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-93.png"
             className="w-full h-full object-cover grayscale"
             alt="Empreinte GDC"
           />

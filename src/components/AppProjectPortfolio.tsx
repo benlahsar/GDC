@@ -55,20 +55,11 @@ export const AppProjectPortfolio: React.FC = () => {
               style={{ animationDelay: !isMobile ? `${idx * 150}ms` : "0ms" }}
             >
               <div
-                className={`
-                        relative w-full aspect-[4/5] rounded-[48px] 
-                        bg-white/80 dark:bg-[#0A0A0A]/80
-                        backdrop-blur-3xl
-                        border border-black/5 dark:border-white/10
-                        shadow-xl transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]
-                        flex items-center justify-center p-12
-                        overflow-hidden
-                        ${
-                          !isMobile
-                            ? "group-hover:shadow-2xl hover:-translate-y-4 hover:border-brand-red/30"
-                            : ""
-                        }
-                    `}
+                className={`relative w-full aspect-[4/5] rounded-[48px] bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-3xl border border-black/5 dark:border-white/10 shadow-xl transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] flex items-center justify-center p-12 overflow-hidden ${
+                  !isMobile
+                    ? "group-hover:shadow-2xl hover:-translate-y-4 hover:border-brand-red/30"
+                    : ""
+                }`}
               >
                 {!isMobile && (
                   <>

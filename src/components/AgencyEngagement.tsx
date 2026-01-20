@@ -45,19 +45,11 @@ export const AgencyEngagement: React.FC<{ isMobile?: boolean }> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           {/* --- CARD 1: EXCELLENCE (Left - Tall) --- */}
           <div
-            className={`
-                lg:col-span-7 flex flex-col justify-between
-                bg-[#0A0A0A] text-white 
-                rounded-[40px] p-8 md:p-12 lg:p-14
-                relative overflow-hidden group
-                shadow-2xl shadow-black/20
-                transition-all duration-1000 ease-out border border-white/5
-                ${
-                  isVisible
-                    ? "opacity-100 translate-x-0"
-                    : `opacity-0 ${!isMobile ? "-translate-x-10" : ""}`
-                }
-            `}
+            className={`lg:col-span-7 flex flex-col justify-between bg-[#0A0A0A] text-white rounded-[40px] p-8 md:p-12 lg:p-14 relative overflow-hidden group shadow-2xl shadow-black/20 transition-all duration-1000 ease-out border border-white/5 ${
+              isVisible
+                ? "opacity-100 translate-x-0"
+                : `opacity-0 ${!isMobile ? "-translate-x-10" : ""}`
+            }`}
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#1a1a1a,transparent)] z-0"></div>
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-[100px] md:group-hover:bg-brand-red/10 transition-colors duration-700"></div>
@@ -122,18 +114,11 @@ export const AgencyEngagement: React.FC<{ isMobile?: boolean }> = ({
           {/* --- RIGHT COLUMN STACK --- */}
           <div className="lg:col-span-5 flex flex-col gap-6 lg:gap-8">
             <div
-              className={`
-                    flex-1 bg-white dark:bg-[#111]
-                    rounded-[40px] p-8 md:p-10
-                    relative overflow-hidden group
-                    shadow-xl
-                    transition-all duration-1000 delay-150 ease-out border border-black/5 dark:border-white/10
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : `opacity-0 ${!isMobile ? "translate-y-10" : ""}`
-                    }
-                `}
+              className={`flex-1 bg-white dark:bg-[#111] rounded-[40px] p-8 md:p-10 relative overflow-hidden group shadow-xl transition-all duration-1000 delay-150 ease-out border border-black/5 dark:border-white/10 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : `opacity-0 ${!isMobile ? "translate-y-10" : ""}`
+              }`}
             >
               <div className="absolute top-0 right-0 p-8 opacity-5 md:group-hover:opacity-10 transition-opacity duration-500">
                 <Heart size={120} className="text-black dark:text-white" />
@@ -153,17 +138,11 @@ export const AgencyEngagement: React.FC<{ isMobile?: boolean }> = ({
             </div>
 
             <div
-              className={`
-                    flex-[1.5] bg-[#F5F5F7] dark:bg-[#0A0A0A]
-                    rounded-[40px] p-8 md:p-10
-                    relative overflow-hidden group
-                    transition-all duration-1000 delay-300 ease-out border border-black/5 dark:border-white/10
-                    ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : `opacity-0 ${!isMobile ? "translate-y-10" : ""}`
-                    }
-                `}
+              className={`flex-[1.5] bg-[#F5F5F7] dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10 relative overflow-hidden group transition-all duration-1000 delay-300 ease-out border border-black/5 dark:border-white/10 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : `opacity-0 ${!isMobile ? "translate-y-10" : ""}`
+              }`}
             >
               <div className="relative z-10 h-full flex flex-col justify-between gap-6">
                 <p className="text-gray-600 dark:text-gray-300 font-medium text-base leading-relaxed">

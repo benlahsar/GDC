@@ -38,11 +38,13 @@ const getCountryCodes = (t: ReturnType<typeof useTranslations>) => [
   { code: "+1", country: "US", label: t("form.options.countries.usa") },
   { code: "+44", country: "UK", label: t("form.options.countries.uk") },
   { code: "+32", country: "BE", label: t("form.options.countries.belgium") },
-  { code: "+41", country: "CH", label: t("form.options.countries.switzerland") },
-  { code: "+34", country: "ES", label: t("form.options.countries.spain") }
+  {
+    code: "+41",
+    country: "CH",
+    label: t("form.options.countries.switzerland"),
+  },
+  { code: "+34", country: "ES", label: t("form.options.countries.spain") },
 ];
-
-
 
 const getTimelineOptions = (t: ReturnType<typeof useTranslations>) => [
   t("form.options.timelines.asap"),
@@ -71,8 +73,6 @@ const getBudgetOptions = (t: ReturnType<typeof useTranslations>) => [
   t("form.options.budgets.gt100k"),
   t("form.options.budgets.tbd"),
 ];
-
-
 
 // --- Components ---
 
@@ -171,7 +171,6 @@ export const ContactSection: React.FC = () => {
   const BUDGET_OPTIONS = getBudgetOptions(tContact);
 
   const [countryCode, setCountryCode] = useState(COUNTRY_CODES[0]);
-
 
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -310,65 +309,27 @@ export const ContactSection: React.FC = () => {
 
     const fullPhone = `${countryCode.code} ${formData.phone}`;
 
-    // Prepare formatted services string for Formspree
-    let serviceList = [...formData.services];
-    if (formData.otherService)
-      serviceList.push(`Autre: ${formData.otherService}`);
-    const servicesString = serviceList.join(", ");
-
-    // 1. Data object for Local Backend (DB)
-    const dbData = {
+    const requestData = {
       ...formData,
       fullPhone,
-      // Backend expects 'services' array and 'otherService' separately to combine them itself if needed,
-      // but consistent with current server.js, we send the raw data.
-    };
-
-    // 2. Data object for Formspree (Email)
-    // We flatten it for better readability in the email
-    const formspreeData = {
-      name: formData.name,
-      email: formData.email,
-      phone: fullPhone,
-      company: formData.project,
-      services: servicesString,
-      budget: formData.budget,
-      timeline: formData.startDate,
-      description: formData.description,
-      _subject: `${tContact("success.title")} Web: ${formData.name} (${formData.project || tContact("form.options.services.other")})`,
     };
 
     try {
-      // --- ACTION 1: SAVE TO DATABASE (Localhost) ---
-      const dbRequest = fetch("http://localhost:3001/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dbData),
-      })
-        .then((res) => {
-          if (!res.ok) console.warn("DB Save warning:", res.statusText);
-          return res.json().catch(() => ({}));
-        })
-        .catch((err) => {
-          console.error("Error saving to database:", err);
-          // We don't throw here so we can still try sending the email
-        });
-
-      // --- ACTION 2: SEND EMAIL (Formspree) ---
-      const emailRequest = fetch("https://formspree.io/f/meoyrlyn", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formspreeData),
-      }).then((res) => {
-        if (!res.ok) throw new Error("Formspree error");
-        return res.json();
+        body: JSON.stringify(requestData),
       });
 
-      // Wait for both to complete (or fail)
-      await Promise.all([dbRequest, emailRequest]);
+      if (!response.ok) {
+        throw new Error("Server error");
+      }
+
+      const result = await response.json();
+
+      if (!result.success) {
+        throw new Error(result.message || "Submission failed");
+      }
 
       // Success state
       await new Promise((resolve) => setTimeout(resolve, 500)); // smooth UX
@@ -376,9 +337,7 @@ export const ContactSection: React.FC = () => {
       setIsSuccess(true);
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert(
-        tContact("form.errorMessage")
-      );
+      alert(tContact("form.errorMessage"));
       setIsSubmitting(false);
     }
   };
@@ -386,22 +345,25 @@ export const ContactSection: React.FC = () => {
   const renderStepIndicator = () => (
     <div className="flex items-center gap-3 mb-8 md:mb-12 px-1">
       <div
-        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${step >= 1
-          ? "bg-black dark:bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
-          : "bg-gray-200 dark:bg-white/10"
-          }`}
+        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${
+          step >= 1
+            ? "bg-black dark:bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            : "bg-gray-200 dark:bg-white/10"
+        }`}
       ></div>
       <div
-        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${step >= 2
-          ? "bg-black dark:bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
-          : "bg-gray-200 dark:bg-white/10"
-          }`}
+        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${
+          step >= 2
+            ? "bg-black dark:bg-white shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            : "bg-gray-200 dark:bg-white/10"
+        }`}
       ></div>
       <div
-        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${isSuccess
-          ? "bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)]"
-          : "bg-gray-200 dark:bg-white/10"
-          }`}
+        className={`h-1 flex-1 rounded-full transition-all duration-700 ease-out ${
+          isSuccess
+            ? "bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)]"
+            : "bg-gray-200 dark:bg-white/10"
+        }`}
       ></div>
     </div>
   );
@@ -481,8 +443,17 @@ export const ContactSection: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-7xl font-black text-black dark:text-white leading-[0.95] mb-6 md:mb-8 tracking-tighter"
-              dangerouslySetInnerHTML={{ __html: tContact.raw("title").replace("<highlight>", '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black dark:from-gray-500 dark:to-white">').replace("</highlight>", '</span> <br />') }}
+            <h2
+              className="text-4xl md:text-7xl font-black text-black dark:text-white leading-[0.95] mb-6 md:mb-8 tracking-tighter"
+              dangerouslySetInnerHTML={{
+                __html: tContact
+                  .raw("title")
+                  .replace(
+                    "<highlight>",
+                    '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black dark:from-gray-500 dark:to-white">'
+                  )
+                  .replace("</highlight>", "</span> <br />"),
+              }}
             />
 
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 md:mb-12 leading-relaxed max-w-md font-light">
@@ -541,13 +512,12 @@ export const ContactSection: React.FC = () => {
               >
                 {/* STEP 1: IDENTITY */}
                 <div
-                  className={`
-                    absolute inset-0 flex flex-col transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
-                    ${step === 1
-                      ? "opacity-100 translate-x-0 z-10 relative"
-                      : "opacity-0 -translate-x-10 pointer-events-none absolute"
-                    }
-                `}
+                  className={`absolute inset-0 flex flex-col transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
+                    ${
+                      step === 1
+                        ? "opacity-100 translate-x-0 z-10 relative"
+                        : "opacity-0 -translate-x-10 pointer-events-none absolute"
+                    }`}
                 >
                   <div className="mb-6 md:mb-8">
                     <h3 className="text-xl md:text-3xl font-black text-black dark:text-white mb-2 flex items-center gap-3 tracking-tight">
@@ -580,10 +550,11 @@ export const ContactSection: React.FC = () => {
                               if (errors.name)
                                 setErrors({ ...errors, name: "" });
                             }}
-                            className={`w-full bg-white/60 dark:bg-white/5 border ${errors.name
-                              ? "border-red-500"
-                              : "border-black/5 dark:border-white/10"
-                              } rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium`}
+                            className={`w-full bg-white/60 dark:bg-white/5 border ${
+                              errors.name
+                                ? "border-red-500"
+                                : "border-black/5 dark:border-white/10"
+                            } rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium`}
                             placeholder={tContact("form.step1.namePlaceholder")}
                           />
                           {errors.name && (
@@ -610,11 +581,14 @@ export const ContactSection: React.FC = () => {
                               if (errors.email)
                                 setErrors({ ...errors, email: "" });
                             }}
-                            className={`w-full bg-white/60 dark:bg-white/5 border ${errors.email
-                              ? "border-red-500"
-                              : "border-black/5 dark:border-white/10"
-                              } rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium`}
-                            placeholder={tContact("form.step1.emailPlaceholder")}
+                            className={`w-full bg-white/60 dark:bg-white/5 border ${
+                              errors.email
+                                ? "border-red-500"
+                                : "border-black/5 dark:border-white/10"
+                            } rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium`}
+                            placeholder={tContact(
+                              "form.step1.emailPlaceholder"
+                            )}
                           />
                           {errors.email && (
                             <p className="absolute -bottom-5 left-3 text-red-500 font-bold tracking-wide">
@@ -640,37 +614,30 @@ export const ContactSection: React.FC = () => {
                               onClick={() =>
                                 setIsCountryDropdownOpen(!isCountryDropdownOpen)
                               }
-                              className={`
-                                                flex items-center gap-2 h-full px-3 md:px-4 rounded-l-2xl border-y border-l bg-white/60 dark:bg-white/5
-                                                ${errors.phone
+                              className={`flex items-center gap-2 h-full px-3 md:px-4 rounded-l-2xl border-y border-l bg-white/60 dark:bg-white/5 ${
+                                errors.phone
                                   ? "border-red-500"
                                   : "border-black/5 dark:border-white/10"
-                                }
-                                                hover:bg-white/80 dark:hover:bg-white/10 transition-colors
-                                            `}
+                              } hover:bg-white/80 dark:hover:bg-white/10 transition-colors`}
                             >
                               <span className="text-sm font-bold text-black dark:text-white">
                                 {countryCode.code}
                               </span>
                               <ChevronDown
                                 size={12}
-                                className={`text-gray-500 transition-transform ${isCountryDropdownOpen ? "rotate-180" : ""
-                                  }`}
+                                className={`text-gray-500 transition-transform ${
+                                  isCountryDropdownOpen ? "rotate-180" : ""
+                                }`}
                               />
                             </button>
 
                             {/* Dropdown Menu */}
                             <div
-                              className={`
-                                            absolute top-full left-0 mt-2 w-48 max-h-60 overflow-y-auto
-                                            bg-white dark:bg-[#111] border border-black/5 dark:border-white/10
-                                            rounded-xl shadow-xl z-[60]
-                                            transition-all duration-200 origin-top-left
-                                            ${isCountryDropdownOpen
+                              className={`absolute top-full left-0 mt-2 w-48 max-h-60 overflow-y-auto bg-white dark:bg-[#111] border border-black/5 dark:border-white/10 rounded-xl shadow-xl z-[60] transition-all duration-200 origin-top-left ${
+                                isCountryDropdownOpen
                                   ? "opacity-100 scale-100"
                                   : "opacity-0 scale-95 pointer-events-none"
-                                }
-                                        `}
+                              }`}
                             >
                               {COUNTRY_CODES.map((item) => (
                                 <div
@@ -703,15 +670,14 @@ export const ContactSection: React.FC = () => {
                               if (errors.phone)
                                 setErrors({ ...errors, phone: "" });
                             }}
-                            className={`
-                                            flex-1 bg-white/60 dark:bg-white/5 border-y border-r rounded-r-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400
-                                            focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium
-                                            ${errors.phone
+                            className={`flex-1 bg-white/60 dark:bg-white/5 border-y border-r rounded-r-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium ${
+                              errors.phone
                                 ? "border-red-500"
                                 : "border-black/5 dark:border-white/10 border-l-0"
-                              }
-                                        `}
-                            placeholder={tContact("form.step1.phonePlaceholder")}
+                            }`}
+                            placeholder={tContact(
+                              "form.step1.phonePlaceholder"
+                            )}
                           />
                           {errors.phone && (
                             <p className="absolute -bottom-5 left-3 text-red-500 font-bold tracking-wide">
@@ -736,7 +702,9 @@ export const ContactSection: React.FC = () => {
                               })
                             }
                             className="w-full bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium"
-                            placeholder={tContact("form.step1.companyPlaceholder")}
+                            placeholder={tContact(
+                              "form.step1.companyPlaceholder"
+                            )}
                           />
                         </div>
                       </div>
@@ -759,13 +727,12 @@ export const ContactSection: React.FC = () => {
 
                 {/* STEP 2: PROJECT DETAILS */}
                 <div
-                  className={`
-                    absolute inset-0 flex flex-col transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
-                    ${step === 2
-                      ? "opacity-100 translate-x-0 z-10 relative"
-                      : "opacity-0 translate-x-10 pointer-events-none absolute"
-                    }
-                `}
+                  className={`absolute inset-0 flex flex-col transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
+                    ${
+                      step === 2
+                        ? "opacity-100 translate-x-0 z-10 relative"
+                        : "opacity-0 translate-x-10 pointer-events-none absolute"
+                    }`}
                 >
                   <div className="mb-6 md:mb-8">
                     <h3 className="text-xl md:text-3xl font-black text-black dark:text-white mb-2 flex items-center gap-3 tracking-tight">
@@ -791,13 +758,11 @@ export const ContactSection: React.FC = () => {
                           <div
                             key={service}
                             onClick={() => toggleService(service)}
-                            className={`
-                                    cursor-pointer p-3 sm:p-4 rounded-xl border transition-all duration-300 flex items-center justify-between group relative overflow-hidden
-                                    ${formData.services.includes(service)
+                            className={`cursor-pointer p-3 sm:p-4 rounded-xl border transition-all duration-300 flex items-center justify-between group relative overflow-hidden ${
+                              formData.services.includes(service)
                                 ? "bg-black dark:bg-white text-white dark:text-black border-transparent shadow-lg transform scale-[1.02]"
                                 : "bg-white/60 dark:bg-white/5 border-black/5 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 text-gray-600 dark:text-gray-400"
-                              }
-                                    `}
+                            }`}
                           >
                             <span className="font-bold text-[11px] sm:text-xs relative z-10">
                               {service}
@@ -820,13 +785,11 @@ export const ContactSection: React.FC = () => {
                                 : "Autre",
                             })
                           }
-                          className={`
-                                    cursor-pointer p-3 sm:p-4 rounded-xl border transition-all duration-300 flex items-center justify-center text-center
-                                    ${formData.otherService !== ""
+                          className={`cursor-pointer p-3 sm:p-4 rounded-xl border transition-all duration-300 flex items-center justify-center text-center ${
+                            formData.otherService !== ""
                               ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
                               : "bg-white/60 dark:bg-white/5 border-dashed border-black/10 dark:border-white/20 hover:border-black/30 dark:hover:border-white/30 text-gray-500"
-                            }
-                                `}
+                          }`}
                         >
                           <span className="font-bold text-[11px] sm:text-xs">
                             {tContact("form.options.services.other")}
@@ -874,10 +837,11 @@ export const ContactSection: React.FC = () => {
                               className="flex items-center gap-3 cursor-pointer group"
                             >
                               <div
-                                className={`w-4 h-4 rounded-full border flex items-center justify-center transition-colors ${formData.budget === budget
-                                  ? "border-black dark:border-white"
-                                  : "border-gray-300 dark:border-white/20"
-                                  }`}
+                                className={`w-4 h-4 rounded-full border flex items-center justify-center transition-colors ${
+                                  formData.budget === budget
+                                    ? "border-black dark:border-white"
+                                    : "border-gray-300 dark:border-white/20"
+                                }`}
                               >
                                 {formData.budget === budget && (
                                   <div className="w-2 h-2 rounded-full bg-black dark:bg-white" />
@@ -894,10 +858,11 @@ export const ContactSection: React.FC = () => {
                                 }}
                               />
                               <span
-                                className={`text-xs md:text-sm font-medium transition-colors ${formData.budget === budget
-                                  ? "text-black dark:text-white font-bold"
-                                  : "text-gray-500"
-                                  }`}
+                                className={`text-xs md:text-sm font-medium transition-colors ${
+                                  formData.budget === budget
+                                    ? "text-black dark:text-white font-bold"
+                                    : "text-gray-500"
+                                }`}
                               >
                                 {budget}
                               </span>
@@ -914,7 +879,8 @@ export const ContactSection: React.FC = () => {
                       {/* Timeline */}
                       <div className="space-y-3">
                         <label className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 ml-1 flex items-center gap-2">
-                          <Calendar size={12} /> {tContact("form.step2.deadline")}
+                          <Calendar size={12} />{" "}
+                          {tContact("form.step2.deadline")}
                         </label>
                         <div className="grid grid-cols-1 gap-2">
                           {TIMELINE_OPTIONS.map((time) => (
@@ -926,13 +892,11 @@ export const ContactSection: React.FC = () => {
                                 if (errors.startDate)
                                   setErrors({ ...errors, startDate: "" });
                               }}
-                              className={`
-                                                px-4 py-3 rounded-xl text-xs md:text-sm font-bold border text-left transition-all duration-200
-                                                ${formData.startDate === time
+                              className={`px-4 py-3 rounded-xl text-xs md:text-sm font-bold border text-left transition-all duration-200 ${
+                                formData.startDate === time
                                   ? "bg-black/5 dark:bg-white/10 border-black dark:border-white text-black dark:text-white shadow-inner"
                                   : "bg-white/60 dark:bg-white/5 border-black/5 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:bg-white/80 dark:hover:bg-white/10"
-                                }
-                                            `}
+                              }`}
                             >
                               {time}
                             </button>
@@ -949,7 +913,8 @@ export const ContactSection: React.FC = () => {
                     {/* Description */}
                     <div className="space-y-3">
                       <label className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 ml-1 flex items-center gap-2">
-                        <MessageSquare size={12} /> {tContact("form.step2.description")}
+                        <MessageSquare size={12} />{" "}
+                        {tContact("form.step2.description")}
                       </label>
                       <textarea
                         value={formData.description}
@@ -961,7 +926,9 @@ export const ContactSection: React.FC = () => {
                         }
                         rows={3}
                         className="w-full bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium resize-none"
-                        placeholder={tContact("form.step2.descriptionPlaceholder")}
+                        placeholder={tContact(
+                          "form.step2.descriptionPlaceholder"
+                        )}
                       />
                     </div>
 
@@ -982,7 +949,9 @@ export const ContactSection: React.FC = () => {
                         className="group bg-black dark:bg-white text-white dark:text-black px-8 md:px-10 py-4 md:py-5 rounded-2xl font-black uppercase tracking-wider flex items-center gap-3 shadow-xl disabled:opacity-70 disabled:cursor-not-allowed hover:shadow-2xl hover:-translate-y-1 transition-all"
                       >
                         <span className="relative z-10 text-xs md:text-sm">
-                          {isSubmitting ? tContact("form.step2.sending") : tContact("form.step2.submit")}
+                          {isSubmitting
+                            ? tContact("form.step2.sending")
+                            : tContact("form.step2.submit")}
                         </span>
                         {isSubmitting ? (
                           <Loader2 className="relative z-10 w-4 h-4 animate-spin" />

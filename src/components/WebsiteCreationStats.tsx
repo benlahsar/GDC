@@ -1,8 +1,15 @@
 "use client";
-import React from 'react';
-import { CheckCircle2, Truck, Zap, TrendingUp, ShieldCheck, Sparkles } from 'lucide-react';
-import { AnimatedCounter } from './AnimatedCounter';
-import { useTranslations } from 'next-intl';
+import React from "react";
+import {
+  CheckCircle2,
+  Truck,
+  Zap,
+  TrendingUp,
+  ShieldCheck,
+  Sparkles,
+} from "lucide-react";
+import { AnimatedCounter } from "./AnimatedCounter";
+import { useTranslations } from "next-intl";
 
 const getStats = (t: any) => [
   {
@@ -11,14 +18,14 @@ const getStats = (t: any) => [
     value: 200,
     prefix: "+",
     label: t("stats.sites.label"),
-    sub: t("stats.sites.sub")
+    sub: t("stats.sites.sub"),
   },
   {
     id: 2,
     icon: Truck,
     value: 30,
     label: t("stats.delivery.label"),
-    sub: t("stats.delivery.sub")
+    sub: t("stats.delivery.sub"),
   },
   {
     id: 3,
@@ -27,7 +34,7 @@ const getStats = (t: any) => [
     prefix: "<",
     suffix: "s",
     label: t("stats.speed.label"),
-    sub: t("stats.speed.sub")
+    sub: t("stats.speed.sub"),
   },
   {
     id: 4,
@@ -36,7 +43,7 @@ const getStats = (t: any) => [
     prefix: "+",
     suffix: "%",
     label: t("stats.seo.label"),
-    sub: t("stats.seo.sub")
+    sub: t("stats.seo.sub"),
   },
   {
     id: 5,
@@ -44,8 +51,8 @@ const getStats = (t: any) => [
     value: 100,
     suffix: "%",
     label: t("stats.security.label"),
-    sub: t("stats.security.sub")
-  }
+    sub: t("stats.security.sub"),
+  },
 ];
 
 export const WebsiteCreationStats: React.FC = () => {
@@ -61,7 +68,6 @@ export const WebsiteCreationStats: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1600px] relative z-10">
-
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm">
@@ -73,7 +79,17 @@ export const WebsiteCreationStats: React.FC = () => {
 
           <h2
             className="text-3xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tighter text-black dark:text-white leading-tight"
-            dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br/>").replace(/{span}/g, `<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">${t("titleHighlight")}</span>`) }}
+            dangerouslySetInnerHTML={{
+              __html: t
+                .raw("title")
+                .replace(/{br}/g, "<br/>")
+                .replace(
+                  /{span}/g,
+                  `<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">${t(
+                    "titleHighlight"
+                  )}</span>`
+                ),
+            }}
           />
         </div>
 
@@ -82,7 +98,9 @@ export const WebsiteCreationStats: React.FC = () => {
           {STATS.map((stat, index) => (
             <div
               key={index}
-              className={`group relative p-8 rounded-[32px] bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 flex flex-col items-center justify-center text-center hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-red/10 transition-all duration-500 ${index === 4 ? 'md:col-span-2 lg:col-span-1' : ''}`}
+              className={`group relative p-8 rounded-[32px] bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 flex flex-col items-center justify-center text-center hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-red/10 transition-all duration-500 ${
+                index === 4 ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
             >
               {/* Hover Gradient */}
               <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-brand-red/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -114,7 +132,6 @@ export const WebsiteCreationStats: React.FC = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

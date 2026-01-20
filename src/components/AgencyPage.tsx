@@ -262,16 +262,9 @@ export const AgencyPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 md:gap-6 auto-rows-[minmax(180px,auto)]">
             {/* --- CARD 1: MAIN STATEMENT (The "Core") --- */}
             <div
-              className={`
-                col-span-1 md:col-span-2 lg:col-span-8 row-span-3
-                bg-white/40 dark:bg-white/[0.03] backdrop-blur-[40px] saturate-150
-                rounded-[48px] p-8 md:p-14 lg:p-20 
-                border border-black/[0.05] dark:border-white/[0.08] 
-                shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)]
-                relative overflow-hidden group 
-                flex flex-col justify-center 
-                ${!isMobile ? "opacity-0 animate-fade-in-up" : "opacity-100"}
-              `}
+              className={`col-span-1 md:col-span-2 lg:col-span-8 row-span-3 bg-white/40 dark:bg-white/[0.03] backdrop-blur-[40px] saturate-150 rounded-[48px] p-8 md:p-14 lg:p-20 border border-black/[0.05] dark:border-white/[0.08] shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden group flex flex-col justify-center ${
+                !isMobile ? "opacity-0 animate-fade-in-up" : "opacity-100"
+              }`}
             >
               {/* Subtle Noise Texture */}
               <div className="absolute inset-0 bg-noise opacity-[0.03] pointer-events-none mix-blend-overlay"></div>
@@ -341,20 +334,11 @@ export const AgencyPage: React.FC = () => {
 
             {/* --- CARD 2: ICONIC VISUAL (Right Top - 4 cols, 2 rows) --- */}
             <div
-              className={`
-                col-span-1 md:col-span-1 lg:col-span-4 row-span-2
-                bg-[#111] text-white
-                rounded-[48px] p-10
-                border border-white/5 shadow-2xl
-                relative overflow-hidden group 
-                flex flex-col justify-between 
-                transition-transform duration-700
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-100 md:hover:scale-[1.02]"
-                    : "opacity-100"
-                }
-              `}
+              className={`col-span-1 md:col-span-1 lg:col-span-4 row-span-2 bg-[#111] text-white rounded-[48px] p-10 border border-white/5 shadow-2xl relative overflow-hidden group flex flex-col justify-between transition-transform duration-700 ${
+                !isMobile
+                  ? "opacity-0 animate-fade-in-up delay-100 md:hover:scale-[1.02]"
+                  : "opacity-100"
+              }`}
             >
               <div className="absolute inset-0 z-0">
                 <img
@@ -413,19 +397,11 @@ export const AgencyPage: React.FC = () => {
 
             {/* --- CARD 3: LIVE PERFORMANCE (Small Center Right - 4 cols, 1 row) --- */}
             <div
-              className={`
-                col-span-1 md:col-span-1 lg:col-span-4 row-span-1
-                bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-2xl
-                rounded-[48px] p-8 md:p-10
-                border border-black/5 dark:border-white/10 shadow-xl
-                flex items-center justify-between group
-                transition-all
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-200 md:hover:border-brand-red/30"
-                    : "opacity-100"
-                }
-              `}
+              className={`col-span-1 md:col-span-1 lg:col-span-4 row-span-1 bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-2xl rounded-[48px] p-8 md:p-10 border border-black/5 dark:border-white/10 shadow-xl flex items-center justify-between group transition-all ${
+                !isMobile
+                  ? "opacity-0 animate-fade-in-up delay-200 md:hover:border-brand-red/30"
+                  : "opacity-100"
+              }`}
             >
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2 mb-2">
@@ -460,20 +436,11 @@ export const AgencyPage: React.FC = () => {
 
             {/* --- CARD 4: TECH STACK MOCKUP (Bottom Left - 8 cols, 1 row) --- */}
             <div
-              className={`
-                col-span-1 md:col-span-2 lg:col-span-8 row-span-1
-                bg-[#F8F8FA] dark:bg-[#0A0A0A] 
-                rounded-[48px] p-8 md:p-10 
-                border border-black/5 dark:border-white/10 
-                relative overflow-hidden group 
-                flex flex-col lg:flex-row items-center justify-between gap-10
-                transition-all duration-700
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-300 md:hover:shadow-2xl"
-                    : "opacity-100"
-                }
-              `}
+              className={`col-span-1 md:col-span-2 lg:col-span-8 row-span-1 bg-[#F8F8FA] dark:bg-[#0A0A0A] rounded-[48px] p-8 md:p-10 border border-black/5 dark:border-white/10 relative overflow-hidden group  flex flex-col lg:flex-row items-center justify-between gap-10 transition-all duration-700 ${
+                !isMobile
+                  ? "opacity-0 animate-fade-in-up delay-300 md:hover:shadow-2xl"
+                  : "opacity-100"
+              }`}
             >
               <div className="flex-1 relative z-10">
                 <div className="flex items-center gap-3 mb-6">
@@ -545,21 +512,11 @@ export const AgencyPage: React.FC = () => {
 
             {/* --- CARD 5: CONTACT SHORTCUT (Bottom Right - 4 cols, 1 row) --- */}
             <div
-              className={`
-                col-span-1 md:col-span-1 lg:col-span-4 row-span-1
-                bg-brand-red text-white
-                rounded-[48px] p-10 
-                relative overflow-hidden group 
-                flex flex-col justify-center items-center text-center
-                shadow-xl shadow-red-900/20
-                transition-all duration-500
-                cursor-pointer
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-400 md:hover:bg-red-700"
-                    : "opacity-100"
-                }
-              `}
+              className={`col-span-1 md:col-span-1 lg:col-span-4 row-span-1 bg-brand-red text-white rounded-[48px] p-10 relative overflow-hidden group flex flex-col justify-center items-center text-center shadow-xl shadow-red-900/20 transition-all duration-500 cursor-pointer ${
+                !isMobile
+                  ? "opacity-0 animate-fade-in-up delay-400 md:hover:bg-red-700"
+                  : "opacity-100"
+              }`}
               onClick={() => {
                 window.location.href = "#contact";
               }}
@@ -601,24 +558,19 @@ export const AgencyPage: React.FC = () => {
               className="code-section-trigger grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-24 items-center"
             >
               <div
-                className={`
-                w-full
-                ${index % 2 === 1 ? "lg:order-2" : "lg:order-1"}
-              `}
+                className={`w-full ${
+                  index % 2 === 1 ? "lg:order-2" : "lg:order-1"
+                }`}
               >
                 <div className="relative group/code-window">
                   <div
-                    className={`
-                        w-full rounded-3xl overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.4)] bg-[#1e1e1e] border border-gray-800
-                        transition-all duration-700 
-                        ${
-                          isMinimized
-                            ? "h-auto border-red-500/30 grayscale opacity-50"
-                            : `min-h-[400px] ${
-                                !isMobile ? "hover:border-gray-600" : ""
-                              }`
-                        }
-                    `}
+                    className={`w-full rounded-3xl overflow-hidden shadow-[0_30px_100px_rgba(0,0,0,0.4)] bg-[#1e1e1e] border border-gray-800 transition-all duration-700 ${
+                      isMinimized
+                        ? "h-auto border-red-500/30 grayscale opacity-50"
+                        : `min-h-[400px] ${
+                            !isMobile ? "hover:border-gray-600" : ""
+                          }`
+                    }`}
                   >
                     <div className="bg-[#2d2d2d] px-6 h-12 flex items-center justify-between border-b border-black/50 select-none">
                       <div className="flex items-center gap-3">
@@ -657,12 +609,7 @@ export const AgencyPage: React.FC = () => {
                         <button
                           onClick={() => handleRestore(item.id)}
                           disabled={isLoading}
-                          className="
-                                        flex items-center gap-4 px-10 py-4 rounded-2xl
-                                        bg-[#2d2d2d] border border-gray-700 hover:border-brand-red hover:bg-[#3d3d3d]
-                                        text-gray-300 font-mono text-xs uppercase tracking-widest
-                                        transition-all active:scale-95 shadow-xl
-                                    "
+                          className="flex items-center gap-4 px-10 py-4 rounded-2xl bg-[#2d2d2d] border border-gray-700 hover:border-brand-red hover:bg-[#3d3d3d] text-gray-300 font-mono text-xs uppercase tracking-widest transition-all active:scale-95 shadow-xl"
                         >
                           {isLoading ? (
                             <RefreshCw
@@ -690,14 +637,11 @@ export const AgencyPage: React.FC = () => {
               </div>
 
               <div
-                className={`
-                flex flex-col gap-8 
-                ${
+                className={`flex flex-col gap-8 ${
                   index % 2 === 1
                     ? "lg:order-1 lg:items-end"
                     : "lg:order-2 lg:items-start"
-                }
-              `}
+                }`}
               >
                 <div className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-black/10 dark:border-white/10 bg-white/50 dark:bg-white/5 backdrop-blur-md shadow-lg">
                   <Layers

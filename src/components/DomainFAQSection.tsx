@@ -1,8 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState, useRef, useEffect } from 'react';
-import { Plus, Minus, ArrowDownRight, Sparkles, HelpCircle } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import React, { useState, useRef, useEffect } from "react";
+import {
+  Plus,
+  Minus,
+  ArrowDownRight,
+  Sparkles,
+  HelpCircle,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const DomainFAQSection: React.FC = () => {
   const t = useTranslations("DomainFAQSection");
@@ -12,7 +18,7 @@ export const DomainFAQSection: React.FC = () => {
 
   const FAQS = Array.from({ length: 10 }).map((_, i) => ({
     question: t(`items.${i}.question`),
-    answer: t(`items.${i}.answer`)
+    answer: t(`items.${i}.answer`),
   }));
 
   useEffect(() => {
@@ -30,8 +36,10 @@ export const DomainFAQSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full py-24 md:py-32 bg-[#F0F0F2] dark:bg-black text-black dark:text-white transition-colors duration-500 overflow-hidden border-t border-black/5 dark:border-white/5">
-
+    <section
+      ref={sectionRef}
+      className="relative w-full py-24 md:py-32 bg-[#F0F0F2] dark:bg-black text-black dark:text-white transition-colors duration-500 overflow-hidden border-t border-black/5 dark:border-white/5"
+    >
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-red/[0.02] rounded-full blur-[120px]"></div>
@@ -41,16 +49,22 @@ export const DomainFAQSection: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-[1600px] relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
-
           {/* --- LEFT SIDE: STICKY TITLE --- */}
           <div className="lg:col-span-5">
-            <div className={`lg:sticky lg:top-32 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-
+            <div
+              className={`lg:sticky lg:top-32 transition-all duration-1000 ${
+                isVisible
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 -translate-x-10"
+              }`}
+            >
               <div className="mb-8">
                 <Sparkles className="text-brand-red w-8 h-8 mb-6 animate-pulse" />
                 <h2
                   className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1] text-black dark:text-white mb-6"
-                  dangerouslySetInnerHTML={{ __html: t.raw("header.title").replace(/{br}/g, "<br/>") }}
+                  dangerouslySetInnerHTML={{
+                    __html: t.raw("header.title").replace(/{br}/g, "<br/>"),
+                  }}
                 />
                 <div className="w-20 h-1.5 bg-brand-red rounded-full"></div>
               </div>
@@ -68,8 +82,12 @@ export const DomainFAQSection: React.FC = () => {
                         <HelpCircle size={24} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-lg text-black dark:text-white">{t("header.supportTitle")}</h4>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">{t("header.supportDesc")}</p>
+                        <h4 className="font-bold text-lg text-black dark:text-white">
+                          {t("header.supportTitle")}
+                        </h4>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                          {t("header.supportDesc")}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -79,7 +97,13 @@ export const DomainFAQSection: React.FC = () => {
           </div>
 
           {/* --- RIGHT SIDE: ACCORDION LIST --- */}
-          <div className={`lg:col-span-7 flex flex-col transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div
+            className={`lg:col-span-7 flex flex-col transition-all duration-1000 delay-200 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+          >
             <div className="divide-y divide-black/10 dark:divide-white/10 border-t border-b border-black/10 dark:border-white/10">
               {FAQS.map((faq, index) => {
                 const isOpen = openIndex === index;
@@ -90,30 +114,36 @@ export const DomainFAQSection: React.FC = () => {
                     className="group cursor-pointer py-6 md:py-8"
                   >
                     <div className="flex items-start justify-between gap-6 select-none">
-                      <h3 className={`
-                                            text-lg md:text-xl font-bold leading-tight transition-colors duration-300
-                                            ${isOpen
-                          ? 'text-black dark:text-white'
-                          : 'text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white'
-                        }
-                                        `}>
+                      <h3
+                        className={`text-lg md:text-xl font-bold leading-tight transition-colors duration-300 ${
+                          isOpen
+                            ? "text-black dark:text-white"
+                            : "text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                        }`}
+                      >
                         {faq.question}
                       </h3>
-                      <div className={`
-                                            shrink-0 transition-transform duration-500
-                                            ${isOpen ? 'rotate-0' : '-rotate-90'}
-                                        `}>
+                      <div
+                        className={`shrink-0 transition-transform duration-500 ${
+                          isOpen ? "rotate-0" : "-rotate-90"
+                        }`}
+                      >
                         <ArrowDownRight
-                          className={`w-6 h-6 md:w-8 md:h-8 ${isOpen ? 'text-brand-red' : 'text-gray-400 dark:text-gray-600 group-hover:text-black dark:group-hover:text-white'}`}
+                          className={`w-6 h-6 md:w-8 md:h-8 ${
+                            isOpen
+                              ? "text-brand-red"
+                              : "text-gray-400 dark:text-gray-600 group-hover:text-black dark:group-hover:text-white"
+                          }`}
                         />
                       </div>
                     </div>
 
                     <div
-                      className={`
-                                            grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
-                                            ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-4' : 'grid-rows-[0fr] opacity-0 mt-0'}
-                                        `}
+                      className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                        isOpen
+                          ? "grid-rows-[1fr] opacity-100 mt-4"
+                          : "grid-rows-[0fr] opacity-0 mt-0"
+                      }`}
                     >
                       <div className="overflow-hidden">
                         <p className="text-base text-gray-600 dark:text-gray-300 font-medium leading-relaxed pl-0 md:pl-4 border-l-2 border-brand-red/0 md:border-brand-red md:ml-1">
@@ -126,7 +156,6 @@ export const DomainFAQSection: React.FC = () => {
               })}
             </div>
           </div>
-
         </div>
       </div>
     </section>

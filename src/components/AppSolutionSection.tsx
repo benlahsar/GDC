@@ -179,17 +179,11 @@ export const AppSolutionSection: React.FC = () => {
             </div>
 
             <div
-              className={`
-                    relative w-full max-w-[420px] h-[650px] md:h-[800px]
-                    rounded-[60px] border-[12px] border-gray-900 dark:border-[#1a1a1a]
-                    bg-black shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] 
-                    overflow-hidden transition-all duration-700
-                    ${
-                      !isMobile
-                        ? "hover:scale-[1.02] hover:-rotate-1 group/phone"
-                        : ""
-                    }
-                `}
+              className={`relative w-full max-w-[420px] h-[650px] md:h-[800px] rounded-[60px] border-[12px] border-gray-900 dark:border-[#1a1a1a] bg-black shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden transition-all duration-700 ${
+                !isMobile
+                  ? "hover:scale-[1.02] hover:-rotate-1 group/phone"
+                  : ""
+              }`}
             >
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-8 bg-gray-900 rounded-b-2xl z-30"></div>
 

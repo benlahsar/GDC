@@ -237,15 +237,13 @@ export const SEOSMOFormSection: React.FC = () => {
                   }`}
                 >
                   <div
-                    className={`w-12 h-12 rounded-[1.25rem] border-2 flex items-center justify-center transition-all duration-500 
-                                ${
-                                  step === s.n
-                                    ? "bg-brand-red border-brand-red text-white scale-125 shadow-[0_0_30px_rgba(255,0,0,0.3)]"
-                                    : step > s.n
-                                    ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
-                                    : "border-black/10 dark:border-white/10 text-gray-400"
-                                }
-                            `}
+                    className={`w-12 h-12 rounded-[1.25rem] border-2 flex items-center justify-center transition-all duration-500 ${
+                      step === s.n
+                        ? "bg-brand-red border-brand-red text-white scale-125 shadow-[0_0_30px_rgba(255,0,0,0.3)]"
+                        : step > s.n
+                        ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
+                        : "border-black/10 dark:border-white/10 text-gray-400"
+                    }`}
                   >
                     {step > s.n ? (
                       <Check size={20} strokeWidth={3} />
@@ -298,18 +296,9 @@ export const SEOSMOFormSection: React.FC = () => {
           {/* RIGHT SIDE: INTERACTIVE CONSOLE */}
           <div className="lg:col-span-8 w-full">
             <div
-              className={`
-                    relative w-full rounded-[60px] 
-                    bg-white dark:bg-[#080808] 
-                    border border-black/5 dark:border-white/10
-                    shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] dark:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.6)]
-                    overflow-hidden transition-all duration-1000
-                    ${
-                      isSuccess
-                        ? "border-emerald-500/30 shadow-emerald-500/10"
-                        : ""
-                    }
-                `}
+              className={`relative w-full rounded-[60px] bg-white dark:bg-[#080808] border border-black/5 dark:border-white/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.1)] dark:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.6)] overflow-hidden transition-all duration-1000 ${
+                isSuccess ? "border-emerald-500/30 shadow-emerald-500/10" : ""
+              }`}
             >
               <div className="p-8 md:p-14 lg:p-24 relative z-10">
                 {isSuccess ? (
@@ -365,16 +354,11 @@ export const SEOSMOFormSection: React.FC = () => {
                               <div
                                 key={p.id}
                                 onClick={() => toggleArray("platforms", label)}
-                                className={`
-                                                        p-6 md:p-8 rounded-[2.5rem] border-2 cursor-pointer transition-all duration-500 flex flex-col items-center text-center gap-4
-                                                        ${
-                                                          formData.platforms.includes(
-                                                            label
-                                                          )
-                                                            ? "bg-blue-600 border-blue-600 text-white shadow-xl shadow-blue-900/30 scale-105"
-                                                            : "bg-black/5 dark:bg-white/5 border-transparent text-gray-500 hover:bg-white dark:hover:bg-[#111] hover:border-black/10 dark:hover:border-white/10"
-                                                        }
-                                                    `}
+                                className={`p-6 md:p-8 rounded-[2.5rem] border-2 cursor-pointer transition-all duration-500 flex flex-col items-center text-center gap-4 ${
+                                  formData.platforms.includes(label)
+                                    ? "bg-blue-600 border-blue-600 text-white shadow-xl shadow-blue-900/30 scale-105"
+                                    : "bg-black/5 dark:bg-white/5 border-transparent text-gray-500 hover:bg-white dark:hover:bg-[#111] hover:border-black/10 dark:hover:border-white/10"
+                                }`}
                               >
                                 <div
                                   className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-transform ${
@@ -441,15 +425,11 @@ export const SEOSMOFormSection: React.FC = () => {
                                 onClick={() =>
                                   setFormData({ ...formData, objective: label })
                                 }
-                                className={`
-                                                        p-8 rounded-[3rem] border transition-all duration-500 cursor-pointer flex items-center justify-between group/obj
-                                                        ${
-                                                          formData.objective ===
-                                                          label
-                                                            ? "bg-black dark:bg-white border-transparent text-white dark:text-black shadow-2xl scale-[1.03]"
-                                                            : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5"
-                                                        }
-                                                    `}
+                                className={`p-8 rounded-[3rem] border transition-all duration-500 cursor-pointer flex items-center justify-between group/obj ${
+                                  formData.objective === label
+                                    ? "bg-black dark:bg-white border-transparent text-white dark:text-black shadow-2xl scale-[1.03]"
+                                    : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5"
+                                }`}
                               >
                                 <div className="flex items-center gap-6">
                                   <div
@@ -515,16 +495,11 @@ export const SEOSMOFormSection: React.FC = () => {
                             <div
                               key={tool}
                               onClick={() => toggleArray("tracking", tool)}
-                              className={`
-                                                        p-6 rounded-[2rem] border transition-all duration-500 cursor-pointer flex items-center justify-between group/tool
-                                                        ${
-                                                          formData.tracking.includes(
-                                                            tool
-                                                          )
-                                                            ? "bg-emerald-500 border-emerald-500 text-white shadow-xl"
-                                                            : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:border-emerald-500/40"
-                                                        }
-                                                    `}
+                              className={`p-6 rounded-[2rem] border transition-all duration-500 cursor-pointer flex items-center justify-between group/tool ${
+                                formData.tracking.includes(tool)
+                                  ? "bg-emerald-500 border-emerald-500 text-white shadow-xl"
+                                  : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:border-emerald-500/40"
+                              }`}
                             >
                               <span className="text-xs font-black uppercase tracking-widest">
                                 {tool}
@@ -591,16 +566,11 @@ export const SEOSMOFormSection: React.FC = () => {
                                 onClick={() =>
                                   toggleArray("creativeStyle", label)
                                 }
-                                className={`
-                                                        p-8 rounded-[3rem] border transition-all duration-700 cursor-pointer flex flex-col items-center text-center gap-6
-                                                        ${
-                                                          formData.creativeStyle.includes(
-                                                            label
-                                                          )
-                                                            ? "bg-purple-600 border-purple-600 text-white shadow-2xl shadow-purple-900/40 scale-105"
-                                                            : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5"
-                                                        }
-                                                    `}
+                                className={`p-8 rounded-[3rem] border transition-all duration-700 cursor-pointer flex flex-col items-center text-center gap-6 ${
+                                  formData.creativeStyle.includes(label)
+                                    ? "bg-purple-600 border-purple-600 text-white shadow-2xl shadow-purple-900/40 scale-105"
+                                    : "bg-white dark:bg-white/[0.02] border-black/5 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:bg-black/5 dark:hover:bg-white/5"
+                                }`}
                               >
                                 <div
                                   className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all ${
@@ -812,14 +782,11 @@ export const SEOSMOFormSection: React.FC = () => {
                         type={step === 5 ? "submit" : "button"}
                         onClick={step < 5 ? handleNext : undefined}
                         disabled={isSubmitting}
-                        className={`
-                                            group relative px-10 py-5 md:px-16 md:py-7 rounded-[2.5rem] font-black uppercase tracking-[0.5em] text-[10px] transition-all overflow-hidden flex items-center gap-6 shadow-2xl active:scale-95
-                                            ${
-                                              step === 5
-                                                ? "bg-emerald-500 text-white hover:bg-emerald-600 shadow-emerald-500/40"
-                                                : "bg-brand-red text-white hover:bg-red-700 shadow-red-900/40"
-                                            }
-                                        `}
+                        className={`group relative px-10 py-5 md:px-16 md:py-7 rounded-[2.5rem] font-black uppercase tracking-[0.5em] text-[10px] transition-all overflow-hidden flex items-center gap-6 shadow-2xl active:scale-95 ${
+                          step === 5
+                            ? "bg-emerald-500 text-white hover:bg-emerald-600 shadow-emerald-500/40"
+                            : "bg-brand-red text-white hover:bg-red-700 shadow-red-900/40"
+                        }`}
                       >
                         <span className="relative z-10">
                           {isSubmitting

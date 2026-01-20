@@ -363,16 +363,9 @@ export const DomainNamePage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
           {/* 1. HERO TEXT & REAL-TIME SEARCH (Left) */}
           <div
-            className={`
-                col-span-1 lg:col-span-7
-                bg-white dark:bg-[#0A0A0A]
-                rounded-[40px] p-8 md:p-12 lg:p-16
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-center
-                relative overflow-hidden group
-                shadow-xl dark:shadow-[0_0_40px_-10px_rgba(255,255,255,0.05)]
-                ${!isMobile ? "opacity-0 animate-enter-left" : "opacity-100"}
-            `}
+            className={`col-span-1 lg:col-span-7 bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-12 lg:p-16 border border-black/5 dark:border-white/10 flex flex-col justify-center relative overflow-hidden group shadow-xl dark:shadow-[0_0_40px_-10px_rgba(255,255,255,0.05)] ${
+              !isMobile ? "opacity-0 animate-enter-left" : "opacity-100"
+            }`}
           >
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-red/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-red/10 transition-colors duration-700"></div>
 
@@ -398,14 +391,11 @@ export const DomainNamePage: React.FC = () => {
               <div className="relative mb-12 max-w-xl group/searchbox">
                 <form onSubmit={handleCheckDomain} className="relative">
                   <div
-                    className={`
-                                flex items-center bg-gray-50 dark:bg-white/5 border-2 rounded-[2rem] p-1.5 transition-all duration-500
-                                ${
-                                  isChecking
-                                    ? "border-brand-red shadow-[0_0_30px_rgba(255,0,0,0.2)]"
-                                    : "border-black/5 dark:border-white/10 focus-within:border-brand-red/50"
-                                }
-                            `}
+                    className={`flex items-center bg-gray-50 dark:bg-white/5 border-2 rounded-[2rem] p-1.5 transition-all duration-500 ${
+                      isChecking
+                        ? "border-brand-red shadow-[0_0_30px_rgba(255,0,0,0.2)]"
+                        : "border-black/5 dark:border-white/10 focus-within:border-brand-red/50"
+                    }`}
                   >
                     <div className="pl-6 text-gray-400 group-focus-within/searchbox:text-brand-red transition-colors">
                       <Search size={20} />
@@ -522,20 +512,11 @@ export const DomainNamePage: React.FC = () => {
 
           {/* 2. SYNCED VISUAL MOCKUP (Right) */}
           <div
-            className={`
-                col-span-1 lg:col-span-5
-                bg-[#111] dark:bg-[#111]
-                rounded-[40px] p-8 md:p-12
-                border border-white/5 shadow-[0_40px_100px_rgba(0,0,0,0.6)]
-                relative overflow-hidden group
-                flex flex-col justify-between
-                min-h-[500px]
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-enter-right delay-100"
-                    : "opacity-100"
-                }
-            `}
+            className={`col-span-1 lg:col-span-5 bg-[#111] dark:bg-[#111] rounded-[40px] p-8 md:p-12 border border-white/5 shadow-[0_40px_100px_rgba(0,0,0,0.6)] relative overflow-hidden group flex flex-col justify-between min-h-[500px] ${
+              !isMobile
+                ? "opacity-0 animate-enter-right delay-100"
+                : "opacity-100"
+            }`}
           >
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-br from-brand-red/10 to-transparent opacity-40 mix-blend-overlay"></div>
@@ -572,14 +553,11 @@ export const DomainNamePage: React.FC = () => {
                   <button
                     key={ext}
                     onClick={() => handleExtensionClick(ext)}
-                    className={`
-                                    px-6 py-3 rounded-xl font-black text-xs uppercase tracking-widest backdrop-blur-md transition-all duration-300 border
-                                    ${
-                                      domainInput.toLowerCase().endsWith(ext)
-                                        ? "bg-brand-red border-brand-red text-white shadow-[0_0_20px_rgba(255,0,0,0.3)]"
-                                        : "bg-white/5 border-white/10 text-white/40 hover:bg-white/10 hover:text-white hover:border-white/20"
-                                    }
-                                `}
+                    className={`px-6 py-3 rounded-xl font-black text-xs uppercase tracking-widest backdrop-blur-md transition-all duration-300 border ${
+                      domainInput.toLowerCase().endsWith(ext)
+                        ? "bg-brand-red border-brand-red text-white shadow-[0_0_20px_rgba(255,0,0,0.3)]"
+                        : "bg-white/5 border-white/10 text-white/40 hover:bg-white/10 hover:text-white hover:border-white/20"
+                    }`}
                   >
                     {ext}
                   </button>
@@ -608,17 +586,11 @@ export const DomainNamePage: React.FC = () => {
 
           {/* 3. PROCESS CARD */}
           <div
-            className={`
-                col-span-1 lg:col-span-6
-                bg-[#F5F5F7] dark:bg-[#0A0A0A]
-                rounded-[40px] p-8 md:p-10
-                border border-black/5 dark:border-white/10
-                ${
-                  !isMobile
-                    ? "group hover:-translate-y-1 transition-transform duration-500 opacity-0 animate-fade-in-up delay-200"
-                    : ""
-                }
-            `}
+            className={`col-span-1 lg:col-span-6 bg-[#F5F5F7] dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10 border border-black/5 dark:border-white/10 ${
+              !isMobile
+                ? "group hover:-translate-y-1 transition-transform duration-500 opacity-0 animate-fade-in-up delay-200"
+                : ""
+            }`}
           >
             <div className="w-14 h-14 rounded-2xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center mb-6 shadow-lg">
               <Server size={28} strokeWidth={1.5} />
@@ -634,17 +606,11 @@ export const DomainNamePage: React.FC = () => {
 
           {/* 4. BENEFITS CARD */}
           <div
-            className={`
-                col-span-1 lg:col-span-6
-                bg-[#F5F5F7] dark:bg-[#0A0A0A]
-                rounded-[40px] p-8 md:p-10
-                border border-black/5 dark:border-white/10
-                ${
-                  !isMobile
-                    ? "group hover:-translate-y-1 transition-transform duration-500 opacity-0 animate-fade-in-up delay-300"
-                    : ""
-                }
-            `}
+            className={`col-span-1 lg:col-span-6 bg-[#F5F5F7] dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10 border border-black/5 dark:border-white/10 ${
+              !isMobile
+                ? "group hover:-translate-y-1 transition-transform duration-500 opacity-0 animate-fade-in-up delay-300"
+                : ""
+            }`}
           >
             <div className="w-14 h-14 rounded-2xl bg-brand-red text-white flex items-center justify-center mb-6 shadow-lg shadow-brand-red/20">
               <ShieldCheck size={28} strokeWidth={1.5} />

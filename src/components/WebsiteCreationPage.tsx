@@ -101,19 +101,9 @@ export const WebsiteCreationPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)] mb-16 md:mb-32">
           {/* 1. HERO IMAGE CARD */}
           <div
-            className={`
-                            col-span-1 md:col-span-5 lg:col-span-4 md:row-span-2 relative group
-                            rounded-[32px] md:rounded-[40px] overflow-hidden
-                            bg-white dark:bg-[#0A0A0A]/50 backdrop-blur-xl
-                            border border-black/5 dark:border-white/10
-                            min-h-[300px] md:min-h-full
-                            ${
-                              !isMobile
-                                ? "opacity-0 animate-enter-left"
-                                : "opacity-100"
-                            }
-                            hover:border-black/10 dark:hover:border-white/20 transition-all duration-500
-                        `}
+            className={`col-span-1 md:col-span-5 lg:col-span-4 md:row-span-2 relative group rounded-[32px] md:rounded-[40px] overflow-hidden bg-white dark:bg-[#0A0A0A]/50 backdrop-blur-xl border border-black/5 dark:border-white/10 min-h-[300px] md:min-h-full ${
+              !isMobile ? "opacity-0 animate-enter-left" : "opacity-100"
+            } hover:border-black/10 dark:hover:border-white/20 transition-all duration-500`}
             style={!isMobile ? { animationDelay: "100ms" } : {}}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-brand-red/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10"></div>
@@ -147,19 +137,9 @@ export const WebsiteCreationPage: React.FC = () => {
 
           {/* 2. HEADLINE & INTRO */}
           <div
-            className={`
-                            col-span-1 md:col-span-7 lg:col-span-8 p-6 md:p-12
-                            rounded-[32px] md:rounded-[40px]
-                            bg-white dark:bg-[#0A0A0A]/60 backdrop-blur-xl
-                            border border-black/5 dark:border-white/10
-                            relative overflow-hidden group
-                            ${
-                              !isMobile
-                                ? "opacity-0 animate-enter-right"
-                                : "opacity-100"
-                            }
-                            shadow-xl dark:shadow-none
-                        `}
+            className={`col-span-1 md:col-span-7 lg:col-span-8 p-6 md:p-12 rounded-[32px] md:rounded-[40px] bg-white dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 relative overflow-hidden group ${
+              !isMobile ? "opacity-0 animate-enter-right" : "opacity-100"
+            } shadow-xl dark:shadow-none`}
             style={!isMobile ? { animationDelay: "200ms" } : {}}
           >
             {!isMobile && (
@@ -473,18 +453,11 @@ export const WebsiteCreationPage: React.FC = () => {
             {SOLUTIONS.map((item, index) => (
               <div
                 key={index}
-                className={`
-                                    group relative rounded-[32px] md:rounded-[40px] overflow-hidden
-                                    bg-black
-                                    border border-black/5 dark:border-white/10
-                                    transition-all duration-700 ease-out
-                                    ${
-                                      !isMobile
-                                        ? "hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-fade-in-up"
-                                        : "opacity-100"
-                                    }
-                                    min-h-[400px] md:min-h-[500px] w-full
-                                `}
+                className={`group relative rounded-[32px] md:rounded-[40px] overflow-hidden bg-black border border-black/5 dark:border-white/10 transition-all duration-700 ease-out ${
+                  !isMobile
+                    ? "hover:-translate-y-2 hover:shadow-2xl opacity-0 animate-fade-in-up"
+                    : "opacity-100"
+                } min-h-[400px] md:min-h-[500px] w-full`}
                 style={
                   !isMobile ? { animationDelay: `${300 + index * 150}ms` } : {}
                 }

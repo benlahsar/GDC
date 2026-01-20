@@ -65,15 +65,9 @@ export const ApplicationCreationPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 auto-rows-auto mb-12">
           {/* 1. MAIN WELCOME CARD */}
           <div
-            className={`
-                lg:col-span-8 row-span-2
-                bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-12 lg:p-16
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-center
-                relative overflow-hidden group
-                shadow-2xl dark:shadow-none
-                ${!isMobile ? "opacity-0 animate-enter-left" : "opacity-100"}
-            `}
+            className={`lg:col-span-8 row-span-2 bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-12 lg:p-16 border border-black/5 dark:border-white/10 flex flex-col justify-center relative overflow-hidden group shadow-2xl dark:shadow-none ${
+              !isMobile ? "opacity-0 animate-enter-left" : "opacity-100"
+            }`}
           >
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-red/10 transition-colors duration-700"></div>
 
@@ -147,20 +141,11 @@ export const ApplicationCreationPage: React.FC = () => {
 
           {/* 2. IMAGE CARD */}
           <div
-            className={`
-                lg:col-span-4 row-span-2
-                relative rounded-[40px] overflow-hidden
-                bg-[#111] dark:bg-black
-                flex items-center justify-center p-4
-                shadow-2xl shadow-black/50
-                group
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-enter-right delay-200"
-                    : "opacity-100"
-                }
-                min-h-[400px]
-            `}
+            className={`lg:col-span-4 row-span-2 relative rounded-[40px] overflow-hidden bg-[#111] dark:bg-black flex items-center justify-center p-4 shadow-2xl shadow-black/50 group ${
+              !isMobile
+                ? "opacity-0 animate-enter-right delay-200"
+                : "opacity-100"
+            } min-h-[400px]`}
           >
             <div className="absolute inset-0 z-0">
               <img
@@ -205,17 +190,11 @@ export const ApplicationCreationPage: React.FC = () => {
 
           {/* 3. PROCESS LIST */}
           <div
-            className={`
-                lg:col-span-4
-                bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10
-                border border-black/5 dark:border-white/10
-                group transition-all duration-500
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
-                    : "opacity-100"
-                }
-            `}
+            className={`lg:col-span-4 bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-10 border border-black/5 dark:border-white/10 group transition-all duration-500 ${
+              !isMobile
+                ? "opacity-0 animate-fade-in-up delay-300 hover:-translate-y-1"
+                : "opacity-100"
+            }`}
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 rounded-xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center">
@@ -244,18 +223,11 @@ export const ApplicationCreationPage: React.FC = () => {
 
           {/* 4. BENEFITS LIST */}
           <div
-            className={`
-                lg:col-span-8
-                bg-[#F5F5F7] dark:bg-[#080808] rounded-[40px] p-8 md:p-12
-                border border-black/5 dark:border-white/10
-                group transition-all duration-500
-                ${
-                  !isMobile
-                    ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
-                    : "opacity-100"
-                }
-                relative overflow-hidden
-            `}
+            className={`lg:col-span-8 bg-[#F5F5F7] dark:bg-[#080808] rounded-[40px] p-8 md:p-12 border border-black/5 dark:border-white/10 group transition-all duration-500 ${
+              !isMobile
+                ? "opacity-0 animate-fade-in-up delay-400 hover:-translate-y-1"
+                : "opacity-100"
+            } relative overflow-hidden`}
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-red/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
 

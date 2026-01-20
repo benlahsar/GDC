@@ -111,18 +111,9 @@ export const SEOExpertiseCities: React.FC = () => {
           {CITY_EXPERTISE.map((item, idx) => (
             <div
               key={idx}
-              className={`
-                    group relative flex flex-col md:flex-row items-stretch 
-                    bg-white dark:bg-[#0A0A0A]
-                    border border-black/5 dark:border-white/10
-                    rounded-[40px] md:rounded-[50px] 
-                    overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700
-                    ${
-                      !isMobile
-                        ? "opacity-0 animate-enter-bottom"
-                        : "opacity-100"
-                    }
-                  `}
+              className={`group relative flex flex-col md:flex-row items-stretch bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 rounded-[40px] md:rounded-[50px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-700 ${
+                !isMobile ? "opacity-0 animate-enter-bottom" : "opacity-100"
+              }`}
               style={{
                 animationDelay: !isMobile ? `${idx * 150}ms` : "0ms",
                 isolation: "isolate",

@@ -113,11 +113,9 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
     setIsSubmitting(true);
 
     const fullPhone = `${selectedCountry.code} ${formData.phone}`;
-    const servicesString = formData.services.join(", ");
     const enhancedDescription = `Employés: ${formData.employees}\n\n${formData.details}`;
 
-    // 1. Data object for Local Backend (DB)
-    const dbData = {
+    const requestData = {
       name: formData.name,
       email: formData.email,
       fullPhone: fullPhone,
@@ -126,50 +124,25 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
       budget: formData.budget,
       startDate: "Non spécifié",
       description: enhancedDescription,
-    };
-
-    // 2. Data object for Formspree (Email)
-    const formspreeData = {
-      name: formData.name,
-      email: formData.email,
-      phone: fullPhone,
-      company: formData.company,
-      services: servicesString,
-      budget: formData.budget,
-      employees: formData.employees,
-      description: formData.details,
-      _subject: `Nouvelle Demande Agence: ${formData.company || formData.name}`,
+      employees: formData.employees, // Pass this along just in case
     };
 
     try {
-      // --- ACTION 1: SAVE TO DATABASE (Localhost) ---
-      const dbRequest = fetch("http://localhost:3001/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dbData),
-      })
-        .then((res) => {
-          if (!res.ok) console.warn("DB Save warning:", res.statusText);
-          return res.json().catch(() => ({}));
-        })
-        .catch((err) => {
-          console.error("Error saving to database:", err);
-        });
-
-      // --- ACTION 2: SEND EMAIL (Formspree) ---
-      const emailRequest = fetch("https://formspree.io/f/meoyrlyn", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formspreeData),
-      }).then((res) => {
-        if (!res.ok) throw new Error("Formspree error");
-        return res.json();
+        body: JSON.stringify(requestData),
       });
 
-      await Promise.all([dbRequest, emailRequest]);
+      if (!response.ok) {
+        throw new Error("Server error");
+      }
+
+      const result = await response.json();
+
+      if (!result.success) {
+        throw new Error(result.message || "Submission failed");
+      }
 
       setIsSubmitting(false);
       setIsSuccess(true);
@@ -252,14 +225,11 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
                       className="relative z-10 flex flex-col items-center gap-2 bg-white dark:bg-[#0A0A0A] px-2 transition-colors duration-500"
                     >
                       <div
-                        className={`
-                           w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300
-                           ${
-                             isActive || isCompleted
-                               ? "bg-brand-red text-white scale-110 shadow-[0_0_15px_rgba(220,38,38,0.5)]"
-                               : "bg-gray-100 dark:bg-white/10 text-gray-400 dark:text-gray-500"
-                           }
-                        `}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
+                          isActive || isCompleted
+                            ? "bg-brand-red text-white scale-110 shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+                            : "bg-gray-100 dark:bg-white/10 text-gray-400 dark:text-gray-500"
+                        }`}
                       >
                         {isCompleted ? <Check size={14} /> : s.id}
                       </div>
@@ -484,14 +454,11 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
                               <div
                                 key={srv.id}
                                 onClick={() => toggleService(srv.id)}
-                                className={`
-                                   p-4 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-3 text-center h-32 group
-                                   ${
-                                     isSelected
-                                       ? "bg-brand-red border-brand-red text-white"
-                                       : "bg-black/5 dark:bg-white/5 border-black/10 dark:border-white/20 hover:border-brand-red/50 hover:bg-black/10 dark:hover:bg-white/10"
-                                   }
-                                 `}
+                                className={`p-4 rounded-xl border cursor-pointer transition-all duration-300 flex flex-col items-center justify-center gap-3 text-center h-32 group ${
+                                  isSelected
+                                    ? "bg-brand-red border-brand-red text-white"
+                                    : "bg-black/5 dark:bg-white/5 border-black/10 dark:border-white/20 hover:border-brand-red/50 hover:bg-black/10 dark:hover:bg-white/10"
+                                }`}
                               >
                                 <srv.icon
                                   size={24}
@@ -550,14 +517,11 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
                                 onClick={() =>
                                   setFormData({ ...formData, budget: b })
                                 }
-                                className={`
-                                     px-4 py-3 rounded-lg border text-xs font-bold text-center cursor-pointer transition-all
-                                     ${
-                                       formData.budget === b
-                                         ? "bg-black dark:bg-white text-white dark:text-black border-black dark:border-white"
-                                         : "bg-transparent border-black/10 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:border-black/30 dark:hover:border-white/30"
-                                     }
-                                   `}
+                                className={`px-4 py-3 rounded-lg border text-xs font-bold text-center cursor-pointer transition-all ${
+                                  formData.budget === b
+                                    ? "bg-black dark:bg-white text-white dark:text-black border-black dark:border-white"
+                                    : "bg-transparent border-black/10 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:border-black/30 dark:hover:border-white/30"
+                                }`}
                               >
                                 {b}
                               </div>

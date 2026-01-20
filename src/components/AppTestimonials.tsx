@@ -41,14 +41,7 @@ export const AppTestimonials: React.FC = () => {
             {[...testimonials, ...testimonials].map((item, idx) => (
               <div
                 key={idx}
-                className="
-                            w-[350px] md:w-[420px] shrink-0
-                            bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8 md:p-10
-                            border border-black/5 dark:border-white/5 shadow-2xl
-                            flex flex-col justify-between
-                            min-h-[300px] md:min-h-[340px]
-                            transition-all duration-500 hover:scale-[1.02] hover:border-brand-red/20
-                        "
+                className="w-[350px] md:w-[420px] shrink-0 bg-white dark:bg-[#0A0A0A] rounded-[32px] p-8 md:p-10 border border-black/5 dark:border-white/5 shadow-2xl flex flex-col justify-between min-h-[300px] md:min-h-[340px] transition-all duration-500 hover:scale-[1.02] hover:border-brand-red/20"
               >
                 <div className="relative">
                   <Quote className="absolute -top-4 -left-4 text-black/5 dark:text-white/5 w-12 h-12 rotate-180" />

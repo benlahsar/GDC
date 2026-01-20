@@ -311,7 +311,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
                 {/* Giant Watermark Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.05] group-hover/sandbox:opacity-[0.1] transition-opacity duration-1000">
                   <img
-                    src="https://groupdigitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
+                    src="https://group-digitalconcept.com/wp-content/uploads/2024/04/Design-sans-titre-23.png"
                     className="w-[60%] max-w-[400px] grayscale brightness-0 dark:invert"
                     alt="watermark"
                   />
@@ -359,7 +359,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
 
                   <div className="absolute inset-0 flex items-center justify-center">
                     <img
-                      src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Generated-Image-December-22-2025-10_44AM.jpeg"
+                      src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Generated-Image-December-22-2025-10_44AM.jpeg"
                       className="w-56 h-56 object-contain drop-shadow-[0_0_50px_rgba(212,175,55,0.4)] transition-transform duration-700 group-hover:scale-110"
                       alt="logo construct"
                     />
@@ -566,7 +566,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
               <div className="absolute -inset-10 bg-brand-red/5 blur-[100px] rounded-full opacity-50"></div>
               <div className="relative rounded-[60px] overflow-hidden shadow-[0_50px_100px_rgba(0,0,0,0.15)] group/img">
                 <img
-                  src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/creation-1766590955322-scaled.webp"
+                  src="https://group-digitalconcept.com/wp-content/uploads/2025/12/creation-1766590955322-scaled.webp"
                   className="w-full h-auto grayscale group-hover/img:grayscale-0 transition-all duration-[2s] group-hover/img:scale-105"
                   alt="Brand Uniform"
                 />
@@ -638,7 +638,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
                 <div className="relative pointer-events-none">
                   <div className="absolute -inset-10 bg-brand-red/10 rounded-full blur-3xl animate-pulse"></div>
                   <img
-                    src="https://groupdigitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-82.png"
+                    src="https://group-digitalconcept.com/wp-content/uploads/2025/12/Design-sans-titre-82.png"
                     className="w-full h-auto relative z-10 transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-3"
                     alt="app ui"
                   />

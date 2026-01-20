@@ -1,7 +1,14 @@
-
-import React from 'react';
-import { MapPin, Palmtree, Building2, Landmark, Globe2, Sun, ArrowUpRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import React from "react";
+import {
+  MapPin,
+  Palmtree,
+  Building2,
+  Landmark,
+  Globe2,
+  Sun,
+  ArrowUpRight,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const getRegions = (t: any) => [
   {
@@ -9,43 +16,43 @@ const getRegions = (t: any) => [
     subtitle: t("regions.morocco.subtitle"),
     desc: t("regions.morocco.desc"),
     icon: MapPin,
-    gradient: "from-brand-red to-red-600"
+    gradient: "from-brand-red to-red-600",
   },
   {
     city: t("regions.marrakech.city"),
     subtitle: t("regions.marrakech.subtitle"),
     desc: t("regions.marrakech.desc"),
     icon: Palmtree,
-    gradient: "from-orange-500 to-amber-500"
+    gradient: "from-orange-500 to-amber-500",
   },
   {
     city: t("regions.casablanca.city"),
     subtitle: t("regions.casablanca.subtitle"),
     desc: t("regions.casablanca.desc"),
     icon: Building2,
-    gradient: "from-blue-600 to-indigo-600"
+    gradient: "from-blue-600 to-indigo-600",
   },
   {
     city: t("regions.rabat.city"),
     subtitle: t("regions.rabat.subtitle"),
     desc: t("regions.rabat.desc"),
     icon: Landmark,
-    gradient: "from-emerald-600 to-teal-600"
+    gradient: "from-emerald-600 to-teal-600",
   },
   {
     city: t("regions.tanger.city"),
     subtitle: t("regions.tanger.subtitle"),
     desc: t("regions.tanger.desc"),
     icon: Globe2,
-    gradient: "from-violet-600 to-purple-600"
+    gradient: "from-violet-600 to-purple-600",
   },
   {
     city: t("regions.agadir.city"),
     subtitle: t("regions.agadir.subtitle"),
     desc: t("regions.agadir.desc"),
     icon: Sun,
-    gradient: "from-yellow-500 to-orange-500"
-  }
+    gradient: "from-yellow-500 to-orange-500",
+  },
 ];
 
 export const RegionalExpertiseSection: React.FC = () => {
@@ -54,7 +61,6 @@ export const RegionalExpertiseSection: React.FC = () => {
 
   return (
     <section className="relative w-full py-24 md:py-32 bg-[#F0F0F2] dark:bg-[#000000] overflow-hidden transition-colors duration-500 border-t border-black/5 dark:border-white/5">
-
       {/* Background Ambience */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-brand-red/[0.05] to-transparent"></div>
@@ -63,7 +69,6 @@ export const RegionalExpertiseSection: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1800px] relative z-10">
-
         {/* Header */}
         <div className="text-center mb-16 md:mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/5 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-md mb-6 shadow-sm">
@@ -75,7 +80,17 @@ export const RegionalExpertiseSection: React.FC = () => {
 
           <h2
             className="text-3xl md:text-5xl lg:text-7xl font-black mb-6 tracking-tighter text-black dark:text-white"
-            dangerouslySetInnerHTML={{ __html: t.raw("title").replace(/{br}/g, "<br className='md:hidden' />").replace(/{span}/g, `<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">${t("titleHighlight")}</span>`) }}
+            dangerouslySetInnerHTML={{
+              __html: t
+                .raw("title")
+                .replace(/{br}/g, "<br className='md:hidden' />")
+                .replace(
+                  /{span}/g,
+                  `<span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-600">${t(
+                    "titleHighlight"
+                  )}</span>`
+                ),
+            }}
           />
           <p className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400 font-medium leading-relaxed">
             {t("description")}
@@ -90,21 +105,30 @@ export const RegionalExpertiseSection: React.FC = () => {
               className="group relative bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-[32px] p-5 md:p-6 xl:p-5 2xl:p-6 flex flex-col justify-between min-h-[280px] md:min-h-[320px] hover:-translate-y-2 hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.7)] transition-all duration-500 ease-out overflow-hidden"
             >
               {/* Hover Gradient Top Line */}
-              <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${region.gradient} scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
+              <div
+                className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${region.gradient} scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}
+              ></div>
 
               {/* Background Hover Effect */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${region.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500 pointer-events-none`}></div>
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${region.gradient} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500 pointer-events-none`}
+              ></div>
 
               {/* Top Content */}
               <div className="relative z-10">
                 {/* Icon Box */}
                 <div className="mb-6 flex justify-between items-start">
-                  <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${region.gradient} flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                  <div
+                    className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${region.gradient} flex items-center justify-center text-white shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
+                  >
                     <region.icon size={22} strokeWidth={1.5} />
                   </div>
 
                   <div className="w-8 h-8 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-4 group-hover:translate-x-0">
-                    <ArrowUpRight size={14} className="text-black dark:text-white" />
+                    <ArrowUpRight
+                      size={14}
+                      className="text-black dark:text-white"
+                    />
                   </div>
                 </div>
 
@@ -129,7 +153,6 @@ export const RegionalExpertiseSection: React.FC = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

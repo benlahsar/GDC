@@ -124,7 +124,7 @@
   },
   "services": {
     "title": "Our Expertise",
-    "headline": "Discover how we support your <highlight>digital success</highlight>",
+    "headline": "Discover how we support <highlight>your digital success</highlight>",
     "description": "Innovative, tailor-made solutions to boost your growth.",
     "marquee": {
       "customDev": "Custom Development",

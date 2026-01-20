@@ -86,38 +86,29 @@ export const FAQSection: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => {
               <div
                 key={index}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className={`
-                                group relative rounded-[24px] transition-all duration-500 cursor-pointer overflow-hidden
-                                ${
-                                  openIndex === index
-                                    ? "bg-white dark:bg-[#0A0A0A] shadow-2xl scale-[1.02] z-10 ring-1 ring-black/5 dark:ring-white/10"
-                                    : "bg-transparent hover:bg-white/40 dark:hover:bg-white/5 border-b border-black/5 dark:border-white/5"
-                                }
-                            `}
+                className={`group relative rounded-[24px] transition-all duration-500 cursor-pointer overflow-hidden ${
+                  openIndex === index
+                    ? "bg-white dark:bg-[#0A0A0A] shadow-2xl scale-[1.02] z-10 ring-1 ring-black/5 dark:ring-white/10"
+                    : "bg-transparent hover:bg-white/40 dark:hover:bg-white/5 border-b border-black/5 dark:border-white/5"
+                }`}
               >
                 <div className="p-6 md:p-8">
                   <div className="flex items-start justify-between gap-6">
                     <h3
-                      className={`
-                                        text-lg md:text-xl font-bold leading-tight transition-colors duration-300
-                                        ${
-                                          openIndex === index
-                                            ? "text-brand-red"
-                                            : "text-black dark:text-white group-hover:text-black/70 dark:group-hover:text-white/80"
-                                        }
-                                    `}
+                      className={`text-lg md:text-xl font-bold leading-tight transition-colors duration-300 ${
+                        openIndex === index
+                          ? "text-brand-red"
+                          : "text-black dark:text-white group-hover:text-black/70 dark:group-hover:text-white/80"
+                      }`}
                     >
                       {item.question}
                     </h3>
                     <div
-                      className={`
-                                        shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-500
-                                        ${
-                                          openIndex === index
-                                            ? "bg-brand-red border-brand-red text-white rotate-180 shadow-lg"
-                                            : "border-black/10 dark:border-white/10 text-gray-400 dark:text-gray-500 group-hover:border-black dark:group-hover:border-white group-hover:text-black dark:group-hover:text-white"
-                                        }
-                                    `}
+                      className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-500 ${
+                        openIndex === index
+                          ? "bg-brand-red border-brand-red text-white rotate-180 shadow-lg"
+                          : "border-black/10 dark:border-white/10 text-gray-400 dark:text-gray-500 group-hover:border-black dark:group-hover:border-white group-hover:text-black dark:group-hover:text-white"
+                      }`}
                     >
                       {openIndex === index ? (
                         <Minus size={14} />
@@ -128,14 +119,11 @@ export const FAQSection: React.FC<{ isMobile?: boolean }> = ({ isMobile }) => {
                   </div>
 
                   <div
-                    className={`
-                                    grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]
-                                    ${
-                                      openIndex === index
-                                        ? "grid-rows-[1fr] opacity-100 mt-4"
-                                        : "grid-rows-[0fr] opacity-0 mt-0"
-                                    }
-                                `}
+                    className={`grid transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+                      openIndex === index
+                        ? "grid-rows-[1fr] opacity-100 mt-4"
+                        : "grid-rows-[0fr] opacity-0 mt-0"
+                    }`}
                   >
                     <div className="overflow-hidden">
                       <div className="w-full h-[1px] bg-black/5 dark:bg-white/5 mb-4"></div>

@@ -101,15 +101,9 @@ export const EcommercePage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 auto-rows-[minmax(180px,auto)] mb-12">
           {/* 1. HERO TEXT */}
           <div
-            className={`
-                col-span-1 md:col-span-2 lg:col-span-7 row-span-2
-                bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-12 lg:p-16
-                border border-black/5 dark:border-white/10
-                flex flex-col justify-center
-                relative overflow-hidden group
-                shadow-2xl dark:shadow-[0_0_50px_rgba(0,0,0,0.5)]
-                ${!isMobile ? "opacity-0 animate-enter-left" : "opacity-100"}
-            `}
+            className={`col-span-1 md:col-span-2 lg:col-span-7 row-span-2 bg-white dark:bg-[#0A0A0A] rounded-[40px] p-8 md:p-12 lg:p-16 border border-black/5 dark:border-white/10 flex flex-col justify-center relative overflow-hidden group shadow-2xl dark:shadow-[0_0_50px_rgba(0,0,0,0.5)] ${
+              !isMobile ? "opacity-0 animate-enter-left" : "opacity-100"
+            }`}
           >
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-red/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
 
@@ -156,17 +150,9 @@ export const EcommercePage: React.FC = () => {
 
           {/* 2. THE VISUAL CARD */}
           <div
-            className={`
-                col-span-1 md:col-span-2 lg:col-span-5 row-span-2
-                relative rounded-[40px] overflow-hidden
-                bg-gradient-to-br from-[#111] via-[#050505] to-black
-                border border-white/10
-                flex items-center justify-center
-                shadow-2xl
-                group
-                min-h-[500px]
-                ${!isMobile ? "opacity-0 animate-enter-right" : "opacity-100"}
-            `}
+            className={`col-span-1 md:col-span-2 lg:col-span-5 row-span-2 relative rounded-[40px] overflow-hidden bg-gradient-to-br from-[#111] via-[#050505] to-black border border-white/10 flex items-center justify-center shadow-2xl group min-h-[500px] ${
+              !isMobile ? "opacity-0 animate-enter-right" : "opacity-100"
+            }`}
           >
             <div className="absolute inset-0 z-0">
               <img
@@ -387,7 +373,7 @@ export const EcommercePage: React.FC = () => {
                 features: t.raw(
                   "technologies.platforms.shopify.features"
                 ) as string[],
-                icon: "https://group-digitalconcept.com/wp-content/uploads/2025/03/shfy-p-.svg",
+                icon: "https://cdn.simpleicons.org/shopify",
               },
               {
                 name: t("technologies.platforms.woocommerce.name"),
@@ -395,7 +381,7 @@ export const EcommercePage: React.FC = () => {
                 features: t.raw(
                   "technologies.platforms.woocommerce.features"
                 ) as string[],
-                icon: "https://group-digitalconcept.com/wp-content/uploads/2025/03/WordPress_logo_2.svg",
+                icon: "https://cdn.simpleicons.org/woocommerce",
               },
               {
                 name: t("technologies.platforms.custom.name"),

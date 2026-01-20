@@ -14,7 +14,6 @@ import { useNavigation } from "../context/NavigationContext";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-
 export const SolutionsSection: React.FC = () => {
   const tSolutions = useTranslations("solutionsSection");
   const sectionRef = useRef<HTMLElement>(null);
@@ -106,10 +105,7 @@ export const SolutionsSection: React.FC = () => {
           className="pointer-events-none absolute -inset-px transition-opacity duration-500 z-0"
           style={{
             opacity,
-            background: `
-                radial-gradient(600px circle at ${mousePos.x}px ${mousePos.y}px, rgba(255, 50, 50, 0.08), transparent 40%),
-                radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(255, 255, 255, 0.1), transparent 40%)
-            `,
+            background: `radial-gradient(600px circle at ${mousePos.x}px ${mousePos.y}px, rgba(255, 50, 50, 0.08), transparent 40%), radial-gradient(400px circle at ${mousePos.x}px ${mousePos.y}px, rgba(255, 255, 255, 0.1), transparent 40%)`,
           }}
         />
       )}
@@ -125,7 +121,15 @@ export const SolutionsSection: React.FC = () => {
 
           <h2
             className="text-3xl md:text-8xl font-black tracking-tighter text-black dark:text-white mb-4 md:mb-6 uppercase leading-tight"
-            dangerouslySetInnerHTML={{ __html: tSolutions.raw("title").replace("<highlight>", '<br /><span class="italic text-brand-red">').replace("</highlight>", '</span>') }}
+            dangerouslySetInnerHTML={{
+              __html: tSolutions
+                .raw("title")
+                .replace(
+                  "<highlight>",
+                  '<br /><span class="italic text-brand-red">'
+                )
+                .replace("</highlight>", "</span>"),
+            }}
           />
           <p className="max-w-xl mx-auto text-base md:text-xl text-gray-500 dark:text-gray-400 font-medium leading-relaxed">
             {tSolutions("subtitle")}
@@ -134,8 +138,9 @@ export const SolutionsSection: React.FC = () => {
 
         {/* --- DYNAMIC LAYOUT: Sticky for PC, Simple List for Mobile --- */}
         <div
-          className={`relative flex flex-col ${isMobile ? "gap-6" : "gap-16 pb-32"
-            }`}
+          className={`relative flex flex-col ${
+            isMobile ? "gap-6" : "gap-16 pb-32"
+          }`}
         >
           {SOLUTIONS_DATA.map((item, index) => (
             <div
@@ -148,8 +153,9 @@ export const SolutionsSection: React.FC = () => {
               }
             >
               <div
-                className={`group relative w-full ${!isMobile ? "max-w-5xl mx-auto" : ""
-                  } rounded-[24px] md:rounded-[60px] p-[1px] transition-transform duration-500`}
+                className={`group relative w-full ${
+                  !isMobile ? "max-w-5xl mx-auto" : ""
+                } rounded-[24px] md:rounded-[60px] p-[1px] transition-transform duration-500`}
               >
                 {/* Gradient glow - PC Only */}
                 {!isMobile && (
@@ -159,22 +165,15 @@ export const SolutionsSection: React.FC = () => {
                 )}
 
                 <div
-                  className={`
-                    relative h-full w-full
-                    rounded-[24px] md:rounded-[58px]
-                    bg-white/10 dark:bg-black/20
-                    ${isMobile
+                  className={`relative h-full w-full rounded-[24px] md:rounded-[58px] bg-white/10 dark:bg-black/20 ${
+                    isMobile
                       ? "backdrop-blur-xl saturate-100"
                       : "backdrop-blur-[40px] saturate-150"
-                    }
-                    border border-white/40 dark:border-white/10
-                    shadow-xl p-6 md:p-14
-                    overflow-hidden
-                    ${!isMobile
+                  } border border-white/40 dark:border-white/10 shadow-xl p-6 md:p-14 overflow-hidden ${
+                    !isMobile
                       ? "transition-all duration-500 hover:shadow-2xl"
                       : ""
-                    }
-                   `}
+                  }`}
                 >
                   <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
                     {/* Icon/ID Section */}
@@ -190,24 +189,19 @@ export const SolutionsSection: React.FC = () => {
                       )}
 
                       <div
-                        className={`
-                                relative w-14 h-14 md:w-24 md:h-24 rounded-full
-                                bg-white/30 dark:bg-white/5
-                                border border-white/50 dark:border-white/10
-                                backdrop-blur-md flex items-center justify-center
-                                shadow-lg transition-transform duration-500
-                                ${!isMobile
+                        className={`relative w-14 h-14 md:w-24 md:h-24 rounded-full bg-white/30 dark:bg-white/5 border border-white/50 dark:border-white/10 backdrop-blur-md flex items-center justify-center shadow-lg transition-transform duration-500 ${
+                          !isMobile
                             ? "group-hover:rotate-12 group-hover:scale-110"
                             : ""
-                          }
-                            `}
+                        }`}
                       >
                         <item.icon
                           size={isMobile ? 24 : 40}
-                          className={`text-black dark:text-white transition-colors duration-300 ${!isMobile
-                            ? item.color.replace("text-", "group-hover:text-")
-                            : ""
-                            }`}
+                          className={`text-black dark:text-white transition-colors duration-300 ${
+                            !isMobile
+                              ? item.color.replace("text-", "group-hover:text-")
+                              : ""
+                          }`}
                         />
                       </div>
 
@@ -231,28 +225,23 @@ export const SolutionsSection: React.FC = () => {
                           className="inline-flex items-center gap-3 group/btn"
                         >
                           <div
-                            className={`
-                                    w-8 h-8 md:w-10 md:h-10 rounded-full
-                                    bg-black/5 dark:bg-white/10
-                                    flex items-center justify-center
-                                    transition-colors duration-300
-                                    ${!isMobile
-                                ? "group-hover/btn:bg-brand-red"
-                                : ""
-                              }
-                                  `}
+                            className={`w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center transition-colors duration-300 ${
+                              !isMobile ? "group-hover/btn:bg-brand-red" : ""
+                            }`}
                           >
                             <MoveRight
                               size={16}
-                              className={`text-black dark:text-white transition-colors ${!isMobile ? "group-hover/btn:text-white" : ""
-                                }`}
+                              className={`text-black dark:text-white transition-colors ${
+                                !isMobile ? "group-hover/btn:text-white" : ""
+                              }`}
                             />
                           </div>
                           <span
-                            className={`text-[10px] md:text-sm font-bold uppercase tracking-widest text-black/60 dark:text-white/60 ${!isMobile
-                              ? "group-hover/btn:text-brand-red transition-colors"
-                              : ""
-                              }`}
+                            className={`text-[10px] md:text-sm font-bold uppercase tracking-widest text-black/60 dark:text-white/60 ${
+                              !isMobile
+                                ? "group-hover/btn:text-brand-red transition-colors"
+                                : ""
+                            }`}
                           >
                             {tSolutions("cta")}
                           </span>
@@ -266,6 +255,6 @@ export const SolutionsSection: React.FC = () => {
           ))}
         </div>
       </div>
-    </section >
+    </section>
   );
 };

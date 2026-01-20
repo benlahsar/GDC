@@ -83,19 +83,11 @@ export const SEODigitalProjects: React.FC = () => {
             >
               {/* Glass Card */}
               <div
-                className={`
-                        relative w-full aspect-[4/5] rounded-[40px] 
-                        bg-white dark:bg-[#0A0A0A]
-                        backdrop-blur-2xl
-                        border border-black/5 dark:border-white/10
-                        transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]
-                        overflow-hidden flex items-center justify-center p-12
-                        ${
-                          !isMobile
-                            ? "hover:-translate-y-4 hover:border-brand-red/30 shadow-xl hover:shadow-2xl"
-                            : "shadow-lg"
-                        }
-                    `}
+                className={`relative w-full aspect-[4/5] rounded-[40px] bg-white dark:bg-[#0A0A0A] backdrop-blur-2xl border border-black/5 dark:border-white/10 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] overflow-hidden flex items-center justify-center p-12 ${
+                  !isMobile
+                    ? "hover:-translate-y-4 hover:border-brand-red/30 shadow-xl hover:shadow-2xl"
+                    : "shadow-lg"
+                }`}
                 style={{ isolation: "isolate", transform: "translateZ(0)" }}
               >
                 {/* Dynamic Background Glow */}

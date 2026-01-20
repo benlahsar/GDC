@@ -29,6 +29,12 @@ import { useTranslations } from "next-intl";
 
 const BENTO_SERVICES = [
   {
+    key: "creation",
+    span: "md:col-span-2 md:row-span-2",
+    icon: Search,
+    color: "text-brand-red",
+  },
+  {
     key: "performance",
     span: "md:col-span-2 md:row-span-1",
     icon: Zap,
@@ -47,16 +53,16 @@ const BENTO_SERVICES = [
     color: "text-purple-500",
   },
   {
-    key: "creation",
-    span: "md:col-span-2 md:row-span-2",
-    icon: Search,
-    color: "text-brand-red",
-  },
-  {
     key: "mobile",
     span: "md:col-span-1 md:row-span-1",
     icon: Shield,
     color: "text-emerald-500",
+  },
+  {
+    key: "seo",
+    span: "md:col-span-1 md:row-span-1",
+    icon: Target,
+    color: "text-brand-red",
   },
   {
     key: "photo",
@@ -83,16 +89,22 @@ const BENTO_SERVICES = [
     color: "text-yellow-500",
   },
   {
-    key: "erp",
-    span: "md:col-span-1 md:row-span-1",
-    icon: Briefcase,
-    color: "text-blue-600",
-  },
-  {
     key: "audits",
     span: "md:col-span-2 md:row-span-1",
     icon: Search,
     color: "text-brand-red",
+  },
+  {
+    key: "software",
+    span: "md:col-span-2 md:row-span-1",
+    icon: Globe,
+    color: "text-brand-red",
+  },
+  {
+    key: "erp",
+    span: "md:col-span-1 md:row-span-1",
+    icon: Briefcase,
+    color: "text-blue-600",
   },
   {
     key: "marketing",
@@ -107,22 +119,10 @@ const BENTO_SERVICES = [
     color: "text-purple-600",
   },
   {
-    key: "software",
-    span: "md:col-span-2 md:row-span-1",
-    icon: Globe,
-    color: "text-brand-red",
-  },
-  {
     key: "tracking",
     span: "md:col-span-1 md:row-span-1",
     icon: Search,
     color: "text-gray-500",
-  },
-  {
-    key: "seo",
-    span: "md:col-span-1 md:row-span-1",
-    icon: Target,
-    color: "text-brand-red",
   },
 ];
 
@@ -255,20 +255,13 @@ export const PackSEOPage: React.FC = () => {
               {BENTO_SERVICES.map((item, i) => (
                 <div
                   key={i}
-                  className={`
-                              ${item.span} 
-                              rounded-[2.5rem] p-6 md:p-8
-                              bg-white/40 dark:bg-white/[0.03] backdrop-blur-xl 
-                              border border-black/5 dark:border-white/10
-                              flex flex-col items-center justify-center text-center
-                              transition-all duration-700
-                              group cursor-pointer min-h-[160px]
-                              ${
-                                isMobile
-                                  ? "shadow-sm"
-                                  : "hover:scale-[1.02] hover:border-brand-red/40 hover:shadow-2xl hover:shadow-brand-red/5"
-                              }
-                          `}
+                  className={`${
+                    item.span
+                  } rounded-[2.5rem] p-6 md:p-8 bg-white/40 dark:bg-white/[0.03] backdrop-blur-xl border border-black/5 dark:border-white/10 flex flex-col items-center justify-center text-center transition-all duration-700 group cursor-pointer min-h-[160px] ${
+                    isMobile
+                      ? "shadow-sm"
+                      : "hover:scale-[1.02] hover:border-brand-red/40 hover:shadow-2xl hover:shadow-brand-red/5"
+                  }`}
                 >
                   <div className="relative flex flex-col items-center gap-4">
                     <div
@@ -309,18 +302,11 @@ export const PackSEOPage: React.FC = () => {
             {VALUE_PILLARS.map((pillar, i) => (
               <div key={i} className="group relative">
                 <div
-                  className={`
-                              relative flex flex-col gap-6 p-10 md:p-14 
-                              rounded-[48px] bg-white/70 dark:bg-white/[0.03] backdrop-blur-2xl 
-                              border border-black/10 dark:border-white/10
-                              transition-all duration-700 ease-out h-full
-                              shadow-lg dark:shadow-none
-                              ${
-                                isMobile
-                                  ? "opacity-100"
-                                  : "group-hover:border-brand-red/30 opacity-0 animate-fade-in-up"
-                              }
-                          `}
+                  className={`relative flex flex-col gap-6 p-10 md:p-14 rounded-[48px] bg-white/70 dark:bg-white/[0.03] backdrop-blur-2xl border border-black/10 dark:border-white/10 transition-all duration-700 ease-out h-full shadow-lg dark:shadow-none ${
+                    isMobile
+                      ? "opacity-100"
+                      : "group-hover:border-brand-red/30 opacity-0 animate-fade-in-up"
+                  }`}
                   style={
                     !isMobile ? { animationDelay: `${400 + i * 200}ms` } : {}
                   }
@@ -449,22 +435,17 @@ export const PackSEOPage: React.FC = () => {
             {SEO_PACKS.map((pack, idx) => (
               <div
                 key={idx}
-                className={`
-                            relative group p-8 md:p-10 rounded-[40px] overflow-hidden
-                            border transition-all duration-700 h-full flex flex-col
-                            ${
-                              pack.highlight
-                                ? "bg-black text-white dark:bg-white dark:text-black border-transparent shadow-xl"
-                                : "bg-white/60 dark:bg-white/5 backdrop-blur-xl border-black/5 dark:border-white/10 text-black dark:text-white shadow-xl"
-                            }
-                            ${
-                              isMobile
-                                ? "opacity-100"
-                                : pack.highlight
-                                ? "shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] dark:shadow-[0_40px_100px_-20px_rgba(255,255,255,0.1)]"
-                                : "hover:shadow-2xl opacity-0 animate-fade-in-up"
-                            }
-                        `}
+                className={`relative group p-8 md:p-10 rounded-[40px] overflow-hidden border transition-all duration-700 h-full flex flex-col ${
+                  pack.highlight
+                    ? "bg-black text-white dark:bg-white dark:text-black border-transparent shadow-xl"
+                    : "bg-white/60 dark:bg-white/5 backdrop-blur-xl border-black/5 dark:border-white/10 text-black dark:text-white shadow-xl"
+                } ${
+                  isMobile
+                    ? "opacity-100"
+                    : pack.highlight
+                      ? "shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] dark:shadow-[0_40px_100px_-20px_rgba(255,255,255,0.1)]"
+                      : "hover:shadow-2xl opacity-0 animate-fade-in-up"
+                }`}
                 style={
                   !isMobile ? { animationDelay: `${200 + idx * 100}ms` } : {}
                 }
@@ -680,18 +661,11 @@ export const PackSEOPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             {/* Left Column: Optimisation seo */}
             <div
-              className={`
-                    relative p-10 md:p-14 rounded-[50px]
-                    bg-white dark:bg-[#0A0A0A] backdrop-blur-[40px] 
-                    border border-black/10 dark:border-white/10
-                    transition-all duration-700 h-full flex flex-col justify-center
-                    text-black dark:text-white
-                    ${
-                      isMobile
-                        ? "shadow-xl"
-                        : "shadow-2xl hover:shadow-[0_0_60px_rgba(228,80,58,0.2)] opacity-0 animate-enter-left"
-                    }
-                  `}
+              className={`relative p-10 md:p-14 rounded-[50px] bg-white dark:bg-[#0A0A0A] backdrop-blur-[40px] border border-black/10 dark:border-white/10 transition-all duration-700 h-full flex flex-col justify-center text-black dark:text-white ${
+                isMobile
+                  ? "shadow-xl"
+                  : "shadow-2xl hover:shadow-[0_0_60px_rgba(228,80,58,0.2)] opacity-0 animate-enter-left"
+              }`}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
               <h3 className="text-3xl md:text-4xl font-black uppercase mb-12 tracking-tight leading-none flex items-center gap-3">
@@ -776,18 +750,11 @@ export const PackSEOPage: React.FC = () => {
 
             {/* Right Column: AVANTAGES */}
             <div
-              className={`
-                    relative p-10 md:p-14 rounded-[50px]
-                    bg-white dark:bg-[#0A0A0A] backdrop-blur-[40px] 
-                    border border-black/10 dark:border-white/10
-                    transition-all duration-700 h-full flex flex-col justify-center
-                    text-black dark:text-white
-                    ${
-                      isMobile
-                        ? "shadow-xl"
-                        : "shadow-2xl hover:shadow-[0_0_60px_rgba(147,51,234,0.2)] opacity-0 animate-enter-left"
-                    }
-                  `}
+              className={`relative p-10 md:p-14 rounded-[50px] bg-white dark:bg-[#0A0A0A] backdrop-blur-[40px] border border-black/10 dark:border-white/10 transition-all duration-700 h-full flex flex-col justify-center text-black dark:text-white ${
+                isMobile
+                  ? "shadow-xl"
+                  : "shadow-2xl hover:shadow-[0_0_60px_rgba(147,51,234,0.2)] opacity-0 animate-enter-left"
+              }`}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
               <h3 className="text-3xl md:text-4xl font-black uppercase mb-12 tracking-tight leading-none flex items-center gap-3">

@@ -62,19 +62,11 @@ export const TeamExpertiseSection: React.FC = () => {
                     Dark Mode: Dark / Light Mode: White
                    ========================================================= */}
           <div
-            className={`
-                    md:col-span-2 lg:col-span-7 relative group overflow-hidden
-                    rounded-[40px] p-10 md:p-14
-                    flex flex-col justify-between min-h-[420px]
-                    transition-all duration-700 ease-out
-                    ${isVisible
+            className={`md:col-span-2 lg:col-span-7 relative group overflow-hidden rounded-[40px] p-10 md:p-14 flex flex-col justify-between min-h-[420px] transition-all duration-700 ease-out ${
+              isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
-              }
-                    bg-white dark:bg-[#0A0A0A]
-                    border border-black/5 dark:border-white/10
-                    shadow-xl hover:shadow-2xl
-                `}
+            } bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 shadow-xl hover:shadow-2xl`}
           >
             {/* Background decoration */}
             <div className="absolute top-0 right-0 p-12 opacity-10 dark:opacity-20 transform group-hover:rotate-12 transition-transform duration-700">
@@ -96,8 +88,17 @@ export const TeamExpertiseSection: React.FC = () => {
             </div>
 
             {/* Title */}
-            <h2 className="relative z-10 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tighter text-black dark:text-white mt-auto"
-              dangerouslySetInnerHTML={{ __html: tTeam.raw("title").replace("<highlight>", '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-black dark:from-gray-400 dark:to-white">').replace("</highlight>", '</span>') }}
+            <h2
+              className="relative z-10 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tighter text-black dark:text-white mt-auto"
+              dangerouslySetInnerHTML={{
+                __html: tTeam
+                  .raw("title")
+                  .replace(
+                    "<highlight>",
+                    '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-500 to-black dark:from-gray-400 dark:to-white">'
+                  )
+                  .replace("</highlight>", "</span>"),
+              }}
             />
           </div>
 
@@ -106,19 +107,11 @@ export const TeamExpertiseSection: React.FC = () => {
                     Always Red Gradient for Brand Identity
                    ========================================================= */}
           <div
-            className={`
-                    md:col-span-1 lg:col-span-5 relative group overflow-hidden
-                    rounded-[40px] p-10 md:p-12
-                    flex flex-col justify-between min-h-[420px]
-                    transition-all duration-700 ease-out delay-100
-                    ${isVisible
+            className={`md:col-span-1 lg:col-span-5 relative group overflow-hidden rounded-[40px] p-10 md:p-12 flex flex-col justify-between min-h-[420px] transition-all duration-700 ease-out delay-100 ${
+              isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
-              }
-                    bg-gradient-to-br from-[#2a0505] via-[#1a0000] to-black
-                    border border-red-900/30
-                    shadow-2xl shadow-red-900/20
-                `}
+            } bg-gradient-to-br from-[#2a0505] via-[#1a0000] to-black border border-red-900/30 shadow-2xl shadow-red-900/20`}
           >
             <div className="flex justify-between items-start relative z-10">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-red-200/70 border-b border-red-500/30 pb-2">
@@ -153,24 +146,18 @@ export const TeamExpertiseSection: React.FC = () => {
                     Light Mode: Black Background
                    ========================================================= */}
           <div
-            className={`
-                    md:col-span-1 lg:col-span-7 relative group overflow-hidden
-                    rounded-[40px] p-10 md:p-14
-                    flex flex-col justify-center gap-8 min-h-[380px]
-                    transition-all duration-700 ease-out delay-200
-                    ${isVisible
+            className={`md:col-span-1 lg:col-span-7 relative group overflow-hidden rounded-[40px] p-10 md:p-14 flex flex-col justify-center gap-8 min-h-[380px] transition-all duration-700 ease-out delay-200 ${
+              isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
-              }
-                    bg-black dark:bg-white
-                    text-white dark:text-black
-                    shadow-2xl
-                `}
+            } bg-black dark:bg-white text-white dark:text-black shadow-2xl`}
           >
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-6">
                 {tTeam.rich("vision.title", {
-                  highlight: (chunks) => <span className="text-brand-red">{chunks}</span>
+                  highlight: (chunks) => (
+                    <span className="text-brand-red">{chunks}</span>
+                  ),
                 })}
               </h3>
               <p className="text-gray-400 dark:text-gray-600 text-xl leading-relaxed mb-8 max-w-2xl">
@@ -203,18 +190,11 @@ export const TeamExpertiseSection: React.FC = () => {
                     Light Mode: Light Grey
                    ========================================================= */}
           <div
-            className={`
-                    md:col-span-2 lg:col-span-5 relative group overflow-hidden
-                    rounded-[40px] p-10 md:p-12
-                    flex flex-col justify-between min-h-[380px]
-                    transition-all duration-700 ease-out delay-300
-                    ${isVisible
+            className={`md:col-span-2 lg:col-span-5 relative group overflow-hidden rounded-[40px] p-10 md:p-12 flex flex-col justify-between min-h-[380px] transition-all duration-700 ease-out delay-300 ${
+              isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
-              }
-                    bg-[#F5F5F7] dark:bg-[#121212]
-                    border border-black/5 dark:border-white/5
-                `}
+            } bg-[#F5F5F7] dark:bg-[#121212] border border-black/5 dark:border-white/5`}
           >
             <div className="flex justify-between items-start relative z-10">
               <span className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 border-b border-gray-500/20 pb-2">

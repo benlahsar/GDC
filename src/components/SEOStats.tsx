@@ -75,15 +75,9 @@ export const SEOStats: React.FC = () => {
           {STATS.map((stat, idx) => (
             <div
               key={stat.id}
-              className={`
-                        group relative overflow-hidden rounded-[32px] p-8
-                        bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl 
-                        border border-black/5 dark:border-white/10
-                        hover:border-brand-red/30 transition-all duration-500
-                        flex flex-col items-center justify-center text-center
-                        hover:-translate-y-2 hover:shadow-2xl
-                        ${idx === 0 ? "md:col-span-2 lg:col-span-1" : ""}
-                    `}
+              className={`group relative overflow-hidden rounded-[32px] p-8 bg-white/60 dark:bg-[#0A0A0A]/60 backdrop-blur-xl border border-black/5 dark:border-white/10 hover:border-brand-red/30 transition-all duration-500 flex flex-col items-center justify-center text-center hover:-translate-y-2 hover:shadow-2xl ${
+                idx === 0 ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
             >
               {/* Hover Glow */}
               <div

@@ -269,14 +269,11 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   <button
                     key={f}
                     onClick={() => setActiveFilter(f)}
-                    className={`
-                                    whitespace-nowrap px-6 md:px-10 py-3 md:py-4 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-500
-                                    ${
-                                      activeFilter === f
-                                        ? "bg-black dark:bg-white text-white dark:text-black scale-105 shadow-xl"
-                                        : "text-gray-500 hover:text-black dark:hover:text-white bg-transparent"
-                                    }
-                                `}
+                    className={`whitespace-nowrap px-6 md:px-10 py-3 md:py-4 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-500 ${
+                      activeFilter === f
+                        ? "bg-black dark:bg-white text-white dark:text-black scale-105 shadow-xl"
+                        : "text-gray-500 hover:text-black dark:hover:text-white bg-transparent"
+                    }`}
                   >
                     {t(`filters.${f}`)}
                   </button>
@@ -618,10 +615,9 @@ const ProjectBentoCard: React.FC<{
       ref={cardRef}
       className={`${
         project.size
-      } group/card relative rounded-[40px] overflow-hidden 
-                        bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 
-                        shadow-xl transition-all duration-700 ease-out flex flex-col cursor-pointer
-                        ${isMobile ? "" : "perspective-2000 hover:shadow-2xl"}`}
+      } group/card relative rounded-[40px] overflow-hidden bg-white dark:bg-[#0A0A0A] border border-black/5 dark:border-white/10 shadow-xl transition-all duration-700 ease-out flex flex-col cursor-pointer ${
+        isMobile ? "" : "perspective-2000 hover:shadow-2xl"
+      }`}
       style={{
         animationDelay: !isMobile ? `${index * 100}ms` : "0ms",
         transform:

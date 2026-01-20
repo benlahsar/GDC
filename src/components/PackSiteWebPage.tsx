@@ -202,18 +202,11 @@ export const PackSiteWebPage: React.FC = () => {
               }`}
             >
               <div
-                className={`
-                  relative h-full w-full rounded-[48px] p-12 md:p-14 
-                  bg-white/40 dark:bg-[#0A0A0A]/40 backdrop-blur-3xl saturate-150
-                  border border-black/5 dark:border-white/10
-                  transition-all duration-700 ease-out flex flex-col justify-between
-                  shadow-xl dark:shadow-2xl 
-                  ${
-                    isMobile
-                      ? "opacity-100"
-                      : "opacity-0 animate-fade-in-up hover:border-brand-red/30 transform-gpu hover:scale-[1.02] hover:shadow-[0_40px_80px_-20px_rgba(255,0,0,0.15)]"
-                  }
-                `}
+                className={`relative h-full w-full rounded-[48px] p-12 md:p-14 bg-white/40 dark:bg-[#0A0A0A]/40 backdrop-blur-3xl saturate-150 border border-black/5 dark:border-white/10 transition-all duration-700 ease-out flex flex-col justify-between shadow-xl dark:shadow-2xl ${
+                  isMobile
+                    ? "opacity-100"
+                    : "opacity-0 animate-fade-in-up hover:border-brand-red/30 transform-gpu hover:scale-[1.02] hover:shadow-[0_40px_80px_-20px_rgba(255,0,0,0.15)]"
+                }`}
                 style={
                   !isMobile ? { animationDelay: `${400 + i * 200}ms` } : {}
                 }
@@ -324,27 +317,20 @@ export const PackSiteWebPage: React.FC = () => {
           {PRICING_PACKS.map((pack, i) => (
             <div
               key={i}
-              className={`
-                  group relative flex flex-col 
-                  rounded-[50px] p-10 md:p-14 
-                  border transition-all duration-700
-                  ${
-                    pack.highlight
-                      ? "bg-white dark:bg-[#0A0A0A] border-brand-red/40 shadow-2xl scale-[1.05] z-10"
-                      : "bg-white/50 dark:bg-[#080808] border-black/5 dark:border-white/5 shadow-xl"
-                  }
-                  ${
-                    !isMobile && !pack.highlight
-                      ? "hover:border-black/10 dark:hover:border-white/10 hover:shadow-xl"
-                      : ""
-                  }
-                  ${isMobile ? "" : "opacity-0 animate-fade-in-up"}
-                `}
+              className={`group relative flex flex-col rounded-[50px] p-10 md:p-14 border transition-all duration-700 ${
+                pack.highlight
+                  ? "bg-white dark:bg-[#0A0A0A] border-brand-red/40 shadow-2xl scale-[1.05] z-10"
+                  : "bg-white/50 dark:bg-[#080808] border-black/5 dark:border-white/5 shadow-xl"
+              } ${
+                !isMobile && !pack.highlight
+                  ? "hover:border-black/10 dark:hover:border-white/10 hover:shadow-xl"
+                  : ""
+              } ${isMobile ? "" : "opacity-0 animate-fade-in-up"}`}
               style={!isMobile ? { animationDelay: `${200 + i * 150}ms` } : {}}
             >
               {!isMobile && (
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${pack.color} opacity-0 group-hover:opacity-100 transition-opacity duration-1000`}
+                  className={`absolute inset-0 bg-gradient-to-br ${pack.color} opacity-0 group-hover:opacity-100 transition-opacity duration-1000 rounded-[50px]`}
                 ></div>
               )}
               <div className="mb-10 relative z-10">
@@ -385,8 +371,8 @@ export const PackSiteWebPage: React.FC = () => {
                         pack.highlight
                           ? "bg-brand-red shadow-[0_0_10px_red]"
                           : isMobile
-                          ? "bg-brand-red"
-                          : "bg-gray-300 dark:bg-gray-700 group-hover/item:bg-brand-red"
+                            ? "bg-brand-red"
+                            : "bg-gray-300 dark:bg-gray-700 group-hover/item:bg-brand-red"
                       }`}
                     ></div>
                     <span
@@ -455,18 +441,11 @@ export const PackSiteWebPage: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-8">
             <div
-              className={`
-                    bg-white dark:bg-[#080808] rounded-[60px] p-10 md:p-14 
-                    border border-black/5 dark:border-white/10 
-                    shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] 
-                    relative group overflow-hidden h-full flex flex-col 
-                    transition-all duration-700 
-                    ${
-                      !isMobile
-                        ? "hover:-translate-y-4 hover:border-brand-red/20"
-                        : ""
-                    }
-                `}
+              className={`bg-white dark:bg-[#080808] rounded-[60px] p-10 md:p-14 border border-black/5 dark:border-white/10 shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] relative group overflow-hidden h-full flex flex-col transition-all duration-700 ${
+                !isMobile
+                  ? "hover:-translate-y-4 hover:border-brand-red/20"
+                  : ""
+              }`}
             >
               <div className="relative z-10">
                 <div className="mb-10 w-16 h-16 rounded-[2rem] bg-brand-red/10 flex items-center justify-center text-brand-red">
@@ -515,19 +494,11 @@ export const PackSiteWebPage: React.FC = () => {
               <div className="relative w-full max-w-[340px] aspect-square flex items-center justify-center group/hub cursor-pointer">
                 <div className="absolute inset-0 bg-brand-red/5 dark:bg-brand-red/10 rounded-full blur-[100px] animate-pulse"></div>
                 <div
-                  className={`
-                            relative z-10 w-full h-full 
-                            bg-white dark:bg-[#0A0A0A] 
-                            border border-black/10 dark:border-white/10 
-                            rounded-[80px] p-10 
-                            shadow-2xl shadow-black/20 
-                            transition-all duration-1000
-                            ${
-                              isMobile
-                                ? ""
-                                : "group-hover/hub:rotate-12 group-hover/hub:scale-105"
-                            }
-                        `}
+                  className={`relative z-10 w-full h-full bg-white dark:bg-[#0A0A0A] border border-black/10 dark:border-white/10 rounded-[80px] p-10 shadow-2xl shadow-black/20 transition-all duration-1000 ${
+                    isMobile
+                      ? ""
+                      : "group-hover/hub:rotate-12 group-hover/hub:scale-105"
+                  }`}
                 >
                   <div className="w-full h-full bg-black/5 dark:bg-black/40 rounded-[60px] flex items-center justify-center border border-black/5 dark:border-white/5 relative overflow-hidden">
                     <span className="text-5xl md:text-7xl font-black text-black dark:text-white tracking-tighter z-10">
@@ -544,14 +515,9 @@ export const PackSiteWebPage: React.FC = () => {
               </div>
 
               <div
-                className={`
-                        w-full bg-white dark:bg-[#080808] 
-                        rounded-[60px] p-10 md:p-12 
-                        border border-black/5 dark:border-white/10 
-                        shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] 
-                        relative group overflow-hidden transition-all duration-700 
-                        ${!isMobile ? "hover:scale-[1.02]" : ""}
-                    `}
+                className={`w-full bg-white dark:bg-[#080808] rounded-[60px] p-10 md:p-12 border border-black/5 dark:border-white/10 shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] relative group overflow-hidden transition-all duration-700 ${
+                  !isMobile ? "hover:scale-[1.02]" : ""
+                }`}
               >
                 <h3 className="text-2xl font-black text-black dark:text-white mb-10 tracking-tight uppercase border-b border-black/5 dark:border-white/5 pb-4">
                   {t("showcase.benefits.title")}
@@ -578,18 +544,11 @@ export const PackSiteWebPage: React.FC = () => {
             </div>
 
             <div
-              className={`
-                    bg-white dark:bg-[#080808] rounded-[60px] p-10 md:p-14 
-                    border border-black/5 dark:border-white/10 
-                    shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] 
-                    relative group overflow-hidden h-full flex flex-col 
-                    transition-all duration-700 
-                    ${
-                      !isMobile
-                        ? "hover:-translate-y-4 hover:border-brand-red/20"
-                        : ""
-                    }
-                `}
+              className={`bg-white dark:bg-[#080808] rounded-[60px] p-10 md:p-14 border border-black/5 dark:border-white/10 shadow-2xl dark:shadow-[0_40px_100px_rgba(255,0,0,0.05)] relative group overflow-hidden h-full flex flex-col transition-all duration-700 ${
+                !isMobile
+                  ? "hover:-translate-y-4 hover:border-brand-red/20"
+                  : ""
+              }`}
             >
               <div className="relative z-10">
                 <div className="mb-10 w-16 h-16 rounded-[2rem] bg-brand-red/10 flex items-center justify-center text-brand-red">

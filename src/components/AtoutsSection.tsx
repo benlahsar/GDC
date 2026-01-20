@@ -157,8 +157,9 @@ export const AtoutsSection: React.FC = () => {
         const el = document.getElementById(`atout-ball-${index}`);
         if (el) {
           const { x, y } = body.position;
-          el.style.transform = `translate3d(${x - ballRadius}px, ${y - ballRadius
-            }px, 0)`;
+          el.style.transform = `translate3d(${x - ballRadius}px, ${
+            y - ballRadius
+          }px, 0)`;
         }
       });
       animationFrameId = requestAnimationFrame(domUpdateLoop);
@@ -232,15 +233,17 @@ export const AtoutsSection: React.FC = () => {
               <div
                 key={index}
                 id={`atout-ball-${index}`}
-                className={`absolute top-0 left-0 rounded-full flex items-center justify-center p-2 text-center shadow-lg transition-colors duration-300 will-change-transform z-40 pointer-events-none ${item.highlight
-                  ? "bg-brand-red text-white border-2 border-brand-red shadow-[0_10px_20px_rgba(220,38,38,0.3)]"
-                  : "bg-white dark:bg-[#1a1a1a] text-black dark:text-white border border-gray-100 dark:border-white/10"
-                  }`}
+                className={`absolute top-0 left-0 rounded-full flex items-center justify-center p-2 text-center shadow-lg transition-colors duration-300 will-change-transform z-40 pointer-events-none ${
+                  item.highlight
+                    ? "bg-brand-red text-white border-2 border-brand-red shadow-[0_10px_20px_rgba(220,38,38,0.3)]"
+                    : "bg-white dark:bg-[#1a1a1a] text-black dark:text-white border border-gray-100 dark:border-white/10"
+                }`}
                 style={{ width: item.radius * 2, height: item.radius * 2 }}
               >
                 <span
-                  className={`font-bold leading-tight px-1 select-none pointer-events-none ${item.highlight ? "text-base" : "text-sm"
-                    }`}
+                  className={`font-bold leading-tight px-1 select-none pointer-events-none ${
+                    item.highlight ? "text-base" : "text-sm"
+                  }`}
                 >
                   {item.text}
                 </span>
@@ -259,10 +262,11 @@ export const AtoutsSection: React.FC = () => {
               {getAtouts(t).map((atout, index) => (
                 <div
                   key={index}
-                  className={`p-6 rounded-2xl border flex items-center justify-between gap-4 shadow-sm transition-all duration-300 ${atout.highlight
-                    ? "bg-brand-red text-white border-brand-red shadow-lg shadow-red-500/20"
-                    : "bg-white dark:bg-[#111] text-black dark:text-white border-black/5 dark:border-white/10"
-                    }`}
+                  className={`p-6 rounded-2xl border flex items-center justify-between gap-4 shadow-sm transition-all duration-300 ${
+                    atout.highlight
+                      ? "bg-brand-red text-white border-brand-red shadow-lg shadow-red-500/20"
+                      : "bg-white dark:bg-[#111] text-black dark:text-white border-black/5 dark:border-white/10"
+                  }`}
                 >
                   <span className="font-bold text-sm uppercase tracking-wide">
                     {atout.text}

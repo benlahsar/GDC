@@ -222,8 +222,17 @@ export const TimelineSection: React.FC = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 text-gray-500 dark:text-gray-400 text-xs font-bold uppercase tracking-[0.2em] mb-4 backdrop-blur-md">
             {tTimeline("tag")}
           </span>
-          <h2 className="text-3xl md:text-7xl font-black text-black dark:text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase"
-            dangerouslySetInnerHTML={{ __html: tTimeline.raw("title").replace("<highlight>", '<span class="transition-colors duration-700 text-gray-400 dark:text-gray-600">').replace("</highlight>", '</span>') }}
+          <h2
+            className="text-3xl md:text-7xl font-black text-black dark:text-white tracking-tight leading-tight max-w-4xl mx-auto uppercase"
+            dangerouslySetInnerHTML={{
+              __html: tTimeline
+                .raw("title")
+                .replace(
+                  "<highlight>",
+                  '<span class="transition-colors duration-700 text-gray-400 dark:text-gray-600">'
+                )
+                .replace("</highlight>", "</span>"),
+            }}
           />
         </div>
 
@@ -245,8 +254,9 @@ export const TimelineSection: React.FC = () => {
                   ref={(el) => {
                     itemsRef.current[index] = el;
                   }}
-                  className={`relative flex flex-col md:flex-row items-center ${item.align === "right" ? "md:flex-row-reverse" : ""
-                    } ${item.align === "center" ? "justify-center" : ""}`}
+                  className={`relative flex flex-col md:flex-row items-center ${
+                    item.align === "right" ? "md:flex-row-reverse" : ""
+                  } ${item.align === "center" ? "justify-center" : ""}`}
                 >
                   {/* Vertical line connector for mobile */}
                   {isMobile && index < TIMELINE_DATA.length - 1 && (
@@ -257,10 +267,11 @@ export const TimelineSection: React.FC = () => {
                   {isMobile && (
                     <div className="absolute left-0 top-0 w-20 h-20 flex items-center justify-center z-10">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${isFuture
+                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                          isFuture
                             ? "bg-emerald-500 text-white"
                             : "bg-brand-red text-white"
-                          }`}
+                        }`}
                       >
                         <item.icon size={18} />
                       </div>
@@ -268,55 +279,60 @@ export const TimelineSection: React.FC = () => {
                   )}
 
                   <div
-                    className={`hidden md:block w-[16%] ${item.align === "center" ? "hidden" : ""
-                      }`}
+                    className={`hidden md:block w-[16%] ${
+                      item.align === "center" ? "hidden" : ""
+                    }`}
                   ></div>
 
                   <div
                     className={`w-full md:w-[42%] ${isMobile ? "pl-20" : ""}`}
                   >
                     <div
-                      className={`
-                      group relative p-6 md:p-8 rounded-[24px] border transition-all duration-700 backdrop-blur-xl
-                      ${isActive
+                      className={`group relative p-6 md:p-8 rounded-[24px] border transition-all duration-700 backdrop-blur-xl
+                      ${
+                        isActive
                           ? `bg-white dark:bg-[#080808]/80 ${activeColor} opacity-100 scale-100`
                           : "shadow-none border-transparent opacity-40 grayscale scale-95"
-                        }
-                      ${item.align === "center"
+                      }
+                      ${
+                        item.align === "center"
                           ? "text-center flex flex-col items-center md:mt-12"
                           : ""
-                        }
-                    `}
+                      }`}
                     >
                       <div
-                        className={`flex items-center w-full ${item.align === "center"
+                        className={`flex items-center w-full ${
+                          item.align === "center"
                             ? "justify-center gap-4 mb-4"
                             : "justify-between mb-4"
-                          }`}
+                        }`}
                       >
                         <span
-                          className={`text-2xl md:text-4xl font-black font-mono tracking-tighter ${isActive
+                          className={`text-2xl md:text-4xl font-black font-mono tracking-tighter ${
+                            isActive
                               ? isFuture
                                 ? "text-emerald-500"
                                 : "text-black dark:text-white"
                               : "text-gray-300"
-                            }`}
+                          }`}
                         >
                           {item.year}
                         </span>
                         {!isMobile && (
                           <div
-                            className={`p-2 rounded-full ${isActive ? "bg-black/5 dark:bg-white/5" : ""
-                              }`}
+                            className={`p-2 rounded-full ${
+                              isActive ? "bg-black/5 dark:bg-white/5" : ""
+                            }`}
                           >
                             <item.icon
                               size={16}
-                              className={`${isActive
+                              className={`${
+                                isActive
                                   ? isFuture
                                     ? "text-emerald-500"
                                     : "text-brand-red"
                                   : "text-gray-300"
-                                }`}
+                              }`}
                             />
                           </div>
                         )}
@@ -326,12 +342,13 @@ export const TimelineSection: React.FC = () => {
                         {item.title}
                       </h3>
                       <p
-                        className={`text-[9px] font-bold uppercase tracking-widest mb-3 ${isActive
+                        className={`text-[9px] font-bold uppercase tracking-widest mb-3 ${
+                          isActive
                             ? isFuture
                               ? "text-emerald-600"
                               : "text-gray-500"
                             : "text-gray-300"
-                          }`}
+                        }`}
                       >
                         {item.subtitle}
                       </p>
