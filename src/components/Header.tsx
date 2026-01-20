@@ -745,7 +745,7 @@ const RegularDropdown: React.FC<{
           <button
             key={subItem.id || subItem.label}
             onClick={(e) => onSubItemClick(e, subItem)}
-            className="flex items-center justify-between w-full px-8 py-5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400 hover:bg-brand-red hover:text-white cursor-pointer transition-all duration-500 group/subitem"
+            className="flex items-center justify-start gap-4 w-full px-8 py-5 rounded-2xl text-[10px] font-black uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400 hover:bg-brand-red hover:text-white cursor-pointer transition-all duration-500 group/subitem text-left"
           >
             {subItem.label}
             <ArrowUpRight
