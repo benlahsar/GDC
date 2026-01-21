@@ -90,7 +90,7 @@ export const Header: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(
-    null
+    null,
   );
   const [isClient, setIsClient] = useState(false);
   const tNav = useTranslations("nav");
@@ -113,7 +113,7 @@ export const Header: React.FC = () => {
       }
       return key;
     },
-    [tNav, tHeader]
+    [tNav, tHeader],
   );
 
   // Initialize client-side
@@ -167,7 +167,7 @@ export const Header: React.FC = () => {
       const y = event.clientY;
       const endRadius = Math.hypot(
         Math.max(x, window.innerWidth - x),
-        Math.max(y, window.innerHeight - y)
+        Math.max(y, window.innerHeight - y),
       );
 
       document.documentElement.classList.add("no-transitions");
@@ -192,7 +192,7 @@ export const Header: React.FC = () => {
         document.documentElement.classList.remove("no-transitions");
       });
     },
-    []
+    [],
   );
 
   const handleNavClick = useCallback(
@@ -205,7 +205,7 @@ export const Header: React.FC = () => {
           setExpandedMobileItems((prev) =>
             prev.includes(item.id!)
               ? prev.filter((i) => i !== item.id)
-              : [...prev, item.id!]
+              : [...prev, item.id!],
           );
         }
         return;
@@ -234,7 +234,7 @@ export const Header: React.FC = () => {
       setMobileMenuOpen(false);
       setHoveredItem(null);
     },
-    [router]
+    [router],
   );
 
   const handleSubItemClick = useCallback(
@@ -257,7 +257,7 @@ export const Header: React.FC = () => {
       setActiveSubCategory(null);
       setMobileMenuOpen(false);
     },
-    [router]
+    [router],
   );
 
   // Fix: Remove hasMega, use hasDropdown for mega menu as well
@@ -265,21 +265,21 @@ export const Header: React.FC = () => {
 
   const expertisesItem = useMemo(
     () => translatedNav.find((n) => n.id === "expertises"),
-    [translatedNav]
+    [translatedNav],
   );
   const activeCatData = useMemo(
     () =>
       expertisesItem?.dropdownItems?.find(
-        (cat: NavItem) => cat.id === activeCategory
+        (cat: NavItem) => cat.id === activeCategory,
       ),
-    [expertisesItem, activeCategory]
+    [expertisesItem, activeCategory],
   );
   const activeSubCatData = useMemo(
     () =>
       activeCatData?.dropdownItems?.find(
-        (sub: NavItem) => sub.id === activeSubCategory
+        (sub: NavItem) => sub.id === activeSubCategory,
       ),
-    [activeCatData, activeSubCategory]
+    [activeCatData, activeSubCategory],
   );
 
   if (!isClient) {
@@ -326,7 +326,7 @@ export const Header: React.FC = () => {
         <nav className="hidden lg:flex items-center gap-1.5 xl:gap-3">
           {translatedNav.map((item, index) => {
             const constantItem = translatedNav.find(
-              (n: NavItem) => n.id === item.id
+              (n: NavItem) => n.id === item.id,
             );
             const isHoveredState = hoveredItem === item.label;
 
@@ -338,7 +338,7 @@ export const Header: React.FC = () => {
                   setHoveredItem(item.label);
                   if (item.id === "expertises" && !activeCategory) {
                     setActiveCategory(
-                      constantItem?.dropdownItems?.[0]?.id || null
+                      constantItem?.dropdownItems?.[0]?.id || null,
                     );
                   }
                 }}
@@ -462,7 +462,7 @@ export const Header: React.FC = () => {
             setExpandedMobileItems((prev) =>
               prev.includes(itemId)
                 ? prev.filter((i) => i !== itemId)
-                : [...prev, itemId]
+                : [...prev, itemId],
             )
           }
           onNavClick={handleNavClick}
@@ -863,6 +863,17 @@ const MobileMenu: React.FC<{
   onNavClick,
   onSubItemClick,
 }) => {
+  // Track expanded subcategories (nested items like website-creation)
+  const [expandedSubItems, setExpandedSubItems] = useState<string[]>([]);
+
+  const toggleSubExpand = (subId: string) => {
+    setExpandedSubItems((prev) =>
+      prev.includes(subId)
+        ? prev.filter((id) => id !== subId)
+        : [...prev, subId],
+    );
+  };
+
   if (!isOpen) return null;
 
   return (
@@ -881,7 +892,7 @@ const MobileMenu: React.FC<{
       <nav className="flex flex-col gap-2 p-8 mt-10">
         {translatedNav.map((item) => {
           const constantItem = translatedNav.find(
-            (n: NavItem) => n.id === item.id
+            (n: NavItem) => n.id === item.id,
           );
           const isExpanded = expandedMobileItems.includes(item.id!);
           const hasChildren =
@@ -913,15 +924,64 @@ const MobileMenu: React.FC<{
               </div>
               {hasChildren && isExpanded && (
                 <div className="flex flex-col gap-2 pl-6 py-4 border-l-2 border-brand-red/30">
-                  {constantItem.dropdownItems?.map((sub: NavItem) => (
-                    <button
-                      key={sub.id}
-                      onClick={(e) => onSubItemClick(e, sub)}
-                      className="py-4 text-left text-lg font-black uppercase text-gray-500 dark:text-gray-400"
-                    >
-                      {sub.label}
-                    </button>
-                  ))}
+                  {constantItem.dropdownItems?.map((sub: NavItem) => {
+                    const hasSubChildren =
+                      sub.dropdownItems && sub.dropdownItems.length > 0;
+                    const isSubExpanded = expandedSubItems.includes(sub.id!);
+
+                    return (
+                      <div key={sub.id} className="flex flex-col">
+                        <div className="flex items-center w-full">
+                          <button
+                            onClick={(e) => {
+                              if (hasSubChildren) {
+                                // If has children, toggle expand on tap
+                                e.preventDefault();
+                              } else {
+                                onSubItemClick(e, sub);
+                              }
+                            }}
+                            className="flex-1 py-4 text-left text-lg font-black uppercase text-gray-500 dark:text-gray-400 hover:text-brand-red transition-colors"
+                          >
+                            {sub.label}
+                          </button>
+                          {hasSubChildren && (
+                            <button
+                              onClick={() => toggleSubExpand(sub.id!)}
+                              className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all ${
+                                isSubExpanded
+                                  ? "bg-brand-red text-white"
+                                  : "bg-black/5 dark:bg-white/5 text-gray-400"
+                              }`}
+                              aria-label={
+                                isSubExpanded ? "Réduire" : "Développer"
+                              }
+                            >
+                              {isSubExpanded ? (
+                                <Minus size={16} />
+                              ) : (
+                                <Plus size={16} />
+                              )}
+                            </button>
+                          )}
+                        </div>
+                        {/* Nested subcategories (e.g., website-creation's children) */}
+                        {hasSubChildren && isSubExpanded && (
+                          <div className="flex flex-col gap-1 pl-4 py-2 ml-2 border-l-2 border-brand-red/20">
+                            {sub.dropdownItems?.map((nestedItem: NavItem) => (
+                              <button
+                                key={nestedItem.id}
+                                onClick={(e) => onSubItemClick(e, nestedItem)}
+                                className="py-3 text-left text-base font-bold text-gray-400 dark:text-gray-500 hover:text-brand-red transition-colors"
+                              >
+                                {nestedItem.label}
+                              </button>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </div>

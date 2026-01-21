@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
 import { Sparkles, MousePointer2, CheckCircle2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
 const getAtouts = (t: any) => [
   { text: t("bubbles.expertise"), highlight: true },
@@ -25,6 +26,7 @@ export const AtoutsSection: React.FC = () => {
   const [items, setItems] = useState<any[]>([]);
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { isLite } = usePerformanceMode();
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 1024);
@@ -41,14 +43,20 @@ export const AtoutsSection: React.FC = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    if (isMobile || !isVisible || !containerRef.current || !canvasRef.current)
+    if (
+      isMobile ||
+      isLite ||
+      !isVisible ||
+      !containerRef.current ||
+      !canvasRef.current
+    )
       return;
 
     const Engine = Matter.Engine,
@@ -107,21 +115,21 @@ export const AtoutsSection: React.FC = () => {
       height + wallThickness / 2,
       width,
       wallThickness,
-      wallOptions
+      wallOptions,
     );
     const leftWall = Bodies.rectangle(
       0 - wallThickness / 2,
       -2000,
       wallThickness,
       5000,
-      wallOptions
+      wallOptions,
     );
     const rightWall = Bodies.rectangle(
       width + wallThickness / 2,
       -2000,
       wallThickness,
       5000,
-      wallOptions
+      wallOptions,
     );
     Composite.add(world, [ground, leftWall, rightWall]);
 
@@ -133,11 +141,11 @@ export const AtoutsSection: React.FC = () => {
 
     mouseConstraint.mouse.element.removeEventListener(
       "mousewheel",
-      (mouseConstraint.mouse as any).mousewheel
+      (mouseConstraint.mouse as any).mousewheel,
     );
     mouseConstraint.mouse.element.removeEventListener(
       "DOMMouseScroll",
-      (mouseConstraint.mouse as any).mousewheel
+      (mouseConstraint.mouse as any).mousewheel,
     );
     Composite.add(world, mouseConstraint);
 
@@ -148,7 +156,7 @@ export const AtoutsSection: React.FC = () => {
         text: ATOUTS[i].text,
         highlight: ATOUTS[i].highlight,
         radius: ballRadius,
-      }))
+      })),
     );
 
     let animationFrameId: number;
@@ -193,7 +201,7 @@ export const AtoutsSection: React.FC = () => {
       Composite.clear(world, false);
       Engine.clear(engine);
     };
-  }, [isVisible, isMobile]);
+  }, [isVisible, isMobile, isLite]);
 
   return (
     <section className="relative w-full py-24 bg-[#F0F0F2] dark:bg-black text-black dark:text-white overflow-hidden transition-colors duration-500">
@@ -212,7 +220,7 @@ export const AtoutsSection: React.FC = () => {
           <div className="w-24 h-1.5 bg-brand-red mx-auto rounded-full"></div>
         </div>
 
-        {!isMobile ? (
+        {!isMobile && !isLite ? (
           <div
             ref={containerRef}
             className="relative w-full max-w-[1200px] h-[600px] rounded-[40px] border border-black/10 dark:border-white/10 bg-white/50 dark:bg-[#0A0A0A] shadow-[inset_0_0_40px_rgba(0,0,0,0.02)] dark:shadow-[inset_0_0_40px_rgba(0,0,0,0.5)] overflow-hidden select-none"

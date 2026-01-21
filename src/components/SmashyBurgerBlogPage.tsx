@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 import Matter from "matter-js";
 import {
   Sparkles,
@@ -56,6 +57,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
   const [activeColor, setActiveColor] = useState("#D4AF37");
   const sandboxRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { isLite } = usePerformanceMode();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,7 +70,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
 
   // --- MATTER.JS SANDBOX LOGIC ---
   useEffect(() => {
-    if (isMobile || !sandboxRef.current || !canvasRef.current) return;
+    if (isMobile || isLite || !sandboxRef.current || !canvasRef.current) return;
 
     const {
       Engine,
@@ -127,7 +129,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
             strokeStyle: "#ffffff20",
             lineWidth: 2,
           },
-        }
+        },
       );
       tokens.push(body);
     }
@@ -135,6 +137,13 @@ export const SmashyBurgerBlogPage: React.FC = () => {
 
     // Mouse control
     const mouse = Mouse.create(render.canvas);
+    // Allow page scrolling by removing Matter's wheel listeners
+    render.canvas.removeEventListener("mousewheel", (mouse as any).mousewheel);
+    render.canvas.removeEventListener(
+      "DOMMouseScroll",
+      (mouse as any).mousewheel,
+    );
+
     const mouseConstraint = MouseConstraint.create(engine, {
       mouse: mouse,
       constraint: { stiffness: 0.2, render: { visible: false } },
@@ -150,7 +159,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
       Runner.stop(runner);
       Engine.clear(engine);
     };
-  }, [isMobile]);
+  }, [isMobile, isLite]);
 
   const handleSmash = () => {
     setSmashActive(true);
@@ -166,14 +175,16 @@ export const SmashyBurgerBlogPage: React.FC = () => {
       }`}
     >
       {/* --- CINEMATIC AMBIENCE --- */}
-      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        <div
-          className="absolute top-0 right-0 w-[100vw] h-[100vw] rounded-full blur-[180px] transition-colors duration-1000 opacity-[0.07]"
-          style={{ backgroundColor: activeColor }}
-        ></div>
-        <div className="absolute bottom-0 left-0 w-[80vw] h-[80vw] bg-red-950/[0.04] rounded-full blur-[200px] animate-blob"></div>
-        <div className="absolute inset-0 bg-noise opacity-[0.04] mix-blend-overlay"></div>
-      </div>
+      {!isLite && (
+        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+          <div
+            className="absolute top-0 right-0 w-[100vw] h-[100vw] rounded-full blur-[180px] transition-colors duration-1000 opacity-[0.07]"
+            style={{ backgroundColor: activeColor }}
+          ></div>
+          <div className="absolute bottom-0 left-0 w-[80vw] h-[80vw] bg-red-950/[0.04] rounded-full blur-[200px] animate-blob"></div>
+          <div className="absolute inset-0 bg-noise opacity-[0.04] mix-blend-overlay"></div>
+        </div>
+      )}
 
       {/* --- SECTION 01: THE IMMERSIVE HERO --- */}
       <section className="relative min-h-screen flex flex-col justify-center px-4 md:px-12 lg:px-24 pt-48 pb-32 z-10">
@@ -631,7 +642,7 @@ export const SmashyBurgerBlogPage: React.FC = () => {
                         >
                           {t}
                         </span>
-                      )
+                      ),
                     )}
                   </div>
                 </div>

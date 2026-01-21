@@ -6,6 +6,11 @@
 body.perf-mode-lite * {
   animation: none !important;
   transition: none !important;
+  /* Disable expensive CSS properties for mobile GPUs */
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
 }
 
 /* Fix: Start hidden elements MUST be visible in Lite Mode, UNLESS they are logically hidden (pointer-events-none) */
@@ -21,7 +26,20 @@ body.perf-mode-lite [class*="scale-"]:not(.preserve-transform) {
 
 /* Allow essential micro-interactions in Lite Mode if explicitly opted-in */
 body.perf-mode-lite .essential-anim {
-  transition: opacity 0.2s ease, transform 0.1s ease !important;
+  transition:
+    opacity 0.2s ease,
+    transform 0.1s ease !important;
+}
+
+/* Specific overrides for Lite mode */
+body.perf-mode-lite {
+  --blur-amount: 0px !important;
+}
+
+body.perf-mode-lite .bg-noise,
+body.perf-mode-lite .bg-grid-pattern,
+body.perf-mode-lite .bg-gradient-radial {
+  display: none !important;
 }
 
 /* View Transition API - Sleek Theme Toggle */
@@ -53,8 +71,8 @@ body.perf-mode-lite .essential-anim {
     rgba(255, 255, 255, 0.5) 100%
   );
   --glass-border: rgba(255, 255, 255, 1);
-  --glass-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02),
-    0 20px 40px -4px rgba(0, 0, 0, 0.05),
+  --glass-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 20px 40px -4px rgba(0, 0, 0, 0.05),
     inset 0 0 20px rgba(255, 255, 255, 0.8);
   --scroll-track: #f0f0f2;
   --scroll-thumb: #a1a1aa;
@@ -123,7 +141,9 @@ img {
   -webkit-backdrop-filter: blur(var(--blur-amount)) saturate(180%);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease,
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s ease,
     background 0.4s ease;
 }
 html:not(.dark) .glass-card:hover {
@@ -132,8 +152,10 @@ html:not(.dark) .glass-card:hover {
     rgba(255, 255, 255, 0.95),
     rgba(255, 255, 255, 0.8)
   );
-  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8);
+  box-shadow:
+    0 20px 40px -5px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 0.8);
   transform: translateY(-4px) scale(1.005);
 }
 .dark .glass-card:hover {
@@ -320,7 +342,8 @@ html:not(.dark) .text-outline {
 
 /* Background Patterns */
 .bg-grid-pattern {
-  background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, #80808012 1px, transparent 1px),
     linear-gradient(to bottom, #80808012 1px, transparent 1px);
   background-size: 20px 20px;
 }
