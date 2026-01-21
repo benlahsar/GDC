@@ -463,7 +463,7 @@ export const ContactSection: React.FC = () => {
             {/* Direct Contacts with Glass Effect */}
             <div className="flex flex-col gap-4 md:gap-5">
               <a
-                href="mailto:mouhsinemakram@gmail.com"
+                href="mailto:groupdigitalconcept@gmail.com"
                 className="group flex items-center gap-4 md:gap-5 p-4 md:p-5 rounded-2xl bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/5 hover:border-black/20 dark:hover:border-white/20 transition-all duration-300 cursor-pointer backdrop-blur-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-black/5 dark:bg-white/10 flex items-center justify-center group-hover:bg-black group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all duration-300">
@@ -474,13 +474,13 @@ export const ContactSection: React.FC = () => {
                     {tContact("info.email")}
                   </p>
                   <p className="text-base md:text-lg font-bold text-black dark:text-white tracking-wide break-all">
-                    mouhsinemakram@gmail.com
+                    groupdigitalconcept@gmail.com
                   </p>
                 </div>
               </a>
 
               <a
-                href="tel:+212600000000"
+                href="tel:+212666370306"
                 className="group flex items-center gap-4 md:gap-5 p-4 md:p-5 rounded-2xl bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/5 hover:border-black/20 dark:hover:border-white/20 transition-all duration-300 cursor-pointer backdrop-blur-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-black/5 dark:bg-white/10 flex items-center justify-center group-hover:bg-black group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-black transition-all duration-300">
@@ -491,7 +491,7 @@ export const ContactSection: React.FC = () => {
                     {tContact("info.phone")}
                   </p>
                   <p className="text-base md:text-lg font-bold text-black dark:text-white tracking-wide">
-                    +212 6 00 00 00 00
+                    +212 666 37 03 06
                   </p>
                 </div>
               </a>

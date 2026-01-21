@@ -780,7 +780,7 @@ const ContactDropdown: React.FC<{
         <div className="grid grid-cols-2">
           <div className="relative h-[480px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4179.698807969115!2d-8.014760703210465!3d31.63837909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef883aca855d%3A0x91b51ca1f038c777!2sMajorelle%20centre%20d%20&#39;%20affaires!5e1!3m2!1sfr!2sma!4v1766573686751!5m2!1sfr!2sma"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.8356762634994!2d-8.013096824510852!3d31.63834927416023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef760c70f113%3A0x89a01f4ac0ac6d22!2simmeuble%20Amira%203!5e0!3m2!1sen!2sma!4v1768989791897!5m2!1sen!2sma"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -814,7 +814,7 @@ const ContactDropdown: React.FC<{
                     Direct Line
                   </p>
                   <p className="text-base font-black text-black dark:text-white tracking-tighter">
-                    {AGENCY_INFO.phone}
+                    +212 666 37 03 06
                   </p>
                 </div>
               </div>

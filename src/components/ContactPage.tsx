@@ -597,7 +597,7 @@ export const ContactPage: React.FC = () => {
                                 }
                                 className="w-full bg-white/50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl py-3 px-4 text-black dark:text-white placeholder-gray-400 focus:border-brand-red focus:bg-white dark:focus:bg-white/10 focus:outline-none transition-all shadow-sm text-sm"
                                 placeholder={t(
-                                  "form.placeholders.otherService"
+                                  "form.placeholders.otherService",
                                 )}
                                 autoFocus
                               />
@@ -661,8 +661,8 @@ export const ContactPage: React.FC = () => {
                         {isSubmitting
                           ? t("form.buttons.sending")
                           : step === 3
-                          ? t("form.buttons.send")
-                          : t("form.buttons.next")}
+                            ? t("form.buttons.send")
+                            : t("form.buttons.next")}
                         {isSubmitting ? (
                           <div className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></div>
                         ) : (
@@ -699,7 +699,7 @@ export const ContactPage: React.FC = () => {
                 }`}
               >
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4179.698807969115!2d-8.014760703210465!3d31.63837909999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef883aca855d%3A0x91b51ca1f038c777!2sMajorelle%20centre%20d%20&#39;%20affaires!5e1!3m2!1sfr!2sma!4v1766573686751!5m2!1sfr!2sma"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.8356762634994!2d-8.013096824510852!3d31.63834927416023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafef760c70f113%3A0x89a01f4ac0ac6d22!2simmeuble%20Amira%203!5e0!3m2!1sen!2sma!4v1768989791897!5m2!1sen!2sma"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -714,7 +714,7 @@ export const ContactPage: React.FC = () => {
               </div>
               <div className="absolute top-4 left-4 z-20">
                 <div className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[8px] font-black text-white uppercase tracking-widest">
-                  Majorelle centre d ' affaires
+                  Résidence Plateau Bureau Al Amira III, Guéliz, Marrakech
                 </div>
               </div>
             </GlassCard>
