@@ -450,7 +450,7 @@ export const ContactSection: React.FC = () => {
                   .raw("title")
                   .replace(
                     "<highlight>",
-                    '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black dark:from-gray-500 dark:to-white">'
+                    '<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-black dark:from-gray-500 dark:to-white">',
                   )
                   .replace("</highlight>", "</span> <br />"),
               }}
@@ -587,7 +587,7 @@ export const ContactSection: React.FC = () => {
                                 : "border-black/5 dark:border-white/10"
                             } rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium`}
                             placeholder={tContact(
-                              "form.step1.emailPlaceholder"
+                              "form.step1.emailPlaceholder",
                             )}
                           />
                           {errors.email && (
@@ -600,13 +600,13 @@ export const ContactSection: React.FC = () => {
                     </div>
 
                     {/* PHONE & COMPANY ROW */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                    <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-start">
                       {/* CUSTOM PHONE INPUT WITH COUNTRY SELECTOR */}
-                      <div className="space-y-2 group relative z-50">
+                      <div className="w-full md:w-[60%] space-y-2 group relative z-50">
                         <label className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 ml-3 group-focus-within:text-black dark:group-focus-within:text-white transition-colors">
                           {tContact("form.step1.phone")}
                         </label>
-                        <div className="relative flex">
+                        <div className="relative flex min-w-0 w-full">
                           {/* Country Dropdown Trigger */}
                           <div className="relative" ref={countryDropdownRef}>
                             <button
@@ -676,7 +676,7 @@ export const ContactSection: React.FC = () => {
                                 : "border-black/5 dark:border-white/10 border-l-0"
                             }`}
                             placeholder={tContact(
-                              "form.step1.phonePlaceholder"
+                              "form.step1.phonePlaceholder",
                             )}
                           />
                           {errors.phone && (
@@ -687,7 +687,7 @@ export const ContactSection: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="space-y-2 group">
+                      <div className="w-full md:w-[60%] space-y-2 group">
                         <label className="text-xs font-bold uppercase tracking-[0.2em] text-gray-400 ml-3 group-focus-within:text-black dark:group-focus-within:text-white transition-colors">
                           {tContact("form.step1.company")}
                         </label>
@@ -703,7 +703,7 @@ export const ContactSection: React.FC = () => {
                             }
                             className="w-full bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium"
                             placeholder={tContact(
-                              "form.step1.companyPlaceholder"
+                              "form.step1.companyPlaceholder",
                             )}
                           />
                         </div>
@@ -927,7 +927,7 @@ export const ContactSection: React.FC = () => {
                         rows={3}
                         className="w-full bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-2xl py-3 md:py-4 px-6 text-base text-black dark:text-white placeholder-gray-400 focus:outline-none focus:border-black dark:focus:border-white focus:ring-1 focus:ring-black dark:focus:ring-white transition-all duration-300 font-medium resize-none"
                         placeholder={tContact(
-                          "form.step2.descriptionPlaceholder"
+                          "form.step2.descriptionPlaceholder",
                         )}
                       />
                     </div>
