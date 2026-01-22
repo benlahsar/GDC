@@ -27,7 +27,13 @@ export const AppTestimonials: React.FC = () => {
           <h2
             className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tighter text-black dark:text-white uppercase mb-8 max-w-4xl mx-auto"
             dangerouslySetInnerHTML={{
-              __html: t.raw("title").replace(/{br}/g, "<br/>"),
+              __html: t
+                .raw("title")
+                .replace(/{br}/g, "<br/>")
+                .replace(
+                  /{span}/g,
+                  `<span class="text-brand-red">${t("titleHighlight")}</span>`,
+                ),
             }}
           />
         </div>

@@ -69,12 +69,20 @@ export const EngagementSection: React.FC = () => {
               {t("badge")}
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-black mb-6 tracking-tighter leading-[1.1]">
-            {t.raw("title").split("{br}")[0]} <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-500 dark:from-white dark:to-gray-500">
-              {t("titleHighlight")}
-            </span>
-          </h2>
+          <h2
+            className="text-4xl md:text-5xl lg:text-7xl font-black mb-6 tracking-tighter leading-[1.1]"
+            dangerouslySetInnerHTML={{
+              __html: t
+                .raw("title")
+                .replace(/{br}/g, "<br/>")
+                .replace(
+                  /{span}/g,
+                  `<span class="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-500 dark:from-white dark:to-gray-500">${t(
+                    "titleHighlight",
+                  )}</span>`,
+                ),
+            }}
+          />
           <p
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium leading-relaxed border-l-2 border-brand-red pl-6"
             dangerouslySetInnerHTML={{
@@ -82,7 +90,7 @@ export const EngagementSection: React.FC = () => {
                 .raw("description")
                 .replace(
                   "<highlight>",
-                  '<span class="text-black dark:text-white font-bold">'
+                  '<span class="text-black dark:text-white font-bold">',
                 )
                 .replace("</highlight>", "</span>"),
             }}

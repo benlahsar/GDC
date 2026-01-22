@@ -257,7 +257,7 @@ export const AppProjectForm: React.FC = () => {
                                   <option
                                     key={e}
                                     value={e}
-                                    className="bg-white dark:bg-black"
+                                    className="bg-white dark:bg-[#111] text-black dark:text-white"
                                   >
                                     {e}
                                   </option>
@@ -359,7 +359,7 @@ export const AppProjectForm: React.FC = () => {
                                   <option
                                     key={b}
                                     value={b}
-                                    className="bg-white dark:bg-black"
+                                    className="bg-white dark:bg-[#111] text-black dark:text-white"
                                   >
                                     {b}
                                   </option>

@@ -278,7 +278,7 @@ export const SEOForm: React.FC = () => {
                               <option
                                 key={opt}
                                 value={opt}
-                                className="text-black"
+                                className="bg-white dark:bg-[#111] text-black dark:text-white"
                               >
                                 {opt}
                               </option>

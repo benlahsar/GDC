@@ -132,7 +132,7 @@ export const AgencyMilestones: React.FC<{ isMobile?: boolean }> = ({
           observer.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (containerRef.current) observer.observe(containerRef.current);

@@ -370,7 +370,7 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
                                 <option
                                   key={opt}
                                   value={opt}
-                                  className="bg-white dark:bg-black text-black dark:text-white"
+                                  className="bg-white dark:bg-[#111] text-black dark:text-white"
                                 >
                                   {opt}
                                 </option>
@@ -448,7 +448,7 @@ export const AgencyProjectForm: React.FC<{ isMobile?: boolean }> = ({
                         <div className="grid grid-cols-2 gap-4">
                           {SERVICES.map((srv) => {
                             const isSelected = formData.services.includes(
-                              srv.id
+                              srv.id,
                             );
                             return (
                               <div

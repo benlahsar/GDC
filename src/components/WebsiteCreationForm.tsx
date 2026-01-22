@@ -283,7 +283,7 @@ export const WebsiteCreationForm: React.FC = () => {
                       step === 3
                         ? "from-emerald-500 to-teal-400"
                         : "from-brand-red to-red-500"
-                    }">${t("titleHighlight")}</span>`
+                    }">${t("titleHighlight")}</span>`,
                   ),
               }}
             />
@@ -400,8 +400,8 @@ export const WebsiteCreationForm: React.FC = () => {
                                 {num === 1
                                   ? t("steps.step1")
                                   : num === 2
-                                  ? t("steps.step2")
-                                  : t("steps.step3")}
+                                    ? t("steps.step2")
+                                    : t("steps.step3")}
                               </span>
                             </div>
                           );
@@ -508,7 +508,11 @@ export const WebsiteCreationForm: React.FC = () => {
                                   className="w-full bg-gray-50 dark:bg-[#111] border border-black/10 dark:border-white/10 rounded-xl px-5 py-3 md:py-4 text-sm md:text-base text-black dark:text-white focus:border-brand-red focus:bg-white dark:focus:bg-white/5 focus:outline-none focus:ring-1 focus:ring-brand-red transition-all appearance-none cursor-pointer"
                                 >
                                   {EMPLOYEES_OPTIONS.map((opt) => (
-                                    <option key={opt} value={opt}>
+                                    <option
+                                      key={opt}
+                                      value={opt}
+                                      className="bg-white dark:bg-[#111] text-black dark:text-white"
+                                    >
                                       {t("form.size.option", { count: opt })}
                                     </option>
                                   ))}
@@ -603,7 +607,7 @@ export const WebsiteCreationForm: React.FC = () => {
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
                             {SERVICES.map((item) => {
                               const isSelected = formData.service.includes(
-                                item.label
+                                item.label,
                               );
                               return (
                                 <div
@@ -651,7 +655,7 @@ export const WebsiteCreationForm: React.FC = () => {
                               }
                               className={`p-4 md:p-5 rounded-xl border cursor-pointer transition-all duration-300 flex items-center justify-between group hover:-translate-y-1 ${
                                 formData.service.includes(
-                                  t("form.services.other")
+                                  t("form.services.other"),
                                 )
                                   ? "bg-brand-red border-brand-red text-white shadow-lg shadow-brand-red/20"
                                   : "bg-gray-50 dark:bg-[#111] border-black/10 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:border-black/20 dark:hover:border-white/30 hover:bg-gray-100 dark:hover:bg-white/5"
@@ -662,7 +666,7 @@ export const WebsiteCreationForm: React.FC = () => {
                                   size={20}
                                   className={
                                     formData.service.includes(
-                                      t("form.services.other")
+                                      t("form.services.other"),
                                     )
                                       ? "text-white"
                                       : "text-gray-400 dark:text-gray-500 group-hover:text-brand-red transition-colors"
@@ -671,7 +675,7 @@ export const WebsiteCreationForm: React.FC = () => {
                                 <span
                                   className={`text-xs md:text-sm font-bold tracking-wide ${
                                     formData.service.includes(
-                                      t("form.services.other")
+                                      t("form.services.other"),
                                     )
                                       ? "text-white"
                                       : "text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors"
@@ -681,7 +685,7 @@ export const WebsiteCreationForm: React.FC = () => {
                                 </span>
                               </div>
                               {formData.service.includes(
-                                t("form.services.other")
+                                t("form.services.other"),
                               ) ? (
                                 <CheckCircle2
                                   size={18}
@@ -693,7 +697,7 @@ export const WebsiteCreationForm: React.FC = () => {
                             </div>
 
                             {formData.service.includes(
-                              t("form.services.other")
+                              t("form.services.other"),
                             ) && (
                               <div className="col-span-1 sm:col-span-2 mt-2 animate-fade-in-up">
                                 <input
@@ -707,7 +711,7 @@ export const WebsiteCreationForm: React.FC = () => {
                                   }
                                   className="w-full bg-gray-50 dark:bg-[#111] border border-black/10 dark:border-white/10 rounded-xl px-5 py-4 text-black dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red transition-all"
                                   placeholder={t(
-                                    "form.services.otherPlaceholder"
+                                    "form.services.otherPlaceholder",
                                   )}
                                   autoFocus
                                 />

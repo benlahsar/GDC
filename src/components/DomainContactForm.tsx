@@ -169,8 +169,8 @@ export const DomainContactForm: React.FC = () => {
                           isActive
                             ? "bg-brand-red border-brand-red text-white scale-110 shadow-[0_0_15px_rgba(220,38,38,0.5)]"
                             : isCompleted
-                            ? "bg-black dark:bg-white border-black dark:border-white text-white dark:text-black"
-                            : "bg-transparent border-gray-200 dark:border-white/20 text-gray-400 dark:text-gray-600"
+                              ? "bg-black dark:bg-white border-black dark:border-white text-white dark:text-black"
+                              : "bg-transparent border-gray-200 dark:border-white/20 text-gray-400 dark:text-gray-600"
                         }`}
                       >
                         {isCompleted ? (
@@ -314,7 +314,7 @@ export const DomainContactForm: React.FC = () => {
                               <option
                                 key={opt}
                                 value={opt}
-                                className="text-black"
+                                className="bg-white dark:bg-[#111] text-black dark:text-white"
                               >
                                 {opt}
                               </option>
@@ -383,8 +383,8 @@ export const DomainContactForm: React.FC = () => {
                         step === 2
                           ? "opacity-100 translate-x-0 z-10"
                           : step < 2
-                          ? "opacity-0 translate-x-full pointer-events-none"
-                          : "opacity-0 -translate-x-full pointer-events-none"
+                            ? "opacity-0 translate-x-full pointer-events-none"
+                            : "opacity-0 -translate-x-full pointer-events-none"
                       }`}
                     >
                       <label className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-6 block">

@@ -163,7 +163,7 @@ export const VisualIdentityPage: React.FC = () => {
       ...step,
       icon: METHODOLOGY_ICON_MAP[step.id] || Users,
       arrow: METHODOLOGY_ARROW_MAP[step.id] || ArrowUpRight,
-    })
+    }),
   );
 
   return (
@@ -800,7 +800,7 @@ export const VisualIdentityPage: React.FC = () => {
                                   <option
                                     key={opt}
                                     value={opt}
-                                    className="text-black"
+                                    className="bg-white dark:bg-[#111] text-black dark:text-white"
                                   >
                                     {opt}
                                   </option>
@@ -822,10 +822,10 @@ export const VisualIdentityPage: React.FC = () => {
                                 {selectedCountry.country === "MA"
                                   ? "🇲🇦"
                                   : selectedCountry.country === "FR"
-                                  ? "🇫🇷"
-                                  : selectedCountry.country === "US"
-                                  ? "🇺🇸"
-                                  : "🇬🇧"}
+                                    ? "🇫🇷"
+                                    : selectedCountry.country === "US"
+                                      ? "🇺🇸"
+                                      : "🇬🇧"}
                               </span>
                               <ChevronDown
                                 size={14}
@@ -916,7 +916,7 @@ export const VisualIdentityPage: React.FC = () => {
                           <textarea
                             className="w-full h-48 bg-transparent border border-black/20 dark:border-white/10 rounded-2xl p-6 text-black dark:text-white focus:border-emerald-500 focus:bg-white dark:focus:bg-white/10 focus:outline-none transition-all resize-none shadow-inner"
                             placeholder={t(
-                              "contact.form.fields.placeholder_details"
+                              "contact.form.fields.placeholder_details",
                             )}
                             value={formData.details}
                             onChange={(e) =>
@@ -948,7 +948,7 @@ export const VisualIdentityPage: React.FC = () => {
                                 <option
                                   key={b}
                                   value={b}
-                                  className="text-black"
+                                  className="bg-white dark:bg-[#111] text-black dark:text-white"
                                 >
                                   {b}
                                 </option>

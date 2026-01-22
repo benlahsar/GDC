@@ -56,6 +56,7 @@ import { AnimatedCounter } from "./AnimatedCounter";
 import { SEOSMOFormSection } from "../components/SEOSMOFormSection";
 import { SeaSmoFinalCTA } from "../components/SeaSmoFinalCTA";
 import { useTranslations } from "next-intl";
+import { usePerformanceMode } from "@/hooks/usePerformanceMode";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -70,10 +71,18 @@ const SmoothScrambleText = ({
   text: string;
   isActive: boolean;
 }) => {
-  const [displayText, setDisplayText] = useState("");
+  const { isLite } = usePerformanceMode();
+  const [displayText, setDisplayText] = useState(
+    isLite && isActive ? text : "",
+  );
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
 
   useEffect(() => {
+    if (isLite) {
+      setDisplayText(isActive ? text : "");
+      return;
+    }
+
     if (!isActive) {
       setDisplayText("");
       return;
@@ -103,7 +112,7 @@ const SmoothScrambleText = ({
 
     animationId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationId);
-  }, [text, isActive]);
+  }, [text, isActive, isLite]);
 
   return <span>{displayText}</span>;
 };
@@ -150,7 +159,7 @@ export const SeaSmoPage: React.FC = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (servicesRef.current) {
@@ -621,7 +630,7 @@ export const SeaSmoPage: React.FC = () => {
                           {tag}
                         </span>
                       </div>
-                    )
+                    ),
                   )}
                 </div>
               </div>

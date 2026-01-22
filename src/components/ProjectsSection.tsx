@@ -94,22 +94,14 @@ export const ProjectsSection: React.FC = () => {
               {t("badge")}
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-black dark:text-white mb-6">
-            {t
-              .raw("title")
-              .replace(
-                "{span}",
-                `<span class="text-brand-red">${t("titleHighlight")}</span>`
-              )}
-          </h2>
-          <div
-            className="hidden"
+          <h2
+            className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-black dark:text-white mb-6"
             dangerouslySetInnerHTML={{
               __html: t
                 .raw("title")
                 .replace(
-                  "{span}",
-                  `<span class="text-brand-red">${t("titleHighlight")}</span>`
+                  /{span}/g,
+                  `<span class="text-brand-red">${t("titleHighlight")}</span>`,
                 ),
             }}
           />

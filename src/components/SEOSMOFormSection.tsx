@@ -174,7 +174,7 @@ export const SEOSMOFormSection: React.FC = () => {
 
   const toggleArray = (
     key: "platforms" | "tracking" | "creativeStyle",
-    val: string
+    val: string,
   ) => {
     setFormData((prev) => ({
       ...prev,
@@ -241,8 +241,8 @@ export const SEOSMOFormSection: React.FC = () => {
                       step === s.n
                         ? "bg-brand-red border-brand-red text-white scale-125 shadow-[0_0_30px_rgba(255,0,0,0.3)]"
                         : step > s.n
-                        ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
-                        : "border-black/10 dark:border-white/10 text-gray-400"
+                          ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
+                          : "border-black/10 dark:border-white/10 text-gray-400"
                     }`}
                   >
                     {step > s.n ? (
@@ -673,7 +673,7 @@ export const SEOSMOFormSection: React.FC = () => {
                                   <option
                                     key={b}
                                     value={b}
-                                    className="text-black"
+                                    className="bg-white dark:bg-[#111] text-black dark:text-white"
                                   >
                                     {b}
                                   </option>
@@ -792,8 +792,8 @@ export const SEOSMOFormSection: React.FC = () => {
                           {isSubmitting
                             ? t("btn.sending")
                             : step === 5
-                            ? t("btn.launch")
-                            : t("btn.next")}
+                              ? t("btn.launch")
+                              : t("btn.next")}
                         </span>
                         {isSubmitting ? (
                           <Loader2
